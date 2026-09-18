@@ -13,7 +13,7 @@
     "sites institucionais",
     "paginas de contato"
   ],
-  "orgs_unicas": 25,
+  "orgs_unicas": 78,
   "oportunidades": 30,
   "emails_coletados": 0,
   "queries_indeed_executadas": [
@@ -27,5 +27,24 @@
   "queries_websearch_executadas": [
     "seja nosso correspondente advocacia cadastro",
     "correspondente juridico cadastro Rondonia Porto Velho"
+  ],
+  "prioridade_A": 36,
+  "prioridade_B": 41,
+  "prioridade_C": 1,
+  "leads_RO": 20,
+  "proxima_fase": "Com Tavily autorizado: rodar tavily-extract nas URLs da coluna 'Pagina de contato' + /contato, /trabalhe-conosco, /parcerias, /correspondentes de cada dominio, e preencher os campos de e-mail apenas com o que aparecer literalmente na pagina.",
+  "nao_repetir_queries": [
+    "seja nosso correspondente advocacia",
+    "correspondente juridico Rondonia",
+    "rede de correspondentes contencioso de massa",
+    "credenciamento de advogados banco seguradora",
+    "BPO juridico terceirizacao",
+    "escritorios advocacia RO contencioso",
+    "seja nosso parceiro advocacia",
+    "recuperacao de credito cobranca credenciados",
+    "operadoras planos de saude judicializacao",
+    "legaltech gestao passivo judicial",
+    "cooperativas credito Sicoob Sicredi RO",
+    "construtoras incorporadoras administradoras condominio RO"
   ]
 }
