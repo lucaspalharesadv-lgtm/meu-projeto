@@ -1,0 +1,31 @@
+{
+  "data": "2026-09-18",
+  "status": "EM ANDAMENTO - BLOQUEADO",
+  "bloqueio": "Egresso de rede da sessao nega todos os hosts externos (WebFetch e curl). Apenas WebSearch e Indeed MCP funcionam (rodam fora do container).",
+  "fontes_funcionais": [
+    "WebSearch (titulos e URLs)",
+    "Indeed MCP (vagas reais e datadas)"
+  ],
+  "fontes_bloqueadas": [
+    "WebFetch (todos os dominios)",
+    "curl/crawler proprio",
+    "LinkedIn",
+    "sites institucionais",
+    "paginas de contato"
+  ],
+  "orgs_unicas": 25,
+  "oportunidades": 30,
+  "emails_coletados": 0,
+  "queries_indeed_executadas": [
+    "advogado correspondente juridico/remote",
+    "advogado/Porto Velho RO",
+    "advogado/Ji-Parana RO",
+    "analista juridico/remote",
+    "advogado contencioso de massa/Sao Paulo SP",
+    "advogado home office/Brasil"
+  ],
+  "queries_websearch_executadas": [
+    "seja nosso correspondente advocacia cadastro",
+    "correspondente juridico cadastro Rondonia Porto Velho"
+  ]
+}
