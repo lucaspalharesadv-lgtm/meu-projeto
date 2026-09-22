@@ -1,6 +1,6 @@
 {
   "data": "2026-09-18",
-  "status": "EM ANDAMENTO - BLOQUEADO",
+  "status": "ENTREGUE - COLETA DE E-MAIL BLOQUEADA",
   "bloqueio": "Egresso de rede da sessao nega todos os hosts externos (WebFetch e curl). Apenas WebSearch e Indeed MCP funcionam (rodam fora do container).",
   "fontes_funcionais": [
     "WebSearch (titulos e URLs)",
@@ -13,8 +13,8 @@
     "sites institucionais",
     "paginas de contato"
   ],
-  "orgs_unicas": 78,
-  "oportunidades": 30,
+  "orgs_unicas": 521,
+  "oportunidades": 261,
   "emails_coletados": 0,
   "queries_indeed_executadas": [
     "advogado correspondente juridico/remote",
@@ -28,10 +28,10 @@
     "seja nosso correspondente advocacia cadastro",
     "correspondente juridico cadastro Rondonia Porto Velho"
   ],
-  "prioridade_A": 36,
-  "prioridade_B": 41,
+  "prioridade_A": 247,
+  "prioridade_B": 273,
   "prioridade_C": 1,
-  "leads_RO": 20,
+  "leads_RO": 81,
   "proxima_fase": "Com Tavily autorizado: rodar tavily-extract nas URLs da coluna 'Pagina de contato' + /contato, /trabalhe-conosco, /parcerias, /correspondentes de cada dominio, e preencher os campos de e-mail apenas com o que aparecer literalmente na pagina.",
   "nao_repetir_queries": [
     "seja nosso correspondente advocacia",
@@ -46,5 +46,7 @@
     "legaltech gestao passivo judicial",
     "cooperativas credito Sicoob Sicredi RO",
     "construtoras incorporadoras administradoras condominio RO"
-  ]
+  ],
+  "data_fechamento": "2026-09-22",
+  "retomada": "Com Tavily autorizado ou rede liberada: rodar extracao sobre a coluna Pagina de contato de cada lead e preencher os campos de e-mail apenas com o que aparecer literalmente na pagina."
 }
