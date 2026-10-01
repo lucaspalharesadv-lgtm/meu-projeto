@@ -3,10 +3,10 @@ name = "robo-ig"
 version = "0.1.0"
 description = "Robô de Instagram para advocacia: conteúdo, arte, filtro OAB e publicação"
 requires-python = ">=3.10"
-dependencies = ["anthropic>=0.40", "requests>=2.31", "Pillow>=10.0", "python-dotenv>=1.0"]
+dependencies = ["anthropic>=0.40", "requests>=2.31", "Pillow>=10.0", "python-dotenv>=1.0", "fastapi>=0.110", "uvicorn>=0.29"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8"]
+dev = ["pytest>=8", "httpx>=0.27"]
 
 [project.scripts]
 robo-ig = "robo_ig.cli:main"

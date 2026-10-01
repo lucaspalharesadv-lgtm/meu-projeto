@@ -57,3 +57,16 @@ class InstagramClient:
     def insights(self, media_id: str) -> dict:
         data = self._call("GET", f"{media_id}/insights", metric="reach,likes,comments,saved,shares")["data"]
         return {m["name"]: m["values"][0]["value"] for m in data}
+
+    def send_dm(self, recipient_id: str, text: str) -> None:
+        self._call_json(f"{self.cfg.ig_user_id}/messages", {"recipient": {"id": recipient_id}, "message": {"text": text}})
+
+    def private_reply(self, comment_id: str, text: str) -> None:
+        self._call_json(f"{self.cfg.ig_user_id}/messages", {"recipient": {"comment_id": comment_id}, "message": {"text": text}})
+
+    def _call_json(self, path: str, payload: dict):
+        r = requests.post(f"{self.base}/{path}", params={"access_token": self.cfg.ig_token}, json=payload, timeout=30)
+        body = r.json()
+        if r.status_code >= 400 or "error" in body:
+            raise InstagramError(str(body.get("error", body)))
+        return body

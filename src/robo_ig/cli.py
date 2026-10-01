@@ -11,6 +11,7 @@ def main() -> None:
     plan.add_argument("-n", type=int, default=7)
     sub.add_parser("publish", help="publica os aprovados cujo horário chegou (rodar no cron a cada 15 min)")
     sub.add_parser("insights", help="coleta métricas dos posts publicados")
+    sub.add_parser("serve", help="sobe o webhook de DMs e comentários (porta 8000)")
     sub.add_parser("list", help="lista a fila")
     for name, help_ in (("approve", "aprova post em revisão"), ("reject", "descarta post"), ("show", "mostra post")):
         sub.add_parser(name, help=help_).add_argument("id", type=int)
@@ -18,7 +19,10 @@ def main() -> None:
     a = p.parse_args()
     cfg = Config()
 
-    if a.cmd == "plan":
+    if a.cmd == "serve":
+        import uvicorn
+        uvicorn.run("robo_ig.server:app", host="0.0.0.0", port=8000)
+    elif a.cmd == "plan":
         for pid in pipeline.plan(cfg, a.n):
             print("criado", pid)
     elif a.cmd == "publish":

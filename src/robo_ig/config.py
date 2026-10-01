@@ -35,6 +35,11 @@ class Config:
     telegram_token: str = os.getenv("TELEGRAM_BOT_TOKEN", "")
     telegram_chat: str = os.getenv("TELEGRAM_CHAT_ID", "")
 
+    app_secret: str = os.getenv("META_APP_SECRET", "")
+    verify_token: str = os.getenv("WEBHOOK_VERIFY_TOKEN", "")
+    whatsapp_url: str = os.getenv("WHATSAPP_URL", "")
+    max_bot_replies: int = int(os.getenv("MAX_BOT_REPLIES", "10"))
+
     @property
     def footer(self) -> str:
         return f"{self.nome} | {self.oab} | {self.cidade}"

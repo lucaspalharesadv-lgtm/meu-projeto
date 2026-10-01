@@ -30,6 +30,20 @@ CREATE TABLE IF NOT EXISTS metrics (
   fetched_at TEXT NOT NULL,
   reach INTEGER, likes INTEGER, comments INTEGER, saved INTEGER, shares INTEGER
 );
+CREATE TABLE IF NOT EXISTS conversations (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  ig_user TEXT NOT NULL UNIQUE,
+  status TEXT NOT NULL DEFAULT 'bot',
+  area TEXT, summary TEXT, lead_json TEXT,
+  bot_replies INTEGER NOT NULL DEFAULT 0,
+  created_at TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS messages (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  conv_id INTEGER NOT NULL REFERENCES conversations(id),
+  direction TEXT NOT NULL, text TEXT NOT NULL,
+  mid TEXT UNIQUE, at TEXT NOT NULL
+);
 """
 
 JSON_COLS = {"slides_json", "compliance_json", "image_paths_json"}

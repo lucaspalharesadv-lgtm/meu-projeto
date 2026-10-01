@@ -39,9 +39,18 @@ robo-ig publish          # cron: */15 * * * *
 robo-ig insights         # cron: diário
 ```
 
+## Fase 2 – DM e comentários (pronta)
+`robo-ig serve` sobe o webhook (`/webhook`, porta 8000, atrás de HTTPS). No app Meta, assine os campos `messages` e
+`comments` do Instagram e use `WEBHOOK_VERIFY_TOKEN` e `META_APP_SECRET` do `.env` (a assinatura X-Hub-Signature-256 é validada).
+Para DMs de terceiros, a permissão `instagram_manage_messages` exige App Review da Meta.
+
+- Responde **só quem escreve primeiro** (ou comenta com dúvida, via resposta privada única). Nunca abordagem ativa.
+- Se apresenta como assistente automático, aceita `PARAR`, não dá parecer sobre o caso, não fala de preço/resultado.
+- Coleta nome, cidade e resumo; ao completar, envia o link do seu WhatsApp (`WHATSAPP_URL`) e avisa você (Telegram).
+- Urgência (prisão, violência, risco de vida, prazo vencendo) ou resposta reprovada pelo filtro OAB: passa direto para você.
+- Depois do repasse o robô fica em silêncio nessa conversa; você avisa quando assumir.
+
 ## Próximas fases
-- **Fase 2 – DM e comentários:** webhook da Messaging API (resposta só dentro da janela de 24h após o contato do usuário),
-  triagem do lead por área e envio para o seu WhatsApp. Sem abordagem ativa (captação vedada).
 - **Fase 3 – Vídeo com voz e rosto:** roteiro → voz clonada (ElevenLabs) → avatar (HeyGen) → legenda e logo → Reels. Só com
   consentimento próprio e aviso de conteúdo sintético quando exigido.
 - **Fase 4 – Otimização:** testes A/B de gancho, melhores horários por métrica, relatório semanal.
