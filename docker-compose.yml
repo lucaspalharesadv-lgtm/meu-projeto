@@ -1,0 +1,20 @@
+services:
+  atendimento:
+    build: .
+    command: robo-ig serve
+    env_file: .env
+    ports: ["8000:8000"]
+    volumes: ["./data:/app/data"]
+    restart: always
+  piloto:
+    build: .
+    command: sh -c "while true; do robo-ig tick; sleep 900; done"
+    env_file: .env
+    volumes: ["./data:/app/data"]
+    restart: always
+  imagens:
+    image: caddy:2
+    command: caddy file-server --root /srv --listen :8080
+    volumes: ["./data/public:/srv:ro"]
+    ports: ["8080:8080"]
+    restart: always
