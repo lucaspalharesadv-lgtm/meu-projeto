@@ -11,6 +11,11 @@ def main() -> None:
     plan.add_argument("-n", type=int, default=7)
     pr = sub.add_parser("plan-reels", help="gera roteiros de Reels, filtra e produz o vídeo com sua voz e rosto")
     pr.add_argument("-n", type=int, default=3)
+    ps = sub.add_parser("plan-stories", help="gera N stories")
+    ps.add_argument("-n", type=int, default=7)
+    sub.add_parser("plan-week", help="completa a fila dos próximos 7 dias conforme WEEK_MIX")
+    sub.add_parser("tick", help="piloto automático: publica, mede, planeja e relata (cron a cada 15 min)")
+    sub.add_parser("report", help="relatório semanal")
     sub.add_parser("publish", help="publica os aprovados cujo horário chegou (rodar no cron a cada 15 min)")
     sub.add_parser("insights", help="coleta métricas dos posts publicados")
     sub.add_parser("serve", help="sobe o webhook de DMs e comentários (porta 8000)")
@@ -30,6 +35,15 @@ def main() -> None:
     elif a.cmd == "plan-reels":
         for pid in pipeline.plan_reels(cfg, a.n):
             print("criado", pid)
+    elif a.cmd == "plan-stories":
+        print("criados:", pipeline.plan_stories(cfg, a.n))
+    elif a.cmd == "plan-week":
+        print(pipeline.plan_week(cfg))
+    elif a.cmd == "tick":
+        print(pipeline.tick(cfg))
+    elif a.cmd == "report":
+        from . import report
+        print(report.weekly(cfg))
     elif a.cmd == "publish":
         print("publicados:", pipeline.publish_due(cfg))
     elif a.cmd == "insights":

@@ -64,9 +64,23 @@ robo-ig plan-reels -n 3     # roteiro -> filtro OAB -> voz (ElevenLabs) -> avata
 
 Os endpoints da HeyGen estão em `avatar.py`, isolados: confira a documentação vigente no primeiro teste real.
 
-## Próximas fases
-- **Fase 4 – Otimização:** testes A/B de gancho, melhores horários por métrica, relatório semanal.
+## Fase 4 – Piloto automático de marketing (pronta)
+Um único cron faz tudo: `*/15 * * * * robo-ig tick` (e `robo-ig serve` ligado para as DMs).
 
-## Limites que o robô respeita
-- Só API oficial (nada de automação de curtir/seguir/DM em massa: derruba a conta e configura captação).
-- Não cita julgado/súmula sem fonte; qualquer dado jurídico preciso deve ser conferido por você.
+| O que | Como |
+|---|---|
+| Calendário | Mantém a fila dos próximos 7 dias cheia conforme `WEEK_MIX` (padrão: 3 carrosséis, 2 Reels, 7 stories) |
+| Stories | 1 a 3 quadros 9:16 dentro das zonas seguras do app, com sua identificação; além disso, todo post novo no feed gera um story-aviso 20 min depois |
+| Horários | Aprende com as suas métricas: pontuação por hora local (feed e stories separados), encolhida para a média quando há poucos dados; `EXPLORE` (20%) sorteia horários ainda não testados. Sem dados, começa por 12h, 19h, 20h, 18h. Limites: `FEED_PER_DAY`, `STORIES_PER_DAY`, 3h entre posts do mesmo tipo |
+| Conteúdo | Cada item recebe (área, estilo de gancho) sorteados com peso no que performa: pergunta, número, dor, mito vs verdade, passo a passo, erro comum |
+| Formato | Com 5+ posts de cada, se um formato engaja 30% mais que o outro, move 1 vaga semanal para ele |
+| Métricas | Feed: 1x/dia por 30 dias; stories: a cada 3h enquanto estão no ar. Pontuação = (salvos×3 + compart.×4 + comentários×2 + curtidas) / alcance |
+| Relatório | Domingo, 20h (local): `data/reports/AAAA-MM-DD.md` + resumo no Telegram. Também: `robo-ig report` |
+| Segurança | Todo item passa pelo filtro OAB; título/gancho agora também são checados. Planejamento roda no máx. a cada 12h (sem laço de custo) |
+
+Comandos manuais: `plan-week`, `plan-stories -n 7`, `plan -n 3`, `plan-reels -n 2`, `report`, `list`, `approve ID`.
+Limitações da API da Meta: stories saem só como imagem/vídeo (sem figurinhas de enquete/pergunta), e métricas de story somem após ~24h.
+
+## Próximas ideias
+- Biblioteca de temas sazonais (ex.: reajuste de planos, calendário do INSS) e gatilhos por notícia jurídica.
+- Teste de capa/gancho em Reels a partir dos resultados de retenção.

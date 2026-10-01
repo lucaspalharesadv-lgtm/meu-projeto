@@ -61,9 +61,19 @@ class InstagramClient:
         self._wait_ready(container, tries=90)
         return self._call("POST", f"{uid}/media_publish", creation_id=container)["id"]
 
-    def insights(self, media_id: str) -> dict:
-        data = self._call("GET", f"{media_id}/insights", metric="reach,likes,comments,saved,shares")["data"]
-        return {m["name"]: m["values"][0]["value"] for m in data}
+    def publish_story(self, image_path: str) -> str:
+        uid = self.cfg.ig_user_id
+        container = self._call("POST", f"{uid}/media", media_type="STORIES", image_url=self.public_url(image_path))["id"]
+        self._wait_ready(container)
+        return self._call("POST", f"{uid}/media_publish", creation_id=container)["id"]
+
+    def insights(self, media_id: str, story: bool = False) -> dict:
+        metric = "reach,shares,replies" if story else "reach,likes,comments,saved,shares"
+        data = self._call("GET", f"{media_id}/insights", metric=metric)["data"]
+        out = {m["name"]: m["values"][0]["value"] for m in data}
+        if story:
+            out["comments"] = out.pop("replies", 0)
+        return out
 
     def send_dm(self, recipient_id: str, text: str) -> None:
         self._call_json(f"{self.cfg.ig_user_id}/messages", {"recipient": {"id": recipient_id}, "message": {"text": text}})

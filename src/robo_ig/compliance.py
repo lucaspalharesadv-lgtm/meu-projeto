@@ -72,10 +72,10 @@ def check_text(text: str) -> list[Finding]:
     return findings
 
 
-def check_post(caption: str, slides: list[dict], oab: str) -> list[Finding]:
-    parts = [caption] + [f"{s.get('title', '')} {s.get('body', '')}" for s in slides]
+def check_post(caption: str, slides: list[dict], oab: str, hook: str = "", require_id: bool = True) -> list[Finding]:
+    parts = [caption, hook] + [f"{s.get('title', '')} {s.get('body', '')}" for s in slides]
     findings = check_text("\n".join(parts))
-    if _norm(oab) not in _norm(caption):
+    if require_id and _norm(oab) not in _norm(caption):
         findings.append(Finding("identificacao", WARN, "", f"Legenda sem identificação do advogado ({oab}).", "regra"))
     return findings
 

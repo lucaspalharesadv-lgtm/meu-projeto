@@ -1,5 +1,3 @@
-import random
-
 from .config import Config
 from .llm import LLM
 
@@ -21,15 +19,20 @@ REGRAS ÉTICAS (OAB, Provimento 205/2021) - inviolável:
   nunca urgência ou escassez.
 
 FORMATO DE SAÍDA: JSON puro, lista de objetos:
-{{"area": str, "topic": str, "format": "carousel"|"single", "hook": str (<=70 caracteres, abre o carrossel),
+{{"area": str, "topic": str, "format": "carousel"|"single", "hook_style": str, "hook": str (<=70 caracteres, abre o carrossel),
  "slides": [{{"title": str (<=60), "body": str (<=220)}}] (carousel: 6 a 9 slides; single: 1),
  "caption": str (gancho na 1ª linha, 600-1200 caracteres, termina com: {footer}),
  "hashtags": [str] (5 a 8, sem # ),
  "alt_text": str}}"""
 
 
-def build_user_prompt(n: int, areas: list[str], recent_topics: list[str], winners: list[dict]) -> str:
-    parts = [f"Gere {n} posts, variando entre estas áreas (uma por post, sem repetir em sequência): {', '.join(areas)}."]
+HOOK_STYLES = ["pergunta direta", "número ou lista", "dor do leitor", "mito vs verdade", "passo a passo", "erro comum"]
+
+
+def build_user_prompt(n: int, assignments: list[tuple[str, str]], recent_topics: list[str], winners: list[dict]) -> str:
+    plan = "\n".join(f"{i}. área: {a} | estilo do gancho: {st}" for i, (a, st) in enumerate(assignments, 1))
+    parts = [f"Gere exatamente {n} itens, na ordem, cada um com a área e o estilo de gancho indicados. "
+             f"Devolva em cada objeto o campo hook_style com o estilo usado.\n{plan}"]
     if winners:
         lines = "\n".join(f"- [{w['area']}] {w['topic']} (hook: {w['hook']})" for w in winners)
         parts.append("Posts anteriores de MELHOR desempenho (mesmo estilo/ângulo, outros temas):\n" + lines)
@@ -40,11 +43,15 @@ def build_user_prompt(n: int, areas: list[str], recent_topics: list[str], winner
     return "\n\n".join(parts)
 
 
-def generate_posts(cfg: Config, llm: LLM, n: int, recent_topics: list[str], winners: list[dict]) -> list[dict]:
+def _assign(cfg: Config, n: int, assignments):
+    return assignments or [(cfg.areas[i % len(cfg.areas)], HOOK_STYLES[i % len(HOOK_STYLES)]) for i in range(n)]
+
+
+def generate_posts(cfg: Config, llm: LLM, n: int, recent_topics: list[str], winners: list[dict],
+                   assignments=None) -> list[dict]:
     system = SYSTEM.format(nome=cfg.nome, oab=cfg.oab, cidade=cfg.cidade,
                            areas=", ".join(cfg.areas), footer=cfg.footer)
-    areas = random.sample(cfg.areas, k=min(len(cfg.areas), n)) if n <= len(cfg.areas) else cfg.areas
-    posts = llm.json(system, build_user_prompt(n, areas, recent_topics, winners), max_tokens=8000)
+    posts = llm.json(system, build_user_prompt(n, _assign(cfg, n, assignments), recent_topics, winners), max_tokens=8000)
     for p in posts:
         if cfg.footer not in p["caption"]:
             p["caption"] = p["caption"].rstrip() + "\n\n" + cfg.footer
@@ -63,17 +70,33 @@ resultado, preço, gratuidade, promoção, sorteio, superlativos, depoimentos, c
 lei não fornecidos. Não diga seu nome nem OAB no roteiro (vão na legenda).
 
 SAÍDA: JSON puro, lista de objetos:
-{{"area": str, "topic": str, "hook": str, "script": str,
+{{"area": str, "topic": str, "hook_style": str, "hook": str, "script": str,
  "caption": str (300-700 caracteres, termina com: {footer}), "hashtags": [str] (5 a 8, sem #)}}"""
 
 AI_NOTICE = "Vídeo produzido com inteligência artificial, a partir da minha voz e imagem, com roteiro revisado por mim."
 
 
-def generate_reels(cfg: Config, llm: LLM, n: int, recent_topics: list[str], winners: list[dict]) -> list[dict]:
+def generate_reels(cfg: Config, llm: LLM, n: int, recent_topics: list[str], winners: list[dict],
+                   assignments=None) -> list[dict]:
     system = REEL_SYSTEM.format(nome=cfg.nome, oab=cfg.oab, cidade=cfg.cidade,
                                 areas=", ".join(cfg.areas), footer=cfg.footer)
-    reels = llm.json(system, build_user_prompt(n, cfg.areas, recent_topics, winners), max_tokens=6000)
+    reels = llm.json(system, build_user_prompt(n, _assign(cfg, n, assignments), recent_topics, winners), max_tokens=6000)
     for r in reels:
         base = r["caption"].replace(cfg.footer, "").rstrip()
         r["caption"] = f"{base}\n\n{AI_NOTICE}\n\n{cfg.footer}"
     return reels
+
+
+STORY_SYSTEM = """Você cria Stories de Instagram para o advogado {nome} ({oab}), de {cidade}. Áreas: {areas}.
+Cada story tem 1 a 3 quadros de texto curto (título até 55 caracteres; corpo até 140). Formatos que funcionam: "Você sabia?",
+"Mito ou verdade", "3 sinais de que...", "Dúvida da semana" (responda em termos gerais). Tom humano e simples.
+Mesmas regras éticas do conteúdo escrito (Provimento 205/2021): informativo e discreto; nada de promessa de resultado,
+preço, gratuidade, promoção, sorteio, superlativos, depoimentos, casos reais, 'especialista', julgado/súmula/lei não
+fornecidos; sem urgência ou escassez; sem 'chame agora'.
+SAÍDA: JSON puro, lista de objetos: {{"area": str, "topic": str, "hook_style": str, "frames": [{{"title": str, "body": str}}]}}"""
+
+
+def generate_stories(cfg: Config, llm: LLM, n: int, recent_topics: list[str], winners: list[dict],
+                     assignments=None) -> list[dict]:
+    system = STORY_SYSTEM.format(nome=cfg.nome, oab=cfg.oab, cidade=cfg.cidade, areas=", ".join(cfg.areas))
+    return llm.json(system, build_user_prompt(n, _assign(cfg, n, assignments), recent_topics, winners), max_tokens=5000)

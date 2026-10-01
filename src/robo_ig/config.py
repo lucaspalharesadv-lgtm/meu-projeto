@@ -45,6 +45,17 @@ class Config:
     heygen_key: str = os.getenv("HEYGEN_API_KEY", "")
     heygen_avatar: str = os.getenv("HEYGEN_AVATAR_ID", "")
 
+    week_mix: str = os.getenv("WEEK_MIX", "carousel:3,reel:2,story:7")
+    feed_per_day: int = int(os.getenv("FEED_PER_DAY", "1"))
+    stories_per_day: int = int(os.getenv("STORIES_PER_DAY", "2"))
+    window_start: int = int(os.getenv("WINDOW_START", "7"))
+    window_end: int = int(os.getenv("WINDOW_END", "22"))
+    explore: float = float(os.getenv("EXPLORE", "0.2"))
+
+    @property
+    def mix(self) -> dict[str, int]:
+        return {k.strip(): int(v) for k, v in (x.split(":") for x in self.week_mix.split(",") if ":" in x)}
+
     @property
     def footer(self) -> str:
         return f"{self.nome} | {self.oab} | {self.cidade}"

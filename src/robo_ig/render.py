@@ -68,3 +68,33 @@ def render_post(cfg: Config, post_id: int, hook: str, slides: list[dict], fmt: s
         img.save(path, "JPEG", quality=92)
         paths.append(path)
     return paths
+
+
+SW, SH = 1080, 1920
+SAFE_TOP, SAFE_BOTTOM = 260, 360
+
+
+def render_story(cfg: Config, post_id: int, frames: list[dict]) -> list[str]:
+    """Stories 9:16 respeitando as zonas de interface do app; identificação do advogado em cada quadro."""
+    bold = lambda s: _font(cfg.font_bold, "DejaVuSans-Bold.ttf", s)
+    regular = lambda s: _font(cfg.font_regular, "DejaVuSans.ttf", s)
+    logo = Image.open(cfg.logo_path).convert("RGBA") if os.path.exists(cfg.logo_path) else None
+    if logo:
+        logo.thumbnail((220, 130))
+    out_dir = os.path.join(cfg.media_dir, f"post_{post_id}")
+    os.makedirs(out_dir, exist_ok=True)
+    paths = []
+    for i, fr in enumerate(frames, 1):
+        img = Image.new("RGB", (SW, SH), cfg.brand_bg)
+        d = ImageDraw.Draw(img)
+        d.rectangle([MARGIN, SAFE_TOP, MARGIN + 100, SAFE_TOP + 10], fill=cfg.brand_accent)
+        y = _draw_block(d, fr["title"], bold(76), SAFE_TOP + 90, cfg.brand_accent, max_w=SW - 2 * MARGIN)
+        if fr.get("body"):
+            _draw_block(d, fr["body"], regular(46), y + 50, cfg.brand_fg, max_w=SW - 2 * MARGIN)
+        d.text((MARGIN, SH - SAFE_BOTTOM + 40), cfg.footer, font=regular(30), fill=cfg.brand_accent)
+        if logo:
+            img.paste(logo, (SW - MARGIN - logo.width, SAFE_TOP - 40), logo)
+        path = os.path.join(out_dir, f"story_{i:02d}.jpg")
+        img.save(path, "JPEG", quality=92)
+        paths.append(path)
+    return paths

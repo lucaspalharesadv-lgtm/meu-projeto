@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS metrics (
   fetched_at TEXT NOT NULL,
   reach INTEGER, likes INTEGER, comments INTEGER, saved INTEGER, shares INTEGER
 );
+CREATE TABLE IF NOT EXISTS kv (key TEXT PRIMARY KEY, value TEXT, at TEXT);
 CREATE TABLE IF NOT EXISTS conversations (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   ig_user TEXT NOT NULL UNIQUE,
@@ -59,6 +60,8 @@ def connect(path: str):
     conn = sqlite3.connect(path)
     conn.row_factory = sqlite3.Row
     conn.executescript(SCHEMA)
+    if "hook_style" not in {r[1] for r in conn.execute("PRAGMA table_info(posts)")}:
+        conn.execute("ALTER TABLE posts ADD COLUMN hook_style TEXT")
     try:
         yield conn
         conn.commit()
@@ -90,3 +93,15 @@ def get_post(conn, post_id: int) -> dict:
     for k in JSON_COLS:
         post[k] = json.loads(post[k]) if post[k] else None
     return post
+
+
+def kv_age_hours(conn, key: str) -> float:
+    row = conn.execute("SELECT at FROM kv WHERE key=?", (key,)).fetchone()
+    if row is None:
+        return float("inf")
+    return (datetime.now(timezone.utc) - datetime.fromisoformat(row[0])).total_seconds() / 3600
+
+
+def kv_touch(conn, key: str, value: str = "") -> None:
+    conn.execute("INSERT INTO kv (key, value, at) VALUES (?,?,?) ON CONFLICT(key) DO UPDATE SET value=?, at=?",
+                 (key, value, now_iso(), value, now_iso()))
