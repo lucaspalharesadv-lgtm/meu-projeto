@@ -40,6 +40,11 @@ class Config:
     whatsapp_url: str = os.getenv("WHATSAPP_URL", "")
     max_bot_replies: int = int(os.getenv("MAX_BOT_REPLIES", "10"))
 
+    eleven_key: str = os.getenv("ELEVENLABS_API_KEY", "")
+    eleven_voice: str = os.getenv("ELEVENLABS_VOICE_ID", "")
+    heygen_key: str = os.getenv("HEYGEN_API_KEY", "")
+    heygen_avatar: str = os.getenv("HEYGEN_AVATAR_ID", "")
+
     @property
     def footer(self) -> str:
         return f"{self.nome} | {self.oab} | {self.cidade}"

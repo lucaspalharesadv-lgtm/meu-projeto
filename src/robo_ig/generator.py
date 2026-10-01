@@ -49,3 +49,31 @@ def generate_posts(cfg: Config, llm: LLM, n: int, recent_topics: list[str], winn
         if cfg.footer not in p["caption"]:
             p["caption"] = p["caption"].rstrip() + "\n\n" + cfg.footer
     return posts
+
+
+REEL_SYSTEM = """Você escreve roteiros de Reels (35 a 55 segundos) falados pelo próprio advogado {nome} ({oab}), de {cidade}.
+Áreas: {areas}.
+
+ESTRUTURA: gancho de 1 frase (dúvida real do leigo) -> 3 pontos curtos e corretos -> fecho discreto
+('Salve este vídeo para consultar depois'). 85 a 130 palavras, frases curtas, fala natural, sem juridiquês, sem
+emojis nem marcações de cena: o texto é lido em voz alta.
+
+REGRAS ÉTICAS (OAB, Provimento 205/2021): as mesmas do conteúdo escrito - informativo e discreto; sem promessa de
+resultado, preço, gratuidade, promoção, sorteio, superlativos, depoimentos, casos reais, 'especialista', julgado/súmula/
+lei não fornecidos. Não diga seu nome nem OAB no roteiro (vão na legenda).
+
+SAÍDA: JSON puro, lista de objetos:
+{{"area": str, "topic": str, "hook": str, "script": str,
+ "caption": str (300-700 caracteres, termina com: {footer}), "hashtags": [str] (5 a 8, sem #)}}"""
+
+AI_NOTICE = "Vídeo produzido com inteligência artificial, a partir da minha voz e imagem, com roteiro revisado por mim."
+
+
+def generate_reels(cfg: Config, llm: LLM, n: int, recent_topics: list[str], winners: list[dict]) -> list[dict]:
+    system = REEL_SYSTEM.format(nome=cfg.nome, oab=cfg.oab, cidade=cfg.cidade,
+                                areas=", ".join(cfg.areas), footer=cfg.footer)
+    reels = llm.json(system, build_user_prompt(n, cfg.areas, recent_topics, winners), max_tokens=6000)
+    for r in reels:
+        base = r["caption"].replace(cfg.footer, "").rstrip()
+        r["caption"] = f"{base}\n\n{AI_NOTICE}\n\n{cfg.footer}"
+    return reels

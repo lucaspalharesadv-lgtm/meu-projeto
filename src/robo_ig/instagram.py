@@ -54,6 +54,13 @@ class InstagramClient:
         self._wait_ready(container)
         return self._call("POST", f"{uid}/media_publish", creation_id=container)["id"]
 
+    def publish_reel(self, video_path: str, caption: str) -> str:
+        uid = self.cfg.ig_user_id
+        container = self._call("POST", f"{uid}/media", media_type="REELS", video_url=self.public_url(video_path),
+                               caption=caption, share_to_feed="true")["id"]
+        self._wait_ready(container, tries=90)
+        return self._call("POST", f"{uid}/media_publish", creation_id=container)["id"]
+
     def insights(self, media_id: str) -> dict:
         data = self._call("GET", f"{media_id}/insights", metric="reach,likes,comments,saved,shares")["data"]
         return {m["name"]: m["values"][0]["value"] for m in data}

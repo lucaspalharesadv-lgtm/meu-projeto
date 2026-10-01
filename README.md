@@ -50,9 +50,21 @@ Para DMs de terceiros, a permissão `instagram_manage_messages` exige App Review
 - Urgência (prisão, violência, risco de vida, prazo vencendo) ou resposta reprovada pelo filtro OAB: passa direto para você.
 - Depois do repasse o robô fica em silêncio nessa conversa; você avisa quando assumir.
 
+## Fase 3 – Reels com sua voz e rosto (pronta)
+```
+robo-ig plan-reels -n 3     # roteiro -> filtro OAB -> voz (ElevenLabs) -> avatar (HeyGen) -> legenda + logo -> fila
+```
+1. Clone sua voz no ElevenLabs (Instant Voice Clone, com amostra sua) e crie seu avatar na HeyGen (a partir de vídeo seu);
+   preencha `ELEVENLABS_*` e `HEYGEN_*` no `.env`. **Requer `ffmpeg` instalado** (legenda palavra a palavra e logo).
+2. O filtro OAB roda no roteiro **antes** de gastar com voz/avatar. Roteiro em `needs_review` só vira vídeo quando você
+   rodar `robo-ig approve ID`; roteiro bloqueado nunca gera custo.
+3. A legenda ganha o aviso de que o vídeo foi produzido com IA a partir da sua voz e imagem (transparência; a Meta
+   também pede rótulo de conteúdo gerado por IA, marque no app se a opção aparecer).
+4. Publica como Reel (`media_type=REELS`) no mesmo `publish` do cron.
+
+Os endpoints da HeyGen estão em `avatar.py`, isolados: confira a documentação vigente no primeiro teste real.
+
 ## Próximas fases
-- **Fase 3 – Vídeo com voz e rosto:** roteiro → voz clonada (ElevenLabs) → avatar (HeyGen) → legenda e logo → Reels. Só com
-  consentimento próprio e aviso de conteúdo sintético quando exigido.
 - **Fase 4 – Otimização:** testes A/B de gancho, melhores horários por métrica, relatório semanal.
 
 ## Limites que o robô respeita

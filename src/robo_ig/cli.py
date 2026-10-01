@@ -9,6 +9,8 @@ def main() -> None:
     sub = p.add_subparsers(dest="cmd", required=True)
     plan = sub.add_parser("plan", help="gera N posts, aplica filtro OAB, renderiza e agenda")
     plan.add_argument("-n", type=int, default=7)
+    pr = sub.add_parser("plan-reels", help="gera roteiros de Reels, filtra e produz o vídeo com sua voz e rosto")
+    pr.add_argument("-n", type=int, default=3)
     sub.add_parser("publish", help="publica os aprovados cujo horário chegou (rodar no cron a cada 15 min)")
     sub.add_parser("insights", help="coleta métricas dos posts publicados")
     sub.add_parser("serve", help="sobe o webhook de DMs e comentários (porta 8000)")
@@ -24,6 +26,9 @@ def main() -> None:
         uvicorn.run("robo_ig.server:app", host="0.0.0.0", port=8000)
     elif a.cmd == "plan":
         for pid in pipeline.plan(cfg, a.n):
+            print("criado", pid)
+    elif a.cmd == "plan-reels":
+        for pid in pipeline.plan_reels(cfg, a.n):
             print("criado", pid)
     elif a.cmd == "publish":
         print("publicados:", pipeline.publish_due(cfg))
