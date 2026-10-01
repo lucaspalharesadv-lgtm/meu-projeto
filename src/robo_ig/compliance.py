@@ -89,8 +89,8 @@ citação de julgado/súmula/tema sem fonte fornecida (suspeita de invenção).
 Responda SOMENTE JSON: {"approved": bool, "issues": [{"trecho": str, "problema": str, "gravidade": "block"|"warn"}]}"""
 
 
-def judge_with_llm(llm, caption: str, slides: list[dict]) -> list[Finding]:
-    payload = {"legenda": caption, "slides": slides}
+def judge_with_llm(llm, caption: str, slides: list[dict], hook: str = "") -> list[Finding]:
+    payload = {"gancho": hook, "legenda": caption, "slides": slides}
     verdict = llm.json(JUDGE_SYSTEM, str(payload), max_tokens=1200)
     findings = [
         Finding("juiz_llm", i.get("gravidade", WARN) if i.get("gravidade") in (BLOCK, WARN) else WARN,

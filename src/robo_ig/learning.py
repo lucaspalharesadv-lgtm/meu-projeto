@@ -23,7 +23,7 @@ def kind_of(fmt: str) -> str:
 
 def post_scores(conn) -> list[dict]:
     rows = conn.execute("""
-        SELECT p.id, p.area, p.hook_style, p.format, p.published_at, p.topic,
+        SELECT p.id, p.area, p.hook, p.hook_style, p.format, p.published_at, p.topic,
                m.reach, m.likes, m.comments, m.saved, m.shares
         FROM posts p JOIN metrics m ON m.id = (SELECT MAX(id) FROM metrics WHERE post_id = p.id)
         WHERE p.status='published' AND m.reach > 0 AND p.topic NOT LIKE 'teaser:%'""").fetchall()

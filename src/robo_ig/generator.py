@@ -34,7 +34,7 @@ def build_user_prompt(n: int, assignments: list[tuple[str, str]], recent_topics:
     parts = [f"Gere exatamente {n} itens, na ordem, cada um com a área e o estilo de gancho indicados. "
              f"Devolva em cada objeto o campo hook_style com o estilo usado.\n{plan}"]
     if winners:
-        lines = "\n".join(f"- [{w['area']}] {w['topic']} (hook: {w['hook']})" for w in winners)
+        lines = "\n".join(f"- [{w['area']}] {w['topic']} | gancho ({w.get('style') or 'sem estilo'}): {w['hook']}" for w in winners)
         parts.append("Posts anteriores de MELHOR desempenho (mesmo estilo/ângulo, outros temas):\n" + lines)
     if recent_topics:
         parts.append("NÃO repita estes temas recentes:\n" + "\n".join(f"- {t}" for t in recent_topics))

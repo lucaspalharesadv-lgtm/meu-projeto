@@ -51,6 +51,7 @@ class Config:
     window_start: int = int(os.getenv("WINDOW_START", "7"))
     window_end: int = int(os.getenv("WINDOW_END", "22"))
     explore: float = float(os.getenv("EXPLORE", "0.2"))
+    review_all: bool = os.getenv("REVIEW_ALL", "true").strip().lower() != "false"
 
     @property
     def mix(self) -> dict[str, int]:

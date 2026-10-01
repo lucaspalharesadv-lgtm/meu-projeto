@@ -1,6 +1,12 @@
 # robo-ig — Instagram da advocacia no piloto automático (com filtro OAB)
 
-**Fase 1 (pronta):** gera pauta → legenda + carrossel → arte com sua marca/logo → filtro OAB (regras + revisor IA)
+> **Estado real (01/10/2026):** todo o código foi testado com objetos simulados (44 testes). **Nenhuma chamada real** foi feita à
+> Meta, à Claude API, ao ElevenLabs ou à HeyGen; nada está em produção. Os endpoints da HeyGen não foram validados e DM de
+> terceiros exige App Review da Meta. Por padrão `REVIEW_ALL=true`: tudo passa pela sua aprovação (`robo-ig approve ID`) até
+> você decidir liberar a publicação automática.
+
+
+**Fase 1 (implementada; testada só com simulações):** gera pauta → legenda + carrossel → arte com sua marca/logo → filtro OAB (regras + revisor IA)
 → agenda → publica pela **API oficial** da Meta → coleta métricas e usa o que mais funcionou para gerar os próximos.
 
 ```
@@ -11,7 +17,7 @@ plan ─► Claude gera posts ─► filtro OAB (regras + juiz IA) ─► arte (
 ```
 
 ## Autonomia
-- Sem nenhum achado no filtro: **publica sozinho** no horário (`POST_HOURS`).
+- Com `REVIEW_ALL=false` e nenhum achado no filtro: **publica sozinho** no horário. Padrão atual (`true`): todo post espera sua aprovação.
 - Achado leve (`warn`, ex.: "especialista", valores em R$): vai para `needs_review` e você é avisado (Telegram opcional).
 - Achado grave (`block`: promessa de resultado, preço/gratuidade, depoimento, sorteio, superlativo, nº de processo): nunca publica.
 
@@ -39,7 +45,7 @@ robo-ig publish          # cron: */15 * * * *
 robo-ig insights         # cron: diário
 ```
 
-## Fase 2 – DM e comentários (pronta)
+## Fase 2 – DM e comentários (implementada; testada só com simulações)
 `robo-ig serve` sobe o webhook (`/webhook`, porta 8000, atrás de HTTPS). No app Meta, assine os campos `messages` e
 `comments` do Instagram e use `WEBHOOK_VERIFY_TOKEN` e `META_APP_SECRET` do `.env` (a assinatura X-Hub-Signature-256 é validada).
 Para DMs de terceiros, a permissão `instagram_manage_messages` exige App Review da Meta.
@@ -50,7 +56,7 @@ Para DMs de terceiros, a permissão `instagram_manage_messages` exige App Review
 - Urgência (prisão, violência, risco de vida, prazo vencendo) ou resposta reprovada pelo filtro OAB: passa direto para você.
 - Depois do repasse o robô fica em silêncio nessa conversa; você avisa quando assumir.
 
-## Fase 3 – Reels com sua voz e rosto (pronta)
+## Fase 3 – Reels com sua voz e rosto (implementada; testada só com simulações)
 ```
 robo-ig plan-reels -n 3     # roteiro -> filtro OAB -> voz (ElevenLabs) -> avatar (HeyGen) -> legenda + logo -> fila
 ```
@@ -64,7 +70,7 @@ robo-ig plan-reels -n 3     # roteiro -> filtro OAB -> voz (ElevenLabs) -> avata
 
 Os endpoints da HeyGen estão em `avatar.py`, isolados: confira a documentação vigente no primeiro teste real.
 
-## Fase 4 – Piloto automático de marketing (pronta)
+## Fase 4 – Piloto automático de marketing (implementada; testada só com simulações)
 Um único cron faz tudo: `*/15 * * * * robo-ig tick` (e `robo-ig serve` ligado para as DMs).
 
 | O que | Como |

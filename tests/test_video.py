@@ -28,7 +28,7 @@ def test_finish_video_with_real_ffmpeg(tmp_path):
     subprocess.run(["ffmpeg", "-y", "-f", "lavfi", "-i", "color=c=black:s=360x640:d=2", "-f", "lavfi",
                     "-i", "sine=d=2", "-shortest", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(src)],
                    check=True, capture_output=True)
-    cfg = replace(Config(), logo_path=str(tmp_path / "nao_existe.png"))
+    cfg = replace(Config(), review_all=False, logo_path=str(tmp_path / "nao_existe.png"))
     words = [{"word": "teste", "start": 0, "end": 1}, {"word": "legenda", "start": 1, "end": 1.9}]
     out = finish_video(cfg, str(src), words, str(tmp_path))
     assert (tmp_path / "reel.mp4").stat().st_size > 0 and out.endswith("reel.mp4")
@@ -37,7 +37,7 @@ def test_finish_video_with_real_ffmpeg(tmp_path):
 def test_logo_branch_uses_overlay(tmp_path):
     logo = tmp_path / "l.png"
     logo.write_bytes(b"x")
-    args = ffmpeg_args(replace(Config(), logo_path=str(logo)), "a.mp4", "s.srt", "o.mp4")
+    args = ffmpeg_args(replace(Config(), review_all=False, logo_path=str(logo)), "a.mp4", "s.srt", "o.mp4")
     assert "-filter_complex" in args
 
 
@@ -59,7 +59,7 @@ def status(cfg, pid):
 
 
 def test_reel_auto_generates_video(tmp_path, monkeypatch):
-    cfg = replace(Config(), db_path=str(tmp_path / "t.db"), media_dir=str(tmp_path / "pub"))
+    cfg = replace(Config(), review_all=False, db_path=str(tmp_path / "t.db"), media_dir=str(tmp_path / "pub"))
     monkeypatch.setattr(pipeline, "produce_reel", lambda c, pid, script: "/x/reel.mp4")
     pid = _reel(cfg, "Plano de saúde negou? Peça a negativa por escrito.")
     assert pipeline.process(cfg, pid, OkLLM()) == "approved"
@@ -67,14 +67,14 @@ def test_reel_auto_generates_video(tmp_path, monkeypatch):
 
 
 def test_reel_blocked_script_costs_nothing(tmp_path, monkeypatch):
-    cfg = replace(Config(), db_path=str(tmp_path / "t.db"))
+    cfg = replace(Config(), review_all=False, db_path=str(tmp_path / "t.db"))
     monkeypatch.setattr(pipeline, "produce_reel", lambda *a: pytest.fail("não deveria gerar vídeo"))
     pid = _reel(cfg, "Garantimos resultado na sua causa.")
     assert pipeline.process(cfg, pid, OkLLM()) == "blocked"
 
 
 def test_reel_review_then_approve_makes_video(tmp_path, monkeypatch):
-    cfg = replace(Config(), db_path=str(tmp_path / "t.db"))
+    cfg = replace(Config(), review_all=False, db_path=str(tmp_path / "t.db"))
     calls = []
     monkeypatch.setattr(pipeline, "produce_reel", lambda c, pid, script: calls.append(pid) or "/x/r.mp4")
     pid = _reel(cfg, "Sou especialista em INSS e explico o recurso.")
@@ -84,7 +84,7 @@ def test_reel_review_then_approve_makes_video(tmp_path, monkeypatch):
 
 
 def test_reel_video_failure_is_recorded(tmp_path, monkeypatch):
-    cfg = replace(Config(), db_path=str(tmp_path / "t.db"))
+    cfg = replace(Config(), review_all=False, db_path=str(tmp_path / "t.db"))
     def boom(*a): raise RuntimeError("heygen fora")
     monkeypatch.setattr(pipeline, "produce_reel", boom)
     pid = _reel(cfg, "Explicação geral sobre recurso.")

@@ -16,7 +16,7 @@ TEASER_PREFIX = "teaser:"
 
 def top_performers(conn, limit: int = 5) -> list[dict]:
     rows = sorted(learning.post_scores(conn), key=lambda r: r["score"], reverse=True)[:limit]
-    return [{"area": r["area"], "topic": r["topic"], "hook": r["hook_style"] or ""} for r in rows]
+    return [{"area": r["area"], "topic": r["topic"], "hook": r["hook"] or "", "style": r["hook_style"] or ""} for r in rows]
 
 
 def _tags(d: dict) -> str:
@@ -105,8 +105,10 @@ def process(cfg: Config, post_id: int, llm: LLM | None = None) -> str:
         findings = compliance.check_post(post["caption"], post["slides_json"], cfg.oab, post["hook"] or "",
                                          require_id=not story)
         if not any(f.severity == compliance.BLOCK for f in findings):
-            findings += compliance.judge_with_llm(llm, post["caption"], post["slides_json"])
+            findings += compliance.judge_with_llm(llm, post["caption"], post["slides_json"], post["hook"] or "")
         decision = compliance.decide(findings)
+        if decision == "auto" and cfg.review_all:
+            decision = "review"
         status = {"auto": "approved", "review": "needs_review", "block": "blocked"}[decision]
         if post["format"] == "reel":
             # vídeo custa dinheiro: só é gerado quando o roteiro está liberado
@@ -120,7 +122,7 @@ def process(cfg: Config, post_id: int, llm: LLM | None = None) -> str:
             db.update_post(conn, post_id, status=status, compliance_json=compliance.to_dicts(findings),
                            image_paths_json=paths)
     if decision != "auto":
-        motivos = "; ".join(f"{f.rule}: {f.excerpt or f.message}" for f in findings[:4])
+        motivos = "; ".join(f"{f.rule}: {f.excerpt or f.message}" for f in findings[:4]) or "aguardando sua aprovação (REVIEW_ALL)"
         notify(cfg, f"Post #{post_id} ({post['topic']}) -> {status}. {motivos}")
     return status
 

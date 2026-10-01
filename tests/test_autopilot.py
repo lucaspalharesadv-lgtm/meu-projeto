@@ -11,7 +11,7 @@ from robo_ig.config import Config
 
 @pytest.fixture
 def cfg(tmp_path):
-    return replace(Config(), db_path=str(tmp_path / "t.db"), media_dir=str(tmp_path / "pub"),
+    return replace(Config(), review_all=False, db_path=str(tmp_path / "t.db"), media_dir=str(tmp_path / "pub"),
                    logo_path=str(tmp_path / "x.png"), explore=0.0)
 
 
@@ -179,3 +179,37 @@ def test_report_contents(cfg, tmp_path, monkeypatch):
     text = report.weekly(cfg)
     assert "19h" in text and "mito vs verdade" in text and "repassadas a você: 1" in text
     assert list((tmp_path / "data/reports").glob("*.md"))
+
+
+class SpyLLM:
+    def __init__(self): self.seen = ""
+    def json(self, system, user, **k):
+        self.seen = user
+        return {"approved": True, "issues": []}
+
+
+def test_judge_receives_the_hook(cfg):
+    pid = _story(cfg, [{"title": "ok", "body": "ok"}], hook="Gancho que o juiz precisa ver")
+    spy = SpyLLM()
+    pipeline.process(cfg, pid, spy)
+    assert "Gancho que o juiz precisa ver" in spy.seen
+
+
+def test_winners_carry_hook_text_and_style(cfg):
+    with db.connect(cfg.db_path) as c:
+        pid = add_published(c, cfg, 12, saved=50, style="mito vs verdade")
+        c.execute("UPDATE posts SET hook='Mito: plano pode negar tudo' WHERE id=?", (pid,))
+        winners = pipeline.top_performers(c)
+    assert winners[0]["hook"] == "Mito: plano pode negar tudo" and winners[0]["style"] == "mito vs verdade"
+    from robo_ig.generator import build_user_prompt
+    prompt = build_user_prompt(1, [("saúde", "pergunta direta")], [], winners)
+    assert "Mito: plano pode negar tudo" in prompt and "mito vs verdade" in prompt
+
+
+def test_review_all_is_default_and_blocks_auto_publish(cfg):
+    assert Config().review_all is True
+    strict = replace(cfg, review_all=True)
+    pid = _story(strict, [{"title": "Você sabia?", "body": "Negativa de plano deve ser por escrito."}])
+    assert pipeline.process(strict, pid, OkLLM()) == "needs_review"
+    pipeline.set_status(strict, pid, "approved")
+    assert get(strict, pid)["status"] == "approved"
