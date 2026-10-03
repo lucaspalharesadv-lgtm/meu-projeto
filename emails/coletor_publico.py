@@ -28,9 +28,30 @@ BAD_LOCAL = ("ouvidoria","imprensa","comunicacao","assessoriadeimprensa","asscom
              "postmaster","abuse","seuemail","exemplo","teste","contato.ti","cpd@","informatica","sistemas","ti@")
 SUBPATHS = ("contato","fale-conosco","contatos","institucional/contato")
 JIPA = re.compile(r"ji[\s\-]?paran[aá]", re.I)
-BADSETOR = re.compile(r"estagi|distribu|f[oó]rum digital|\bfd[a-z]{4,}|gex[a-z]{2,3}@|ger[eê]ncia.executiva|superintend[eê]ncia regional|cart[oó]rio|biblioteca|plant[aã]o|"
-                      r"cejusc|hospital|ambulat|escola|esmaf|\beje\b|eje@|museu|cerimonial|eventos|discente|vestibular|divis[aã]o de capta|dicap|corregedoria", re.I)
+BADSETOR = re.compile(
+    r"estagi|distribu|f[oó]rum digital|\bfd[a-z]{4,}|gex[a-z]{2,3}@|ger[eê]ncia.executiva|superintend[eê]ncia regional|cart[oó]rio|"
+    r"biblioteca|plant[aã]o|cejusc|hospitalar|ambulat|escola|esmaf|\beje\b|eje@|museu|cerimonial|eventos|discente|vestibular|"
+    r"divis[aã]o de capta|dicap|corregedoria|inteligencia|casamilitar|defesacivil|datasus|agenda|atend\.?judicial|apoiosaab|canais|"
+    r"inscri|seadi|auditoria|secom|arquivo|recepcao|crs(leste|sul|norte|oeste|centro)|gabinetesaude|(^|[._-])ti([._@-]|$)|diretoria\.saude|falecom|procuradoriadamulher|rtv@|dio@|esesp|informacao|ouv",
+    re.I)
 TARGET = 600
+FIRSTNAMES = set("""alan alex alexandre ana andre andrea angela antonio augusto beatriz bruno camila carlos carolina claudia claudio cristiano daniel daniela david debora diego edilson edson eduardo elaine elisa eurico fabio fabiana felipe fernanda fernando flavio francisco gabriel gabriela gustavo helena henrique igor isabela jorge jose joao julia juliana julio larissa leandro leonardo lucas luciana luis luiz marcelo marcello marcia marcio marco marcos maria mariana mario mauricio miguel monica nadja nereida natalia nelson patricia paulo pedro rafael rafaela renata ricardo roberto rodrigo rogerio ronaldo sandra sergio silvia simone sonia tereza thiago vanessa vicente victor vinicius vitor wagner walter wilson guilherme""".split())
+SURNAMES = set("calazans badaro moraes esteves terto vicentini pessoa mendes barroso fux gilmar toffoli lewandowski zanin dino cristianozanin".split())
+PERSON_PREFIX = re.compile(r"^(sen|dep|ver|des|min|juiz|prom|cons)[._-]|conselheir|desembargador|ministro\b|procuradoreu", re.I)
+GENERIC = set("gabinete presidencia vice secretaria geral protocolo juridico juridica procuradoria consultoria diretoria gestao pessoas pessoal rh recursos humanos folha atendimento administracao administrativo assessoria assessor chefia chefe sgp dgp segep sead seplag casa civil contato fale conosco legislativo legislativa executivo procurador procuradora adjunto adjunta subprocuradoria subchefia".split())
+def is_person(local):
+    if PERSON_PREFIX.search(local): return True
+    toks = [t for t in re.split(r"[._\-]", local) if t]
+    for t in toks:
+        if t in SURNAMES or any(t.startswith(sn) and len(sn) >= 6 for sn in SURNAMES): return True
+        if t in FIRSTNAMES and len(toks) > 1: return True
+        for fn in FIRSTNAMES:
+            if len(fn) >= 5 and len(t) > len(fn) and (t.startswith(fn) or t.endswith(fn)): return True
+    if len(toks) == 2 and all(t.isalpha() and len(t) >= 4 for t in toks) and not any(t in GENERIC for t in toks): return True
+    m = re.match(r"^gab([a-z]{4,})$", local)
+    if m and not local.startswith("gabinete") and m.group(1) not in ("sgp","dg","pres","presidencia","vice","pc","secretaria") and not any(g in m.group(1) for g in GENERIC): return True
+    return False
+VARA = re.compile(r"vara|fr[uo]m|forum|comarca|juizado|promotoria|jvd|vepma|criminal|execucao|cartorio", re.I)
 
 def get(url, timeout=12):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "pt-BR,pt;q=0.9"})
@@ -99,6 +120,24 @@ def tipo(local, cargo=""):
     if re.search(r"protocolo|secretaria|atendimento|administra|recepcao|expediente|geral|contato|faleconosco|fale", s): return "Secretaria/Protocolo"
     return "Nominal (cargo)"
 
+UFS = "ac al am ap ba ce df es go ma mg ms mt pa pb pe pi pr rj rn ro rr rs sc se sp to".split()
+def rotulo_dominio(dom):
+    lab = dom.split(".")[0].lower(); sfx = dom.lower()
+    m = re.match(r"^(tj|tre|mp|dpe|pge|tce|cge|al|tjm)-?([a-z]{2})$", lab)
+    uf = m.group(2) if m and m.group(2) in UFS else ""
+    nomes = {"tj": "Tribunal de Justiça", "tre": "TRE", "mp": "Ministério Público", "dpe": "Defensoria Pública", "pge": "PGE", "tce": "TCE", "cge": "CGE", "al": "Assembleia Legislativa", "tjm": "TJM"}
+    if m: return (f"{nomes[m.group(1)]} {uf.upper()}", uf.upper())
+    m = re.match(r"^(trt|trf)(\d+)?$", lab)
+    if m: return (f"{m.group(1).upper()}{'-' + m.group(2) + 'ª Região' if m.group(2) else ''}", "")
+    return (lab.upper(), "")
+
+def categoria_por_dominio(dom, cat):
+    d = dom.lower()
+    if d.endswith(".jus.br"):
+        return "judiciario_federal" if re.match(r"^(trf|trt|tre|tst|tse|stj|stf|stm|cnj|cjf)", d.split(".")[0]) else "judiciario_estadual"
+    if d.endswith(".mp.br") or d.endswith(".def.br"): return "mp_defensorias"
+    return cat
+
 def esfera(orgao, uf):
     o = orgao.lower()
     if re.search(r"municipal|prefeitura|munic[ií]pio|c[aâ]mara municipal", o): return "municipal"
@@ -135,10 +174,18 @@ def main():
         email = clean(email)
         if not email or email in rows: return
         local, dom = email.split("@")
+        cat = categoria_por_dominio(dom, cat)
+        try: src_root = root(urllib.parse.urlparse(url).netloc)
+        except Exception: src_root = ""
+        if src_root and root(dom) != src_root:                       # pagina lista contatos de outros orgaos
+            orgao, uf2 = rotulo_dominio(dom); uf = uf2 or ""; cidade = ""
         t = tipo(local, cargo)
         ji = bool(JIPA.search(cidade)) or ("ji-paran" in (orgao or "").lower())
         if re.search(r"estagi", cargo + " " + email, re.I): return
-        if BADSETOR.search(cargo + " " + email + " " + (orgao or "")) and not re.search(r"gest[aã]o de pessoas|recursos humanos", cargo, re.I): return
+        if re.match(r"^\d", local) or is_person(local) or ("@" in email and VARA.search(local) and "jipa" not in local and not JIPA.search(cidade)): return
+        if BADSETOR.search(cargo + " " + email + " " + (orgao or "")): return
+        if re.match(r"^gabinete\d|^gabinetede[a-z]{8,}|^pj[a-z]|^pr[a-z]{2}-|oficio", local): return
+        if dom.endswith("cnj.jus.br") and local.startswith(("gabinete", "gab.")): return
         if t == "Nominal (cargo)" and not cargo: return                  # sem cargo/setor publicado: nao entra
         if ji and t in ("Gabinete/Chefia", "Juridico/Procuradoria", "Nominal (cargo)"): return   # Ji-Parana: so contatos gerais
         rows[email] = dict(orgao=orgao, esfera=esfera(orgao, uf), uf=uf, cidade=cidade, categoria=cat, setor_cargo=cargo or t,
@@ -163,7 +210,9 @@ def main():
     per, out = {}, []
     for r in cand:
         d = r["email"].split("@")[1]
-        if per.get(d, 0) < 5: per[d] = per.get(d, 0) + 1; out.append(r)
+        suf = ".".join(d.split(".")[-3:]) if d.endswith((".gov.br", ".leg.br", ".jus.br")) else d
+        if per.get(d, 0) < 5 and per.get("sfx:" + suf, 0) < 14:
+            per[d] = per.get(d, 0) + 1; per["sfx:" + suf] = per.get("sfx:" + suf, 0) + 1; out.append(r)
     while len(out) > TARGET:
         cnt = Counter(r["categoria"] for r in out if r["ji_parana"] != "sim" and r["categoria"] != "ji_parana_regiao")
         big = cnt.most_common(1)[0][0]
