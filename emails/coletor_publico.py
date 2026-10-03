@@ -11,6 +11,7 @@ ouvidoria, imprensa, LGPD, e-SIC; dominio com MX; em Ji-Parana so contatos gerai
 secretaria), nunca gestores; no maximo 5 por dominio.
 """
 import csv, glob, html, os, re, ssl, sys, json, datetime, urllib.parse, urllib.request, concurrent.futures as cf
+from collections import Counter
 import dns.resolver
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -27,6 +28,9 @@ BAD_LOCAL = ("ouvidoria","imprensa","comunicacao","assessoriadeimprensa","asscom
              "postmaster","abuse","seuemail","exemplo","teste","contato.ti","cpd@","informatica","sistemas","ti@")
 SUBPATHS = ("contato","fale-conosco","contatos","institucional/contato")
 JIPA = re.compile(r"ji[\s\-]?paran[aá]", re.I)
+BADSETOR = re.compile(r"estagi|distribu|f[oó]rum digital|\bfd[a-z]{4,}|gex[a-z]{2,3}@|ger[eê]ncia.executiva|superintend[eê]ncia regional|cart[oó]rio|biblioteca|plant[aã]o|"
+                      r"cejusc|hospital|ambulat|escola|esmaf|\beje\b|eje@|museu|cerimonial|eventos|discente|vestibular|divis[aã]o de capta|dicap|corregedoria", re.I)
+TARGET = 600
 
 def get(url, timeout=12):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "pt-BR,pt;q=0.9"})
@@ -51,6 +55,7 @@ def deob(t):
     return re.sub(r"mailto:", " ", t, flags=re.I)
 
 def clean(e):
+    e = re.sub(r"^(?:u003[ce]|x3[ce]|&gt;|&lt;)+", "", e.strip().lower())
     e = e.strip(".,;:-_%+").lower()
     if e.endswith(BAD_EXT): return None
     local, _, dom = e.partition("@")
@@ -132,6 +137,8 @@ def main():
         local, dom = email.split("@")
         t = tipo(local, cargo)
         ji = bool(JIPA.search(cidade)) or ("ji-paran" in (orgao or "").lower())
+        if re.search(r"estagi", cargo + " " + email, re.I): return
+        if BADSETOR.search(cargo + " " + email + " " + (orgao or "")) and not re.search(r"gest[aã]o de pessoas|recursos humanos", cargo, re.I): return
         if t == "Nominal (cargo)" and not cargo: return                  # sem cargo/setor publicado: nao entra
         if ji and t in ("Gabinete/Chefia", "Juridico/Procuradoria", "Nominal (cargo)"): return   # Ji-Parana: so contatos gerais
         rows[email] = dict(orgao=orgao, esfera=esfera(orgao, uf), uf=uf, cidade=cidade, categoria=cat, setor_cargo=cargo or t,
@@ -157,10 +164,15 @@ def main():
     for r in cand:
         d = r["email"].split("@")[1]
         if per.get(d, 0) < 5: per[d] = per.get(d, 0) + 1; out.append(r)
+    while len(out) > TARGET:
+        cnt = Counter(r["categoria"] for r in out if r["ji_parana"] != "sim" and r["categoria"] != "ji_parana_regiao")
+        big = cnt.most_common(1)[0][0]
+        idx = max((i for i, r in enumerate(out) if r["categoria"] == big and r["ji_parana"] != "sim"),
+                  key=lambda i: (prio[out[i]["tipo"]], out[i]["confianca"] != "alta", i))
+        out.pop(idx)
     cols = ["orgao","esfera","uf","cidade","categoria","setor_cargo","email","tipo","fonte","data","confianca","ji_parana","detalhe_institucional"]
     with open(f"{PUB}/resultado_publico.csv", "w", newline="", encoding="utf8") as fh:
         w = csv.DictWriter(fh, cols); w.writeheader(); w.writerows(out)
-    from collections import Counter
     print(f"\nTOTAL: {len(out)} contatos institucionais ({len(rows)-len(cand)} sem MX, {len(cand)-len(out)} cortados pelo limite por dominio)")
     print("por categoria:", dict(Counter(r["categoria"] for r in out)))
     print("por tipo:", dict(Counter(r["tipo"] for r in out)))
