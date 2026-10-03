@@ -40,7 +40,7 @@ for n in ['Como usar: a aba "Contatos" tem filtros em cada coluna; a aba "Textos
           'A coluna Status controla o envio: vazio = não enviado; "rascunho" = rascunho criado no Gmail; "enviado"; "não contatar" = pediu para parar.',
           "São caixas institucionais de cargo ou setor, publicadas pelos próprios órgãos. Não há dados pessoais nem e-mails de webmail.",
           "Em Ji-Paraná só entram contatos gerais (RH, protocolo, secretaria), nunca gestores, e a frase de mudança não aparece nesses e-mails.",
-          "Nenhum e-mail foi enviado. Os 5 primeiros estão como rascunho no Gmail, para revisão."]:
+          "Nenhum e-mail foi enviado ainda. Cada e-mail deve sair COM o currículo em PDF anexado."]:
     ws.cell(r, 1, n).alignment = Alignment(wrap_text=True, vertical="top"); ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=6)
     ws.row_dimensions[r].height = 32; r += 1
 ws.column_dimensions["A"].width = 46; ws.column_dimensions["B"].width = 12

@@ -18,7 +18,7 @@ import csv, hashlib, os, re, sys, urllib.parse
 HERE = os.path.dirname(os.path.abspath(__file__))
 PUB = f"{HERE}/publico"
 CV_LINK = sys.argv[1] if len(sys.argv) > 1 else "[LINK DO CURRICULO]"
-PREF = "Currículo" if CV_LINK.startswith("http") else "Candidatura"
+PREFS = ["Currículo", "Candidatura"]
 
 def pick(key, opts):
     return opts[int(hashlib.md5(key.encode()).hexdigest(), 16) % len(opts)]
@@ -110,6 +110,7 @@ MOVE_GENERIC = ["Moro em Ji-Paraná/RO e tenho total disponibilidade para me mud
 MOVE_JI = "Estou à disposição para colaborar, presencialmente, com a equipe local."
 
 def subject(r, key, usar_cidade, dest):
+    PREF = pick(key + "p", PREFS)
     if r["ji_parana"] == "sim":
         return pick(key, ["Advogado de Ji-Paraná, ex-estagiário da Justiça Federal e da AGU, à disposição",
                           f"{PREF}: advogado de Ji-Paraná com 150+ processos e passagem pela AGU e Justiça Federal"])
@@ -139,7 +140,7 @@ def body(r, key):
     else: mv = pick(key + "m", MOVE_GENERIC)
     ask = pick(key + "q", ASK.get(r["tipo"], ASK["Nominal (cargo)"]))
     partes = [saud, cat, pick(key + "c", CRED), pick(key + "s", START), pick(key + "a", ADMIN) + " " + pick(key + "t", TOOLS), mv, ask,
-              (f"Meu currículo: {CV_LINK}" if CV_LINK.startswith("http") else pick(key + "l", ["Posso enviar meu currículo completo, em PDF, em resposta a este e-mail.", "Envio meu currículo completo, em PDF, assim que desejarem."])),
+              (f"Meu currículo: {CV_LINK}" if CV_LINK.startswith("http") else pick(key + "l", ["Segue meu currículo em anexo.", "Meu currículo segue em anexo, para a sua apreciação.", "Encaminho, em anexo, o meu currículo."])),
               "Se preferirem não receber novas mensagens, basta responder e não voltarei a escrever.",
               "Atenciosamente,\nLucas Alexandre Horas Palhares\nAdvogado | OAB/RO 11.037\n(69) 99335-9788 | lucaspalharesadv@gmail.com"]
     return "\n\n".join(partes), subject(r, key, usar_cidade, dest)
