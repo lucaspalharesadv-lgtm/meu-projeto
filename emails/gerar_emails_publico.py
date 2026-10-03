@@ -140,6 +140,7 @@ def body(r, key):
     ask = pick(key + "q", ASK.get(r["tipo"], ASK["Nominal (cargo)"]))
     partes = [saud, cat, pick(key + "c", CRED), pick(key + "s", START), pick(key + "a", ADMIN) + " " + pick(key + "t", TOOLS), mv, ask,
               (f"Meu currículo: {CV_LINK}" if CV_LINK.startswith("http") else pick(key + "l", ["Posso enviar meu currículo completo, em PDF, em resposta a este e-mail.", "Envio meu currículo completo, em PDF, assim que desejarem."])),
+              "Se preferirem não receber novas mensagens, basta responder e não voltarei a escrever.",
               "Atenciosamente,\nLucas Alexandre Horas Palhares\nAdvogado | OAB/RO 11.037\n(69) 99335-9788 | lucaspalharesadv@gmail.com"]
     return "\n\n".join(partes), subject(r, key, usar_cidade, dest)
 
