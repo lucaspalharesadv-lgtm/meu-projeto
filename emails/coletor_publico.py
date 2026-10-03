@@ -43,7 +43,7 @@ def is_person(local):
     if PERSON_PREFIX.search(local): return True
     toks = [t for t in re.split(r"[._\-]", local) if t]
     for t in toks:
-        if t in SURNAMES or any(t.startswith(sn) and len(sn) >= 6 for sn in SURNAMES): return True
+        if t in SURNAMES or any(t.startswith(sn) and len(sn) >= 8 for sn in SURNAMES): return True
         if t in FIRSTNAMES and len(toks) > 1: return True
         for fn in FIRSTNAMES:
             if len(fn) >= 5 and len(t) > len(fn) and (t.startswith(fn) or t.endswith(fn)): return True
@@ -182,6 +182,7 @@ def main():
         t = tipo(local, cargo)
         ji = bool(JIPA.search(cidade)) or ("ji-paran" in (orgao or "").lower())
         if re.search(r"estagi", cargo + " " + email, re.I): return
+        if re.match(r"^[a-z][._-]", local): return
         if re.match(r"^\d", local) or is_person(local) or ("@" in email and VARA.search(local) and "jipa" not in local and not JIPA.search(cidade)): return
         if BADSETOR.search(cargo + " " + email + " " + (orgao or "")): return
         if re.match(r"^gabinete\d|^gabinetede[a-z]{8,}|^pj[a-z]|^pr[a-z]{2}-|oficio", local): return
