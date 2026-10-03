@@ -91,18 +91,37 @@ def main():
                 e = clean(deob(c[0]))
                 if e and EMAIL_RE.fullmatch(e): pre.append((seg, e, c[1]))
     print(f"{len(jobs)} sites para visitar | {len(pre)} e-mails vindos das buscas", flush=True)
+    import json
+    cpath = f"{HERE}/visited.json"
+    cache = json.load(open(cpath)) if os.path.exists(cpath) else {}
+    todo = [j for j in jobs if j[1] not in cache]
+    print(f"{len(jobs)-len(todo)} sites ja visitados (cache), {len(todo)} novos", flush=True)
     with cf.ThreadPoolExecutor(24) as ex:
-        for i, ((seg, u), res) in enumerate(zip(jobs, ex.map(lambda j: scrape(j[1]), jobs))):
-            for e, src in res.items(): rows.setdefault(e, (seg, src))
-            if i % 100 == 0: print(f"  {i}/{len(jobs)} sites, {len(rows)} e-mails", flush=True)
+        for i, ((seg, u), res) in enumerate(zip(todo, ex.map(lambda j: scrape(j[1]), todo))):
+            cache[u] = {"seg": seg, "found": res}
+            if i % 100 == 0: print(f"  {i}/{len(todo)} novos", flush=True)
+    json.dump(cache, open(cpath, "w"), ensure_ascii=False)
+    for seg, u in jobs:
+        for e, src in cache[u]["found"].items(): rows.setdefault(e, (seg, src))
     for seg, e, src in pre: rows.setdefault(e, (seg, src))
     doms = sorted({e.split("@")[1] for e in rows})
     with cf.ThreadPoolExecutor(32) as ex: list(ex.map(mx_ok, doms))
-    out = [(e, tipo(e), s, src) for e, (s, src) in rows.items() if mx_ok(e.split("@")[1])]
+    # so institucional: sem webmail gratuito e sem endereco nominal de pessoa fisica
+    FREE = {"gmail.com","hotmail.com","outlook.com","yahoo.com","yahoo.com.br","uol.com.br","bol.com.br","live.com","icloud.com","terra.com.br","ig.com.br","msn.com","globo.com","r7.com"}
+    cand = [(e, tipo(e), s, src) for e, (s, src) in rows.items() if mx_ok(e.split("@")[1])]
+    excl_free = sum(1 for c in cand if c[0].split("@")[1] in FREE)
+    excl_nom = sum(1 for c in cand if c[0].split("@")[1] not in FREE and c[1] == "Nominal")
+    cand = [c for c in cand if c[0].split("@")[1] not in FREE and c[1] != "Nominal"]
+    prio = {"RH": 0, "Decisor/Juridico": 1, "Generico": 2}
+    cand.sort(key=lambda c: prio[c[1]]); per, out = {}, []
+    for c in cand:                                   # no maximo 4 por dominio
+        d = c[0].split("@")[1]
+        if per.get(d, 0) < 4: per[d] = per.get(d, 0) + 1; out.append(c)
+    print(f"excluidos: {excl_free} webmail gratuito, {excl_nom} nominais (pessoa fisica)")
     # remove ruido: caixas de provedor gratuito so entram se vieram de pagina do proprio site (mantem), duplicatas ja tratadas
     with open(f"{HERE}/resultado.csv", "w", newline="", encoding="utf8") as f:
         w = csv.writer(f); w.writerow(["email","tipo","segmento","fonte"]); w.writerows(sorted(out, key=lambda r: (r[1], r[0])))
-    print(f"\nTOTAL: {len(out)} e-mails validos ({len(rows)-len(out)} descartados por dominio sem MX)")
+    print(f"\nTOTAL: {len(out)} e-mails institucionais validos")
     from collections import Counter
     print(Counter(r[2] for r in out)); print(Counter(r[1] for r in out))
 
