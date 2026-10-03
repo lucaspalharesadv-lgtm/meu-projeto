@@ -1,8 +1,9 @@
 .claude/settings.local.json
+curriculo/
+emails/*.xlsx
 emails/__pycache__/
 emails/coleta.log
+emails/publico/
 emails/resultado.csv
 emails/urls/
 emails/visited.json
-curriculo/
-emails/publico/
