@@ -35,13 +35,14 @@ BADSETOR = re.compile(
     r"inscri|seadi|auditoria|secom|arquivo|recepcao|crs(leste|sul|norte|oeste|centro)|gabinetesaude|(^|[._-])ti([._@-]|$)|diretoria\.saude|falecom|procuradoriadamulher|rtv@|dio@|esesp|informacao|ouv",
     re.I)
 TARGET = 600
-FIRSTNAMES = set("""alan alex alexandre ana andre andrea angela antonio augusto beatriz bruno camila carlos carolina claudia claudio cristiano daniel daniela david debora diego edilson edson eduardo elaine elisa eurico fabio fabiana felipe fernanda fernando flavio francisco gabriel gabriela gustavo helena henrique igor isabela jorge jose joao julia juliana julio larissa leandro leonardo lucas luciana luis luiz marcelo marcello marcia marcio marco marcos maria mariana mario mauricio miguel monica nadja nereida natalia nelson patricia paulo pedro rafael rafaela renata ricardo roberto rodrigo rogerio ronaldo sandra sergio silvia simone sonia tereza thiago vanessa vicente victor vinicius vitor wagner walter wilson guilherme""".split())
+FIRSTNAMES = set("""bruna matheus natalie nelson alan alex alexandre ana andre andrea angela antonio augusto beatriz bruno camila carlos carolina claudia claudio cristiano daniel daniela david debora diego edilson edson eduardo elaine elisa eurico fabio fabiana felipe fernanda fernando flavio francisco gabriel gabriela gustavo helena henrique igor isabela jorge jose joao julia juliana julio larissa leandro leonardo lucas luciana luis luiz marcelo marcello marcia marcio marco marcos maria mariana mario mauricio miguel monica nadja nereida natalia nelson patricia paulo pedro rafael rafaela renata ricardo roberto rodrigo rogerio ronaldo sandra sergio silvia simone sonia tereza thiago vanessa vicente victor vinicius vitor wagner walter wilson guilherme""".split())
 SURNAMES = set("calazans badaro moraes esteves terto vicentini pessoa mendes barroso fux gilmar toffoli lewandowski zanin dino cristianozanin".split())
 PERSON_PREFIX = re.compile(r"^(sen|dep|ver|des|min|juiz|prom|cons)[._-]|conselheir|desembargador|ministro\b|procuradoreu", re.I)
 GENERIC = set("gabinete presidencia vice secretaria geral protocolo juridico juridica procuradoria consultoria diretoria gestao pessoas pessoal rh recursos humanos folha atendimento administracao administrativo assessoria assessor chefia chefe sgp dgp segep sead seplag casa civil contato fale conosco legislativo legislativa executivo procurador procuradora adjunto adjunta subprocuradoria subchefia".split())
 def is_person(local):
     if PERSON_PREFIX.search(local): return True
     toks = [t for t in re.split(r"[._\-]", local) if t]
+    if len(toks) == 1 and toks[0] in FIRSTNAMES: return True
     for t in toks:
         if t in SURNAMES or any(t.startswith(sn) and len(sn) >= 8 for sn in SURNAMES): return True
         if t in FIRSTNAMES and len(toks) > 1: return True
