@@ -87,7 +87,7 @@ def clean(e):
 
 def root(host):
     p = host.lower().removeprefix("www.").split(".")
-    return ".".join(p[-3:]) if len(p) >= 3 and p[-2] in ("gov","jus","leg","mp","def","tc","edu","org","com","net") else ".".join(p[-2:])
+    return ".".join(p[-3:]) if len(p) >= 3 and p[-2] in ("gov","jus","leg","mp","def","tc","edu","org","com","net","adv","law","etc") else ".".join(p[-2:])
 
 def scrape(url):
     """devolve (emails_na_pagina, texto_menciona_jiparana)"""

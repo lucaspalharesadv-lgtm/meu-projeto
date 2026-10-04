@@ -54,6 +54,7 @@ OPEN = "Prezados"
 rows = []
 for (k, (p, e, emp, site, cat)), tit in zip(items, tits):
     emp = emp or nome(tit, k)
+    if root(e.split("@")[1]) != root(urllib.parse.urlparse(site).netloc): emp = ""   # e-mail veio de pagina de outro site: nome nao confiavel
     rows.append([cat, emp, e, site])
 rows = rows[:200]
 if len(rows) < 200:                                   # completa com 2a caixa de dominios da correspondencia
