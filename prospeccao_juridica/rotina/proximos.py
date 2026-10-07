@@ -28,12 +28,31 @@ def fila():
         return (p if p == 2 else 0, ordem_lote, p)   # Baixas de todas as planilhas por ultimo
     return sorted(P + O, key=chave)
 
+GENERICO = re.compile(r'^(contato|atendimento|adm|administrativo|escritorio|secretaria|juridico|recepcao|advocacia|advogados?|info|geral|faleconosco|comercial|rh|vagas?|curriculos?|carreiras?|talentos?|trabalheconosco|recrutamento)', re.I)
+
+def _dom(e):
+    d = e.split('@')[1].lower()
+    return d if d in ('gmail.com', 'hotmail.com', 'outlook.com', 'yahoo.com.br', 'uol.com.br', 'terra.com.br', 'bol.com.br') else d.replace('www.', '')
+
 def proximos(n):
-    feitos = ja_contatados(); out = []; vistos = set()
+    """Um e-mail por escritorio (dominio) por lote: prefere endereco com nome de pessoa a caixa generica.
+    Os demais enderecos do mesmo escritorio ficam para um lote futuro (so se o primeiro nao responder)."""
+    feitos = ja_contatados(); doms_feitos = {_dom(e) for e in feitos if '@' in e}
+    cand = []; vistos = set()
     for r in fila():
         e = r['E-mail'].strip().lower()
         if e in feitos or e in vistos or BLOQ.search(json.dumps(r, ensure_ascii=False)): continue
-        vistos.add(e); out.append(r)
+        vistos.add(e); cand.append(r)
+    out = []; doms = set()
+    for r in cand:
+        e = r['E-mail'].strip().lower(); d = _dom(e)
+        if d in doms or (d in doms_feitos and not d.startswith(('gmail', 'hotmail', 'outlook', 'yahoo', 'uol', 'terra', 'bol'))):
+            continue
+        # se o mesmo escritorio tem um endereco com nome de pessoa, prefere ele
+        irmaos = [x for x in cand if _dom(x['E-mail'].strip().lower()) == d]
+        nomeados = [x for x in irmaos if not GENERICO.search(x['E-mail'].split('@')[0])]
+        esc = nomeados[0] if nomeados else r
+        doms.add(d); out.append(esc)
         if len(out) >= n: break
     return out
 
