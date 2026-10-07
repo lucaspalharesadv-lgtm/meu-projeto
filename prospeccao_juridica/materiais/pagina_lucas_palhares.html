@@ -1,0 +1,135 @@
+<title>Lucas Palhares Advocacia</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: cartão profissional em coluna única (máx. 760px), seções separadas por réguas finas; destaque único na faixa de contato. */
+:root {
+  --bg: #f4f6f8; --surface: #ffffff; --fg: #15202b; --muted: #55606c; --line: #d9dfe6;
+  --accent: #0e6b5e; --accent-soft: #e3f1ee; --gold: #b7891f;
+  --display: "DM Serif Display", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0f1519; --surface: #171f25; --fg: #e8edf1; --muted: #a6b1bb; --line: #2b3640; --accent: #5fc2b0; --accent-soft: #15302b; --gold: #d8b25a; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #0f1519; --surface: #171f25; --fg: #e8edf1; --muted: #a6b1bb; --line: #2b3640; --accent: #5fc2b0; --accent-soft: #15302b; --gold: #d8b25a; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.55; padding-inline: 16px; padding-block: 28px 48px; }
+.wrap { max-width: 760px; margin: 0 auto; display: grid; gap: 28px; }
+header { display: grid; gap: 10px; }
+.eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(32px, 6vw, 46px); line-height: 1.05; margin: 0; text-wrap: balance; }
+.lead { font-size: 18px; color: var(--muted); max-width: 62ch; margin: 0; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag { font-size: 13px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--fg); background: var(--surface); }
+section { display: grid; gap: 12px; padding-top: 24px; border-top: 1px solid var(--line); }
+h2 { font-family: var(--display); font-weight: 400; font-size: 26px; margin: 0; line-height: 1.15; }
+p { margin: 0; max-width: 68ch; }
+ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; max-width: 68ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.item { padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; min-width: 0; }
+.item strong { display: block; font-weight: 600; margin-bottom: 4px; }
+.item span { color: var(--muted); font-size: 14.5px; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+.tablewrap { overflow-x: auto; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.contact { background: var(--accent-soft); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: grid; gap: 14px; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.value { font-family: var(--body); font-weight: 600; font-size: 20px; letter-spacing: .01em; user-select: all; }
+.label { font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+button { font: inherit; font-size: 14px; font-weight: 600; padding: 8px 14px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: #fff; cursor: pointer; }
+button:focus-visible, a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+button.done { background: var(--surface); color: var(--accent); }
+a { color: var(--accent); }
+.fine { font-size: 13.5px; color: var(--muted); }
+.timeline { display: grid; gap: 10px; }
+.timeline div { display: grid; grid-template-columns: 96px 1fr; gap: 10px; }
+.timeline b { font-weight: 600; color: var(--muted); font-size: 14px; padding-top: 2px; }
+@media (max-width: 420px) { .timeline div { grid-template-columns: 1fr; gap: 2px; } }
+@media (prefers-reduced-motion: no-preference) { button { transition: background .15s ease; } }
+</style>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Advogado · OAB/RO 11.037 · Ji-Paraná, Rondônia</div>
+    <h1>Lucas Palhares</h1>
+    <p class="lead">Contencioso judicial e administrativo em processo eletrônico, em qualquer comarca do país, e atuação presencial na região central de Rondônia.</p>
+    <div class="tags">
+      <span class="tag">Previdenciário</span><span class="tag">Direito da saúde</span><span class="tag">Consumidor e bancário</span>
+      <span class="tag">Cível e imobiliário</span><span class="tag">Trabalhista</span><span class="tag">Tributário</span>
+    </div>
+  </header>
+
+  <section id="escritorios">
+    <h2>Para escritórios de outros estados: correspondência em Rondônia</h2>
+    <p>Audiências, diligências, despachos, cópias e protocolos presenciais em Ji-Paraná e comarcas vizinhas, e atos remotos no PJe, e-SAJ e eproc. Relatório no mesmo dia, com termo de audiência ou comprovante do ato.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Comarca</th><th>Distância de Ji-Paraná</th><th>Tribunais</th></tr></thead>
+        <tbody>
+          <tr><td>Ji-Paraná (sede)</td><td>0 km</td><td>TJRO · JEF/TRF1 · TRT14</td></tr>
+          <tr><td>Ouro Preto do Oeste, Presidente Médici</td><td>40 km</td><td>TJRO · JEF</td></tr>
+          <tr><td>Jaru, Cacoal, Mirante da Serra, Urupá</td><td>90 a 100 km</td><td>TJRO · JEF · TRT14</td></tr>
+          <tr><td>Ariquemes, Pimenta Bueno, Rolim de Moura, Espigão do Oeste</td><td>130 a 180 km</td><td>TJRO · JEF · TRT14</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fine">Tabela de valores por ato e pacotes mensais para escritórios com volume: enviada por e-mail mediante solicitação.</p>
+  </section>
+
+  <section id="areas">
+    <h2>Áreas de atuação</h2>
+    <div class="grid">
+      <div class="item"><strong>Previdenciário</strong><span>Aposentadoria urbana e rural, pensão por morte, auxílio por incapacidade, BPC/LOAS, revisões; INSS, JEF e TRF1.</span></div>
+      <div class="item"><strong>Direito da saúde</strong><span>Medicamentos de alto custo, tratamentos e cirurgias negados por plano de saúde ou pelo SUS; tutelas de urgência.</span></div>
+      <div class="item"><strong>Consumidor e bancário</strong><span>Negativação indevida, cobranças, contratos bancários, consignado, superendividamento.</span></div>
+      <div class="item"><strong>Cível e imobiliário</strong><span>Contratos, distratos, loteamentos, usucapião, despejo, cobrança de aluguel e condomínio, inventário.</span></div>
+      <div class="item"><strong>Trabalhista</strong><span>Reclamações, doenças ocupacionais, insalubridade; defesa de empregadores.</span></div>
+      <div class="item"><strong>Tributário</strong><span>Execução fiscal, exceção de pré-executividade, mandado de segurança.</span></div>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiência</h2>
+    <div class="timeline">
+      <div><b>2022 – hoje</b><span>Advogado autônomo, atuação remota nacional. Carteira acima de 150 processos; demandas de medicamentos de alto custo e tratamentos oncológicos com tutela de urgência; automação jurídica aplicada à produção de peças.</span></div>
+      <div><b>2021 – 2022</b><span>Advogado cível na DPLAW (Porto Velho). Contencioso de alto volume de Energisa e Bradesco em demandas consumeristas e contratuais.</span></div>
+      <div><b>2020 – 2021</b><span>Advogado associado na JML Advogados (Ji-Paraná). Cível, previdenciário, tributário e recuperação de crédito; audiências e sustentações orais.</span></div>
+      <div><b>2017 – 2019</b><span>Estágios na Justiça Federal de Ji-Paraná (minutas de decisões e sentenças em matéria previdenciária e cível) e na AGU / Procuradoria Federal.</span></div>
+      <div><b>Formação</b><span>Pós-graduação em Direito e Processo Civil (Instituto Elpídio Donizetti, 2022). Bacharel em Direito, CEUJI-ULBRA (2019).</span></div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <div class="contact">
+      <div>
+        <div class="label">WhatsApp</div>
+        <div class="row"><span class="value" id="zap">(69) 99335-9788</span><button type="button" id="copyzap">Copiar número</button></div>
+      </div>
+      <div>
+        <div class="label">E-mail</div>
+        <div class="row"><span class="value" id="mail">lucaspalharesadv@gmail.com</span><button type="button" id="copymail">Copiar e-mail</button></div>
+      </div>
+      <div class="row">
+        <a href="https://drive.google.com/file/d/1TFI--CkjoRMtJSqnWrets--Yxsj5J9wP/view?usp=sharing">Currículo em PDF</a>
+      </div>
+      <p class="fine">Atendimento de segunda a sexta. Ji-Paraná/RO. Esta página tem caráter informativo, nos termos do Provimento 205/2021 da OAB.</p>
+    </div>
+  </section>
+</div>
+<script>
+(function () {
+  function wire(btnId, srcId, okText) {
+    var b = document.getElementById(btnId), s = document.getElementById(srcId);
+    if (!b || !s) return;
+    var orig = b.textContent;
+    b.addEventListener('click', function () {
+      var txt = s.textContent.trim();
+      function done() { b.textContent = okText; b.classList.add('done'); setTimeout(function () { b.textContent = orig; b.classList.remove('done'); }, 1800); }
+      function fallback() {
+        try { var r = document.createRange(); r.selectNodeContents(s); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r); b.textContent = 'Selecionado: copie'; setTimeout(function () { b.textContent = orig; }, 2200); } catch (e) {}
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(txt).then(done, fallback); } else { fallback(); }
+    });
+  }
+  wire('copyzap', 'zap', 'Copiado');
+  wire('copymail', 'mail', 'Copiado');
+})();
+</script>
