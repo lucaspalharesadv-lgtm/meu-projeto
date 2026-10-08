@@ -42,7 +42,7 @@ def main():
             if len(out) < 10 or p * 10 >= tot: break
             p += 1; time.sleep(2)
         time.sleep(2)
-    STRICT = re.compile(r'servi[çc]os (t[ée]cnicos )?(especializados )?(de )?(advocac|advocat|jur[íi]dic)|assessoria jur[íi]dica|consultoria jur[íi]dica|sociedade de advogados|escrit[óo]rio de advocacia|advogados? dativos?|credenciamento de advogad', re.I)
+    STRICT = re.compile(r'(contrata[çc][ãa]o|credenciamento|presta[çc][ãa]o|chamamento)[^.]{0,40}(assessoria|consultoria) jur[íi]dica|servi[çc]os (t[ée]cnicos )?(especializados )?(de )?(advocac|advocat)|sociedade de advogados|escrit[óo]rio de advocacia|advogados? dativos?|credenciamento de advogad|honor[áa]rios advocat', re.I)
     def ok(o):
         t, tr = o['titulo'], o['trecho']
         if NEG.search(t) or o['url'] in seen: return False
