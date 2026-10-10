@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Grava o Lote 7 na base.
+"""Grava um lote novo na base (LOTE=8 python3 add7.py ...; padrao 7, o primeiro lote feito com este script).
 Uso: python3 add7.py cc7_rows_out.json [retirar.json]
 1) tira as linhas que a revisao mandou retirar (lista de e-mails em retirar.json, com o motivo);
 2) valida o MX de todos os dominios em paralelo (DNS por HTTPS, sem enviar nada);
 3) pros2.add() (deduplica contra as tres planilhas) e remove quem ficou sem MX (mesma regra do dropbad.py);
-4) grava estado/lote7_emails.json e as colunas de personalizacao (enrich_cache.json) a partir do perfil
+4) grava estado/lote<LOTE>_emails.json e as colunas de personalizacao (enrich_cache.json) a partir do perfil
    ja lido no site oficial durante a visita (nada novo e inventado)."""
 import sys, os, json, csv, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -12,6 +12,7 @@ import pros2
 from concurrent.futures import ThreadPoolExecutor
 HERE = os.path.dirname(os.path.abspath(__file__))
 EST = os.path.join(HERE, 'estado')
+LOTE = int(os.environ.get('LOTE', '7'))
 rows = json.load(open(sys.argv[1]))
 retirar = {}
 if len(sys.argv) > 2 and os.path.exists(sys.argv[2]):
@@ -61,7 +62,7 @@ print('dominios', len(doms), '| MX ok', sum(1 for d in doms if pros2._mx.get(d, 
 
 # lotes anteriores (para saber quem e novo)
 old = set()
-for n in range(1, 7):
+for n in range(1, LOTE):
     old |= {e.strip().lower() for e in json.load(open(os.path.join(EST, f'lote{n}_emails.json')))}
 pros2.add(rows)
 
@@ -82,7 +83,7 @@ for r in bad:
 for r in fora:                        # retirados pela revisao ficam registrados (para nunca voltarem)
     if r['email'].lower() not in oset:
         O.append([r['email'], r['org'], '', r.get('cidade', ''), r.get('uf', ''), r['fonte'],
-                  'REVISAO DO LOTE 7: ' + retirar[r['email'].lower()][:200]])
+                  f'REVISAO DO LOTE {LOTE}: ' + retirar[r['email'].lower()][:200]])
 with open(pros2.OUT + '.tmp', 'w', newline='', encoding='utf-8-sig') as fh:
     csv.writer(fh).writerows(O)
 os.replace(pros2.OUT + '.tmp', pros2.OUT)
@@ -90,8 +91,8 @@ print('sem MX retirados', len(bad), [r[3] for r in bad][:10], flush=True)
 
 # 4) lote 7 + personalizacao
 novos = sorted(r[3].strip().lower() for r in b if r[3].strip().lower() not in old)
-json.dump(novos, open(os.path.join(EST, 'lote7_emails.json'), 'w'))
-cands = json.load(open(os.path.join(HERE, 'cc7_cands_all.json') if os.path.exists(os.path.join(HERE, 'cc7_cands_all.json')) else os.path.join(EST, 'cc7_cands_lote7.json')))
+json.dump(novos, open(os.path.join(EST, f'lote{LOTE}_emails.json'), 'w'))
+cands = json.load(open(os.path.join(HERE, 'cc7_cands_all.json') if os.path.exists(os.path.join(HERE, 'cc7_cands_all.json')) else os.path.join(EST, f'cc7_cands_lote{LOTE}.json')))
 by_email = {}
 for d, c in cands.items():
     for e, *_ in c['picked']:
@@ -110,4 +111,4 @@ for e in novos:
         alerta = f"CONFERIR LOCAL: a planilha diz {uf}, mas o site cita {', '.join(p['cidades'][:3])}"
     enr[e] = {'site': c['site'], 'perfil': p, 'alerta': alerta}
 json.dump(enr, open(ENRP, 'w'), ensure_ascii=False)
-print('LOTE 7:', len(novos), 'e-mails novos | total na base', len(b), '| com perfil', sum(1 for e in novos if e in enr), flush=True)
+print(f'LOTE {LOTE}:', len(novos), 'e-mails novos | total na base', len(b), '| com perfil', sum(1 for e in novos if e in enr), flush=True)

@@ -11,13 +11,14 @@ from fixenc import fix
 SP = os.path.dirname(os.path.abspath(__file__))
 EST = os.path.join(SP, 'estado')
 ENR = json.load(open(os.path.join(SP, 'enrich_cache.json'))) if os.path.exists(os.path.join(SP, 'enrich_cache.json')) else {}
-LOTES = {}   # e-mail -> numero do lote (1 a 6); quem nao esta em nenhum e do lote novo. Proxima rodada: range(1, 8) e LOTE_NOVO = '8 (novo)'
-for _n in range(1, 7):
+LOTE = 8      # lote desta rodada: na proxima rodada, troque so este numero (e o texto do LEIA-ME abaixo)
+LOTES = {}   # e-mail -> numero do lote anterior; quem nao esta em nenhum e do lote novo
+for _n in range(1, LOTE):
     _f = os.path.join(EST, f'lote{_n}_emails.json')
     if os.path.exists(_f):
         for _e in json.load(open(_f)):
             LOTES.setdefault(_e.strip().lower(), str(_n))
-LOTE_NOVO = '7 (novo)'
+LOTE_NOVO = f'{LOTE} (novo)'
 
 BASE = "/home/user/meu-projeto/prospeccao_juridica"
 SRC = f"{BASE}/PARCERIAS_ASSOCIADO_500.csv"
@@ -110,8 +111,13 @@ for i in range(2, ws.max_row + 1):
 # --- LOTE NOVO: so os contatos desta rodada, mesmas colunas ---
 novos = [x for x in full if x[17] == LOTE_NOVO]
 if novos:
-    wn = wb.create_sheet("Lote 7 (novos)")
+    wn = wb.create_sheet(f"Lote {LOTE} (novos)")
     sheet(wn, COLS, W, novos, prio_col=15, link_col=4, wrap=(2, 9, 13, 14, 17, 19, 23, 25))
+# o lote anterior tambem ganha aba propria (quem ainda esta trabalhando nele nao perde a aba)
+ant = [x for x in full if x[17] == str(LOTE - 1)]
+if ant:
+    wa = wb.create_sheet(f"Lote {LOTE - 1}")
+    sheet(wa, COLS, W, ant, prio_col=15, link_col=4, wrap=(2, 9, 13, 14, 17, 19, 23, 25))
 
 # --- COMECE POR AQUI: Alta, ranqueado ---
 def score(r):
@@ -165,7 +171,7 @@ txt = [
  ("", ""),
  ("Coluna 'Domínio válido (MX)'", "Validação técnica feita SEM enviar nada: consulta ao DNS confirmando que o domínio do e-mail tem servidor de e-mail. Todos passaram. E-mails cujo domínio não existe mais foram RETIRADOS (estão na aba 'Fora da lista')."),
  ("Coluna 'Confirmação'", "Todos 'Confirmado': o e-mail foi lido literalmente na página indicada em 'Fonte'. Nesta planilha NÃO há e-mail inferido/deduzido."),
- ("Coluna 'Lote'", f"1 = primeira entrega (359); 2 = segunda rodada (681); 3 = terceira rodada (680); 4 = quarta rodada (1.077, sites .adv.br); 5 = quinta rodada (1.552, sites .com.br); 6 = sexta rodada (700: nova tentativa, .com.br ampliado, sites .com brasileiros e e-mails em domínio diferente conferidos); 7 = os novos desta rodada ({N_NOVO}: escritórios achados pelo grafo de links do Common Crawl, que lista também sites nunca rastreados pelo índice; .adv.br, .com.br, .com e outros .br). A aba 'Lote 7 (novos)' mostra só eles. Filtre por aqui para não repetir quem você já contatou."),
+ ("Coluna 'Lote'", f"1 = primeira entrega (359); 2 = segunda rodada (681); 3 = terceira rodada (680); 4 = quarta rodada (1.077, sites .adv.br); 5 = quinta rodada (1.552, sites .com.br); 6 = sexta rodada (700: nova tentativa, .com.br ampliado, sites .com brasileiros e e-mails em domínio diferente conferidos); 7 = sétima rodada (6.449: escritórios achados pelo grafo de links do Common Crawl, que lista também sites nunca rastreados pelo índice; .adv.br, .com.br, .com e outros .br); 8 = os novos desta rodada ({N_NOVO}: sites .com de escritórios brasileiros em mais 17 edições do grafo e sites de advogados em subdomínio de plataformas como Jusfy, site.adv.br e jur.adv.br). A aba 'Lote 8 (novos)' mostra só eles. Filtre por aqui para não repetir quem você já contatou."),
  ("Colunas de PERSONALIZAÇÃO", "Frase do site (copiada literalmente do site oficial), Áreas e Cidades citadas no site, Sinais (trabalhe conosco, correspondentes, contencioso de massa, atuação nacional, ano de fundação). Tudo foi lido no site do escritório - nada inventado."),
  ("Coluna 'Gancho para personalizar'", "Resumo pronto dos fatos acima para o Claude/Cowork usar na primeira frase do e-mail (ex.: citar a área forte do escritório ou a vaga anunciada)."),
  ("Coluna 'Abordagem sugerida'", "A = candidato (vaga/associado/banco de talentos); B = fornecedor (correspondência para escritório de volume); C = proposta de parceria com divisão de honorários."),
@@ -173,7 +179,7 @@ txt = [
  ("Coluna 'Atuação remota'", "Sim = a vaga/escritório declara home office/remoto; Híbrido = misto; Não informado = o anúncio não diz (não significa presencial)."),
  ("", ""),
  ("COMO FOI FEITO", ""),
- ("Fontes", "Sites oficiais dos escritórios (páginas de contato, carreira, equipe), murais de vagas de subseções da OAB, portal Rota Jurídica, agregador Juris Vagas, portal de vagas do Grupo Nunchi, Gupy, BNE, InfoJobs, Indeed, o índice público Common Crawl (lista de sites com domínio .adv.br e sites .com.br cujo nome indica advocacia) e, no Lote 7, o grafo público de links do Common Crawl (lista de domínios citados por outros sites, 2023 a 2026), sempre visitando o site oficial (como radar de quem está contratando; o e-mail sempre vem do site oficial)."),
+ ("Fontes", "Sites oficiais dos escritórios (páginas de contato, carreira, equipe), murais de vagas de subseções da OAB, portal Rota Jurídica, agregador Juris Vagas, portal de vagas do Grupo Nunchi, Gupy, BNE, InfoJobs, Indeed, o índice público Common Crawl (lista de sites com domínio .adv.br e sites .com.br cujo nome indica advocacia) e, nos Lotes 7 e 8, o grafo público de links do Common Crawl (listas de domínios e de hosts citados por outros sites, 2023 a 2026), sempre visitando o site oficial (como radar de quem está contratando; o e-mail sempre vem do site oficial)."),
  ("Verificação de identidade", "Quando o site foi encontrado pelo nome do escritório, só foi aceito se a própria página trouxesse o nome do escritório e termos jurídicos. Casos que falharam (gravadora, loja de móveis, clínica dentária, instituto religioso, software) foram descartados."),
  ("Regras respeitadas", "robots.txt de cada site respeitado; nenhuma página com CAPTCHA/anti-robô contornada; nenhum login; e-mail ofuscado (Cloudflare, [arroba]) NÃO decodificado; intervalo mínimo entre acessos ao mesmo site; nenhuma mensagem enviada."),
  ("", ""),

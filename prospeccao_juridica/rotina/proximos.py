@@ -23,7 +23,7 @@ def fila():
     for r in O: r['_planilha'] = 'PROSPECCAO_JURIDICA_BRASIL'; r['Lote'] = '0'
     def chave(r):
         lote = (r.get('Lote') or '0')[:1]
-        ordem_lote = {'7': 0, '6': 1, '5': 2, '4': 3, '3': 4, '2': 5, '1': 6, '0': 7}.get(lote, 8)
+        ordem_lote = {'8': 0, '7': 1, '6': 2, '5': 3, '4': 4, '3': 5, '2': 6, '1': 7, '0': 8}.get(lote, 9)
         p = PORD.get(r.get('Prioridade', ''), 1)
         return (p if p == 2 else 0, ordem_lote, p)   # Baixas de todas as planilhas por ultimo
     return sorted(P + O, key=chave)

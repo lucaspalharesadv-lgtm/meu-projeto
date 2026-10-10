@@ -54,7 +54,8 @@ def _doh(dom, typ):
             continue
         ans = [a for a in j.get("Answer", []) if a.get("type") == (15 if typ == "MX" else 1)]
         if typ == "MX":
-            ans = [a for a in ans if a.get("data", "").split()[-1:] not in (["."], [])]   # MX nulo (RFC 7505) nao conta
+            # MX nulo (RFC 7505) ou apontando para 0.0.0.0/localhost (dominio que nao recebe e-mail) nao conta
+            ans = [a for a in ans if a.get("data", "").split()[-1:] not in (["."], [], ["0.0.0.0."], ["0.0.0.0"], ["localhost."], ["127.0.0.1."])]
         return "ok" if ans else "vazio"
     return None
 

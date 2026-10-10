@@ -1,0 +1,58 @@
+[
+{
+"email": "contato@advogadosjoinville.com",
+"motivo": "O título 'Os Melhores Advogados em Joinville | Advocacias Top 10' e a descrição 'Os Melhores Advogados em Joinville você encontra aqui' indicam um diretório ou ranking de advogados. Não há nome de sociedade, OAB nem advogado identificado, e o trecho onde o e-mail aparece está vazio. Não encontrei indício de que seja um escritório."
+},
+{
+"email": "contato@prontoadvogados.com",
+"motivo": "A descrição diz 'você encontra rapidamente um especialista... conectamos você ao profissional certo', e o site oferece 'simulação gratuita' por formulário. Isso caracteriza uma plataforma que intermedeia e capta clientes, não uma sociedade de advogados. Não há sócio, OAB nem endereço de escritório."
+},
+{
+"email": "contato@advogadososasco.com",
+"motivo": "Retirada confirmada. A marca do site é 'Advocacias Top 10', no plural, e o título é 'Os Melhores Advogados em Osasco'. A descrição diz 'você encontra aqui', ou seja, o site lista vários escritórios: é ranking ou diretório de captação, não um escritório. Não há nome de advogado, OAB nem trecho de contato próprio (o trecho está vazio)."
+},
+{
+"email": "contato@advturbo.com.br",
+"motivo": "Retirada confirmada. O título e a descrição apresentam o AdvTurbo IA como 'Plataforma jurídica de IA com mais de 50 agentes', criada para advogados, com garantia de 7 dias. É software ou legaltech vendido a advogados, não um escritório."
+},
+{
+"email": "contato@googleparaadvogados.com",
+"motivo": "Retirada confirmada. O site é 'Google Ads para Advogados — Método Thiago Presotti' e diz 'Aprenda o método de Google Ads...'. É curso ou marketing para escritórios, não um escritório de advocacia."
+},
+{
+"email": "contacto@grupojuridicodex.com",
+"motivo": "Escritorio estrangeiro (Mexico): texto em espanhol ('despachos', 'cartera vencida'), 'Grupo Juridico Dex S. C.', endereco 'Tlacotal B... Col. Gabriel'; o '/BR' e so valor padrao"
+},
+{
+"email": "contato@webpress.net.br",
+"motivo": "Webpress vende sites e aplicativos para advogados ('Site para Advogados', 'Comecar Gratis Agora', 'menor preco do mercado'); nao e escritorio"
+},
+{
+"email": "nosso@hostlocal.com.br",
+"motivo": "Demonstracao de sistema para advogados em subdominio da Hostlocal ('Sistema completo para advogados, cadastre processos, edite post'); o e-mail e da empresa de hospedagem"
+},
+{
+"email": "contato@designminds.com.br",
+"motivo": "Juridico Express/Design Minds: 'Site para advogados', 'Tenha um site profissional...'; agencia de sites com texto de modelo ('Request Appointment'), nao e escritorio"
+},
+{
+"email": "contato@kratotel.com.br",
+"motivo": "Krato vende PABX e telefonia para escritorios de advocacia; e fornecedor, nao escritorio"
+},
+{
+"email": "advocacia@advocacia.com",
+"motivo": "Site-modelo da Digimakers ('Modelo Advocacia'): telefone (99) 9999-9999, advogado ficticio 'Jonathan Boyer'; e-mail de exemplo"
+},
+{
+"email": "contato@joaosilvaadv.com.br",
+"motivo": "Site-modelo da Digimakers (adv1): 'Rua das Leis', telefone (11) 98765-4321; e-mail de exemplo"
+},
+{
+"email": "contato@adv.manggo.com",
+"motivo": "Tema-modelo 'Advocate' com Lorem ipsum, endereco 'Rua Nome da Rua n8999' e telefone (11) 99999 9999; e-mail de exemplo"
+},
+{
+"email": "contato@advocate.com",
+"motivo": "Mesmo tema-modelo 'Advocate': 'Rua Nome da Rua n 8999', telefone (48) 9999 9999; e-mail generico de exemplo, de dominio que nao e do site"
+}
+]

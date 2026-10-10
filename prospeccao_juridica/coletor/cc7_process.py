@@ -16,7 +16,7 @@ PARKED = re.compile(r'dom[ií]nio (est[aá] )?(registrado|[àa] venda)|this doma
 cats = sys.argv[1].split(',')
 limit = int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[2] != '0' else None
 seed = int(sys.argv[3]) if len(sys.argv) > 3 else None
-W = json.load(open(os.path.join(HERE, 'ccidx', 'wg_novos.json')))
+W = json.load(open(os.path.join(HERE, 'ccidx', os.environ.get('WG', 'wg_novos.json'))))   # WG=wg8_novos.json no Lote 8
 VIS_P = os.path.join(EST, 'hosts_ja_vistos.json')
 TAG = os.environ.get('TAG', 'x')
 DONE_P = os.path.join(EST, f'cc7_done_{TAG}.json')
