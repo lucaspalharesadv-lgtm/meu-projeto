@@ -1,0 +1,1125 @@
+<title>Dinheiro com Games</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: guia de campo em coluna única (~68ch), nav fixa de seções no topo; tons de pôr do sol de Vice City sobre tinta azul-noite */
+:root{
+  --bg:#F4F3F8; --surface:#FFFFFF; --surface-2:#ECEAF3; --ink:#17182A; --ink-2:#45475E; --muted:#686A82; --line:#D9D7E4;
+  --accent:#C92A5E; --accent-strong:#A91F4D; --accent-soft:#FBE4EC; --sun:#E8892B;
+  --ok:#0B7254; --ok-soft:#DCF2E8; --warn:#8F5A00; --warn-soft:#FBEED3; --bad:#B42318; --bad-soft:#FBE2DF;
+  --font-display:"Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+  --font-body:"Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --font-mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --radius:10px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#11121B; --surface:#1A1B28; --surface-2:#232537; --ink:#EDECF6; --ink-2:#BDBED2; --muted:#8F91A9; --line:#30324A;
+    --accent:#FF6593; --accent-strong:#FF86AB; --accent-soft:#3B1828; --sun:#F2A14E;
+    --ok:#52D3A6; --ok-soft:#11332A; --warn:#F2BA4E; --warn-soft:#3A2C10; --bad:#FF8C7C; --bad-soft:#3E1B17;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#11121B; --surface:#1A1B28; --surface-2:#232537; --ink:#EDECF6; --ink-2:#BDBED2; --muted:#8F91A9; --line:#30324A;
+  --accent:#FF6593; --accent-strong:#FF86AB; --accent-soft:#3B1828; --sun:#F2A14E;
+  --ok:#52D3A6; --ok-soft:#11332A; --warn:#F2BA4E; --warn-soft:#3A2C10; --bad:#FF8C7C; --bad-soft:#3E1B17;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:17px;line-height:1.6;margin:0}
+a{color:var(--accent-strong);text-underline-offset:2px}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,textarea:focus-visible{outline:3px solid var(--sun);outline-offset:2px;border-radius:4px}
+.wrap{max-width:980px;margin:0 auto;padding-inline:16px}
+.col{max-width:72ch}
+h1,h2,h3{font-family:var(--font-display);line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.4rem,7vw,4.2rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.2rem;font-weight:600}
+p{margin:0}
+.eyebrow{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+.small{font-size:.9rem}
+.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+
+/* Hero */
+header.hero{padding-block:48px 28px;border-bottom:1px solid var(--line);background:
+  linear-gradient(180deg, var(--accent-soft) 0%, transparent 70%)}
+.hero .stack{display:grid;gap:16px}
+.hero .lede{font-size:1.15rem;color:var(--ink-2);max-width:62ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:.82rem;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+.chip.sun .dot{background:var(--sun)}
+.chip strong{font-weight:600}
+
+/* Nav */
+nav.toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav.toc ul{display:flex;gap:4px;list-style:none;margin:0;padding:8px 0;overflow-x:auto;scrollbar-width:thin}
+nav.toc a{display:block;white-space:nowrap;font-size:.88rem;text-decoration:none;color:var(--ink-2);padding:6px 10px;border-radius:6px}
+nav.toc a:hover{background:var(--surface-2);color:var(--ink)}
+
+main section{padding-block:44px;border-bottom:1px solid var(--line)}
+main section > .wrap{display:grid;gap:20px}
+.section-head{display:grid;gap:8px}
+
+/* Verdict list */
+.verdict{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:v}
+.verdict li{counter-increment:v;display:grid;grid-template-columns:2.2rem 1fr;gap:12px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.verdict li::before{content:counter(v);font-family:var(--font-display);font-weight:800;font-size:1.4rem;color:var(--accent);line-height:1.2}
+.verdict li > div{min-width:0}
+
+/* Path cards */
+.paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.path{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:grid;gap:12px;align-content:start;min-width:0}
+.path .rank{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-strong)}
+.path dl{margin:0;display:grid;gap:8px}
+.path dt{font-size:.78rem;font-family:var(--font-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.path dd{margin:0;font-size:.95rem}
+.path.first{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+
+/* Tags */
+.tag{display:inline-block;font-family:var(--font-mono);font-size:.7rem;padding:1px 7px;border-radius:999px;vertical-align:1px;white-space:nowrap;border:1px solid transparent}
+.tag.ok{background:var(--ok-soft);color:var(--ok)}
+.tag.warn{background:var(--warn-soft);color:var(--warn)}
+.tag.est{background:var(--surface-2);color:var(--ink-2)}
+.tag.co{background:var(--accent-soft);color:var(--accent-strong)}
+
+/* Callouts */
+.callout{border-radius:var(--radius);padding:14px 16px;border:1px solid var(--line);background:var(--surface);display:grid;gap:8px}
+.callout.bad{background:var(--bad-soft);border-color:transparent}
+.callout.bad .callout-title{color:var(--bad)}
+.callout.warn{background:var(--warn-soft);border-color:transparent}
+.callout.warn .callout-title{color:var(--warn)}
+.callout.ok{background:var(--ok-soft);border-color:transparent}
+.callout.ok .callout-title{color:var(--ok)}
+.callout-title{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+
+ul.clean,ol.clean{margin:0;padding-left:1.2rem;display:grid;gap:6px}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:s}
+ol.steps > li{counter-increment:s;display:grid;grid-template-columns:2rem 1fr;gap:10px}
+ol.steps > li::before{content:counter(s);display:grid;place-items:center;width:1.7rem;height:1.7rem;border-radius:50%;background:var(--ink);color:var(--bg);font-family:var(--font-mono);font-size:.8rem;font-weight:600;margin-top:2px}
+ol.steps > li > div{min-width:0}
+
+/* Tables */
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.92rem;min-width:560px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--surface-2)}
+tr:last-child td{border-bottom:0}
+td.num{font-family:var(--font-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* Chart */
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:grid;gap:14px}
+.bars{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.bar-row{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:6px 14px;align-items:center}
+.bar-label{font-size:.92rem;line-height:1.3}
+.bar-label .muted{display:block;font-size:.78rem}
+.bar-track{position:relative;height:22px;display:flex;align-items:center;gap:8px}
+.bar{height:14px;border-radius:0 4px 4px 0;background:var(--accent);min-width:3px;transition:filter .15s}
+.bar.dim{background:var(--muted)}
+.bar-row:hover .bar{filter:brightness(1.12)}
+.bar-val{font-family:var(--font-mono);font-size:.85rem;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ink)}
+.axis-note{font-size:.8rem;color:var(--muted)}
+@media (max-width:620px){.bar-row{grid-template-columns:1fr}}
+
+/* Flow (money sources) */
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.flow > div{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px;display:grid;gap:6px;min-width:0}
+.flow .who{font-family:var(--font-mono);font-size:.75rem;color:var(--accent-strong);text-transform:uppercase;letter-spacing:.06em}
+
+/* Money math strip */
+.math{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-family:var(--font-mono);font-size:.9rem}
+.math span{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:6px 10px}
+.math i{font-style:normal;color:var(--muted)}
+
+/* Facts grid */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px;display:grid;gap:4px;min-width:0}
+.fact .k{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.fact .v{font-family:var(--font-display);font-weight:800;font-size:1.35rem;line-height:1.2}
+.fact .n{font-size:.85rem;color:var(--ink-2)}
+
+/* Timeline */
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:0;border-left:2px solid var(--line);margin-left:6px}
+.timeline li{position:relative;padding:0 0 18px 20px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--accent)}
+.timeline li.hot::before{background:var(--accent)}
+.timeline .when{font-family:var(--font-mono);font-size:.8rem;color:var(--accent-strong);font-weight:600}
+
+/* Two scenarios */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+
+/* Checklist */
+.phase{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:grid;gap:10px}
+.phase h3 .mono{font-size:.8rem;color:var(--muted);font-weight:400;margin-left:6px}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.checks label{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:start;cursor:pointer;font-size:.95rem}
+.checks input{width:18px;height:18px;margin:3px 0 0;accent-color:var(--accent)}
+.checks input:checked + span{color:var(--muted);text-decoration:line-through}
+.progress{font-family:var(--font-mono);font-size:.82rem;color:var(--muted)}
+
+/* Glossary */
+dl.gloss{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px 20px;margin:0}
+dl.gloss div{border-top:1px solid var(--line);padding-top:8px;min-width:0}
+dl.gloss dt{font-weight:700}
+dl.gloss dd{margin:2px 0 0;color:var(--ink-2);font-size:.93rem}
+
+/* Prompt box */
+.prompt-box{display:grid;gap:10px}
+textarea#mentorPrompt{width:100%;min-height:280px;font-family:var(--font-mono);font-size:.8rem;line-height:1.5;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:var(--radius);padding:12px;resize:vertical}
+.btn{font:inherit;font-weight:700;font-size:.95rem;padding:10px 16px;border-radius:8px;border:0;background:var(--ink);color:var(--bg);cursor:pointer;justify-self:start}
+.btn:hover{background:var(--accent-strong)}
+.copy-status{font-family:var(--font-mono);font-size:.82rem;color:var(--ok);min-height:1.2em}
+
+details{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px}
+details > summary{cursor:pointer;font-weight:700}
+details[open] > summary{margin-bottom:10px}
+.sources ul{margin:0;padding-left:1.1rem;display:grid;gap:4px;font-size:.92rem}
+.sources h3{margin-top:6px}
+footer{padding-block:32px 48px;color:var(--muted);font-size:.9rem}
+</style>
+
+<header class="hero">
+  <div class="wrap stack">
+    <p class="eyebrow">Guia de campo · pesquisa de 10/10/2026 · 23 agentes, verificação independente</p>
+    <h1>Dinheiro com Games</h1>
+    <p class="lede">As 3 formas mais comprovadas de ganhar dinheiro na internet, adaptadas para quem está começando em games, não quer mostrar o rosto e quer ganhar no Brasil e em dólar. Com o passo a passo dos clipadores, a Whop explicada, o GTA 6 e um plano de 90 dias.</p>
+    <div class="chips" aria-label="Datas-chave">
+      <span class="chip"><span class="dot" aria-hidden="true"></span>GTA 6 em <strong id="diasGta">40 dias</strong> · 19/11/2026</span>
+      <span class="chip sun"><span class="dot" aria-hidden="true"></span>YouTube dobra a exigência em <strong>01/02/2027</strong></span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Seções">
+  <div class="wrap">
+    <ul>
+      <li><a href="#veredito">Veredito</a></li>
+      <li><a href="#caminhos">3 caminhos</a></li>
+      <li><a href="#views">100 mil views</a></li>
+      <li><a href="#whop">Whop</a></li>
+      <li><a href="#clipadores">Clipadores</a></li>
+      <li><a href="#canal">Canal sem rosto</a></li>
+      <li><a href="#gta6">GTA 6</a></li>
+      <li><a href="#kids">YouTube Kids</a></li>
+      <li><a href="#regras">Regras do YouTube</a></li>
+      <li><a href="#servico">Vender edição</a></li>
+      <li><a href="#receber">Receber e declarar</a></li>
+      <li><a href="#golpes">Golpes</a></li>
+      <li><a href="#plano">Plano de 90 dias</a></li>
+      <li><a href="#ferramentas">Ferramentas</a></li>
+      <li><a href="#claude">Levar ao Claude</a></li>
+      <li><a href="#glossario">Glossário</a></li>
+      <li><a href="#fontes">Fontes</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<section id="veredito">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Em 1 minuto</p>
+      <h2>O veredito</h2>
+    </div>
+    <ol class="verdict">
+      <li><div><strong>Comece vendendo edição de vídeo para canais de games.</strong> É o caminho com mais chance de dar dinheiro nos primeiros 1 a 3 meses <span class="tag est">estimativa</span>: não depende de seguidores nem de algoritmo, só de fechar um cliente. Em 10/10 o 99Freelas tinha um pedido de "Edição de vídeos e Shorts de GTA 6" com 9 propostas no mesmo dia.</div></li>
+      <li><div><strong>Em paralelo, faça clipping pago na Whop (Content Rewards).</strong> Paga desde o primeiro clipe aprovado, em dólar, sem exigir seguidores. Mas paga pouco: a maioria das 51 campanhas abertas em 10/10 pagava perto de <span class="mono">US$ 1</span> por mil views <span class="tag ok">oficial</span>. Use como treino pago e portfólio.</div></li>
+      <li><div><strong>Monte o seu canal sem rosto, com a sua voz, como patrimônio.</strong> É lento: a partir de 01/02/2027, canais novos precisam de 1.000 inscritos e <span class="mono">8.000 horas</span> assistidas (o dobro) ou <span class="mono">20 milhões</span> de views de Shorts para ganhar com anúncios <span class="tag ok">oficial</span>.</div></li>
+      <li><div><strong>GTA 6 é uma janela real, curta e cheia de gigantes.</strong> Sem console, os R$ 500 não pagam o plano de gravar o jogo: PS5 + GTA 6 custam cerca de <span class="mono">R$ 4.727</span>. Aproveite o GTA 6 editando para quem tem o jogo e clipando streamers em campanhas autorizadas.</div></li>
+      <li><div><strong>Esqueça o YouTube Kids.</strong> Paga cerca de 6 vezes menos por view (<span class="mono">US$ 0,33</span> contra <span class="mono">US$ 2,05</span> em games, mediana de 300 canais <span class="tag co">dado de empresa</span>), desliga comentários e notificações, está sob cerco por vídeos infantis feitos com IA, e GTA é jogo adulto.</div></li>
+    </ol>
+    <p class="small muted col">Como ler as etiquetas: <span class="tag ok">oficial</span> conferido na página da plataforma ou do governo · <span class="tag co">dado de empresa</span> divulgado por quem vende ferramenta ou serviço · <span class="tag est">estimativa</span> conta dos pesquisadores · <span class="tag warn">não confirmado</span> a pesquisa não conseguiu confirmar.</p>
+  </div>
+</section>
+
+<section id="caminhos">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">As 3 formas mais comprovadas</p>
+      <h2>Na ordem certa para você</h2>
+      <p class="col muted">O ranking pesa três coisas: prova de que o dinheiro existe, tempo até o primeiro pagamento e encaixe no seu perfil (games, sem rosto, 20 h por semana).</p>
+    </div>
+    <div class="paths">
+      <article class="path first">
+        <p class="rank">1º para começar</p>
+        <h3>Prestar serviço para criadores</h3>
+        <p class="small">Editar Shorts, cortes e vídeos longos e fazer thumbnails para quem já tem canal ou faz live.</p>
+        <dl>
+          <div><dt>Prova</dt><dd>Fiverr movimentou US$ 1,07 bi em 2025 (relatório à SEC). Upwork: procura por edição de vídeo com IA +329% em 2025. <span class="tag ok">oficial</span></dd></div>
+          <div><dt>Primeiro dinheiro</dt><dd>Semanas a poucos meses <span class="tag est">estimativa</span></dd></div>
+          <div><dt>Custo inicial</dt><dd>Quase zero: os programas grátis bastam</dd></div>
+          <div><dt>Quanto paga no começo</dt><dd>US$ 5 a 15 por hora; Short a R$ 15 a 40 no Brasil <span class="tag est">estimativa</span></dd></div>
+          <div><dt>Risco</dt><dd>Concorrência: 21 a 60 propostas por pedido no 99Freelas</dd></div>
+          <div><dt>Teto</dt><dd>Suas horas; depois, microagência</dd></div>
+        </dl>
+      </article>
+      <article class="path">
+        <p class="rank">2º · em paralelo</p>
+        <h3>Clipping pago por visualização</h3>
+        <p class="small">Cortar lives, podcasts e trailers de quem paga por isso, postar nas suas contas e receber por mil views.</p>
+        <dl>
+          <div><dt>Prova</dt><dd>Content Rewards diz ter pago US$ 20 mi a criadores <span class="tag co">dado de empresa</span>; 51 campanhas abertas em 10/10</dd></div>
+          <div><dt>Primeiro dinheiro</dt><dd>~10 dias após a aprovação + até 5 dias úteis de saque <span class="tag ok">oficial</span></dd></div>
+          <div><dt>Custo inicial</dt><dd>Zero</dd></div>
+          <div><dt>Quanto paga</dt><dd>US$ 0,05 a 5 por mil views, maioria perto de US$ 1; plataforma fica com 10%</dd></div>
+          <div><dt>Risco</dt><dd>Verba acaba; renda concentrada (Call of Duty MW4: média ~US$ 112 por clipador, 1º lugar US$ 2,7 mil)</dd></div>
+          <div><dt>Teto</dt><dd>Baixo para iniciante</dd></div>
+        </dl>
+      </article>
+      <article class="path">
+        <p class="rank">3º · o único que vira patrimônio</p>
+        <h3>Canal próprio sem rosto</h3>
+        <p class="small">Gameplay gravado por você com a sua voz explicando, opinando ou fazendo humor.</p>
+        <dl>
+          <div><dt>Prova</dt><dd>YouTube pagou mais de US$ 100 bi a criadores e empresas em 4 anos; no Brasil, ecossistema de R$ 6 bi em 2025 (Oxford Economics/YouTube)</dd></div>
+          <div><dt>Primeiro dinheiro</dt><dd>6 a 18 meses, ou nunca <span class="tag est">estimativa</span>; mediana de ~16 meses até 1.000 inscritos</dd></div>
+          <div><dt>Custo inicial</dt><dd>Microfone R$ 95 a 215; console se quiser gravar GTA 6</dd></div>
+          <div><dt>Quanto paga</dt><dd>Vídeo longo de games: ~US$ 2,05 por mil views (global); público BR bem menos; Shorts, centavos</dd></div>
+          <div><dt>Risco</dt><dd>Regras de conteúdo reutilizado; exigência dobra em 2027; só ~4% dos criadores ganham mais de US$ 100 mil/ano</dd></div>
+          <div><dt>Teto</dt><dd>Alto</dd></div>
+        </dl>
+      </article>
+    </div>
+    <details>
+      <summary>Por que afiliados, lives, patrocínio e produtos digitais ficaram de fora (por enquanto)</summary>
+      <ul class="clean">
+        <li><strong>Afiliados</strong> precisam de público. Amazon Associados Brasil paga 8% em games e consoles; Eneba, 2% a 5% <span class="tag ok">oficial</span>. O afiliado do YouTube Shopping no Brasil exigia YPP e mais de 5.000 inscritos no lançamento (nov/2025).</li>
+        <li><strong>Lives</strong> têm renda muito concentrada. Na Kick, o pagamento é via Stripe, que pode não atender contas brasileiras <span class="tag warn">não confirmado</span>.</li>
+        <li><strong>Patrocínio</strong> deixa de ser raro por volta de 50 a 100 mil inscritos (CreatorDB, 1,66 milhão de canais).</li>
+        <li><strong>Produtos digitais</strong> (packs de thumbnail, presets) precisam de público antes.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section id="views">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Ordem de grandeza</p>
+      <h2>Quanto rendem 100 mil visualizações</h2>
+      <p class="col muted">Valor aproximado que chega a você, em dólar, para o mesmo volume de views em cada lugar. Os números vêm de fontes diferentes e mudam o tempo todo: use para comparar, não para prometer.</p>
+    </div>
+    <figure class="chart" style="margin:0">
+      <ul class="bars">
+        <li class="bar-row"><div class="bar-label">YouTube vídeo longo, público global<span class="muted">já estar no YPP · mediana AIR US$ 2,05/mil · dado de empresa</span></div><div class="bar-track"><div class="bar" style="width:calc(100% - 5.5rem)"></div><span class="bar-val">~US$ 205</span></div></li>
+        <li class="bar-row"><div class="bar-label">Whop Content Rewards, campanha típica<span class="muted">US$ 1/mil menos 10% · sem mínimo de seguidores · oficial</span></div><div class="bar-track"><div class="bar" style="width:calc((100% - 5.5rem) * .439)"></div><span class="bar-val">~US$ 90</span></div></li>
+        <li class="bar-row"><div class="bar-label">TikTok Creator Rewards<span class="muted">10 mil seguidores, só vídeos de 1 min+ · blogs, não confirmado</span></div><div class="bar-track"><div class="bar dim" style="width:calc((100% - 5.5rem) * .366)"></div><span class="bar-val">US$ 50–100</span></div></li>
+        <li class="bar-row"><div class="bar-label">YouTube vídeo longo, público BR<span class="muted">estimativa sem amostra (TubeAnalytics)</span></div><div class="bar-track"><div class="bar dim" style="width:calc((100% - 5.5rem) * .341)"></div><span class="bar-val">~US$ 70</span></div></li>
+        <li class="bar-row"><div class="bar-label">Cut.Pro, campeonato BR a R$ 3/mil<span class="muted">teto de R$ 270 por vídeo · oficial</span></div><div class="bar-track"><div class="bar" style="width:calc((100% - 5.5rem) * .263)"></div><span class="bar-val">~US$ 54</span></div></li>
+        <li class="bar-row"><div class="bar-label">YouTube "feito para crianças"<span class="muted">mediana AIR US$ 0,33/mil</span></div><div class="bar-track"><div class="bar" style="width:calc((100% - 5.5rem) * .161)"></div><span class="bar-val">~US$ 33</span></div></li>
+        <li class="bar-row"><div class="bar-label">YouTube Shorts, público EUA<span class="muted">RPM US$ 0,328/mil (2025)</span></div><div class="bar-track"><div class="bar" style="width:calc((100% - 5.5rem) * .16)"></div><span class="bar-val">~US$ 33</span></div></li>
+        <li class="bar-row"><div class="bar-label">YouTube Shorts, público BR<span class="muted">RPM US$ 0,045/mil (2025)</span></div><div class="bar-track"><div class="bar" style="width:calc((100% - 5.5rem) * .022)"></div><span class="bar-val">~US$ 4,50</span></div></li>
+      </ul>
+      <figcaption class="axis-note">Barras cinza = valor sem fonte confiável (blog ou estimativa sem amostra). Dólar de referência: PTAX de 09/10/2026, R$ 4,9892. Fontes: AIR Media-Tech, TubeAnalytics, vitrine do Content Rewards, Cut.Pro, blogs sobre TikTok.</figcaption>
+    </figure>
+    <div class="callout ok col">
+      <p class="callout-title">O que o gráfico ensina</p>
+      <p>Por view, uma campanha de clipping paga mais que Shorts com público brasileiro e não exige seguidores. O vídeo longo com público estrangeiro paga mais que tudo, mas só depois de entrar no programa do YouTube. Por isso a ordem é: serviço e clipping agora, canal de vídeos longos para o futuro.</p>
+    </div>
+    <div class="section-head" style="margin-top:12px">
+      <h3>De onde vem o dinheiro na internet de games</h3>
+    </div>
+    <div class="flow">
+      <div><p class="who">1 · A plataforma paga</p><p class="small">YouTube (YPP), TikTok (Creator Rewards). Requisitos altos e conteúdo original.</p></div>
+      <div><p class="who">2 · O dono do conteúdo paga</p><p class="small">Campanhas de clipping: Whop, Vyro, Ssemble, Cut.Pro, Discord de streamers. Paga desde o primeiro clipe aprovado.</p></div>
+      <div><p class="who">3 · Um streamer contrata</p><p class="small">Canal oficial de cortes, com divisão de receita ou mensalidade.</p></div>
+      <div><p class="who">4 · Você vende serviço</p><p class="small">Edição por pacote para quem já tem canal. O mais rápido para começar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="whop">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">O "Whoop" que o Claude citou</p>
+      <h2>Whop e Content Rewards, explicados</h2>
+      <p class="col">O nome certo é <strong>Whop</strong> (whop.com), uma empresa americana de venda de produtos digitais fundada em 2021 no Brooklyn. Em fevereiro de 2026 ela foi avaliada em US$ 1,6 bilhão. Em março de 2025 lançou o <strong>Content Rewards</strong>, o maior mercado de clipping do mundo. Em 2026 o Content Rewards ganhou site próprio (contentrewards.com, empresa Content Rewards Inc.) e a versão 2 (19/08/2026), mas o login e o saque continuam pela carteira da Whop <span class="tag ok">oficial</span>.</p>
+    </div>
+    <div class="col" style="display:grid;gap:10px">
+      <h3>Como funciona</h3>
+      <ul class="clean">
+        <li>A marca deposita uma verba (mínimo de US$ 1.000) e define quanto paga por mil views em cada rede: TikTok, YouTube Shorts, Instagram e X.</li>
+        <li>Cada campanha tem um <strong>piso</strong> e um <strong>teto</strong> por clipe. Exemplo oficial: a US$ 3 por mil com piso de US$ 6, o clipe só começa a pagar com 2.000 views.</li>
+        <li>Você posta na sua conta e envia o link em até 30 minutos. Uma pessoa da marca aprova ou rejeita.</li>
+        <li>O clipe aprovado acumula views por 7 dias, e o valor fica retido mais 3 dias. A plataforma fica com 10%.</li>
+        <li>A verba é dividida por ordem de chegada: quando acaba, as views seguintes não pagam nada.</li>
+      </ul>
+    </div>
+    <div class="math" aria-label="Conta de exemplo">
+      <span>100 mil views</span><i>×</i><span>US$ 1 por mil</span><i>=</i><span>US$ 100</span><i>−10%</i><span>US$ 90 seus</span><i>→ saque →</i><span>~R$ 448 no melhor caso</span>
+    </div>
+    <p class="small muted col">Pelo wire de US$ 23 fixos, os mesmos US$ 90 viram ~R$ 334. O câmbio que a Whop aplica não é publicado <span class="tag est">estimativa</span>.</p>
+
+    <div class="table-wrap">
+      <table>
+        <caption class="sr-only" style="position:absolute;left:-9999px">Campanhas de games abertas em 10/10/2026</caption>
+        <thead><tr><th>Campanha de games (10/10/2026)</th><th>Paga por mil views</th><th>Situação</th></tr></thead>
+        <tbody>
+          <tr><td>Call of Duty MW4 (trailer)</td><td class="num">US$ 1,50 a 2</td><td>Pausada: US$ 79 restantes de US$ 39.921; 355 clipadores</td></tr>
+          <tr><td>Roblox (BloxClips)</td><td class="num">US$ 1</td><td>US$ 170,3 mil gastos de US$ 189,7 mil; 3,4 mil clipadores (média ~US$ 50)</td></tr>
+          <tr><td>Coinbase x Valorant</td><td class="num">US$ 1</td><td>450 clipadores</td></tr>
+          <tr><td>Sky: Children of the Light</td><td class="num">US$ 2,80</td><td>Verba pequena; 59 clipadores</td></tr>
+          <tr><td>Warhammer 40k (Owlcat)</td><td class="num">US$ 2</td><td>Verba de US$ 3 mil; 112 clipadores</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted">Nenhuma das 51 campanhas estava em português. Várias eram de cassino, cripto e uma adulta.</p>
+
+    <h3>Passo a passo</h3>
+    <ol class="steps col">
+      <li><div><strong>Confira os pré-requisitos.</strong> 18 anos ou mais, sem exceção (nem com autorização dos pais), documento com foto e conta bancária <strong>em reais</strong> no seu nome e CPF.</div></li>
+      <li><div><strong>Crie contas próprias</strong> no TikTok, YouTube (para Shorts), Instagram e X, com nome de games. Não compre contas.</div></li>
+      <li><div><strong>Entre em contentrewards.com &gt; "Start Earning".</strong> O login é pela Whop (dá para usar o Google). Conecte suas redes. Só faça login pelo site oficial e nunca passe senha ou código de 2 fatores.</div></li>
+      <li><div><strong>Configure o saque antes de trabalhar.</strong> Na Whop: Dashboard &gt; Balances &gt; "Set up Whop Payments" &gt; Brasil &gt; verificação de identidade &gt; conta em reais. Conta em dólar (Wise USD, Nomad, Avenue) faz o saque falhar.</div></li>
+      <li><div><strong>Abra a tela de saque e anote</strong> os métodos e taxas que aparecem para o Brasil. A taxa de "banco local" do Brasil não é publicada; PIX não aparece em nenhuma página oficial; PayPal não é garantido <span class="tag warn">não confirmado</span>.</div></li>
+      <li><div><strong>Escolha campanhas com critério:</strong> pagamento em cada rede, piso, teto, verba já gasta (evite acima de 80%), idioma e o chat da campanha (outros estão sendo pagos?).</div></li>
+      <li><div><strong>Entre e leia o documento de requisitos:</strong> hashtags, @, duração, se aceita gameplay cru.</div></li>
+      <li><div><strong>Edite</strong> em 9:16, com gancho nos primeiros 1 a 3 segundos e legenda grande.</div></li>
+      <li><div><strong>Poste com o aviso de publicidade ligado</strong> (TikTok: conteúdo de marca; Instagram: parceria paga; YouTube: inclui promoção paga). Não edite nem apague o post depois.</div></li>
+      <li><div><strong>Envie o link em até 30 minutos</strong> e acompanhe: Queued (na fila), Arriving (a caminho), Received (recebido).</div></li>
+      <li><div><strong>Saque.</strong> Do Content Rewards para a Whop é grátis. Da Whop para o banco: mínimo de US$ 10, padrão em até 5 dias úteis; instantâneo 4% + US$ 2,50; cripto 5% + US$ 1; wire US$ 23. Faça um saque-teste de US$ 10.</div></li>
+      <li><div><strong>Declare no Carnê-Leão</strong> e rode um teste de 30 dias com 2 a 4 clipes por dia, medindo aprovação e ganho por hora.</div></li>
+    </ol>
+    <div class="callout warn col">
+      <p class="callout-title">Antes de aceitar os termos</p>
+      <ul class="clean">
+        <li>Ao ter o clipe aprovado, você cede uma licença mundial, perpétua e gratuita do vídeo e do uso da sua imagem, nome e voz. Disputas vão para arbitragem nos EUA.</li>
+        <li>Views suspeitas de robô congelam o dinheiro. Comprar views dá banimento permanente.</li>
+        <li>Campanhas de cassino e bets: no Brasil, só operadoras autorizadas pelo Ministério da Fazenda podem anunciar. Evite.</li>
+        <li>Nunca pague para entrar em campanha. Plataforma séria não cobra de quem corta.</li>
+      </ul>
+    </div>
+    <details>
+      <summary>Alternativas à Whop (no Brasil e lá fora)</summary>
+      <ul class="clean">
+        <li><strong>Cut.Pro (Brasil):</strong> campeonatos de cortes pagos via PIX, de R$ 0,50 a R$ 3 por mil views. 14 ativos em 10/10/2026, nenhum de games. Exemplo: Debate Flow (Flow Podcast), R$ 3 por mil, teto de R$ 270 por vídeo, aceita Kwai.</li>
+        <li><strong>Vyro</strong> (do MrBeast): hoje US$ 1,50 a 2 por mil; saque semanal mínimo de US$ 10 via Stripe ou PayPal; Brasil <span class="tag warn">não confirmado</span>.</li>
+        <li><strong>Ssemble Clip Rewards:</strong> US$ 0,50 a 2 por mil; mínimo de 1.000 views por clipe; saque mínimo de US$ 20 via Stripe, que a página diz atender o Brasil.</li>
+        <li><strong>Clipei (Brasil):</strong> carteira com saque via PIX <span class="tag warn">não confirmado</span>.</li>
+        <li><strong>Discord de streamers:</strong> procure canais como "clip-program" ou "clippers". Lá fora a taxa comum é US$ 40 a 50 por 100 mil views.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section id="clipadores">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Passo a passo dos clipadores</p>
+      <h2>Onde postam, quanto cada rede paga e como é o dia</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Plataforma</th><th>Paga por view?</th><th>Requisitos</th><th>Brasil</th></tr></thead>
+        <tbody>
+          <tr><td><strong>YouTube Shorts</strong></td><td>Sim, pelo programa do YouTube (você fica com 45% da sua parte do fundo de Shorts)</td><td>Hoje: 1.000 inscritos + 10 mi de views de Shorts em 90 dias. Desde 01/02/2027: 20 mi para entrar e 10 mi a cada 90 dias para continuar recebendo. Cortes sem edição não contam</td><td><span class="tag ok">oficial</span></td></tr>
+          <tr><td><strong>TikTok</strong> (Creator Rewards)</td><td>Sim, só vídeos de 1 minuto ou mais</td><td>18+, 10 mil seguidores, 100 mil views em 30 dias, conta pessoal, conteúdo original</td><td>Todas as listas de terceiros incluem o Brasil <span class="tag warn">não confirmado</span>. Confira em TikTok Studio &gt; Monetização</td></tr>
+          <tr><td><strong>Instagram Reels</strong></td><td>Programa por view não confirmado no Brasil</td><td>—</td><td><span class="tag warn">não confirmado</span></td></tr>
+          <tr><td><strong>Facebook</strong></td><td>Só por convite. Desde 14/07/2025 pune repost de conteúdo alheio</td><td>O Creator Fast Track só vale para EUA, Canadá, Reino Unido e Austrália</td><td>Incerto</td></tr>
+          <tr><td><strong>Kwai</strong></td><td>Programa de criador não confirmado. "Kwai Golds" são recompensa de usuário (10.000 = R$ 1)</td><td>—</td><td><span class="tag warn">não confirmado</span></td></tr>
+          <tr><td><strong>Campanhas</strong> (Whop, Vyro, Ssemble, Cut.Pro)</td><td>Sim, quem paga é a marca</td><td>Sem mínimo de seguidores; 18+; regras de cada campanha</td><td>Whop e Ssemble atendem; Cut.Pro paga PIX</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="two">
+      <div class="callout">
+        <p class="callout-title">Formato vencedor</p>
+        <ul class="clean small">
+          <li>Vertical 9:16 (1080x1920). Câmera do streamer em cima, jogo embaixo.</li>
+          <li>Gancho em 1 a 3 segundos: comece no clímax ou com uma frase na tela.</li>
+          <li>Legenda grande, 2 a 4 palavras por vez, palavras-chave destacadas.</li>
+          <li>Um momento por vídeo. Corte silêncios. Termine em loop.</li>
+          <li>Shorts: 20 a 60 s retêm melhor. TikTok: 61 s+ se estiver no Creator Rewards.</li>
+          <li>Sem marca d'água de outra rede. Prefira o áudio original da live.</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <p class="callout-title">Permissão (o erro mais comum)</p>
+        <ul class="clean small">
+          <li>Clipes ativados na Twitch só permitem clipar dentro da Twitch. Não é licença para monetizar fora.</li>
+          <li>Peça autorização por escrito: quais plataformas e se pode monetizar.</li>
+          <li>No YouTube, permissão evita strike, mas não evita a regra de conteúdo reutilizado.</li>
+          <li>No Brasil, o Podpah derrubou canais de cortes com strikes em mar/2025.</li>
+        </ul>
+      </div>
+    </div>
+    <h3>O dia de um clipador iniciante (~3 h)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Tempo</th><th>O que fazer</th></tr></thead>
+        <tbody>
+          <tr><td class="num">30 min</td><td>Ver lives e podcasts das últimas 24 h e campanhas novas na Whop</td></tr>
+          <tr><td class="num">60–90 min</td><td>Garimpar momentos em 1,5x ou 2x (mapa de "momentos mais assistidos", picos do chat) ou deixar o OpusClip pré-selecionar</td></tr>
+          <tr><td class="num">60 min</td><td>Editar no CapCut: 9:16, gancho, legenda, zoom, narração se for o caso</td></tr>
+          <tr><td class="num">20 min</td><td>Publicar nas redes com título próprio para cada uma</td></tr>
+          <tr><td class="num">20 min</td><td>Anotar números na planilha: retenção nos 3 primeiros segundos, % assistido, compartilhamentos</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout col">
+      <p class="callout-title">Acordo com streamer: sua vantagem de advogado</p>
+      <p class="small">Prove valor com 10 a 20 cortes autorizados e números. Proponha ser o canal oficial de cortes, com divisão de receita ou um valor por pacote de 30 cortes por mês. Formalize: quem é dono do canal, quem fica com a senha, percentual, plataformas e rescisão.</p>
+    </div>
+  </div>
+</section>
+
+<section id="canal">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Patrimônio de longo prazo</p>
+      <h2>Canal de games sem rosto, do zero</h2>
+    </div>
+    <ol class="steps col">
+      <li><div><strong>Formato.</strong> Mais seguro: gameplay gravado por você + sua voz (guias, curiosidades, lore, "tudo que você precisa saber"). Mais arriscado: cortes de terceiros e compilações.</div></li>
+      <li><div><strong>Idioma.</strong> Comece em português. Depois de entrar no programa do YouTube, ligue a dublagem automática (português para inglês é suportado) para alcançar quem paga mais.</div></li>
+      <li><div><strong>Nicho, do mais seguro ao mais arriscado:</strong> guias e dicas · curiosidades e easter eggs · lore com seu gameplay · top 10 com opinião · notícias. Evite histórias do Reddit narradas por IA, compilações alheias e vídeos "satisfying" sem narração.</div></li>
+      <li><div><strong>Valide (~4 h).</strong> Autocomplete do YouTube ("gta 6 como", "gta 6 onde"); filtro "Este mês" para achar canais com menos de 10 mil inscritos e vídeos com muito mais views que inscritos; Google Trends com "Pesquisa no YouTube"; depois teste real com 8 a 10 vídeos e ~20 Shorts em 30 a 45 dias.</div></li>
+      <li><div><strong>Crie a conta e o canal (~1 h).</strong> E-mail novo, verificação em duas etapas (obrigatória para monetizar), canal de marca, telefone verificado em youtube.com/verify, recursos avançados no Studio. Nome sem "GTA" para não ficar preso a um jogo. Público: "Não é conteúdo para crianças".</div></li>
+      <li><div><strong>Grave.</strong> PS5: botão Create, "Iniciar nova gravação" (até 1 h), em 1080p; clipes de menos de 3 min vão sozinhos para o PS App; os longos saem por pendrive. Xbox: até 10 min na memória interna ou 1 h em HD externo. PC: OBS Studio. Abaixe ou desligue o rádio do jogo.</div></li>
+      <li><div><strong>Roteiro.</strong> 0 a 10 s: entregue a promessa do título. Até 30 s: diga o que a pessoa ganha assistindo até o fim. Blocos de 1 a 2 min com mini ganchos. 150 palavras ≈ 1 minuto.</div></li>
+      <li><div><strong>Narração.</strong> Microfone USB, quarto abafado (cortinas, cobertores), redução de ruído no Audacity ou no CapCut. Voz de IA só em plano pago e com roteiro seu.</div></li>
+      <li><div><strong>Miniatura e título.</strong> No máximo 3 a 4 palavras, um elemento grande, sem violência gráfica. Palavra buscada no começo do título. Teste A/B de até 3 versões no Studio.</div></li>
+      <li><div><strong>Shorts + longos.</strong> 1 vídeo longo por semana + 3 a 5 Shorts cortados dele, com link para o longo. Shorts são vitrine; o dinheiro vem dos longos.</div></li>
+      <li><div><strong>Leia o Studio toda semana:</strong> impressões, CTR (metade dos canais fica entre 2% e 10%), retenção aos 30 segundos. Mude uma coisa de cada vez.</div></li>
+    </ol>
+    <h3>Semana de 20 h só de canal (modelo)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dia</th><th>Horas</th><th>Tarefa</th></tr></thead>
+        <tbody>
+          <tr><td>Segunda</td><td class="num">3 h</td><td>Validar o tema e escrever o roteiro do vídeo longo</td></tr>
+          <tr><td>Terça</td><td class="num">4 h</td><td>Jogar, gravar e passar o gameplay para o PC</td></tr>
+          <tr><td>Quarta</td><td class="num">4 h</td><td>Gravar a narração (1 h) e editar o longo (3 h)</td></tr>
+          <tr><td>Quinta</td><td class="num">3 h</td><td>Terminar a edição, 2 miniaturas, título, descrição; agendar</td></tr>
+          <tr><td>Sexta</td><td class="num">2 h</td><td>Cortar e legendar 3 a 5 Shorts e agendar</td></tr>
+          <tr><td>Sábado</td><td class="num">2 h</td><td>Ler o Studio, responder comentários, anotar ideias</td></tr>
+          <tr><td>Domingo</td><td class="num">2 h</td><td>Estudar 3 vídeos de concorrentes e adiantar o próximo roteiro</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted">Quando somar serviço e clipping, use a divisão do <a href="#plano">plano de 90 dias</a>.</p>
+  </div>
+</section>
+
+<section id="gta6">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">A janela de 19/11/2026</p>
+      <h2>GTA 6: oportunidade real, janela curta</h2>
+    </div>
+    <div class="facts">
+      <div class="fact"><span class="k">Lançamento</span><span class="v">19/11/2026</span><span class="n">PS5, PS5 Pro, Xbox Series X|S. Sem PC. Adiado 2 vezes antes <span class="tag ok">oficial</span></span></div>
+      <div class="fact"><span class="k">Preço no Brasil</span><span class="v">R$ 449,90</span><span class="n">Standard na PS Store e na loja Xbox; Ultimate R$ 549,90 <span class="tag ok">oficial</span></span></div>
+      <div class="fact"><span class="k">Console mais barato</span><span class="v">R$ 4.277</span><span class="n">PS5 Digital Slim no PIX, Kabum, 10/10. Xbox Series S esgotado</span></div>
+      <div class="fact"><span class="k">Demanda</span><span class="v">475 mi</span><span class="n">views do Trailer 2 em 24 h, somando plataformas</span></div>
+    </div>
+    <div class="two">
+      <div class="callout ok">
+        <p class="callout-title">Cenário A · você já tem PS5 ou Xbox Series</p>
+        <p class="small">Os R$ 500 pagam o jogo (R$ 449,90). Microfone no mês seguinte. Placa de captura por último, só se tiver PC e quiser gravar horas ou fazer live.</p>
+      </div>
+      <div class="callout warn">
+        <p class="callout-title">Cenário B · você não tem console</p>
+        <p class="small">Gravar GTA 6 custa ~R$ 4.727 (console + jogo). Aproveite a janela de outro jeito: edite para canais de GTA 6 (há pedidos no 99Freelas), clipe streamers jogando em campanhas autorizadas e use no canal um jogo que você já tem.</p>
+      </div>
+    </div>
+    <h3>Calendário</h3>
+    <ol class="timeline col">
+      <li><span class="when">Até 11/11</span><p>Canal pronto. Vídeos só com material oficial e comentário seu: "tudo que sabemos", GTA 6 x GTA 5, mapa, preço e edições, "sai para PS4? PC?". Escreva 15 a 20 roteiros de guias com base nas mecânicas oficiais (fugir de 6 estrelas, trocar visual para despistar a polícia, alternar Jason e Lucia, sistema de honra).</p></li>
+      <li><span class="when">12 a 18/11</span><p>Pautas de busca alta e vida curta: tamanho do download, que horas libera, como fazer o pré-download, "chegou a caixa: só tem código?". Confirme tudo no Rockstar Newswire.</p></li>
+      <li class="hot"><span class="when">19 a 26/11 · volume máximo</span><p>Primeiras impressões SEM spoiler, 10 coisas para fazer primeiro, dicas para iniciantes, dinheiro rápido, fugir da polícia. Shorts todo dia com comentário seu. Velocidade vale mais que perfeição.</p></li>
+      <li><span class="when">27/11 a 31/12</span><p>Guias profundos: colecionáveis, 100%, melhores carros, segredos, escolhas. "História explicada" só depois de 2 a 3 semanas e com aviso de spoiler.</p></li>
+      <li><span class="when">Jan a fev/2027</span><p>Faça mais do que trouxe inscritos; versões em inglês; escolha o próximo jogo. O pico passa: o Palworld perdeu ~64% dos jogadores em duas semanas.</p></li>
+    </ol>
+    <div class="callout bad col">
+      <p class="callout-title">Política da Rockstar · leia como advogado</p>
+      <ul class="clean small">
+        <li>A página oficial da política de vídeos deu erro 503 para todos os pesquisadores. Pelo trecho indexado pela busca, ela se dirige ao uso <strong>ocasional e não comercial</strong> por fãs e define não comercial como <strong>não ganhar dinheiro com as imagens</strong>. Também proíbe vazamentos e spoilers e diz que a Take-Two pode derrubar conteúdo a qualquer momento. Contato: copyright@take2games.com.</li>
+        <li>Os Termos da Take-Two (28/02/2025) dão licença "pessoal e não comercial" e tratam vídeos e lives feitos com o jogo como conteúdo usável "conforme autorizado por nós" <span class="tag ok">oficial</span>.</li>
+        <li>Na prática, GTA V foi o 2º jogo com mais espectadores médios na Twitch entre 10/09 e 10/10/2026. A Rockstar convidou criadores (inclusive o brasileiro Davy Jones) para prévias e mandou brindes do GTA 6 a criadores.</li>
+        <li>Derrubadas encontradas em 2025-2026: vazamentos, mods que recriam outro jogo e repostagem crua. Nenhum caso encontrado de canal comum de gameplay derrubado por monetizar.</li>
+        <li><strong>Conclusão:</strong> monetizar GTA é tolerância, não licença. Salve a política em PDF pelo seu navegador, abra um chamado no suporte da Rockstar descrevendo o seu formato se quiser segurança, e não dependa de um jogo só.</li>
+      </ul>
+    </div>
+    <div class="callout col">
+      <p class="callout-title">Regras do YouTube que pegam vídeos de GTA</p>
+      <ul class="clean small">
+        <li>Violência gráfica na miniatura ou nos primeiros 7 segundos: sem anúncios.</li>
+        <li>Juntar NPCs para matança em massa ou gameplay feito para chocar: sem anúncios.</li>
+        <li>Música do rádio do jogo gera reivindicação; Short de mais de 1 minuto com reivindicação fica bloqueado.</li>
+        <li>Vazamento (houve um de 25 minutos em 08/10/2026): strike e risco de processo. Nunca use.</li>
+        <li>"GTA 6 PC download grátis", "APK", "chave beta": golpe; derruba o canal.</li>
+      </ul>
+    </div>
+    <details>
+      <summary>Palavras-chave para testar (volume não medido)</summary>
+      <p class="small"><strong>Português:</strong> GTA 6 data de lançamento, preço em reais, vai sair para PS4, vai sair para PC, que horas libera, tamanho em GB, vale a pena a Ultimate, GTA 6 vs GTA 5, mapa, como ganhar dinheiro, como fugir de 6 estrelas, segredos, história explicada, final, GTA 6 online quando, GTA 6 RP.</p>
+      <p class="small" style="margin-top:8px"><strong>Inglês:</strong> GTA 6 release date, PC, price, map size, tips and tricks, beginners guide, money guide, how to lose 6 star wanted level, all collectibles, 100% guide, secrets, best cars, honor system choices, ending explained, 60 fps patch, Online release date.</p>
+      <p class="small" style="margin-top:8px"><strong>GTA RP no Brasil:</strong> o Cidade Alta é o servidor de referência e roda no GTA V de PC com FiveM. Como o GTA 6 sai só em console e sem mods, o RP deve continuar no GTA V por meses.</p>
+    </details>
+  </div>
+</section>
+
+<section id="kids">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">A pergunta do YouTube Kids</p>
+      <h2>Aposta ruim para quem começa em games</h2>
+    </div>
+    <div class="facts">
+      <div class="fact"><span class="k">RPM infantil x games</span><span class="v">US$ 0,33 x 2,05</span><span class="n">por mil views, mediana de 300 canais <span class="tag co">dado de empresa</span></span></div>
+      <div class="fact"><span class="k">Após a regra de 2020</span><span class="v">−22%</span><span class="n">views novas em canais infantis (estudo com 5.066 canais)</span></div>
+      <div class="fact"><span class="k">ECA Digital</span><span class="v">17/03/2026</span><span class="n">em vigor no Brasil (Lei 15.211/2025) <span class="tag ok">oficial</span></span></div>
+    </div>
+    <ul class="clean col">
+      <li>Vídeo marcado "para crianças" perde anúncio personalizado (o que paga melhor), comentários, sininho, Clube de Canais, Super Chat, telas finais e "salvar na playlist" <span class="tag ok">oficial</span>.</li>
+      <li>"Público misto" conta como infantil. Marcar como infantil não coloca o vídeo no app YouTube Kids.</li>
+      <li>2026 foi o ano do cerco a vídeos infantis feitos com IA: o YouTube tirou do programa os canais apontados pelo New York Times, e cerca de 200 entidades pediram proibir IA no YouTube Kids.</li>
+      <li>No Brasil, o ECA Digital proíbe usar dados para publicidade dirigida a crianças e adolescentes. Explorar de forma habitual a imagem de menor em conteúdo monetizado exige alvará judicial (Decreto 12.880/2026 e resolução do CNJ de 23/06/2026).</li>
+      <li>Marcar errado de propósito é arriscado: a Disney pagou US$ 10 milhões à FTC em 2025.</li>
+    </ul>
+    <div class="callout ok col">
+      <p class="callout-title">Melhor alternativa</p>
+      <p class="small">Games para jovens adultos (18 a 34 anos): GTA, terror, mundo aberto, notícias e curiosidades. Se fizer Roblox ou Minecraft, faça para adolescentes mais velhos e adultos (terror, desafios difíceis, construções técnicas, humor adulto). O próprio YouTube cita "um vídeo de Minecraft com humor adulto" como público geral.</p>
+    </div>
+  </div>
+</section>
+
+<section id="regras">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">O que derruba ou desmonetiza</p>
+      <h2>Regras do YouTube que importam</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Nível do programa</th><th>Hoje (até 31/01/2027)</th><th>A partir de 01/02/2027 (canais novos)</th><th>O que libera</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Inicial</strong> (doações de fãs)</td><td>500 inscritos + 3 vídeos em 90 dias + 3.000 h em 12 meses ou 3 mi de views de Shorts em 90 dias</td><td>Não muda</td><td>Clube, Super Chat, Super Thanks, Shopping. Sem anúncios. Brasil na lista; confira no seu Studio</td></tr>
+          <tr><td><strong>Com anúncios</strong></td><td>1.000 inscritos + 4.000 h em 12 meses ou 10 mi de views de Shorts em 90 dias</td><td>1.000 inscritos + <strong>8.000 h</strong> em 365 dias ou <strong>20 mi</strong> de views de Shorts em 90 dias</td><td>55% dos anúncios dos vídeos longos; 45% do fundo de Shorts</td></tr>
+          <tr><td><strong>Receber pelos Shorts</strong></td><td>Estar no programa</td><td>Manter 10 mi de views de Shorts a cada 90 dias (até quem já está no programa)</td><td>Abaixo disso, receita de Shorts é zero no mês</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted col">Fonte: Central de Ajuda do YouTube (páginas 72851, 12843009, 13429240, 12504220) e anúncio de 10/08/2026 <span class="tag ok">oficial</span>. A ideia de que pedidos enviados até 31/01/2027 seguem a regra antiga vem só de uma empresa <span class="tag warn">não confirmado</span>. Conta de referência: 8.000 h ≈ 120 mil views de vídeo longo com 4 min de média em 12 meses.</p>
+    <div class="two">
+      <div class="callout">
+        <p class="callout-title">Não monetiza</p>
+        <ul class="clean small">
+          <li>Clipes juntados com pouca ou nenhuma narrativa, mesmo com permissão do dono</li>
+          <li>Vídeos curtos compilados de outras redes</li>
+          <li>Leitura de texto que você não escreveu (ex.: histórias do Reddit)</li>
+          <li>IA com modelo genérico e cara de produção em massa (desde 15/07/2025)</li>
+          <li>Narração que só descreve a tela (aviso do YouTube de 01/10/2026)</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <p class="callout-title">Monetiza</p>
+        <ul class="clean small">
+          <li>Seu gameplay com seu comentário, análise ou humor</li>
+          <li>Crítica e react com comentário de verdade</li>
+          <li>Edição com história e comentário próprios</li>
+          <li>Mesma abertura e encerramento em todos os vídeos (permitido)</li>
+          <li>Clonar a SUA voz (não exige aviso)</li>
+        </ul>
+      </div>
+    </div>
+    <ul class="clean col small">
+      <li><strong>Teste rápido:</strong> tire o trecho alheio; se não sobrar nada seu, não publique. A análise vale para o canal inteiro.</li>
+      <li><strong>Content ID</strong> gera reivindicação (sem punição, mas a receita vai para o dono). Contestar sem motivo pode virar strike.</li>
+      <li><strong>Strike:</strong> 3 em 90 dias podem encerrar o canal e os canais ligados.</li>
+      <li><strong>Fair use</strong> é conceito dos EUA; no Brasil o mais próximo é o art. 46, III e VIII, da Lei 9.610/98. Escrever "não tenho os direitos" não protege.</li>
+      <li><strong>Publi:</strong> marque "inclui promoção paga". O novo Guia do CONAR para influenciadores vale desde 01/06/2026.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="servico">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">O caminho do primeiro dinheiro</p>
+      <h2>Vender edição de vídeo: taxas, preços e propostas</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Plataforma</th><th>Taxa</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>99Freelas (Brasil)</td><td>5% a 20% (mín. R$ 10) somados à sua proposta e pagos pelo cliente; repasse em 6, 4 ou 2 dias úteis</td><td><span class="tag ok">oficial</span></td></tr>
+          <tr><td>Upwork</td><td>0% a 15% por contrato (desde 05/2025), mostrada antes de aceitar</td><td><span class="tag ok">oficial</span></td></tr>
+          <tr><td>Fiverr</td><td>20% de cada pedido; dinheiro retido 14 dias</td><td><span class="tag warn">não confirmado em 2026</span></td></tr>
+          <tr><td>Freelancer.com</td><td>10% ou US$ 5, o que for maior</td><td><span class="tag ok">oficial</span></td></tr>
+          <tr><td>Workana</td><td>Não confirmada</td><td><span class="tag warn">não confirmado</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Tabela inicial de preços <span class="tag est">estimativa</span></h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Entrega</th><th>Brasil, iniciante</th><th>Brasil, 5+ avaliações</th><th>Exterior, iniciante</th></tr></thead>
+        <tbody>
+          <tr><td>Short ou corte</td><td class="num">R$ 15–40</td><td class="num">R$ 40–80</td><td class="num">US$ 5–25</td></tr>
+          <tr><td>Vídeo de 10 a 15 min</td><td class="num">R$ 80–150</td><td class="num">R$ 150–300</td><td class="num">US$ 15–30</td></tr>
+          <tr><td>Thumbnail</td><td class="num">R$ 20–50</td><td class="num">R$ 50–100</td><td class="num">US$ 2–10</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted col">Base: lances públicos do Freelancer.com (out/2026) e piso de R$ 50 por projeto do 99Freelas. Teto de referência: uma agência americana cobra US$ 495/mês por 4 vídeos longos (~US$ 124 cada). Fórmula: preço da proposta = quanto você quer receber ÷ (1 − taxa).</p>
+    <ol class="steps col">
+      <li><div><strong>Portfólio em 1 a 2 semanas:</strong> 3 a 10 Shorts 9:16 com legenda e zoom, 1 ou 2 vídeos de 10 a 12 min estilo melhores momentos, 3 a 10 thumbnails (inclua uma de terror). Publique como "não listado".</div></li>
+      <li><div><strong>99Freelas primeiro (grátis):</strong> busque "edição de vídeo games", "cortes shorts", "thumbnail youtube". Responda nas primeiras horas.</div></li>
+      <li><div><strong>Proposta:</strong> 1 frase mostrando que entendeu o canal, 3 links do mesmo estilo, preço por Short, por pacote e por vídeo longo, prazo (24 a 48 h por Short) e 1 ou 2 revisões. Leia o pedido até o fim: há clientes que testam se você leu.</div></li>
+      <li><div><strong>Ofereça o primeiro vídeo pago com desconto</strong>, não um teste grátis longo.</div></li>
+      <li><div><strong>Mês 2:</strong> Fiverr (gig com 3 pacotes), Upwork, Discord, X e contato direto com canais de 5 mil a 100 mil inscritos mandando 1 Short feito com o vídeo deles.</div></li>
+      <li><div><strong>Venda pacote mensal</strong> e suba 20% a 30% a cada 5 avaliações.</div></li>
+    </ol>
+    <div class="callout warn col">
+      <p class="callout-title">Conta de realidade</p>
+      <p class="small">Vídeo de 12 min a US$ 20 líquidos feito em 3 horas = ~US$ 6,70 por hora (~R$ 33/h). Para ganhar mais: editar mais rápido (modelos prontos) e fechar contratos recorrentes. Alguns clientes proíbem IA em thumbnails: aprenda recorte e composição manual.</p>
+    </div>
+  </div>
+</section>
+
+<section id="receber">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Do dólar ao real</p>
+      <h2>Receber e declarar o dinheiro</h2>
+    </div>
+    <h3>Quanto chega de US$ 100</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Caminho</th><th>Chega</th><th>Observação</th></tr></thead>
+        <tbody>
+          <tr><td>Wise</td><td class="num">~R$ 492</td><td>Só se a plataforma conseguir pagar na Wise; inclui 0,38% de imposto</td></tr>
+          <tr><td>Payoneer</td><td class="num">R$ 479–493</td><td>+ anuidade de US$ 29,95 se receber menos de US$ 6.000 em 12 meses</td></tr>
+          <tr><td>PayPal</td><td class="num">~R$ 481</td><td>3,5% embutidos na cotação; saque para banco grátis</td></tr>
+          <tr><td>Remessa Online for Creators (PF)</td><td class="num">~R$ 451</td><td>1,64% + R$ 39,90 por recebimento</td></tr>
+          <tr><td>Wire da Whop</td><td class="num">até ~R$ 384</td><td>US$ 23 fixos, antes do câmbio</td></tr>
+          <tr><td>Pedido de US$ 100 na Fiverr → PayPal</td><td class="num">~R$ 385</td><td>20% da Fiverr + 3,5% de câmbio</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted">Câmbio de referência R$ 4,987 (10/10/2026). Tabelas oficiais das empresas; contas dos pesquisadores.</p>
+    <div class="two">
+      <div class="callout">
+        <p class="callout-title">YouTube (AdSense)</p>
+        <ul class="clean small">
+          <li>No Brasil: transferência internacional (SWIFT) ou PayPal Hyperwallet</li>
+          <li>Paga a partir de US$ 100; envio entre os dias 21 e 26</li>
+          <li>PIN pelo correio ao chegar a US$ 10; 4 meses para digitar</li>
+          <li><strong>W-8BEN até 10/12:</strong> com ele, 30% retidos só da receita de espectadores dos EUA (o Brasil não tem tratado com os EUA); sem ele, 24% de tudo</li>
+          <li>Tipo de conta (individual ou empresa) não muda depois</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <p class="callout-title">Imposto no Brasil (pessoa física)</p>
+        <ul class="clean small">
+          <li>Dinheiro do exterior: Carnê-Leão todo mês, no e-CAC; DARF até o último dia útil do mês seguinte</li>
+          <li>Desde jan/2026 (Lei 15.270/2025): imposto zero até R$ 5.000/mês, com redução até R$ 7.350. Aplicação ao Carnê-Leão: confirme com contador</li>
+          <li>O imposto retido nos EUA pode ser compensado (guarde o informe 1042-S)</li>
+          <li>IOF: zero para receita de exportação de serviços, mas muitos bancos cobram 0,38%. Pergunte antes de fechar o câmbio</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn col">
+      <p class="callout-title">MEI e CNPJ · atenção, advogado</p>
+      <ul class="clean small">
+        <li>Não existe MEI de "youtuber" ou "influenciador". Existe "Editor(a) de vídeo independente" (CNAE 5912-0/99), limite de R$ 81 mil por ano, DAS de ~R$ 86/mês. Serve para editar para clientes; para a receita do seu próprio canal, o encaixe é discutível.</li>
+        <li>Quem participa de outra empresa como titular, sócio ou administrador não pode ser MEI (LC 123/2006, art. 18-A, §4º). Se você tem sociedade de advocacia, inclusive unipessoal, o MEI está fora.</li>
+        <li>Simples: "produções audiovisuais" no Anexo III (a partir de 6%) sem fator R; "publicidade" depende do fator R (Anexo V começa em 15,5%).</li>
+        <li>Regra de bolso: até ~R$ 5 mil/mês, pessoa física costuma bastar. Acima de R$ 7 a 10 mil/mês recorrentes, compare com CNPJ no Simples.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="golpes">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Proteja o tempo e o canal</p>
+      <h2>Golpes e armadilhas comuns</h2>
+    </div>
+    <ul class="clean col">
+      <li><strong>Pague para trabalhar:</strong> curtir vídeos ou avaliar produtos, pequenos pagamentos iniciais e depois "deposite para liberar o saque". A FTC registrou ~20 mil denúncias só no 1º semestre de 2024.</li>
+      <li><strong>Campanha falsa de clipping:</strong> cobra taxa de inscrição, mentoria ou pacote de contas, pede senha ou código de 2 fatores, ou paga por fora em Pix ou cripto.</li>
+      <li><strong>Venda de views e inscritos:</strong> views falsas não pagam e podem derrubar o canal.</li>
+      <li><strong>Falso patrocínio ou "teste este jogo beta":</strong> arquivo com vírus para roubar a sessão e sequestrar o canal. Também e-mails falsos de "AdSense" pedindo login.</li>
+      <li><strong>"GTA 6 PC download", "APK", "chave beta":</strong> não existe.</li>
+      <li><strong>Curso de renda garantida e "canal dark que fatura milhões":</strong> mostram exceções como regra. Peça analytics e declaração de imposto, não print de saque.</li>
+      <li><strong>Bets e cassino:</strong> só operadoras autorizadas pelo Ministério da Fazenda podem anunciar no Brasil.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="plano">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">10/10/2026 a 08/01/2027</p>
+      <h2>Plano de 90 dias</h2>
+      <p class="col muted">Mês 1: 10 h aprendendo e montando portfólio, 6 h de clipping, 4 h de canal. Meses 2 e 3: 10 h para clientes, 6 h de canal, 4 h de clipping. A cada 30 dias, mova horas para a frente que mais paga por hora. As caixas ficam marcadas neste navegador.</p>
+      <p class="progress" id="progresso" aria-live="polite"></p>
+    </div>
+    <div class="phase">
+      <h3>Fase 1 · Base <span class="mono">10/10 a 25/10</span></h3>
+      <ul class="checks">
+        <li><label><input type="checkbox" id="c1"><span>Gmail novo só para o projeto, com verificação em duas etapas</span></label></li>
+        <li><label><input type="checkbox" id="c2"><span>Canal no YouTube (canal de marca, telefone verificado, "não é para crianças")</span></label></li>
+        <li><label><input type="checkbox" id="c3"><span>Contas no TikTok, Instagram (profissional) e X com o mesmo nome</span></label></li>
+        <li><label><input type="checkbox" id="c4"><span>Instalar CapCut, DaVinci Resolve, OBS, Audacity; criar template de Short</span></label></li>
+        <li><label><input type="checkbox" id="c5"><span>Assistir 30 cortes virais de games e anotar gancho, legenda e duração</span></label></li>
+        <li><label><input type="checkbox" id="c6"><span>Content Rewards: conta, verificação de identidade, conta em reais; anotar métodos de saque</span></label></li>
+        <li><label><input type="checkbox" id="c7"><span>Entrar em 2 ou 3 campanhas de games e postar 2 a 3 clipes por dia</span></label></li>
+        <li><label><input type="checkbox" id="c8"><span>Portfólio: 10 Shorts, 2 vídeos longos, 5 thumbnails</span></label></li>
+        <li><label><input type="checkbox" id="c9"><span>Perfil no 99Freelas com o portfólio</span></label></li>
+        <li><label><input type="checkbox" id="c10"><span>Abrir a política da Rockstar no navegador e salvar em PDF</span></label></li>
+        <li><label><input type="checkbox" id="c11"><span>Conferir TikTok Studio &gt; Monetização e YouTube Studio &gt; Ganhar dinheiro</span></label></li>
+      </ul>
+    </div>
+    <div class="phase">
+      <h3>Fase 2 · Primeiros clientes <span class="mono">26/10 a 11/11</span></h3>
+      <ul class="checks">
+        <li><label><input type="checkbox" id="c12"><span>5 a 10 propostas por dia no 99Freelas e na Workana</span></label></li>
+        <li><label><input type="checkbox" id="c13"><span>Contato direto com 20 canais pequenos de games, com 1 Short de amostra</span></label></li>
+        <li><label><input type="checkbox" id="c14"><span>Saque-teste de US$ 10 na Whop e cálculo do custo real</span></label></li>
+        <li><label><input type="checkbox" id="c15"><span>Canal: 1 vídeo longo + 3 a 5 Shorts por semana</span></label></li>
+        <li><label><input type="checkbox" id="c16"><span>Escrever 15 roteiros curtos de guias de GTA 6 (kit lançamento)</span></label></li>
+        <li><label><input type="checkbox" id="c17"><span>Planilha com horas, ganhos, views e aprovações por frente</span></label></li>
+      </ul>
+    </div>
+    <div class="phase">
+      <h3>Fase 3 · Janela do GTA 6 <span class="mono">12/11 a 30/11</span></h3>
+      <ul class="checks">
+        <li><label><input type="checkbox" id="c18"><span>Com console: volume máximo no canal (calendário do GTA 6)</span></label></li>
+        <li><label><input type="checkbox" id="c19"><span>Sem console: oferecer edição de GTA 6 a canais que têm o jogo; clipar streamers em campanhas autorizadas</span></label></li>
+        <li><label><input type="checkbox" id="c20"><span>Fiverr: gig com 3 pacotes de edição de games, em inglês</span></label></li>
+        <li><label><input type="checkbox" id="c21"><span>Carnê-Leão do que recebeu em outubro (até o último dia útil de novembro)</span></label></li>
+      </ul>
+    </div>
+    <div class="phase">
+      <h3>Fase 4 · Medir e dobrar a aposta <span class="mono">01/12 a 08/01/2027</span></h3>
+      <ul class="checks">
+        <li><label><input type="checkbox" id="c22"><span>Comparar ganho líquido por hora: serviço x clipping x canal; mover horas</span></label></li>
+        <li><label><input type="checkbox" id="c23"><span>Subir preço após 5 avaliações; oferecer pacote mensal</span></label></li>
+        <li><label><input type="checkbox" id="c24"><span>Escolher o 2º jogo do canal para depois do pico do GTA 6</span></label></li>
+        <li><label><input type="checkbox" id="c25"><span>Se tiver AdSense: W-8BEN até 10/12</span></label></li>
+        <li><label><input type="checkbox" id="c26"><span>Conversa com contador: MEI, CNPJ, IOF, INSS</span></label></li>
+      </ul>
+    </div>
+    <div class="callout col">
+      <p class="callout-title">Metas realistas aos 90 dias <span class="tag est">estimativa</span></p>
+      <p class="small">1 a 3 clientes recorrentes de edição. Clipping: dezenas a poucas centenas de dólares por mês. Canal: 20 a 30 vídeos publicados e dados de CTR e retenção para decidir o formato. A monetização do canal ainda estará longe.</p>
+    </div>
+  </div>
+</section>
+
+<section id="ferramentas">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Gaste pouco no começo</p>
+      <h2>Ferramentas e orçamento</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Ferramenta</th><th>Para quê</th><th>Custo</th></tr></thead>
+        <tbody>
+          <tr><td>CapCut</td><td>Editar Shorts, legendas automáticas</td><td>Grátis; Pro US$ 19,99/mês</td></tr>
+          <tr><td>DaVinci Resolve</td><td>Editar vídeos longos e áudio</td><td>Grátis</td></tr>
+          <tr><td>OBS Studio</td><td>Gravar PC ou placa de captura</td><td>Grátis</td></tr>
+          <tr><td>Audacity</td><td>Limpar a narração</td><td>Grátis</td></tr>
+          <tr><td>Canva / Photopea</td><td>Thumbnails</td><td>Grátis</td></tr>
+          <tr><td>OpusClip <span class="tag co">já conectado na sua conta</span></td><td>IA que sugere cortes de vídeo longo</td><td>Grátis com marca d'água; Starter US$ 15/mês</td></tr>
+          <tr><td>vidIQ <span class="tag co">já conectado na sua conta</span></td><td>Palavras-chave e ideias de título</td><td>Plano grátis; recursos pagos gastam créditos</td></tr>
+          <tr><td>Google Trends</td><td>Comparar interesse por termo</td><td>Grátis</td></tr>
+          <tr><td>ElevenLabs</td><td>Voz de IA (com cautela)</td><td>Starter US$ 6/mês; o grátis não tem licença comercial</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="two">
+      <div class="callout">
+        <p class="callout-title">Orçamento sem console (R$ 500)</p>
+        <ul class="clean small">
+          <li>Microfone Fifine K669 Pro 2: ~R$ 215 (Kabum, 10/10)</li>
+          <li>Pendrive ou HD para gravações: ~R$ 100</li>
+          <li>Reserva de ~R$ 185 para 1 a 2 meses de um plano pago (OpusClip Starter ou CapCut Pro), só quando estiver produzindo todo dia</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <p class="callout-title">Orçamento com console</p>
+        <ul class="clean small">
+          <li>GTA 6 Standard: R$ 449,90</li>
+          <li>Microfone no mês seguinte, com o primeiro dinheiro</li>
+          <li>Placa de captura genérica (R$ 55 a 100) só se tiver PC; no PS5 é preciso desligar o HDCP</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="claude">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Para o Claude Chat te guiar</p>
+      <h2>Levar este guia ao Claude</h2>
+    </div>
+    <ol class="steps col">
+      <li><div>No claude.ai, crie um <strong>Projeto</strong> chamado "Dinheiro com Games".</div></li>
+      <li><div>Em <strong>Instruções do projeto</strong>, cole o prompt abaixo (botão "Copiar prompt").</div></li>
+      <li><div>Em <strong>Conhecimento do projeto</strong>, suba o arquivo <span class="mono">mentor-dinheiro-games.md</span> que te mandei junto com esta página.</div></li>
+      <li><div>Abra uma conversa no projeto e escreva: "Vamos começar. Faça o diagnóstico." Toda semana, mande o check-in do modelo.</div></li>
+    </ol>
+    <div class="prompt-box">
+      <label for="mentorPrompt" class="small muted">Prompt do mentor (Parte 1 do arquivo .md)</label>
+      <textarea id="mentorPrompt" readonly>Você é meu mentor para ganhar dinheiro na internet com conteúdo de games. Seu papel é me guiar passo a passo, semana a semana, até eu ter renda recorrente. Você é o dono do resultado comigo: cobre execução, aponte erros e corte o que não dá dinheiro.
+
+QUEM EU SOU
+- Advogado, totalmente iniciante em criação de conteúdo e edição de vídeo. Explique tudo como para um leigo.
+- Quero focar em GAMES (clipes/cortes, canal sem rosto, GTA 6). Conteúdo jurídico está fora: tentei por um ano e não funcionou.
+- Mercados: Brasil e exterior (quero ganhar em dólar também).
+- Tenho 20 horas ou mais por semana e mais de R$ 500 para investir.
+- Prefiro não mostrar o rosto. Posso usar a minha voz.
+
+BASE DE CONHECIMENTO
+- O arquivo "mentor-dinheiro-games.md" (pesquisa de 10/10/2026) é a sua base. Use-o antes de responder.
+- Regras, taxas e valores de plataformas mudam toda semana. Quando um número for decidir alguma coisa (requisito de monetização, taxa, data, preço), diga a data da informação e me peça para conferir na fonte oficial, ou pesquise se você tiver busca na web ativa.
+- Nunca invente número, regra, plataforma ou caso de sucesso. Se não souber, diga "não sei" e diga como descobrir.
+- Separe sempre: fato oficial, dado de empresa interessada, relato isolado e propaganda de guru.
+
+A ESTRATÉGIA (já decidida pela pesquisa; só mude com dados meus)
+1. Primeiro dinheiro: vender edição de vídeo (Shorts, cortes, vídeos longos, thumbnails) para canais e streamers de games, no Brasil (99Freelas, Workana, contato direto) e no exterior (Fiverr, Upwork, Discord, X).
+2. Em paralelo: clipping pago por visualização (Content Rewards da Whop; no Brasil, Cut.Pro). É treino pago e portfólio, não renda principal.
+3. Patrimônio de longo prazo: meu canal sem rosto, com a minha voz, com guias e curiosidades de games. Shorts servem de vitrine; o dinheiro de anúncio vem de vídeos longos.
+4. GTA 6 (lançamento 19/11/2026) é uma janela curta. Se eu não tiver console, aproveito editando para quem tem o jogo e clipando streamers em campanhas autorizadas.
+5. YouTube Kids e conteúdo "feito para crianças": fora.
+
+PRIMEIRA CONVERSA: DIAGNÓSTICO
+Antes de montar o plano, me faça estas perguntas (uma lista, eu respondo de uma vez):
+- Tenho PS5, Xbox Series ou PC? Qual? O PC aguenta editar vídeo em 1080p?
+- Quanto do orçamento posso gastar agora e quanto deixo de reserva?
+- Leio e escrevo em inglês? Consigo atender cliente gringo por mensagem?
+- Quantas horas reais por semana e em quais dias?
+- Já tenho alguma conta (YouTube, TikTok, Whop, 99Freelas, Fiverr)?
+- Tenho CNPJ ou participo de sociedade (inclusive de advocacia)? (Isso muda se posso ser MEI.)
+Depois, monte o plano das próximas 2 semanas com tarefas por dia, usando o "Plano de 90 dias" do arquivo como base.
+
+MÉTODO SEMANAL
+Toda semana eu mando um check-in com:
+- O que fiz (tarefas concluídas e não concluídas).
+- Números: propostas enviadas, respostas, clientes fechados, valor recebido; clipes postados, aprovados, views, ganho; vídeos do canal, impressões, CTR, retenção, inscritos; horas gastas em cada frente.
+- O maior bloqueio da semana.
+Você responde sempre neste formato:
+1. Diagnóstico em 3 linhas (o que os números dizem).
+2. Ganho líquido por hora de cada frente (serviço, clipping, canal). Calcule.
+3. As 3 prioridades da próxima semana, com tarefas concretas.
+4. Uma coisa para eu PARAR de fazer.
+5. Um alerta de regra ou golpe, se houver.
+
+REGRAS DE DECISÃO
+- Aos 30, 60 e 90 dias, compare o ganho líquido por hora de cada frente e mova horas para a que paga mais.
+- Se depois de 60 dias o clipping render muito menos por hora que a edição para clientes, reduza o clipping ao mínimo.
+- Suba o preço da edição em 20% a 30% a cada 5 avaliações positivas.
+- Não pague curso, mentoria ou ferramenta cara antes do primeiro cliente pagante. Ferramenta paga só quando eu estiver produzindo todo dia.
+
+O QUE VOCÊ DEVE ME LEMBRAR SEMPRE QUE FOR RELEVANTE
+- YouTube: cortes e compilações sem narração não monetizam, mesmo com permissão do dono (conteúdo reutilizado). Vídeos em série com IA genérica também não (conteúdo inautêntico, desde 15/07/2025). A análise vale para o canal inteiro.
+- YouTube: violência gráfica na miniatura ou nos primeiros 7 segundos tira os anúncios. Juntar NPCs para matança em massa também.
+- GTA: nunca usar vazamento. Não repostar trailer inteiro sem comentário. Abaixar ou desligar o rádio do jogo ao gravar (música licenciada gera reivindicação). A política da Rockstar só tolera uso não comercial: monetizar é tolerado na prática, não autorizado.
+- Shorts de mais de 1 minuto com qualquer reivindicação de direitos autorais ficam bloqueados.
+- Whop/Content Rewards: só para maiores de 18 anos, conta bancária em reais no meu nome, verificação de identidade, saque mínimo de US$ 10, 10% de taxa nas campanhas por mil views, e eu cedo os direitos do clipe. Nunca pagar para entrar em campanha.
+- Impostos: dinheiro do exterior vai para o Carnê-Leão todo mês (DARF até o último dia útil do mês seguinte). No AdSense, preencher o W-8BEN até 10/12, senão o Google retém 24% de tudo.
+- Datas-chave: 19/11/2026 (GTA 6), 10/12 (prazo anual do W-8BEN), 31/01/2027 (aceite dos novos termos do YouTube), 01/02/2027 (nova regra: 8.000 horas ou 20 milhões de views de Shorts para canais novos entrarem no programa de anúncios; e 10 milhões de views de Shorts a cada 90 dias para receber pelos Shorts).
+
+O QUE VOCÊ FAZ POR MIM QUANDO EU PEDIR
+- Escrever propostas para clientes (curtas, com portfólio, preço por pacote e prazo).
+- Escrever roteiros de vídeos longos e Shorts com gancho nos primeiros segundos.
+- Sugerir títulos e descrever thumbnails (sem violência gráfica).
+- Analisar prints ou números do YouTube Studio, do TikTok Studio e do Content Rewards.
+- Montar tabela de preços e pacotes mensais.
+- Revisar contrato simples com streamer (canal oficial de cortes: quem é dono do canal, senha, percentual, plataformas, rescisão).
+
+TOM
+Direto, simples, sem promessa de ganho, sem linguagem de guru. Quando eu estiver fugindo do plano ou gastando tempo no que não paga, diga.
+
+MODELO DE CHECK-IN (eu copio e preencho)
+Semana de __/__ a __/__
+Horas: serviço __ | clipping __ | canal __
+Serviço: propostas __ | respostas __ | clientes __ | recebido R$/US$ __
+Clipping: clipes postados __ | aprovados __ | views __ | ganho US$ __
+Canal: vídeos longos __ | Shorts __ | impressões __ | CTR __% | retenção média __% | inscritos __
+Bloqueio da semana:
+Dúvida:</textarea>
+      <button class="btn" id="copyBtn" type="button">Copiar prompt</button>
+      <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<section id="glossario">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Sem jargão</p>
+      <h2>Glossário</h2>
+    </div>
+    <dl class="gloss">
+      <div><dt>YPP</dt><dd>Programa de Parcerias do YouTube. Libera a receita de anúncios.</dd></div>
+      <div><dt>Shorts / Reels / TikTok</dt><dd>Vídeos verticais curtos.</dd></div>
+      <div><dt>CPM</dt><dd>Quanto se paga por mil exibições de anúncio ou, no clipping, por mil views.</dd></div>
+      <div><dt>RPM</dt><dd>Quanto VOCÊ recebe por mil views, depois da parte da plataforma.</dd></div>
+      <div><dt>Clipping / cortes</dt><dd>Editar trechos curtos de um conteúdo longo de outra pessoa.</dd></div>
+      <div><dt>KYC</dt><dd>Verificação de identidade com documento, exigida para sacar.</dd></div>
+      <div><dt>Content ID</dt><dd>Robô do YouTube que identifica conteúdo de terceiros e pode mandar a receita para o dono.</dd></div>
+      <div><dt>Strike</dt><dd>Punição por direitos autorais. 3 em 90 dias podem encerrar o canal.</dd></div>
+      <div><dt>Conteúdo reutilizado</dt><dd>Regra que tira a monetização de cópias e compilações sem valor seu.</dd></div>
+      <div><dt>Conteúdo inautêntico</dt><dd>Regra contra vídeos em série, por modelo, inclusive com IA genérica.</dd></div>
+      <div><dt>Gancho</dt><dd>Os primeiros segundos que fazem a pessoa continuar assistindo.</dd></div>
+      <div><dt>CTR</dt><dd>Porcentagem de quem clica ao ver a miniatura.</dd></div>
+      <div><dt>Retenção</dt><dd>Quanto do vídeo as pessoas assistem.</dd></div>
+      <div><dt>AdSense</dt><dd>Conta de pagamentos do Google, por onde o YouTube paga.</dd></div>
+      <div><dt>W-8BEN</dt><dd>Formulário fiscal dos EUA para quem não mora lá.</dd></div>
+      <div><dt>Carnê-Leão</dt><dd>Imposto mensal da pessoa física sobre renda do exterior.</dd></div>
+      <div><dt>Spread</dt><dd>Diferença escondida entre a cotação oficial e a que a empresa te dá.</dd></div>
+      <div><dt>NPC</dt><dd>Personagem controlado pelo jogo.</dd></div>
+      <div><dt>Canal sem rosto</dt><dd>Canal em que o criador não aparece. Também chamado de "canal dark".</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="fontes">
+  <div class="wrap sources">
+    <div class="section-head">
+      <p class="eyebrow">De onde vieram os números</p>
+      <h2>Fontes e limites da pesquisa</h2>
+    </div>
+    <div class="callout warn col">
+      <p class="callout-title">Limites</p>
+      <ul class="clean small">
+        <li>A cota de buscas na web acabou cedo. A maior parte foi confirmada lendo diretamente páginas oficiais, e cada tema passou por um verificador independente.</li>
+        <li>Não abriram: a política de vídeos da Rockstar (erro 503), as páginas do TikTok (só carregam com JavaScript), as centrais de ajuda de Fiverr, Upwork e Workana (erro 403) e o Reddit. Por isso há poucos relatos em primeira mão de clipadores brasileiros.</li>
+        <li>Preços de console e microfone são da Kabum em 10/10/2026 e mudam todo dia.</li>
+      </ul>
+    </div>
+    <details open>
+      <summary>YouTube (oficial)</summary>
+      <ul>
+        <li><a href="https://support.google.com/youtube/answer/72851">Requisitos do Programa de Parcerias</a></li>
+        <li><a href="https://support.google.com/youtube/answer/12843009">Mudanças de 01/02/2027</a> · <a href="https://blog.youtube/news-and-events/youtube-partner-program-updates-2027-new-opportunities-earn/">anúncio de 10/08/2026</a></li>
+        <li><a href="https://support.google.com/youtube/answer/13429240">Nível de 500 inscritos</a></li>
+        <li><a href="https://support.google.com/youtube/answer/12504220">Receita de Shorts</a></li>
+        <li><a href="https://support.google.com/youtube/answer/1311392">Conteúdo reutilizado e inautêntico</a></li>
+        <li><a href="https://support.google.com/youtube/answer/6162278">Diretrizes para anunciantes (games)</a></li>
+        <li><a href="https://support.google.com/youtube/answer/2814000">Strikes</a> · <a href="https://support.google.com/youtube/answer/10391362">Impostos dos EUA</a></li>
+        <li><a href="https://support.google.com/youtube/answer/9527654">Feito para crianças</a> · <a href="https://support.google.com/youtube/answer/9684541">FAQ</a></li>
+      </ul>
+    </details>
+    <details>
+      <summary>Whop e clipping</summary>
+      <ul>
+        <li><a href="https://contentrewards.com/terms">Termos do Content Rewards (04/10/2026)</a> · <a href="https://contentrewards.com/pricing/creators">Taxas do criador</a> · <a href="https://contentrewards.com/discover">Campanhas abertas</a> · <a href="https://contentrewards.com/changelog">Versão 2</a></li>
+        <li><a href="https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards">Docs do Content Rewards</a> · <a href="https://docs.whop.com/manage-your-business/manage-payouts/set-up-payouts">Saques e países</a> · <a href="https://docs.whop.com/fees">Taxas da Whop</a></li>
+        <li><a href="https://www.vyro.com/">Vyro</a> · <a href="https://www.ssemble.com/clip-rewards">Ssemble Clip Rewards</a> · <a href="https://cut.pro/pt-BR/championships/discover">Cut.Pro campeonatos</a></li>
+        <li><a href="https://digiday.com/media/wtf-is-clipping-the-low-lift-creator-strategy-grabbing-advertisers-attention/">Digiday: o que é clipping</a> · <a href="https://trends.vc/clipping-businesses-pay-per-view-distribution-clip-armies-view-verification/">Trends.vc: mapa do setor</a> · <a href="https://www.tubefilter.com/2026/04/29/n3on-spending-millions-stream-clippers-tiktok-kick/amp/">Tubefilter: clipadores do N3on</a></li>
+      </ul>
+    </details>
+    <details>
+      <summary>GTA 6 e Rockstar</summary>
+      <ul>
+        <li><a href="https://www.rockstargames.com/VI">Página oficial do GTA VI</a> · <a href="https://www.sec.gov/Archives/edgar/data/0000946581/000162828026054580/ttwo1q27earningsrelease.htm">8-K da Take-Two (ago/2026)</a></li>
+        <li><a href="https://www.playstation.com/pt-br/games/grand-theft-auto-vi/">Preço na PS Store Brasil</a> · <a href="https://www.kabum.com.br/produto/1050570">PS5 Digital Slim na Kabum</a></li>
+        <li><a href="https://www.take2games.com/legal/">Termos da Take-Two</a> · <a href="https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material">Política de vídeos da Rockstar</a> (não abriu para a pesquisa; tente no navegador)</li>
+        <li><a href="https://kotaku.com/content-creators-nearly-crash-out-over-the-netflix-gta-6-reveals-confusing-streaming-guidelines-2000728828">Kotaku: regras do Extended Look</a> · <a href="https://kotaku.com/take-two-subpoenas-microsoft-and-discord-records-related-to-spread-of-gta-6-leaks-2000726633">Kotaku: ação contra vazamentos</a></li>
+        <li><a href="https://www.gameinformer.com/b/news/archive/2013/09/16/rockstar-details-allowable-content-and-uses-of-game-footage.aspx">Game Informer (2013): política original de vídeos</a></li>
+        <li><a href="https://www.playstation.com/pt-br/support/games/capture-ps5-gameplay-screenshots/">Gravar no PS5</a> · <a href="https://support.xbox.com/en-US/help/friends-social-activity/share-socialize/capture-game-clips-and-screenshots">Gravar no Xbox</a></li>
+      </ul>
+    </details>
+    <details>
+      <summary>Brasil: impostos e leis (oficial)</summary>
+      <ul>
+        <li><a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/pagamento/carne-leao">Carnê-Leão</a> · <a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026">Tabelas de 2026</a></li>
+        <li><a href="https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoMEI.pdf">FAQ do MEI</a> · <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf">FAQ do Simples</a></li>
+        <li><a href="https://www2.camara.leg.br/legin/fed/lei/2025/lei-15211-17-setembro-2025-797997-normaatualizada-pl.pdf">ECA Digital (texto compilado)</a></li>
+        <li><a href="https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z">Tratados dos EUA (IRS)</a></li>
+      </ul>
+    </details>
+    <details>
+      <summary>Mercado, preços e dados</summary>
+      <ul>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/0001762301/000117891326000858/zk2634486.htm">Fiverr 20-F (2025)</a> · <a href="https://www.sec.gov/Archives/edgar/data/1627475/000162747526000047/upwk-20260630.htm">Upwork 10-Q (2026)</a></li>
+        <li><a href="https://air.io/en/youtube-glossary/what-is-youtube-rpm-full-breakdown">AIR: RPM por nicho</a> · <a href="https://air.io/en/monetization/what-rpm-can-you-expect-from-shorts-in-2026">AIR: RPM de Shorts por país</a> · <a href="https://tubeanalytics.net/benchmarks/brazil">TubeAnalytics Brasil</a></li>
+        <li><a href="https://creatordb.app/blog/where-youtube-sponsorship-begins/">CreatorDB: quando começam os patrocínios</a></li>
+        <li><a href="https://www.99freelas.com.br/como-funciona">99Freelas: como funciona</a> · <a href="https://www.freelancer.com/feesandcharges">Freelancer.com: taxas</a></li>
+        <li><a href="https://www.paypal.com/br/business/paypal-business-fees">PayPal Brasil: tarifas</a> · <a href="https://www.payoneer.com/about/pricing/">Payoneer</a> · <a href="https://wise.com/br/pricing/receive">Wise</a> · <a href="https://www.remessaonline.com.br/for-creators">Remessa Online for Creators</a></li>
+        <li><a href="https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2024/12/paying-get-paid-gamified-job-scams-drive-record-losses">FTC: golpe da tarefa</a></li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Pesquisa feita em 10/10/2026. Regras e valores de plataformas mudam toda semana: confira na fonte oficial antes de qualquer decisão que envolva dinheiro. Este guia não substitui um contador.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Contagem regressiva para o GTA 6 (19/11/2026, meia-noite de Brasília = 03:00 UTC)
+  try{
+    var alvo = Date.UTC(2026,10,19,3,0,0);
+    var dias = Math.ceil((alvo - new Date().getTime())/86400000);
+    var el = document.getElementById('diasGta');
+    if(el){
+      if(dias > 1) el.textContent = dias + ' dias';
+      else if(dias === 1) el.textContent = '1 dia';
+      else if(dias === 0) el.textContent = 'hoje';
+      else el.textContent = 'já lançado';
+    }
+  }catch(e){}
+
+  // Checklist do plano, salvo só neste navegador
+  var KEY = 'guia-games-checklist-v1';
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('.checks input[type=checkbox]'));
+  var estado = {};
+  try{ estado = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; }catch(e){ estado = {}; }
+  function atualizar(){
+    var feitos = boxes.filter(function(b){return b.checked;}).length;
+    var p = document.getElementById('progresso');
+    if(p) p.textContent = feitos + ' de ' + boxes.length + ' tarefas concluídas';
+  }
+  boxes.forEach(function(b){
+    if(estado[b.id]) b.checked = true;
+    b.addEventListener('change', function(){
+      estado[b.id] = b.checked;
+      try{ localStorage.setItem(KEY, JSON.stringify(estado)); }catch(e){}
+      atualizar();
+    });
+  });
+  atualizar();
+
+  // Copiar o prompt do mentor
+  var btn = document.getElementById('copyBtn');
+  var ta = document.getElementById('mentorPrompt');
+  var st = document.getElementById('copyStatus');
+  if(btn && ta){
+    btn.addEventListener('click', function(){
+      function fallback(){
+        ta.focus(); ta.select();
+        if(st) st.textContent = 'Texto selecionado: use Ctrl+C (ou "Copiar" no celular).';
+      }
+      try{
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(ta.value).then(function(){
+            if(st) st.textContent = 'Prompt copiado.';
+          }, fallback);
+        } else { fallback(); }
+      }catch(e){ fallback(); }
+    });
+  }
+})();
+</script>
