@@ -1,12 +1,12 @@
 # Mentor: Dinheiro com Conteúdo de Games
 
-Arquivo gerado em 10/10/2026 a partir de duas rodadas de pesquisa com 33 agentes (14 temas, cada um com verificação independente). A 2ª rodada trouxe relatos reais, o texto da política da Rockstar, a confirmação oficial do TikTok no Brasil e o mercado brasileiro de cortes.
+Arquivo gerado em 10/10/2026 a partir de três rodadas de pesquisa com agentes (17 temas, cada um com verificação independente). A 2ª rodada trouxe relatos reais, o texto da política da Rockstar, a confirmação oficial do TikTok no Brasil e o mercado brasileiro de cortes. A 3ª rodada tratou de impostos (pessoa física, MEI, Simples e regras da OAB) e conferiu taxas e saques das plataformas; o resultado completo está no arquivo separado **dossie-contador.md**.
 
 ## Como usar este arquivo
 
 1. No claude.ai, crie um **Projeto** (menu Projetos > Novo projeto) chamado "Dinheiro com Games".
 2. Em **Instruções do projeto**, cole só a PARTE 1 (o bloco entre as linhas `INÍCIO DO PROMPT` e `FIM DO PROMPT`).
-3. Em **Conhecimento do projeto**, suba este arquivo inteiro.
+3. Em **Conhecimento do projeto**, suba este arquivo inteiro e também o **dossie-contador.md** (impostos, MEI e CNPJ).
 4. Abra uma conversa dentro do projeto e escreva: "Vamos começar. Faça o diagnóstico."
 5. Toda semana, abra uma conversa nova no projeto e mande o check-in (modelo no fim da Parte 1).
 
@@ -30,7 +30,7 @@ QUEM EU SOU
 - Prefiro não mostrar o rosto. Posso usar a minha voz.
 
 BASE DE CONHECIMENTO
-- O arquivo "mentor-dinheiro-games.md" (pesquisa de 10/10/2026) é a sua base. Use-o antes de responder.
+- O arquivo "mentor-dinheiro-games.md" (pesquisa de 10/10/2026) é a sua base. Use-o antes de responder. Para impostos, MEI e CNPJ, use o "dossie-contador.md".
 - Regras, taxas e valores de plataformas mudam toda semana. Quando um número for decidir alguma coisa (requisito de monetização, taxa, data, preço), diga a data da informação e me peça para conferir na fonte oficial, ou pesquise se você tiver busca na web ativa.
 - Nunca invente número, regra, plataforma ou caso de sucesso. Se não souber, diga "não sei" e diga como descobrir.
 - Separe sempre: fato oficial, dado de empresa interessada, relato isolado e propaganda de guru.
@@ -77,8 +77,9 @@ O QUE VOCÊ DEVE ME LEMBRAR SEMPRE QUE FOR RELEVANTE
 - Shorts de mais de 1 minuto com qualquer reivindicação de direitos autorais ficam bloqueados.
 - Whop/Content Rewards: só para maiores de 18 anos, conta bancária em reais no meu nome, verificação de identidade, saque mínimo de US$ 10, 10% de taxa nas campanhas por mil views, e eu cedo os direitos do clipe. O Brasil está na lista oficial de saque, mas PIX não é confirmado e PayPal não é opção para clipador. Conte com 2 a 4 semanas entre postar e receber. Nunca pagar para entrar em campanha.
 - Campeonatos brasileiros de cortes de games: Viewx (LOUD, Gabepeixe), quase sempre pagos só aos primeiros colocados. Nunca pagar mensalidade para clipar.
-- TikTok Creator Rewards: Brasil elegível (oficial). Só paga vídeos originais de 1 minuto ou mais, recebe só por PayPal, e com público brasileiro rende cerca de US$ 0,13 a 0,32 por mil views qualificadas. Cortes de terceiros sem ideia própria não contam.
-- Impostos: dinheiro do exterior vai para o Carnê-Leão todo mês (DARF até o último dia útil do mês seguinte). No AdSense, preencher o W-8BEN até 10/12, senão o Google retém 24% de tudo.
+- TikTok Creator Rewards: Brasil elegível (oficial). Só paga vídeos originais de 1 minuto ou mais, recebe só por PayPal (que cobra 3,5% no câmbio), e com público brasileiro rende cerca de US$ 0,13 a 0,32 por mil views qualificadas. Saque mínimo: os termos do Brasil dizem US$ 50 e prevalecem sobre a Central de Ajuda (US$ 10); planeje com US$ 50. Cortes de terceiros sem ideia própria não contam.
+- Impostos: dinheiro do exterior vai para o Carnê-Leão todo mês (DARF 0190 até o último dia útil do mês seguinte). Deixar de pagar dá multa isolada de 50%, mesmo acertando na declaração anual. A isenção até R$ 5 mil/mês (Lei 15.270) soma TODA a renda tributável do mês, inclusive meus honorários. No AdSense, preencher o W-8BEN até 10/12, senão o Google retém 24% de tudo. Pessoa física x CNPJ: sem outra renda, a pessoa física compensa até ~R$ 7 mil/mês; com honorários na pessoa física, o CNPJ compensa a partir de ~R$ 3 a 3,6 mil/mês de games. MEI: não contar com ele se eu for sócio ou titular de sociedade de advocacia. Mande eu confirmar tudo com o contador, levando o dossiê.
+- Advocacia: nunca receber renda de games pelo CNPJ da sociedade de advocacia (Estatuto da OAB, art. 16) e nunca divulgar a advocacia no canal, nos perfis ou no portfólio (art. 1º, §3º; Provimento 205/2021, art. 8º).
 - Datas-chave: 19/11/2026 (GTA 6), 10/12 (prazo anual do W-8BEN), 31/01/2027 (aceite dos novos termos do YouTube), 01/02/2027 (nova regra: 8.000 horas ou 20 milhões de views de Shorts para canais novos entrarem no programa de anúncios; e 10 milhões de views de Shorts a cada 90 dias para receber pelos Shorts).
 
 O QUE VOCÊ FAZ POR MIM QUANDO EU PEDIR
@@ -114,7 +115,7 @@ FIM DO PROMPT
 - **[empresa]** = dado divulgado por empresa que vende ferramenta, curso ou serviço (pode estar inflado).
 - **[estimativa]** = conta ou estimativa dos pesquisadores, sem fonte oficial.
 - **[não confirmado]** = os pesquisadores não conseguiram confirmar.
-- Limites da pesquisa: na 1ª rodada a cota de buscas acabou cedo, e a maior parte foi confirmada lendo diretamente páginas oficiais. A 2ª rodada leu a política da Rockstar por um leitor intermediário, o texto oficial do TikTok pela API da Central de Ajuda, e as centrais de Fiverr, Upwork e Workana por trechos de busca. O Reddit continuou bloqueado: os relatos de lá vieram de espelhos e trechos.
+- Limites da pesquisa: na 1ª rodada a cota de buscas acabou cedo, e a maior parte foi confirmada lendo diretamente páginas oficiais. A 2ª rodada leu a política da Rockstar por um leitor intermediário, o texto oficial do TikTok pela API da Central de Ajuda, e as centrais de Fiverr, Upwork e Workana por trechos de busca. O Reddit continuou bloqueado: os relatos de lá vieram de espelhos e trechos. A 3ª rodada leu as centrais de ajuda de Workana, Upwork e Fiverr pelas APIs públicas das próprias plataformas (datas de edição de 2026), os termos do TikTok para o Brasil e o texto da Receita, do Planalto e do Portal do Simples.
 
 ---
 
@@ -268,7 +269,7 @@ Dólar de referência: PTAX de venda de 09/10/2026, R$ 4,9892 [oficial: Banco Ce
 | Plataforma | Paga por view? | Requisitos | Brasil |
 |---|---|---|---|
 | YouTube Shorts | Sim, pelo YPP (fundo de Shorts, criador fica com 45%) | Hoje: 1.000 inscritos + 10 milhões de views de Shorts em 90 dias. A partir de 01/02/2027: 20 milhões para entrar e 10 milhões a cada 90 dias para continuar recebendo. Cortes sem edição não contam | Sim [oficial] |
-| TikTok (Creator Rewards) | Sim, só vídeos originais de 1 minuto ou mais, com 1.000+ views qualificadas no Para Você. Público BR: ~US$ 0,13 a 0,32 por mil | 18+, 10 mil seguidores, 100 mil views em 30 dias, conta pessoal. Só contam vídeos postados depois da aprovação; publis não recebem; vídeo removido é descontado | Sim, confirmado pelo TikTok (Newsroom LATAM, 01/10/2025) e com termos próprios do Brasil. Recebe só por PayPal, no dia 15; mínimo de US$ 10 (Central de Ajuda) ou US$ 50 (termos do Brasil): confira em Perfil > Menu > Saldo [oficial] |
+| TikTok (Creator Rewards) | Sim, só vídeos originais de 1 minuto ou mais, com 1.000+ views qualificadas no Para Você. Público BR: ~US$ 0,13 a 0,32 por mil | 18+, 10 mil seguidores, 100 mil views em 30 dias, conta pessoal. Só contam vídeos postados depois da aprovação; publis não recebem; vídeo removido é descontado | Sim, confirmado pelo TikTok (Newsroom LATAM, 01/10/2025) e com termos próprios do Brasil. Recebe só por PayPal (via Hyperwallet), no dia 15; mínimo de US$ 50 pelos termos do Brasil, que prevalecem sobre a Central de Ajuda (US$ 10): confira em Perfil > Menu > Saldo [oficial] |
 | Instagram Reels | Nenhum bônus por view confirmado para brasileiros em 2026 | — | Não conte com isso |
 | Facebook | Monetização de Conteúdo só por convite (formulário no Painel Profissional). Creator Fast Track fora do Brasil. Desde 14/07/2025 pune repost de conteúdo alheio ("só juntar clipes" não conta como edição) | — | [oficial] |
 | Kwai | Tem programas oficiais (receita de anúncios, tarefas pagas de marcas, presentes em live, criador contratado), mas não publica requisitos nem valores. Os "Kwai Golds" (10.000 = R$ 1) são recompensa de usuário | — | Use como mais um lugar para postar, não como renda prevista |
@@ -328,7 +329,7 @@ Dólar de referência: PTAX de venda de 09/10/2026, R$ 4,9892 [oficial: Banco Ce
 
 | Nível | Hoje (até 31/01/2027) | A partir de 01/02/2027 (canais novos) | O que libera |
 |---|---|---|---|
-| Inicial ("acesso antecipado" / fan funding) | 500 inscritos + 3 vídeos públicos em 90 dias + 3.000 horas em 12 meses OU 3 milhões de views de Shorts em 90 dias | Não muda | Clube de Canais, Super Chat, Super Thanks, Shopping. Sem anúncios. Brasil na lista (página 13429240), mas confira no seu YouTube Studio |
+| Inicial ("acesso antecipado" / fan funding) | 500 inscritos + 3 vídeos públicos em 90 dias + 3.000 horas em 12 meses OU 3 milhões de views de Shorts em 90 dias | Não muda | Clube de Canais, Super Chat, Super Thanks, Shopping. Sem anúncios. Brasil na lista oficial (página 13429240, conferida em 10/10/2026). A análise do pedido leva cerca de 1 mês |
 | Com anúncios | 1.000 inscritos + 4.000 horas em 12 meses OU 1.000 inscritos + 10 milhões de views de Shorts em 90 dias | 1.000 inscritos + 8.000 horas em 365 dias OU 20 milhões de views de Shorts em 90 dias | 55% da receita de anúncios dos vídeos longos; 45% do fundo de Shorts |
 | Receber pelos Shorts | Estar no YPP | Manter 10 milhões de views de Shorts a cada 90 dias (vale até para quem já está no YPP) | Abaixo disso, receita de Shorts = zero no mês |
 
@@ -446,11 +447,11 @@ Dólar de referência: PTAX de venda de 09/10/2026, R$ 4,9892 [oficial: Banco Ce
 
 | Plataforma | Taxa | Status |
 |---|---|---|
-| Fiverr | 20% de cada pedido (inclui gorjeta); dinheiro retido 14 dias (7 para Top Rated). Saque do Brasil só por PayPal (sem taxa do Fiverr; câmbio 3% a 5% pior) ou Payoneer (US$ 1 a 3 por saque + ~2% de câmbio). "Early Payout" só para Top Rated | Várias fontes concordam; Central de Ajuda vista por trechos |
-| Upwork | 0% a 15% por contrato (desde 05/2025), mostrada antes de enviar a proposta; iniciante deve contar com até 15%. Connects a US$ 0,15 (10 grátis por mês). Saque "Direct to Local Bank" US$ 0,99, até 4 dias úteis; método novo leva 3 dias para ativar | [oficial: 10-Q e Central de Ajuda por trechos] |
+| Fiverr | Você recebe 80% de cada pedido (a taxa de 20% inclui extras e gorjetas); dinheiro retido 14 dias (7 para Top Rated). Saques: PayPal (sem taxa do Fiverr, mínimo US$ 1; o PayPal cobra 3,5% no câmbio), transferência bancária via Payoneer (US$ 1, mínimo US$ 20) ou conta Payoneer (US$ 3, mínimo US$ 10); até US$ 5.000 por saque. "Early Payout" custa 1% e é só para Top Rated | [oficial: Central de Ajuda, editada em 26/07/2026] |
+| Upwork | 0% a 15% por contrato (desde 05/2025), mostrada antes de enviar a proposta; iniciante deve contar com até 15%. Connects a US$ 0,15 (10 grátis por mês). Saque "Direct to Local Bank" em reais: US$ 0,99 por saque, mínimo US$ 12, limite US$ 3.000, até 4 dias úteis; pede CPF e número da agência, e o nome da conta tem de ser igual ao verificado; método novo leva 3 dias para ativar | [oficial: 10-Q e Central de Ajuda, editada em 23/07/2026] |
 | 99Freelas | 5% a 20% (mín. R$ 10) somados à sua proposta e pagos pelo cliente; planos opcionais de R$ 54,90 a R$ 89,90/mês; repasse para conta bancária em 6, 4 ou 2 dias úteis após o cliente liberar | [oficial] (os Termos falam em 10% a 20%) |
 | Freelancer.com | 10% ou US$ 5, o que for maior; saldo de US$ 20 para propor | [oficial] |
-| Workana | 20% até US$ 300 pagos por cada cliente, 10% de US$ 301 a 3.000, 5% acima; o cliente paga taxa à parte. Saque por PayPal, Payoneer ou Mercado Pago. O plano grátis pode limitar o número de propostas: confira | Mobills (fev/2026) e trecho da central oficial |
+| Workana | 20% até US$ 300 pagos por cada cliente, 10% de US$ 301 a 3.000, 5% acima; o cliente paga 4,5% à parte. Plano grátis: nível Iron, só 2 propostas por semana e 1 projeto por vez. Planos pagos: Beginner R$ 23,12, Profissional R$ 76,90, Explorer R$ 109,90 por mês (mais propostas e saques mais frequentes). Saque só por PayPal, Payoneer ou Mercado Pago, sem Pix nem banco direto (do Mercado Pago para o banco, R$ 3) | [oficial: central de ajuda, editada entre 15/09 e 08/10/2026; ela se contradiz sobre o mínimo do Payoneer e sobre qual plano saca toda semana] |
 
 **Tabela inicial de preços** [estimativa sobre lances públicos e o piso do 99Freelas]
 
@@ -491,9 +492,11 @@ Dólar de referência: PTAX de venda de 09/10/2026, R$ 4,9892 [oficial: Banco Ce
 
 **Whop:** ver seção 5. Conta em reais, mínimo US$ 10, taxa de banco local não publicada, PIX não confirmado, PayPal não garantido.
 
-**Fiverr e Upwork:** Fiverr paga brasileiros só por PayPal ou Payoneer (transferência direta só nos EUA). Upwork tem "Direct to Local Bank" a US$ 0,99 por saque, em até 4 dias úteis, com câmbio próprio; confira em Settings > Get Paid se aparece em reais. Ver taxas na seção 11.
+**Fiverr e Upwork:** o Fiverr paga brasileiros por PayPal ou Payoneer (transferência direta só nos EUA). A Upwork tem "Direct to Local Bank" em reais: US$ 0,99 por saque, mínimo de US$ 12, até 4 dias úteis. Ver taxas e mínimos na seção 11.
 
-**TikTok:** paga no dia 15, só por PayPal no Brasil. Taxas de transferência e IOF ficam por conta do criador, segundo os termos do Brasil.
+**TikTok:** paga no dia 15, só por PayPal (via Hyperwallet) no Brasil. O mínimo é de US$ 50 pelos termos do Brasil; a Central de Ajuda diz US$ 10. Taxas de transferência e IOF ficam por conta do criador, e o PayPal cobra 3,5% acima do câmbio base na conversão.
+
+**Workana:** saque só por PayPal, Payoneer ou Mercado Pago. Não cadastre chave Pix: a Workana não envia para banco.
 
 **Quanto chega de US$ 100** (câmbio R$ 4,987 em 10/10/2026) [oficial: tabelas das empresas; cálculo dos pesquisadores]
 
@@ -506,19 +509,23 @@ Dólar de referência: PTAX de venda de 09/10/2026, R$ 4,9892 [oficial: Banco Ce
 | Wire da Whop | até ~R$ 384 | US$ 23 fixos, antes do câmbio |
 | Fiverr → PayPal (US$ 100 de pedido) | ~R$ 385 | 20% da Fiverr + 3,5% de câmbio |
 
-**Imposto no Brasil (pessoa física)** [oficial: Receita Federal]
-- Dinheiro do exterior: Carnê-Leão todo mês (Carnê-Leão Web, no e-CAC, login gov.br prata ou ouro). DARF até o último dia útil do mês seguinte.
-- Conversão: cotação de compra do dólar do Banco Central do último dia útil da 1ª quinzena do mês anterior ao recebimento.
-- Desde jan/2026 (Lei 15.270/2025): rendimento tributável mensal de até R$ 5.000 fica com imposto zero; redução decrescente até R$ 7.350. A Receita fala em "rendimentos sujeitos à incidência mensal"; aplicar ao Carnê-Leão é a leitura dominante, mas confirme com contador.
-- O imposto retido nos EUA pode ser compensado (a Receita aceita reciprocidade com os EUA sem prova). Guarde o informe 1042-S (chega até 14/04).
-- INSS como autônomo: 20% (até R$ 1.695,11/mês em 2026) ou 11% sobre o salário mínimo no plano simplificado (R$ 178,31). Dedutível no Carnê-Leão. Confirme se se aplica.
-- IOF: entrada de receita de exportação de serviços tem IOF zero (Decreto 6.306/2007, art. 15-B, I), mas depende de como o banco classifica; na prática muitos cobram 0,38%. Pergunte antes de fechar o câmbio.
+**Imposto no Brasil (pessoa física)** [oficial: Receita Federal, Planalto; detalhes, contas e perguntas no **dossie-contador.md**]
+- Dinheiro do exterior (AdSense = Google LLC, EUA; Whop Inc., EUA; Fiverr; Upwork; em princípio TikTok): Carnê-Leão no mês em que você recebe, mesmo que o dinheiro fique lá fora. Carnê-Leão Web, no e-CAC (login gov.br prata ou ouro). DARF código 0190 até o último dia útil do mês seguinte.
+- Conversão: cotação de compra do dólar do Banco Central do último dia útil da 1ª quinzena do mês anterior. Para o que receber em outubro/2026: R$ 5,1484. Não use a cotação do PayPal.
+- Lei 15.270/2025, confirmada para o Carnê-Leão pela Receita (Perguntas e Respostas IRPF 2026, perguntas 266 e 267): até R$ 5.000 no mês, imposto zero (com o desconto simplificado de R$ 607,20); de R$ 5.000,01 a R$ 7.350, desconto decrescente; acima, nenhum. **A faixa soma toda a renda tributável do mês, inclusive honorários de clientes pessoa física**, e usa o valor bruto. Exemplo: R$ 3.000 de games + R$ 3.000 de honorários = R$ 394,54 de imposto, não zero.
+- Exemplos só com games: R$ 3.000/mês → zero; R$ 8.000/mês → R$ 1.124,29 com o desconto simplificado (no ajuste anual parte volta como restituição).
+- Imposto retido nos EUA: compensável (reciprocidade reconhecida no AD SRF 28/2000), mas só até o imposto brasileiro daquele rendimento. Se a Lei 15.270 zerar o seu imposto, o crédito americano se perde. Guarde o 1042-S (chega até 14/04); para o ajuste anual ele precisa de tradução juramentada.
+- INSS como autônomo: 20% (até R$ 1.695,11/mês em 2026) ou 11% sobre o salário mínimo (R$ 178,31), plano que não dá aposentadoria por tempo de contribuição e é vedado a quem tem relação de trabalho com empresa. O teto (R$ 8.475,55) soma a advocacia e esta atividade.
+- Livro-caixa: dá para abater despesas do dia a dia (software, internet proporcional, comissões das plataformas); equipamento não entra. É alternativa ao desconto simplificado de R$ 607,20.
+- IOF na entrada: zero para exportação de serviços ou 0,38% para as demais entradas, conforme a classificação do banco ou do PayPal. A Receita tem entendimentos contra o IOF zero. A diferença é pequena (R$ 19 em R$ 5.000); o câmbio do PayPal custa ~9 vezes mais.
+- **Multa:** atrasar custa 0,33% ao dia (até 20%) + Selic. Deixar de pagar e ser pego na fiscalização custa multa isolada de 50% do Carnê-Leão, mesmo que a declaração anual não tenha imposto (Lei 9.430/96, art. 44, II, "a").
 
-**CNPJ e MEI**
-- Não existe MEI de "produtor de conteúdo", "youtuber" ou "influenciador". Existe "Editor(a) de vídeo independente" (CNAE 5912-0/99), limite de R$ 81 mil por ano (somando exterior), DAS de ~R$ 86,05/mês em 2026 [oficial]. Serve para editar material de clientes; o encaixe da receita do seu próprio canal é discutível.
-- **Atenção, advogado:** quem participa de outra empresa como titular, sócio ou administrador não pode ser MEI (LC 123/2006, art. 18-A, §4º). Se você tem sociedade de advocacia (inclusive unipessoal), o MEI está fora.
-- Simples Nacional: "produções audiovisuais" ficam no Anexo III (a partir de 6%) sem fator R; "publicidade" e outros serviços intelectuais dependem do fator R (folha ≥ 28% do faturamento → Anexo III; abaixo → Anexo V, 15,5%) [oficial: FAQ do Simples, 09/10/2026].
-- Regra de bolso: até ~R$ 5 mil/mês, pessoa física costuma bastar (IR zero). Com renda recorrente acima de R$ 7 a 10 mil/mês, um CNPJ no Simples tende a sair mais barato. Faça a conta com contador.
+**CNPJ, MEI e OAB** [oficial: LC 123, Anexo XI, Estatuto da OAB; detalhes no dossiê]
+- Não existe MEI de "produtor de conteúdo", "youtuber" ou "influenciador". Existe "Editor(a) de vídeo independente" (CNAE 5912-0/99), limite de R$ 81 mil por ano (somando exterior), DAS de R$ 86,05/mês em 2026. Serve para editar para clientes; não cobre AdSense do seu canal nem clipping. Deixar a edição no MEI e o resto na pessoa física também não é seguro.
+- **Atenção, advogado:** quem participa de outra empresa como titular, sócio ou administrador não pode ser MEI (LC 123/2006, art. 18-A, §4º, III). Não há posição oficial específica sobre sociedade de advogados, mas a leitura prudente é que a proibição vale, inclusive para a unipessoal. Autônomo ou associado não está barrado pela letra da lei.
+- **Nunca** receba renda de games pelo CNPJ da sociedade de advocacia (Estatuto da OAB, art. 16) e não divulgue a advocacia junto com o canal (art. 1º, §3º; Provimento 205/2021, art. 8º).
+- Simples Nacional: edição e produção audiovisual no Anexo III (a partir de 6%) sem fator R; "publicidade" (provável para o clipping) no Anexo V (15,5%) ou no III se a folha for de 28% ou mais. A Receita (SC Cosit 185/2025) diz que AdSense visto no Brasil não é exportação e chama essa receita de "publicidade": discuta o Anexo com o contador. Edição para cliente no exterior tende a ser exportação (DAS de ~3,05% na 1ª faixa).
+- Pessoa física x CNPJ [estimativa conferida; contas no dossiê]: **sem outra renda**, a pessoa física sai mais barata até ~R$ 7 mil/mês (INSS de 11%, critério anual). **Com honorários na pessoa física**, o CNPJ passa a compensar a partir de ~R$ 3,0 a 3,6 mil/mês de games. No CNPJ, o lucro só é todo isento com escrituração contábil completa: exija isso do contador.
 
 ---
 
@@ -649,7 +656,7 @@ Reddit e fóruns bloqueiam leitura automática; os relatos abaixo vieram de Trus
 - [ ] Subir preço após 5 avaliações; oferecer pacote mensal.
 - [ ] Escolher o 2º jogo do canal para depois do pico do GTA 6.
 - [ ] Se tiver AdSense, W-8BEN até 10/12.
-- [ ] Conversa com contador: MEI, CNPJ, IOF, INSS.
+- [ ] Conversa com contador levando o dossie-contador.md preenchido (MEI, CNPJ, IOF, INSS).
 - [ ] Ajustar o canal à regra do YPP de 01/02/2027.
 
 **Metas realistas aos 90 dias** [estimativa]
@@ -747,6 +754,13 @@ Reddit e fóruns bloqueiam leitura automática; os relatos abaixo vieram de Trus
 - FAQ do Simples: https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf
 - ECA Digital (texto compilado): https://www2.camara.leg.br/legin/fed/lei/2025/lei-15211-17-setembro-2025-797997-normaatualizada-pl.pdf
 - Tratados dos EUA (IRS): https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z
+- Perguntas e Respostas IRPF 2026 (Carnê-Leão nas perguntas 266 e 267): https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf
+- Lei 15.270/2025: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15270.htm
+- LC 123/2006 (MEI e Simples): https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm
+- Ocupações do MEI (Anexo XI): http://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Anexo_XI.pdf
+- Estatuto da OAB: https://www.planalto.gov.br/ccivil_03/leis/l8906.htm
+- Provimento 205/2021 (publicidade na advocacia): https://www.oab.org.br/leisnormas/legislacao/provimentos/205-2021
+- Lista completa de fontes de impostos: dossie-contador.md, seção 9
 
 **Mercado e dados**
 - Fiverr 20-F (2025): https://www.sec.gov/Archives/edgar/data/0001762301/000117891326000858/zk2634486.htm
@@ -759,15 +773,28 @@ Reddit e fóruns bloqueiam leitura automática; os relatos abaixo vieram de Trus
 - 99Freelas, como funciona: https://www.99freelas.com.br/como-funciona
 - Fiverr, saques (Central de Ajuda): https://help.fiverr.com/hc/en-us/articles/360010530058-Withdrawing-your-earnings-managing-payout-methods
 - Upwork, Direct to Local Bank (Central de Ajuda): https://support.upwork.com/hc/en-us/articles/211060578-What-are-the-fees-limits-and-timing-of-Direct-to-Local-Bank-payments
+- Workana, comissão: https://help.workana.com/hc/pt/articles/360041235874
+- Workana, planos: https://help.workana.com/hc/pt/articles/360041612574
+- Workana, métodos de saque: https://help.workana.com/hc/pt/articles/360041937573
+- TikTok, termos do Creator Rewards para o Brasil (pt-BR, abril/2025): https://www.tiktok.com/legal/page/global/tiktok-creator-rewards-program-br/pt-BR
+- PayPal Brasil, tarifas: https://www.paypal.com/br/webapps/mpp/paypal-fees
 
 ---
 
 ### 19. O que você mesmo precisa conferir (a pesquisa não conseguiu)
 
-1. A política de vídeos da Rockstar, no seu navegador: o texto foi lido por intermediário, mas salve você mesmo em PDF com data (e veja a data de "última atualização", que não apareceu na leitura).
-2. No TikTok (Perfil > Menu > Saldo): o saque mínimo real, porque a Central de Ajuda diz US$ 10 e os termos do Brasil dizem US$ 50.
-3. Na tela de saque da Whop, depois do KYC: métodos e taxa para o Brasil; faça um saque-teste de US$ 10.
-4. Se o nível de 500 inscritos aparece em YouTube Studio > Ganhar dinheiro.
-5. Na Workana: a comissão e o limite de propostas do plano grátis na sua conta.
-6. Com um contador: Carnê-Leão com a redução da Lei 15.270, IOF na entrada (deve ser zero para exportação de serviço), INSS, MEI x CNPJ (e se a sociedade de advocacia impede o MEI).
-7. Relatos com prints em r/NewTubers, r/PartneredYoutube e r/whop, e de brasileiros sacando da Whop: o Reddit bloqueou as duas rodadas de pesquisa.
+**Já resolvido na 3ª rodada (10/10/2026)**
+- Nível de 500 inscritos do YouTube: o Brasil está na lista oficial (página 13429240).
+- Workana: comissão de 20%/10%/5%, plano grátis com 2 propostas por semana e 1 projeto por vez, preços dos planos e saques confirmados na central de ajuda (veja a seção 11).
+- TikTok: os termos do Brasil (US$ 50) prevalecem sobre a Central de Ajuda (US$ 10) pela cláusula de prevalência; a divergência continua nas páginas.
+- Upwork: saque direto em reais confirmado para o Brasil.
+- Impostos, MEI, CNPJ e OAB: dossiê completo em **dossie-contador.md**, com perguntas prontas e contas conferidas.
+
+**Só você consegue (exige a sua conta ou a sua presença)**
+1. A política de vídeos da Rockstar, no seu navegador: há uma cópia datada em arquivo/politica-rockstar-2026-10-10.md, mas salve você mesmo em PDF e veja a data de "última atualização", que não apareceu na leitura.
+2. No TikTok (Perfil > Menu > Saldo): o saque mínimo que aparece para você (planeje com US$ 50).
+3. Na tela de saque da Whop, depois do KYC: métodos e taxa para o Brasil (a Whop só publica "varia por país"); faça um saque-teste de US$ 10.
+4. No YouTube Studio > Ganhar dinheiro: confirme que o nível de 500 inscritos aparece para o seu canal.
+5. Na Workana: qual plano dá saque semanal e qual o mínimo do Payoneer (a própria central se contradiz).
+6. Com um contador: leve o dossie-contador.md com a ficha da seção 1 preenchida. As 5 primeiras perguntas decidem a estrutura.
+7. Relatos com prints em r/NewTubers, r/PartneredYoutube e r/whop, e de brasileiros sacando da Whop: o Reddit bloqueou todas as rodadas de pesquisa.

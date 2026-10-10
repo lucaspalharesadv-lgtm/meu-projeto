@@ -89,7 +89,7 @@ main section > .wrap{display:grid;gap:20px}
 .tag.co{background:var(--accent-soft);color:var(--accent-strong)}
 
 /* Callouts */
-.callout{border-radius:var(--radius);padding:14px 16px;border:1px solid var(--line);background:var(--surface);display:grid;gap:8px}
+.callout{border-radius:var(--radius);padding:14px 16px;border:1px solid var(--line);background:var(--surface);display:grid;gap:8px;align-content:start}
 .callout.bad{background:var(--bad-soft);border-color:transparent}
 .callout.bad .callout-title{color:var(--bad)}
 .callout.warn{background:var(--warn-soft);border-color:transparent}
@@ -107,6 +107,7 @@ ol.steps > li > div{min-width:0}
 /* Tables */
 .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table{border-collapse:collapse;width:100%;font-size:.92rem;min-width:560px}
+table.compact{min-width:0}
 th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 th{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--surface-2)}
 tr:last-child td{border-bottom:0}
@@ -209,6 +210,7 @@ footer{padding-block:32px 48px;color:var(--muted);font-size:.9rem}
       <li><a href="#regras">Regras do YouTube</a></li>
       <li><a href="#servico">Vender edição</a></li>
       <li><a href="#receber">Receber e declarar</a></li>
+      <li><a href="#contador">Contador</a></li>
       <li><a href="#relatos">Relatos reais</a></li>
       <li><a href="#golpes">Golpes</a></li>
       <li><a href="#plano">Plano de 90 dias</a></li>
@@ -436,7 +438,7 @@ footer{padding-block:32px 48px;color:var(--muted);font-size:.9rem}
         <thead><tr><th>Plataforma</th><th>Paga por view?</th><th>Requisitos</th><th>Brasil</th></tr></thead>
         <tbody>
           <tr><td><strong>YouTube Shorts</strong></td><td>Sim, pelo programa do YouTube (você fica com 45% da sua parte do fundo de Shorts)</td><td>Hoje: 1.000 inscritos + 10 mi de views de Shorts em 90 dias. Desde 01/02/2027: 20 mi para entrar e 10 mi a cada 90 dias para continuar recebendo. Cortes sem edição não contam</td><td><span class="tag ok">oficial</span></td></tr>
-          <tr><td><strong>TikTok</strong> (Creator Rewards)</td><td>Sim, só vídeos originais de 1 minuto ou mais. Público BR: ~US$ 0,13 a 0,32 por mil views qualificadas</td><td>18+, 10 mil seguidores, 100 mil views em 30 dias, conta pessoal, 1.000+ views qualificadas por vídeo. Só contam vídeos postados depois da aprovação</td><td><span class="tag ok">oficial</span> Brasil elegível. Recebe só por PayPal, no dia 15; mínimo de US$ 10 ou US$ 50 (as fontes oficiais divergem)</td></tr>
+          <tr><td><strong>TikTok</strong> (Creator Rewards)</td><td>Sim, só vídeos originais de 1 minuto ou mais. Público BR: ~US$ 0,13 a 0,32 por mil views qualificadas</td><td>18+, 10 mil seguidores, 100 mil views em 30 dias, conta pessoal, 1.000+ views qualificadas por vídeo. Só contam vídeos postados depois da aprovação</td><td><span class="tag ok">oficial</span> Brasil elegível. Recebe só por PayPal, no dia 15. Mínimo de US$ 50 pelos termos do Brasil, que prevalecem sobre a Central de Ajuda (US$ 10)</td></tr>
           <tr><td><strong>Instagram Reels</strong></td><td>Nenhum bônus por view confirmado para brasileiros em 2026</td><td>—</td><td>Não conte com isso</td></tr>
           <tr><td><strong>Facebook</strong></td><td>Monetização de Conteúdo só por convite. Desde 14/07/2025 pune repost; "só juntar clipes" não conta como edição</td><td>Creator Fast Track fora do Brasil</td><td>Incerto</td></tr>
           <tr><td><strong>Kwai</strong></td><td>Tem programas oficiais (anúncios, tarefas pagas, presentes em live), sem requisitos nem valores públicos</td><td>—</td><td>Use para postar, não como renda prevista</td></tr>
@@ -669,10 +671,10 @@ footer{padding-block:32px 48px;color:var(--muted);font-size:.9rem}
         <thead><tr><th>Plataforma</th><th>Taxa</th><th>Status</th></tr></thead>
         <tbody>
           <tr><td>99Freelas (Brasil)</td><td>5% a 20% (mín. R$ 10) somados à sua proposta e pagos pelo cliente; repasse em 6, 4 ou 2 dias úteis</td><td><span class="tag ok">oficial</span></td></tr>
-          <tr><td>Upwork</td><td>0% a 15% por contrato (desde 05/2025), mostrada antes de enviar a proposta; iniciante deve contar com até 15%. Connects a US$ 0,15 (10 grátis por mês). Saque "Direct to Local Bank" US$ 0,99, até 4 dias úteis</td><td><span class="tag ok">oficial</span></td></tr>
-          <tr><td>Fiverr</td><td>20% de cada pedido (inclui gorjeta); dinheiro retido 14 dias. Do Brasil, saque só por PayPal (câmbio 3% a 5% pior) ou Payoneer (US$ 1 a 3 por saque + ~2% de câmbio)</td><td>Várias fontes concordam</td></tr>
+          <tr><td>Upwork</td><td>0% a 15% por contrato (desde 05/2025), mostrada antes de enviar a proposta; iniciante deve contar com até 15%. Connects a US$ 0,15 (10 grátis por mês). Saque "Direct to Local Bank" em reais: US$ 0,99, mínimo US$ 12, até 4 dias úteis; pede CPF e agência</td><td><span class="tag ok">oficial</span></td></tr>
+          <tr><td>Fiverr</td><td>Você recebe 80% (taxa de 20%, inclusive sobre gorjetas); dinheiro retido 14 dias. Saque por PayPal (sem taxa, mínimo US$ 1; o PayPal cobra 3,5% no câmbio), banco via Payoneer (US$ 1, mínimo US$ 20) ou conta Payoneer (US$ 3, mínimo US$ 10)</td><td><span class="tag ok">oficial</span></td></tr>
           <tr><td>Freelancer.com</td><td>10% ou US$ 5, o que for maior</td><td><span class="tag ok">oficial</span></td></tr>
-          <tr><td>Workana</td><td>20% até US$ 300 pagos por cada cliente, 10% até US$ 3.000, 5% acima. Saque por PayPal, Payoneer ou Mercado Pago. O plano grátis pode limitar propostas: confira</td><td>Fontes secundárias</td></tr>
+          <tr><td>Workana</td><td>20% até US$ 300 pagos por cada cliente, 10% até US$ 3.000, 5% acima. Plano grátis: só 2 propostas por semana e 1 projeto por vez; planos de R$ 23,12 a R$ 109,90/mês. Saque só por PayPal, Payoneer ou Mercado Pago (sem Pix nem banco direto)</td><td><span class="tag ok">oficial</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -740,9 +742,10 @@ footer{padding-block:32px 48px;color:var(--muted);font-size:.9rem}
         <p class="callout-title">Imposto no Brasil (pessoa física)</p>
         <ul class="clean small">
           <li>Dinheiro do exterior: Carnê-Leão todo mês, no e-CAC; DARF até o último dia útil do mês seguinte</li>
-          <li>Desde jan/2026 (Lei 15.270/2025): imposto zero até R$ 5.000/mês, com redução até R$ 7.350. Aplicação ao Carnê-Leão: confirme com contador</li>
-          <li>O imposto retido nos EUA pode ser compensado (guarde o informe 1042-S)</li>
-          <li>IOF: zero para receita de exportação de serviços, mas muitos bancos cobram 0,38%. Pergunte antes de fechar o câmbio</li>
+          <li>Lei 15.270/2025, confirmada para o Carnê-Leão pela Receita: imposto zero até R$ 5.000/mês, redução até R$ 7.350. <strong>A faixa soma toda a renda do mês, inclusive honorários</strong></li>
+          <li>O imposto retido nos EUA pode ser compensado, mas só até o imposto brasileiro daquele rendimento; com a isenção, ele tende a se perder</li>
+          <li>IOF: zero ou 0,38%, conforme o banco classifica. O câmbio do PayPal (3,5%) pesa ~9 vezes mais</li>
+          <li><strong>Não pagar o Carnê-Leão</strong> e ser pego custa multa isolada de 50%, mesmo sem imposto na declaração anual</li>
         </ul>
       </div>
     </div>
@@ -750,11 +753,63 @@ footer{padding-block:32px 48px;color:var(--muted);font-size:.9rem}
       <p class="callout-title">MEI e CNPJ · atenção, advogado</p>
       <ul class="clean small">
         <li>Não existe MEI de "youtuber" ou "influenciador". Existe "Editor(a) de vídeo independente" (CNAE 5912-0/99), limite de R$ 81 mil por ano, DAS de ~R$ 86/mês. Serve para editar para clientes; para a receita do seu próprio canal, o encaixe é discutível.</li>
-        <li>Quem participa de outra empresa como titular, sócio ou administrador não pode ser MEI (LC 123/2006, art. 18-A, §4º). Se você tem sociedade de advocacia, inclusive unipessoal, o MEI está fora.</li>
-        <li>Simples: "produções audiovisuais" no Anexo III (a partir de 6%) sem fator R; "publicidade" depende do fator R (Anexo V começa em 15,5%).</li>
-        <li>Regra de bolso: até ~R$ 5 mil/mês, pessoa física costuma bastar. Acima de R$ 7 a 10 mil/mês recorrentes, compare com CNPJ no Simples.</li>
+        <li>Quem participa de outra empresa como titular, sócio ou administrador não pode ser MEI (LC 123/2006, art. 18-A, §4º, III). Não há posição oficial sobre sociedade de advogados; a leitura prudente é que a proibição vale, inclusive na unipessoal.</li>
+        <li>Nunca receba renda de games pelo CNPJ da sociedade de advocacia (Estatuto da OAB, art. 16).</li>
+        <li>Pessoa física ou CNPJ: veja as contas no <a href="#contador">dossiê para o contador</a>.</li>
       </ul>
     </div>
+  </div>
+</section>
+
+<section id="contador">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">3ª rodada · leve para a reunião</p>
+      <h2>Dossiê para o contador</h2>
+      <p class="muted col">Resumo do arquivo <a href="dossie-contador.md" target="_blank" rel="noopener" class="mono dl" data-file="dossie-contador.md">dossie-contador.md</a>, que traz a ficha para preencher, 24 perguntas, a base legal e as contas, refeitas com as tabelas oficiais de 2026. Não é parecer contábil: serve para a reunião render.</p>
+    </div>
+    <ol class="verdict">
+      <li><div><strong>Tudo do exterior vai para o Carnê-Leão no mês em que você recebe</strong>, mesmo que o dinheiro fique lá fora: AdSense (Google LLC, EUA), Whop (Whop Inc., EUA), Fiverr, Upwork e, em princípio, TikTok. DARF 0190 até o último dia útil do mês seguinte. <span class="tag ok">oficial</span></div></li>
+      <li><div><strong>A isenção até R$ 5 mil vale no Carnê-Leão</strong> (Receita, P&amp;R IRPF 2026, perguntas 266 e 267), mas soma toda a renda tributável do mês. R$ 3 mil de games + R$ 3 mil de honorários pagam R$ 394,54, não zero. <span class="tag ok">oficial</span></div></li>
+      <li><div><strong>MEI:</strong> existe "Editor(a) de vídeo independente" (R$ 86,05/mês, até R$ 81 mil/ano), mas não cobre AdSense nem clipping. Sócio ou titular de sociedade de advocacia não deve contar com ele. <span class="tag warn">interpretação</span></div></li>
+      <li><div><strong>OAB:</strong> renda de games nunca pelo CNPJ do escritório (art. 16), e nada de divulgar a advocacia junto com o canal (art. 1º, §3º; Provimento 205/2021, art. 8º). <span class="tag ok">oficial</span></div></li>
+    </ol>
+    <h3>Pessoa física ou CNPJ? Custo mensal sem outra renda <span class="tag est">contas conferidas</span></h3>
+    <div class="table-wrap">
+      <table class="compact">
+        <thead><tr><th>Receita de games</th><th>Pessoa física</th><th>CNPJ no Simples</th></tr></thead>
+        <tbody>
+          <tr><td>R$ 3.000/mês</td><td class="num"><strong>R$ 178</strong></td><td class="num">R$ 553</td></tr>
+          <tr><td>R$ 5.000/mês</td><td class="num"><strong>R$ 178</strong></td><td class="num">R$ 673</td></tr>
+          <tr><td>R$ 7.000/mês</td><td class="num">R$ 776</td><td class="num">R$ 793</td></tr>
+          <tr><td>R$ 8.000/mês</td><td class="num">R$ 1.065</td><td class="num"><strong>R$ 853</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted col">Pessoa física: IR pelo ajuste anual + INSS de 11% sobre o salário mínimo. CNPJ: DAS de 6% (Anexo III), pró-labore de 1 salário mínimo com INSS e contador de R$ 195. Empate em ~R$ 7.070/mês. Com INSS de 20% na pessoa física, o empate cai para ~R$ 2.670/mês (em troca de aposentadoria maior).</p>
+    <div class="two">
+      <div class="callout warn">
+        <p class="callout-title">Se você tem honorários na pessoa física</p>
+        <p class="small">Sua renda de games entra na faixa de 27,5%. Com R$ 3.000/mês de games, a pessoa física paga ~R$ 825 a mais e o CNPJ custa ~R$ 950 (o pró-labore também é tributado). O CNPJ passa a compensar a partir de <strong>~R$ 3,0 a 3,6 mil/mês</strong> de games.</p>
+      </div>
+      <div class="callout bad">
+        <p class="callout-title">Armadilhas</p>
+        <ul class="clean small">
+          <li>Multa isolada de 50% para quem não paga o Carnê-Leão, mesmo acertando no ajuste anual</li>
+          <li>No CNPJ, o lucro só é todo isento com escrituração contábil completa (sem ela, até 32% da receita)</li>
+          <li>A Receita chamou a receita do AdSense de "publicidade" (SC Cosit 185/2025): risco de Anexo V (15,5%)</li>
+        </ul>
+      </div>
+    </div>
+    <h3>As 5 perguntas que decidem a estrutura</h3>
+    <ol class="steps col">
+      <li><div>Sendo sócio, titular ou associado de sociedade de advocacia, o MEI fica vedado para mim (LC 123, art. 18-A, §4º, III)?</div></li>
+      <li><div>Com os meus números reais (honorários + games), pessoa física ou CNPJ, pelo critério anual?</div></li>
+      <li><div>INSS: já contribuo sobre o teto (R$ 8.475,55)? Posso usar o plano de 11%?</div></li>
+      <li><div>Se abrirmos CNPJ: limitada unipessoal ou sociedade simples, e quanto custam registro e alvará na minha cidade?</div></li>
+      <li><div>O plano mensal inclui escrituração contábil completa e o pró-labore?</div></li>
+    </ol>
+    <p class="small muted col">As outras 19 perguntas (rotina do Carnê-Leão, câmbio e IOF, imposto dos EUA, declaração de 2027 e CNPJ) estão no dossiê, com a lista de documentos para levar.</p>
   </div>
 </section>
 
@@ -888,7 +943,7 @@ footer{padding-block:32px 48px;color:var(--muted);font-size:.9rem}
         <li><label><input type="checkbox" id="c23"><span>Subir preço após 5 avaliações; oferecer pacote mensal</span></label></li>
         <li><label><input type="checkbox" id="c24"><span>Escolher o 2º jogo do canal para depois do pico do GTA 6</span></label></li>
         <li><label><input type="checkbox" id="c25"><span>Se tiver AdSense: W-8BEN até 10/12</span></label></li>
-        <li><label><input type="checkbox" id="c26"><span>Conversa com contador: MEI, CNPJ, IOF, INSS</span></label></li>
+        <li><label><input type="checkbox" id="c26"><span>Conversa com contador levando o dossiê preenchido (MEI, CNPJ, IOF, INSS)</span></label></li>
       </ul>
     </div>
     <div class="callout col">
@@ -950,7 +1005,7 @@ footer{padding-block:32px 48px;color:var(--muted);font-size:.9rem}
     <ol class="steps col">
       <li><div>No claude.ai, crie um <strong>Projeto</strong> chamado "Dinheiro com Games".</div></li>
       <li><div>Em <strong>Instruções do projeto</strong>, cole o prompt abaixo (botão "Copiar prompt").</div></li>
-      <li><div>Em <strong>Conhecimento do projeto</strong>, suba o arquivo <span class="mono">mentor-dinheiro-games.md</span> que te mandei junto com esta página.</div></li>
+      <li><div>Em <strong>Conhecimento do projeto</strong>, suba os arquivos <a href="mentor-dinheiro-games.md" target="_blank" rel="noopener" class="mono dl" data-file="mentor-dinheiro-games.md">mentor-dinheiro-games.md</a> e <a href="dossie-contador.md" target="_blank" rel="noopener" class="mono dl" data-file="dossie-contador.md">dossie-contador.md</a> (toque para baixar).</div></li>
       <li><div>Abra uma conversa no projeto e escreva: "Vamos começar. Faça o diagnóstico." Toda semana, mande o check-in do modelo.</div></li>
     </ol>
     <div class="prompt-box">
@@ -965,7 +1020,7 @@ QUEM EU SOU
 - Prefiro não mostrar o rosto. Posso usar a minha voz.
 
 BASE DE CONHECIMENTO
-- O arquivo "mentor-dinheiro-games.md" (pesquisa de 10/10/2026) é a sua base. Use-o antes de responder.
+- O arquivo "mentor-dinheiro-games.md" (pesquisa de 10/10/2026) é a sua base. Use-o antes de responder. Para impostos, MEI e CNPJ, use o "dossie-contador.md".
 - Regras, taxas e valores de plataformas mudam toda semana. Quando um número for decidir alguma coisa (requisito de monetização, taxa, data, preço), diga a data da informação e me peça para conferir na fonte oficial, ou pesquise se você tiver busca na web ativa.
 - Nunca invente número, regra, plataforma ou caso de sucesso. Se não souber, diga "não sei" e diga como descobrir.
 - Separe sempre: fato oficial, dado de empresa interessada, relato isolado e propaganda de guru.
@@ -1012,8 +1067,9 @@ O QUE VOCÊ DEVE ME LEMBRAR SEMPRE QUE FOR RELEVANTE
 - Shorts de mais de 1 minuto com qualquer reivindicação de direitos autorais ficam bloqueados.
 - Whop/Content Rewards: só para maiores de 18 anos, conta bancária em reais no meu nome, verificação de identidade, saque mínimo de US$ 10, 10% de taxa nas campanhas por mil views, e eu cedo os direitos do clipe. O Brasil está na lista oficial de saque, mas PIX não é confirmado e PayPal não é opção para clipador. Conte com 2 a 4 semanas entre postar e receber. Nunca pagar para entrar em campanha.
 - Campeonatos brasileiros de cortes de games: Viewx (LOUD, Gabepeixe), quase sempre pagos só aos primeiros colocados. Nunca pagar mensalidade para clipar.
-- TikTok Creator Rewards: Brasil elegível (oficial). Só paga vídeos originais de 1 minuto ou mais, recebe só por PayPal, e com público brasileiro rende cerca de US$ 0,13 a 0,32 por mil views qualificadas. Cortes de terceiros sem ideia própria não contam.
-- Impostos: dinheiro do exterior vai para o Carnê-Leão todo mês (DARF até o último dia útil do mês seguinte). No AdSense, preencher o W-8BEN até 10/12, senão o Google retém 24% de tudo.
+- TikTok Creator Rewards: Brasil elegível (oficial). Só paga vídeos originais de 1 minuto ou mais, recebe só por PayPal (que cobra 3,5% no câmbio), e com público brasileiro rende cerca de US$ 0,13 a 0,32 por mil views qualificadas. Saque mínimo: os termos do Brasil dizem US$ 50 e prevalecem sobre a Central de Ajuda (US$ 10); planeje com US$ 50. Cortes de terceiros sem ideia própria não contam.
+- Impostos: dinheiro do exterior vai para o Carnê-Leão todo mês (DARF 0190 até o último dia útil do mês seguinte). Deixar de pagar dá multa isolada de 50%, mesmo acertando na declaração anual. A isenção até R$ 5 mil/mês (Lei 15.270) soma TODA a renda tributável do mês, inclusive meus honorários. No AdSense, preencher o W-8BEN até 10/12, senão o Google retém 24% de tudo. Pessoa física x CNPJ: sem outra renda, a pessoa física compensa até ~R$ 7 mil/mês; com honorários na pessoa física, o CNPJ compensa a partir de ~R$ 3 a 3,6 mil/mês de games. MEI: não contar com ele se eu for sócio ou titular de sociedade de advocacia. Mande eu confirmar tudo com o contador, levando o dossiê.
+- Advocacia: nunca receber renda de games pelo CNPJ da sociedade de advocacia (Estatuto da OAB, art. 16) e nunca divulgar a advocacia no canal, nos perfis ou no portfólio (art. 1º, §3º; Provimento 205/2021, art. 8º).
 - Datas-chave: 19/11/2026 (GTA 6), 10/12 (prazo anual do W-8BEN), 31/01/2027 (aceite dos novos termos do YouTube), 01/02/2027 (nova regra: 8.000 horas ou 20 milhões de views de Shorts para canais novos entrarem no programa de anúncios; e 10 milhões de views de Shorts a cada 90 dias para receber pelos Shorts).
 
 O QUE VOCÊ FAZ POR MIM QUANDO EU PEDIR
@@ -1080,7 +1136,7 @@ Dúvida:</textarea>
     <div class="callout warn col">
       <p class="callout-title">Limites</p>
       <ul class="clean small">
-        <li>Duas rodadas, 14 temas, cada um com verificador independente. Na 1ª, a cota de buscas acabou cedo e a maior parte foi confirmada lendo páginas oficiais. A 2ª leu a política da Rockstar por um leitor intermediário, o texto oficial do TikTok pela Central de Ajuda e as centrais de Fiverr, Upwork e Workana por trechos de busca.</li>
+        <li>Três rodadas, 17 temas, cada um com verificador independente. Na 1ª, a cota de buscas acabou cedo e a maior parte foi confirmada lendo páginas oficiais. A 2ª leu a política da Rockstar por um leitor intermediário e o texto oficial do TikTok pela Central de Ajuda. A 3ª tratou de impostos (Receita, Planalto, Portal do Simples, OAB) e leu as centrais de Workana, Upwork e Fiverr pelas APIs públicas das próprias plataformas.</li>
         <li>O Reddit continuou bloqueado: os relatos de lá vieram de espelhos e trechos. Não foi encontrado nenhum relato de brasileiro sacando da Whop.</li>
         <li>Preços de console e microfone são da Kabum em 10/10/2026 e mudam todo dia.</li>
       </ul>
@@ -1133,7 +1189,7 @@ Dúvida:</textarea>
         <li><a href="https://www.trustpilot.com/review/whop.com?search=clipping">Trustpilot da Whop (clipping)</a> · <a href="https://www.trustpilot.com/review/vyro.com">Trustpilot da Vyro</a></li>
         <li><a href="https://www.kunc.org/npr-news/2026-05-12/the-clipping-economy-how-short-form-video-clippers-are-overrunning-the-internet">NPR: a economia do clipping</a> · <a href="https://peterclaridge.com/should-you-use-whop-com-to-promote-your-saas-product/">Marca que pagou clipadores</a> · <a href="https://alearesearch.io/podcast-digest/on-the-margin/what-is-clipping-secret-ads-powering-polymarket-and-hollywood">Fundador do Content Rewards em podcast</a></li>
         <li><a href="https://vidiq.com/research/youtube-uploads-1000-subscribers/">vidIQ: quem chega a 1.000 inscritos</a></li>
-        <li><a href="https://help.fiverr.com/hc/en-us/articles/360010530058-Withdrawing-your-earnings-managing-payout-methods">Fiverr: saques</a> · <a href="https://support.upwork.com/hc/en-us/articles/211060578-What-are-the-fees-limits-and-timing-of-Direct-to-Local-Bank-payments">Upwork: Direct to Local Bank</a></li>
+        <li><a href="https://help.fiverr.com/hc/en-us/articles/360010530058-Withdrawing-your-earnings-managing-payout-methods">Fiverr: saques</a> · <a href="https://support.upwork.com/hc/en-us/articles/211060578-What-are-the-fees-limits-and-timing-of-Direct-to-Local-Bank-payments">Upwork: Direct to Local Bank</a> · <a href="https://help.workana.com/hc/pt/articles/360041612574">Workana: planos</a> · <a href="https://help.workana.com/hc/pt/articles/360041937573">Workana: saques</a></li>
       </ul>
     </details>
     <details>
@@ -1143,13 +1199,16 @@ Dúvida:</textarea>
         <li><a href="https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoMEI.pdf">FAQ do MEI</a> · <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/PerguntaoSN.pdf">FAQ do Simples</a></li>
         <li><a href="https://www2.camara.leg.br/legin/fed/lei/2025/lei-15211-17-setembro-2025-797997-normaatualizada-pl.pdf">ECA Digital (texto compilado)</a></li>
         <li><a href="https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z">Tratados dos EUA (IRS)</a></li>
+        <li><a href="https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirpf/p-r-irpf-2026-v1-00-2026-04-23.pdf">Perguntas e Respostas IRPF 2026</a> · <a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15270.htm">Lei 15.270/2025</a> · <a href="https://www.planalto.gov.br/ccivil_03/leis/l9430.htm">Lei 9.430/96 (multas)</a></li>
+        <li><a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm">LC 123/2006</a> · <a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/manual/Anexo_XI.pdf">Ocupações do MEI</a> · <a href="https://rotadajurisprudencia.com.br/wp-content/uploads/2025/09/SC-Cosit-no-185-2025.pdf">SC Cosit 185/2025</a></li>
+        <li><a href="https://www.planalto.gov.br/ccivil_03/leis/l8906.htm">Estatuto da OAB</a> · <a href="https://www.oab.org.br/leisnormas/legislacao/provimentos/205-2021">Provimento 205/2021</a> · <a href="https://www.gov.br/inss/pt-br/direitos-e-deveres/inscricao-e-contribuicao/tabela-de-contribuicao-mensal">INSS 2026</a></li>
       </ul>
     </details>
     <details>
       <summary>Mercado, preços e dados</summary>
       <ul>
         <li><a href="https://www.sec.gov/Archives/edgar/data/0001762301/000117891326000858/zk2634486.htm">Fiverr 20-F (2025)</a> · <a href="https://www.sec.gov/Archives/edgar/data/1627475/000162747526000047/upwk-20260630.htm">Upwork 10-Q (2026)</a></li>
-        <li><a href="https://air.io/en/youtube-glossary/what-is-youtube-rpm-full-breakdown">AIR: RPM por nicho</a> · <a href="https://air.io/en/monetization/what-rpm-can-you-expect-from-shorts-in-2026">AIR: RPM de Shorts por país</a> · <a href="https://tubeanalytics.net/benchmarks/brazil">TubeAnalytics Brasil</a></li>
+        <li><a href="https://air.io/en/youtube-glossary/what-is-youtube-rpm-full-breakdown">AIR: RPM por nicho</a> · <a href="https://air.io/en/monetization/what-rpm-can-you-expect-from-shorts-in-2026">AIR: RPM de Shorts por país</a></li>
         <li><a href="https://creatordb.app/blog/where-youtube-sponsorship-begins/">CreatorDB: quando começam os patrocínios</a></li>
         <li><a href="https://www.99freelas.com.br/como-funciona">99Freelas: como funciona</a> · <a href="https://www.freelancer.com/feesandcharges">Freelancer.com: taxas</a></li>
         <li><a href="https://www.paypal.com/br/business/paypal-business-fees">PayPal Brasil: tarifas</a> · <a href="https://www.payoneer.com/about/pricing/">Payoneer</a> · <a href="https://wise.com/br/pricing/receive">Wise</a> · <a href="https://www.remessaonline.com.br/for-creators">Remessa Online for Creators</a></li>
@@ -1219,6 +1278,33 @@ Dúvida:</textarea>
           }, fallback);
         } else { fallback(); }
       }catch(e){ fallback(); }
+    });
+  }
+})();
+</script>
+<script>
+(function(){
+  // Baixar os arquivos .md publicados junto com a página (capacidade downloads do visualizador)
+  var dl = null;
+  try{
+    if (window.claude && window.claude.use) window.claude.use('downloads').then(function(ns){ dl = ns; }).catch(function(){});
+  }catch(e){}
+  var links = document.querySelectorAll('a.dl');
+  for (var i=0;i<links.length;i++){
+    links[i].addEventListener('click', function(ev){
+      if (!dl) return; // sem a capacidade: o link abre o arquivo em outra aba
+      ev.preventDefault();
+      var a = ev.currentTarget, file = a.getAttribute('data-file');
+      var orig = a.getAttribute('data-label') || a.textContent;
+      a.setAttribute('data-label', orig);
+      function say(t){ a.textContent = t; setTimeout(function(){ a.textContent = orig; }, 2600); }
+      fetch(file).then(function(r){ if(!r.ok) throw {code:'fetch'}; return r.blob(); })
+        .then(function(b){ return dl.save({filename:file, data:b}); })
+        .then(function(){ say('Salvo'); })
+        .catch(function(e){
+          var c = e && e.code;
+          say(c==='declined' ? 'Cancelado' : c==='rate_limited' ? 'Aguarde e tente de novo' : 'Não deu para baixar aqui');
+        });
     });
   }
 })();
