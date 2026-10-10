@@ -48,7 +48,12 @@ NONFIRM = re.compile(r'associa[cç][aã]o (brasileira|nacional|dos|das|de)|insti
 def _city(tok):
     return tok.lower() in PF._MUN
 
+SLOGAN = re.compile(r"\b(para|que|voc[eê]|seus?|suas?|n[aã]o|sem|mais|melhor(es)?|quando|como|aqui|agora|sempre|nunca|est[aá]|precisa)\b", re.I)
+
+
 def _valid_name(n):
+    if len(n.split()) >= 5 and SLOGAN.search(n):   # frase de efeito do site, nao nome do escritorio
+        return False
     toks = re.findall(r"[A-Za-zÀ-ÿ]{3,}", n)
     good = [t for t in toks if t.lower() not in GW and not _city(t) and t[0].isupper()]
     return bool(good) and 3 < len(n) < 70
@@ -74,7 +79,7 @@ def rows(cands, limit_per_firm=2):
     seen = seen_all(); out = []; review = []
     for h, c in cands.items():
         try:
-            p = PF.perfil(c['site']) or (c.get('perfil') or {})
+            p = c.get('perfil') or PF.perfil(c['site']) or {}   # perfil ja calculado na visita (mesma funcao); so recalcula se faltar
         except Exception:
             p = c.get('perfil') or {}
         sd = urllib.parse.urlsplit(c['site']).netloc

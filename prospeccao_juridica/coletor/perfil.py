@@ -64,10 +64,10 @@ def perfil(site, extra_pages=()):
         return None
     pages = [d] + [x for x in (web.fetch(u) for u in extra_pages) if x]
     # paginas internas ja visitadas (cache) de sobre/areas/contato
-    s = BeautifulSoup(d['html'], 'lxml'); base = urllib.parse.urlsplit(d['final']).netloc.replace('www.', '')
+    base = urllib.parse.urlsplit(d['final']).netloc.replace('www.', '')
     more = []
-    for a in s.find_all('a', href=True):
-        h = urllib.parse.urljoin(d['final'], a['href'].split('#')[0])
+    for href, _t in web.anchors_of(d['html']):
+        h = urllib.parse.urljoin(d['final'], href.split('#')[0])
         if urllib.parse.urlsplit(h).netloc.replace('www.', '') == base and re.search(r'sobre|quem-somos|escritorio|areas|atuacao|servicos|contato|trabalhe|carreira', h, re.I):
             more.append(h)
     for u in list(dict.fromkeys(more))[:4]:

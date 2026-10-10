@@ -10,7 +10,7 @@ BASE = "/home/user/meu-projeto/prospeccao_juridica"
 OLD = f"{BASE}/PROSPECCAO_JURIDICA_BRASIL.csv"
 P = f"{BASE}/PARCERIAS_ASSOCIADO_500.csv"
 OUT = f"{BASE}/outros_emails_capturados.csv"
-MXC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "mx_cache.json")
+MXC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "estado", "mx_cache.json")
 
 COLS = ["ID", "Escritorio/Empresa", "Nome do contato", "E-mail", "Confirmacao", "Tipo de e-mail",
         "Modelo de ganho", "Atuacao remota", "Areas de atuacao", "Cidade", "Estado", "Regiao",
@@ -32,10 +32,53 @@ for path, cols in ((P, COLS), (OUT, OCOLS)):
 _mx = json.load(open(MXC)) if os.path.exists(MXC) else {}
 
 
+import threading as _th
+_mxlock = _th.Lock()
+_DOH = ("https://dns.google/resolve", "https://cloudflare-dns.com/dns-query")
+
+
+def _doh(dom, typ):
+    """Consulta DNS por HTTPS (o DNS local deste ambiente nao responde MX). Nao envia nada ao dominio.
+    Devolve 'ok', 'nx', 'vazio' ou None (falha da consulta)."""
+    import requests
+    for u in _DOH:
+        try:
+            r = requests.get(u, params={"name": dom, "type": typ}, headers={"accept": "application/dns-json"},
+                             timeout=15, verify="/root/.ccr/ca-bundle.crt")
+            j = r.json()
+        except Exception:
+            continue
+        if j.get("Status") == 3:
+            return "nx"
+        if j.get("Status") != 0:
+            continue
+        ans = [a for a in j.get("Answer", []) if a.get("type") == (15 if typ == "MX" else 1)]
+        if typ == "MX":
+            ans = [a for a in ans if a.get("data", "").split()[-1:] not in (["."], [])]   # MX nulo (RFC 7505) nao conta
+        return "ok" if ans else "vazio"
+    return None
+
+
 def mx(email):
     dom = email.split("@", 1)[1].lower()
     if dom in _mx:
         return _mx[dom]
+    if os.environ.get("MX_DOH", "1") == "1":
+        st = _doh(dom, "MX")
+        if st == "ok":
+            v = "MX ok (webmail)" if dom in WEBMAIL else "MX ok"
+        elif st == "nx":
+            v = "DOMINIO INEXISTENTE"
+        elif st == "vazio":
+            v = "Sem MX (so A) - risco" if _doh(dom, "A") == "ok" else "SEM MX E SEM A"
+        else:
+            return "Falha na consulta"
+        with _mxlock:
+            _mx[dom] = v
+            with open(MXC + ".tmp", "w") as fh:
+                json.dump(_mx, fh)
+            os.replace(MXC + ".tmp", MXC)
+        return v
     r = dns.resolver.Resolver()
     r.lifetime = r.timeout = 8
     try:

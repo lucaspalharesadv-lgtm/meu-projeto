@@ -49,6 +49,29 @@ def _cache_path(u):
     return os.path.join(CACHE, hashlib.sha1(u.encode()).hexdigest() + ".json")
 
 
+import gzip as _gz
+MAXHTML = 800_000      # paginas gigantes sao cortadas no cache (e-mails ficam no topo/rodape ja lidos)
+
+
+def _cache_read(u):
+    cp = _cache_path(u)
+    if os.path.exists(cp + ".gz"):
+        try:
+            return json.loads(_gz.decompress(open(cp + ".gz", "rb").read()))
+        except Exception:
+            return None
+    if os.path.exists(cp):
+        return json.load(open(cp))
+    return None
+
+
+def _cache_write(u, d):
+    cp = _cache_path(u)
+    with open(cp + ".gz.tmp", "wb") as fh:
+        fh.write(_gz.compress(json.dumps(d).encode(), 6))
+    os.replace(cp + ".gz.tmp", cp + ".gz")
+
+
 def _wait(dom):
     with _llock:
         now = time.time()
@@ -88,9 +111,10 @@ def allowed(u):
 
 def fetch(u, use_cache=True):
     """Retorna dict {url,status,html,final} ou None (bloqueado/erro/desafio)."""
-    cp = _cache_path(u)
-    if use_cache and os.path.exists(cp):
-        return json.load(open(cp))
+    if use_cache:
+        c = _cache_read(u)
+        if c is not None:
+            return c
     if not allowed(u):
         LOG["robots_block"].append(u)
         return None
@@ -112,8 +136,8 @@ def fetch(u, use_cache=True):
     if _domain(r.url) != _domain(u) and not allowed(r.url):
         LOG["robots_block"].append(r.url)
         return None
-    d = {"url": u, "final": r.url, "status": r.status_code, "html": body}
-    json.dump(d, open(cp, "w"))
+    d = {"url": u, "final": r.url, "status": r.status_code, "html": body[:MAXHTML]}
+    _cache_write(u, d)
     return d
 
 
@@ -125,24 +149,44 @@ def fetch_many(urls, workers=8):
     return out
 
 
-def text_of(htm):
+import warnings as _warn
+from functools import lru_cache
+try:
+    from bs4 import XMLParsedAsHTMLWarning as _XW
+    _warn.filterwarnings("ignore", category=_XW)
+except Exception:
+    pass
+
+
+@lru_cache(maxsize=256)
+def _parse(htm):
+    """Uma unica leitura do HTML por pagina (antes era lido 4 a 6 vezes). Mesmo resultado de antes:
+    titulo e links lidos da pagina inteira; texto sem script/style/noscript/svg."""
     s = BeautifulSoup(htm, "lxml")
+    title = (s.title.get_text(" ").strip() if s.title else "")[:160]
+    anchors = tuple((a["href"], a.get_text(" ").strip()) for a in s.find_all("a", href=True))
     for t in s(["script", "style", "noscript", "svg"]):
         t.decompose()
-    return re.sub(r"[ \t\r\f\v]+", " ", s.get_text("\n")).strip()
+    text = re.sub(r"[ \t\r\f\v]+", " ", s.get_text("\n")).strip()
+    return text, title, anchors
+
+
+def text_of(htm):
+    return _parse(htm)[0]
 
 
 def title_of(htm):
-    s = BeautifulSoup(htm, "lxml")
-    return (s.title.get_text(" ").strip() if s.title else "")[:160]
+    return _parse(htm)[1]
+
+
+def anchors_of(htm):
+    return _parse(htm)[2]
 
 
 def emails_in(htm):
     """E-mails em TEXTO ABERTO + mailto. Ignora ofuscacao (cdn-cgi, [at])."""
     found = []
-    s = BeautifulSoup(htm, "lxml")
-    for a in s.find_all("a", href=True):
-        h = a["href"]
+    for h, _t in anchors_of(htm):
         if h.lower().startswith("mailto:"):
             e = urllib.parse.unquote(h[7:].split("?")[0]).strip()
             found.append(e)
@@ -215,16 +259,15 @@ def site_profile(home, max_pages=8):
     if not d:
         return None
     base = urllib.parse.urlsplit(d["final"])
-    s = BeautifulSoup(d["html"], "lxml")
     links = []
-    for a in s.find_all("a", href=True):
-        h = urllib.parse.urljoin(d["final"], a["href"].split("#")[0])
+    for href, atxt in anchors_of(d["html"]):
+        h = urllib.parse.urljoin(d["final"], href.split("#")[0])
         p = urllib.parse.urlsplit(h)
         if p.scheme not in ("http", "https"):
             continue
         if p.netloc.lower().replace("www.", "") != base.netloc.lower().replace("www.", ""):
             continue
-        txt = a.get_text(" ").strip()
+        txt = atxt
         if KEYLINK.search(p.path) or KEYLINK.search(txt):
             if h not in links and h.rstrip("/") != d["final"].rstrip("/"):
                 links.append(h)

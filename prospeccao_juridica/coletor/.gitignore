@@ -1,0 +1,5 @@
+cache/
+ccidx/
+logs/
+__pycache__/
+*.tmp
