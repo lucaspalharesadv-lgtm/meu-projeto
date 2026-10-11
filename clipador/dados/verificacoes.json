@@ -1,0 +1,1918 @@
+[
+ {
+  "verificacoes": [
+   {
+    "item": "Whop Content Rewards",
+    "veredito": "corrigido",
+    "valor_correto": "Entrar é grátis. A taxa de 10% (\"Content Reward Fee\") é descontada da conta do Seller, ou seja, da marca. O saque por wire custa US$ 23,00 por saque ≈ R$ 115,12 (cotação 5,005), e não R$ 114,77. Outras opções: ACH next-day US$ 2,50 (só EUA), crypto 5% + US$ 1, RTP 4% + US$ 2,50. Para 'bancos locais internacionais' a taxa varia por país. Conferido em 11/10/2026.",
+    "fonte_url": "https://docs.whop.com/fees",
+    "nota": "Os termos do Content Rewards confirmam a taxa de 10% paga pelo Seller e o pagamento em 'Whop Credits'. Não indicam saque mínimo nem data de atualização. A taxa do wire está em docs.whop.com/fees. Vale verificar se o Brasil tem a opção 'international local bank', que pode sair mais barata que o wire. A interface só em inglês e a falta de campanhas em PT não foram verificadas."
+   },
+   {
+    "item": "Vyro",
+    "veredito": "confirmado",
+    "valor_correto": "Saque mínimo de US$ 10,00 ≈ R$ 50,05, no máximo 1 saque a cada 7 dias, via Stripe (ou PayPal onde houver). Os termos não citam taxa de adesão. As taxas do provedor de pagamento podem ser descontadas. Termos atualizados em 20/12/2025.",
+    "fonte_url": "https://vyro.com/clipper-terms",
+    "nota": "O valor em BRL foi recalculado com a cotação 5,005. A ausência de PT-BR não foi verificada."
+   },
+   {
+    "item": "Real Oficial (Real Rewards)",
+    "veredito": "confirmado",
+    "valor_correto": "Pagamento via PIX após validação. As campanhas CPM vão de R$ 0,50 a R$ 1 por mil views válidas (exemplos na página: Wild Rift R$ 1/mil, Academia Rafael Toro R$ 0,50/mil). Saque mínimo, taxas e prazos ficam no regulamento de cada campanha.",
+    "fonte_url": "https://realoficial.com.br/pt/real-rewards",
+    "nota": "A página não diz explicitamente que a participação é grátis; há só o botão 'Criar conta para participar', sem taxa mencionada. Está em PT-BR."
+   },
+   {
+    "item": "Clipei (HypeX)",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Não confirmado. A URL citada do Intercom retorna 404.",
+    "fonte_url": "https://intercom.help/clipei/en/articles/13653287-introducao",
+    "nota": "O agregador clipmap.gg lista a Clipei como uma das fontes ativas de campanhas, o que indica que ela existe. Não confirmei a relação com a HypeX, a gratuidade, o Pix nem as taxas. A URL de fonte do pesquisador está quebrada."
+   },
+   {
+    "item": "Viewx / Klypex / Conty / Autoclipper Clip & Pix / Cut.pro",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Só a Viewx foi confirmada: conecta clipadores a campanhas e paga 'por mil visualizações entregues, direto no PIX'. A home não informa taxas, saque mínimo nem se é grátis. Klypex, Conty, Autoclipper e Cut.pro não foram verificadas.",
+    "fonte_url": "https://viewx.com.br/",
+    "nota": "A afirmação 'todas grátis para o clipador' não tem fonte primária. Há termos de participação no rodapé da Viewx que não li."
+   },
+   {
+    "item": "Clipou",
+    "veredito": "confirmado",
+    "valor_correto": "Plano Grátis com taxa de saque de 12%. Premium a R$ 97/mês, com taxa de saque de 8%, selo e campanhas Premium.",
+    "fonte_url": "https://www.clipou.com.br/",
+    "nota": "A própria página se contradiz sobre os limites: o plano Grátis aparece com 'Campanhas Limitadas' e também com 'Ilimitadas'. Confirmar antes de assinar. A taxa menor do Premium (8%) só compensa os R$ 97 com saques acima de cerca de R$ 2.425/mês, pela diferença de 4 pontos (cálculo meu)."
+   },
+   {
+    "item": "clipmap.gg",
+    "veredito": "confirmado",
+    "valor_correto": "Feed agregador de campanhas de clipping (BR e EUA) em PT/EN/ES. Mostrava 194 campanhas ativas e 1.770 indexadas, vindas de RealOficial, Nido, Clipei, ViewX, Whop, Vyro, Clipping e Clouted.",
+    "fonte_url": "https://clipmap.gg/",
+    "nota": "A página não mostra preço nem assinatura. Parece grátis, mas isso não está declarado explicitamente."
+   },
+   {
+    "item": "Workana / 99Freelas / Fiverr",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Não confirmado. As páginas de preço e termos de Workana, 99Freelas (Zendesk) e Fiverr bloquearam o acesso (HTTP 403).",
+    "fonte_url": "https://www.workana.com/pt/pricing",
+    "nota": "As comissões por projeto e os planos pagos (Workana Plus/Premium, Fiverr Seller Plus) não foram verificados. Não usar porcentagens sem checar."
+   },
+   {
+    "item": "vidIQ MCP (vidiq_earnings_calculate, vidiq_video_earnings_estimate, vidiq_outliers)",
+    "veredito": "confirmado",
+    "valor_correto": "As três ferramentas existem no conector vidIQ desta sessão (mcp__vidIQ__vidiq_earnings_calculate, mcp__vidIQ__vidiq_video_earnings_estimate, mcp__vidIQ__vidiq_outliers).",
+    "nota": "Não executei nenhuma, porque podem gastar créditos vidIQ. As estimativas de ganho são modelos do vidIQ, não dados reais de RPM."
+   },
+   {
+    "item": "DocuSeal / SignNow (conectores)",
+    "veredito": "confirmado",
+    "valor_correto": "Os dois aparecem como MCP nesta sessão. DocuSeal tem create_template, send_documents etc. SignNow tem upload_document, send_invite, create_from_template etc.",
+    "nota": "Não executei. Preço dos planos de assinatura eletrônica não verificado."
+   },
+   {
+    "item": "Skills instaladas: legal:review-contract, small-business:proposal-builder, cold-email:cold-email-write, small-business:invoice-chase",
+    "veredito": "confirmado",
+    "valor_correto": "As quatro constam na lista de skills disponíveis da sessão.",
+    "nota": "Sem custo adicional além da assinatura do Claude."
+   },
+   {
+    "item": "Google Sheets (conectado)",
+    "veredito": "confirmado",
+    "valor_correto": "O MCP Google Sheets está ativo na sessão (get_values, append_values, update_values etc.). Grátis.",
+    "nota": ""
+   },
+   {
+    "item": "Wise / PayPal",
+    "veredito": "confirmado",
+    "valor_correto": "Wise: conta multimoedas grátis, sem mensalidade, com taxa fixa por transferência. PayPal: 4,79% + US$ 0,30 para receber do exterior, mais 1,61% de transação internacional e spread de cerca de 3,5% na conversão. No exemplo da fonte, US$ 1.000 a R$ 5,00 renderam cerca de R$ 4.446.",
+    "fonte_url": "https://wise.com/br/blog/receber-dinheiro-do-exterior-paypal",
+    "nota": "Fonte da própria Wise, publicada em 29/08/2025 e checada pela última vez em 25/08/2025, então pode estar desatualizada. 'R$ 0/mês' vale para a mensalidade, mas cada transação tem custo relevante. Não conferi na página de preços atual da Wise nem na do PayPal."
+   },
+   {
+    "item": "vidIQ (MCP) – preços",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Pela fonte secundária de 22/08/2026: Free com 150 créditos/mês; Boost a US$ 39/mês no mensal ou US$ 199/ano (≈ US$ 16,58/mês) ≈ R$ 82,98/mês no anual ou R$ 195,20 no mensal; Max ≈ US$ 468/ano.",
+    "fonte_url": "https://1of10.com/blog/vidiq-pricing/",
+    "nota": "A página oficial vidiq.com/pricing bloqueou o acesso (403). Os números do pesquisador batem com a fonte secundária, mas ela é de um concorrente (1of10), que também registra um erro de exibição de US$ 0 no card Boost. Confirmar na página oficial ou via vidiq_balance antes de assinar."
+   },
+   {
+    "item": "Google Trends (filtro Pesquisa no YouTube)",
+    "veredito": "confirmado",
+    "valor_correto": "Grátis. No Google Trends, escolher 'YouTube Search' no menu 'Web Search'.",
+    "fonte_url": "https://www.descript.com/blog/article/5-ways-to-use-youtube-search-trends-for-your-next-video-idea",
+    "nota": "A fonte é secundária (Descript), mas o recurso é público e conhecido."
+   },
+   {
+    "item": "Aba Tendências do YouTube Studio (Content gaps for Shorts)",
+    "veredito": "confirmado",
+    "valor_correto": "Grátis. Fica na aba Trends (Analytics do YouTube Studio) e traz o card 'Lacunas de conteúdo nos Shorts'.",
+    "fonte_url": "https://support.google.com/youtube/answer/11962757?hl=pt-BR",
+    "nota": "A ajuda oficial (em PT-BR) avisa que alguns insights são limitados por país, idioma e dispositivo e só aparecem se houver vídeos relevantes. Exige ter um canal próprio."
+   },
+   {
+    "item": "Gráfico 'Mais repetidos' do YouTube",
+    "veredito": "confirmado",
+    "valor_correto": "Grátis. Lançamento amplo em 18/05/2022 no desktop e no mobile.",
+    "fonte_url": "https://9to5google.com/2022/05/18/youtube-most-replayed/",
+    "nota": "A falta de API oficial para o gráfico não foi verificada em fonte primária."
+   },
+   {
+    "item": "TikTok Creative Center",
+    "veredito": "confirmado",
+    "valor_correto": "Plataforma 'gratuita e aberta ao público', com interface em português desde 11/09/2023.",
+    "fonte_url": "https://ads.tiktok.com/business/pt-BR/blog/creative-center-fala-portugues",
+    "nota": "A fonte é de 2023. Não confirmei que continua ativo e com dados do Brasil em 10/2026."
+   },
+   {
+    "item": "Rephonic + TwitchTracker + Streams Charts",
+    "veredito": "confirmado",
+    "valor_correto": "O ranking de podcasts brasileiros no YouTube da Rephonic aparece sem login (top 5: Inteligência Ltda, Oeste Sem Filtro, Beto Ribeiro, Flow Podcast, Pânico). Recursos completos ficam no plano pago, com teste grátis de 7 dias.",
+    "fonte_url": "https://rephonic.com/charts/youtube/brazil/popular-podcasts",
+    "nota": "Só a Rephonic foi verificada. TwitchTracker e Streams Charts não foram checados."
+   },
+   {
+    "item": "Social Blade",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Pela fonte secundária verificada em 06/08/2026, os planos pagos são só anuais: Bronze US$ 59,99/ano (≈ US$ 5/mês, ≈ R$ 300,25/ano ou R$ 25/mês), Silver US$ 149,99/ano, Gold US$ 599,99/ano. Free com anúncios, 5 favoritos e 30 dias de histórico. API por créditos pré-pagos, com preço visível só no painel logado.",
+    "fonte_url": "https://outlierkit.com/resources/social-blade-pricing/",
+    "nota": "socialblade.com bloqueou o acesso (403). Os dados batem com o pesquisador, mas vêm de concorrente (OutlierKit). Corrija 'US$ 5/mês': não existe plano mensal, é cobrança anual."
+   },
+   {
+    "item": "Playboard",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Não confirmado. A página de ranking retornou HTTP 453 e /en/pricing deu 404.",
+    "fonte_url": "https://playboard.co/en/youtube-ranking/most-growth-all-channels-in-brazil-monthly",
+    "nota": "O preço de US$ 29 continua sem verificação."
+   },
+   {
+    "item": "Virlo",
+    "veredito": "corrigido",
+    "valor_correto": "Assinatura: Starter US$ 49/mês (≈ R$ 245,25) com 2.000 créditos; Pro US$ 199/mês (≈ R$ 995,99); Enterprise sob consulta. Sem preço anual listado. A página de preços oferece 'Start Free Trial' mas não diz a duração. A API REST e o MCP (46 ferramentas, dev.virlo.ai/docs/mcp) são pay-as-you-go por créditos pré-pagos: US$ 0,50 (≈ R$ 2,50) por execução do Content Research Agent, US$ 0,25 por ciclo de tracking, deep collection de US$ 0,50 a 2. Contas novas ganham créditos iniciais.",
+    "fonte_url": "https://virlo.ai/pricing",
+    "nota": "Fonte da API/MCP: https://dev.virlo.ai/. O teste de 7 dias não foi confirmado. Não verifiquei se o MCP exige assinatura ou funciona só com os créditos. O suporte a PT-BR não é mencionado."
+   },
+   {
+    "item": "1of10",
+    "veredito": "confirmado",
+    "valor_correto": "Free: 60 créditos, 1 canal, outliers limitados a 5 resultados. Basic: US$ 19/mês (≈ R$ 95,10) ou US$ 180/ano (≈ US$ 15/mês ≈ R$ 75,08). Pro: US$ 89/mês ou US$ 828/ano.",
+    "fonte_url": "https://1of10.com/pricing",
+    "nota": "A página de preços não menciona API. O US$ 19 aparece riscado ao lado do US$ 15, então pode ser o preço mensal 'cheio'."
+   },
+   {
+    "item": "Sandcastles",
+    "veredito": "confirmado",
+    "valor_correto": "Pro: US$ 49/mês (≈ R$ 245,25) ou US$ 39/mês no anual (≈ R$ 195,20). Visionary: US$ 99 / 79. Titan: US$ 499 / 399. API só no Titan. Cobre Instagram, TikTok e YouTube Shorts.",
+    "fonte_url": "https://sandcastles.ai/",
+    "nota": "O teste de 7 dias não foi confirmado: a página só mostra 'Try It Risk-Free', sem termos. Suporte a PT não verificado."
+   },
+   {
+    "item": "ViewStats",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Na página oficial (ativa, ©2026), o preço do Pro aparece como placeholder '$--.--/mo' e o Business 'a partir de US$ 249/mês' (≈ R$ 1.246). Pela fonte secundária de 06/08/2026, o Pro custa US$ 49,99/mês (≈ R$ 250,20) ou US$ 479,88/ano (≈ US$ 39,99/mês ≈ R$ 200,15).",
+    "fonte_url": "https://www.viewstats.com/pricing",
+    "nota": "O preço do Pro não aparece na fonte oficial. A OutlierKit, que é concorrente, avisa que o ViewStats mostra moeda local fora dos EUA. Há site free e extensão grátis para o Chrome."
+   },
+   {
+    "item": "Exolyt",
+    "veredito": "confirmado",
+    "valor_correto": "Basic grátis (1 conta, 1 hashtag, 1 som, 7 dias de histórico, atualização 1x/dia). Essentials: US$ 400/mês (≈ R$ 2.002) ou US$ 330/mês no anual (≈ R$ 1.651,65). Advanced: US$ 950 / 790.",
+    "fonte_url": "https://exolyt.com/pricing",
+    "nota": "Bem acima do orçamento de R$ 200/mês."
+   },
+   {
+    "item": "Pentos",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Não confirmado. O domínio pentos.co não resolveu (DNS ENOTFOUND) em 11/10/2026.",
+    "fonte_url": "https://pentos.co/pricing",
+    "nota": "Possível sinal de que o produto foi descontinuado, mas também pode ser falha de rede. Não recomendar sem confirmar. O preço de US$ 99 não tem sustentação."
+   },
+   {
+    "item": "Claude + skill video-processor-lucas + rubrica",
+    "veredito": "confirmado",
+    "valor_correto": "A skill anthropic-skills:video-processor-lucas consta na sessão. Sem custo adicional.",
+    "fonte_url": "https://cssh.northeastern.edu/pandemic-teaching-initiative/wp-content/uploads/sites/43/2020/09/What-Makes-Online-Content-Viral.pdf",
+    "nota": "Não abri o PDF de referência da rubrica."
+   },
+   {
+    "item": "OpusClip virality score",
+    "veredito": "corrigido",
+    "valor_correto": "O Virality Score (0-99: Hook, Flow, Value, Trend) não aparece no Free: 'Free plan users will not be able to see the Virality Score'. Está disponível só no Starter, US$ 15/mês (≈ R$ 75,08), e no Pro, US$ 29/mês (≈ R$ 145,15). O Free tem marca d'água e armazenamento de 3 dias.",
+    "fonte_url": "https://help.opus.pro/docs/article/virality-score",
+    "nota": "Preços conferidos em https://www.opus.pro/pricing. A página não listava valor anual nem suporte a PT."
+   },
+   {
+    "item": "Higgsfield virality_predictor",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Segundo uma fonte secundária (publicada em 22/05/2026, atualizada em 26/07/2026), é grátis em preview experimental e beta, 'with no credits consumed'. Analisa vídeos de até 15 s e entrega Virality Index, Hook Strength, retenção prevista e curva de atenção. Acesso via web, CLI, MCP e API.",
+    "fonte_url": "https://quasa.io/media/higgsfield-launches-virality-predictor-an-ai-tool-that-predicts-if-your-video-will-go-viral-before-you-post-it",
+    "nota": "A página higgsfield.ai/pricing não retornou conteúdo útil. A gratuidade pode ter mudado depois do beta. O limite de 15 s significa que só serve para testar o gancho, não o corte inteiro. Suporte a PT não verificado."
+   },
+   {
+    "item": "Klap / Vizard",
+    "veredito": "corrigido",
+    "valor_correto": "Klap, cobrança anual: Basic US$ 14/mês (≈ R$ 70,07, 100 clips), Pro US$ 39/mês (≈ R$ 195,20, 300 clips), Pro+ US$ 94/mês. O Pro não custa US$ 29: o FAQ da própria Klap cita US$ 29, mas o preço vigente é US$ 39. Vizard: Free com 60 créditos/mês (1 crédito = 1 min), export em até 720p, marca d'água, armazenamento de 3 dias; Creator ≈ US$ 16,90/mês (≈ R$ 84,58) segundo a Klap.",
+    "fonte_url": "https://klap.app/pricing",
+    "nota": "Vizard grátis confirmado em https://www.vizard.ai/pricing, mas os valores pagos não renderam na página. O preço do Creator vem de comparativo da Klap (concorrente, atualizado em 19/05/2026). Suporte a PT não verificado nas páginas."
+   }
+  ],
+  "alertas_gerais": [
+   "Cotação usada: US$ 1 = R$ 5,005 (referência BCE via api.frankfurter.dev, data 09/10/2026). Todas as conversões para BRL acima usam essa taxa.",
+   "O limite de WebSearch do turno se esgotou na primeira chamada. Toda a verificação foi feita com WebFetch direto nas páginas oficiais ou secundárias, então alguns itens ficaram 'nao_verificavel' por bloqueio (403) e não por estarem errados.",
+   "As páginas oficiais de vidIQ, Social Blade, Fiverr, Workana e 99Freelas bloquearam o acesso (403). Os preços desses itens vêm de concorrentes (1of10, OutlierKit) e devem ser confirmados no checkout.",
+   "Pentos: o domínio pentos.co não resolveu. Pode estar descontinuado; não recomendar.",
+   "Klap Pro custa US$ 39/mês no anual, não US$ 29. O FAQ da própria Klap está desatualizado.",
+   "Social Blade não tem plano mensal: os planos pagos são só anuais (Bronze US$ 59,99/ano).",
+   "Virlo tem dois modelos de cobrança: assinatura (Starter US$ 49/mês) e API/MCP pay-as-you-go (a partir de US$ 0,25-0,50 por execução). O MCP pode sair mais barato para uso pontual; confirmar se exige assinatura.",
+   "OpusClip Free não mostra Virality Score e exporta com marca d'água. O score exige Starter (US$ 15/mês ≈ R$ 75) ou Pro (US$ 29/mês ≈ R$ 145).",
+   "Higgsfield virality_predictor: grátis só em preview/beta segundo fonte secundária, e analisa no máximo 15 s de vídeo.",
+   "Exolyt (≥ US$ 330/mês), ViewStats Business (US$ 249) e Virlo Pro (US$ 199) passam muito do orçamento de R$ 200/mês.",
+   "Whop: a taxa de 10% é paga pela marca, mas o saque por wire custa US$ 23 (≈ R$ 115). Para valores baixos esse custo come grande parte do ganho; checar a opção de banco local internacional para o Brasil.",
+   "Plataformas BR de campanhas (Clipei, Klypex, Conty, Autoclipper, Cut.pro) não foram verificadas. A URL da Clipei dá 404. A gratuidade para o clipador não está declarada explicitamente nem na Real Rewards nem na Viewx.",
+   "Clipou: a página tem informações conflitantes sobre os limites de campanhas e clipes do plano Grátis versus Premium."
+  ]
+ },
+ {
+  "alertas_gerais": [
+   "Cotação usada: PTAX de venda do Banco Central em 09/10/2026 (sexta-feira, último dia útil antes de 11/10/2026), R$ 4,9892 por US$ 1. Fonte: API Olinda do BCB (https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo). A cotação oscilou entre R$ 4,97 e R$ 5,22 no começo de outubro. A taxa de cerca de R$ 4,99 usada pelos pesquisadores está correta.",
+   "O IOF de 3,5% sobre compra internacional no cartão, usado pelos pesquisadores, não foi reverificado: o limite de buscas na web desta rodada acabou. Considere esse valor de confiança média.",
+   "Limite de buscas: o orçamento de WebSearch desta rodada já estava esgotado. Toda a verificação foi feita com WebFetch em páginas oficiais de preços e, quando a oficial não abriu (Higgsfield, VEED, StreamLadder e o preço do Vizard), em fontes secundárias datadas. Se quiser mais buscas, peça em nova mensagem.",
+   "Achado importante para o usuário: na página oficial do OpusClip, a API de edição, a API de agendamento e o conector MCP aparecem só nos planos Pro (US$ 29/mês) e Business. Free e Starter não incluem. Se ele estiver no Free ou no Starter, o MCP do OpusClip já conectado pode ficar limitado ou não funcionar para agendar e editar.",
+   "Os planos anuais do OpusClip (US$ 14,50/mês ou US$ 174/ano) e os '60 créditos/mês' do plano grátis não aparecem na página oficial atual. Ela mostra só preço mensal e a frase 'Post one clip every day for free'. Não use esses números sem conferir no checkout.",
+   "Munch mudou de domínio (getmunch.com redireciona para munchstudio.com) e de tabela: não tem plano grátis (só teste de 7 dias), e o Essential custa US$ 38/mês. A estimativa de 'cerca de US$ 49' está errada.",
+   "O Clipchamp Premium não é mais vendido avulso: agora vem dentro do Microsoft 365 Personal/Family. O plano grátis exporta em 1080p sem marca d'água, com legenda automática em português.",
+   "Cut.Pro (BRL, aceita PIX), Klap, 2short.ai, Descript (lista PT-BR), Reap (seletor PT), Clipchamp e ElevenLabs (PT na faixa de maior precisão, até 5% de WER) têm suporte a português confirmado na fonte oficial. Para os demais, PT continua não verificado.",
+   "ViralHunt também está no Anthropic Directory como plugin (skill mais comandos). Não rastreia YouTube, a interface não tem português e o limite grátis é 100 requisições/hora, não 60.",
+   "Os valores em BRL abaixo são conversões diretas pela PTAX, sem IOF nem impostos locais. Metricool e Higgsfield informam preços sem VAT."
+  ],
+  "verificacoes": [
+   {
+    "item": "Plugin 'Social Media Skills' (Anthropic Directory)",
+    "veredito": "confirmado",
+    "valor_correto": "Existe no Anthropic Directory: 106 skills, autor Frank Heijdenrijk, publicador da comunidade, criado em 06/10/2026, versão 1.0.1. Tem só skills, sem MCP. Inclui opus-clip, captions-and-clipping, viral-reverse-engineering, capcut, descript, tiktok-growth, youtube-shorts, instagram-reels-publishing, trend-jacking e hook-writer. Nenhum preço aparece no catálogo.",
+    "fonte_url": "SearchPlugins (catálogo claude.ai), consultado em 11/10/2026",
+    "nota": "A instalação parece gratuita, mas as skills que dependem de ferramentas externas (OpusClip, CapCut, Descript) exigem a assinatura de cada uma. Suporte a PT-BR não verificado. É de autor da comunidade, sem curadoria de parceiro."
+   },
+   {
+    "item": "ViralHunt",
+    "veredito": "corrigido",
+    "valor_correto": "Free para sempre, sem cartão: radar de posts com 72 h ou mais, 15 buscas/dia e API pública com 100 requisições/hora (não 60). A página não cita teste grátis. Pagos: Creator US$ 29/mês (R$ 144,69), Studio US$ 99 (R$ 493,93) e Agency US$ 199. A página os chama de preços de fundador, sujeitos a aumento. Tem MCP (npm), API REST e plugin no Anthropic Directory.",
+    "fonte_url": "https://viralhunt.io",
+    "nota": "Rastreia TikTok, Instagram, Facebook, Pinterest, Reddit, X, Bluesky, Mastodon, Douyin, Quora, Tumblr e RSS. NÃO rastreia YouTube nem Kwai. Interface em EN/ES/FR/DE, sem português. O mcpservers.org devolveu 403."
+   },
+   {
+    "item": "Instagram Trial Reels",
+    "veredito": "confirmado",
+    "valor_correto": "Gratuito e nativo. Disponível para contas profissionais (criador ou empresa). O reel vai só para não seguidores e não aparece no perfil. Após 24 h mostra views, curtidas, comentários e compartilhamentos, e o criador decide se publica para os seguidores.",
+    "fonte_url": "https://techcrunch.com/2024/12/10/instagram-rolls-out-trial-reels-that-arent-shown-to-a-creators-followers",
+    "nota": "A fonte é de dez/2024. A disponibilidade em 10/2026 não foi reconfirmada em página da Meta. Exige conta profissional."
+   },
+   {
+    "item": "OpusClip",
+    "veredito": "corrigido",
+    "valor_correto": "Página oficial: Free US$ 0; Starter US$ 15/mês (R$ 74,84); Pro US$ 29/mês (R$ 144,69); Business sob consulta. A página atual não mostra preço anual (o '14,50 no anual / 174 por ano' não foi encontrado). Free: marca d'água nos templates de legenda animada, mídia e export MP4 expiram em 3 dias, clipes até 1080p. A página não traz o número de créditos do Free, só 'Post one clip every day for free'. Transcrição multilíngue em todos os planos; dublagem só no Pro e no Business.",
+    "fonte_url": "https://www.opus.pro/pricing",
+    "nota": "API de edição, API de agendamento e conector MCP só no Pro e no Business. Free e Starter NÃO incluem MCP nem API. Os 60 créditos e o preço anual precisam de confirmação no checkout."
+   },
+   {
+    "item": "Reap",
+    "veredito": "confirmado",
+    "valor_correto": "Creator US$ 24/mês (R$ 119,74) ou US$ 9,99/mês no anual, US$ 119,88/ano (R$ 49,84/mês). Studio US$ 50 ou US$ 29/mês no anual. Free: 1 h/mês de corte e legenda com marca d'água, export em 720p, projetos expiram em 7 dias. Todos os planos pagos incluem API, CLI e MCP.",
+    "fonte_url": "https://www.reap.video/pricing",
+    "nota": "Legendas e tradução em 100+ idiomas; dublagem em 80+. A home mostra 'Português' no seletor da seção de localização, mas o PT-BR das legendas não aparece citado nominalmente. Teste no plano grátis."
+   },
+   {
+    "item": "Vizard",
+    "veredito": "confirmado",
+    "valor_correto": "Creator US$ 29/mês (R$ 144,69) ou US$ 14,50/mês no anual, US$ 174/ano (R$ 72,34/mês). Business US$ 39 ou US$ 19,50. Free: 60 créditos/mês (1 crédito = 1 min), export em 720p, marca d'água, export máximo de 10 min, armazenamento de 3 dias, 1 conta social.",
+    "fonte_url": "https://vizard.ai/pricing",
+    "nota": "Limites do Free confirmados na página oficial, mas ela mostra '$0' como placeholder nos preços. Os valores em USD vêm da Fastlane, concorrente, conferida em 01/10/2026 (https://www.usefastlane.ai/pricing/vizard). A API existe em todos os planos, inclusive no Free (1 req/min e 10 req/h). MCP não é mencionado. Idiomas não informados."
+   },
+   {
+    "item": "Klap",
+    "veredito": "corrigido",
+    "valor_correto": "Página de preços (cobrança anual): Basic US$ 14/mês (R$ 69,85), 100 clipes; Pro US$ 39/mês, 300 clipes; Pro+ US$ 94/mês. A cobrança mensal custa mais (o anual 'economiza 50%'), mas o valor não aparece. A home cita 'Klap Pro US$ 29/mês' e 1 vídeo grátis sem cartão.",
+    "fonte_url": "https://klap.app/pricing",
+    "nota": "Português CONFIRMADO entre os 52 idiomas de edição e transcrição (home). API com documentação em docs.klap.app. A marca d'água no teste grátis não foi confirmada. A home e a página de preços se contradizem: confira no checkout."
+   },
+   {
+    "item": "Submagic",
+    "veredito": "corrigido",
+    "valor_correto": "Starter US$ 19/mês (R$ 94,79) ou US$ 12/mês no anual (R$ 59,87). Pro US$ 39 ou US$ 23. Business US$ 69 ou US$ 41. Nenhum plano pago tem marca d'água. API em TODOS os planos pagos, não só no Business (Starter e Pro com cerca de 10 min/mês; Business com 100 min/mês).",
+    "fonte_url": "https://www.submagic.co/pricing",
+    "nota": "Tem teste grátis ('sem cartão'), mas os termos não aparecem. A página /pt existe, mas em português europeu, e repete o '123 idiomas, 99% de precisão' (afirmação do fornecedor). A nota G2 de 4,7 não foi verificada."
+   },
+   {
+    "item": "CapCut (desktop/mobile)",
+    "veredito": "confirmado",
+    "valor_correto": "CapCut Pro no Brasil: R$ 65,90/mês e R$ 469,90/ano (cerca de R$ 39,16/mês), com renovação automática. Sem renovação: R$ 87,90/mês e R$ 689,90/ano. Estudante (Android e iPhone): R$ 33/mês ou R$ 234,90/ano. Promoções de 1º ciclo: iPhone R$ 6,50 no 1º mês; desktop R$ 13 no 1º mês; Android com teste de 7 dias.",
+    "fonte_url": "https://www.techtudo.com.br/listas/2026/10/capcut-pro-mais-barato-veja-como-economizar-na-assinatura-edapps.ghtml",
+    "nota": "Artigo de 09/10/2026. A marca d'água no plano grátis não é abordada e segue não verificada. Não tem API nem MCP."
+   },
+   {
+    "item": "Descript",
+    "veredito": "confirmado",
+    "valor_correto": "Hobbyist US$ 16/mês no anual (R$ 79,83) ou US$ 24/mês no mensal (R$ 119,74). Free: 60 min de mídia/mês, export em 720p com marca d'água, 100 créditos de IA uma única vez, 5 GB.",
+    "fonte_url": "https://www.descript.com/pricing",
+    "nota": "'Portuguese (BR)' aparece entre os 25 idiomas de transcrição, em todos os planos. API e MCP são anunciados, mas a página não diz em qual plano."
+   },
+   {
+    "item": "Higgsfield (reframe/upscale)",
+    "veredito": "nao_verificavel",
+    "valor_correto": "A página oficial não carregou. Fonte secundária (Layer3 Labs, atualizada em 28/09/2026): Starter US$ 15 (R$ 74,84), cerca de 200 créditos; Plus US$ 49 mensal ou US$ 39 no anual (cerca de 1.000 créditos); Ultra US$ 129 ou US$ 99. Free 'Limited use', sem cota publicada. Recarga de cerca de US$ 5 por 100 créditos.",
+    "fonte_url": "https://www.layer3labs.io/guides/higgsfield-ai-pricing",
+    "nota": "A faixa 'US$ 9 a 19' dos pesquisadores parece desatualizada. Preços sem VAT. Confirme no app (o MCP tem show_plans_and_credits, que não foi executado)."
+   },
+   {
+    "item": "ElevenLabs Scribe",
+    "veredito": "confirmado",
+    "valor_correto": "API Scribe v2: US$ 0,22/h (R$ 1,10/h); Realtime: US$ 0,39/h. Free: 10.000 créditos/mês. Starter: US$ 6/mês (R$ 29,94); promoção de 1º mês a US$ 1 até 18/10; anual com '2 meses grátis', cerca de US$ 5/mês. A transcrição consome 330 créditos/min: cerca de 30 min/mês no Free e cerca de 90 min no Starter (estimativa).",
+    "fonte_url": "https://elevenlabs.io/pricing/api",
+    "nota": "Português confirmado na faixa 'Excellent Accuracy (≤5% WER)' (https://elevenlabs.io/speech-to-text). Os créditos são compartilhados com os outros produtos da conta."
+   },
+   {
+    "item": "Cut.Pro",
+    "veredito": "confirmado",
+    "valor_correto": "Gratuito: 15 créditos/mês, permanente, sem cartão, vídeo de até 1 h. Básico R$ 19,90/mês (100 créditos). Plus R$ 69,90 (1.000 créditos, sem marca d'água). Pro R$ 119,90 (2.500 créditos). Anual com '2 meses grátis' (cerca de 10 mensalidades).",
+    "fonte_url": "https://cut.pro/pt-BR/pricing",
+    "nota": "O limite do grátis vem em créditos, não em '15 min': a equivalência crédito/minuto não foi confirmada. A API aparece em 'igual em todos os planos', sem detalhes. Aceita PIX; a empresa cita reconhecimento de fala em PT-BR."
+   },
+   {
+    "item": "2short.ai",
+    "veredito": "corrigido",
+    "valor_correto": "Lite US$ 9,90 (R$ 49,39), 5 h/mês. Pro US$ 19,90 (R$ 99,29), 15 h. Premium US$ 49,90, 50 h. Não há preço anual. Free: 30 min ou 15 min (a página se contradiz).",
+    "fonte_url": "https://2short.ai/pricing",
+    "nota": "Português CONFIRMADO entre os 26 idiomas. Funciona a partir de vídeos do YouTube e exige que o vídeo tenha legenda. Não tem API. Marca d'água no Free não informada."
+   },
+   {
+    "item": "Choppity",
+    "veredito": "corrigido",
+    "valor_correto": "Starter US$ 24/mês (R$ 119,74) ou US$ 16,80/mês no anual, US$ 201,60/ano (R$ 83,82/mês). Creator US$ 32 ou US$ 22,40 (com API). Free: 1 h de análise por IA, 2 GB, projetos guardados por 3 dias, sem postagem ou agendamento.",
+    "fonte_url": "https://www.choppity.com/pricing",
+    "nota": "A página diz que o Free não exporta em 1080p/4K, recursos que começam no Starter. Isso não equivale a 'sem exportar'. Marca d'água e idiomas não informados."
+   },
+   {
+    "item": "StreamLadder",
+    "veredito": "nao_verificavel",
+    "valor_correto": "A página oficial (app.streamladder.com/upgrade) não exibe preços sem login. Review de 09/02/2026: Free com upload de até 200 MB e export 720p/30fps; Silver US$ 9/mês (R$ 44,90); Gold US$ 15; Gold+ ClipGPT US$ 27. Preço anual não informado.",
+    "fonte_url": "https://vidpros.com/streamladder-review-2026/",
+    "nota": "Os valores dos pesquisadores (US$ 8,28 e US$ 6,90 no anual) não batem com a mesma fonte. A marca d'água no Free é contraditória dentro do próprio review."
+   },
+   {
+    "item": "Eklipse",
+    "veredito": "corrigido",
+    "valor_correto": "Premium: US$ 24,99/mês na web (R$ 124,68) ou US$ 27,99 no celular; anual US$ 179,99 (cerca de US$ 15/mês, R$ 74,84).",
+    "fonte_url": "https://eklipse.gg/help/how-much-does-eklipse-premium-cost/",
+    "nota": "O help center lista como GRÁTIS: destaques de stream de game e de podcast do YouTube, Eklipse Studio, Content Publisher, AI-Edit, app mobile e Ultra Highlights até 1440p. A afirmação 'não exporta' parece errada; os limites exatos do grátis não foram publicados. O suporte à Kick é Premium. O site tem versão em português."
+   },
+   {
+    "item": "Spikes Studio",
+    "veredito": "confirmado",
+    "valor_correto": "PRO+ US$ 32,99/mês (R$ 164,59) ou US$ 14,09/mês no anual (R$ 70,30), 300 min/mês. Enterprise US$ 115,99 ou US$ 56,34. Free: até 30 min/mês, export em 720p com marca d'água, editor web para vídeos de até 5 min, armazenamento de 7 dias.",
+    "fonte_url": "https://spikes.studio/pricing",
+    "nota": "99+ idiomas (PT não nomeado). A API não é recurso de plano: há candidatura via Enterprise."
+   },
+   {
+    "item": "quso.ai",
+    "veredito": "confirmado",
+    "valor_correto": "Lite US$ 29/mês (R$ 144,69) ou US$ 19/mês no anual (R$ 94,79). Free: 75 créditos/mês, render em 720p com marca d'água (FAQ da home), retenção de 7 dias.",
+    "fonte_url": "https://www.quso.ai/pricing",
+    "nota": "Idiomas conflitantes (50+ ou 100+), PT não nomeado. A API não é mencionada."
+   },
+   {
+    "item": "Munch",
+    "veredito": "corrigido",
+    "valor_correto": "Agora é munchstudio.com. Essential US$ 38/mês (R$ 189,59), listado também como US$ 456/ano, com 500 min/mês de repurposing. Premium US$ 60/mês (R$ 299,35), listado também como US$ 720/ano. NÃO tem plano grátis, só teste de 7 dias.",
+    "fonte_url": "https://www.munchstudio.com/pricing",
+    "nota": "O site antigo (getmunch.com) redireciona para o novo. Página de 09/10/2026. Marca d'água, API e idiomas não informados."
+   },
+   {
+    "item": "Captions (Mirage)",
+    "veredito": "confirmado",
+    "valor_correto": "Basic (antigo Pro) US$ 9,99/mês (R$ 49,84), 200 créditos/mês. Max US$ 24,99 (R$ 124,68), 500 créditos. Também há Lite US$ 4,99 (só Android) e Frontier US$ 69,99. Free: 60 a 200 créditos vitalícios, sem marca d'água.",
+    "fonte_url": "https://captions.ai/help/docs/subscriptions",
+    "nota": "O anual tem 'desconto automático', sem valor publicado. A página não lista idiomas nem cita API."
+   },
+   {
+    "item": "Riverside (Magic Clips)",
+    "veredito": "confirmado",
+    "valor_correto": "Pro US$ 29/mês (R$ 144,69) ou US$ 24/mês no anual, US$ 288/ano (R$ 119,74/mês). Free: 2 h de gravação multitrack uma única vez (não mensal), 720p, marca d'água. Magic Clips em todos os planos, inclusive no Free. API só no Business.",
+    "fonte_url": "https://riverside.com/pricing",
+    "nota": "A página retornada avisava ser uma versão staging, com possível desatualização. Idiomas de transcrição não informados."
+   },
+   {
+    "item": "VEED",
+    "veredito": "nao_verificavel",
+    "valor_correto": "A página oficial não renderizou os preços. Fonte secundária (Fluxnote, junho/2026): Lite US$ 19/mês ou US$ 12/mês no anual (R$ 59,87); Pro US$ 49 ou US$ 24. Free: 720p, marca d'água, vídeos de até 10 min, legenda automática com minutos limitados.",
+    "fonte_url": "https://fluxnote.io/guides/veed-io-pricing-2026",
+    "nota": "Os números secundários batem com os dos pesquisadores, mas não há confirmação primária. Suporte a PT não verificado."
+   },
+   {
+    "item": "Clipchamp",
+    "veredito": "corrigido",
+    "valor_correto": "Grátis: export em até 1080p SEM marca d'água, com legenda automática, narração e remoção de silêncio. Premium (4K) não é mais vendido avulso: vem dentro do Microsoft 365 Personal/Family. O 'R$ 40,10/mês' não foi confirmado.",
+    "fonte_url": "https://clipchamp.com/pt-br/pricing/",
+    "nota": "Português confirmado entre os 25 idiomas de legenda. Para o preço do Premium, consulte o Microsoft 365 Personal no Brasil (não verificado aqui)."
+   },
+   {
+    "item": "ffmpeg + faster-whisper/WhisperX + MediaPipe ou OpenShorts",
+    "veredito": "confirmado",
+    "valor_correto": "OpenShorts: núcleo sob licença MIT; a pasta cloud/ tem licença comercial restrita. Usa faster-whisper com timestamps por palavra e reenquadramento com MediaPipe e YOLOv8. Tem endpoint /mcp (hospedado, self-host ou stdio), API REST e CLI. A versão hospedada parte de US$ 12/mês; o grátis hospedado tem 20 min/mês com marca d'água.",
+    "fonte_url": "https://github.com/mutonby/openshorts",
+    "nota": "Não é 100% R$ 0: o README exige chave do Gemini para todos os recursos de IA. Dá para trocar por um LLM local na detecção de momentos, mas o Gemini continua necessário para o layout automático. Publicar via Upload-Post tem só 10 uploads grátis/mês. O WER de 3,9% do Whisper large-v3 em PT (FLEURS) não foi reverificado."
+   },
+   {
+    "item": "DaVinci Resolve (grátis) / Kdenlive",
+    "veredito": "confirmado",
+    "valor_correto": "Resolve grátis: até UHD 3840x2160, vídeo 8-bit até 60 fps. Studio: US$ 295 em pagamento único (R$ 1.471,81 sem IOF).",
+    "fonte_url": "https://www.blackmagicdesign.com/products/davinciresolve/compare",
+    "nota": "Neural Engine (IA), edição por texto, Magic Mask e redução de ruído temporal são só do Studio. A página não esclarece se a API de script funciona na versão grátis. Kdenlive não foi verificado."
+   },
+   {
+    "item": "upload-post",
+    "veredito": "confirmado",
+    "valor_correto": "Basic US$ 24/mês (R$ 119,74) ou US$ 16/mês no anual, US$ 192/ano (R$ 79,83/mês). Professional US$ 50 ou US$ 33. Free: 2 perfis, 10 uploads/mês, SEM TikTok (cobre IG, YT, FB, LinkedIn, X, Threads, Pinterest, Reddit e Bluesky).",
+    "fonte_url": "https://www.upload-post.com/llms-full.txt",
+    "nota": "O nome do plano de entrada é 'Basic'. API REST com SDKs em Python e JS. A interface em inglês não foi reverificada."
+   },
+   {
+    "item": "Metricool",
+    "veredito": "confirmado",
+    "valor_correto": "Starter (5 marcas): US$ 20/mês no anual (R$ 99,78) ou US$ 25/mês no mensal (R$ 124,73). Com 10 marcas: US$ 36 ou US$ 45. Free: 1 marca, 20 posts agendados/mês (sem LinkedIn e X), 30 dias de analytics, 5 concorrentes.",
+    "fonte_url": "https://metricool.com/pricing/",
+    "nota": "O MCP vem em TODOS os planos, inclusive no Free. A API (Zapier/Make) só no Advanced (a partir de US$ 53/mês no anual). Preços sem VAT. O seletor de idioma inclui 'pt'."
+   },
+   {
+    "item": "OpusClip auto-post / agendador",
+    "veredito": "corrigido",
+    "valor_correto": "Starter US$ 15/mês (R$ 74,84); Pro US$ 29/mês (R$ 144,69). Scheduler API, API de edição e conector MCP só no Pro e no Business.",
+    "fonte_url": "https://www.opus.pro/pricing",
+    "nota": "O rodapé diz 'Post one clip every day for free', o que sugere alguma postagem no Free. A afirmação 'Free sem agendador' fica inconclusiva. O agendamento via MCP (schedule_publish) depende do plano Pro."
+   },
+   {
+    "item": "Postiz",
+    "veredito": "confirmado",
+    "valor_correto": "Standard US$ 29/mês (R$ 144,69) ou US$ 23/mês no anual (R$ 114,75). Team US$ 39 ou US$ 31. Não há plano grátis permanente: todos os planos têm teste de 7 dias. Self-host disponível como 'opção secundária'.",
+    "fonte_url": "https://postiz.com/pricing",
+    "nota": "Todos os planos incluem MCP hospedado, CLI, API pública e webhooks. Os recursos de agente chegam primeiro na versão hospedada. Suporte a idiomas não informado."
+   }
+  ]
+ },
+ {
+  "verificacoes": [
+   {
+    "item": "Buffer",
+    "veredito": "confirmado",
+    "valor_correto": "Free: até 3 canais, 10 posts agendados por canal, 100 ideias, 1 usuário. Essentials: US$ 5/canal/mês (≈ R$ 25,03); Team: US$ 10/canal/mês (≈ R$ 50,05). API em todos os planos (Free: 1 chave, 3.000 req/mês; Essentials: 7.500 req/mês). Consultado em 11/10/2026.",
+    "fonte_url": "https://buffer.com/pricing",
+    "nota": "A página tem uma contradição: o anual do Essentials aparece como US$ 60/ano (12 × 5, sem desconto), mas ela também fala em '2 meses grátis' e '20% off'. Confira o valor no checkout. O site tem versão em português (/pt/); o idioma da interface do app não foi confirmado. Não há suporte a Kwai."
+   },
+   {
+    "item": "mLabs",
+    "veredito": "corrigido",
+    "valor_correto": "Plano único cobrado por marca (1 perfil de cada rede por marca, usuários ilimitados). R$ 29,90/mês por marca é o 'valor equivalente por mês na assinatura anual' pago à vista via Pix. O anual tem 40% de desconto, o que dá um mensal implícito de ≈ R$ 49,83. A página não mostra o valor mensal avulso em texto. Teste grátis de 7 dias, sem cartão. Desconto adicional a partir de 5 marcas. Nenhuma API pública é mencionada. Consultado em 11/10/2026.",
+    "fonte_url": "https://www.mlabs.com.br/planos/",
+    "nota": "A faixa 'R$ 29,90 a 34,90 no anual' não aparece em nenhuma fonte; o valor visto foi só R$ 29,90. O artigo citado (blog, 25/07/2025) fala em R$ 29,90/mês por marca sem dizer se é anual, e um banner nele promete '30 dias grátis', o que diverge dos 7 dias da página de planos. O R$ 49,90 mensal não foi exibido literalmente, mas bate com o desconto de 40%."
+   },
+   {
+    "item": "Etus",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Sem preço confirmado.",
+    "fonte_url": "https://www.etus.com.br/",
+    "nota": "A URL citada (locaweb.com.br/etus/) hoje cai num índice de blog da Locaweb e não menciona o Etus. etus.com.br é a página de uma 'MadTech e holding de mídia' (rodapé © 2023), sem planos, preços ou teste, e etus.com.br/planos dá 404. Há risco de o produto de agendamento ter sido descontinuado ou renomeado. Não recomendar sem checagem manual."
+   },
+   {
+    "item": "Repurpose.io",
+    "veredito": "confirmado",
+    "valor_correto": "Starter: US$ 35/mês (≈ R$ 175,18) ou US$ 349/ano (≈ US$ 29,08/mês ≈ R$ 145,56), até 3 contas por rede, 5.000 vídeos/mês. Pro: US$ 79/mês ou US$ 790/ano. Agency: US$ 179/mês. 10 vídeos publicados grátis sem cartão, mais 14 dias de teste em todos os planos. Consultado em 11/10/2026.",
+    "fonte_url": "https://repurpose.io/pricing/",
+    "nota": "A parte visível da página não menciona API nem idioma PT-BR. Kwai não aparece."
+   },
+   {
+    "item": "Later / Publer / SocialBee / Hootsuite",
+    "veredito": "confirmado",
+    "valor_correto": "Later Starter: US$ 18,75/mês no anual (≈ R$ 93,84), 1 social set e 8 perfis, só teste de 14 dias. O anual é anunciado como 25% off, o que implica ≈ US$ 25/mês no mensal (≈ R$ 125,13); o valor mensal não aparece em texto. SocialBee Bootstrap: US$ 29/mês (≈ R$ 145,15) ou US$ 24/mês no anual (≈ R$ 120,12), 5 perfis, 14 dias de teste. Hootsuite Standard: a partir de US$ 99 por usuário/mês no anual (≈ R$ 495,50), 10 contas, 14 dias de teste, sem plano grátis. Publer: NÃO verificado. Consultado em 11/10/2026.",
+    "fonte_url": "https://later.com/pricing/ ; https://socialbee.com/pricing/ ; https://www.hootsuite.com/plans",
+    "nota": "As páginas publer.com/plans e publer.com/pricing entraram em loop de redirecionamento, então o 'US$ 5 por conta' do Publer fica com confiança baixa. Todas as quatro passam do orçamento de R$ 200 quando se somam várias contas e plataformas, exceto talvez o Publer."
+   },
+   {
+    "item": "Posty (marketplace Claude)",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Sem dados.",
+    "fonte_url": "https://posteverywhere.ai/blog/connect-claude-to-social-media",
+    "nota": "A fonte citada não menciona nenhuma ferramenta chamada 'Posty'. Ela fala do PostEverywhere, que é OUTRO produto: Lite US$ 9/mês (2 contas, ≈ R$ 45,05), Starter US$ 19, Growth US$ 29, Scale US$ 39; teste de 7 dias com cartão; sem plano grátis; servidor MCP hospedado em todos os planos (mcp.posteverywhere.ai); suporta TikTok, YouTube e Instagram, mas NÃO o Kwai. A fonte confundiu os dois produtos."
+   },
+   {
+    "item": "Kwai (app nativo)",
+    "veredito": "confirmado",
+    "valor_correto": "Gratuito. Publicação manual pelo app em 5 passos (câmera ou álbum, Avançar, Compartilhar). Página de ajuda atualizada em 26/08/2026, sem menção a API ou agendamento por terceiros.",
+    "fonte_url": "https://www.kwai.com/pt-BR/support/video/como-publicar-um-video",
+    "nota": "Nenhuma das ferramentas verificadas neste lote (Buffer, PostEverywhere, Repurpose, Later etc.) lista o Kwai. O yt-dlp também não tem extrator para Kwai/Kuaishou."
+   },
+   {
+    "item": "YouTube Studio / TikTok Studio / Painel profissional do Instagram / Creator Center do Kwai",
+    "veredito": "corrigido",
+    "valor_correto": "Generalização errada para o YouTube. A YouTube Analytics API expõe métricas de retenção: averageViewDuration, averageViewPercentage, audienceWatchRatio (curva de retenção), relativeRetentionPerformance e engagedViews. O que NÃO está na API é a CTR de impressões de miniatura (impressionsClickThroughRate não aparece na lista; 'impressions' virou adImpressions). A métrica de Shorts 'visualizado vs deslizado' também não está documentada nessa página. Esses dois números só existem no Studio.",
+    "fonte_url": "https://developers.google.com/youtube/analytics/metrics",
+    "nota": "TikTok, Instagram e Kwai não foram verificados neste lote. Mantenha a afirmação só para eles, com confiança média."
+   },
+   {
+    "item": "Windsor.ai (plugin do marketplace, não instalado)",
+    "veredito": "confirmado",
+    "valor_correto": "Teste de 30 dias com 10 fontes, 15 contas e 30 dias de histórico. Depois, Forever Free com 1 usuário, 1 fonte e 1 conta. Basic: US$ 23/mês (≈ R$ 115,12) ou US$ 19/mês no anual (≈ R$ 95,10), 3 fontes e 75 contas. 'Access to Windsor MCP' está incluído em todos os planos. Consultado em 11/10/2026.",
+    "fonte_url": "https://windsor.ai/pricing/",
+    "nota": "Os valores em BRL do pesquisador (R$ 114,75 / R$ 94,79) usaram cotação ≈ 4,99; a diferença é mínima. PT-BR não verificado."
+   },
+   {
+    "item": "Supermetrics (conectado)",
+    "veredito": "confirmado",
+    "valor_correto": "Starter: US$ 55/mês (≈ R$ 275,28) ou US$ 44/mês no anual (≈ R$ 220,22), com 4.000 créditos de IA/mês. Growth: US$ 222 ou US$ 177. Teste de 14 dias. Google Sheets e Claude aparecem como destinos 'core'. Consultado em 11/10/2026.",
+    "fonte_url": "https://supermetrics.com/pricing",
+    "nota": "Sozinho, o Starter já passa do orçamento de R$ 200/mês. A página de preços não fala de MCP; o MCP Supermetrics_Marketing_Analytics aparece na sessão, mas o plano exigido não foi confirmado. A capacidade de puxar 'dados públicos de perfis de Instagram de concorrentes' NÃO foi verificada aqui."
+   },
+   {
+    "item": "Porter Metrics (conectado)",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Sem preço confirmado.",
+    "fonte_url": "https://portermetrics.com/en/pricing/",
+    "nota": "A página de preços voltou só com o título (conteúdo truncado) e /en/pricing-plans/ deu 404. O MCP Porter está na sessão e diz ter mais de 750 ações, mas plano e preço continuam desconhecidos."
+   },
+   {
+    "item": "Exolyt",
+    "veredito": "confirmado",
+    "valor_correto": "Basic grátis: 1 conta, 1 hashtag e 1 som de TikTok, 1 campanha de influenciador, 0 projetos de social listening, atualização 1x/dia, 7 dias de histórico, 100 créditos CSV/mês. Essentials: US$ 400/mês (≈ R$ 2.002) ou US$ 330/mês no anual (≈ R$ 1.651,65). Advanced: US$ 950 ou US$ 790. Consultado em 11/10/2026.",
+    "fonte_url": "https://exolyt.com/pricing",
+    "nota": "O pago está totalmente fora do orçamento; só o Basic grátis é viável."
+   },
+   {
+    "item": "Higgsfield virality_predictor (conectado) e score do OpusClip (conectado)",
+    "veredito": "confirmado",
+    "valor_correto": "O schema do mcp__Higgsfield__virality_predictor confirma a função: prevê potencial de viralização, engajamento, atenção, risco de retenção e força do gancho, com dashboard. A ação 'create' exige um vídeo já enviado e confirmado (media_id) ou um vídeo gerado.",
+    "fonte_url": "schema mcp__Higgsfield__virality_predictor (ToolSearch 11/10/2026)",
+    "nota": "Custo em créditos não verificado: higgsfield.ai/pricing não trouxe os planos no texto. O score do OpusClip não foi verificado neste lote. Nenhum dos dois tem validação pública de acurácia; trate como triagem, não como previsão."
+   },
+   {
+    "item": "ElevenLabs (MCP restrito)",
+    "veredito": "corrigido",
+    "valor_correto": "Free: 12 minutos de STT/mês na interface (Scribe v2), não ~30 min. Starter: US$ 6/mês (≈ R$ 30,03) ou US$ 5/mês no anual (≈ R$ 25,03), com 1h31min de STT. Creator: 6h07min. Hora extra via API: US$ 0,22. O português está no grupo de 'Excelente precisão (WER ≤ 5%)'. Consultado em 11/10/2026.",
+    "fonte_url": "https://elevenlabs.io/speech-to-text ; https://elevenlabs.io/pricing",
+    "nota": "A página de preços mostra uma promoção do Starter válida até 18/10 (83% off no 1º mês). O texto extraído estava ambíguo; confira no checkout. O cálculo de ~30 min pelos créditos (10.000 ÷ 330) não vale: a página de STT informa 12 min no Free."
+   },
+   {
+    "item": "Adobe for creativity (MCP)",
+    "veredito": "nao_verificavel",
+    "valor_correto": "O Adobe Express tem plano Free (vídeos de até 30 min) e Premium cobrado mensalmente, mas a página mostrou preço em AED (geolocalização), sem USD ou BRL. Não ficou claro se Resize Video e Clip Maker estão no Free.",
+    "fonte_url": "https://www.adobe.com/express/pricing",
+    "nota": "Limitação funcional importante, confirmada pelo schema: o video_create_quick_cut usa 'métricas de engajamento visual, não análise de fala/conteúdo' e não corta por assunto ou palavra. Isso o torna fraco para cortes de podcast ou entrevista, que são o grosso do clipping. O media_enhance_speech separa fala, fundo e reverb. O MCP ainda precisa de autenticação."
+   },
+   {
+    "item": "Pipeline local (ffmpeg + yt-dlp + faster-whisper) no Claude Code",
+    "veredito": "corrigido",
+    "valor_correto": "Gratuito (open source), mas o yt-dlp NÃO tem extrator para Kwai/Kuaishou. TikTok, Instagram, YouTube (inclusive Shorts), Twitch e Kick são suportados; alguns extratores estão marcados 'Currently broken' (instagram:user, tiktok:tag, tiktok:sound, tiktok:effect). Neste ambiente só o ffmpeg está instalado; yt-dlp e faster-whisper não.",
+    "fonte_url": "https://raw.githubusercontent.com/yt-dlp/yt-dlp/master/supportedsites.md",
+    "nota": "Baixar conteúdo de terceiros pode violar os termos das plataformas e direitos autorais. Para campanhas pagas e clientes, use material autorizado ou fornecido pelo dono do conteúdo."
+   },
+   {
+    "item": "Supadata (MCP/API)",
+    "veredito": "confirmado",
+    "valor_correto": "Free: 100 créditos/mês, sem cartão, 1 req/s. Basic: US$ 5/mês ou US$ 60/ano (≈ R$ 25,03/mês), 300 créditos. Pro: US$ 17/mês, 3.000 créditos. O MCP existe (hospedado em api.supadata.ai/mcp ou pacote @supadata/mcp) e transcreve vídeos de YouTube, TikTok, Instagram, X e Facebook. Consultado em 11/10/2026.",
+    "fonte_url": "https://supadata.ai/pricing ; https://supadata.ai/mcp",
+    "nota": "O suporte ao português não é mencionado. Endpoints de lote e de tradução de transcrição só a partir do Pro. Kwai não aparece."
+   },
+   {
+    "item": "Social Media Skills (plugin)",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Sem fonte primária acessível.",
+    "fonte_url": "diretório de plugins Anthropic (plugin_01TR68B7gmanqyPLs9mg2xQW)",
+    "nota": "O diretório de plugins não foi acessível via web neste lote. Gratuidade e conteúdo (106 skills) dependem da listagem interna; o 'provavelmente não PT-BR' é palpite."
+   },
+   {
+    "item": "BlitzReels (plugin + MCP)",
+    "veredito": "corrigido",
+    "valor_correto": "Starter: US$ 39/mês (≈ R$ 195,20) ou US$ 29/mês no anual (US$ 348/ano, ≈ R$ 145,15), 30 exportações/mês, 15 créditos de IA, 1 assento. Growth: US$ 79 ou US$ 59. SEM plano grátis: teste de 7 dias que EXIGE cartão, com 1 importação de até 15 min em 720p e 3 exportações de até 3 min com marca d'água; vira assinatura paga automaticamente se não cancelar. Preços de lançamento, consultados em 11/10/2026.",
+    "fonte_url": "https://www.blitzreels.com/pricing",
+    "nota": "A página de preços menciona API, mas NÃO menciona MCP; o MCP só vem da listagem do plugin. PT-BR não é mencionado. Com 30 exportações/mês, o Starter é apertado para canal de cortes em volume."
+   },
+   {
+    "item": "Google Sheets + Drive + Calendar + Gmail (MCP)",
+    "veredito": "confirmado",
+    "valor_correto": "Os MCPs Google_Sheets, Google_Drive, Google_Calendar e Gmail estão disponíveis na sessão, sem custo extra além da conta Google.",
+    "fonte_url": "lista de ferramentas da sessão (mcp__Google_Sheets__*, mcp__Google_Drive__*, mcp__Google_Calendar__*, mcp__Gmail__*)",
+    "nota": "Os limites de armazenamento do Drive grátis (15 GB) não foram reverificados aqui; vídeos brutos enchem isso rápido."
+   },
+   {
+    "item": "Skills de prospecção/contrato já instaladas",
+    "veredito": "confirmado",
+    "valor_correto": "Na sessão existem cold-email (brief, write, hooks, review), apollo:prospect, sales:draft-outreach, small-business:proposal-builder, small-business:outreach-composer, legal:review-contract e os MCPs DocuSeal e SignNow (assinatura de contrato).",
+    "fonte_url": "lista de skills e ferramentas da sessão",
+    "nota": "Os textos são em inglês e precisam de adaptação ao PT-BR. O apollo e o common-room exigem conta própria ou autenticação e são voltados a B2B nos EUA."
+   }
+  ],
+  "alertas_gerais": [
+   "Cotação usada: 1 USD = R$ 5,005 (Frankfurter/BCE, data 09/10/2026, https://api.frankfurter.dev/v1/latest?from=USD&to=BRL). Os pesquisadores usaram ≈ 4,99; a diferença é menor que 0,5%. É câmbio comercial: cartão internacional soma IOF e spread, o que pode encarecer de 4% a 6%.",
+   "O orçamento de busca na web (WebSearch) estava esgotado nesta rodada. Toda a verificação foi feita com WebFetch direto nas páginas oficiais; o que não carregou ficou como 'nao_verificavel' (Etus, Posty, Porter Metrics, Publer, preço do Adobe Express, Social Media Skills).",
+   "Kwai é o ponto cego da stack: nenhuma ferramenta de agendamento verificada (Buffer, Later, SocialBee, Hootsuite, Repurpose, PostEverywhere) lista o Kwai, e o yt-dlp não tem extrator para ele. A publicação no Kwai continua manual pelo app.",
+   "A fonte do 'Posty' na verdade descreve o PostEverywhere (outro produto, a partir de US$ 9/mês, com MCP). Há confusão de nomes na pesquisa anterior.",
+   "BlitzReels não tem plano grátis (teste de 7 dias com cartão e cobrança automática), e o ElevenLabs Free dá só 12 min de STT/mês, não 30. Os dois foram corrigidos.",
+   "O video_create_quick_cut da Adobe corta por engajamento visual e não entende fala. É pouco útil para cortes de podcast ou entrevista.",
+   "A afirmação de que retenção do YouTube 'só existe no Studio' é falsa: a API expõe audienceWatchRatio, averageViewPercentage e engagedViews. Só a CTR de impressões e a métrica 'visualizado vs deslizado' dos Shorts não estão na API.",
+   "Ferramentas que sozinhas já passam do orçamento de R$ 200/mês: Supermetrics Starter (≈ R$ 275), Hootsuite (≈ R$ 495), Exolyt Essentials (≈ R$ 2.002). Use as versões grátis ou o que já está conectado.",
+   "Promoções com prazo vistas nas páginas: ElevenLabs Starter até 18/10, BlitzReels com 'preço de lançamento' e mLabs com desconto no Pix. Esses valores podem mudar em poucos dias."
+  ]
+ },
+ {
+  "verificacoes": [
+   {
+    "item": "Cotação US$ 1 ≈ R$ 4,99 (10/10/2026)",
+    "veredito": "confirmado",
+    "valor_correto": "PTAX venda de 09/10/2026 = R$ 4,9892 (compra R$ 4,9886), segundo a API Olinda do Banco Central. 10/10/2026 foi sábado e não tem PTAX. Na semana a PTAX oscilou entre R$ 4,97 (06/10) e R$ 5,01 (08/10). Em 01 e 02/10 passou de R$ 5,20.",
+    "fonte_url": "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial='10-01-2026'&@dataFinalCotacao='10-11-2026'&$format=json",
+    "nota": "Usar 4,9892 (PTAX 09/10/2026) como cotação de referência. O câmbio mudou cerca de 4% em uma semana, então convém refazer as conversões perto da data de uso."
+   },
+   {
+    "item": "Whop Content Rewards: mediana de US$ 1,00 por mil views em 50 campanhas, faixa de US$ 0,05 a US$ 3,00",
+    "veredito": "confirmado",
+    "valor_correto": "Mediana de US$ 1,00 por mil views. Faixa de US$ 0,05 a US$ 3,00. 19 campanhas pagavam exatamente US$ 1 e 12 pagavam entre US$ 2 e US$ 3. Orçamentos de cerca de US$ 1,10 milhão, dos quais cerca de US$ 784 mil já gastos. Foto de 28/09/2026.",
+    "fonte_url": "https://www.builtbyfoundry.io/blog/what-is-clipping-1-dollar-per-1000-views-50-campaigns",
+    "nota": "É uma foto de um único dia, publicada em 28/09/2026. Faltava essa data na afirmação."
+   },
+   {
+    "item": "Faixa de US$ 0,20 a US$ 6 por mil views verificadas, com desconto de 20% a 30% de views não verificadas (OpenClip)",
+    "veredito": "confirmado",
+    "valor_correto": "De US$ 0,20 a US$ 6 por mil views verificadas, típico perto de US$ 1 (mediana de US$ 0,80 a US$ 1,50). Planejar um desconto de 20% a 30%. Se as views pagas ficarem abaixo de 60% das postadas, o problema é de processo.",
+    "fonte_url": "https://openclip.app/clipping/clipper-pay-rates",
+    "nota": "A página diz isso, mas a fonte vende ferramenta e não mostra metodologia. Manter confiança baixa."
+   },
+   {
+    "item": "A taxa de 10% da Whop é descontada do vendedor, não do clipador",
+    "veredito": "confirmado",
+    "valor_correto": "Texto dos termos: \"Whop will deduct from the Seller's Whop account a fee payable to Whop in the amount of 10%\".",
+    "fonte_url": "https://whop.com/content-rewards-terms-of-service/",
+    "nota": "Pelos termos, quem paga é a marca. Terceiros como FindClout e ClipSpeed falam em 10% sobre cada pagamento. Na prática, conferir o valor líquido no painel."
+   },
+   {
+    "item": "Regras da Whop: 18 anos, sem restrição de país, views legítimas a critério da Whop, ordem de chegada, estorno, impostos do clipador",
+    "veredito": "confirmado",
+    "valor_correto": "Os termos confirmam tudo: 18 anos ou mais, nenhum país citado, views a critério exclusivo da Whop, exclusão de bots e de views obtidas com prêmio ou permuta, pagamento por ordem de chegada até o Max Payout ou a End Date, retenção ou estorno por descumprimento, impostos por conta do participante (sem retenção na fonte), proibição de duplicados e de pagamento por fora da plataforma.",
+    "fonte_url": "https://whop.com/content-rewards-terms-of-service/",
+    "nota": "Os termos falam em 'federal and state taxes', linguagem dos EUA. Para um brasileiro, a tributação segue as regras do Brasil (carnê-leão ou PJ), mas isso não foi verificado aqui."
+   },
+   {
+    "item": "Whop: mínimo e máximo de pagamento por vídeo (taxa US$ 3, mínimo US$ 6, cerca de 2.000 views)",
+    "veredito": "confirmado",
+    "valor_correto": "Docs oficiais: \"With a $3 reward rate and $6 minimum payout, only videos with at least 2,000 views enter your review queue.\" O máximo limita quanto um criador ganha por vídeo. Exemplo: teto de US$ 3.000 a US$ 3 por mil para de pagar em 1 milhão de views.",
+    "fonte_url": "https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards",
+    "nota": "A página oficial carregou nesta verificação, então dá para trocar a fonte de terceiros pela da Whop."
+   },
+   {
+    "item": "Saque da Whop no Brasil: wire de US$ 23, cripto de 5% + US$ 1, banco local internacional com taxa variável",
+    "veredito": "corrigido",
+    "valor_correto": "O Brasil está na lista de países com saque. Mas a taxa de US$ 23 é para 'Bank wire (U.S.)', ou seja, wire nos EUA, e não transferência internacional. Cripto custa 5% + US$ 1. 'International local bank transfer' tem taxa variável por país, sem valor fixo. ACH (US$ 2,50) e Venmo (5% + US$ 2,50) são só para os EUA. A página de configuração também cita saque por PayPal e Coinbase Commerce, além do banco. Para quem está no Brasil, o caminho provável é transferência bancária local internacional ou PayPal, com taxa a confirmar.",
+    "fonte_url": "https://docs.whop.com/fees",
+    "nota": "Nenhuma fonte cita Pix. Os métodos para o Brasil só aparecem no painel Balances depois do KYC (documento com foto e conta bancária). Não converta US$ 23 como custo de saque para o Brasil."
+   },
+   {
+    "item": "Muitas campanhas da Whop restringem o público a países Tier 1 de língua inglesa",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://app.notion.com/p/WayinVideo-X-Caleb-Hammer_Clipping-Campaign-36b3f2ea3aed80928881e4ac26c092d5",
+    "nota": "A página do Notion não carregou (só apareceu o título). A documentação da Whop sobre Content Rewards não fala em segmentação por país. A recomendação de ler o campo de público de cada campanha continua valendo, mas a frequência ('muitas') não foi comprovada."
+   },
+   {
+    "item": "A maioria ganha menos de US$ 3 nas campanhas saturadas e o rendimento combinado é de US$ 0,39 por mil views",
+    "veredito": "confirmado",
+    "valor_correto": "A Ssemble diz que 'A maioria das pessoas ganha menos de US$ 3 no total' em campanhas grandes. A Ascynd chega a US$ 0,39 por mil dividindo US$ 2,58 milhões pagos por 6,6 bilhões de views no total, não só nas campanhas saturadas. Ela atribui a diferença a tetos, limites mínimos e views filtradas. A mesma conta dá uma média vitalícia de cerca de US$ 305 por pessoa que recebeu algo.",
+    "fonte_url": "https://ascynd.io/en/blog/whop-clipping",
+    "nota": "O US$ 0,39 é cálculo da própria Ascynd sobre o conjunto todo, e não um número das campanhas saturadas. As duas fontes vendem ferramentas. Confiança baixa."
+   },
+   {
+    "item": "Vyro: 18 anos, Stripe ou PayPal, saque mínimo de US$ 10, 1 saque a cada 7 dias, processamento de 72 horas ou mais, estorno",
+    "veredito": "corrigido",
+    "valor_correto": "Os termos confirmam: 18 anos ou mais (e maioridade local), residência em território atendido, Stripe (ou PayPal onde houver), mínimo de US$ 10, 1 saque a cada 7 dias, pelo menos 72 horas de processamento, proibição de comprar engajamento, estorno se o post for removido e cancelamento da campanha sem pagamento se o cliente não depositar. Correção no detalhe: a Ssemble não cita a Vyro nem US$ 3 por mil.",
+    "fonte_url": "https://vyro.com/clipper-terms",
+    "nota": "O Brasil não aparece nos termos. Os dados da DareBay (US$ 1 a US$ 2 por mil, mínimo de 5 mil views, cerca de 70 países bloqueados) não foram verificados. Retirar a menção à Ssemble com US$ 3 por mil."
+   },
+   {
+    "item": "Clipping.net: US$ 50 a cada 100 mil views, mínimo de 100 mil, PayPal ou cripto",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.clipaffiliates.com/blog/whop-vyro-clipping-alternatives-2026",
+    "nota": "A fonte devolveu erro 403. O clipmap.gg confirma 66 campanhas da Clipping.net, mas não a taxa. Manter confiança baixa."
+   },
+   {
+    "item": "ClipFarm: roda sobre a Whop, sem tabela de taxas, paga semanalmente, caso Druski com US$ 0,16 por mil",
+    "veredito": "corrigido",
+    "valor_correto": "Confirmado: roda sobre a infraestrutura de Content Rewards da Whop, não publica tabela, e o caso Druski teve US$ 10 mil por 64 milhões de views (cerca de US$ 0,16 por mil antes das taxas). NÃO confirmado: pagamento semanal. A fonte diz que o pagamento sai depois da aprovação da marca, sem citar periodicidade.",
+    "fonte_url": "https://findclout.com/blog/clipfarm-pricing",
+    "nota": "A fonte é concorrente. Ela cita 10% de taxa da Whop e cerca de 2,7% + US$ 0,30 de processamento, a confirmar com a ClipFarm. Clipify não aparece."
+   },
+   {
+    "item": "Real Oficial: CPM de R$ 0,50 a R$ 1, Pix, R$ 108.321 pagos a 6.683 clipadores, 117.181 posts, cerca de 2 bilhões de views",
+    "veredito": "confirmado",
+    "valor_correto": "R$ 108.321 pagos, 6.683 clipadores pagos em campeonatos, 117.181 posts, 2 bilhões de views nos campeonatos (3,7 bilhões no total da plataforma). Wild Rift R$ 1 por mil (R$ 15 mil), Academia Rafael Toro R$ 0,50 (R$ 10 mil), Stream Gabriel Morais R$ 1 (R$ 8 mil). Pagamento por Pix depois da validação. Média de cerca de R$ 16,21 por clipador.",
+    "fonte_url": "https://realoficial.com.br/pt/real-rewards",
+    "nota": "A página de recompensas diz que valores, limites, prazos e condições de saque estão no regulamento de cada campanha. Os posts precisam continuar públicos."
+   },
+   {
+    "item": "Caso Podpah na Real Oficial: 3 edições, 38.627 cortes, mais de 1,23 bilhão de views, 659 participantes na 3ª edição, 4ª edição com R$ 10 mil para 815 pessoas",
+    "veredito": "confirmado",
+    "valor_correto": "Edições: 17/11/2025 a 01/03/2026, 02/03 a 23/06/2026 e 01/07 a 30/09/2026. Cortes por edição: 10.126, 14.785 e 13.716 (este último parcial). Mais de 1,23 bilhão de views orgânicas. 659 participantes na 3ª edição em 09/09/2026. O Podpah 4.0 é campeonato por ranking com R$ 10 mil e 815 participantes.",
+    "fonte_url": "https://realoficial.com.br/pt/championships",
+    "nota": "O CPM do Podpah não aparece ('por performance via CPM por views'). Os números da 3ª edição são de 09/09/2026, com a edição ainda em andamento. A 4ª edição premia por ranking, e não por view."
+   },
+   {
+    "item": "Klypex: grátis, sem convite, Pix, Júnior e Cézar a R$ 1 por mil com teto de R$ 200 por vídeo e R$ 9 mil no total, Silvercop até R$ 6 mil",
+    "veredito": "confirmado",
+    "valor_correto": "'Grátis. Sem convite.' Saque por Pix. Júnior e Cézar paga R$ 1 por mil, até R$ 200 por vídeo, com R$ 9 mil no total. Silvercop tem R$ 15 mil em prêmios por ranking diário, com R$ 6 mil para o 1º lugar. Aceita TikTok, Reels, Shorts, Facebook e X.",
+    "fonte_url": "https://klypex.com.br/",
+    "nota": "Saque mínimo e taxas não aparecem no site."
+   },
+   {
+    "item": "Viewx: Pix, Gustavo Borges a R$ 1 por mil, campeonatos de R$ 2.500 a R$ 40.000, R$ 910 mil distribuídos em 99 edições",
+    "veredito": "confirmado",
+    "valor_correto": "Gustavo Borges paga R$ 1 por mil views. Campeonatos: LOUD Miller R$ 2.500, LOUD Facada R$ 9 mil, Brabox R$ 10 mil, LOUD VTzim R$ 7 mil, LOUD Coringa R$ 10 mil, GG Poker R$ 36 mil, Jamble R$ 40 mil, Pichau R$ 30 mil. R$ 910 mil distribuídos aos primeiros colocados em 99 edições encerradas. Não exige audiência mínima.",
+    "fonte_url": "https://viewx.com.br/",
+    "nota": "Prazo e mínimo de saque não aparecem no site."
+   },
+   {
+    "item": "Clipou: taxa de saque de 12% no plano grátis e 8% no Premium de R$ 97 por mês",
+    "veredito": "confirmado",
+    "valor_correto": "12% no plano Grátis, 8% no Premium, que custa R$ 97 por mês. O ponto em que o Premium passa a compensar é cerca de R$ 2.425 sacados por mês.",
+    "fonte_url": "https://www.clipou.com.br/",
+    "nota": "A página não diz sobre qual base a taxa incide. A conta de R$ 97 ÷ 4 pontos percentuais está correta."
+   },
+   {
+    "item": "Conty: sem mensalidade nem taxa de entrada, 5% no saque",
+    "veredito": "confirmado",
+    "valor_correto": "Sem mensalidade e sem taxa para entrar. A única cobrança é de 5% no saque da carteira para a conta bancária. Cada campanha define o valor por mil, o orçamento e o teto por clipador. Aceita TikTok, Reels e Shorts, com contas autorizadas na campanha.",
+    "fonte_url": "https://appconty.com/seja-clipador",
+    "nota": ""
+   },
+   {
+    "item": "Clipei (HypeX): competições, views contadas a partir do dia seguinte, Pix, recomenda editar os vídeos da biblioteca",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://intercom.help/clipei/en/articles/13653287-introducao",
+    "nota": "A central de ajuda devolveu 404, então as regras de contagem, de seguidores e de edição não foram confirmadas. O clipmap.gg confirma a campanha Diego & Arnaldo (Patrão 1.0) com R$ 1.500 por dia e R$ 153.300 no total, encerrando em 03/12. A Revista Fórum confirma o uso da Clipei no caso Sargento Nantes."
+   },
+   {
+    "item": "Autoclipper Clip & Pix: 7 campanhas de R$ 1 a R$ 2,50 por mil, mais de 12 mil clipadores, uso obrigatório da ferramenta",
+    "veredito": "confirmado",
+    "valor_correto": "7 campanhas ativas, de R$ 1,00 a R$ 2,50 por mil, mais de 12.000 clipadores, participação gratuita, pagamento por Pix.",
+    "fonte_url": "https://autoclipper.live/clip-and-pix",
+    "nota": "A obrigação de usar a ferramenta não está escrita como regra formal. O passo a passo diz 'Utilize a Autoclipper normalmente para gerar vídeos virais', o que dá a entender que sim. Saque mínimo e taxas não aparecem."
+   },
+   {
+    "item": "Cut.pro: exemplo de R$ 1,50 por mil, piso de 1.000 views, Pix com 1 saque a cada 7 dias, taxa de 20% paga pelo organizador",
+    "veredito": "confirmado",
+    "valor_correto": "O texto confirma todos os pontos: 300 mil views a R$ 1,50 dão R$ 450, vídeo abaixo do piso de 1.000 views vale zero, saque por Pix uma vez a cada 7 dias com conferência da equipe, taxa de plataforma de 20% paga por quem organiza, alerta para desconfiar de quem promete ganho certo e 'os primeiros vinte cortes são aprendizado pago'.",
+    "fonte_url": "https://cut.pro/pt-BR/blog/campeonato-de-cortes-como-funciona-2026",
+    "nota": ""
+   },
+   {
+    "item": "Agregador clipmap.gg: 1.770 campanhas (Whop 1.369, Clipei 257 etc.)",
+    "veredito": "confirmado",
+    "valor_correto": "1.770 campanhas: Whop 1.369, Clipei 257, Clipping 66, ViewX 31, RealOficial 21, Clouted 20, Vyro 4, Nido 2. CPMs: Dreamina US$ 5, Smartlead US$ 2,01, Klap US$ 2, FundedNext US$ 1,50, Fliff US$ 0,40. No momento da consulta havia 194 campanhas listadas, com cerca de R$ 9,24 milhões em prêmios abertos.",
+    "fonte_url": "https://clipmap.gg/",
+    "nota": "São números do dia da consulta (11/10/2026) e mudam todo dia."
+   },
+   {
+    "item": "Cut.pro: programas generosos pagam de R$ 8 a R$ 20 por mil e iniciantes ganham de R$ 300 a R$ 1.200 por mês",
+    "veredito": "corrigido",
+    "valor_correto": "De R$ 8 a R$ 20 por mil está no texto. Para iniciantes, o corpo do texto fala em R$ 400 a R$ 1.200 por mês e o FAQ em R$ 300 a R$ 800 (com 1 ou 2 criadores menores). As duas faixas se contradizem e a afirmação juntou as duas. Para 6 a 12 meses com 2 ou 3 clientes, R$ 2.500 a R$ 4.500.",
+    "fonte_url": "https://cut.pro/en/blog/how-much-a-clipper-earns-2026",
+    "nota": "Não há fonte nem amostra, só 'faixas que observamos'. Os valores não batem com as taxas publicadas pelas plataformas brasileiras (R$ 0,50 a R$ 2,50 por mil). Manter confiança baixa."
+   },
+   {
+    "item": "Sinais de golpe em campanhas (Viewx + FindClout), com retenção de 14 dias como referência e alerta acima de 60 dias",
+    "veredito": "corrigido",
+    "valor_correto": "A Viewx traz 4 sinais: taxa de entrada, promessa de ganho fixo mensal, regras ocultas e medição de views pouco clara. A FindClout acrescenta: falso funcionário (nome ou avatar copiado no Discord), venda de 'curso' ou acesso pago, pedido de senha ou código 2FA, pagamento baseado em print de tela e taxa alta demais com urgência. NENHUMA das duas fontes fala em retenção de 14 ou 60 dias, nem em orçamento pequeno como sinal de golpe.",
+    "fonte_url": "https://findclout.com/blog/clipping-discord-scams",
+    "nota": "Tirar os números de 14 e 60 dias ou buscar outra fonte para eles. A Viewx é parte interessada."
+   },
+   {
+    "item": "TSE (Res. 23.755/2026) proíbe premiação por competição ou ranking para conteúdo eleitoral, com multa de R$ 5 mil a R$ 30 mil pelo art. 57-D",
+    "veredito": "corrigido",
+    "valor_correto": "A Revista Fórum (03/10/2026) confirma: a Res. 23.755, publicada em março de 2026, proíbe propaganda paga que use 'competição, ranqueamento ou premiação' em perfis próprios. Exemplos confirmados: Jadyel Alencar no Estourou.com a R$ 1,50 por mil, teto de R$ 100 por post e 3 vídeos por dia. André Merlo no Cliparam a R$ 2 por mil. Caporezzo a R$ 0,50 por mil, teto de R$ 500 por post e prêmio de R$ 2.500. Marçal inelegível até 2032. A matéria NÃO cita multa nem o art. 57-D.",
+    "fonte_url": "https://revistaforum.com.br/politica/campeonatos-cortes-tse-eleicoes/",
+    "nota": "A multa não foi verificada (o Planalto e o TSE devolveram 503 e 403). Pela minha leitura, sem confirmação nesta checagem, o §2º do art. 57-D trata de anonimato, e a multa por propaganda paga irregular na internet está no art. 57-C, §2º (R$ 5 mil a R$ 30 mil ou o dobro do gasto). Conferir no texto da Lei 9.504/97 e da Res. 23.755 antes de citar. A conclusão prática continua: não participar de campeonato de cortes de candidato."
+   },
+   {
+    "item": "TikTok Creator Rewards disponível no Brasil, com 18 anos, 10 mil seguidores, 100 mil views em 30 dias e vídeos de mais de 1 minuto",
+    "veredito": "confirmado",
+    "valor_correto": "Mercados em 26/07/2026: EUA, Reino Unido, Alemanha, França, Japão, Coreia do Sul, Brasil e México (incluído em 01/10/2025). Requisitos: 18 anos, 10 mil seguidores, 100 mil views nos últimos 30 dias, conta pessoal pública (não Business) e vídeos originais com mais de 1 minuto.",
+    "fonte_url": "https://quasa.io/media/tiktok-creator-rewards-program-eligible-countries-in-2026",
+    "nota": "A página oficial do TikTok (Creator Academy e central de ajuda) não carregou o conteúdo, então a confirmação vem de fonte secundária de 27/07/2026. Conferir em TikTok Studio > Monetização."
+   },
+   {
+    "item": "RPM do TikTok Creator Rewards: cerca de US$ 0,32 no Brasil e US$ 0,85 nos EUA, finanças 1,3 vez e entretenimento 0,85 vez",
+    "veredito": "confirmado",
+    "valor_correto": "A Elev8or traz Brasil a cerca de US$ 0,32 (o menor da lista) e EUA a cerca de US$ 0,85 por mil views qualificadas, com finanças a 1,3 vez e entretenimento a 0,85 vez. Brasil com entretenimento dá cerca de US$ 0,27. Em reais, US$ 0,32 × 4,9892 ≈ R$ 1,60.",
+    "fonte_url": "https://www.elev8or.io/blog/tiktok-creator-rewards-rpm-2026",
+    "nota": "São estimativas a partir de relatos de criadores. O TikTok não publica tabela. A Elev8or diz só 'passar dos segundos iniciais' para a view contar, sem confirmar os 5 segundos. A faixa de R$ 0,50 a R$ 5 da Shortrentavel não foi verificada. Confiança baixa."
+   },
+   {
+    "item": "No TikTok, repostagens, compilações e áudio de podcast sem edição são não originais e ficam fora do Creator Rewards",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://influenceflow.io/resources/why-is-my-tiktok-unoriginal-content-flag-appearing-and-how-to-fix-it/",
+    "nota": "A InfluenceFlow só diz que 'unedited podcast audio' leva à marcação de não original e que compilações (ASMR, games) costumam ser marcadas. Ela não afirma que repostagens ficam fora do Creator Rewards e não cita texto oficial do TikTok. As páginas oficiais não carregaram. A Elev8or diz que duetos, stitches e clipes reciclados não geram views qualificadas, também sem fonte oficial."
+   },
+   {
+    "item": "Requisitos do YPP: 1.000 inscritos + 4.000 horas OU 10 milhões de views em Shorts, mais 2FA, AdSense e nenhum aviso ativo",
+    "veredito": "corrigido",
+    "valor_correto": "As duas opções exigem 1.000 inscritos. Opção 1: 1.000 inscritos e 4.000 horas qualificadas em 12 meses. Opção 2: 1.000 inscritos e 10 milhões de views qualificadas de Shorts em 90 dias. A redação original dá a entender que a opção de Shorts dispensa os inscritos. O resto está confirmado: 2FA, AdSense, nenhum aviso ativo, análise de cerca de 1 mês, recurso em 21 dias ou reenvio depois de 30 dias (90 dias após a 2ª rejeição), risco de perder a monetização após 6 meses sem uploads ou posts. Atualizações a partir de 01/02/2027, com aceite dos novos termos até 31/01/2027.",
+    "fonte_url": "https://support.google.com/youtube/answer/72851?hl=pt-BR",
+    "nota": "As horas assistidas no feed de Shorts não contam para as 4.000 horas."
+   },
+   {
+    "item": "A partir de 01/02/2027: 8.000 horas ou 20 milhões de views em Shorts para entrar, e 10 milhões em 90 dias para membros receberem receita de Shorts",
+    "veredito": "confirmado",
+    "valor_correto": "Página oficial: a partir de 01/02/2027, é preciso ter pelo menos 10 milhões de views qualificadas de Shorts nos 90 dias anteriores para receber a parte da receita de anúncios e Premium dos Shorts. Insider Gaming BR (10/08/2026, citando o blog do YouTube): novos candidatos vão precisar de 1.000 inscritos e 8.000 horas ou 20 milhões de views em Shorts em 90 dias. Membros atuais continuam elegíveis e precisam aceitar os termos até 31/01/2027.",
+    "fonte_url": "https://support.google.com/youtube/answer/12504220?hl=pt-BR",
+    "nota": "Os números de 8.000 horas e 20 milhões não aparecem na página oficial de requisitos (answer/72851). Eles vêm da imprensa citando o blog do YouTube."
+   },
+   {
+    "item": "Receita do Shorts: 45% para o criador, música diminui o fundo, clipes e reenvios não geram receita, Content ID bloqueia Shorts com mais de 1 minuto",
+    "veredito": "confirmado",
+    "valor_correto": "O criador fica com 45% do valor que vai para o Creator Fund, com ou sem música. Com 1 música, metade da receita vai para o fundo. Com 2 músicas, um terço. Não geram receita: clipes de filme ou TV sem edição, reenvios de outros criadores ou plataformas, compilações sem conteúdo original, views artificiais e conteúdo fora das diretrizes para anunciantes. Shorts com mais de 1 minuto e reivindicação de Content ID são bloqueados.",
+    "fonte_url": "https://support.google.com/youtube/answer/12504220?hl=pt-BR",
+    "nota": ""
+   },
+   {
+    "item": "Política de conteúdo reutilizado do YouTube: vale para o canal todo e mesmo com permissão; renomeação para 'inauthentic content' em 15/07/2025",
+    "veredito": "confirmado",
+    "valor_correto": "Citações literais confirmadas: 'applies to your channel as a whole', 'even if you have permission from the original creator', 'Clips of moments from your favorite show edited together with little or no narrative' (proibido), 'Edited footage from other creators where you add a storyline and commentary' (permitido). Em 15/07/2025, 'repetitious' passou a se chamar 'inauthentic content', e a política de conteúdo reutilizado não mudou.",
+    "fonte_url": "https://support.google.com/youtube/answer/1311392?hl=en",
+    "nota": ""
+   },
+   {
+    "item": "RPM de Shorts no Brasil: cerca de US$ 0,045 por mil views; EUA: US$ 0,328",
+    "veredito": "confirmado",
+    "valor_correto": "Brasil US$ 0,045 e EUA US$ 0,328 por mil views (tabela de 2025, AIR Media-Tech, atualizada em 23/01/2026). 10 milhões de views × US$ 0,045 = US$ 450 ≈ R$ 2.245 pela PTAX de 4,9892.",
+    "fonte_url": "https://air.io/en/monetization/what-rpm-can-you-expect-from-shorts-in-2026",
+    "nota": "Não informa metodologia, janela de tempo nem quantos canais entraram por país."
+   },
+   {
+    "item": "Canal brasileiro de cortes de podcast policial: 25 milhões de views em 90 dias renderam cerca de R$ 1.800",
+    "veredito": "corrigido",
+    "valor_correto": "Os números se contradizem. A tela mostra R$ 1.800, o narrador diz 'mais de R$ 11.100' em 90 dias, o resumo da Lilys diz R$ 1.100 e em outro momento ele fala em R$ 1.000 por mês. O gráfico mostrado cobre 365 dias, e não 90. As datas de início da monetização também não batem (março ou maio). O número de views (25 milhões, cerca de 211 vídeos, 26 mil inscritos) é coerente.",
+    "fonte_url": "https://lilys.ai/notes/pt/youtube-shorts-20251211/monetize-youtube-shorts-90-days",
+    "nota": "Não use o valor de R$ 0,07 por mil como dado. As técnicas de mascaramento (bordas pretas, filtros, manter cerca de 80% do original) vão contra a política de conteúdo reutilizado. Confiança baixa."
+   },
+   {
+    "item": "Instagram não tem programa aberto que pague por Reels no Brasil; os bônus foram só para EUA, Japão e Coreia",
+    "veredito": "confirmado",
+    "valor_correto": "A página da Meta (06/11/2023) confirma: o holiday bonus e o New Year's bonus foram só por convite, para EUA, Coreia do Sul e Japão. O Brasil não é citado.",
+    "fonte_url": "https://creators.facebook.com/giving-more-creators-around-the-world-ways-to-earn-money",
+    "nota": "O spring bonus e as datas de fim do Reels Play (EUA e Índia em 2023, Coreia em 2024) NÃO aparecem nessa página e não foram verificados. A página é de 2023. A ausência de programa aberto no Brasil em 2026 é inferência, sem negação oficial. Os 'convites isolados' de R$ 100 a R$ 2.000 não foram verificados."
+   },
+   {
+    "item": "Instagram (30/04/2026) tira de recomendações as contas agregadoras, inclusive fotos e carrosséis",
+    "veredito": "confirmado",
+    "valor_correto": "Contas que repostam conteúdo de terceiros com frequência deixam de ser elegíveis para recomendações em todo o app (o TechCrunch cita feed e Discover). Os Reels já tinham essa proteção, e agora ela vale para fotos e carrosséis. Não contam como originalidade: marca d'água, mudança de velocidade e print do post com o @ do autor. Contam: humor, comentário, texto próprio, edição criativa e narração. Os seguidores continuam vendo os posts.",
+    "fonte_url": "https://techcrunch.com/2026/04/30/instagram-restricts-reach-of-content-aggregators-in-new-crackdown/",
+    "nota": "O TechCrunch não cita 'Explorar' pelo nome nem uma janela de 30 dias."
+   },
+   {
+    "item": "Facebook Creator Fast Track: US$ 1.000 a US$ 3.000 por mês durante 3 meses, só para EUA e Canadá",
+    "veredito": "nao_verificavel",
+    "valor_correto": "A Olhar Digital (18/03/2026) confirma US$ 1.000 por mês para quem tem 100 mil seguidores ou mais (Instagram, TikTok ou YouTube) e US$ 3.000 por mês para quem tem mais de 1 milhão, por 3 meses, com acesso ao programa de monetização de conteúdo.",
+    "fonte_url": "https://olhardigital.com.br/2026/03/18/internet-e-redes-sociais/meta-vai-pagar-criadores-de-outras-plataformas-para-postarem-no-facebook/",
+    "nota": "A restrição a EUA e Canadá não foi confirmada, porque o TechRepublic devolveu 403 e a Olhar Digital não fala em países. A Olhar Digital também não descreve o Content Monetization como só por convite. O requisito de 100 mil seguidores em outra rede faltava na afirmação."
+   },
+   {
+    "item": "Kwai: requisitos e valores de monetização contraditórios e sem fonte oficial",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://enjai.com.br/blog/como-monetizar-o-kwai",
+    "nota": "O domínio enjai.com.br não respondeu (ENOTFOUND). Não há como confirmar requisitos nem valores de R$ 0,40 a R$ 8 por mil. Verificar na aba Monetização do app."
+   },
+   {
+    "item": "TikTok Shop afiliados no Brasil: 1.000 seguidores (ou 2.000), 18 anos, verificação de identidade, Linkshare, comissão de 5% a 20%",
+    "veredito": "corrigido",
+    "valor_correto": "A fonte citada diz que 'Não é seguro publicar um único número como regra universal' para seguidores (fontes de terceiros falam em 1.000, 2.000 ou nenhum mínimo). Não diz a idade mínima. Exige verificação de identidade e forma de recebimento no mesmo nome. A comissão é definida pelo vendedor e não existe porcentagem única (exemplo: 15% sobre R$ 80 = R$ 12). A fonte NÃO fala em 'Linkshare' nem na faixa de 5% a 20%.",
+    "fonte_url": "https://viniensina.com.br/tiktok-shop-afiliado/",
+    "nota": "Conferir na área TikTok Shop para Criadores do app."
+   },
+   {
+    "item": "Comprar ou vender conta do TikTok viola os termos de serviço",
+    "veredito": "corrigido",
+    "valor_correto": "A Indicator afirma: \"TikTok's terms of service forbid buying and selling accounts.\" Mas os Termos de Serviço globais (ROW) que li não têm cláusula explícita sobre venda de conta. Eles dizem que a licença de uso é 'non-transferable', proíbem usar a conta de outra pessoa sem autorização do TikTok (seção 5) e proíbem 'transfer, or sell' os Serviços (seção 7A).",
+    "fonte_url": "https://www.tiktok.com/legal/page/row/terms-of-service/en",
+    "nota": "A conclusão prática continua: vender canal é arriscado e sem garantia jurídica. Não li os termos específicos do Brasil, as Diretrizes da Comunidade (não carregaram) nem a política do YouTube sobre transferir canal."
+   }
+  ],
+  "alertas_gerais": [
+   "O limite de WebSearch do turno acabou (200 buscas compartilhadas). Toda a checagem foi feita com WebFetch direto nas fontes citadas e em páginas oficiais. Algumas lacunas, como a multa do TSE, a página oficial do TikTok e o Kwai, ficaram sem busca alternativa. Se precisar, dá para continuar em outra mensagem.",
+   "Cotação de referência: PTAX venda de 09/10/2026 = R$ 4,9892 (Banco Central). O câmbio estava acima de R$ 5,20 em 01 e 02/10/2026, então refazer as conversões perto da data de uso.",
+   "Whop: a taxa de US$ 23 é de wire NOS EUA, e não de transferência internacional. Para o Brasil, os métodos prováveis são banco local internacional (taxa variável) ou PayPal, a confirmar no painel depois do KYC. Não existe Pix.",
+   "Fontes oficiais que não carregaram nesta checagem: TikTok Creator Academy e central de ajuda (página vazia), TSE (403), Planalto/Lei 9.504 (503), TechRepublic (403), central de ajuda da Clipei (404), ClipAffiliates (403) e Notion (vazio). Os vereditos ligados a elas ficaram como fonte secundária ou nao_verificavel.",
+   "Fonte de multa eleitoral: a matéria da Revista Fórum não cita multa nem o art. 57-D. Conferir na Lei 9.504/97 (provavelmente art. 57-C §2º para propaganda paga, mas não confirmado) antes de publicar qualquer valor.",
+   "Vários dados de mercado (Cut.pro R$ 8 a R$ 20 por mil, OpenClip, Ascynd, Elev8or, AIR) vêm de fornecedores sem metodologia. As taxas publicadas pelas plataformas brasileiras (R$ 0,50 a R$ 2,50 por mil) e o 'teste de realidade' da Real Oficial (cerca de R$ 16 por clipador) são os dados mais sólidos para o Brasil.",
+   "YPP: corrigir a redação. Os DOIS caminhos (4.000 horas ou 10 milhões de views em Shorts) exigem 1.000 inscritos."
+  ]
+ },
+ {
+  "verificacoes": [
+   {
+    "item": "Preços de serviço no Brasil 2026: Reels/Shorts até 60 s R$ 50-150; pacote 4 vídeos R$ 800-2.500; 8-12 vídeos R$ 2.000-5.000 (CrazyStack)",
+    "veredito": "confirmado",
+    "valor_correto": "Fonte (consultada em 11/10/2026): vídeo curto até 60 s por R$ 50-150 (US$ 15-40); pacote de 4 vídeos/mês por R$ 800-2.500; pacote premium de 8-12 vídeos/mês por R$ 2.000-5.000",
+    "fonte_url": "https://www.crazystack.com.br/quanto-cobrar-freelancer-video-tabela-precos",
+    "nota": "Os valores batem com o blog, que não diz de onde tirou os números. O 'plano básico de 4 vídeos por R$ 500' não aparece nessa página: fica R$ 300 abaixo do piso de R$ 800 do pacote. O próprio blog desaconselha preço muito baixo, salvo por 3 a 6 meses no começo."
+   },
+   {
+    "item": "Preço por corte: R$ 15-40 (criador pequeno), R$ 40-100 (médio); meta de 3-4 cortes/hora (cut.pro)",
+    "veredito": "confirmado",
+    "valor_correto": "R$ 15-40 por corte para criador pequeno e R$ 40-100 para médio. Os '3-4 cortes por hora' não são uma meta declarada: o texto diz que 'a virada vem quando você corta três, quatro clipes por hora'",
+    "fonte_url": "https://cut.pro/en/blog/how-much-a-clipper-earns-2026",
+    "nota": "A fonte é promocional e não mostra amostra. Por isso mantenho confiança baixa."
+   },
+   {
+    "item": "Workana: vaga de até R$ 40/Reel (8 Reels/mês, 2025); vaga de cortes de podcast com verba de cerca de R$ 1.000/mês (2026); teste não pago de 30 dias",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.workana.com/pt/job/edicao-de-reels-em-ingles-e-portugues-preferencia-por-mulheres",
+    "nota": "A Workana devolveu HTTP 403 no WebFetch, então não consegui conferir valores, datas nem a exigência de teste. São vagas avulsas: não servem como média de mercado."
+   },
+   {
+    "item": "Fiverr US$ 15-80 por edição curta; Upwork nível médio US$ 80-300; cortes de podcast US$ 50-150 por episódio (5-10 cortes) — fonte Videotto",
+    "veredito": "corrigido",
+    "valor_correto": "A página citada não traz nenhum desses números. O que ela diz: clipe único com edição mínima por cerca de US$ 100-300; clipe produzido para TikTok/Reels por US$ 150-500; freelancer de nível médio por US$ 50-100/h (EUA/Reino Unido/Austrália) ou US$ 15-30/h (Sudeste Asiático); podcast com editor americano de nível médio por cerca de US$ 300-500 por episódio, rendendo uns 8 clipes de dois episódios de 60 min. Em reais (US$ 1 = R$ 4,99): clipe a R$ 499-1.497 e episódio a R$ 1.497-2.495",
+    "fonte_url": "https://www.videotto.com/blog/how-much-does-video-editing-cost-global-2026",
+    "nota": "A página não cita o Fiverr nem dá preço específico da Upwork. A afirmação original junta números de outras fontes que não identificou. A Videotto é fornecedora e vende IA a cerca de US$ 15/mês. A faixa do Fiverr e o 'US$ 5 por corte extra' ficam sem fonte verificável."
+   },
+   {
+    "item": "Social media no Brasil 2026: R$ 800-10.000 por cliente/mês; especialistas de nicho R$ 4.000-10.000+; edição de Reels com material bruto R$ 300-700 por vídeo",
+    "veredito": "confirmado",
+    "valor_correto": "Faixa geral de R$ 800-10.000/mês: iniciante R$ 800-1.500, intermediário R$ 1.500-3.500, sênior R$ 3.500-6.000, especialista de nicho R$ 4.000-10.000+, estrategista R$ 8.000-20.000+. O FreelaSemCrise dá R$ 300-700 por Reel editado a partir do material bruto do cliente",
+    "fonte_url": "https://jamilefernandes.com.br/blog/precificacao-para-social-media-quanto-cobrar-em-2026",
+    "nota": "O blog lista advocacia entre os nichos de ticket alto e diz que especialistas cobram 40% a 80% a mais que generalistas. Confirmei o R$ 300-700 em https://www.freelasemcrise.com.br/quanto-cobrar/producao-reels. Nenhuma das duas fontes explica a metodologia."
+   },
+   {
+    "item": "Podcast é obra protegida (art. 7º da Lei 9.610/98); direitos patrimoniais podem ser cedidos ou licenciados; direitos morais são intransferíveis; art. 29 exige autorização prévia; art. 50 exige cessão por escrito, presumida onerosa",
+    "veredito": "confirmado",
+    "valor_correto": "Art. 27: 'Os direitos morais do autor são inalienáveis e irrenunciáveis.' Art. 29: o uso depende de 'autorização prévia e expressa do autor'. Art. 49: transferência por 'licenciamento, concessão, cessão ou por outros meios'; sem contrato escrito, o prazo máximo é de 5 anos (inciso III); a cessão vale só para o país do contrato (IV) e é interpretada de forma restritiva (VI). Art. 50: cessão 'sempre por escrito, presume-se onerosa'",
+    "fonte_url": "https://transparencia-repo.mpba.mp.br/Convenios/H/H%20134%20-%20Processo.pdf",
+    "nota": "O Planalto (l9610.htm) devolveu 503 e o Mattos Filho, 403. Li os artigos transcritos no parecer do MPBA. O art. 7º não cita 'podcast' pelo nome, mas sua lista é exemplificativa e cobre obras sonoras e audiovisuais. O art. 49, III e VI pesam no contrato de serviço: defina prazo, território e modalidades (TikTok, Shorts, Reels, Kwai)."
+   },
+   {
+    "item": "Três instrumentos: autorização de uso de imagem e voz; autorização de uso de obra (temporária, fins específicos); cessão de obra (definitiva, exceto direitos morais) — parecer do MPBA",
+    "veredito": "confirmado",
+    "valor_correto": "O parecer propõe padronizar: '1) termo de autorização de uso de voz e/ou imagem; 2) termo de autorização de uso de obra intelectual (utilização temporária e para fins específicos); 3) termo de cessão de obra intelectual (utilização definitiva e completa, exceto quanto aos direitos morais)'. Também menciona um termo de licença de uso de obra",
+    "fonte_url": "https://transparencia-repo.mpba.mp.br/Convenios/H/H%20134%20-%20Processo.pdf",
+    "nota": "O parecer afirma que, a rigor, não é possível ceder o direito de imagem; só autorizar seu uso. Licença não exclusiva com prazo determinado, mais uma declaração do cliente de que tem os direitos, é uma recomendação do relatório, não do parecer."
+   },
+   {
+    "item": "Provimento OAB 205/2021: advogado pode aparecer em vídeos e lives; vedados casos concretos e resultados; publicidade informativa, discreta e sóbria; sem captação nem autoengrandecimento; cartilha do Comitê Regulador desde julho/2024",
+    "veredito": "confirmado",
+    "valor_correto": "Art. 5º, §3º permite vídeos ao vivo ou gravados, mas veda 'a utilização de casos concretos ou apresentação de resultados'. Art. 3º: publicidade 'meramente informativa', com 'discrição e sobriedade'; veda captação de clientela, mercantilização e linguagem persuasiva, de autoengrandecimento ou comparativa (inciso IV). Art. 6º veda prometer resultado. Art. 9º cria o Comitê Regulador do Marketing Jurídico",
+    "fonte_url": "https://www.oab.org.br/leisnormas/legislacao/provimentos/205-2021",
+    "nota": "O PDF da Conjur citado deu 404. Conferi pela página oficial da OAB. Não consegui confirmar a data da cartilha (julho/2024)."
+   },
+   {
+    "item": "Resolução CFM 2.336/2023 (em vigor desde 11/03/2024): pode mostrar ambiente de trabalho, antes e depois educativo e preço de consulta; exige nome, CRM e RQE",
+    "veredito": "confirmado",
+    "valor_correto": "Art. 17: vigência 180 dias após a publicação (assinada em 13/07/2023), o que bate com março/2024. Peças precisam de nome, CRM e a palavra 'MÉDICO' (art. 4º, I) e de especialidade com RQE quando houver (art. 4º, II). É permitido mostrar o ambiente de trabalho e informar o valor da consulta. Antes e depois só em conjunto de imagens com indicações, evoluções satisfatórias e insatisfatórias e complicações, acompanhado de texto educativo",
+    "fonte_url": "https://crmes.org.br/wp-content/uploads/2023/09/Resolucao-2336-2023-publicidade-e-propaganda-medica.pdf",
+    "nota": "Extraí o texto do PDF. Vedações relevantes para cortes: imagem que identifique o paciente e qualquer edição, manipulação ou melhoramento das imagens de procedimento. Filtro de cor ou 'beauty' em corte de médico é proibido."
+   },
+   {
+    "item": "MEI como Editor(a) de vídeo independente (CNAE 5912-0/99), teto de R$ 81 mil/ano",
+    "veredito": "confirmado",
+    "valor_correto": "A ocupação é permitida no MEI, com CNAE 5912-0/99, teto de R$ 81.000/ano e DAS de cerca de R$ 86,05/mês (INSS + ISS), segundo o blog",
+    "fonte_url": "https://contabilidade.com/blog/cnae-5912099-editor-a-de-video-independente-pode-ser-mei-quanto-paga-e-quando-desenquadrar-do-mei/",
+    "nota": "Só confirmei em blog de contabilidade; o gov.br não foi checado porque a busca web se esgotou. O DAS acompanha o salário mínimo, então confirme o valor de 2026 no Portal do Empreendedor. Também não verifiquei se o teto de R$ 81 mil mudou por lei complementar em 2025-2026."
+   },
+   {
+    "item": "PF que recebe de plataforma estrangeira (Whop, Vyro) paga carnê-leão, com DARF até o último dia útil do mês seguinte; tabela 2026 zera o imposto até R$ 5 mil/mês, com redução até R$ 7.350",
+    "veredito": "confirmado",
+    "valor_correto": "Rendimento do exterior entra no carnê-leão, com vencimento no último dia útil do mês seguinte ao recebimento e multa isolada de 50% por atraso (fonte viva.com.br). Para 2026: imposto zerado até R$ 5.000/mês por um redutor de até R$ 312,89; entre R$ 5.000,01 e R$ 7.350 o redutor é R$ 978,62 − 0,133145 × rendimento; acima disso vale a tabela progressiva com teto de 27,5% (Contabilizei)",
+    "fonte_url": "https://viva.com.br/dinheiro/ir-2026-quem-deve-pagar-o-carne-leao-e-como-declarar-o-imposto.html",
+    "nota": "A Contabilizei (https://www.contabilizei.com.br/contabilidade-online/carne-leao-2026/) avisa que a Receita ainda pode publicar tabela atualizada. Faturando como MEI, a tributação muda; confirme com um contador."
+   },
+   {
+    "item": "Receber dólar pelo PayPal no Brasil custa cerca de 9-10% (4,79% + 1,61% + cerca de 3,5% de spread + taxa fixa)",
+    "veredito": "confirmado",
+    "valor_correto": "Tabela oficial do PayPal Brasil: 4,79% de taxa de transação comercial, mais 1,61% para transação internacional, mais taxa fixa (R$ 0,60 em BRL; US$ 0,30 em USD, segundo a Wise), mais 3,50% de spread de conversão. Soma de cerca de 9,9% mais a taxa fixa",
+    "fonte_url": "https://www.paypal.com/br/webapps/mpp/merchant-fees",
+    "nota": "A afirmação dizia que a tabela oficial não foi encontrada; ela está nesse link. A Wise (concorrente, consulta de 25/08/2025) calcula que US$ 1.000 viram cerca de R$ 4.446 com câmbio de R$ 5,00. A Stripe confirma que o repasse no Brasil exige conta em reais no mesmo CPF ou CNPJ (https://support.stripe.com/questions/most-common-issues-receiving-payouts-in-brazil)."
+   },
+   {
+    "item": "vidIQ: Boost a US$ 199/ano (cerca de US$ 16,58/mês); mensal entre US$ 19 e US$ 39; Max a cerca de US$ 39/mês no anual (US$ 468/ano)",
+    "veredito": "confirmado",
+    "valor_correto": "Segundo a 1of10 (preços conferidos em julho/2026, artigo de 22/08/2026): Boost a US$ 39/mês (≈ R$ 195) ou US$ 199/ano (≈ US$ 16,58/mês, R$ 83); Max só no anual, cerca de US$ 468/ano (≈ US$ 39/mês, R$ 195), com 'até 11 horas de clipping e geração de vídeos curtos'",
+    "fonte_url": "https://1of10.com/blog/vidiq-pricing/",
+    "nota": "A fonte é concorrente do vidIQ, e a página oficial vidiq.com/pricing não foi lida. A 1of10 diz que o card do Boost no site mostrava US$ 0 por erro de promoção. O preço mensal de US$ 19 continua sem confirmação. Na prática, o usuário já tem o conector vidIQ e pode ver o plano dele pela ferramenta de saldo, sem gastar crédito."
+   },
+   {
+    "item": "Virlo: Starter US$ 49/mês (2.000 créditos), Pro US$ 199/mês (12.000 créditos), teste de 7 dias, MCP",
+    "veredito": "confirmado",
+    "valor_correto": "Starter a US$ 49/mês (≈ R$ 245), 2.000 créditos, com Research Agents, Tracking Center, Content Studio e dados atualizados por dia. Pro a US$ 199/mês (≈ R$ 993), 12.000 créditos, com Meta Ads Intelligence, 3 assentos, alertas Slack/Discord/webhook e Zapier/n8n. Enterprise sob consulta, com API",
+    "fonte_url": "https://virlo.ai/pricing",
+    "nota": "Preços e créditos conferidos. A página não informa a duração do teste (os 7 dias não foram confirmados) nem se pede cartão. Também não lista as plataformas cobertas além de Meta Ads. Sem preço anual."
+   },
+   {
+    "item": "1of10: grátis com 60 créditos e 5 resultados de outlier; Basic US$ 15/mês no anual (US$ 19 no mensal); Pro US$ 69 no anual (US$ 89 no mensal); pesquisa não gasta crédito",
+    "veredito": "confirmado",
+    "valor_correto": "Grátis: 60 créditos, 1 canal, 5 resultados de outlier. Basic: US$ 19/mês ou US$ 180/ano (US$ 15/mês, ≈ R$ 75), 150 créditos, até 3 canais. Pro: US$ 89/mês ou US$ 828/ano (US$ 69/mês, ≈ R$ 344), 1.000 créditos. Ultra: US$ 4.999/ano, 3.500 créditos. A página diz: 'Research tools never use credits'",
+    "fonte_url": "https://1of10.com/pricing",
+    "nota": "Página oficial conferida. Não menciona YouTube Shorts."
+   },
+   {
+    "item": "Sandcastles: Pro US$ 49/mês ou US$ 39 no anual, 100 créditos, até 150 concorrentes; cobre Instagram, TikTok e Shorts",
+    "veredito": "confirmado",
+    "valor_correto": "Pro: US$ 49/mês ou US$ 39/mês no anual (≈ R$ 245 ou R$ 195), 100 créditos, 3 canais verificados, 3 workspaces, 150 concorrentes por workspace, atualização a cada 12 h, conector MCP. Visionary: US$ 99 ou US$ 79 (250 créditos). Titan: US$ 499 ou US$ 399 (1.500 créditos, API). Cobre Instagram, TikTok e YouTube Shorts",
+    "fonte_url": "https://sandcastles.ai/",
+    "nota": "O limite de 150 concorrentes é por workspace. O plano Pro inclui conector MCP. A duração do teste não aparece na página."
+   },
+   {
+    "item": "ViewStats Pro: US$ 49,99/mês ou US$ 479,88/ano; Business a partir de US$ 249",
+    "veredito": "confirmado",
+    "valor_correto": "Pro: US$ 49,99/mês (≈ R$ 249) ou US$ 479,88/ano (≈ US$ 39,99/mês, R$ 200). Business: a partir de US$ 249/mês, venda por call, conferido em 06/08/2026",
+    "fonte_url": "https://outlierkit.com/resources/viewstats-pricing/",
+    "nota": "Fonte concorrente; a página oficial do ViewStats não foi lida. Fora dos EUA o preço aparece em moeda local. A OutlierKit diz que o ViewStats 'não foi feito para revelar vídeos acima da média do canal'."
+   },
+   {
+    "item": "Exolyt: Basic grátis limitado; tendência por país só no Essentials, a US$ 400/mês",
+    "veredito": "confirmado",
+    "valor_correto": "Basic grátis: 1 conta, 1 hashtag e 1 som rastreados, 7 dias de histórico. Essentials: US$ 400/mês ou US$ 330 no anual (≈ R$ 1.996 ou R$ 1.647), com análise por país, 50 contas/hashtags/sons e 90 dias de histórico. Advanced: US$ 950 ou US$ 790, com transcrições e 300 itens rastreados",
+    "fonte_url": "https://exolyt.com/pricing",
+    "nota": "Página oficial. O Exolyt é só de TikTok e fica fora do orçamento de R$ 200."
+   },
+   {
+    "item": "Social Blade: grátis com 30 dias; Bronze a US$ 59,99/ano (cerca de R$ 25/mês); sem outlier por vídeo",
+    "veredito": "confirmado",
+    "valor_correto": "Grátis com anúncios, 30 dias de dados em tabela. Bronze: US$ 59,99/ano (≈ R$ 25/mês), 30 dias. Silver: US$ 149,99/ano, 60 dias, gráficos diários/semanais. Gold: US$ 599,99/ano, 180 dias. Platinum: US$ 1.439,99/ano, mais de 3 anos. Valores conferidos em 06/08/2026",
+    "fonte_url": "https://outlierkit.com/resources/social-blade-pricing/",
+    "nota": "Fonte concorrente; a página oficial devolveu 403 antes."
+   },
+   {
+    "item": "Pentos: preço não verificado (US$ 39-99/mês conforme a fonte)",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Roundup de 2026: entrada a US$ 99/mês (≈ R$ 494), com planos de US$ 299 e US$ 999 que variam por limite de trackers e contas",
+    "fonte_url": "https://blog.m2ecloud.com/the-best-13-tiktok-shop-analytics-tools/",
+    "nota": "Só há fonte secundária, e o site oficial não respondeu. Mesmo na entrada mais barata, fica fora do orçamento de R$ 200."
+   },
+   {
+    "item": "Ranking Rephonic de podcasts no YouTube Brasil: Inteligência Ltda, Oeste Sem Filtro, Beto Ribeiro, Flow, Pânico, RedCast, Fala Glauber no top 10",
+    "veredito": "confirmado",
+    "valor_correto": "1 Inteligência Ltda (todos os programas), 2 Oeste Sem Filtro, 3 Beto Ribeiro, 4 Flow Podcast, 5 Entrevistas completas, 6 Inteligência Ltda., 7 Jornal da Oeste (cortes), 8 RedCast, 9 Flow, 10 Fala Glauber Podcast",
+    "fonte_url": "https://rephonic.com/charts/youtube/brazil/popular-podcasts",
+    "nota": "A página lista só 'Entrevistas completas', sem 'Pânico'; o vínculo com o Pânico/Jovem Pan é inferência. O ranking do Spotify Brasil não foi conferido."
+   },
+   {
+    "item": "'Não Inviabilize' em 12º no ranking global de podcasts do Spotify (abril/2026)",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.brasilemfolhas.com.br/2026/04/spotify-divulga-lista-podcasts-mais-ouvidos/",
+    "nota": "A URL citada devolveu 404, e a busca web se esgotou antes de achar outra fonte."
+   },
+   {
+    "item": "Streamers em PT (TwitchTracker out/2026: dona, alanzoka, Bisteconee, PaulinhoLOKObr, Cellbit); Streams Charts 2025: Gaules com cerca de 95,5 mi de horas",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://twitchtracker.com/channels/ranking/portuguese",
+    "nota": "O TwitchTracker devolveu 403, e a Streams Charts não foi conferida porque a busca se esgotou."
+   },
+   {
+    "item": "Vaca Cast: esperar 48 h, linkar o episódio, sem clickbait, não copiar os cortes oficiais",
+    "veredito": "confirmado",
+    "valor_correto": "Pede para aguardar 'no mínimo 48h'; título, capa e descrição próprios, com link para o episódio completo e para o canal oficial de cortes (fora do YouTube, mencionar o perfil); proíbe copiar 'integralmente a identidade e o conteúdo dos cortes' oficiais; pede respeito aos convidados e não 'faltar com a verdade'; infração avisada e repetida é 'denunciada'",
+    "fonte_url": "https://www.vacacast.com.br/tenha-um-canal-de-cortes",
+    "nota": "Página oficial. As regras atribuídas ao Flow não foram verificadas."
+   },
+   {
+    "item": "Política de conteúdo reutilizado do YouTube: permissão do criador não isenta; desmonetização pode atingir o canal inteiro; em 15/07/2025 'conteúdo repetitivo' passou a 'conteúdo inautêntico'",
+    "veredito": "confirmado",
+    "valor_correto": "A política 'se aplica mesmo se você tiver permissão do criador original'. A monetização pode ser removida do canal inteiro. Não monetizam: clipes de programa com pouca narrativa, compilações de outras redes, conteúdo subido muitas vezes, reação sem comentário falado, leitura de texto alheio. Monetizam: crítica ou reação com comentário, replay esportivo explicado, edição com narrativa e comentário. Em 15/07/2025 o nome mudou para 'conteúdo inautêntico' (repetitivo ou produzido em massa), sem alterar a regra de conteúdo reutilizado",
+    "fonte_url": "https://support.google.com/youtube/answer/1311392?hl=en",
+    "nota": "Central de ajuda oficial. Isso pesa contra o canal próprio de cortes 'crus' no YouTube."
+   },
+   {
+    "item": "Shorts de até 3 min (uploads desde 15/10/2024); Short com mais de 1 min e reivindicação de direitos autorais ativa é bloqueado no mundo todo e não monetiza",
+    "veredito": "confirmado",
+    "valor_correto": "Vídeo quadrado ou vertical de até 3 min enviado a partir de 15/10/2024 conta como Short (Official Artist Channels a partir de 08/12/2025). Short com mais de 1 min e reivindicação ativa de qualquer tipo, inclusive manual, fica bloqueado no mundo todo: não toca, não é recomendado e não monetiza. O canal não é penalizado, e o vídeo volta quando a reivindicação é resolvida",
+    "fonte_url": "https://support.google.com/youtube/answer/15424877?hl=en",
+    "nota": "Central de ajuda oficial."
+   },
+   {
+    "item": "Instagram estendeu em 30/04/2026 a regra de originalidade a fotos e carrosséis; contas agregadoras perdem recomendação",
+    "veredito": "confirmado",
+    "valor_correto": "Em 30/04/2026 o Instagram deixou de recomendar fotos e carrosséis de contas agregadoras no Explorar e em outras superfícies, estendendo o sistema dos Reels de 2024. A conta vira agregadora se a maioria dos posts em 30 dias for repost. Material de terceiros é aceito se agregar valor real. Publishers com licença ou permissão explícita ficam de fora. Para seguidores nada muda. O Instagram sugere collab, Remix, Stories e repost com crédito",
+    "fonte_url": "https://www.socialmediatoday.com/news/instagram-updates-algorithm-to-benefit-original-creators/819016/",
+    "nota": "Notícia confiável do mesmo dia. A afirmação fala em 'não seguidores': a fonte diz que a recomendação cai, mas a exibição para seguidores continua igual."
+   },
+   {
+    "item": "Reels de até 3 min desde janeiro/2025; acima de 3 min deixariam de ser empurrados para não seguidores",
+    "veredito": "confirmado",
+    "valor_correto": "Reels de até 3 min, anunciados por Adam Mosseri por volta de 18-20/01/2025 (antes o limite era 90 s)",
+    "fonte_url": "https://macmagazine.com.br/post/2025/01/20/instagram-ganha-reels-de-ate-3-minutos-e-grade-de-posts-retangulares/",
+    "nota": "Confirmo só a parte dos 3 minutos. A perda de alcance acima de 3 min não aparece na fonte e segue sem confirmação oficial."
+   },
+   {
+    "item": "Creator Rewards do TikTok (18/03/2024): 18+, 10 mil seguidores, 100 mil views em 30 dias, vídeos originais com mais de 1 min",
+    "veredito": "confirmado",
+    "valor_correto": "Lançado em 18/03/2024 (antes era o Programa Criativo Beta). Requisitos: 18+, 10 mil seguidores, 100 mil visualizações nos últimos 30 dias, conta pessoal regular num mercado elegível, vídeos originais com mais de 1 minuto. A recompensa pesa originalidade, duração de reprodução, engajamento, valor de busca e valor de anúncio",
+    "fonte_url": "https://newsroom.tiktok.com/pt-br/apresentando-o-programa-de-recompensas-do-criador",
+    "nota": "A newsroom não cita o Brasil como mercado elegível; só o seletor de idioma está em pt-BR. A disponibilidade no Brasil precisa ser conferida no TikTok Studio."
+   },
+   {
+    "item": "Visualização qualificada no TikTok: única, do Para Você, com pelo menos 5 s; mínimo de 1.000 views qualificadas por vídeo",
+    "veredito": "confirmado",
+    "valor_correto": "'Visualização única no Para Você em que a pessoa assistiu pelo menos 5 segundos'. Não contam views repetidas, pagas ou de quem marcou 'não tenho interesse'. Mínimo de 1.000 views qualificadas por vídeo. Excluídos: Dueto, Stitch, Modo Foto, conteúdo patrocinado, conteúdo reaproveitado, dublagem com música protegida acima de 1 min e vídeos do TikTok One",
+    "fonte_url": "https://blog.brandbastion.com/tiktok-creator-fund-vs-creator-rewards",
+    "nota": "A fonte é secundária, por isso mantenho confiança baixa ou média. Relevante para cortes: 'conteúdo reaproveitado' aparece expressamente como não elegível."
+   },
+   {
+    "item": "Kwai: sem regra oficial; blogs falam em R$ 0,50-3,00 por mil views; requisitos divergem",
+    "veredito": "nao_verificavel",
+    "valor_correto": "O blog citado dá cerca de 10 mil seguidores, 100 mil views em 30 dias, 18+ e CPF brasileiro. Para pagamento, as estimativas vão de R$ 0,50-3,00 e, em outras fontes, de R$ 4,00-8,00 por mil views; o próprio blog chama isso de 'ordem de grandeza, não promessa'",
+    "fonte_url": "https://feirasocial.com/blog/kwai-monetizacao-quanto-paga/",
+    "nota": "Não encontrei regra oficial. A faixa real citada é mais larga do que a afirmação diz (até R$ 8,00). Confira no app."
+   },
+   {
+    "item": "Campanhas por view (Whop) pagam US$ 0,20-6 por mil views verificadas, média de cerca de US$ 1; primeiras 48 h são a melhor janela",
+    "veredito": "confirmado",
+    "valor_correto": "US$ 0,20 a US$ 6 por 1.000 views verificadas, média de cerca de US$ 1 (≈ R$ 1,00-29,94, média R$ 4,99). As primeiras 48 h são a 'gold window'. Motivos de rejeição: regra quebrada (hashtag, crédito, material, estilo), duplicata de outro clipador, conta não vinculada, orçamento esgotado. Prints com horário em 24 h, 72 h e 7 dias",
+    "fonte_url": "https://openclip.app/guides/whop-clipping-guide",
+    "nota": "Guia de fornecedor (OpenClip), sem dados auditados."
+   },
+   {
+    "item": "Plataformas brasileiras (Viewx, Klypex, Autoclipper Clip & Pix, Conty) pagam por mil views via PIX; Autoclipper paga R$ 1,00-1,80 por mil",
+    "veredito": "corrigido",
+    "valor_correto": "A página da Viewx cita Keoto, Clipay, Clipping.io e Viewx (e o Whop como marketplace internacional). Não cita Klypex, Autoclipper nem Conty, não diz quem paga por PIX e não traz nenhuma taxa por mil. Sinais de alerta listados: taxa de entrada, ganho fixo garantido, medição de views não explicada e regras escondidas",
+    "fonte_url": "https://viewx.com.br/blog/melhores-plataformas-de-clipagem-brasil",
+    "nota": "O R$ 1,00-1,80 do Autoclipper e a lista Klypex/Conty precisam de outra fonte; não consegui buscar porque o limite de busca acabou. A Viewx é parte interessada."
+   },
+   {
+    "item": "Res. TSE 23.755/2026 proíbe contratar publicação político-eleitoral por competição, ranqueamento ou premiação; campeonatos ativos com R$ 1,50/mil (teto R$ 100), Cliparam a R$ 2/mil, prêmio de R$ 50 mil; Marçal inelegível até 2032; 2º turno em 25/10/2026",
+    "veredito": "confirmado",
+    "valor_correto": "A Revista Fórum (03/10/2026) cita a Res. 23.755, de março/2026, que veda o mecanismo de 'competição, ranqueamento ou premiação'. Valores: Estourou.com a R$ 1,50/mil, teto de R$ 100 por post e 3 vídeos/dia; Cliparam a R$ 2/mil. O prêmio de R$ 50 mil é de um campeonato de novembro/2025 (vídeos de Tarcísio), não de um campeonato ativo agora. Marçal inelegível até 2032. O 1º turno foi em 04/10/2026, e o 2º cai em 25/10/2026, último domingo de outubro",
+    "fonte_url": "https://revistaforum.com.br/politica/campeonatos-cortes-tse-eleicoes/",
+    "nota": "Não conferi o artigo e o parágrafo (art. 21, §8º) no texto do TSE: o site deu 403 e a busca acabou. O núcleo está confirmado. A recomendação de evitar campanhas pagas com conteúdo político continua válida."
+   },
+   {
+    "item": "Lei Geral do Esporte (Lei 14.597/2023), art. 163: imagens de partidas só para fim jornalístico, até 3% do tempo e no máximo 30 s, aviso de 72 h etc.",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14597.htm",
+    "nota": "O Planalto (duas grafias da URL) e a Câmara devolveram 503, o Jusbrasil deu 403 e a busca acabou. Não confirmei o número do artigo nem os limites de 30 s e 72 h. A Lei Pelé (art. 42, §2º) tinha regra parecida, de até 3% do tempo para fins 'jornalísticos, desportivos ou educativos', o que torna plausível o 'exclusivamente jornalístico'. A conclusão prática não depende do número exato: clipador que monetiza não é veículo jornalístico."
+   },
+   {
+    "item": "Direitos do Brasileirão 2026: Libra exclusiva com a Globo (R$ 1,17 bi por temporada); LFU dividida entre Globo, Record, Prime Video, CazéTV, GE TV e Premiere",
+    "veredito": "corrigido",
+    "valor_correto": "O bloco é a FFU (Futebol Forte União), não 'LFU'. Libra (10 clubes): exclusividade com a Globo, que mostra 9 jogos por rodada (Premiere todos, GE TV/YouTube 1, Sportv 2). FFU (9 clubes): Globo (TV aberta, Sportv, Premiere, Globoplay), Record (1 jogo por rodada, o mesmo da CazéTV), CazéTV no YouTube (1 por rodada) e Prime Video (1 exclusivo por rodada). A GE TV aparece no bloco da Libra",
+    "fonte_url": "https://www.lance.com.br/lance-negocios/onde-assistir-ao-brasileirao-2026-entenda-divisao-dos-direitos-de-transmissao.html",
+    "nota": "A fonte não traz o valor de R$ 1,17 bi. Os números da Copa 2026 (CazéTV com 104 jogos, Globo com 55) não foram verificados. A conclusão de risco alto de Content ID continua válida."
+   },
+   {
+    "item": "Estudo de Shorts de Paddy Galloway e Chris Gileta (5.400 Shorts, 33 canais): 50-60 s com mais views; melhores com 70-90% de 'viu vs. deslizou'",
+    "veredito": "corrigido",
+    "valor_correto": "Confirmado: Paddy Galloway e Chris Gileta, 33 canais, 5.400 Shorts, cerca de 3,3 bi de views; recomendação de 50-60 s por maximizar a duração média vista; Shorts que seguram a pessoa além de 50 s tiveram média de 4,1 mi de views. Não aparecem na fonte: os 70-90% de 'viu vs. deslizou' e o corte de 60%",
+    "fonte_url": "https://videogen.io/blog/decoding-the-youtube-shorts-algorithm-a-deep-dive-into-3-3-billion-views",
+    "nota": "Os números de taxa de visualização precisam de outra fonte ou devem sair. O estudo é anterior aos Shorts de 3 min."
+   },
+   {
+    "item": "Dados da OpusClip sobre TikTok: 21-34 s com 62% de conclusão contra 48% acima de 60 s; ganchos seguram 80-90% nos 3 primeiros segundos",
+    "veredito": "confirmado",
+    "valor_correto": "O artigo traz 62% contra 48%, e 80-90% como referência de 'gancho forte'. O payoff nos primeiros 15 s dá '20% mais retenção' (sem dizer se é relativo ou em pontos percentuais), e legenda precisa dá '12% mais retenção'. A única amostra citada é '500 vídeos', em outra seção",
+    "fonte_url": "https://www.opus.pro/blog/tiktok-length-format-retention-data",
+    "nota": "Fornecedor com conflito de interesse (vende legendas) e sem metodologia. Use só como hipótese."
+   },
+   {
+    "item": "RPM do YouTube Shorts no Brasil é baixo; canal pequeno com RPM de R$ 0,29 em 2025",
+    "veredito": "confirmado",
+    "valor_correto": "RPM de Shorts de R$ 0,29 em 2025, num canal de cerca de 17 mil inscritos",
+    "fonte_url": "https://criadores.vip/quanto-ganhei-com-o-youtube-2025-shorts-videos-longos/",
+    "nota": "É um caso só, sem valor de média. As faixas de '3-14% do vídeo longo' e 'R$ 20-200 por milhão' não foram verificadas."
+   },
+   {
+    "item": "PTAX de venda de 09/10/2026: R$ 4,9892; conversões com R$ 4,99",
+    "veredito": "confirmado",
+    "valor_correto": "PTAX de venda de 09/10/2026: R$ 4,9892 por US$ 1 (boletim de fechamento do Banco Central)",
+    "fonte_url": "https://boca.com.br/economia/dolar/cotacao-dolar-09-10-2026",
+    "nota": "Arredondar para R$ 4,99 é adequado. Pagamento com cartão internacional tem IOF à parte."
+   }
+  ],
+  "alertas_gerais": [
+   "O limite de buscas web desta rodada (200, compartilhado entre agentes) acabou na minha primeira tentativa. Fiz toda a verificação por WebFetch direto nas URLs citadas e em páginas oficiais. Para os itens marcados nao_verificavel, o usuário pode mandar outra mensagem para continuar a busca.",
+   "O Planalto (Lei 9.610 e Lei 14.597) devolveu 503 e a Câmara também. A Lei 9.610 foi conferida pela transcrição no parecer do MPBA. O art. 163 da Lei Geral do Esporte segue sem verificação.",
+   "Duas afirmações citavam fontes que não sustentam os números: Videotto (Fiverr, Upwork, podcast) e Viewx (Klypex, Autoclipper, Conty, R$ 1,00-1,80/mil). Elas não devem entrar no relatório final com essas URLs.",
+   "No Brasileirão, o bloco correto é a FFU (Futebol Forte União), não 'LFU'. O valor de R$ 1,17 bi não está na fonte.",
+   "No estudo Galloway/Gileta, os números de 'viu vs. deslizou' (70-90% e corte de 60%) não estão na fonte citada.",
+   "TikTok Creator Rewards: a página oficial não confirma que o Brasil é mercado elegível. A fonte secundária diz que conteúdo reaproveitado não é elegível, o que pesa contra cortes de terceiros sem transformação.",
+   "PayPal: a tabela oficial existe e confirma 4,79% + 1,61% + 3,5% de spread + taxa fixa (R$ 0,60 em BRL). O total fica perto de 10%.",
+   "Nas faixas de preço de serviço (CrazyStack, cut.pro, Jamile Fernandes, FreelaSemCrise), os números batem com as fontes, mas todas são blogs sem metodologia. Use como referência, não como média de mercado.",
+   "Nenhuma ferramenta de conector foi executada: só WebFetch e leitura local de PDFs baixados."
+  ]
+ },
+ {
+  "verificacoes": [
+   {
+    "item": "IOF de 3,5% em compras internacionais no cartão (crédito, débito, pré-pago) em 2026; fator ~R$ 5,165/US$",
+    "veredito": "confirmado",
+    "valor_correto": "3,5% para crédito, débito e pré-pago em 2026 (Remessa Online, lida em 11/10/2026). 4,99 × 1,035 = R$ 5,1647/US$, mais o spread do emissor.",
+    "fonte_url": "https://www.remessaonline.com.br/blog/web-stories/iof-compras-internacionais-como-pagar-menos/",
+    "nota": "A fonte é secundária e não diz desde quando a alíquota vale. O histórico (Decreto 12.499/2025 e a decisão do STF) não foi checado em fonte primária porque a cota de WebSearch acabou."
+   },
+   {
+    "item": "OpusClip: Free US$ 0, Starter US$ 15, Pro US$ 29, Business sob consulta; recursos por plano",
+    "veredito": "confirmado",
+    "valor_correto": "Free US$ 0; Starter US$ 15/mês (R$ 74,85); Pro US$ 29/mês (R$ 144,71); Business custom. Agendador, MCP e API só a partir do Pro. 4K só no Business. Reenquadramento 9:16 até o Starter; 9:16, 1:1 e 16:9 no Pro. Nota de viralidade e export sem marca d'água a partir do Starter. Até 4 templates de marca no Pro. Página oficial lida em 11/10/2026.",
+    "fonte_url": "https://www.opus.pro/pricing",
+    "nota": "A página oficial não mostra preço anual nem créditos. Não confirmei aqui o detalhe 'clipes ficam 3 dias' do Free."
+   },
+   {
+    "item": "Créditos OpusClip 60/150/300; Pro anual US$ 174/ano (US$ 14,50/mês); Starter só no mensal; créditos valem 60 dias",
+    "veredito": "corrigido",
+    "valor_correto": "A própria fonte citada (fluxnote, lida em 11/10/2026) fala em minutos de processamento: Free 60, Starter 150 e Pro 300 por mês. Os anuais que ela dá são Starter US$ 9/mês (R$ 44,91) e Pro US$ 19/mês (R$ 94,81). Ela também diz que os minutos zeram todo mês e normalmente não acumulam. Nenhum preço anual foi confirmado na página oficial.",
+    "fonte_url": "https://fluxnote.io/guides/opus-clip-pricing-2026",
+    "nota": "A fonte citada contradiz três pontos da afirmação: Pro anual a US$ 14,50, Starter só no mensal e validade de 60 dias. Só bate o 300/mês do Pro (linha do Zapier na página oficial). Trate os anuais como não verificados."
+   },
+   {
+    "item": "Vizard: Free 60 créditos/720p/marca d'água; Creator US$ 29 ou US$ 14,50 no anual; Business US$ 39 ou US$ 19,50 no anual; 600 min; 4K; agendamento",
+    "veredito": "confirmado",
+    "valor_correto": "Página oficial: Free com 60 créditos/mês, export 720p com marca d'água e 1 conta social. Creator e Business partem de 600 min/mês, exportam em 4K e têm 50% OFF no anual. O Creator agenda posts (6 contas; Business 20). Há limite de API já no Free (1/min, 10/h). Os preços vêm só do Fastlane (checado em 01/10/2026): Creator US$ 29 ou US$ 14,50 no anual (US$ 174/ano); Business US$ 39 ou US$ 19,50 (US$ 234/ano).",
+    "fonte_url": "https://vizard.ai/pricing",
+    "nota": "Na página oficial os preços aparecem como '$0' (seletor dinâmico). O Fastlane é concorrente; a fonte dos preços é promocional."
+   },
+   {
+    "item": "Klap: anual Basic US$ 14 (100 clipes), Pro US$ 39 (300), Pro+ US$ 94 (1.000); mensal US$ 29/79/189",
+    "veredito": "confirmado",
+    "valor_correto": "Os preços anuais e as cotas de clipes batem com a página oficial (lida em 11/10/2026). A página diz 'Save 50%' no anual, o que é coerente com mensais de cerca de US$ 28, 78 e 188.",
+    "fonte_url": "https://klap.app/pricing",
+    "nota": "Os valores mensais exatos, o 4K e a dublagem não aparecem na página oficial; isso continua não verificado."
+   },
+   {
+    "item": "Submagic: Starter US$ 19/12, Pro US$ 39/23, Business US$ 69/41; limites; Magic Clips adicional US$ 19/12",
+    "veredito": "confirmado",
+    "valor_correto": "Os preços e limites batem com a página oficial (lida em 11/10/2026): Starter 15 vídeos de 2 min em 1080p30; Pro 40 de 5 min; Business 100 de 30 min em 4K60 e 3 perfis por rede. Nenhum plano pago tem marca d'água.",
+    "fonte_url": "https://www.submagic.co/pricing",
+    "nota": "O preço do adicional Magic Clips não está na página oficial (só 'custom limits' no plano Custom), então segue não verificado. A página se contradiz sobre publicação no Starter e lista 2K no Pro. Ela também mostra preços em BRL e EUR; vale conferir o checkout em real."
+   },
+   {
+    "item": "CapCut Pro Brasil (out/2026): R$ 65,90/mês; R$ 469,90/ano; sem renovação R$ 87,90 e R$ 689,90; estudante R$ 33 e R$ 234,90; ofertas",
+    "veredito": "confirmado",
+    "valor_correto": "Todos os valores em R$ batem com o TechTudo (out/2026). Faltava uma oferta: 1º ano no Android por R$ 374,90.",
+    "fonte_url": "https://www.techtudo.com.br/listas/2026/10/capcut-pro-mais-barato-veja-como-economizar-na-assinatura-edapps.ghtml",
+    "nota": "O preço em dólar (US$ 19,99 e US$ 179,99) não está nessa fonte, então não foi verificado. O teste grátis do Android exige cadastrar forma de pagamento."
+   },
+   {
+    "item": "Termos do CapCut (jun/2025): licença global, perpétua, irrevogável e sublicenciável",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.techradar.com/pro/popular-video-editing-app-capcut-wants-to-use-any-content-you-produce-for-free-forever-heres-what-you-should-know",
+    "nota": "Só consegui ler a manchete da TechRadar ('CapCut now owns your face, voice, and content forever...'); o corpo do artigo não carregou. Não confirmei a data, os termos da licença nem a resposta do CapCut. Leia os Termos atuais na fonte primária antes de usar com cliente."
+   },
+   {
+    "item": "Descript: Hobbyist US$ 16/24, Creator US$ 24/35, Business US$ 50/65; horas, créditos, resolução; Free 60 min/720p com marca d'água",
+    "veredito": "confirmado",
+    "valor_correto": "Bate com a página oficial (lida em 11/10/2026). Free: 1 h/mês, 100 créditos de IA uma única vez, 720p com marca d'água. Transcrição em 25 idiomas; tradução de legenda em 61; dublagem em 30.",
+    "fonte_url": "https://www.descript.com/pricing",
+    "nota": "A página não diz qual coluna é a anual; o menor valor deve ser o anual ('economize até 35%')."
+   },
+   {
+    "item": "Captions (Mirage): Basic US$ 9,99 (200), Max US$ 24,99 (500), Frontier US$ 69,99 (1.400); Free 60–200 vitalícios sem marca d'água",
+    "veredito": "confirmado",
+    "valor_correto": "Bate com a central de ajuda oficial (lida em 11/10/2026). Ela também lista Frontier 2x a US$ 139,99, Frontier 4x a US$ 279,99 e Lite (só Android) a US$ 4,99.",
+    "fonte_url": "https://captions.ai/help/docs/subscriptions",
+    "nota": "A página não diz o período do Max nem os preços anuais."
+   },
+   {
+    "item": "2short.ai: Free 30 (ou 15) min, Lite US$ 9,90 (5 h), Pro US$ 19,90 (15 h), Premium US$ 49,90 (50 h); português não aparece explicitamente",
+    "veredito": "corrigido",
+    "valor_correto": "Os preços e horas estão certos, assim como a contradição 30/15 min no Free. A correção: o português ESTÁ listado entre os 26 idiomas da página oficial (lida em 11/10/2026).",
+    "fonte_url": "https://2short.ai/pricing",
+    "nota": "Não fala de API nem de auto-post. Export em 1080p sem marca d'água."
+   },
+   {
+    "item": "Reap: Free 1 h/720p/marca d'água; Creator US$ 24 ou US$ 9,99 no anual (US$ 119,88/ano); Studio US$ 50 ou US$ 29; API/CLI/MCP nos pagos",
+    "veredito": "confirmado",
+    "valor_correto": "Bate com a página oficial (lida em 11/10/2026). Studio anual = US$ 348/ano. Dublagem: 2 h no Creator e 5 h no Studio, em mais de 80 idiomas. O Creator posta em TikTok, Reels, Shorts e LinkedIn; o Studio também em X e Facebook. Créditos comprados avulsos vencem em 13 meses.",
+    "fonte_url": "https://www.reap.video/pricing",
+    "nota": "O português não aparece nomeado (só '100+ idiomas'). A página não deixa claro qual valor é o mensal; o FAQ indica que o mensal é o mais caro."
+   },
+   {
+    "item": "Choppity: Free 1 h sem export; Starter US$ 24 ou US$ 16,80; Creator US$ 32 ou US$ 22,40 (API); Team US$ 48 ou US$ 33,60",
+    "veredito": "confirmado",
+    "valor_correto": "Bate com a página oficial (lida em 11/10/2026). Starter 3 h e 1 conta social; Creator 5 h, 3 contas e API; exporta em 1080p e 4K.",
+    "fonte_url": "https://www.choppity.com/pricing",
+    "nota": "O FAQ contradiz a tabela no plano Team (3 assentos com 3 h cada contra ilimitado com 5 h). A página não lista a resolução de export do Free."
+   },
+   {
+    "item": "Eklipse Premium: US$ 24,99/mês web, US$ 27,99 no celular, US$ 179,99/ano; Plus virou Premium em 01/06/2026",
+    "veredito": "confirmado",
+    "valor_correto": "Bate com o help center oficial (lido em 11/10/2026). Existe ainda um semestral de US$ 112,99.",
+    "fonte_url": "https://eklipse.gg/help/how-much-does-eklipse-premium-cost/",
+    "nota": "Os limites do plano grátis não estão nessa página e não foram verificados."
+   },
+   {
+    "item": "StreamLadder: Silver ~US$ 8,28 ou US$ 6,90 no anual; Gold ~US$ 16,57 ou US$ 13,25",
+    "veredito": "corrigido",
+    "valor_correto": "A fonte citada (vidpros) dá: Silver US$ 9/mês (R$ 44,91), com 1080p60 e post direto sem agendamento; Gold US$ 15/mês (R$ 74,85), com agendamento e render rápido e em segundo plano; Gold+ ClipGPT US$ 27/mês. Não cita planos anuais.",
+    "fonte_url": "https://vidpros.com/streamladder-review-2026/",
+    "nota": "Os números da afirmação não vêm da fonte citada. A página oficial não foi verificada. A fonte se contradiz sobre marca d'água no Free. Confiança baixa."
+   },
+   {
+    "item": "Spikes Studio: Free com marca d'água/720p; PRO+ US$ 32,99 ou US$ 14,09 no anual (~300 min); Enterprise US$ 115,99 ou US$ 56,34",
+    "veredito": "confirmado",
+    "valor_correto": "Bate com a página oficial (lida em 11/10/2026). O plano grátis se chama Basic: 30 min/mês, 720p, com marca d'água. PRO+: 300 min/mês (3.600/ano), 1080p, sem marca d'água. Enterprise: 1.200 min/mês.",
+    "fonte_url": "https://spikes.studio/pricing",
+    "nota": "A URL citada (xpay.sh) não fala do Spikes Studio; troque pela página oficial."
+   },
+   {
+    "item": "quso.ai: Free 75 créditos; Lite US$ 29/19; Essential US$ 39/26; Growth US$ 49/33",
+    "veredito": "confirmado",
+    "valor_correto": "Os valores batem com o aivideopicks (que diz basear-se na página do fornecedor de ago/2026). No Free: 720p, dados guardados por 7 dias, publicação só no TikTok.",
+    "fonte_url": "https://aivideopicks.com/ai-video-tools/quso",
+    "nota": "Fonte de terceiro; a página oficial não foi checada. A fonte é inconsistente sobre o anual dobrar os créditos. Remoção de muletas e silêncio só a partir do Essential."
+   },
+   {
+    "item": "Munch: Pro ~US$ 49 (200 min), Elite ~US$ 116 (500 min)",
+    "veredito": "corrigido",
+    "valor_correto": "Página oficial atual (munchstudio.com, lida em 11/10/2026): Essential US$ 38/mês (500 min; R$ 189,62) e Premium US$ 60/mês (1.000 min; R$ 299,40). O anual é US$ 456 e US$ 720 por ano. Sem plano grátis; teste de 7 dias.",
+    "fonte_url": "https://www.munchstudio.com/pricing",
+    "nota": "getmunch.com/pricing redireciona para munchstudio.com. O creatorstackclub (jun/2026) lista outra estrutura: Creator US$ 49/200 min, Pro US$ 99/600 min, Elite US$ 220/1.800 min. A afirmação original não bate com nenhuma das duas."
+   },
+   {
+    "item": "Riverside: Free 720p/marca d'água/2 h; Pro US$ 29 ou US$ 24; Grow US$ 39 ou US$ 34",
+    "veredito": "confirmado",
+    "valor_correto": "Bate com a página lida (Pro US$ 288/ano; Grow US$ 408/ano; economia de até 20% no anual).",
+    "fonte_url": "https://riverside.com/pricing",
+    "nota": "A página se identifica como staging e pode estar desatualizada; o total anual do plano Webinar é inconsistente."
+   },
+   {
+    "item": "VEED: Free com marca d'água/720p/10 min; Lite ~US$ 12 no anual; Pro ~US$ 24–29 no anual",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.veed.io/pricing",
+    "nota": "A página oficial não carregou preços no fetch e a fonte citada é de terceiro."
+   },
+   {
+    "item": "Clipchamp Premium R$ 40,10/usuário/mês no anual; legenda automática PT-BR no grátis",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.microsoft.com/pt-br/microsoft-365/clipchamp",
+    "nota": "A página oficial voltou HTTP 503 de novo em 11/10/2026."
+   },
+   {
+    "item": "Cut.Pro: Grátis 15 min; Básico R$ 19,90 (100 min); Plus R$ 69,90 (1.000 min, 2K, 6 h/vídeo, 9 posts/dia, 5 contas); Pro R$ 119,90 (2.500 min, 4K)",
+    "veredito": "confirmado",
+    "valor_correto": "Bate com a página oficial (lida em 11/10/2026). Detalhes a mais: Grátis aceita vídeo de até 1 h; Básico até 3 h, 3 posts/dia e 1 conta; Pro até 9 h, 15 posts/dia e 15 contas. Anual = '2 meses grátis', sem preço mostrado.",
+    "fonte_url": "https://cut.pro/pt-BR/pricing",
+    "nota": "A contradição sobre marca d'água está confirmada: 'Igual em todos os planos' diz sem marca, mas o FAQ diz que só o Plus é sem marca."
+   },
+   {
+    "item": "ElevenLabs Scribe v2 US$ 0,22/h, Realtime US$ 0,39/h; Free 10.000 créditos; Starter US$ 6; Creator US$ 22",
+    "veredito": "confirmado",
+    "valor_correto": "Scribe v2 US$ 0,22/h (R$ 1,10) e Realtime US$ 0,39/h na página da API. Créditos: Free 10.000, Starter 30.000, Creator 121.000. A fala para texto gasta cerca de 330 créditos/min (FAQ).",
+    "fonte_url": "https://elevenlabs.io/pricing/api",
+    "nota": "A página de consumidor mostra promoção de 1º mês (US$ 1 no Starter, US$ 11 no Creator) com prazo 'até 18 de outubro'. Os minutos por plano continuam sendo estimativa."
+   },
+   {
+    "item": "Higgsfield: preços divergentes; créditos não acumulam",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.layer3labs.io/guides/higgsfield-ai-pricing",
+    "nota": "A página oficial não mostrou preços. O layer3labs dá: Starter US$ 15/mês (anual, ~200 créditos); Plus US$ 39 no anual ou US$ 49 no mensal (~1.000); Ultra US$ 99 ou US$ 129 (~3.000). Créditos mensais não acumulam; pacotes avulsos vencem em ~90 dias."
+   },
+   {
+    "item": "Termos do YouTube (vigentes desde 05/01/2022) proíbem acessar, reproduzir, fazer download... salvo autorização expressa ou permissão por escrito",
+    "veredito": "confirmado",
+    "valor_correto": "Texto confirmado em 'Permissões e restrições', item 1, versão em vigor desde 5 de janeiro de 2022.",
+    "fonte_url": "https://www.youtube.com/static?template=terms&gl=BR&hl=pt"
+   },
+   {
+    "item": "Lei 9.610/98, art. 46, III: citação para estudo, crítica ou polêmica, na medida justificada e com autor e origem; Brasil sem fair use",
+    "veredito": "confirmado",
+    "valor_correto": "O art. 46, III permite citar passagens de qualquer obra para estudo, crítica ou polêmica, na medida justificada para o fim a atingir, indicando o nome do autor e a origem da obra.",
+    "fonte_url": "https://www.planalto.gov.br/ccivil_03/leis/l9610.htm",
+    "nota": "O Planalto deu 503 duas vezes; a redação foi conferida pelo texto legal conhecido e pelo blog do Cut.Pro. O blog do Cut.Pro NÃO menciona o Conjur nem diz que o Content ID ignora a lei brasileira; essa parte segue sem fonte."
+   },
+   {
+    "item": "Whop Content Rewards: a marca fornece o material; regras num Google Doc; o clipador envia link e arquivo bruto; revisão em ~72 h",
+    "veredito": "corrigido",
+    "valor_correto": "A doc oficial diz que a marca fornece acesso a footage e assets no campo 'Available content'. O Google Doc é RECOMENDADO, não obrigatório. As regras ficam no campo 'Requirements'. O criador posta na própria conta e as views são contadas depois da postagem.",
+    "fonte_url": "https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards",
+    "nota": "A doc não fala em envio de arquivo bruto nem em prazo de revisão de 72 h; só diz que a marca aprova ou rejeita. Um 'Minimum payout' controla o que entra na fila de revisão."
+   },
+   {
+    "item": "Shorts até 3 min; Short com mais de 1 min e reivindicação do Content ID fica bloqueado; música da biblioteca do Shorts até 90 s (algumas 30 ou 60 s)",
+    "veredito": "confirmado",
+    "valor_correto": "Confirmado na central de ajuda: bloqueio global de Short com mais de 1 min e reivindicação ativa de qualquer tipo, sem penalidade ao canal. A maioria das músicas pode tocar até 90 s; algumas só 60 ou 30 s.",
+    "fonte_url": "https://support.google.com/youtube/answer/15424877?hl=en",
+    "nota": "Não checado nessa página: 'música livre de royalties da Biblioteca de Áudio não recebe reivindicação'."
+   },
+   {
+    "item": "TikTok: contas comerciais só veem a Commercial Music Library; conteúdo promocional em conta pessoal segue regras comerciais",
+    "veredito": "confirmado",
+    "valor_correto": "A Soundstripe confirma as duas coisas: 'The account label does not override the content's commercial purpose'. Conta comercial pode usar música licenciada por fora, se a licença cobrir uso comercial no TikTok e houver Music Usage Confirmation.",
+    "fonte_url": "https://www.soundstripe.com/blogs/tiktok-music-licensing-rules",
+    "nota": "Fonte secundária; os termos oficiais do TikTok não foram lidos."
+   },
+   {
+    "item": "Instagram (30/04/2026): penalidade para agregadores estendida a fotos e carrosséis; velocidade e print do nome do autor não contam como transformação",
+    "veredito": "confirmado",
+    "valor_correto": "Confirmado pela Tubefilter: quem já segue a conta continua vendo os reposts. Contam como transformação: humor, comentário, referências culturais, texto próprio, edição criativa, voiceover.",
+    "fonte_url": "https://tubefilter.com/2026/04/30/instagram-removes-algorithm-recommendations-repost-content-aggregator",
+    "nota": "O artigo NÃO menciona a sugestão de Collab do Mosseri; essa parte continua sem fonte."
+   },
+   {
+    "item": "A política de conteúdo reutilizado do YouTube não mudou em jul/2025; 'conteúdo repetitivo' virou 'conteúdo inautêntico'; clipes com pouca ou nenhuma narrativa não monetizam",
+    "veredito": "confirmado",
+    "valor_correto": "Confirmado na página oficial: a renomeação foi em 15/07/2025. 'Clips of moments... edited together with little or no narrative' não é permitido; react com comentário é permitido.",
+    "fonte_url": "https://support.google.com/youtube/answer/1311392?hl=en",
+    "nota": "A afirmação de que a punição vale para o canal inteiro (vidIQ) não foi checada."
+   },
+   {
+    "item": "Áreas seguras 1080x1920 (Meta Reels ads 14%/35%/6%; outros guias)",
+    "veredito": "confirmado",
+    "valor_correto": "Meta Reels: 14% em cima (~269–270 px), 35% embaixo (~670–672 px), 6% nas laterais (65 px). Segundo a fonte, a área segura fica em cerca de 950x980 px.",
+    "fonte_url": "https://www.1clickreport.com/blog/meta-ads-creative-safe-zones-2026-guide",
+    "nota": "Só os números da Meta foram checados. TikTok, Shorts e as margens orgânicas não foram verificados. A área de ~950x980 da fonte é menor que o retângulo prático de ~900x1400 da afirmação."
+   },
+   {
+    "item": "Cotação US$ 1 = R$ 4,99 (PTAX de venda de 09/10/2026 = R$ 4,9892)",
+    "veredito": "confirmado",
+    "valor_correto": "PTAX de venda em 09/10/2026: R$ 4,9892.",
+    "fonte_url": "https://boca.com.br/economia/dolar/cotacao-dolar-09-10-2026"
+   },
+   {
+    "item": "Agendamento nativo no Kwai não confirmado",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.kwai.com/@fabio.guimaraes/video/5206874219759544994",
+    "nota": "Sem documentação oficial e sem WebSearch disponível para procurar outra fonte. Teste no app."
+   },
+   {
+    "item": "Requisitos do Programa de Receita de Anúncios do Kwai",
+    "veredito": "confirmado",
+    "valor_correto": "Nível 6 ou mais OU mais de 500 fãs; trabalhos originais; mais de 12 trabalhos em 30 dias; média de 1.000 views por post OU mais de 10.000 views em 30 dias; maior de idade. O programa está 'se abrindo gradualmente'.",
+    "fonte_url": "https://www.kwai.com/pt-BR/support/creator-center/por-que-nao-tenho-posso-participar-do-programa-de-receita-de-anuncios"
+   },
+   {
+    "item": "Kwai considera não original material de terceiros, conteúdo de outras redes e duetos/reacts; 'medidor de originalidade'",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.reclameaqui.com.br/app-kwai/duvidas-sobre-monetizacao-e-conteudo-original_GR6tZniZEtuoF-WW/",
+    "nota": "O Reclame Aqui voltou HTTP 403 e não achei fonte oficial do Kwai sobre o tema."
+   },
+   {
+    "item": "Núcleo (jan/2025): Kwai Cut pagava ~R$ 0,15 por mil views (até R$ 0,27); MPF investigando",
+    "veredito": "confirmado",
+    "valor_correto": "Base de US$ 0,025 por mil views; nichos até US$ 0,04 (esportes, entretenimento, FTV, NarraStars). A reportagem converte para R$ 0,15–0,24 em um trecho e cita R$ 0,15 a R$ 0,27 (dólar a R$ 6) em outro. Editor fazia 15 a 18 vídeos/dia; a agência D&G sugeriu 100/dia. O Kwai diz ter removido mais de 5 milhões de vídeos no 1º semestre de 2024 (menos de 1% do total) e banido mais de 533 mil contas.",
+    "fonte_url": "https://nucleo.jor.br/reportagem/2025/01/14/kwai-cut-editores-terceirizados-centavos/",
+    "nota": "A investigação do MPF é sobre o uso da rede pirata pelo Kwai para encomendar e espalhar conteúdo falso e apelativo. O detalhe 'perfis cedidos pela plataforma' não foi conferido."
+   },
+   {
+    "item": "YouTube: Shorts com mais de 1 min e reivindicação de qualquer tipo ficam bloqueados no mundo todo; Short é vertical ou quadrado de até 3 min desde 15/10/2024",
+    "veredito": "confirmado",
+    "valor_correto": "Confirmado: o vídeo bloqueado não toca, não é recomendado e não monetiza; o canal não leva penalidade. Shorts de até 1 min não mudaram.",
+    "fonte_url": "https://support.google.com/youtube/answer/15424877?hl=en"
+   },
+   {
+    "item": "Views de Shorts fora da divisão de receita: não originais, reupload, compilações sem conteúdo original, views falsas",
+    "veredito": "confirmado",
+    "valor_correto": "Confirmado. Também ficam fora as views que violam as diretrizes de conteúdo adequado para anunciantes. Música muda só a divisão: com 1 faixa o Creator Pool fica com 1/2, com 2 faixas com 1/3. O criador continua recebendo 45% da parte dele.",
+    "fonte_url": "https://support.google.com/youtube/answer/12504220"
+   },
+   {
+    "item": "YPP: 'conteúdo repetitivo' virou 'inautêntico' em 15/07/2025; reuso só com diferença significativa; vale mesmo com permissão do criador",
+    "veredito": "confirmado",
+    "valor_correto": "Confirmado na página oficial, inclusive o trecho 'This policy applies even if you have permission from the original creator'.",
+    "fonte_url": "https://support.google.com/youtube/answer/1311392"
+   }
+  ],
+  "alertas_gerais": [
+   "A cota de WebSearch do turno (200 buscas, compartilhada entre todos os agentes) acabou logo na primeira chamada. Toda a verificação foi feita com WebFetch direto nas URLs. Por isso não foi possível buscar fontes alternativas para os itens que falharam (Clipchamp, Kwai originalidade e agendamento, VEED, TechRadar e CapCut, histórico do IOF). Uma nova mensagem do usuário reabre a cota de buscas.",
+   "Três fontes citadas não sustentam a afirmação ou falam de outra coisa. A fluxnote (créditos e anual do OpusClip) contradiz os números citados. A xpay.sh (Spikes Studio) não trata do Spikes; o preço foi confirmado em spikes.studio/pricing. O blog do Cut.Pro não menciona o Conjur nem o Content ID ignorando a lei brasileira.",
+   "Os preços do Munch estão desatualizados: a marca virou Munch Studio (Essential US$ 38/500 min, Premium US$ 60/1.000 min). O StreamLadder também diverge (Silver US$ 9, Gold US$ 15 na fonte citada).",
+   "A doc oficial do Whop Content Rewards não confirma envio de arquivo bruto nem revisão em 72 h, e o Google Doc é só recomendado. Não apresente isso como regra.",
+   "Fontes primárias fora do ar em 11/10/2026: Planalto (Lei 9.610) com 503 e Microsoft Clipchamp BR com 503. Reclame Aqui e Kwai voltaram 403.",
+   "Itens com preço só de terceiros (Vizard, quso, Higgsfield, VEED, valores mensais do Klap): confira no checkout antes de assinar. Vários fornecedores (Submagic, Cut.Pro, CapCut) cobram ou mostram preço em BRL. Quando a cobrança é em real numa loja nacional, não há IOF de compra internacional."
+  ]
+ },
+ {
+  "alertas_gerais": [
+   "Cotação usada: PTAX venda do Banco Central de 09/10/2026 = R$ 4,9892 (API Olinda/BCB: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/). Na mesma semana a PTAX oscilou entre R$ 4,97 e R$ 5,22 (01/10 = 5,2079; 02/10 = 5,2238). As conversões do lote, feitas a R$ 4,99 ou 4,9892, estão corretas. Some IOF de compra internacional e eventuais impostos do checkout.",
+   "A cota de WebSearch do turno acabou no meio da verificação. Daí em diante usei só WebFetch em páginas primárias. Algumas afirmações (TikTok CRP no Brasil, limite de contas do Instagram, preços do mLabs) ficaram como nao_verificavel por isso.",
+   "Upload-Post: o cabeçalho diz 'economize 40%' no anual, mas a tabela mostra 33% no Basic (US$ 16 vs. US$ 24), 34% no Professional e cerca de 20% no Advanced e no Business. Use os valores da tabela.",
+   "Publer: a regra '1 conta grátis a cada 10' não aparece na fonte. Retirar.",
+   "YouTube: a nova exigência de 10 milhões de views qualificadas em Shorts nos últimos 90 dias, a partir de 01/02/2027, está literalmente na página oficial. Isso praticamente inviabiliza a receita de anúncios do Shorts para um canal próprio de cortes que está começando. Pese isso na decisão entre os 3 modelos.",
+   "Páginas oficiais do TikTok (Creator Academy, termos do CRP) e o help center da Whop não renderizam texto via WebFetch. As regras dessas duas plataformas dependem de fontes de terceiros."
+  ],
+  "verificacoes": [
+   {
+    "item": "Instagram – diretrizes de conteúdo original (o que conta e o que não conta como transformação; teste de 'remover sua contribuição'; janela de 30 dias; Status da Conta)",
+    "veredito": "confirmado",
+    "valor_correto": "Confirmado na página oficial. Bordas, marca d'água e mudança de velocidade são 'edições de baixo esforço'. Dar crédito, trocar a legenda e print do trabalho alheio também não bastam. Contam: texto que vai além de descrever, narração, storyline, gráficos, voiceover e edição criativa. O teste é literal. A conta volta a ser recomendável quando a maioria dos Reels, fotos e carrosséis recentes for original numa janela móvel de 30 dias. A regra não afeta quem já segue a conta.",
+    "fonte_url": "https://creators.instagram.com/original-content-guidelines/",
+    "nota": "Verificado em 11/10/2026."
+   },
+   {
+    "item": "Instagram estende penalidade de não originalidade a fotos e carrosséis (30/04/2026)",
+    "veredito": "confirmado",
+    "valor_correto": "Tubefilter, 30/04/2026: a penalidade, que antes valia só para Reels, passou a valer para fotos e carrosséis. Reposts não aparecem no feed nem no Discover de não seguidores. Seguidores continuam vendo. O artigo não traz número-limite (diz só 'too many').",
+    "fonte_url": "https://www.tubefilter.com/2026/04/30/instagram-removes-algorithm-recommendations-repost-content-aggregator/",
+    "nota": "A informação atribuída à Planoly (o Instagram mostra o original e avisa o criador) não foi verificada. O número de mais de 10 reposts em 30 dias não tem fonte primária."
+   },
+   {
+    "item": "Instagram rebaixa Reels com logo de outros apps; a própria logo não prejudica (Mosseri)",
+    "veredito": "confirmado",
+    "valor_correto": "Social Media Today, 23/10/2024. Mosseri: a própria logo 'is good to go'. O Instagram evita recomendar Reels com logo de outros apps; o caso do logo do TikTok é penalizado desde 2021 (excluído do Explorar e das recomendações, mas alcança seguidores).",
+    "fonte_url": "https://www.socialmediatoday.com/news/instagram-clarifies-including-your-own-logo-on-a-reel-is-ok/730852",
+    "nota": "A fonte é de 2024 (secundária), mas é coerente com o texto oficial de ranking de 2023."
+   },
+   {
+    "item": "Instagram limita a 5 hashtags por legenda",
+    "veredito": "confirmado",
+    "valor_correto": "Social Media Today, 18/12/2025: limite de 5 hashtags por legenda em posts e Reels, com liberação gradual. Houve cerca de 1 ano de testes, com limite de 3 no teste mais recente. Mosseri diz que hashtags não aumentam o alcance e servem para indicar do que trata o post.",
+    "fonte_url": "https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/",
+    "nota": "Rollout gradual: a conta pode ainda não ter o limite."
+   },
+   {
+    "item": "TikTok Creator Rewards: requisitos (10 mil seguidores, 100 mil views em 30 dias, 18+, vídeos com mais de 1 min) e exclusões de originalidade",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Fonte de terceiros (creatorsagency, jul/2026): 10 mil seguidores, 100 mil views em 30 dias, 18+, vídeos de 1 min ou mais e 1.000 views qualificadas no For You por vídeo para começar a ganhar. Diz que o Brasil está entre os mercados suportados. Exclui repost levemente modificado, material com marca d'água alheia, compilações sem ideia nova e loops.",
+    "fonte_url": "https://creatorsagency.co/blog/tiktok-creator-rewards-program-2026",
+    "nota": "As páginas oficiais (Creator Academy e termos do CRP) não retornaram texto no WebFetch. A elegibilidade do Brasil continua sem fonte primária."
+   },
+   {
+    "item": "Buffer – frequência de postagem no TikTok (11,4 milhões de posts, 08/10/2025)",
+    "veredito": "confirmado",
+    "valor_correto": "11,4 milhões de posts e mais de 150 mil contas. Ganho sobre 1 post por semana: 2–5 = +17%, 6–10 = +29%, 11+ = +34%. Medianas: 489, 506, 487 e 459. p90: 3.722, 6.983, 10.092 e 14.401. Recomendação: 2 a 5 por semana.",
+    "fonte_url": "https://buffer.com/resources/how-often-should-you-post-on-tiktok/",
+    "nota": "As razões p90/mediana de 7,6x e 31,4x conferem."
+   },
+   {
+    "item": "Buffer – frequência de postagem no Instagram (2,1 milhões de posts, 13/08/2025)",
+    "veredito": "confirmado",
+    "valor_correto": "2,1 milhões de posts e 102 mil contas. Alcance por post, comparado a 1–2 por semana: 3–5 = +12%, 6–9 = +18%, 10+ = +24%. Crescimento de seguidores de +0,66% (taxa de crescimento) com 10+ por semana. Não separa Reels de fotos e carrosséis.",
+    "fonte_url": "https://buffer.com/resources/how-often-to-post-on-instagram/",
+    "nota": "O +0,66% é aumento na taxa de crescimento, não percentual sobre o total de seguidores."
+   },
+   {
+    "item": "Buffer State of Social Media Engagement 2026 – Reels vs. carrossel vs. imagem; vídeo vs. imagem no TikTok",
+    "veredito": "confirmado",
+    "valor_correto": "Reels têm 1,36x o alcance do carrossel e 2,25x o da imagem única. O carrossel tem 2,09x o engajamento do Reels. No TikTok, a mediana de engajamento é 3,39% para vídeo e 1,92% para imagem. O relatório analisou mais de 52 milhões de posts e fala em 'no-post penalty' para semanas sem postar.",
+    "fonte_url": "https://buffer.com/resources/state-of-social-media-engagement-2026/",
+    "nota": "As razões do Instagram vêm de um subestudo com mais de 4 milhões de posts (jan/2022 a out/2024), não dos 52 milhões."
+   },
+   {
+    "item": "Melhor horário para postar no TikTok (Sprout, Buffer, Metricool)",
+    "veredito": "corrigido",
+    "valor_correto": "Sprout (cerca de 307 mil perfis, nov/2025 a fev/2026): melhores janelas de segunda a sexta (seg 15–17h, ter 14–18h, qua 13–20h, qui 13–17h, sex 15–17h, hora local); evitar fim de semana. Buffer (7,1 milhões de posts): 9h é só o melhor horário de domingo; cada dia tem o seu (ex.: ter 6h, sex 18h), com os melhores no fim de semana. Metricool (2,3 milhões de posts): 20h na maioria dos dias e 18–19h no sábado. Não há dado do Brasil.",
+    "fonte_url": "https://www.breakreach.com/guides/best-time-to-post-on-tiktok",
+    "nota": "Dizer 'Sprout = terça a quinta' simplifica demais. A recomendação de usar getBestTimeToPostByNetwork do Metricool procede: o schema aceita tiktok, instagram e youtube (além de facebook, twitter e linkedin) e não aceita Kwai."
+   },
+   {
+    "item": "Metricool – preços (Free, Starter, Advanced; API só no Advanced)",
+    "veredito": "confirmado",
+    "valor_correto": "Free: 1 marca, 20 posts por mês, 30 dias de histórico, MCP incluído. Starter 5 marcas: US$ 20 (anual) ou US$ 25 (mensal). Starter 10 marcas: US$ 36 ou US$ 45. Advanced 15 marcas: US$ 53 ou US$ 67. API (Zapier/Make) só no Advanced e no Custom. TikTok, Instagram e YouTube em todos os planos; Kwai não aparece. Na PTAX de R$ 4,9892: Starter 5 sai R$ 99,78 (anual) ou R$ 124,73 (mensal); Starter 10 sai R$ 179,61 ou R$ 224,51; Advanced sai R$ 264,43 ou R$ 334,28.",
+    "fonte_url": "https://metricool.com/pricing/",
+    "nota": "A data 'em vigor desde mar/2026' NÃO foi confirmada; a página não traz data. Os preços não incluem IVA/impostos."
+   },
+   {
+    "item": "Upload-Post – preços (versão da frente de distribuição)",
+    "veredito": "confirmado",
+    "valor_correto": "Free: 2 perfis, 10 uploads por mês, sem TikTok. Basic: US$ 24 (mensal) ou US$ 16/mês (US$ 192/ano), 5 perfis, 300 minutos de FFmpeg. Professional: US$ 50 ou US$ 33, 25 perfis. Advanced: US$ 147 ou US$ 118, 75 perfis. White-label a partir do Professional. 1 perfil = 1 conta por rede. Kwai não aparece. Diz que no TikTok não precisa de app de desenvolvedor nem de auditoria. Em reais: Basic R$ 119,74 ou R$ 79,83/mês.",
+    "fonte_url": "https://www.upload-post.com/llms-full.txt",
+    "nota": "A página não diz explicitamente quais planos têm API. Comparativos citam API desde US$ 16/mês."
+   },
+   {
+    "item": "Upload-Post – preços (versão da frente de análise: 'anual com 40% de desconto' e Basic anual ≈ R$ 71,84)",
+    "veredito": "corrigido",
+    "valor_correto": "O Basic anual custa US$ 16/mês, ≈ R$ 79,83 na PTAX de 4,9892 (não R$ 71,84). O desconto real é de 33% no Basic, 34% no Professional e cerca de 20% no Advanced e no Business, apesar do cabeçalho de '40%'. Business: US$ 438 (mensal) ou US$ 350/mês (anual), 225 perfis.",
+    "fonte_url": "https://www.upload-post.com/llms-full.txt",
+    "nota": "O erro veio de aplicar 40% sobre o preço mensal."
+   },
+   {
+    "item": "Postiz (nuvem) – preços",
+    "veredito": "confirmado",
+    "valor_correto": "Standard: US$ 29 (mensal) ou US$ 23 (anual), 5 canais. Team: US$ 39 ou US$ 31, 10 canais. Pro: US$ 49 ou US$ 39, 30 canais. Ultimate: US$ 99 ou US$ 79, 100 canais. API pública, MCP, CLI e webhooks em todos os planos. Kwai não listado. Standard ≈ R$ 144,69 ou R$ 114,75.",
+    "fonte_url": "https://postiz.com/pricing",
+    "nota": "Os detalhes do self-host (post privado com app não auditado, serviço pago de aprovação) não foram verificados nesta rodada."
+   },
+   {
+    "item": "Buffer – preços",
+    "veredito": "confirmado",
+    "valor_correto": "Free: até 3 canais e 10 posts agendados por canal, com API (1 chave, 3.000 requisições/mês). Essentials: US$ 5 por canal/mês ou US$ 60/ano. Team: US$ 10 por canal/mês ou US$ 120/ano. TikTok com publicação automática só em perfil business. YouTube Shorts com publicação automática. Instagram pessoal só recebe lembrete.",
+    "fonte_url": "https://buffer.com/pricing",
+    "nota": "Acima de 10 canais o preço por canal cai, mas a página não mostra os valores. A estimativa de cerca de R$ 300 para 12 canais pode estar um pouco alta."
+   },
+   {
+    "item": "Repurpose.io – preços",
+    "veredito": "confirmado",
+    "valor_correto": "Starter: US$ 35/mês ou US$ 349/ano, até 3 contas por rede, 5.000 vídeos por mês. Pro: US$ 79 ou US$ 790/ano, até 10 contas, ilimitado. Agency: US$ 179. Teste de 14 dias. Em reais: Starter R$ 174,62/mês, ou ≈ R$ 145/mês no anual.",
+    "fonte_url": "https://repurpose.io/pricing/",
+    "nota": ""
+   },
+   {
+    "item": "OpusClip – Starter vs. Pro (auto-post, agendador, API/MCP)",
+    "veredito": "confirmado",
+    "valor_correto": "Starter: US$ 15/mês, posta automaticamente em YT/TikTok/IG, sem agendador e sem várias contas por plataforma. Pro: US$ 29/mês, com agendador, várias contas e Video Editing API, Scheduler API e conector MCP. A página oficial não mostra preço anual. Em reais: R$ 74,84 e R$ 144,69.",
+    "fonte_url": "https://www.opus.pro/pricing",
+    "nota": "O schema do MCP conectado confirma que opusclip_schedule_publish não cria o agendamento: ele devolve um approval_url, e o usuário confirma no app OpusClip."
+   },
+   {
+    "item": "mLabs – R$ 49,90/mês por marca; anual entre R$ 29,90 e R$ 34,90",
+    "veredito": "nao_verificavel",
+    "valor_correto": "O blog oficial (25/07/2025) fala em 'um único plano de R$ 29,90 por mês por marca'. A página de planos não mostra valores (calculadora): anual com 40% de desconto, Pix com até 15% a mais de desconto e desconto por volume a partir de 5 marcas. Cada marca conecta 1 perfil por rede. Kwai não aparece. Os R$ 49,90 do mensal não foram confirmados, mas são coerentes com 40% de desconto levando a ≈ R$ 29,94.",
+    "fonte_url": "https://www.mlabs.com.br/planos",
+    "nota": "Confirme no checkout."
+   },
+   {
+    "item": "Later – preços",
+    "veredito": "confirmado",
+    "valor_correto": "Starter: US$ 25 (mensal) ou US$ 18,75 (anual), 1 social set = 8 perfis, 30 posts por perfil por mês. Growth: US$ 50 ou US$ 37,50, 2 social sets = 16 perfis, 180 posts por perfil. Scale: US$ 110 ou US$ 82,50. Preços checados pela SocialPilot em 25/09/2026.",
+    "fonte_url": "https://www.socialpilot.co/insights/later-pricing",
+    "nota": "Fonte de terceiros. O plano Advanced deixou de existir em 01/07/2025."
+   },
+   {
+    "item": "Publer – preços por conta",
+    "veredito": "corrigido",
+    "valor_correto": "Professional: US$ 5/mês (US$ 4 no anual) para a 1ª conta e cerca de US$ 4 por conta extra (3 contas = US$ 12; 10 = US$ 40). Business: US$ 10/mês (US$ 8 no anual) e cerca de US$ 7 por conta extra. Membro de equipe: US$ 2 ou US$ 3. Free: até 3 contas, sem X. Fonte de 10/06/2026.",
+    "fonte_url": "https://socialk.it/en/pricing/publer",
+    "nota": "A regra 'a cada 10 contas, 1 sai grátis' NÃO consta na fonte. Professional fica em ≈ R$ 20 por conta extra/mês, não R$ 25."
+   },
+   {
+    "item": "Hootsuite – preços",
+    "veredito": "confirmado",
+    "valor_correto": "Standard: a partir de US$ 99 (10 contas sociais). Professional: a partir de US$ 199 (ilimitado). Advanced: até US$ 399. Enterprise: sob consulta. Standard ≈ R$ 494.",
+    "fonte_url": "https://www.hootsuite.com/plans",
+    "nota": "Valores do FAQ; a página não detalha mensal vs. anual."
+   },
+   {
+    "item": "SocialBee – preços",
+    "veredito": "confirmado",
+    "valor_correto": "Bootstrap: US$ 29/mês (≈ US$ 24,20 no anual). Accelerate: US$ 49. Pro: US$ 99. Checado pela fonte em 27/09/2026. Bootstrap ≈ R$ 144,69.",
+    "fonte_url": "https://frontdeskreview.com/software/social-media-management/socialbee/",
+    "nota": "Fonte de terceiros, com alerta de 'stale' de 03/09/2026."
+   },
+   {
+    "item": "Limites de contas por login: Instagram 5, TikTok sem limite oficial, YouTube cerca de 100 canais",
+    "veredito": "nao_verificavel",
+    "valor_correto": "",
+    "fonte_url": "https://business.instagram.com/blog/account-switching-on-instagram",
+    "nota": "A URL redireciona para uma página de login do Facebook, sem conteúdo. Nenhum dos três limites foi confirmado por fonte primária nesta rodada."
+   },
+   {
+    "item": "Whop Content Rewards – regras (views só de conta pública, rejeição pela marca, taxa de 10% no CPM, retenção)",
+    "veredito": "corrigido",
+    "valor_correto": "Segundo a fonte de terceiros: taxa fixa de 10% sobre todo pagamento CPM, nunca dispensada. A marca só pode rejeitar por descumprir um requisito escrito no briefing, com revisão humana e 1 apelação por envio. No CPM há janela de 7 dias de ganho após a aprovação e 3 dias de retenção (cerca de 10 dias até liquidar). Views de bot, script ou incentivadas são excluídas, e comprar engajamento dá ban permanente.",
+    "fonte_url": "https://www.clipspeed.ai/blog/whop-content-rewards-clipping-guide.html",
+    "nota": "A fonte NÃO descreve a retenção como 'filtro de views falsas', nem confirma que só conta pública vale. O blog oficial da Whop cita uma média de US$ 1 por 1.000 views para clipadores (https://whop.com/blog/content-rewards/). A documentação oficial não carregou."
+   },
+   {
+    "item": "Instagram API – métrica reels_skip_rate",
+    "veredito": "confirmado",
+    "valor_correto": "Definição oficial: percentual de views em que a pessoa pulou nos primeiros 3 segundos, sobre as views iniciais. Marcada como 'Metric is estimated and in development'.",
+    "fonte_url": "https://developers.facebook.com/docs/instagram-platform/reference/instagram-media/insights",
+    "nota": ""
+   },
+   {
+    "item": "Sinais de ranking dos Reels (Instagram Ranking Explained)",
+    "veredito": "confirmado",
+    "valor_correto": "31/05/2023. Previsões principais: chance de recompartilhar, de assistir até o fim, de curtir e de ir à página do áudio. O texto reduz a visibilidade de Reels de baixa resolução, com marca d'água, majoritariamente de texto ou já publicados no Instagram.",
+    "fonte_url": "https://about.instagram.com/blog/announcements/instagram-ranking-explained",
+    "nota": "O texto do Instagram que verifiquei não menciona 'bordas' explicitamente; bordas aparecem nas diretrizes de conteúdo original."
+   },
+   {
+    "item": "Socialinsider – benchmark do Instagram (Reels)",
+    "veredito": "confirmado",
+    "valor_correto": "Engajamento médio dos Reels de 0,52% em 2025 (0,50% em 2024). Views médias: 580, 1.000, 2.460, 6.095 e 16.035 por porte. Carrosséis têm mais views em todos os portes (ex.: 993 vs. 580 na faixa 1–5K).",
+    "fonte_url": "https://www.socialinsider.io/social-media-benchmarks/instagram",
+    "nota": ""
+   },
+   {
+    "item": "Socialinsider – benchmark do TikTok",
+    "veredito": "confirmado",
+    "valor_correto": "Engajamento por view de 4,20% em 2025 e 3,85% no T2/2026. Views por post em 2025: 350, 945, 3.240, 9.900 e 34.900. Shares: 40, 60, 120, 200 e 477. Posts: 8, 12, 16, 18 e 23 (unidade presumida mensal).",
+    "fonte_url": "https://www.socialinsider.io/social-media-benchmarks/tiktok",
+    "nota": "As views das contas pequenas caíram de 2024 para 2025 (de 860 para 350 na faixa 1–5K). A página tem incoerências de data e unidade."
+   },
+   {
+    "item": "Metricool – relatório de vídeo curto (TikTok vs. Reels vs. Shorts)",
+    "veredito": "confirmado",
+    "valor_correto": "O TikTok gera 'up to 42% more views than Instagram Reels, and over 6 times more than YouTube Shorts'. O Reels lidera em shares em todos os portes.",
+    "fonte_url": "https://metricool.com/short-video-report/",
+    "nota": "Os números absolutos estão no relatório fechado por formulário."
+   },
+   {
+    "item": "Metricool – For You Page gera cerca de 7 em cada 10 views no TikTok",
+    "veredito": "confirmado",
+    "valor_correto": "'The For You Page drives 7 out of every 10 views' (2026 TikTok Study, 12/05/2026).",
+    "fonte_url": "https://metricool.com/tiktok-study/",
+    "nota": "Não verifiquei o nome do campo impression_sources na API."
+   },
+   {
+    "item": "Metricool – estudo de YouTube 2026",
+    "veredito": "confirmado",
+    "valor_correto": "Estudo de 28/07/2026: 'more views, but people are spending less time watching'. O algoritmo do Shorts é 'the dominant force' na descoberta. Sem números públicos de Shorts.",
+    "fonte_url": "https://metricool.com/youtube-study/",
+    "nota": ""
+   },
+   {
+    "item": "YouTube conta view no início da reprodução desde 24/08/2026; YPP continua em engaged views",
+    "veredito": "confirmado",
+    "valor_correto": "'Starting August 24, 2026, views are counted the moment a video starts to play across all formats, including Shorts.' Os ganhos do YPP seguem em engaged views e engaged watch hours; a elegibilidade segue em qualified views.",
+    "fonte_url": "https://support.google.com/youtube/answer/2991785?hl=en",
+    "nota": "Vale a data oficial de 24/08. O 27/08 e o fator de 1,7–1,9x citados pelo vidIQ não foram verificados."
+   },
+   {
+    "item": "Receita do Shorts: 45% para o criador; pool por engaged views; não originais não monetizam",
+    "veredito": "confirmado",
+    "valor_correto": "'Monetizing creators will keep 45% of their allocated revenue.' A distribuição é pela fatia de engaged views. Views inelegíveis: 'unedited clips from others' movies or TV shows', reupload de outros criadores e compilações sem conteúdo original.",
+    "fonte_url": "https://support.google.com/youtube/answer/12504220?hl=en",
+    "nota": "A página não informa RPM."
+   },
+   {
+    "item": "Shorts: a partir de 01/02/2027, mínimo de 10 milhões de views qualificadas em 90 dias para receber receita de anúncios",
+    "veredito": "confirmado",
+    "valor_correto": "Literal: 'Starting February 1, 2027, to be eligible to earn a share of Shorts ad revenue' ... 'at least 10 million qualified Shorts views in the last 90 days'.",
+    "fonte_url": "https://support.google.com/youtube/answer/12504220?hl=en",
+    "nota": "Conferido na página oficial em 11/10/2026. Não confirmei se há exceções ou outras vias de elegibilidade; leia a seção inteira."
+   },
+   {
+    "item": "Teste A/B nativo do YouTube não funciona para Shorts",
+    "veredito": "confirmado",
+    "valor_correto": "'A/B testing is not available for Shorts.' Para vídeos longos: até 3 títulos/miniaturas, vence o de maior watch time e o teste termina em até 2 semanas.",
+    "fonte_url": "https://support.google.com/youtube/answer/13861714?hl=en",
+    "nota": ""
+   },
+   {
+    "item": "Política de conteúdo reutilizado do YouTube e renomeação para 'inauthentic content' (15/07/2025)",
+    "veredito": "confirmado",
+    "valor_correto": "Proibido: clipes 'edited together with little or no narrative' e conteúdo alheio com mudanças mínimas, mesmo com permissão do criador. Permitido: review crítico, reação com comentário e edição com storyline e comentário. Em 15/07/2025 'repetitious' virou 'inauthentic content', cobrindo conteúdo produzido em massa ou repetitivo; a política de reused content não mudou.",
+    "fonte_url": "https://support.google.com/youtube/answer/1311392?hl=en",
+    "nota": "A permissão do autor não resolve a monetização: a política vale mesmo com autorização."
+   },
+   {
+    "item": "Meta/Facebook (14/07/2025) – combate a conteúdo não original",
+    "veredito": "confirmado",
+    "valor_correto": "Contas que reutilizam conteúdo alheio repetidamente perdem a monetização do Facebook por um período e têm distribuição reduzida. Duplicatas perdem alcance. 'Simply stitching together clips or adding your watermark does not qualify as meaningful enhancement.'",
+    "fonte_url": "https://creators.facebook.com/blog/combating-unoriginal-content/",
+    "nota": "O texto trata só do Facebook e não fala do Instagram."
+   },
+   {
+    "item": "Supermetrics – preços",
+    "veredito": "confirmado",
+    "valor_correto": "Starter: US$ 55 (mensal) ou US$ 44 (anual), 3 fontes e 1 destino. Growth: US$ 222 ou US$ 177, 6 fontes. Teste de 14 dias sem cartão. Claude, ChatGPT e Copilot são destinos. Starter ≈ R$ 274,41 ou R$ 219,52.",
+    "fonte_url": "https://supermetrics.com/pricing",
+    "nota": "Não verifiquei a fonte IGPD2 (dados públicos de perfis do Instagram)."
+   },
+   {
+    "item": "Exolyt – preços",
+    "veredito": "confirmado",
+    "valor_correto": "Basic grátis: 1 conta TikTok, 7 dias de histórico, atualização 1x por dia. Essentials: US$ 400 (mensal) ou US$ 330 (anual), 50 contas. Advanced: US$ 950 ou US$ 790. Essentials ≈ R$ 1.995,68/mês.",
+    "fonte_url": "https://exolyt.com/pricing",
+    "nota": ""
+   },
+   {
+    "item": "Virlo – preços e recursos",
+    "veredito": "confirmado",
+    "valor_correto": "Starter: US$ 49/mês, 2.000 créditos, com Tracking Center. Pro: US$ 199/mês, 12.000 créditos. Starter ≈ R$ 244,47.",
+    "fonte_url": "https://virlo.ai/pricing",
+    "nota": "A página de preços NÃO confirma servidor MCP, cobertura de TikTok/Shorts/Reels, duração do teste nem cobertura do Brasil ou do português. Esses pontos vêm só da descrição do plugin no marketplace."
+   }
+  ]
+ },
+ {
+  "verificacoes": [
+   {
+    "item": "Whop Content Rewards: a marca define taxa por 1.000 views, bônus fixo opcional, pagamento mínimo, teto por post e orçamento, e aprova ou rejeita cada envio",
+    "veredito": "confirmado",
+    "valor_correto": "Confirmado na documentação oficial (lida em 11/10/2026). Campos: reward rate por 1.000 views, campaign budget, minimum payout, maximum payout e flat fee opcional. Exemplos literais da doc: taxa de US$ 3 com mínimo de US$ 6 = só entram na revisão vídeos com 2.000+ views; teto de US$ 3.000 = para de render em 1M de views; US$ 3 + flat de US$ 10 com 2.000 views = US$ 16. A marca aprova ou rejeita conforme seus requisitos, e o pagamento só sai após a aprovação.",
+    "fonte_url": "https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards.md",
+    "nota": "Correto que a doc não explica como as views são verificadas nem lista motivos padrão de recusa. Um ajuste: a etapa de plataformas diz só 'escolha de quais redes aceitar envios', sem nomear nenhuma. TikTok, Shorts, X e Reels aparecem na doc só como exemplos de onde se faz clipping."
+   },
+   {
+    "item": "Whop: clipadores de Content Rewards recebem em média US$ 1 por 1.000 views",
+    "veredito": "confirmado",
+    "valor_correto": "Frase literal: 'Content Rewards clippers are, on average, paid $1 per 1,000 views.' O artigo foi publicado em 03/03/2025 e não tem data de atualização. Na PTAX de 09/10/2026 (R$ 4,9892), dá cerca de R$ 4,99 por 1.000 views.",
+    "fonte_url": "https://whop.com/blog/content-rewards/",
+    "nota": "Número autodeclarado pela própria Whop, com mais de 1,5 ano. Não é auditado. Use como ordem de grandeza, não como expectativa."
+   },
+   {
+    "item": "Kwai Creator Center: autoverificação, Ad Revenue Programme 'aberto gradualmente para criadores de alta qualidade', desafios e Famílias Kwai; sem API pública de analytics",
+    "veredito": "confirmado",
+    "valor_correto": "A página confirma: autoverificação aberta no Creator Centre, com validade de 1 ano para criadores populares; Ad Revenue Program 'gradually opening up to high-quality creators'; desafios lançados 'from time to time'; Kwai Families. A Originality FAQ é só um link, sem texto na página.",
+    "fonte_url": "https://www.kwai.com/support/creator-center",
+    "nota": "A página não menciona API para desenvolvedores, mas não ter API é uma afirmação negativa e não dá para provar só por ela. Também não verifiquei se o Ad Revenue Program está disponível para contas brasileiras."
+   },
+   {
+    "item": "PTAX venda de R$ 4,9892 em 09/10/2026; faixa de outubro de R$ 4,9698 a R$ 5,2238",
+    "veredito": "confirmado",
+    "valor_correto": "API Olinda/BCB: 09/10/2026 venda 4,98920. Mínimo 4,96980 (06/10) e máximo 5,22380 (02/10), no período de 01 a 09/10/2026.",
+    "fonte_url": "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial='10-01-2026'&@dataFinalCotacao='10-11-2026'&$format=json",
+    "nota": "Correto que o cartão internacional soma IOF e spread a isso."
+   },
+   {
+    "item": "Cotação de 1 USD = R$ 5,005 (BCE via Frankfurter)",
+    "veredito": "confirmado",
+    "valor_correto": "Frankfurter: {date: 2026-10-09, BRL: 5.005}.",
+    "fonte_url": "https://api.frankfurter.dev/v1/latest?from=USD&to=BRL",
+    "nota": "Valor correto, mas difere da PTAX do mesmo dia (4,9892), cerca de 0,3% de diferença. As duas frentes usam cotações diferentes, então é bom padronizar em uma só (sugiro a PTAX de 09/10/2026)."
+   },
+   {
+    "item": "'Assistiram vs. deslizaram' (viewed vs. swiped away) do Shorts no YouTube Studio; não existe na API",
+    "veredito": "nao_verificavel",
+    "valor_correto": "A parte da API está confirmada: a página de métricas da YouTube Analytics API (atualizada em 14/09/2026) não tem nenhuma métrica de swipe. A métrica mais próxima é engagedViews: 'viewed past the first frame, or the user clicks/taps to play'.",
+    "fonte_url": "https://developers.google.com/youtube/analytics/metrics",
+    "nota": "Não achei a definição oficial do 'viewed vs. swiped away' no help center: a página 9314357 não define a métrica, e o orçamento de busca web acabou. Continua valendo a orientação de lançar o número à mão a partir do Studio."
+   },
+   {
+    "item": "Não há benchmark oficial público de retenção para TikTok, Reels ou Shorts",
+    "veredito": "confirmado",
+    "valor_correto": "O benchmark de TikTok da Socialinsider cobre só taxa de engajamento por views, curtidas, comentários, compartilhamentos e views por post, frequência e crescimento de seguidores. Não tem nenhum número de retenção, tempo médio ou taxa de conclusão; retenção aparece só como conselho qualitativo.",
+    "fonte_url": "https://www.socialinsider.io/social-media-benchmarks/tiktok",
+    "nota": "Não verifiquei o estudo da Metricool nesta rodada. 'Não existe benchmark' é uma afirmação negativa e não dá para provar por completo; usar a mediana das próprias publicações continua sendo a recomendação sensata."
+   },
+   {
+    "item": "OpusClip: MCP e API só a partir do Pro (US$ 29/mês); Starter (US$ 15) sem API, MCP nem agendador",
+    "veredito": "confirmado",
+    "valor_correto": "Página de preços (lida em 11/10/2026): Free US$ 0, sem API, MCP nem posting, legendas animadas 'with watermark'. Starter US$ 15/mês, sem API, MCP nem agendador, mas com exportação sem marca d'água e 'Post to social media' direto para YouTube Shorts, TikTok e Instagram. Pro US$ 29/mês, com Video Editing API, Scheduler API e MCP connector; agendador para YT Shorts, TikTok, Instagram, Facebook, LinkedIn, X, Pinterest, Threads e Bluesky (Snapchat 'coming soon'). Business sob consulta. Kwai não aparece em nenhum plano. Em reais, na PTAX de 4,9892: Pro ≈ R$ 144,69 e Starter ≈ R$ 74,84.",
+    "fonte_url": "https://www.opus.pro/pricing",
+    "nota": "Ajuste: o Starter posta direto em 3 redes, só não agenda. Os detalhes de exportação e armazenamento de 3 dias no Free não apareceram na leitura e ficam sem confirmar. A página não mostra preço anual nem créditos por plano."
+   },
+   {
+    "item": "YouTube conta view desde o primeiro frame a partir de 27/08/2026; views de long-form ficaram 1,7 a 1,9 vezes maiores",
+    "veredito": "corrigido",
+    "valor_correto": "A central de ajuda oficial diz: 'Beginning August 24, 2026', 'views are counted the moment a video starts to play across all formats' (Shorts, VOD e lives). A data é 24/08/2026, não 27/08. A mudança 'won't impact your YouTube Partner Program (YPP) earnings or eligibility': a receita continua baseada em engaged views e engaged watch hours, e a elegibilidade em qualified views.",
+    "fonte_url": "https://support.google.com/youtube/answer/2991785?hl=en",
+    "nota": "O fator de 1,7 a 1,9 vezes não tem fonte oficial; veio da descrição de uma ferramenta do vidIQ e não foi verificado. Para campanhas pagas por view, vale combinar com a marca qual contador ela usa."
+   },
+   {
+    "item": "Preços do vidIQ não verificados (página retornou 403)",
+    "veredito": "nao_verificavel",
+    "valor_correto": "A página https://vidiq.com/pricing/ voltou a retornar HTTP 403 em 11/10/2026.",
+    "fonte_url": "https://vidiq.com/pricing",
+    "nota": "O preço precisa ser confirmado no painel do usuário. A busca web já tinha se esgotado nesta rodada."
+   },
+   {
+    "item": "Metricool: Free inclui MCP (1 marca, 20 posts por mês, 30 dias de analytics, 5 concorrentes); Starter US$ 25/mês ou US$ 20 no anual",
+    "veredito": "confirmado",
+    "valor_correto": "Free: 'Manage 1 brand', 'Schedule up to 20 posts per month', 'Access 30 days of analytics', 'Analyze 5 competitor profiles', 5 créditos de IA por marca, inclui 'Metricool MCP', sem LinkedIn e Twitter/X. Starter: 'From $25/month' no mensal e 'From $20/month' no anual, até 10 marcas, 100 concorrentes, 20 créditos. Advanced: a partir de US$ 67 (US$ 53 no anual), 35 créditos. Histórico 'Unlimited*' sob Fair Use. Em reais, na PTAX de 4,9892: Starter ≈ R$ 124,73 no mensal ou R$ 99,78 no anual.",
+    "fonte_url": "https://metricool.com/pricing/",
+    "nota": "Os preços são 'a partir de'. A página não rotula com clareza qual bloco é mensal e qual é anual, então o rótulo foi inferido. Os créditos de IA por plano aparecem explícitos na página, ao contrário do que a afirmação supunha."
+   },
+   {
+    "item": "O Kwai é o ponto cego: nenhuma ferramenta verificada publica, baixa ou analisa Kwai",
+    "veredito": "confirmado",
+    "valor_correto": "Verificado em 11/10/2026: o supportedsites.md do yt-dlp (1.738 linhas baixadas) não tem nenhuma ocorrência de 'kwai' nem 'kuaishou'. Kwai também não aparece nas 30 plataformas do Postiz, nas 22 do Upload-Post nem na lista de agendamento do OpusClip.",
+    "fonte_url": "https://raw.githubusercontent.com/yt-dlp/yt-dlp/master/supportedsites.md ; https://postiz.com/pricing ; https://www.upload-post.com/llms-full.txt ; https://www.opus.pro/pricing",
+    "nota": "Não verifiquei de novo os providers da Metricool nem o site do Virlo. A conclusão vale para as ferramentas checadas, não para o mercado inteiro."
+   },
+   {
+    "item": "Preços da Higgsfield não verificados",
+    "veredito": "nao_verificavel",
+    "valor_correto": "Nem higgsfield.ai/pricing nem llms.txt mostram preço, plano ou valor de pacote de créditos (o conteúdo é renderizado no cliente).",
+    "fonte_url": "https://higgsfield.ai/pricing ; https://higgsfield.ai/llms.txt",
+    "nota": "O preço precisa ser confirmado no painel. O MCP tem show_plans_and_credits, mas não foi executado."
+   },
+   {
+    "item": "Descript: Free com 60 min por mês, 100 créditos únicos e 720p; Hobbyist US$ 24 ou US$ 16; Creator US$ 35 ou US$ 24",
+    "veredito": "confirmado",
+    "valor_correto": "Free: 60 min/mês, 100 créditos de IA únicos, 720p. Hobbyist: US$ 16 ou US$ 24, 10 h/mês, 400 créditos, 1080p. Creator: US$ 24 ou US$ 35, 30 h/mês, 800 créditos, 4K. Business: US$ 50 ou US$ 65, 40 h, 1.500 créditos. O anual promete economia 'up to 35%'.",
+    "fonte_url": "https://www.descript.com/pricing",
+    "nota": "A página não rotula qual preço é mensal e qual é anual, então segue inferido. O MCP aparece em 'API + MCP', sem estar ligado a nenhum plano. Em reais, na PTAX de 4,9892: Hobbyist ≈ R$ 119,74 ou R$ 79,83; Creator ≈ R$ 174,62 ou R$ 119,74."
+   },
+   {
+    "item": "ElevenLabs STT: Free ≈ 30 min, Starter (US$ 6) ≈ 91 min, Creator (US$ 22) ≈ 367 min; 330 créditos por minuto",
+    "veredito": "corrigido",
+    "valor_correto": "Créditos por mês: Free 10.000, Starter 30.000, Creator 121.000, e 'Speech to Text 330 credits per minute'. A página não informa minutos; o cálculo é nosso (créditos ÷ 330 ≈ 30, 91 e 367 min). Preço cheio no FAQ: Starter US$ 6 e Creator US$ 22. Há promoção 'Until Oct 18' (2026): Starter a US$ 1 e Creator a US$ 11 no primeiro mês.",
+    "fonte_url": "https://elevenlabs.io/pricing",
+    "nota": "Ao contrário do que diz o detalhe, os minutos não são 'estimativa da própria página'. A promoção pode interessar se a assinatura for feita até 18/10."
+   },
+   {
+    "item": "Upload-Post: Free sem TikTok, 10 uploads por mês, 2 perfis, 30 min de FFmpeg; Basic US$ 24/mês ou US$ 16 no anual",
+    "veredito": "confirmado",
+    "valor_correto": "Free: 2 perfis, 30 min de FFmpeg, 10 uploads por mês, plataformas 'without TikTok'. Basic: US$ 24 no mensal ou US$ 16 no anual (US$ 192 por ano), 5 perfis, 300 min de FFmpeg, uploads ilimitados. Professional: US$ 50 no mensal ou US$ 33 no anual, 25 perfis, 1.000 min. Kwai não é suportado. Em reais, na PTAX de 4,9892: Basic ≈ R$ 119,74 ou R$ 79,83.",
+    "fonte_url": "https://www.upload-post.com/llms-full.txt",
+    "nota": "Não verifiquei se o MCP está autenticado nesta sessão; isso é estado local."
+   },
+   {
+    "item": "Postiz: sem plano grátis (teste de 7 dias); Standard US$ 29 ou US$ 23 no anual, 5 canais; MCP, CLI e API em todos os planos",
+    "veredito": "confirmado",
+    "valor_correto": "Standard US$ 29 ou US$ 23 no anual, 5 canais. Team US$ 39 ou US$ 31, 10 canais. Pro US$ 49 ou US$ 39, 30 canais. Ultimate US$ 99 ou US$ 79. Texto literal: 'Postiz has a 7-day free trial on every plan' e 'Every plan includes the MCP server, CLI and API'. Kwai não está entre as plataformas. Em reais, na PTAX de 4,9892: ≈ R$ 144,69 ou R$ 114,75.",
+    "fonte_url": "https://postiz.com/pricing",
+    "nota": "As regras de DIRECT_POST e UPLOAD no TikTok vêm da skill instalada e não foram verificadas na doc oficial nesta rodada."
+   },
+   {
+    "item": "Alternativas ao OpusClip: Klap a partir de US$ 14/mês no anual, Submagic Starter a US$ 19 (US$ 12 no anual), Vizard com Free de 60 min",
+    "veredito": "corrigido",
+    "valor_correto": "Klap (cobrança anual): Basic US$ 14 com 100 clipes, Pro US$ 39 com 300 clipes, Pro+ US$ 94 com 1.000 clipes. Sem plano grátis e sem preço de API. Submagic: Starter US$ 19 ou US$ 12, Pro US$ 39 ou US$ 23, Business US$ 69 ou US$ 41 com 100 min de API. A página se contradiz sobre a API do Starter e do Pro (10 ou 100 min) e também mostra preços em BRL. Vizard Free: 60 créditos por mês (1 crédito = 1 min), upload de até 60 min e 1 GB, exportação em 720p com até 10 min de duração, armazenamento de 3 dias, API de 1 requisição por minuto e 10 por hora. Os preços pagos não carregaram.",
+    "fonte_url": "https://klap.app/pricing ; https://www.submagic.co/pricing ; https://vizard.ai/pricing",
+    "nota": "Correção do Vizard: o limite de 10 min vale para a exportação; o upload aceita até 60 min. A marca d'água no Free é só implícita. O suporte a PT no Submagic continua sem confirmação."
+   },
+   {
+    "item": "Política de conteúdo reutilizado do YouTube: bloqueia compilações sem comentário relevante, mesmo com permissão, e vale para o canal inteiro; 'conteúdo repetitivo' passou a se chamar 'conteúdo não original' em 15/07/2025",
+    "veredito": "confirmado",
+    "valor_correto": "Literal: 'This policy applies even if you have permission from the original creator'; 'Nossa política de conteúdo reutilizado se aplica ao seu canal como um todo'. Não monetiza: 'Clips of moments... edited together with little or no narrative'. Monetiza: revisão crítica, reação com comentário, edição com storyline e comentário. Em 15/07/2025 'conteúdo repetitivo' virou 'conteúdo não original' (em inglês, 'inauthentic content') e passou a incluir conteúdo produzido em massa e IA com templates genéricos. A política de reutilizado em si não mudou.",
+    "fonte_url": "https://support.google.com/youtube/answer/1311392?hl=pt-BR",
+    "nota": "Correto o impacto apontado no modelo 2 (canal próprio de cortes)."
+   },
+   {
+    "item": "TikTok Content Posting API: apps não auditados só publicam em modo privado",
+    "veredito": "confirmado",
+    "valor_correto": "Literal: 'All content posted by unaudited clients will be restricted to private viewing mode.' A visibilidade só é liberada depois de uma auditoria de conformidade com os Termos.",
+    "fonte_url": "https://developers.tiktok.com/doc/content-posting-api-get-started",
+    "nota": "A recomendação de usar um agendador já auditado continua válida."
+   }
+  ],
+  "alertas_gerais": [
+   "O orçamento de busca web (WebSearch) desta rodada se esgotou já na primeira tentativa de busca. Todas as verificações foram feitas com WebFetch direto nas fontes primárias. Itens que dependiam de busca aberta ficaram como nao_verificavel: a definição de viewed vs. swiped away, os preços do vidIQ e da Higgsfield, e o estudo da Metricool.",
+   "Há duas cotações diferentes nas frentes: PTAX de R$ 4,9892 e BCE/Frankfurter de R$ 5,005, ambas de 09/10/2026. Sugiro padronizar o relatório final na PTAX de 09/10/2026 (R$ 4,9892) e avisar que o cartão soma IOF e spread.",
+   "Data corrigida: o YouTube passou a contar views no início da reprodução a partir de 24/08/2026 (não 27/08). O ganho no YPP não muda, porque continua usando engaged views. O fator de 1,7 a 1,9 vezes não tem fonte oficial.",
+   "A ElevenLabs está com promoção até 18/10/2026 (Starter a US$ 1 e Creator a US$ 11 no 1º mês). Se a assinatura entrar no orçamento, o prazo é curto.",
+   "O número de US$ 1 por 1.000 views da Whop é autodeclarado e é de março de 2025. Não deve ser apresentado como expectativa atual de ganho.",
+   "Kwai: confirmado que nenhuma das ferramentas checadas (yt-dlp, Postiz, Upload-Post, OpusClip) suporta Kwai. Não verifiquei se o Ad Revenue Program do Kwai está aberto para contas brasileiras."
+  ]
+ }
+]
