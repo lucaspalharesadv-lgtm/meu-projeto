@@ -1,1212 +1,898 @@
-# Guia do Clipador 2026: método, stack e skills
+# Guia do Clipador de Games e Virais 2026: do zero ao primeiro dinheiro
 
-*Pesquisado em 2026-10-11. Os preços mudam: confira cada um antes de assinar.*
+*Pesquisado em 2026-10-12. Os valores mudam toda semana: confira antes de entrar numa campanha ou assinar algo. Câmbio: R$ 4,99 por US$ 1 ([cotação de 09/10/2026](https://boca.com.br/economia/dolar/cotacao-dolar-09-10-2026)). No cartão internacional, some 3,5% de IOF ([Remessa Online](https://www.remessaonline.com.br/blog/web-stories/iof-compras-internacionais-como-pagar-menos/)). O que é cobrado em real (Cut.Pro, CapCut na loja BR, campanhas brasileiras) não paga IOF.*
 
-**Como ler os números deste guia**
-- **Câmbio:** usei a PTAX de venda de 09/10/2026, R$ 4,9892 por US$ 1 ([Banco Central](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial='10-01-2026'&@dataFinalCotacao='10-11-2026'&$format=json)), arredondada para R$ 4,99. Em 01 e 02/10 a PTAX passou de R$ 5,20, então refaça as contas no dia de assinar.
-- **IOF:** os valores em R$ não incluem IOF nem spread. Cartão internacional paga 3,5% de IOF em 2026 ([Remessa Online](https://www.remessaonline.com.br/blog/web-stories/iof-compras-internacionais-como-pagar-menos/)). O que é cobrado em real numa loja nacional não paga IOF: CapCut na loja BR, Cut.Pro, mLabs.
-- **⚠️** marca dado não confirmado em fonte primária ou com fontes que se contradizem.
-- **"Estimativa"** marca cálculo meu, não dado publicado.
-- **Como foi feito:** 6 frentes de pesquisa em paralelo e 261 checagens de preços e regras em fonte primária (175 confirmadas, 45 corrigidas, 41 não verificáveis e marcadas com ⚠️). Depois, uma crítica de completude com 40 apontamentos, todos aplicados nesta versão.
-- **Não sou seu advogado nem seu contador:** as partes jurídica e tributária são roteiro para você conferir. Você conhece o direito melhor que eu.
-
-Sobre a sua pergunta ("algo que eu perguntei vc não entendeu?"): entendi tudo.
-- A resposta direta a "como eu faço para você olhar as melhores skills" está na **seção 10.0**.
-- Faltam duas informações suas (detalhes na seção 11): qual modelo priorizar e quais planos você já paga (OpusClip, vidIQ, Metricool, Higgsfield). Ter um conector ligado não quer dizer que o plano é pago.
+**Como ler este guia**
+- ⚠️ marca dado que não confirmei em fonte primária, ou fontes que se contradizem.
+- "Estimativa minha" é conta feita a partir das premissas indicadas. Não é dado publicado nem promessa.
+- Nenhum conector seu (OpusClip, vidIQ, Metricool, Higgsfield, ElevenLabs etc.) foi executado nesta pesquisa.
 
 ---
 
-## 0. Resumo em 10 linhas + seus primeiros 7 dias
+## 0. Resumo em 10 linhas
 
-1. **Comece pelo modelo 3, cortes como serviço.** É o único com receita previsível.
-   - A unidade de venda é o **corte pronto** (gancho, legenda revisada, 9:16) tirado de episódio já gravado. As referências vão de R$ 15 a 150 por corte. Um pacote de 12 cortes/mês sai por R$ 600 a 1.500 (seção 7.6).
-   - Ser advogado ajuda a vender para advogados: você sabe o que o [Provimento OAB 205/2021](https://www.oab.org.br/leisnormas/legislacao/provimentos/205-2021) permite e escreve o próprio contrato. Mas há vedações para você mesmo (seção 8.4): a marca do serviço não pode usar o seu "Dr." nem o número da OAB.
-2. **Use campanhas pagas por view só como complemento** (até ~5 h/semana): servem de laboratório e de portfólio.
-   - As plataformas brasileiras pagam por Pix, de R$ 0,50 a R$ 2,50 por mil views. Entrada sem cobrança confirmada só em Klypex, Conty e Autoclipper (seção 7.1).
-   - A Real Oficial pagou R$ 108.321 a 6.683 clipadores ([Real Oficial](https://realoficial.com.br/pt/real-rewards)). Dá média acumulada de ~R$ 16 por clipador desde o início da plataforma: não é por mês e não é mediana, porque os prêmios de ranking concentram o dinheiro no topo. É o melhor indício de que a maioria ganha pouco.
-3. **Canal próprio com cortes crus não dá dinheiro.**
-   - O YouTube não monetiza conteúdo reutilizado, mesmo com permissão do criador.
-   - O Shorts paga ~R$ 0,22 por mil views no Brasil.
-   - O Instagram tira das recomendações quem só reposta.
-   - O TikTok só paga vídeo original com mais de 1 min.
-   - Canal próprio só vale com comentário seu ou em parceria oficial com o criador.
-4. **Para escolher o que cortar, parta do que o público já mostrou:** o gráfico "Mais repetidos", os comentários com minutagem e os episódios que estouraram. Depois transcreva e deixe o Claude pontuar com a rubrica de 0 a 10. A nota de viralidade de IA só serve para desempatar.
-5. **Produção:**
-   - O OpusClip Pro (R$ 144,71 = US$ 29; ≈ R$ 149,77 com IOF) é o motor que o Claude controla via MCP. Ele cobre ~5 h de vídeo-fonte por mês.
-   - Nos meses 1 e 2, faça o acabamento no CapCut grátis ou no DaVinci. Assine o CapCut Pro anual (R$ 469,90 à vista, R$ 39,16/mês) só quando o primeiro cliente pagar, para não estourar o teto de R$ 200 no mês da compra.
-6. **Postagem:**
-   - Metricool Free (já conectado, com MCP) cobre só 20 posts/mês: use nas contas de cliente.
-   - Campanha em volume (~180 posts/mês) vai pelo app de cada rede, com a fila diária montada pelo Claude.
-   - O Kwai é sempre manual.
-   - Nunca poste no TikTok por app não auditado: o vídeo sai privado.
-7. **Medição:**
-   - Compare cada corte com a mediana da própria conta.
-   - Olhe primeiro o gancho: skip rate no Reels, "assistiram vs. deslizaram" no Shorts, curva de retenção no TikTok.
-   - Registre tudo no Google Sheets.
-8. **Jurídico:**
-   - O Brasil não tem fair use. Use só fonte autorizada por escrito.
-   - No Shorts, corte com material de terceiros fica abaixo de 60 s.
-   - Recuse campeonato de cortes político ([Res. TSE 23.755/2026](https://revistaforum.com.br/politica/campeonatos-cortes-tse-eleicoes/) ⚠️, só confirmada por imprensa; 2º turno em 25/10/2026). Recuse também campanha de apostas sem autorização, de cassino e de "renda garantida" (seção 8.6).
-9. **No Claude:** monte uma suíte "clipador" de 6 skills ligadas a uma planilha. Há duas arquiteturas para você escolher: A, com automação máxima (≈ R$ 150/mês), e B, local (R$ 0 a 75/mês).
-10. **Em 60 a 90 dias,** a planilha mostra quanto cada modelo rende por hora trabalhada. Corte o que render menos.
-
-### Seus primeiros 7 dias
-
-**Dia 1: base (≈ 2 h)**
-- Confirme a decisão: modelo 3 como principal e modelo 1 como laboratório. Se preferir outra ordem, me diga.
-- Peça ao Claude para criar no Google Sheets a planilha "Cortes – Loop de Melhoria" (seção 6.3).
-- Peça ao Claude para ler o seu plano em cada ferramenta: `vidiq_balance` (não gasta crédito), `opusclip_get_usage` e `getBrandSettings` do Metricool. Isso mostra se o MCP do OpusClip funciona, porque ele só vem no plano Pro.
-- Crie ou ajuste as contas, **separadas do seu perfil de advogado**:
-  - Instagram profissional (criador), exigido para Trial Reel.
-  - TikTok pessoal, se for mirar no Creator Rewards. Nesse caso, Buffer e capa via Metricool não funcionam, porque exigem conta business.
-  - Canal no YouTube com verificação em 2 etapas.
-  - Perfil no Kwai.
-- Cadastre-se na Klypex, na Conty e na Autoclipper (entrada sem cobrança confirmada), e também na Real Oficial e na Viewx (nada cobrado à vista, mas a gratuidade não está escrita: leia o regulamento). Vincule as contas em cada uma e salve o [clipmap.gg](https://clipmap.gg/) como radar de campanhas.
-- Restrinja o gatilho da skill `video-processor-lucas` (texto pronto na seção 3.4). Hoje ela dispara com qualquer vídeo. Num corte de terceiro, aplicaria fundo preto e poria na legenda do post o rodapé "Dr. Lucas ... | OAB/RO", o que também é problema ético (seção 8.4).
-
-**Dia 2: fontes (≈ 1,5 h)**
-- Liste 10 a 15 fontes candidatas usando o [ranking da Rephonic](https://rephonic.com/charts/youtube/brazil/popular-podcasts), o Google Trends (filtro "Pesquisa no YouTube", Brasil) e o TikTok Creative Center (região Brasil).
-- Para cada fonte, responda: ela tem regra para cortes (o [Vaca Cast](https://www.vacacast.com.br/tenha-um-canal-de-cortes), por exemplo, exige 48 h de espera e link do episódio)? Quantos canais de cortes estão ativos? Eles têm views?
-- Autorize 2 buscas no vidIQ (10 créditos): `vidiq_outliers` (pt, vídeos longos) e `vidiq_trending_videos` (Shorts, pt).
-- Descarte futebol, TV e política.
-
-**Dia 3: teste de ferramentas (≈ 2 h)**
-- Escolha um episódio em PT-BR com 2 pessoas, de fonte autorizada (o drive de uma campanha serve), e recorte **o mesmo trecho de 12 a 15 min** para todas as ferramentas. Assim a comparação é justa e cabe nos limites grátis.
-- OpusClip, Reap e Cut.Pro: suba o arquivo autorizado.
-- 2short: só se a fonte for vídeo público do YouTube com legenda e você tiver autorização do dono. Senão, use o Klap (1 vídeo grátis) no lugar.
-- Compare na planilha: erros de legenda a cada 100 palavras, cortes no meio de palavra, enquadramento das 2 pessoas, tempo de renderização e **quantos créditos cada uma debitou**.
-
-**Dia 4: regulamento, triagem e 5 cortes (≈ 2,5 h)**
-- **Primeiro** leia o regulamento da campanha e tire print com data. Duração mínima, hashtags, crédito, material permitido e regra de envio duplicado mudam o corte.
-- Faça a triagem de 30 min (seção 2.5) num episódio da campanha.
-- Produza 5 cortes de 20 a 45 s (ou na duração do regulamento), com gancho escrito na tela e legenda de 2 a 4 palavras por bloco.
-- Revise nomes próprios, gírias e acentos.
-
-**Dia 5: postar e guardar provas (≈ 1,5 h)**
-- Poste 3 cortes na campanha, públicos e no perfil.
-- Em post de campanha, **não** use Trial Reel nem duas versões do mesmo momento, a menos que o regulamento permita por escrito. Trial Reel não aparece no perfil, e duas versões podem contar como envio duplicado. Teste de gancho com Trial Reel fica para a sua conta própria ou a de cliente.
-- Abra um dossiê de provas para cada post (seção 7.2).
-
-**Dia 6: prospecção para o modelo 3 (≈ 2 h)**
-- Liste 10 possíveis clientes: advogados e escritórios que já gravam vídeo, e podcasts médios (10 mil a 200 mil inscritos) que ainda não têm canal de cortes.
-- Para os 2 melhores, faça 2 ou 3 cortes de amostra de um episódio recente. A amostra é enviada em privado, não publicada.
-- Monte a proposta com `small-business:proposal-builder` e uma minuta de contrato (seção 7.6).
-
-**Dia 7: medir e decidir (≈ 1 h)**
-- Lance na planilha os prints de 24 h e 72 h.
-- Faça a primeira rotina semanal (seção 6.4).
-- Decida a assinatura:
-  - Se o OpusClip ganhou o teste do dia 3: só o OpusClip Pro agora (≈ R$ 150 com IOF). O CapCut Pro anual entra quando o primeiro cliente pagar.
-  - Se o Cut.Pro foi melhor em PT-BR: use a variante "volume" da seção 9.2.
+1. **O 1º dinheiro vem de campanha paga por view no Brasil:** R$ 0,50 a 1 por mil views, via Pix, sem mínimo de seguidores. Em games, só 2 campanhas pagam por view hoje: Wild Rift (R$ 15 mil, até 30/11) e Stream Gabriel Morais (R$ 8 mil, até 31/12), as duas na [Real Oficial](https://realoficial.com.br/pt/real-rewards).
+2. **Conta de realidade:** R$ 100 exigem 100 mil views pagas. Conta nova faz de ~350 a 500 views de mediana por post. Mês 1 realista: R$ 0 a 200. A maioria fica perto do piso.
+3. **Ranking só paga o topo.** Entre só onde o prêmio passa de ~R$ 20 por participante (hoje: Pichau, Kosky V2, LOUD Miller e LOUD Facada). Fuja do LOUD Coringa: R$ 2,80 por inscrito.
+4. **Na gringa (Whop), jogo paga mais:** US$ 1 a 1,75 por mil (R$ 4,99 a 8,73). Mas o orçamento acaba em dias, corte com menos de 2.000 a 4.667 views vale zero e o público brasileiro pode não contar.
+5. **Do mês 3 em diante, o dinheiro maior está em virar clipador oficial** de um streamer médio. Corte as lives dele por 2 a 4 semanas e mande a proposta com números.
+6. **Viral só paga com camada sua:** narração, legenda-piada, top 5 ou react. Repost seco perde alcance em todas as redes. Vídeo de ViralHog, Jukin, Newsflare, Storyful ou Collab dá claim.
+7. **Escolha o momento pelo que o público já marcou:** clipes dos viewers (API grátis da Twitch), pico de chat e "Mais repetidos" do YouTube. O Claude aplica a rubrica de 0 a 10. Só publique nota 7 ou mais.
+8. **Edição que retém:** reação no segundo 0, rosto em cima e jogo embaixo, legenda de 2 a 4 palavras, Shorts com material de terceiros em até 60 s e nada da música da live.
+9. **Ferramentas:** R$ 0 nas semanas 1 e 2. Depois, se a edição virar gargalo, R$ 166,79/mês: Cut.Pro Plus (R$ 69,90) + CapCut Pro (R$ 65,90) + ElevenLabs Starter (≈ R$ 30,99).
+10. **O que mais faz perder dinheiro:** inscrever o vídeo na campanha só depois de postar, música de fundo, retocar corte alheio, várias contas na mesma campanha, cassino e bet, e curso de "método".
 
 ---
 
-## 1. Os 3 modelos de clipador comparados
+## 1. Onde está o dinheiro
 
-| | 1) Campanhas pagas por view | 2) Canal próprio de cortes | 3) Serviço para clientes |
+### 1.1 Fontes de renda, da melhor para a pior para quem começa do zero
+
+| # | Fonte | Quanto paga | Aceita conta nova? | Tempo até o 1º real | Horas/semana | Veredito |
+|---|---|---|---|---|---|---|
+| 1 | **Campanhas por view no Brasil** (games, streamers, gerais e música) | R$ 0,50 a 1/mil. Games: Wild Rift e Stream Gabriel Morais a R$ 1/mil ([Real Oficial](https://realoficial.com.br/pt/real-rewards)). Fora de games: Júnior e Cézar R$ 1/mil, teto de R$ 200 por vídeo ([Klypex](https://klypex.com.br/)); Gustavo Borges R$ 1/mil ([Viewx](https://viewx.com.br/)); Clip & Pix R$ 1 a 2,50/mil ([Autoclipper](https://autoclipper.live/clip-and-pix)). Música: taxa por campanha, visível só com login ([Estourou](https://www.estourou.com/)) | Sim: nenhuma das que vi publica mínimo de seguidores. Mas conta recente com números altos é "indício" de fraude e passa por auditoria ([regulamento Yuri22, cl. 9.3](https://cdn.realoficial.com.br/championship-uploads/yuri22-v6-ovdyn7hz.pdf)) | Varia por campanha. Real Oficial: Pix depois da validação; o regulamento do Yuri22 diz até 7 dias após a apuração, e o [blog](https://realoficial.com.br/pt/blog/campeonato-de-cortes-checklist-antes-de-participar) diz 30 a 60 dias após o fim ⚠️. Estourou: saque do dia 1 ao 3 de cada mês, Pix em até 3 dias úteis | 6 a 10 | **Motor do mês 1** |
+| 2 | **Whop / Content Rewards: lançamentos de jogo** | US$ 1 a 1,75/mil (R$ 4,99 a 8,73) no [CoD MW4 Beta](https://contentrewards.com/discover/24ad920b-d24f-479e-9cef-f22182e4a0c0). CPM efetivo de ≈ US$ 1,36/mil (≈ R$ 6,77) no [MW4 Trailer](https://contentrewards.com/discover/6b7db90d-412f-4bcc-ab1e-619ab73bfa09). Aberta e com verba: Roblox ForgeGUI a US$ 1/mil ([Content Rewards](https://contentrewards.com/discover)) | Na maioria, sim. País e público aceitos ficam num documento fechado: views do Brasil podem não contar | O pagamento cai na hora depois da aprovação ([Whop](https://whop.com/blog/whop-clips/)). 1º pagamento em 7 a 14 dias (estimativa da [FORKOFF](https://forkoff.xyz/blog/clipping/how-much-do-clippers-earn-2026)) | 2 a 4, só nas primeiras 48 h de cada lançamento | Extra bom, só onde você bate o mínimo |
+| 3 | **Rankings BR de games com pouca concorrência** | Prêmio fixo para os primeiros colocados. Por participante: Pichau R$ 69, Kosky V2 R$ 58, LOUD Miller R$ 31, LOUD Facada R$ 26 (tabela 1.3) | Sim | Fim da campanha + apuração | 0 a 3 | Bônus. Nunca o plano principal |
+| 4 | **Clipador oficial de streamer** | Gringa: US$ 40 a 50 por 100 mil views (R$ 2,00 a 2,50/mil) ([Cut.pro](https://cut.pro/pt-BR/blog/entrar-exercito-clipadores-streamer-2026), [Dexerto](https://www.dexerto.com/kick/n3on-reveals-he-paid-army-of-clippers-1-4m-over-five-weeks-to-make-him-go-viral-3355473/)). Fixo de US$ 200 a 2.000/mês (R$ 998 a 9.980) ou US$ 50 a 300 por corte (R$ 249,50 a 1.497), segundo blog de fornecedor ([Ascynd](https://ascynd.io/en/blog/get-paid-to-clip-streamers)). Brasil: não há dado público. Referência para negociar: editor de vídeo CLT ganha de R$ 2.186 a 5.299/mês ([Salario.com.br](https://www.salario.com.br/profissao/editor-de-tv-e-video-cbo-374405/)) | Precisa de 2 a 4 semanas de cortes publicados como prova | 1 a 3 meses | 0 extra: usa os cortes que você já faz | **Maior potencial do mês 3 em diante** |
+| 5 | **Publi e shoutout na página de virais** | Não há tabela BR para página de meme. Exemplos de post no feed: 28 mil seguidores, R$ 572 a 858; 55 mil, R$ 1.030 a 1.544 ([usepora](https://www.usepora.com.br/calculadora-de-publicidade)). Theme pages gringas (alegação sem prova): 5 a 10 mil seguidores, US$ 20 a 50 (R$ 99,80 a 249,50); 10 a 50 mil, US$ 50 a 150 (R$ 249,50 a 748,50) ([wifimoolah](https://wifimoolah.com/p/idea-53)) | Não. Precisa de ~10 mil seguidores e de views médias para mostrar | 2 a 6 meses | 1 (para vender) | Do mês 3 em diante |
+| 6 | **Prêmios da Garena (Free Fire) no TikTok** | Até R$ 50 mil (Tesouro Perdido) e R$ 150 mil (Baile do Jaguar), "proporcionais ao desempenho" ([Free Fire Mania](https://www.freefiremania.com.br/noticia/garena-libera-50-mil-tesouro-perdido-tiktok.html)) | Nenhum requisito de seguidores divulgado. Exige gameplay sua | Por evento. Os dois de 2026 já fecharam; a forma de pagamento não foi divulgada | 2 a 3 durante o evento | Só se você joga Free Fire |
+| 7 | **Afiliados Shopee** ⚠️ | Até 14% de comissão, sem mínimo de seguidores ([Tecnoblog](https://tecnoblog.net/477797/exclusivo-shopee-lanca-programa-de-afiliados-no-brasil-com-comissoes-de-ate-14/), matéria de lançamento) | Sim | Depois da 1ª venda | 1 | Só em página de produto ou "satisfying" |
+| 8 | **Monetização nativa** | TikTok Creator Rewards: R$ 0,50 a 1,60/mil (estimativas: [Real Oficial](https://realoficial.com.br/pt/blog/como-ganhar-dinheiro-no-tiktok-com-cortes-em-2026-modelo-afiliado-e-creator-fund), [Elev8or](https://www.elev8or.io/blog/tiktok-creator-rewards-rpm-2026)). Shorts no Brasil: ≈ R$ 0,22/mil ([AIR](https://air.io/en/monetization/what-rpm-can-you-expect-from-shorts-in-2026)). Shorts de gaming: US$ 0,02 a 0,08/mil (R$ 0,10 a 0,40) ([fluxnote](https://fluxnote.io/guides/youtube-shorts-rpm-gaming-niche)) | Não. TikTok: 10 mil seguidores + 100 mil views em 30 dias + vídeo de 1 min ou mais ([termos BR](https://www.tiktok.com/legal/page/global/tiktok-creator-rewards-program-br/en)). YouTube: 1.000 inscritos + 10 mi de views em Shorts em 90 dias ([ajuda](https://support.google.com/youtube/answer/72851?hl=pt-BR)) | 3 a 6 meses ou mais | 3 a 5 (conta só de originais) | Corte de live alheia não paga aqui |
+
+**Notas:**
+- **Kwai:** o Programa de Receita de Anúncios exige nível 6 ou mais de 500 fãs, trabalhos originais, mais de 12 posts em 30 dias e média de 1.000 views por post ([Kwai](https://www.kwai.com/pt-BR/support/creator-center/por-que-nao-tenho-posso-participar-do-programa-de-receita-de-anuncios)). O valor por mil não é confiável ⚠️: blogs citam R$ 0,50 a 3, sem fonte firme. Use o Kwai como alcance e para desafios com prêmio, não como renda.
+- **Facebook:** o Content Monetization teria o Brasil na lista, só por convite, com reel de 10 s ou mais e conteúdo original ([clip-short](https://www.clip-short.com/guides/facebook-content-monetization), fonte secundária). O Creator Fast Track não vale no Brasil ([Sirency](https://www.sirency.com/blog/facebook-bonus-program-creator-fast-track)).
+- **Kick:** não há programa público com taxa para clipador ([FindClout](https://findclout.com/blog/kick-clipping-program), [Lumina](https://luminaclippers.com/blog/how-to-become-a-clipper)). O "Kick Clipping Program" é inscrição para streamers, feita pelo Discord da Kick ([Win.gg](https://win.gg/kick-clipping-program/)). Quem se diz "programa oficial da Kick" e pede dinheiro ou login é golpe.
+- **YouTube a partir de 01/02/2027:** a receita de Shorts só sai com 10 mi de views qualificadas em 90 dias, mesmo para quem já é membro ([oficial](https://support.google.com/youtube/answer/12504220?hl=pt-BR)). Para canal de cortes iniciante, a receita de Shorts é praticamente zero.
+
+### 1.2 Quanto dá por mês (estimativa minha)
+
+**Premissas:**
+- **Cenário A:** 12 h por semana. 2 a 3 cortes de game por dia + 1 viral por dia, postados em TikTok, Shorts e Reels, e no Kwai quando a campanha aceitar. Contas novas.
+- **Views medianas por post:** no mês 1, de 300 a 1.000 (referências: [350 no TikTok para contas de 1 a 5 mil seguidores](https://www.socialinsider.io/social-media-benchmarks/tiktok) e [mediana de ~500 no estudo do Buffer](https://buffer.com/resources/how-often-should-you-post-on-tiktok/)). No mês 3, de 1 a 3 mil, com 1 a 3 cortes de 50 a 300 mil. No mês 6, de 2 a 10 mil, com 1 outlier de 300 mil a 1 mi por mês.
+- **Cenário B:** 30 h por semana e 5 a 6 cortes por dia.
+
+| Fonte | Mês 1 | Mês 3 | Mês 6 |
 |---|---|---|---|
-| **Como ganha** | A marca ou o criador paga por mil views válidas dos cortes que você posta no seu perfil, ou paga prêmio de ranking | Receita de anúncio da rede (YPP, Creator Rewards, Kwai) e afiliados | Mensalidade ou pacote pago pelo dono do conteúdo |
-| **Quanto paga (faixas verificadas)** | **Brasil:** R$ 0,50 a 2,50/mil (Real Oficial, Klypex, Viewx, Autoclipper, Cut.pro).<br>**Rankings:** até R$ 6 mil ao 1º lugar (Klypex); campeonatos de R$ 2,5 mil a R$ 40 mil (Viewx).<br>**Whop:** mediana de US$ 1/mil (≈ R$ 4,99), faixa de US$ 0,05 a 3 ([foto de 28/09/2026](https://www.builtbyfoundry.io/blog/what-is-clipping-1-dollar-per-1000-views-50-campaigns)).<br>**Indício:** média acumulada de ~R$ 16 por clipador pago na Real Oficial desde o início (não é mensal) | **Shorts BR:** ≈ US$ 0,045/mil (≈ R$ 0,22) ([AIR](https://air.io/en/monetization/what-rpm-can-you-expect-from-shorts-in-2026)).<br>**TikTok:** ≈ US$ 0,32/mil (≈ R$ 1,60, baixa confiança), só para vídeo original com mais de 1 min.<br>**Instagram:** nenhum programa aberto no Brasil.<br>**Kwai:** programa "abrindo gradualmente", valores ⚠️ | **Corte avulso:** R$ 15 a 40 (criador pequeno) e R$ 40 a 100 (médio), baixa confiança; vídeo curto avulso R$ 50 a 150.<br>**Pacote sugerido:** 12 cortes/mês por R$ 600 a 1.500.<br>**Premium jurídico** (roteiro de gancho + revisão de conformidade): R$ 1.500 a 3.000.<br>**Reel editado a partir do material bruto:** R$ 300 a 700 cada |
-| **Barreira** | Baixa. Muitas não exigem seguidores, mas há mínimo de views por vídeo (ex.: 1.000 na Cut.pro) | Alta. YPP: 1.000 inscritos + 4.000 h, ou 1.000 inscritos + 10 mi de views em Shorts em 90 dias. TikTok: 10 mil seguidores + 100 mil views em 30 dias | Média. Exige portfólio e capacidade de vender |
-| **Horas/semana (estimativa)** | 10 a 20 h (é jogo de volume) | 10 a 15 h | 3 a 6 h por cliente, com IA |
-| **Risco** | Alto: o orçamento acaba, o corte é rejeitado depois de ter views, há estorno e golpes | Alto: o canal inteiro pode ser desmonetizado, há Content ID e perda de recomendação | Baixo a médio: calote e briga de escopo, que o contrato resolve |
-| **Escala** | Média (tetos por vídeo e orçamento) | Alta se der certo, mas lenta e incerta | Média (limitada por horas; IA e terceirização ajudam) |
+| Campanhas por view no Brasil (games, gerais, música) | R$ 0 a 50 | R$ 150 a 800 | R$ 500 a 2.000 |
+| Rankings BR | R$ 0 | R$ 0 a 300 | R$ 0 a 3.000 (um 1º lugar paga de R$ 1.250 a 10 mil; é loteria) |
+| Whop com jogos | R$ 0 a 100 | R$ 100 a 800 | R$ 500 a 3.000 |
+| Clipador oficial | R$ 0 (fase de portfólio) | R$ 0 a 1.000 (1 streamer BR pequeno) | R$ 600 a 2.500 (1 ou 2 streamers, ou 1 gringo pequeno) |
+| Publi na página de virais | R$ 0 | R$ 0 a 750 (0 a 3 publis de R$ 50 a 250) | R$ 300 a 3.600 (2 a 6 publis de R$ 150 a 600) |
+| Afiliado ⚠️ | R$ 0 | R$ 0 a 100 | sem dado |
+| Nativo | R$ 0 | R$ 0 | R$ 0 a 500 (só na conta de originais) |
+| **Total provável, cenário A** | **R$ 0 a 200** | **R$ 200 a 1.500** | **R$ 800 a 4.000** |
+| Total provável, cenário B | R$ 0 a 400 | R$ 500 a 3.000 | R$ 2.000 a 7.500 |
 
-**Quanto dá para ganhar por mês.** Estimativa minha com os dados acima, não é garantia:
+- O total não é a soma das linhas: com 12 h por semana, você não faz tudo ao mesmo tempo.
+- **A maioria fica no piso.** No mês 1, cada hora rende entre R$ 0 e 4.
 
-| | Campanhas | Canal próprio | Serviço |
-|---|---|---|---|
-| Mês 1 | R$ 0 a 200 | R$ 0 | R$ 0 a 1.500 (0 ou 1 cliente) |
-| Mês 3 | R$ 100 a 800 | R$ 0 a 300 | R$ 1.200 a 4.500 (2 ou 3 clientes de 12 cortes) |
-| Mês 6 | R$ 300 a 2.000 | R$ 0 a 1.500 (só se entrar no YPP ou no TikTok Rewards) | R$ 1.800 a 7.500 (3 a 5 clientes; o topo exige premium jurídico) |
+**Testes de realidade:**
+- A Real Oficial pagou R$ 108.321 a 6.683 clipadores desde o início. Isso dá ~R$ 16 por clipador no acumulado, não por mês ([Real Oficial](https://realoficial.com.br/pt/real-rewards)).
+- Na agência Clip, 1.300 de ~16 mil clipadores receberam algo entre janeiro e setembro: ~8% da rede ([MediaCat](https://mediacat.uk/?p=44751)).
+- Num sprint de agência, 3.085 cortes fizeram 1,19 mi de views. São ~386 views por corte, ou de US$ 0,39 a 0,48 por corte (R$ 1,93 a 2,41) ([FORKOFF](https://forkoff.xyz/blog/clipping/how-much-do-clippers-earn-2026)).
+- No CoD MW4 Beta, os 986 participantes ganharam em média US$ 9,47 (R$ 47,26) ([Content Rewards](https://contentrewards.com/discover/24ad920b-d24f-479e-9cef-f22182e4a0c0)).
+- Segundo fornecedores, o mês 1 rende de US$ 0 a 80 (R$ 0 a 399) ([Ascynd](https://ascynd.io/en/blog/get-paid-to-clip-streamers)), e os primeiros meses, de R$ 400 a 1.200 ([Cut.pro](https://cut.pro/en/blog/how-much-a-clipper-earns-2026), sem amostra).
+- Os casos grandes são de sobreviventes. Um clipador recebeu US$ 12 (R$ 59,88) pelo 1º corte e US$ 2.500 (R$ 12.475) duas semanas depois ([NPR](https://www.kunc.org/npr-news/2026-05-12/the-clipping-economy-how-short-form-video-clippers-are-overrunning-the-internet)).
 
-- **Campanhas:** a faixa cheia pressupõe 10 a 20 h/semana. Com as 5 h/semana que eu recomendo, use 1/3 a 1/2 dela: mês 6 ≈ R$ 100 a 700.
-- **Serviço:** com 3 clientes ou mais, a capacidade do OpusClip Pro (~5 h de fonte por mês) acaba. Veja as notas da seção 9.2.
-- Para ter R$ 1.000/mês em campanhas brasileiras, você precisa de cerca de 1 milhão de views **pagas** por mês. Dez milhões de views no Shorts no Brasil rendem ≈ US$ 450 (≈ R$ 2.245).
+### 1.3 Campanhas de games e streamers abertas em 12/10/2026
 
-### Ordem recomendada para você (orçamento de R$ 200/mês)
-
-1. **Principal: modelo 3.**
-   - **Nicho:** comece onde o seu diploma conta. Primeiro advogados e escritórios (Provimento 205); depois podcasts médios, médicos ([CFM 2.336/2023](https://crmes.org.br/wp-content/uploads/2023/09/Resolucao-2336-2023-publicidade-e-propaganda-medica.pdf)) e empresas B2B. Leia antes a seção 8.4: o serviço de cortes precisa de marca separada da sua advocacia.
-   - **Forma de venda:** pacote mensal pago adiantado, com contrato e autorização de uso.
-   - **Meta (não é previsão):** 1 cliente no mês 1 e 3 clientes no mês 3.
-2. **Complemento: modelo 1, até 5 h por semana.**
-   - Use as plataformas brasileiras que pagam por Pix e não cobram para entrar. Os prints de views e de ranking viram prova social para vender o modelo 3.
-   - Na Whop, entre só em campanhas que aceitem o seu público. ⚠️ Não está confirmado quantas campanhas exigem público de língua inglesa (Tier 1), então leia o campo de público de cada uma.
-3. **Depois do mês 3: modelo 2, de um destes dois jeitos.**
-   - (a) **Canal oficial em parceria com um podcast:** com licença escrita, recebendo taxa fixa ou divisão de receita.
-   - (b) **Canal próprio com comentário de verdade:** por exemplo, "o que a lei diz sobre isso", com versões de mais de 1 min para o TikTok.
-   - **Não corra para o YPP antes de 01/02/2027.** A partir dessa data, mesmo quem já é membro só recebe receita de Shorts com 10 mi de views qualificadas em 90 dias ([oficial](https://support.google.com/youtube/answer/12504220?hl=pt-BR)). A imprensa fala ainda em 8.000 h ou 20 mi de views para novos candidatos ([⚠️](https://insider-gaming.com/br/youtube-dobra-requisitos-programa-parcerias-monetizacao-2027/)). Para um canal de cortes iniciante, a receita de Shorts é praticamente zero: trate o YouTube como vitrine de portfólio, não como renda.
-   - Nunca faça reupload "mascarado".
-
-Entrar nas plataformas de campanha custa R$ 0. Por isso, os R$ 200 vão inteiros para ferramentas de produção (seção 9).
-
----
-
-## 2. Etapa 1 — O que clipar
-
-### 2.1 Fontes com demanda
-
-- **Podcasts e entrevistas.** Top 10 de podcasts no YouTube Brasil ([Rephonic](https://rephonic.com/charts/youtube/brazil/popular-podcasts)), com as duplicatas juntadas: Inteligência Ltda (2 canais), Flow Podcast (2 canais), Beto Ribeiro, "Entrevistas completas", RedCast, Fala Glauber, Oeste Sem Filtro e Jornal da Oeste (cortes). Os dois últimos são políticos: **evitar**.
-- **Spotify.** ⚠️ A informação de que "Não Inviabilize" está em 12º no ranking global não pôde ser confirmada: a fonte saiu do ar.
-- **Streamers.** ⚠️ Os rankings do TwitchTracker e da Streams Charts não foram verificados. Lives geram muitos momentos, mas exigem checar música e direito de transmissão.
-- **Campanhas.** A fonte vem pronta, no drive da campanha.
-- **Clientes.** O conteúdo é do próprio cliente.
-
-**Como escolher uma fonte.** Priorize quem tem demanda alta, poucos cortes de qualidade, regra clara de cortes e risco baixo. Para cada candidata, monte uma linha no Sheets com:
-
-| Coluna | Como medir |
-|---|---|
-| (a) Episódios outlier | `vidiq_outliers` (language `pt`, `publishedWithin: threeMonths`) |
-| (b) Frequência | Ideal: 2 ou mais episódios por semana |
-| (c) Oferta de cortes | Busque "[nome] cortes" no YouTube e no TikTok. Conte os canais ativos nos últimos 30 dias e a mediana de views deles. **Verde:** 2 a 8 canais e mediana acima de 5 mil views. **Amarelo:** mais de 8 canais (saturado; só entre com ângulo novo). **Vermelho:** mediana abaixo de 1 mil (falta demanda). Limiares meus, para calibrar com os seus dados |
-| (d) Regra ou campanha | Página de regras de cortes, autorização ou campanha paga |
-| (e) Risco | Música, esporte, TV, política |
-| (f) Crescimento | Social Blade grátis |
-
-**Fontes para evitar agora:**
-- **Futebol.**
-  - ⚠️ A Lei 14.597/2023, art. 163, limitaria o uso de imagens de partidas a fins jornalísticos. Não confirmei o artigo e os limites no texto da lei.
-  - Os direitos estão espalhados por vários donos. Libra: Globo com exclusividade. FFU (Futebol Forte União): Globo, Record, CazéTV e Prime Video ([Lance](https://www.lance.com.br/lance-negocios/onde-assistir-ao-brasileirao-2026-entenda-divisao-dos-direitos-de-transmissao.html)).
-- **TV e música:** disparam o Content ID.
-- **Política paga:** vedada pelo TSE (seção 8).
-
-### 2.2 Como achar outliers com o que você já tem
-
-Outlier é o vídeo que foi muito acima da média do próprio canal. Esta é a principal ferramenta de descoberta:
-
-| Sinal | Ferramenta | Custo | Pegadinha |
-|---|---|---|---|
-| Episódios longos em PT que estouraram | `vidiq_outliers` (language `pt`, contentType `long`, `minOutlierScore` ≈ 3, `channelIds` dos podcasts escolhidos) | 5 créditos | Em português, só busca vídeo **longo**. Pedir Shorts em PT é rejeitado e a janela máxima é de 6 meses |
-| Shorts em alta em PT | `vidiq_trending_videos` (videoFormat `short`, videoTitleLanguage `pt`, `vphMin`) | 5 créditos | Mede velocidade absoluta (views por hora). `channelCountry` é o país do canal, não do público |
-| Reels e TikToks fora da curva | `vidiq_instagram_tiktok_outlier_search` com `descriptionLanguage: ['pt']`, `audienceQuery: 'Culture/Region: Brazil; Global: false; Demographics: ...'`, `embeddingType: 'hook'` | 5 créditos | O padrão é legenda em inglês, últimos 30 dias, no mínimo 10 mil views. A própria ferramenta pede 2 ou mais outliers antes de chamar algo de padrão |
-| O que o público pede | `vidiq_comment_insights` (niche **em inglês**, `language: 'pt'`, modo discover) | 5 créditos | Cerca de metade dos comentários é ruído |
-| Trechos que o público revê | Gráfico "Mais repetidos" do YouTube ([9to5Google](https://9to5google.com/2022/05/18/youtube-most-replayed/)) | Grátis | Não tem API: você lê no olho. Só aparece em vídeo com tráfego suficiente |
-| Temas subindo | Google Trends com o filtro "Pesquisa no YouTube", Brasil | Grátis | Mostra volume relativo, não absoluto |
-| Hashtags e sons do Brasil | [TikTok Creative Center](https://ads.tiktok.com/business/pt-BR/blog/creative-center-fala-portugues), grátis e em PT | Grátis | Feito para anunciantes. A fonte é de 2023 |
-| Buscas sem bom resultado | YouTube Studio > Tendências > "Lacunas de conteúdo nos Shorts" ([ajuda](https://support.google.com/youtube/answer/11962757?hl=pt-BR)) | Grátis | Exige ter canal próprio |
-| Criador em crescimento | Social Blade grátis (30 dias de dados) | Grátis | Não mostra outlier por vídeo |
-| 1 concorrente no TikTok | [Exolyt Basic](https://exolyt.com/pricing) | Grátis | 1 conta, 7 dias de histórico |
-
-**Não assine agora** (tudo se sobrepõe ao vidIQ):
-
-| Ferramenta | Preço | Motivo |
-|---|---|---|
-| [Virlo](https://virlo.ai/pricing) Starter | R$ 244,51 (US$ 49) | Sozinho já passa do orçamento |
-| [Sandcastles](https://sandcastles.ai/) | R$ 194,61 a 244,51 | Sobrepõe o vidIQ |
-| [1of10](https://1of10.com/pricing) Basic | R$ 74,85 (anual) | Foco em vídeo longo do YouTube |
-| ViewStats | ⚠️ preço do Pro não aparece na página oficial | Sobrepõe o vidIQ |
-| Exolyt pago | ≈ R$ 1.996 | Fora do orçamento |
-| Pentos | ⚠️ domínio fora do ar em 11/10/2026 | Pode ter sido descontinuado |
-
-### 2.3 Checklist do momento clipável
-
-Responda SIM ou NÃO para cada item. Para cortar, é preciso ter **8 de 12 SIM e nenhum NÃO nos itens 11 e 12**.
-
-1. A primeira frase se entende sem contexto anterior e cabe em até 3 s?
-2. Há pergunta, tensão ou promessa nos 3 primeiros segundos que só se resolve no fim?
-3. O payoff (resposta, punchline, revelação, desfecho) está dentro do corte?
-4. O trecho provoca emoção de alta ativação: riso, raiva, espanto ou ansiedade?
-5. Tem conflito, opinião contrária, número concreto, bastidor ou história com começo, meio e fim?
-6. Existe uma frase citável que funcione como texto na tela?
-7. Funciona em 9:16? O rosto aparece e o trecho não depende de slide, tela ou gesto fora do quadro?
-8. A duração bate com o objetivo? Veja a regra da campanha, os mais de 60 s do TikTok Rewards e o limite de 60 s no YouTube quando há material de terceiros.
-9. O tema tem busca ou tendência agora?
-10. Ninguém publicou este trecho ainda, nem o canal oficial de cortes nem outros clipadores?
-11. **Risco jurídico ok?** Sem música protegida, sem transmissão esportiva ou de TV, sem tirar fala de contexto, sem propaganda eleitoral paga.
-12. **Respeita a regra do criador e a da campanha?** Por exemplo: prazo de espera, link do episódio, nada de clickbait.
-
-### 2.4 Rubrica de 0 a 10 para o Claude aplicar
-
-A rubrica se apoia em três bases:
-- Conteúdo que provoca emoção de alta ativação é mais compartilhado ([Berger & Milkman, 2012](https://cssh.northeastern.edu/pandemic-teaching-initiative/wp-content/uploads/sites/43/2020/09/What-Makes-Online-Content-Viral.pdf)).
-- A curiosidade nasce de uma lacuna de informação sobre algo que a pessoa já conhece um pouco ([Loewenstein, 1994](https://nautil.us/curiosity-depends-on-what-you-already-know-235803)).
-- O TikTok declara "valor de busca" e tempo de reprodução como fatores de recompensa ([newsroom](https://newsroom.tiktok.com/pt-br/apresentando-o-programa-de-recompensas-do-criador)).
-
-| Critério | Pontos |
-|---|---|
-| G: gancho que se entende sozinho | 0 a 2 |
-| L: pergunta aberta + payoff dentro do corte | 0 a 2 |
-| E: emoção (2 = riso forte, indignação ou espanto; 1 = interesse; 0 = neutro ou triste) | 0 a 2 |
-| T: tensão (conflito, polêmica, revelação) | 0 a 1 |
-| A: autossuficiência | 0 a 1 |
-| R: relevância (busca ou tendência agora) | 0 a 1 |
-| Q: frase citável | 0 a 1 |
-| Penalidades | −3 se houver risco jurídico; −2 se depender de imagem que some no 9:16; −1 se o payoff vier depois de 45 s num corte CURTO ou depois de 75 s num LONGO |
-
-**Corte de nota:** abaixo de 6, descarte. De 7 para cima, publique. Nota 6 só entra se faltar material.
-
-**Prompt para usar:**
-> Você é editor de cortes. Abaixo está a transcrição com minutagem de [episódio]. Liste até 15 momentos candidatos de 20 a 90 s. Para cada um: início e fim (mm:ss); a primeira frase LITERAL; a minutagem do payoff; as notas G, L, E, T, A, R e Q com 1 linha de justificativa cada; as penalidades; a duração-alvo (CURTO de 20 a 45 s ou LONGO de 61 a 90 s); um gancho de tela com até 8 palavras; e 2 títulos. Não invente falas; cite literalmente. Descarte trechos que exigem contexto anterior. Devolva uma tabela ordenada por nota final.
-
-**Calibração:** depois de 30 cortes publicados, compare as notas com as views em 7 dias e ajuste os pesos (critério estatístico na seção 2.6).
-
-### 2.5 Triagem de um episódio de 2 h em 30 min
-
-| Minuto | Passo |
-|---|---|
-| 0 a 4 | Sinais grátis: anote 3 a 5 picos do "Mais repetidos", os capítulos e os 20 comentários mais curtidos com minutagem. Veja o que o canal oficial de cortes já publicou e marque como "evitar ou mudar o ângulo" |
-| 4 a 8 | Transcrição com minutagem **sem gastar crédito de corte**: (1) vídeo no YouTube: `vidiq_video_transcript` (5 créditos vidIQ) ou Supadata Free (100 por mês); (2) arquivo de cliente ou campanha: faster-whisper local no Claude Code ou no PC (R$ 0) ou a API do ElevenLabs (US$ 0,22/h ≈ R$ 1,14/h com IOF). O ElevenLabs Free (12 a 30 min/mês) não dá conta de episódio inteiro. O `opusclip_get_transcript` exige enviar o projeto, e 2 h custam 120 dos 300 créditos do Pro: use só nos trechos escolhidos |
-| 8 a 15 | 1ª passada do Claude: blocos de ~20 min, rubrica, uma tabela única. Dê +1 ao trecho que coincidir com pico do "Mais repetidos" ou com comentário com minutagem |
-| 15 a 20 | 2ª passada: tire os duplicados e fique com os 8 a 10 de nota 7 ou mais. Para cada um, peça abertura reescrita, texto de tela e duração por plataforma |
-| 20 a 28 | Olho humano: assista só os 5 a 8 finalistas em 1,5x ou 2x. Confira 9:16, payoff e risco jurídico. Opcional: veja se os seus 5 melhores aparecem entre os 10 melhores do OpusClip |
-| 28 a 30 | Registre no Sheets e mande para a edição |
-
-**Meta de produção** (é o principal indicador de quem vive de clipping):
-- 1ª semana: 15 min por corte. Mês 2: 8 a 10 min por corte. Referência da cut.pro: 3 a 4 cortes por hora (baixa confiança).
-- Para chegar lá, crie um template de marca por cliente no OpusClip (até 4 no Pro) e um preset de legenda no CapCut.
-
-### 2.6 Notas de viralidade: use só para desempatar
-
-- **OpusClip** ([ajuda](https://help.opus.pro/docs/article/virality-score)):
-  - Nota de 0 a 99, a partir de Hook, Flow, Value e Trend. Só aparece nos planos Starter e Pro. A empresa não publica pesos nem taxa de acerto.
-  - O único teste encontrado ([ScaleReach](https://www.scalereach.ai/blog/opus-clip-review), concorrente, 30 clipes): nota acima de 75 teve ≈ 2,3x mais views que nota abaixo de 50. Mas o melhor clipe tinha nota 64 e o pior, 87.
-- **Higgsfield `virality_predictor`** ⚠️:
-  - Segundo [fonte secundária](https://quasa.io/media/higgsfield-launches-virality-predictor-an-ai-tool-that-predicts-if-your-video-will-go-viral-before-you-post-it), é grátis enquanto está em beta e analisa no máximo 15 s. Então serve para o gancho, não para o corte inteiro.
-  - Contraexemplo público: um vídeo com 7 mil views recebeu nota maior que um com 2,1 mi.
-- **Klap e Vizard:** não achei nenhum teste independente.
-- **Como validar com os seus dados:** depois de 30 cortes, peça ao Claude a correlação de Spearman entre cada nota (a sua rubrica e a da IA) e as views em 7 dias.
-  - Com 30 cortes, só considere uma nota útil se rho ≥ 0,4. O valor crítico a 5% para n = 30 é ≈ 0,36.
-  - Entre 0,2 e 0,4, colete até 50 cortes antes de decidir.
-  - Abaixo disso, use a nota só como pré-filtro.
-
----
-
-## 3. Etapa 2 — Cortar, reenquadrar e legendar
-
-### 3.1 Tabela comparativa (preços de 11/10/2026)
-
-| Ferramenta | Preço (R$/mês) | Grátis | PT-BR | Reenquadre 9:16 | API/MCP | Conectado? | Veredito |
+| Campanha | Onde | Modelo | Total | Concorrência | R$ por participante | Fim | Observação |
 |---|---|---|---|---|---|---|---|
-| [OpusClip](https://www.opus.pro/pricing) | Starter R$ 74,85 (US$ 15); Pro R$ 144,71 (US$ 29). Preço anual não aparece na página oficial ⚠️ | 1 clipe por dia; marca d'água na legenda animada; sem nota de viralidade | Transcrição multilíngue; revise acentos e nomes | 7 layouts (Fill, Fit, Split, Three, Four, Screenshare, Gameplay). O Split só funciona com as pessoas no mesmo quadro | MCP e APIs **só no Pro e no Business** | Sim | **Motor principal (Pro).** 1 crédito = 1 min de vídeo-fonte ([API](https://help.opus.pro/api-reference/overview)). Use `rangeStart`/`rangeEnd` para pagar só o trecho |
-| [Reap](https://www.reap.video/pricing) | Creator R$ 49,85 no anual (US$ 9,99) ou R$ 119,76 no mensal (US$ 24) | 1 h/mês, 720p, marca d'água | "Mais de 100 idiomas"; PT não aparece nomeado | Rastreia quem fala | API, CLI e MCP nos planos pagos | Não | Melhor custo por hora no anual (10 h). Plano B para volume |
-| [Cut.Pro](https://cut.pro/pt-BR/pricing) | Básico R$ 19,90; Plus R$ 69,90 (1.000 créditos); Pro R$ 119,90. Cobra em real, aceita Pix | 15 créditos/mês, vídeos de até 1 h | Foco declarado em PT-BR (afirmação do fornecedor) | Automático | API citada, sem detalhes | Não | Teste no grátis. Se for bom em PT-BR, o Plus é o melhor custo para campanhas. ⚠️ A página se contradiz sobre marca d'água, e não está confirmado que 1 crédito = 1 min |
-| [2short.ai](https://2short.ai/pricing) | Lite R$ 49,40 (US$ 9,90, 5 h); Pro R$ 99,30 (US$ 19,90, 15 h) | 30 ou 15 min (a página se contradiz) | Português listado | Rastreio facial | Sem API | Não | Mais barato por hora no mensal. Só trabalha a partir de vídeo do YouTube que tenha legenda |
-| [Vizard](https://vizard.ai/pricing) | Creator R$ 144,71 ou R$ 72,36 no anual (US$ 29 ou 14,50; preço de [terceiro](https://www.usefastlane.ai/pricing/vizard) ⚠️) | 60 créditos, 720p, marca d'água, exporta até 10 min | Não informado | Automático | API até no Free (1 requisição por minuto) | Não | Redundante com o OpusClip |
-| [Klap](https://klap.app/pricing) | Basic R$ 69,86 (US$ 14, anual); Pro R$ 194,61 (US$ 39, anual) | 1 vídeo grátis (segundo a home) | Português entre 52 idiomas | Segue o rosto de quem fala | API documentada | Não | Boas legendas; não é prioridade |
-| [Submagic](https://www.submagic.co/pricing) | Starter R$ 94,81 ou R$ 59,88 no anual (US$ 19 ou 12) | Teste sem cartão | Página em português europeu | Não é o foco | API nos planos pagos (minutos contraditórios) | Não | Dá acabamento à legenda; não encontra cortes |
-| [Choppity](https://www.choppity.com/pricing) | Starter R$ 119,76 ou R$ 83,83 no anual | 1 h de análise; não exporta em 1080p/4K | Não informado | Tela dividida por câmera | API a partir do Creator | Não | Só para podcast com câmeras separadas |
-| [Eklipse](https://eklipse.gg/help/how-much-does-eklipse-premium-cost/) | Premium R$ 124,70 (US$ 24,99) ou ≈ R$ 74,85 no anual | Destaques de game e de podcast (limites não publicados) | Site em PT | Facecam + jogo | Não | Não | Para quem for cortar streamers |
-| StreamLadder ⚠️ | Silver ≈ R$ 44,91 (US$ 9); Gold ≈ R$ 74,85 (US$ 15), preços de [review](https://vidpros.com/streamladder-review-2026/) | 720p a 30 fps | Não verificado | Layouts de game; 60 fps no Silver | Não | Não | Cortes de game em 60 fps |
-| [Spikes Studio](https://spikes.studio/pricing) | PRO+ R$ 164,62 ou R$ 70,31 no anual | 30 min, 720p, marca d'água | PT não nomeado | Gaming | Só no Enterprise | Não | Não é prioridade |
-| [quso.ai](https://aivideopicks.com/ai-video-tools/quso) | Lite R$ 144,71 ou R$ 94,81 no anual | 75 créditos, 720p | Não nomeado | — | Não mencionada | Não | Descartar: caro por hora |
-| [Munch Studio](https://www.munchstudio.com/pricing) | Essential R$ 189,62 (US$ 38) | Sem plano grátis | Não informado | — | — | Não | Descartar |
-| [Descript](https://www.descript.com/pricing) | Hobbyist R$ 79,84 no anual ou R$ 119,76 no mensal | 60 min/mês, 720p, marca d'água | "Portuguese (BR)" na transcrição | Não é o foco | MCP (Underlord) + API | Sim | Para cliente premium e edição pelo texto. O MCP não importa link do YouTube ([MCP](https://www.descript.com/mcp)) |
-| [CapCut](https://www.techtudo.com.br/listas/2026/10/capcut-pro-mais-barato-veja-como-economizar-na-assinatura-edapps.ghtml) | Pro R$ 65,90/mês ou R$ 469,90/ano (R$ 39,16/mês), em real | Edição e recorte manual | Bom (revise acentos) | Auto Reframe é recurso Pro ([ajuda](https://www.capcut.com/help/why-do-i-have-to-pay-for-auto-reframe)); ⚠️ a data da mudança (04/2026) não foi verificada nesta rodada | Não | Não | **Editor de acabamento recomendado.** ⚠️ Os termos de licença de conteúdo não foram verificados; não suba material confidencial de cliente |
-| [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/compare) | Grátis; Studio R$ 1.472 em pagamento único (US$ 295) | Até UHD a 60 fps | — | Keyframe manual. Os recursos de IA são do Studio | Script | Não | Para cliente premium e para futebol ou TV licenciados |
-| [Kdenlive](https://docs.kdenlive.org/en/effects_and_filters/speech_to_text.html) | Grátis | Completo | Whisper local (use modelo grande) | Manual | Não | Não | Legenda automática local, sem custo |
-| [Clipchamp](https://clipchamp.com/pt-br/pricing/) | Grátis; o Premium vem dentro do Microsoft 365 | 1080p sem marca d'água, legenda automática | PT confirmado | Sem reframe inteligente | Não | Não | Plano B grátis para legenda |
-| [Captions](https://captions.ai/help/docs/subscriptions) | Basic R$ 49,85 | 60 a 200 créditos vitalícios | Não informado | — | Não | Não | Para quem grava o próprio rosto |
-| [Riverside](https://riverside.com/pricing) | Pro R$ 144,71 ou R$ 119,76 no anual | 2 h de gravação, uma única vez | Não informado | — | API só no Business | Não | Só se você gravar o podcast do cliente |
-| Higgsfield ⚠️ | Starter ≈ R$ 74,85 (US$ 15), segundo [terceiro](https://www.layer3labs.io/guides/higgsfield-ai-pricing) | Não verificado | Dublagem aceita PT | Reframe de até 60 s; upscale | MCP | Sim | Exceção: fonte ruim ou enquadramento difícil |
-| [ElevenLabs Scribe](https://elevenlabs.io/pricing/api) | API R$ 1,10/h (US$ 0,22); Starter R$ 29,94 (US$ 6) | 12 min/mês de transcrição ([página de STT](https://elevenlabs.io/speech-to-text)) ⚠️ (dividindo os créditos daria ~30 min) | PT na faixa de erro ≤ 5% | — | MCP + API | Sim | Substitui o TurboScribe da sua skill no Starter (~91 min/mês) ou pela API. O Free não dá conta de episódio inteiro. Promoção do Starter até 18/10 |
-| [OpenShorts](https://github.com/mutonby/openshorts) + ffmpeg | R$ 0 rodando local. Exige chave do Gemini; a versão hospedada começa em US$ 12 | Núcleo MIT | faster-whisper | Modos TRACK (1 pessoa) e SPLIT (2 pessoas) | /mcp, API, CLI | Não | Caminho R$ 0 mais completo. Roda no seu PC ou no Claude Code |
-| Adobe quick cut | Não verificado | — | — | Corta por engajamento visual, não pela fala | MCP (precisa autenticar) | Parcial | Não serve para podcast |
-| VEED ⚠️ | Lite ≈ R$ 59,88 no anual ([terceiro](https://fluxnote.io/guides/veed-io-pricing-2026)) | 720p, marca d'água | Não verificado | — | — | Não | Redundante |
+| Wild Rift (Wild Rounds 2026) | [Real Oficial](https://realoficial.com.br/pt/real-rewards) | R$ 1/mil | R$ 15 mil | 4.233 envios | n/a | 30/11 | Paga no máximo 15 mi de views |
+| Stream Gabriel Morais | Real Oficial | R$ 1/mil | R$ 8 mil | 2.819 envios | n/a | 31/12 | |
+| Yuri22 (streamer) | [Real Oficial](https://cdn.realoficial.com.br/championship-uploads/yuri22-v6-ovdyn7hz.pdf) | Ranking (CLIP por views, EDIT por voto) | R$ 222 mil (dado do clipmap; o regulamento não fixa valores) | 25.716 envios | R$ 8,63 por envio | 10/11 | Só acervo autorizado, sem Kwai, e só contam as views depois da inscrição. O mínimo de views do CLIP fica na aba "Sobre o Campeonato" ⚠️ |
+| Kosky V2 | Real Oficial | Ranking | R$ 15 mil | 258 participantes | R$ 58 | 31/10 | |
+| João Pichau | [Viewx](https://viewx.com.br/campanhas/campeonato-de-cortes-pichau) | Ranking (1º: R$ 10 mil) | R$ 30 mil | 434 inscritos | R$ 69 | 01/11 | #joaopichau; só IG, YT e TikTok |
+| LOUD Miller | [Viewx](https://viewx.com.br/) | Ranking (1º: R$ 1.250) | R$ 2,5 mil | 80 envios | R$ 31 | 10/11 | |
+| LOUD Facada (GTA RP) | [Viewx](https://viewx.com.br/campanhas/campeonato-de-cortes-loud-facada) | Ranking (1º: R$ 3 mil) | R$ 9 mil | 347 inscritos | R$ 26 | 09/11 | #facadarp |
+| LOUD VTzim | Viewx | Ranking (1º: R$ 3 mil) | R$ 7 mil | 850 envios | R$ 8,24 | 31/10 | |
+| LOUD Coringa (GTA RP) | [Viewx](https://viewx.com.br/campanhas/campeonato-de-cortes-loud-coringa) | Ranking (1º: R$ 3 mil) | R$ 10 mil | 3.575 inscritos | R$ 2,80 | 25/10 | #loudcoringa. Fuja |
+| Gabepeixe | Viewx | Ranking (1º: R$ 3 mil) | R$ 10 mil | não informado | n/d | n/d | |
+| Street Fighter (filme) | Viewx | Ranking (1º: R$ 3 mil) | R$ 10 mil | não informado | n/d | n/d | |
+| 4Gamers | [Klypex](https://klypex.com.br/) | Ranking diário, 3 posições pagas | Valores só no painel | n/d | n/d | 30/10 | |
+| Roblox ForgeGUI | [Whop](https://contentrewards.com/discover) | US$ 1/mil (R$ 4,99) | US$ 189,7 mil, com US$ 171,8 mil restantes | 3,5 mil | n/a | n/d | Confira idioma e país no briefing |
+| COINBASE x VALORANT | Whop | US$ 1/mil | US$ 10 mil, com US$ 8 mil restantes | n/d | n/a | n/d | Confira idioma e país |
+| CoD MW4 Beta | [Whop](https://contentrewards.com/discover/24ad920b-d24f-479e-9cef-f22182e4a0c0) | US$ 1,50 a 1,75/mil | US$ 78.928, com US$ 18 restantes; pausada | 986 | n/a | | Não entre |
+| CoD MW4 Reveal Trailer | [Whop](https://contentrewards.com/discover/6b7db90d-412f-4bcc-ab1e-619ab73bfa09) | US$ 1 a 1,50/mil | US$ 120 mil, com US$ 1 restante | 1.053 | n/a | | Acabou |
+| GG Poker | Viewx | Ranking | R$ 36 mil | 125 envios | | 31/10 | **Recuse:** é jogo de azar e dá risco de ban |
 
-### 3.2 Melhor ferramenta por cenário
+- "Envios" e "inscritos" não são a mesma coisa: um inscrito manda vários envios. Use os números só para comparar a ordem de grandeza.
+- As datas da Real Oficial vêm do [clipmap.gg](https://clipmap.gg/), porque a página oficial não mostra o fim das campanhas.
+- Nos agregadores brasileiros, não achei campanha ativa de Gaules, Casimiro, alanzoka, Piuzinho, Cellbit, Baiano ou Ricardinho, nem de Free Fire, Valorant, CS2, Fortnite, Minecraft ou EA FC. É um retrato do dia: campanhas abrem e fecham toda semana.
+- No clipmap, só 9 das 194 campanhas ativas visíveis eram de stream, esports ou games (~4,6%). Não espere achar 10 por dia.
 
-| Cenário | Ferramenta |
-|---|---|
-| Podcast com 2 ou 3 pessoas no mesmo quadro | OpusClip (Split/Three) |
-| Podcast com câmeras separadas | Choppity |
-| Live de game | OpusClip Gameplay ou Eklipse para achar os destaques; StreamLadder para 60 fps |
-| Futebol ou TV | Só com licença: keyframe manual no CapCut ou no DaVinci, com menos de 60 s |
-| Pessoa falando para a câmera | OpusClip Fill; Submagic para a legenda |
-| Cliente premium | Descript + DaVinci, com contrato de licença e confidencialidade |
-| Volume alto de campanha | Reap anual ou Cut.Pro Plus, se passar no teste de PT-BR |
+### 1.4 A combinação que eu recomendo para você
 
-### 3.3 Fluxo recomendado (o Claude opera via MCP)
-
-1. Envie a fonte autorizada com `opusclip_submit_project`. Use `customPrompt` em PT, `clipDurationsSec: [[20,60]]` e `rangeStart`/`rangeEnd` para limitar o trecho.
-2. Rode `preview_clips` e `list_clips`. A rubrica do Claude reordena os clipes e você aprova.
-3. Ajuste com `opusclip_edit_clip`: `remove_pauses` e `remove_filler_words` tiram pausas e muletas; `replace_phrase` corrige nomes e acentos (precisa ter o mesmo número de palavras); `add_text_overlay` põe o gancho de 0 a 3 s. Dá para desfazer em até 24 h.
-4. Exporte em HD. Cliente premium vai para o CapCut ou o DaVinci.
-5. Opcional: passe pela sua skill ffmpeg só para normalizar o áudio (`loudnorm`) e fazer o encode final.
-6. Gere a copy com `opusclip_create_social_copy_job` ou com as skills de texto, e agende (seção 5).
-
-### 3.4 Acabamento técnico: o que mudar na sua skill
-
-A `video-processor-lucas` foi feita para os seus vídeos jurídicos. Para clipar, mude o seguinte:
-
-| Hoje | Trocar por |
-|---|---|
-| Transcrição no TurboScribe pelo Chrome (3 por dia, até 10 MB) | ElevenLabs `creative_transcribe_audio` (Starter ou API; o Free é curto demais) ou faster-whisper local no Claude Code. Ambos dão tempo por palavra |
-| Legenda em Arial 22, blocos de 6 a 10 palavras, MarginV 40 (cai em cima dos botões do app) | Arquivo ASS com `PlayResX=1080` e `PlayResY=1920`, fonte Montserrat Black, 2 a 4 palavras por bloco, destaque colorido na palavra falada (`\k`), Outline 6 a 8, Alignment 2, MarginV ~560 a 700, Fontsize inicial 80 a 95 |
-| Preset `ultrafast` | `-preset slow -crf 18` com faststart, **só no Claude Code ou no PC**. No chat do claude.ai mantenha `ultrafast`, porque a própria skill registra que presets mais lentos estouram o limite de 45 s; ou renderize no OpusClip |
-| Sem normalização de áudio | loudnorm em duas passadas, a −14 LUFS e −1,5 dBTP |
-| Silêncio cortado só no início e no fim | Manter, e somar a limpeza de pausas do OpusClip |
-| 15 a 20 hashtags | No máximo 5 no Instagram e 3 a 5 no TikTok |
-| Rodapé "Dr. Lucas ... OAB/RO" na legenda de todo vídeo | Só nos vídeos do seu canal jurídico. Nunca em corte de terceiro (seção 8.4) |
-| Gatilho automático com qualquer vídeo ("sem perguntar", "faz o de sempre") | Gatilho só para os seus vídeos jurídicos (texto abaixo) |
-
-**Novo trecho para a `description` da skill:**
-> Ativar SOMENTE quando Lucas enviar vídeo do próprio canal jurídico ou disser "processa meu vídeo jurídico". NÃO ativar para cortes de terceiros, campanhas de clipagem ou vídeos de clientes; nesses casos, perguntar antes.
-
-O padrão de legenda (2 a 5 palavras, fonte sans-serif em negrito, uma cor de destaque) é consenso de guias de fornecedores ([OpusClip](https://www.opus.pro/blog/best-caption-presets-styles-boost-retention)). Os números de retenção que eles citam não têm estudo por trás: faça teste A/B.
-
-**Encode final** (o YouTube recomenda 8 Mbps em 1080p a 30 fps e 12 Mbps a 60 fps, com o MP4 em faststart; [especificação](https://support.google.com/youtube/answer/1722171?hl=en)):
-```
-ffmpeg -i in.mp4 -vf "scale=1080:1920:flags=lanczos,fps=30" -c:v libx264 -preset slow -crf 18 -profile:v high -pix_fmt yuv420p -maxrate 12M -bufsize 24M -c:a aac -b:a 320k -ar 48000 -movflags +faststart out.mp4
-```
-
-**Áudio:** o YouTube normaliza em torno de −14 LUFS. TikTok e Instagram não publicam alvo ([Forasoft](https://www.forasoft.com/learn/audio-for-video/articles-audio/lufs-targets-per-platform-2026)).
-```
-# passada 1
-ffmpeg -i in.mp4 -af loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json -f null -
-# passada 2: use os valores medidos
-ffmpeg -i in.mp4 -af loudnorm=I=-14:TP=-1.5:LRA=11:measured_I=...:measured_TP=...:measured_LRA=...:measured_thresh=...:offset=...:linear=true -c:v copy -c:a aac -b:a 320k -ar 48000 out.mp4
-```
-O `-ar 48000` na passada 2 evita que o arquivo saia a 192 kHz, a taxa que o loudnorm usa por dentro.
-
-**Área segura num quadro de 1080x1920:**
-- A Meta pede, para anúncios de Reels, 14% livres em cima (~269 px), 35% embaixo (~672 px) e 6% nas laterais (65 px) ([guia](https://www.1clickreport.com/blog/meta-ads-creative-safe-zones-2026-guide)).
-- ⚠️ Para posts orgânicos e para as outras redes não há especificação oficial em pixels.
-- Na prática: rosto e legenda no centro, nada no canto inferior direito (onde ficam os botões) e confira com uma sobreposição de área segura no CapCut.
-
-**Música:**
-- Não deixe música protegida gravada no arquivo. Adicione a trilha pelo app na hora de postar.
-- Post agendado (Metricool, OpusClip) sai sem música do app. Se quiser som em alta, poste pelo app ou envie ao TikTok como rascunho (modo inbox da API) e finalize no celular.- No YouTube, a maioria das músicas da biblioteca do Shorts pode tocar até 90 s ([ajuda](https://support.google.com/youtube/answer/15424877?hl=en)).
-- No TikTok, conteúdo de marca segue a Commercial Music Library mesmo em conta pessoal ([Soundstripe](https://www.soundstripe.com/blogs/tiktok-music-licensing-rules)).
-
-**Onde rodar:** a sua skill registra que o sandbox do chat do claude.ai bloqueia o HuggingFace e o Whisper e corta comandos em 45 s. Renderização pesada vai para o OpusClip ou o Descript (no servidor deles), para o Claude Code ou para o seu PC.
-
-### 3.5 Fonte do vídeo: só legal
-
-| Modelo | De onde vem o arquivo |
-|---|---|
-| 1) Campanha | Só o drive ou os assets da campanha, no campo "Available content" ([docs da Whop](https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards)). Guarde print das regras com data |
-| 2) Canal próprio | Autorização escrita do criador + arquivo bruto ou permissão expressa para baixar |
-| 3) Cliente | Arquivo bruto do cliente + contrato |
-
-Os [Termos do YouTube](https://www.youtube.com/static?template=terms&gl=BR&hl=pt) proíbem baixar conteúdo sem autorização expressa. Usar o yt-dlp em vídeo de terceiros sem permissão viola esses termos, mesmo que você não publique o corte.
-
-O mesmo vale para ferramentas que puxam o vídeo pela URL do YouTube (OpusClip, 2short, Supadata, vidIQ). **Regra:** prefira sempre o arquivo original enviado pelo dono (drive, WeTransfer). Use URL do YouTube só com autorização escrita do titular, sabendo que isso continua numa zona cinzenta dos Termos do YouTube.
+- **Motor (cerca de 70% do tempo): cortes de games e streamers em campanha por view.** Wild Rift e Stream Gabriel Morais. Use material só do acervo de cada campanha.
+- **Bônus: 1 ranking pequeno por vez,** com 1 corte por dia do streamer daquele ranking. Só se o prêmio por participante passar de R$ 20.
+- **Gringa, só em lançamento:** campanhas de jogo da Whop nas primeiras 48 h, e só na rede em que a sua mediana bate o mínimo por post.
+- **Segunda frente (cerca de 30%): página de virais com camada sua.** Quando o vídeo não depende do áudio, empilhe nele a música de uma campanha (Estourou). É o caminho mais curto para o 1º Pix: a janela de saque da Estourou abre de 01 a 03/11.
+- **Portfólio sem hora extra:** os cortes de 1 streamer médio viram a prova para você virar clipador oficial no mês 2 ou 3.
+- **Gameplay sua, só se você já joga** (Free Fire, Wild Rift, Minecraft): uma conta separada para os eventos da Garena e, mais tarde, para o Creator Rewards.
 
 ---
 
-## 4. Etapa 3 — Gancho, título, legenda e capa
+## 2. Seus primeiros 30 dias
 
-### 4.1 Regras do gancho
+Calendário: o dia 1 é segunda, 12/10. O dia 30 é terça, 10/11.
 
-- **Comece pela frase mais forte, não pelo início da conversa.** Ponha no segundo 0 o momento de maior tensão ou parte do payoff e só depois volte ao contexto ([Captions](https://captions.ai/help/docs/pt/guides/creators/hook-repurposed-clip.md)).
-- **Gancho de tela com até 8 palavras,** entre 0 e 3 s.
-- **A promessa tem de ser cumprida dentro do corte.** O Vaca Cast avisa e depois denuncia quem usa título enganoso.
-- **Nunca atribua ao convidado algo que ele não disse.** Há risco de difamação.
-- **Cortes longos (61 a 90 s, para o TikTok Rewards):** abra uma nova pergunta por volta de 15 s e de 30 s ("mas o pior veio depois..."). Se der, faça o fim casar com o início, o que incentiva rever o vídeo.
+### Semana 1 (12 a 18/10): base e primeiros 28 vídeos
 
-### 4.2 10 fórmulas em PT-BR
+**Dia 1 (≈ 3 h)**
+- Crie as contas (seção 8): uma marca de games e uma marca de virais. Cada uma com TikTok pessoal, Instagram criador, YouTube com verificação em 2 etapas e Kwai.
+- Cadastre-se na Real Oficial, Klypex, Viewx, Estourou e Whop. Na Whop, faça já o KYC e o W-8BEN, porque demora.
+- Salve como favoritos o [clipmap.gg](https://clipmap.gg/) e o [contentrewards.com/discover](https://contentrewards.com/discover).
+- Entre em Wild Rift e Stream Gabriel Morais. Leia o regulamento dentro do app e tire print com data de: redes aceitas, duração, hashtag, mínimo, teto, material permitido e prazo de pagamento.
+- Crie uma conta na Twitch com 2FA e registre um app grátis em [dev.twitch.tv](https://dev.twitch.tv/docs/authentication/register-app/). Guarde o client id e o secret.
+- Peça ao Claude a planilha mínima no Google Sheets (seção 9.2).
+- Se for narrar virais com IA, assine o ElevenLabs Starter até 18/10: o 1º mês custa US$ 1 (≈ R$ 5,16 com IOF) ([preços](https://elevenlabs.io/pricing)). O Free não tem licença comercial.
 
-São propostas para testar, não dados medidos. Não achei números de desempenho específicos de PT-BR. A base é a lacuna de curiosidade (Loewenstein) e a emoção de alta ativação (Berger & Milkman).
+**Dias 2 a 7**
+- Poste 3 cortes de game por dia em TikTok, Shorts e Reels. **Inscreva cada link na campanha no mesmo minuto em que postar.**
+- Poste 1 viral por dia com camada sua (seção 4.4).
+- Teste as ferramentas: rode a mesma janela de 10 min de uma VOD no Cut.Pro Gratuito e no OpusClip Free. Anote se a facecam ficou no lugar e quanto a legenda em PT-BR errou. É isso que decide a assinatura da semana 3.
 
-| # | Fórmula | Exemplo |
+**Metas da semana:** 21 cortes de game e 7 virais (~90 posts). Mediana de 300+ views em pelo menos 1 rede. Zero claims. Todos os posts inscritos na hora e com print. Dinheiro esperado: R$ 0 a 20.
+
+### Semana 2 (19 a 25/10): volume
+
+- 5 cortes de game por dia (35 na semana) + 1 a 2 virais.
+- Compare 2 formatos: só a reação (15 a 25 s) contra contexto + reação, com uma pergunta escrita na tela (30 a 45 s).
+- Entre num ranking pequeno se a conta "prêmio ÷ participantes" ainda passar de R$ 20 no painel.
+- Comece o portfólio: escolha 1 streamer médio (seção 3.1) e faça 1 corte por dia, com crédito.
+- Calcule a razão views pagas ÷ views postadas.
+
+**Metas:** 1 corte com 10 mil+ views. 3 cortes acima do mínimo pago. R$ 10 a 80 acumulados.
+
+### Semana 3 (26/10 a 01/11): calibrar
+
+- 6 a 8 cortes de game por dia. O acumulado passa de 100.
+- Corte os 50% piores formatos e streamers (regras da seção 9.4).
+- Se a edição virou o gargalo, assine o combo de R$ 166,79 (seção 6.3). Se não virou, continue em R$ 0.
+- No Discord do streamer do portfólio, procure canais como #clips, #clip-program ou #clippers.
+- Rode o `getBestTimeToPostByNetwork` do Metricool e fixe 2 ou 3 horários por rede.
+
+**Metas:** o p90 (os 10% melhores posts) com 5 mil+ views. R$ 50 a 150 acumulados.
+
+### Semana 4 (02 a 10/11): sistema e 1º saque
+
+- Saque o que puder: na Estourou, na janela de 01 a 03/11, se houver saldo; na Whop, o que for aprovado. Na Real Oficial, siga o prazo do regulamento.
+- Entre numa 2ª campanha por view: um lançamento na Whop que aceite o seu público ou uma campanha BR nova no clipmap.
+- Mande a proposta ao streamer do portfólio (seção 3.8).
+
+**Metas do mês:** 150 a 180 cortes de game, 1 Pix recebido e total de R$ 50 a 300 (faixa realista: R$ 0 a 400). Lembre: a R$ 1/mil, R$ 300 exigem 300 mil views **pagas**.
+
+### Critérios de decisão (todo domingo)
+
+As regras são adaptadas da [Ascynd](https://ascynd.io/en/blog/how-to-become-a-clipper). Os limiares são meus: calibre com os seus dados.
+- **Dobrar:** streamer, jogo ou formato com 10+ cortes, mediana 2x a da conta, razão paga/postada de 60% ou mais e CPM efetivo de R$ 0,80/mil ou mais. Passe para ele metade do volume.
+- **Trocar de streamer ou campanha:** depois de 15 cortes com mediana abaixo de 300 views; se nenhum corte passou do mínimo pago; se o orçamento restante caiu abaixo de 20%; ou se há uma regra que você não consegue cumprir (música, duração).
+- **Trocar de formato:** depois de 20 cortes com p90 abaixo de 2 mil views. Mude 1 variável por vez: gancho, duração ou enquadramento.
+- **Cortar uma rede:** quando a mediana dela ficar abaixo de 30% da rede principal por 2 semanas. No Kwai, espere 4 semanas.
+- **Parar e revisar o processo:** 1 strike ou 1 Short bloqueado; mais de 20% dos posts com áudio silenciado; ou CPM efetivo abaixo de R$ 0,30/mil.
+- **Na semana 8:** se a hora não render mais de R$ 5, passe o peso para a frente que pagou mais por hora ou concentre-se em virar clipador oficial.
+
+---
+
+## 3. O que clipar: games
+
+### 3.1 Quem clipar
+
+**Os maiores do Brasil em horas assistidas em 2025** ([Streams Charts](https://streamscharts.com/news/top-brazilian-streamers-2025); jogo principal segundo a [Negócios & Games](https://negociosegames.com/maiores-streamers-do-brasil-2026-ranking-audiencia/)):
+
+| Streamer | Horas em 2025 | Jogo principal | Para quem começa |
+|---|---|---|---|
+| Gaules | 95,5 mi (Twitch, YouTube, Kick) | CS | Saturado |
+| Baiano | 57,7 mi | LoL | Grande e disputado |
+| Coringa | 51,9 mi | GTA RP | Tem campanha, mas com 3.575 inscritos |
+| PaulinhoLOKObr | 31,3 mi | GTA RP | Grande |
+| SrPedro | 23,2 mi (YouTube) | n/d | Grande |
+| alanzoka | 22,6 mi (Twitch) | n/d | Saturado |
+| TcK10 | 19,5 mi | n/d | Grande |
+| JonVlogs | 18,1 mi (Twitch) | n/d | Grande |
+
+**Outros sinais:**
+- **Twitch Brasil em maio/2026:** cellbit, TcK10, loud_victor, gustavosacy e loud_gabepeixe no topo, e alanzoka em 7º ⚠️ (o [post da Streams Charts](https://x.com/StreamsCharts/status/2065562287075942508) não abriu).
+- **Jogos mais vistos na Twitch Brasil em 2026:** LoL (28 mi h), Valorant (27 mi h) e Tibia (21 mi h) ([Gamerscore](https://www.gamerscore.com.br/twitch-detalha-o-consumo-monstruoso-de-games-em-2026-brasil-se-destaca-com-lol-valorant-e-o-inesperado-tibia/)). No mundo, as horas de jogos indie cresceram 51%, e terror também cresceu ([SenseiNews](https://senseinews.com.br/2026/09/state-of-gaming-twitch/)).
+- **Free Fire vive no YouTube Live:** o pico do Megadragom GamePlay foi de 224.186 pessoas ao vivo, e o do SolaLIVE, de 329.814 ([Streams Charts](https://streamscharts.com/news/top-brazilian-streamers-2025)). Num levantamento de 2019, Minecraft era o jogo com mais consumo no YouTube BR, e Free Fire vinha em 2º ([Jovem Nerd](https://jovemnerd.com.br/noticias/games/minecraft-e-o-jogo-com-maior-consumo-de-conteudo-no-youtube-pelos-brasileiros)).
+- **Multistream:** no 1º semestre de 2026, a Kick teve 25,74% das horas dos multistreamers brasileiros rastreados. A audiência do Coringa se dividiu em Twitch 41,26%, YouTube 38,72% e Kick 20,02% ([Streams Charts](https://streamscharts.com/news/multistreaming-audience-split-twitch-youtube-kick-h1-2026)). Ou seja, um mesmo streamer gera clipes em 3 lugares.
+- **Saturação:** streamer gigante costuma ter canal oficial de cortes forte. O "Cortes do Casimito" já tinha 1,53 mi de inscritos em 2022 ([TechTudo](https://www.techtudo.com.br/noticias/2022/01/quem-e-casimiro-streamer-carioca-faz-sucesso-e-quebra-recordes-na-twitch-esports.ghtml)). Na gringa, 1.087 contas postaram 4.835 cortes de IShowSpeed em 30 dias ([CreatorDB](https://creatordb.app/creator-news/the-rise-of-the-clip-economy/)).
+
+**Regra de escolha:**
+- **Alvo 1:** o streamer de uma campanha aberta. A fonte e o pagamento já estão resolvidos.
+- **Alvo 2 (portfólio):** um streamer médio sem equipe de cortes visível, num jogo em alta no Brasil (LoL, Valorant, GTA RP, Tibia, terror ou indie). Veja se ele tem regra para cortes no Discord ou no painel. Se não tiver, poste com crédito e retire o corte se ele pedir, porque uma denúncia vira strike.
+- **Não comece** por Gaules, Casimiro ou alanzoka.
+
+### 3.2 Radar de streamer (30 min por semana)
+
+1. **Lista de candidatos:** pegue o top 30 em português no [SullyGnome](https://sullygnome.com/games/30/watched?language=pt) (filtro Portuguese (Brazil), abas Trending e Most watched, 30 dias) e no [TwitchTracker](https://twitchtracker.com/channels/ranking/portuguese) ⚠️ (ele bloqueia robôs, então abra no navegador). Some as lives em PT da Kick: o Claude chama a API da Kick em 3 horários e soma o `viewer_count` de cada canal.
+2. **Demanda:** para cada candidato, o Claude chama o Get Clips da Twitch (últimos 7 dias, `first=100`). Ele calcula a soma de views dos 20 melhores clipes, a mediana por clipe e quantos clipes passam de 1.000 views.
+3. **Saturação:** busque "[nome] cortes" no YouTube (filtro "esta semana") e no TikTok. Conte as contas que postaram nos últimos 7 dias e anote a mediana de views delas.
+4. **Nota (limiares meus):**
+   - **Verde:** clipes da Twitch somando 50 mil+ views na semana, 2 a 8 contas de corte ativas e mediana delas acima de 5 mil.
+   - **Amarelo:** mais de 8 contas de corte. Só entre com um ângulo novo (só sustos, só fails, só treta).
+   - **Vermelho:** clipes somando menos de 10 mil views.
+5. **Bônus:** se o streamer tem campanha ativa, ele passa na frente.
+
+### 3.3 Onde ver os dados (grátis)
+
+| Fonte | O que mostra | Como usar |
 |---|---|---|
-| 1 | Lacuna: "Ninguém te conta isso sobre [X]" | "Ninguém te conta isso sobre se aposentar antes dos 40" |
-| 2 | Revelação + reação | "Ele revelou quanto faturou no 1º ano e o apresentador travou" |
-| 3 | Erro caro | "O erro que fez ele perder R$ 2 milhões em 6 meses" |
-| 4 | Pergunta + virada | "Perguntaram se faculdade ainda vale a pena. A resposta chocou o estúdio" |
-| 5 | Contrário | "Trabalhar duro não te deixa rico, e ele explica por quê" |
-| 6 | Número específico | "3 sinais de que seu sócio vai te passar a perna" |
-| 7 | Antes e depois | "Ele dormia no carro. Hoje fatura R$ 1 milhão por mês" |
-| 8 | Você está errando | "Você está pedindo aumento do jeito errado" |
-| 9 | Momento de virada | "O momento em que ele percebeu que tinha sido enganado" |
-| 10 | Condição + urgência | "Se você tem dívida no cartão, ouve isso antes de pagar a fatura" |
+| [SullyGnome](https://sullygnome.com/games/30/watched?language=pt) | Jogos e canais mais vistos por período (3 a 365 dias), filtro de idioma, Trending | À mão. O site pede para não ser raspado |
+| [TwitchTracker](https://twitchtracker.com/channels/ranking/portuguese) ⚠️ | Ranking PT de 30 dias e crescimento de cada canal | No navegador |
+| [Streams Charts](https://streamscharts.com/news/top-brazilian-streamers-2025) | Relatórios do Brasil e top clipes de 7 dias | No navegador |
+| Página de clipes do canal (Twitch e Kick) | Clipes mais vistos em 24 h e 7 dias | À mão. Na Kick, é o único jeito |
+| [clipmap.gg](https://clipmap.gg/) | Campanhas com tags Stream e Esports, prazos e envios | Todo dia de manhã |
+| [TikTok Creative Center](https://ads.tiktok.com/business/creativecenter) | Hashtags em alta no Brasil em 7, 30 e 120 dias ([Apify](https://apify.com/automation-lab/tiktok-trends-scraper)) | Grátis. Não há rota pública de vídeos, criadores ou sons em alta |
+| vidIQ (conectado) | Outliers e trending | Gasta créditos |
 
-**Para clientes advogados:**
-- Nada de caso concreto, resultado, promessa ou autoengrandecimento (Provimento 205, arts. 3º, 5º §3º e 6º).
-- As fórmulas 3 e 7 costumam esbarrar nisso.
-- Use a versão informativa: "3 sinais de que o seu contrato tem cláusula abusiva".
+### 3.4 APIs grátis que o Claude usa
 
-### 4.3 Título e legenda do post
+| API ou ferramenta | O que dá | Limite | Pegadinha |
+|---|---|---|---|
+| [Twitch Helix Get Clips](https://dev.twitch.tv/docs/api/reference/#get-clips) | Clipes por canal, jogo ou data, em ordem de views, com `vod_offset` (o segundo da VOD), o título dado pelo viewer e quem criou | 100 por página e ~1.000 por filtro; para ir além, fatie a janela de datas. Cota por minuto (o [exemplo oficial](https://dev.twitch.tv/docs/api/guide/) mostra 800 pontos) | Sem `ended_at`, a janela é de 1 semana. O `vod_offset` fica nulo nos primeiros minutos. Para baixar o clipe pela API, é preciso ser editor do canal ([doc](https://dev.twitch.tv/docs/api/reference/#get-clips-download)) |
+| [Kick Public API](https://docs.kick.com/apis/livestreams) | Lives ativas por idioma (pt) e categoria, com `viewer_count` | Até 1.000 por chamada | Não tem endpoint de clipes ([issue #424](https://github.com/KickEngineering/KickDevDocs/issues/424), ainda aberta) |
+| [YouTube Data API](https://developers.google.com/youtube/v3/determine_quota_cost) | Metadados de vídeos e canais | 10.000 unidades/dia. O `search.list` tem balde próprio de 100 chamadas/dia | Para vigiar canais, use `videos.list` (1 unidade) ou o RSS do canal |
+| [yt-dlp](https://github.com/yt-dlp/yt-dlp/blob/master/README.md) | O gráfico "Mais repetidos" (`heatmap`) e o chat de live do YouTube (`live_chat`), sem gastar cota. Também baixa só uma janela do vídeo | Grátis | Baixe só material autorizado ou do acervo da campanha |
+| [TwitchDownloaderCLI](https://github.com/lay295/TwitchDownloader) | Chat da VOD em JSON e chat renderizado como vídeo | Grátis (MIT) | |
 
-- **Primeira linha:** a palavra-chave que as pessoas buscam. Ela também deve aparecer no texto da tela e ser falada no começo do vídeo (TikTok).
-- **Instagram:** no máximo 5 hashtags. O limite está em [liberação gradual](https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/). Segundo Mosseri, hashtag serve para categorizar, não dá alcance.
-- **YouTube:** título com o termo buscado (`vidiq_keyword_research`). Para testar, use `vidiq_score_title` (5 créditos).
-- **Crédito e link do episódio** sempre que a regra do criador pedir.
-- **Texto:** passe pelo `humanizer` e não use travessões (a regra da sua skill vale aqui também).
-- **Copy automática:** `opusclip_create_social_copy_job`.
+Tudo isso roda no Claude Code ou no seu PC. O chat do claude.ai corta comandos longos (a sua skill de vídeo registra o limite de 45 s).
 
-### 4.4 Capa
+### 3.5 Como achar o momento
 
-- **Pelo Metricool** dá para definir `videoThumbnailUrl` ou `videoCoverMilliseconds` (escolher um frame) para Reels, TikTok e Shorts:
-  - TikTok: só em conta business.
-  - Shorts: só se o canal for verificado e o recurso já tiver sido liberado para ele. ⚠️ A data de liberação da capa personalizada de Shorts não foi confirmada.
-- **A capa pesa no grid do perfil**, que é onde o visitante decide se segue. Não achei fonte de que ela influencie a busca.
-- **Teste A/B de capa no Shorts:** o teste nativo do YouTube não funciona ([ajuda](https://support.google.com/youtube/answer/13861714?hl=en)). Faça o teste pela planilha (seção 6.5).
+Sinais, do mais forte para o mais fraco:
+1. **Vários clipes de viewers no mesmo minuto.** Cada clipe é um viewer dizendo "isso vale".
+2. **Pico de chat.** Conte as mensagens por janela de 10 s. A linha de base é a mediana móvel dos 5 min anteriores, e o pico é 3x a linha de base (limiar meu). Comece o corte ~30 s antes do pico, porque o chat reage depois do momento ([OpusClip](https://www.opus.pro/mcp/inspiration/clip-the-moments-your-live-chat-exploded), fornecedor). Some 1 ponto para rajadas de "kkkk", "KEKW", "CLIP", "NÃO", "MDS" ou "?".
+3. **"Mais repetidos" do YouTube** (para live ou VOD no YouTube).
+4. **Título que o viewer deu ao clipe.** Ele vira candidato a gancho.
 
-### 4.5 Duração por plataforma
+### 3.6 Triagem de uma live de 6 h em 20 min
+
+| Min | O que fazer | Quem |
+|---|---|---|
+| 0 a 2 | `GET /helix/users?login=CANAL` (pega o id) e `GET /helix/videos?user_id=ID&type=archive&first=1` (pega o início e a duração da VOD) | Claude |
+| 2 a 5 | `GET /helix/clips?broadcaster_id=ID&started_at=INICIO&ended_at=FIM&first=100`, paginando com `after` até ~1.000. Se a live tiver mais clipes, fatie em blocos de 2 h. Rode depois que a live acabar | Claude |
+| 5 a 8 | Agrupe os clipes por `vod_offset` em baldes de 90 s. Para cada balde: número de clipes, soma e máximo de views, views por hora e se algum é `is_featured`. Ordene por número de clipes × log(soma de views) | Claude |
+| 8 a 11 (opcional) | `TwitchDownloaderCLI chatdownload --id VOD -o chat.json` e o cálculo do pico de chat (3.5). Junte o resultado com os baldes | Claude |
+| 11 a 15 | Pegue os 12 melhores baldes. Transcreva só 2 min em volta de cada um (ElevenLabs ou faster-whisper local). Aplique a rubrica (seção 5) | Claude |
+| 15 a 20 | Assista aos 5 melhores em 1,5x. Confira música de fundo, cassino ou bet na tela, facecam e se o payoff está dentro do corte. Escolha 3. Corte do `vod_offset` menos 30 s até o payoff mais 3 s | Você |
+
+- **Live no YouTube:** troque os minutos 2 a 8 por `yt-dlp -J URL` (heatmap) e `yt-dlp --write-subs --sub-langs live_chat --skip-download URL` (chat).
+- **Kick:** não há API de clipes. Abra kick.com/CANAL/clips, ordene por views da semana e anote os minutos. O yt-dlp baixa `kick:clips` e `kick:vod` ([sites suportados](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)), mas falha em VOD só para inscritos.
+- **A VOD some:** na Twitch, ela expira em 7, 14 ou 60 dias, conforme a conta do streamer ([Ascynd](https://ascynd.io/en/blog/get-paid-to-clip-streamers)). Trabalhe no mesmo dia da live.
+
+### 3.7 Anatomia do clipe de game que estoura
+
+1. **Tipo de momento, em ordem de prioridade:** susto ou jump scare, rage, fail engraçado ou azar absurdo, treta (com o chat, outro streamer ou o duo), reação a doação e "primeira vez". Só depois vêm clutch, ace e recorde, que agradam só quem joga. A base: os 15 clipes mais vistos da Twitch quase nada tinham a ver com o jogo. Neles dominavam pessoas, susto, vergonha e treta ([Kotaku](https://kotaku.com/twitchs-most-watched-clips-have-almost-nothing-to-do-wi-1842038158), 2020).
+2. **Gancho de 0 a 2 s:** abra com 1 a 2 s do pico (o grito, a cara) e só então volte 5 a 10 s para dar contexto. Nunca abra com menu, loading ou explicação.
+3. **Texto na tela com até 8 palavras,** criando uma lacuna. Exemplo: "ele não sabia que tinha alguém atrás".
+4. **Layout:** rosto em cima e jogo embaixo (seção 7.1).
+5. **Legenda queimada** em PT. SFX ou meme no máximo 1 a 2 vezes, no clímax. Zoom de 110 a 120% no rosto na hora da reação.
+6. **Duração:** Shorts sempre até 60 s. Veja a tabela 7.6.
+7. **Fim:** no payoff ou em loop. Sem "tchau" e sem respiro no final.
+8. **Música:** corte ou abaixe a música da live (rádio do GTA, Spotify). Ela gera claim.
+
+### 3.8 Como virar clipador oficial
+
+1. Escolha 1 ou 2 streamers BR médios. Gaules e Casimiro não servem: já têm equipe.
+2. Corte as lives deles por 2 a 4 semanas numa conta sua, com o @ e o link da VOD.
+3. Entre no Discord e procure canais como #clips, #clip-program, #clippers ou #clip-submissions ([Cut.pro](https://cut.pro/pt-BR/blog/entrar-exercito-clipadores-streamer-2026)).
+4. Mande DM ou e-mail com os 3 melhores cortes, as views de cada um e 3 momentos da última live que você cortaria ([Lumina](https://luminaclippers.com/blog/how-to-become-a-clipper)).
+5. Proponha um teste pago de 2 semanas e, só depois, um fixo mensal. Combine antes a fonte do material, as redes, o valor e se o programa exige tag ou marca d'água.
+6. **Nunca pague por "vaga de clipador".** DM fria sem amostra converte perto de zero ([Ascynd](https://ascynd.io/en/blog/get-paid-to-clip-streamers)).
+
+Quanto pedir: não há tabela pública do que streamers brasileiros pagam. Uma vaga de editor de Reels/Shorts paga de R$ 20 a 35 por vídeo ⚠️ ([Indeed](https://br.indeed.com/q-editor-de-video-freelancer-vagas.html), não verificada): use como piso. Como teto de referência, um editor CLT ganha em média R$ 3.159/mês ([Salario.com.br](https://www.salario.com.br/profissao/editor-de-tv-e-video-cbo-374405/)).
+
+### 3.9 Gameplay sua (opcional, só se você já joga)
+
+- **Por quê:** a gameplay que você mesmo grava é conteúdo original. É o formato mais seguro para o Creator Rewards e para o YouTube ([política de reuso](https://support.google.com/youtube/answer/1311392?hl=en)).
+- **Como gravar:** use o Replay Buffer do OBS, o Instant Replay do NVIDIA App ou a gravação do Steam, todos grátis ([comparativo](https://clip.dor.gg/en/blog/obs-vs-nvidia-shadowplay), [Steam](https://help.steampowered.com/faqs/view/23B7-49AD-4A28-9590)). Aperte o atalho só quando algo acontecer.
+- **Free Fire:** a Garena paga prêmios em eventos no TikTok pelo "Programa de Incentivo a Jogos". As regras do Tesouro Perdido eram: vídeo de 20 s a 1 min, até 3 vídeos, marcar @freefirebr_oficial e usar a hashtag do evento ([Free Fire Mania](https://www.freefiremania.com.br/noticia/garena-libera-50-mil-tesouro-perdido-tiktok.html)). Siga o perfil oficial para pegar o próximo evento. O programa oficial de criadores (FFCP) exige 200 mil seguidores no TikTok e paga em diamantes ([Free Fire Mania](https://www.freefiremania.com.br/ffcp-garena-free-fire.html)).
+- **Regras das publishers:** o Minecraft permite monetizar gameplay desde que o vídeo tenha conteúdo seu suficiente, como comentário ([diretrizes](https://www.minecraft.net/en-us/usage-guidelines)). A Riot permite receita passiva de anúncio, mas proíbe copiar conteúdo existente ou só pôr "comentário leve", e pode derrubar qualquer projeto ([Riot](https://www.riotgames.com/en/legal)).
+- **Fora do alcance nos meses 1 a 6:** Roblox Video Stars (100 mil seguidores e média de 50 mil views, [Roblox](https://influencers.roblox.com/requirements)) e Epic Support-A-Creator (1.000 seguidores no YouTube, na Twitch ou no X, segundo um [guia de terceiro](https://earlygame.com/guides/fortnite/creator-code-support-a-creator-programm-explained-how-to-get)).
+- **TikTok Game Incentive Program** ⚠️: os requisitos e as taxas só aparecem em fontes não oficiais. Confira em TikTok Studio > Monetização.
+
+---
+
+## 4. O que clipar: virais
+
+### 4.1 Onde garimpar (15 min, de manhã e à noite)
+
+1. **Reddit, à mão:** abra /top?t=day e /rising de r/Unexpected, r/nextfuckinglevel, r/funny, r/PublicFreakout (só o que não tem vítima) e r/LivestreamFail (clipes de streamer). Desde 05/06/2026, a API exige aprovação para qualquer acesso, e o `.json` sem login dá erro desde o fim de maio ([prowlo](https://prowlo.com/blog/reddit-data-api)). Anote os 10 posts com mais upvotes por hora.
+2. **vidIQ (conectado):** rode o `instagram_tiktok_outlier_search` em inglês ou espanhol, nos últimos 7 dias. Depois repita a busca com `descriptionLanguage: ['pt']` para ver se o vídeo já chegou ao Brasil.
+3. **TikTok e Kwai em PT:** busque o mesmo evento.
+4. **Aplique a rubrica de viral** (seção 5.2).
+
+### 4.2 Arbitragem: da gringa para o Brasil
+
+- **O jogo é velocidade:** ~72% das views de um post do TikTok acontecem no 1º dia ([Measure Studio](https://www.measure.studio/blog/tiktok-vs-instagram), fornecedor). E mais de 47% das hashtags em alta somem do top 100 em 5 dias ⚠️ ([Publicis/TikTok, via mi-3](https://www.mi-3.com.au/14-04-2026/72-hour-social-horizon-publicis-tiktok-research-shows-brands-are-losing-game-chasing); a página não abriu, e o Brasil não está na amostra).
+- **Regra:** poste em até 24 h depois de achar o vídeo.
+- **Só vale se ainda não chegou aqui,** ou seja, se nenhuma versão em PT passou de 100 mil views.
+- **Registre** a hora do post original e a do seu. Depois de 30 virais, o Claude mostra qual atraso ainda funciona.
+
+### 4.3 Lista negra: vídeos que dão claim
+
+- **ViralHog:** registra a impressão digital dos vídeos que licencia no YouTube e no Facebook e, com ela, fica com a receita da cópia ou derruba o vídeo ([ViralHog](https://blog.viralhog.com/post/rights-management-how-we-protect-our-licensors-content-and-revenue-earning-potential)). Faz reivindicações no YouTube em parceria com a Trusted Media Brands, dona da Jukin ([ViralHog](https://viralhog.com/in-the-media)). Uma petição pública acusa a empresa de 4 strikes em vídeos que tinham permissão ([change.org](https://www.change.org/p/ban-viralhog-for-their-unethical-and-predatory-false-copyright-strikes)).
+- **Collab:** registra ~40 mil reivindicações por mês contra reuploads ([Tubefilter](https://www.tubefilter.com/2025/10/31/collab-clips-clip-licensing-reaction-content/)).
+- **Jukin (FailArmy), Newsflare e Storyful:** licenciam virais e cobram pelo uso.
+- **Sinais para descartar o vídeo:** marca d'água de qualquer uma dessas empresas, "FailArmy", ou "licensing@" e "for licensing" na descrição.
+- **Licenciar não compensa no início.** A Jukin cobrava US$ 99 por clipe monetizável (R$ 511,30 com IOF) ([BBTV, preços de 2020](https://bbtv.com/news/2020-08-10-jukin-media-announces-first-ever-self-service-offering-for-content-creators-publishers-to-license-user-generated-content)). A R$ 0,22 por mil no Shorts BR, esse clipe só se paga com ~2,3 mi de views. A Newsflare cobra US$ 230 por vídeo (R$ 1.147,70) ⚠️ (a [página](https://www.newsflare.com/pricing) deu erro). A exceção futura é o Collab Split: fica com parte da receita, sem cobrança antecipada, mas não publica o percentual ([Tubefilter](https://www.tubefilter.com/2025/10/31/collab-clips-clip-licensing-reaction-content/)). Só faz sentido se você tiver canal de compilação narrada no YouTube.
+
+### 4.4 Como transformar para não ser "não original"
+
+**O teste:** tire a sua contribuição do vídeo. Se ele ficar igual, não poste.
+
+**Toda peça precisa de pelo menos UMA destas camadas:**
+1. Voz sua, ou narração com roteiro seu: contexto, piada, "o que você não percebeu".
+2. React com facecam, comentando.
+3. Uma história: top 5, "do pior ao melhor" ou antes e depois, com comentário entre os clipes.
+4. Legenda-piada em template de meme, com texto seu.
+
+**Não contam:** borda, marca d'água, mudar a velocidade, espelhar, filtro e crédito no canto.
+
+**O que cada rede pune:**
+- **YouTube:** não monetiza "vídeos curtos compilados de outras redes", momentos "editados juntos com pouca ou nenhuma narrativa", nem conteúdo que já foi subido muitas vezes. Monetiza react com comentário e edição com história. A regra vale **mesmo com permissão do autor** e pode atingir o canal inteiro ([YouTube](https://support.google.com/youtube/answer/1311392?hl=en)).
+- **Meta:** "juntar clipes ou pôr sua marca d'água não é aprimoramento relevante". Quem reutiliza conteúdo repetidamente perde a monetização do Facebook por um período e tem a distribuição de tudo o que posta reduzida ([Meta](https://creators.facebook.com/blog/combating-unoriginal-content/)).
+- **Instagram:** desde 30/04/2026, conta que posta majoritariamente repost sai das recomendações para quem não a segue ([TechCrunch](https://techcrunch.com/2026/04/30/instagram-restricts-reach-of-content-aggregators-in-new-crackdown/), [diretrizes](https://creators.instagram.com/original-content-guidelines/)).
+- **TikTok:** sai do Para Você o conteúdo copiado, o reaproveitado sem edição criativa, o combinado de várias fontes com pouco valor e o que tem marca d'água de outra pessoa ([política de originalidade](https://www.tiktok.com/creator-academy/article/tiktok-originality-policy)).
+- **Kwai:** material já postado em outra rede contaria como não original, com 14 dias de avaliação e depois saída do programa de receita ⚠️ ([resposta da empresa no Reclame Aqui](https://www.reclameaqui.com.br/app-kwai/duvidas-sobre-monetizacao-e-conteudo-original_GR6tZniZEtuoF-WW/); a página deu erro). No Kwai, poste só o que tem camada sua.
+
+**Permissão do autor:** ache quem postou primeiro, sem marca de licenciadora, e mande uma DM: "Posso postar seu vídeo na @pagina com crédito na legenda? Vou adicionar narração." Guarde o print do "sim" numa pasta no Drive. A permissão tira o risco de remoção. A camada sua tira o risco de "conteúdo reutilizado".
+
+**Voz de IA:** use com roteiro seu. Voz genérica em massa sobre conteúdo alheio pode cair em "conteúdo inautêntico" no YouTube. Não clone a voz de ninguém.
+
+### 4.5 Formatos que monetizam
+
+| Formato | Duração | Onde rende | Conta |
+|---|---|---|---|
+| Top 5 ou compilação narrada | 65 a 90 s | TikTok Creator Rewards (vídeo de 1 min ou mais, [termos BR](https://www.tiktok.com/legal/page/global/tiktok-creator-rewards-program-br/en)); YouTube, se tiver narrativa | Conta de originais |
+| React com facecam | 30 a 90 s | YouTube; Facebook Content Monetization (reel de 10 s ou mais, um idioma, só por convite, [clip-short](https://www.clip-short.com/guides/facebook-content-monetization)) | Conta de originais |
+| Viral visual (fail, animal, satisfying) com legenda-piada e música de campanha | 10 a 30 s | Campanhas de música: Estourou; na Whop, de US$ 0,20 a 6/mil, com média de ~US$ 1 (R$ 1,00 a 29,94; média de R$ 4,99) ([OpenClip](https://openclip.app/guides/whop-clipping-guide), fornecedor) | Conta vitrine |
+| Achadinho ou "satisfying" de produto com link | 15 a 30 s | Shopee Afiliados ⚠️ | Conta vitrine |
+| Repost com crédito e permissão | qualquer | Só crescimento e publi; nunca monetização nativa | Conta vitrine, como minoria dos posts |
+
+- **Empilhar som:** quando o viral não depende do áudio original, troque o fundo pela música de uma campanha ativa e siga as regras dela (som oficial, hashtag, menção). O mesmo post rende alcance e R$ por mil. A Estourou revisa vídeos com crescimento anormal antes de liberar o saldo ([Estourou](https://www.estourou.com/)).
+- **Recuse** campanha política (o 2º turno é em 25/10/2026) e campanha de bet ou cassino.
+- **Snapchat:** o Brasil está na lista de pagamento do Spotlight ([Snap](https://help.snapchat.com/hc/en-us/articles/7012298096788-In-what-countries-and-regions-are-Snapchatters-eligible-for-a-payout)), mas o programa unificado exige convite, 50 mil seguidores e 25 posts por mês ([Snap](https://newsroom.snap.com/snapchat-new-creator-monetization)). Prioridade baixa.
+- **Real Oficial "Vídeos com IA":** ranking de R$ 10 mil com 145 participantes, ou R$ 69 por participante ([Real Oficial](https://realoficial.com.br/pt/real-rewards)). Não li as regras: confira se ele aceita o seu formato.
+
+### 4.6 Publi: como cobrar quando chegar a ~10 mil seguidores
+
+- **Cobre pelo alcance, não por seguidor.** Monte um mídia kit com a mediana de views dos seus Reels e TikToks nos últimos 30 dias.
+- **Referências:** a [usepora](https://www.usepora.com.br/calculadora-de-publicidade) dá de R$ 572 a 858 por post no feed para quem tem 28 mil seguidores. Theme pages gringas falam em US$ 50 a 150 (R$ 249,50 a 748,50) por post entre 10 e 50 mil seguidores, e em US$ 200 a 800/mês (R$ 998 a 3.992) como renda realista entre os meses 6 e 12 ([wifimoolah](https://wifimoolah.com/p/idea-53), alegação). Comece pelo piso.
+- **Pacote:** 3 posts + 3 stories. Comece por lojas locais, apps e infoprodutores pequenos.
+- **Teto do mercado, não meta:** o Memes Brasil faturava ~R$ 700 mil/ano vendendo espaço, com ~3 mi de seguidores e equipe de 4 pessoas ([Exame, 2024](https://exame.com/negocios/ele-fazia-r-700-mil-com-memes-do-twitter-e-agora/)). A Choquei declarou ~R$ 400 mil/mês com mais de 27 mi de seguidores ([Portal Leo Dias](https://portalleodias.com/noticias/quanto-ganha-o-dono-da-choquei-influenciador-revela-faturamento-em-depoimento)).
+- **Nunca compre nem venda página:** os termos do Instagram proíbem, e a conta pode ser encerrada ([Instagram](https://help.instagram.com/581066165581870)). Além disso, o vendedor pode retomar a conta pelo e-mail original.
+- **O alcance caiu:** os Reels perderam 35% de alcance e os posts, 31%, em 2025 contra 2024, numa base de 1,06 mi de contas ([Metricool](https://metricool.com/press-release-2026-social-media-study/)).
+
+---
+
+## 5. Rubrica de 0 a 10 para o Claude pontuar
+
+### 5.1 Clipe de game
+
+| Critério | Pontos | Como pontuar |
+|---|---|---|
+| **S: sinal do público** | 0 a 2 | 2 = balde com 3+ clipes de viewers, OU top 3 da live em views, OU chat 5x acima da linha de base. 1 = 2 clipes, OU top 10, OU chat 3x. 0 = nenhum sinal |
+| **G: gancho de 0 a 2 s sem contexto** | 0 a 2 | 2 = grito, susto, morte ou reação visível já no 1º segundo. 1 = precisa de 3 a 5 s de preparação. 0 = precisa conhecer a história |
+| **P: payoff dentro do corte** | 0 a 2 | 2 = payoff até 25 s (FPS) ou 45 s (RP, terror). 1 = payoff depois disso. 0 = sem desfecho |
+| **E: emoção** | 0 a 2 | 2 = susto, rage, fail engraçado, treta, reação a doação, "primeira vez". 1 = clutch, ace, recorde. 0 = neutro |
+| **U: entende quem não joga** | 0 a 1 | Funciona para quem não conhece o jogo nem o streamer |
+| **F: frescor** | 0 a 1 | Menos de 24 h desde a live, e nenhuma conta de corte postou o momento com 50 mil+ views |
+| **Penalidades** | | −3: música licenciada audível, cassino ou bet na tela, ou discurso de ódio. −3: fora do acervo autorizado (em campanha). −2: sem facecam quando o momento depende da reação. −1: Shorts acima de 60 s |
+
+### 5.2 Viral
+
+| Critério | Pontos | Como pontuar |
+|---|---|---|
+| **V: velocidade lá fora** | 0 a 2 | 2 = top 5 do dia no subreddit, OU outlier 5x+ no vidIQ, OU 1 mi+ de views em 48 h. 1 = viral médio. 0 = parado |
+| **A: vácuo no Brasil** | 0 a 2 | 2 = nenhuma versão em PT com mais de 100 mil views. 1 = só versões pequenas. 0 = já estourou aqui |
+| **G: gancho visual de 0 a 2 s que não depende de idioma** | 0 a 2 | |
+| **E: emoção de alta ativação** (riso, espanto, raiva) | 0 a 2 | Base: emoção de alta ativação aumenta o compartilhamento ([Berger & Milkman](https://cssh.northeastern.edu/pandemic-teaching-initiative/wp-content/uploads/sites/43/2020/09/What-Makes-Online-Content-Viral.pdf)) |
+| **C: camada sua possível** | 0 a 1 | Narração, legenda em PT, contexto, top 5 |
+| **O: origem rastreável** | 0 a 1 | Dá para creditar o autor e pedir permissão |
+| **Penalidades** | | −3: marca de ViralHog, Jukin, Newsflare, Storyful ou Collab, ou "licensing" na descrição. −3: acidente com vítima, violência explícita ou menor exposto. −2: página brasileira grande já postou. −1: piada que depende de áudio em inglês sem legenda |
+
+**Decisão (nas duas rubricas):** com 7 ou mais, publique (viral: em até 24 h). Com 6, guarde na fila e use só se faltar material. Abaixo de 6, descarte. No Kwai, só entra o que tem C = 1.
+
+### 5.3 Prompts prontos
+
+**Clipe de game:**
+> Você é editor de cortes de games em PT-BR. Abaixo estão: (1) os baldes de 90 s da live, com número de clipes, views, títulos dos clipes dos viewers e pico de chat; (2) a transcrição com minutagem de 2 min em volta de cada balde; (3) o jogo, o streamer e as regras da campanha. Aplique a rubrica S, G, P, E, U, F com as penalidades. Para cada balde, devolva: as notas, com 1 linha de justificativa cada; as penalidades; a nota final; o início e o fim (hh:mm:ss da VOD), começando no máximo 30 s antes do pico; a duração-alvo para Shorts (até 60 s), TikTok e Reels; um texto de tela com até 8 palavras; e 2 títulos com o nome do streamer e do jogo. Não invente falas: cite literalmente a transcrição. Marque DESCARTAR quando a nota for menor que 6. Devolva uma tabela ordenada pela nota.
+
+**Viral:**
+> Você é editor de uma página de virais em PT-BR. Abaixo estão: o link, a rede de origem, as views ou upvotes e a idade do post, a descrição e as marcas d'água visíveis, o resultado da busca do mesmo vídeo em PT (TikTok, Kwai, Reels, YouTube) e a transcrição, se houver fala. Aplique a rubrica V, A, G, E, C, O com as penalidades. Devolva: as notas, com 1 linha de justificativa cada; as penalidades; a nota final; a camada que eu devo adicionar (narração, legenda-piada, top 5 ou react); um roteiro de narração de 15 a 25 s, com piada ou contexto e sem travessão; um texto de tela com até 8 palavras; a música de campanha que combina, se o vídeo não depender do áudio; e um rascunho de DM pedindo permissão ao autor. Se houver sinal de licenciadora, responda só DESCARTAR e o motivo.
+
+### 5.4 Como calibrar e quando usar notas de IA
+
+- **Calibração:** depois de 30 posts, peça ao Claude a correlação de Spearman entre a nota e as views em 7 dias. Com 30 posts, a nota só é útil se rho ≥ 0,4 (o valor crítico a 5% é ≈ 0,36). Se ficar entre 0,2 e 0,4, colete até 50 posts antes de decidir.
+- **Notas de IA servem só para desempatar:**
+  - OpusClip: nota de 0 a 99, sem pesos nem taxa de acerto publicados ([ajuda](https://help.opus.pro/docs/article/virality-score)).
+  - StreamLadder ClipGPT: nota de 0 a 100 baseada em energia do áudio, ação, reação e se o momento se entende sozinho. Não usa o chat e não declara taxa de acerto ([StreamLadder](https://www.streamladder.com/clipgpt/virality-score)).
+  - Higgsfield `virality_predictor` ⚠️: analisaria no máximo 15 s (fonte secundária). Serve para comparar 2 ganchos, não o corte inteiro.
+
+---
+
+## 6. Ferramentas
+
+### 6.1 Tabela (preços de 12/10/2026)
+
+| Ferramenta | Preço (R$/mês) | Grátis | Bom para | Veredito |
+|---|---|---|---|---|
+| [Cut.Pro](https://cut.pro/pt-BR/pricing) | Básico R$ 19,90; **Plus R$ 69,90** (1.000 min analisados); Pro R$ 119,90. Cobra em real, sem IOF. 1 crédito = 1 min | 15 min/mês, vídeo de até 1 h. Sobre marca d'água no grátis, a página se contradiz | "Clipes no automático": acompanha a live de qualquer canal da Twitch ou da Kick, corta em lotes de 10 min e posta em TikTok, Reels e Shorts ([automação](https://cut.pro/pt-BR/automations/live-clips)). Plus: 5 contas por rede e 9 posts/dia. Live do YouTube: o [blog](https://cut.pro/pt-BR/blog/clipar-live-em-tempo-real-2026) diz que funciona, mas a página da automação não cita ⚠️ | **Motor principal**, se passar no teste de facecam e de PT-BR. O layout com facecam não está documentado |
+| [OpusClip](https://www.opus.pro/pricing) | Starter R$ 74,85 (≈ R$ 77,47 com IOF); Pro R$ 144,71 (≈ R$ 149,77) | 60 min/mês segundo a [página gamers](https://www.opus.pro/for-gamers), ou 1 clipe/dia segundo outra página ⚠️ | Layout Gameplay (rosto nos 30% de cima, jogo nos 70% de baixo) em todos os planos. O ClipAnything acha momentos visuais por pedido em texto, bom para fail sem fala ([ajuda](https://help.opus.pro/docs/article/how-to-use-clipanything), ainda em beta). Link da Twitch e MCP só no Pro | Plano B para streamer; melhor opção para virais sem diálogo |
+| [Eklipse](https://eklipse.gg/help/how-much-does-eklipse-premium-cost/) | Premium R$ 124,70 (US$ 24,99) ou R$ 898,15/ano (≈ R$ 74,85/mês) | Desde 13/08/2026, só mostra prévia e não exporta ([ajuda](https://eklipse.gg/help/what-are-the-main-differences-between-the-free-and-premium-plans/)) | Detecção por evento de jogo (clutch, multi-kill), 1080p a 60 fps | Não no começo |
+| StreamLadder ⚠️ | Starter ≈ R$ 74,85; Creator ≈ R$ 134,73 (com ClipGPT); Pro ≈ R$ 194,61 (fonte: [PR de terceiro](https://github.com/GrimmortalDread/peaksense-site/pull/24)). Reviews antigas citam Silver ≈ R$ 44,91 e Gold ≈ R$ 74,85 ([vidpros](https://vidpros.com/streamladder-review-2026/)) | Edição básica sem marca d'água; teste de 7 dias ([site](https://www.streamladder.com/)) | Facecam em 60 fps e agendador. Importa de Twitch, Kick e YouTube | Opcional. Confira o preço no app |
+| Streamlabs Cross Clip ⚠️ | Pro ≈ R$ 24,90 (US$ 4,99, segundo [terceiro](https://checkthat.ai/brands/streamlabs/pricing)) | Com marca d'água | Clipe curto da Twitch com facecam; 1080p a 60 fps no Pro | Barato para facecam rápida. O grátis não serve para campanha |
+| [Clipador](https://clipador.com/) | Planos sem preço publicado | 50 clipes grátis, sem cartão e sem prazo | Vigia streamers da Twitch e corta nos picos | Teste para vigiar 2 ou 3 streamers |
+| [Klypra](https://similarlabs.com/p/klypra-twitch-vod-highlights-clipper) | Plano pago sem preço publicado | 1 canal, 5 clipes/dia, 50/mês, com marca d'água | Pico de chat ao vivo | Não assine: o Claude faz o mesmo de graça |
+| [Sizzle](https://www.sizzle.gg/universal) | ≈ R$ 24,90 (US$ 4,99) | Teste por tempo limitado | Destaques de Twitch e YouTube | Secundário: não diz se aceita canal de terceiros |
+| [Ssemble](https://www.ssemble.com/pricing) | ≈ R$ 29,94/mês no anual (US$ 72 = R$ 359,28 à vista) | Existe; limites não publicados | Cobra por vídeo de até 20 min, o que favorece virais | Só se focar em virais. Conecta 1 conta social |
+| [Autoclipper](https://autoclipper.live/planos) | Starter R$ 49,90; Plus R$ 99,90; Pro+ R$ 149,90 | 5 cortes/mês, 720p, com marca d'água | Ligado às campanhas Clip & Pix | Só se usar o Clip & Pix |
+| [CapCut](https://www.techtudo.com.br/listas/2026/10/capcut-pro-mais-barato-veja-como-economizar-na-assinatura-edapps.ghtml) | **Pro R$ 65,90** ou R$ 469,90/ano (R$ 39,16/mês), em real | 1080p sem marca d'água se você não usar itens Pro. Legenda automática de ~10 min por vídeo, segundo a [vidpros](https://vidpros.com/capcut-pro-vs-free/); a página do CapCut diz que o recurso é Pro, então teste no app | Facecam manual, memes, legenda, 60 fps | **Editor de acabamento** |
+| DaVinci Resolve | Grátis | Até UHD a 60 fps | Edição fina | Alternativa grátis |
+| [Submagic](https://www.submagic.co/pricing) | R$ 94,81 ou R$ 59,88/mês no anual | Teste | Legenda animada | Só se a do CapCut não bastar |
+| [Kapwing](https://www.kapwing.com/pricing) | R$ 119,76 ou R$ 79,84/mês no anual | Com marca d'água, 720p, até 4 min | Templates de meme | Redundante |
+| VEED ⚠️ | ≈ R$ 44,91 a 119,76 (as [fontes divergem](https://fluxnote.io/guides/veed-io-pricing-2026)) | 720p com marca d'água | | Descartar |
+| [ElevenLabs](https://elevenlabs.io/pricing) | **Starter R$ 29,94** (≈ R$ 30,99 com IOF), com 1º mês a US$ 1 até 18/10; Creator R$ 109,78 | ~10 min/mês, **sem licença comercial** | Narração em PT-BR; transcrição de janelas | Starter obrigatório para vídeo de campanha ou monetizado |
+| [Google Cloud TTS](https://cloud.google.com/text-to-speech/pricing) | R$ 0 até 1 mi de caracteres/mês (Chirp 3 HD); depois, US$ 30 por milhão (R$ 149,70) | Precisa de cartão cadastrado no Google Cloud | ~2.000 narrações de 30 s por mês | Melhor voz a R$ 0 em volume |
+| [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) | R$ 0 (licença Apache) | Roda local | Rascunho | Vozes pt-BR citadas só por terceiro ⚠️ |
+| [Fish Audio](https://fish.audio/plan/) | Plus R$ 74,85 ou R$ 54,89/mês no anual | Sobre uso comercial no grátis, a página se contradiz | | Só se o ElevenLabs ficar caro |
+| [Video2X](https://github.com/k4yt3x/video2x) | R$ 0 | Exige GPU com Vulkan | Upscale de viral abaixo de 720p | Use só em trecho curto |
+| Higgsfield ⚠️ | Nomes e preços dos planos não confirmados; um terceiro cita ≈ R$ 74,85 a 94,81 ([layer3labs](https://www.layer3labs.io/guides/higgsfield-ai-pricing)) | Não verificado | Upscale e reframe (já conectado) | Só para resgate. Confira os créditos antes |
+| [Topaz](https://www.topazlabs.com/pricing) | Desktop R$ 294,41; Web R$ 94,81 em promoção (preço cheio R$ 144,71) | Sem teste informado | | Fora do orçamento |
+| [Medal](https://medal.tv/premium) | Premium R$ 49,85 ou R$ 39,87/mês no anual | Upload de até 20 min, 1080p, marca d'água no link | Gravar o seu jogo | O grátis basta. Exporte o arquivo local |
+| OBS, NVIDIA App, Steam | R$ 0 | | Gravar o seu jogo a 60 fps | Usar |
+| Twitch API, TwitchDownloader, yt-dlp, ffmpeg, faster-whisper | R$ 0 | | Achar o momento, baixar a janela, montar facecam + jogo, legendar | **Núcleo grátis.** Roda no Claude Code |
+
+### 6.2 Combo R$ 0 (semanas 1 e 2)
+
+| Etapa | Ferramenta |
+|---|---|
+| Achar o momento | Twitch API (clipes dos viewers) + pico de chat (TwitchDownloader) + heatmap (yt-dlp), tudo pelo Claude; Clipador com 50 clipes grátis |
+| Cortar e montar o layout | Cut.Pro Gratuito e OpusClip Free para testar; ffmpeg pelo Claude ou CapCut grátis (duas camadas recortadas) |
+| Legenda | CapCut grátis ou faster-whisper local |
+| Voz dos virais | Google Cloud TTS ou Kokoro |
+| Upscale | Video2X |
+| Gameplay sua | OBS, NVIDIA ou Steam |
+| Postar | App de cada rede + Metricool Free (20 posts/mês); Kwai pelo celular |
+| Medir | Metricool Free + Google Sheets |
+
+Não use o Eklipse grátis (não exporta) nem o ElevenLabs Free em vídeo de campanha (sem licença comercial).
+
+### 6.3 Combo até R$ 200 (a partir da semana 3, se a edição for o gargalo)
+
+| Item | R$/mês |
+|---|---|
+| Cut.Pro Plus: corte ao vivo de Twitch e Kick, 1.000 min/mês, 5 contas por rede, posta sozinho | 69,90 |
+| CapCut Pro mensal: acabamento, facecam manual, 60 fps, legenda sem limite, efeitos de meme | 65,90 |
+| ElevenLabs Starter (US$ 6 + IOF): narração com licença comercial | ≈ 30,99 |
+| Twitch API, TwitchDownloader, yt-dlp, OBS, Video2X, Metricool Free | 0 |
+| **Total** | **≈ 166,79** |
+
+- **Folga de ~R$ 33:** créditos avulsos ou o Cross Clip Pro (≈ R$ 25,77 com IOF) para facecam rápida.
+- **Quando sobrar caixa:** o CapCut anual (R$ 469,90 à vista) derruba o total para ≈ R$ 140/mês.
+- **Plano B,** se o Cut.Pro errar a facecam ou o PT-BR no teste: OpusClip Pro (≈ R$ 149,77 com IOF; layout Gameplay, link da Twitch, ClipAnything e MCP já conectado) + ElevenLabs Starter (≈ R$ 30,99) + CapCut grátis = **≈ R$ 180,76**.
+- **Não vale agora:** Eklipse Premium, Streamlabs Ultra (US$ 189/ano, feito para quem faz live, [Streamlabs](https://streamlabs.com/ultra)), Topaz, Kapwing e VEED.
+- **Créditos vencem:** os do Cut.Pro valem de 90 a 150 dias, conforme o plano. Os do Ssemble, do Higgsfield e do Topaz Web não acumulam. Compre só o que você vai postar.
+
+### 6.4 Do link ao vídeo pronto
+
+**Fluxo A: streamer**
+1. **Regras:** abra o regulamento da campanha e anote tag, @, hashtag, redes, duração, mínimo de views e material permitido.
+2. **Ao vivo (com o Cut.Pro):** ative os "Clipes no automático" com o link do canal e escolha um template com a tag e o @ da campanha. **Deixe a publicação automática DESLIGADA nas 2 primeiras semanas.** Revise 2 vezes por live: depois da 1ª hora e no fim.
+3. **Depois da live:** faça a triagem de 20 min (3.6) e confira também o top 24 h de clipes do canal.
+4. **Baixe só a janela:** `yt-dlp --download-sections "*1:23:00-1:26:30" <link da VOD>`, sempre do acervo autorizado. Mandar 4 min para a IA custa 4 créditos; a live de 3 h inteira custa 180.
+5. **Corte fino:** no Cut.Pro, no OpusClip com `rangeStart`/`rangeEnd` ou direto no CapCut.
+6. **Layout:** rosto em cima, jogo embaixo (7.1). Exporte em 1080x1920, a 60 fps se a fonte tiver 60 fps.
+7. **Legenda e gancho:** revise a legenda automática (nomes, gírias, palavrões) e ponha o texto de 0 a 2 s. Se quiser, acrescente ao lado da câmera o chat renderizado pelo TwitchDownloader.
+8. **Áudio:** normalize o volume e corte a música de fundo.
+9. **Exporte um arquivo por rede,** com começo ou gancho diferente.
+10. **Poste e inscreva na campanha no mesmo minuto.** O Kwai vai pelo celular.
+11. **Dossiê:** guarde a URL e os prints da analytics em 24 h, 72 h e 7 dias.
+
+**Fluxo B: viral**
+1. **Achar:** garimpo (4.1) e rubrica (5.2).
+2. **Baixar:** use o yt-dlp no post original, sem marca d'água de outro app. Evite sites clones de downloader.
+3. **Momento:** se a fonte for longa, use o ClipAnything do OpusClip ("ache as quedas, sustos e reações exageradas") ou corte à mão.
+4. **Camada sua:** o Claude escreve o gancho e uma narração de 15 a 25 s. A voz sai do ElevenLabs Starter, do Google TTS ou é a sua. Ponha texto na tela. Em compilação, faça top 5 com comentário.
+5. **Acabamento:** no CapCut, com legenda e a música da campanha ou da biblioteca do app.
+6. **Fonte ruim** (menos de 720p): passe no Video2X.
+7. **Poste em até 24 h,** com crédito e com o print da permissão guardado no dossiê.
+
+**Fluxo C: gameplay sua**
+1. Ative um Replay Buffer de 60 a 120 s (OBS, NVIDIA ou Steam).
+2. Aperte o atalho quando o momento acontecer.
+3. No CapCut, deixe em 9:16 a 60 fps, com gancho e legenda.
+4. Poste. É o conteúdo mais seguro para a monetização nativa.
+
+---
+
+## 7. Edição que retém em game e viral
+
+### 7.1 Layout facecam + jogo
+
+- **Padrão de mercado:** rosto em cima (30 a 40%) e jogo embaixo (60 a 70%), ou 50/50. O OpusClip Gameplay usa 30/70 ([OpusClip](https://www.opus.pro/pricing)). Não há teste A/B público comparando layouts ([clypse](https://clypse.ai/blog/how-to-make-vertical-gaming-clips-facecam-2026), fornecedor).
+- **FPS rápido:** tela cheia, com o rosto no canto.
+- **Sem IA, a R$ 0:** o overlay do streamer quase nunca muda. Num print, meça uma vez a caixa da câmera e a do jogo, e guarde o comando de cada streamer. Reviews de concorrentes dizem que o reenquadre por IA às vezes trava no quadro errado em live com facecam. Layouts do OpusClip: [ajuda](https://help.opus.pro/docs/article/layout-and-reframing).
+
+Modelo de ffmpeg (30/70, 1080x1920). Troque as caixas `crop=largura:altura:x:y` pelas medidas do seu streamer. Para não distorcer, recorte a câmera na proporção 1,875 e o jogo na proporção 0,8:
+```
+ffmpeg -i janela.mp4 -filter_complex "[0:v]crop=CAM_W:CAM_H:CAM_X:CAM_Y,scale=1080:576[cam];[0:v]crop=JOGO_W:JOGO_H:JOGO_X:JOGO_Y,scale=1080:1344[jogo];[cam][jogo]vstack=inputs=2,fps=60[v]" -map "[v]" -map 0:a -c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart saida.mp4
+```
+
+### 7.2 Gancho de 0 a 2 s
+
+- Abra no pico (a reação, o grito, a queda) e só depois volte ao contexto.
+- Ponha texto na tela com até 8 palavras, criando uma lacuna.
+- Em anúncios do TikTok, 63% dos vídeos com maior CTR mostram a mensagem principal nos 3 primeiros segundos ([Vericast, com dado do TikTok](https://vericast.com/wp-content/uploads/2022/09/Vericast-TikTok-Best-Practices-Vertical-CS0761-2022-09-8.5x11.pdf), fonte secundária).
+- Nunca prometa o que o corte não entrega.
+
+### 7.3 Legenda
+
+- Use arquivo ASS com `PlayResX=1080` e `PlayResY=1920`, fonte Montserrat Black, 2 a 4 palavras por bloco, destaque colorido na palavra falada e contorno de 6 a 8.
+- **Posição:** na linha de divisão entre câmera e jogo, longe do terço de baixo da tela, onde ficam os botões do app.
+- Revise nomes de streamer, gírias e palavrões. A legenda automática erra.
+- Os números de retenção que os fornecedores citam para cada estilo de legenda não têm estudo por trás ([OpusClip](https://www.opus.pro/blog/best-caption-presets-styles-boost-retention)). Teste.
+
+### 7.4 Zoom, SFX e meme
+
+- Zoom de 110 a 120% no rosto na hora da reação.
+- SFX ou meme no máximo 1 a 2 vezes por vídeo, só no clímax. Mais que isso vira ruído.
+- **Chat renderizado** ao lado da câmera (TwitchDownloader, com fundo transparente): mostra a reação do público e diferencia o seu corte dos de outros clipadores.
+
+### 7.5 Áudio
+
+- **Música da live:** corte o trecho, abaixe a música ou troque por uma faixa da biblioteca de áudio do YouTube, que não recebe Content ID ([YouTube](https://support.google.com/youtube/answer/13486873?hl=en)). Trocar só a trilha de um corte alheio não faz dele um corte seu ([regulamento Yuri22, cl. 5.6](https://cdn.realoficial.com.br/championship-uploads/yuri22-v6-ovdyn7hz.pdf)).
+- **Jogos com música licenciada** (rádio do GTA, futebol, dança): a gravadora pode reivindicar. A trilha original de um jogo só serve de referência no Content ID se for da própria publisher ([YouTube](https://support.google.com/youtube/answer/2605065)).
+- **Volume:** loudnorm a −14 LUFS e −1,5 dBTP, em duas passadas ([Forasoft](https://www.forasoft.com/learn/audio-for-video/articles-audio/lufs-targets-per-platform-2026)).
+
+### 7.6 Duração por rede
 
 | Objetivo | Duração | Base |
 |---|---|---|
-| Campanha paga por view | O mínimo da regra; para alcance, 20 a 45 s | Dado da OpusClip: 21 a 34 s têm 62% de conclusão, contra 48% acima de 60 s ([fornecedor, baixa confiança](https://www.opus.pro/blog/tiktok-length-format-retention-data)) |
-| TikTok com Creator Rewards | **Obrigatório passar de 60 s**; mire em 61 a 90 s | Requisito do programa |
-| YouTube Shorts | Até 3 min. **Com material de terceiros, no máximo 60 s** | Short com mais de 1 min e reivindicação ativa é bloqueado no mundo todo ([ajuda](https://support.google.com/youtube/answer/15424877?hl=en)). Um estudo de 2023, anterior aos Shorts de 3 min, viu mais views em 50 a 60 s ([resumo](https://videogen.io/blog/decoding-the-youtube-shorts-algorithm-a-deep-dive-into-3-3-billion-views)) |
-| Instagram Reels | Até 3 min ([MacMagazine](https://macmagazine.com.br/post/2025/01/20/instagram-ganha-reels-de-ate-3-minutos-e-grade-de-posts-retangulares/)); 30 a 60 s é o usual | ⚠️ Não está confirmado que acima de 3 min o Reel perde alcance |
-| Kwai | Sem dado confiável | Teste as duas faixas (seção 5.6) |
+| Campanha por view | O mínimo da regra; para alcance, 15 a 35 s | Prática de corte de live ([Cut.pro](https://cut.pro/pt-BR/blog/clipar-live-em-tempo-real-2026)) |
+| Por gênero (hipótese para teste A/B) | FPS 15 a 30 s; battle royale 20 a 40 s; MOBA 30 a 60 s; RP e Minecraft 45 a 90 s; terror 30 a 60 s | Fornecedor, sem dado próprio ([clypse](https://clypse.ai/blog/best-tiktok-gaming-clip-length-2026)) |
+| **YouTube Shorts com material de terceiros** | **Até 60 s** (use 59) | Short com mais de 1 min e claim ativo é bloqueado no mundo todo ([YouTube](https://support.google.com/youtube/answer/15424877?hl=en)) |
+| TikTok com Creator Rewards | 1 min ou mais; mire em 65 a 90 s | [Termos BR](https://www.tiktok.com/legal/page/global/tiktok-creator-rewards-program-br/en) |
+| Facebook Content Monetization | 10 s ou mais, um idioma | [clip-short](https://www.clip-short.com/guides/facebook-content-monetization), fonte secundária |
+| Kwai | Sem dado confiável | Teste versões curta e longa |
 
-Do mesmo momento, faça duas versões: uma curta (gancho + payoff) e uma longa (com contexto).
+Do mesmo momento, faça duas versões: uma curta (gancho + payoff) e uma longa (com contexto), cada uma na rede certa.
 
-**Content ID mesmo com autorização:** se o dono do podcast usa Content ID, o sistema reivindica o seu corte autorizado, e no Shorts com mais de 60 s o vídeo é bloqueado no mundo todo. Em campanha ou cliente com Content ID, peça para pôr o seu canal na lista de permissões (allowlist) antes de postar Shorts longos. Sem isso, fique abaixo de 60 s.
+### 7.7 Exportar
 
----
-
-## 5. Etapa 4 — Postar e distribuir
-
-### 5.1 Agendadores (nenhum publica no Kwai)
-
-| Ferramenta | Preço | TikTok | Reels | Shorts | Kwai | Multiconta | API/MCP | Veredito |
-|---|---|---|---|---|---|---|---|---|
-| [Metricool](https://metricool.com/pricing/) | **Free:** 1 marca, 20 posts/mês, 30 dias de dados.<br>**Starter:** R$ 99,80 no anual ou R$ 124,75 no mensal (5 marcas) | Sim | Sim, inclusive Trial Reel | Sim | Não | Por marca | MCP em **todos** os planos; API REST só no Advanced | **Já conectado.** Publica sem aprovação manual (`autoPublish`) |
-| [upload-post](https://www.upload-post.com/llms-full.txt) | **Free:** 2 perfis, 10 uploads, **sem TikTok**.<br>**Basic:** R$ 79,84 no anual ou R$ 119,76 no mensal (5 perfis, uploads ilimitados).<br>**Professional:** R$ 164,67 no anual (25 perfis, white-label) | Pago; posta direto ou como rascunho | Sim (Trial Reels) | Sim | Não | 1 conta por rede em cada perfil | API + MCP hospedado (não autenticado nesta sessão) | Melhor opção quando houver várias contas e clientes |
-| [OpusClip Pro](https://www.opus.pro/pricing) | R$ 144,71 | Sim | Sim | Sim | Não | Várias por plataforma | MCP; `schedule_publish` devolve um link de aprovação | O post só sai depois que você aprova no app. O Starter posta direto, mas não agenda |
-| [Postiz](https://postiz.com/pricing) | Standard R$ 114,77 no anual ou R$ 144,71 no mensal; sem plano grátis (teste de 7 dias) | Sim (use `DIRECT_POST`) | Sim | Sim | Não | 5 canais | MCP, CLI, API | Dispensável. Hospedado por conta própria, esbarra na auditoria do TikTok |
-| [Buffer](https://buffer.com/pricing) | Free: 3 canais; Essentials R$ 24,95 por canal | Só perfil business | Sim (perfil pessoal só recebe lembrete) | Sim | Não | Por canal | API em todos | Bom para testar sem pagar |
-| [mLabs](https://www.mlabs.com.br/planos/) | ≈ R$ 29,90/mês por marca (anual pago à vista no Pix); o mensal fica perto de R$ 49,83 | Sim | Sim | Sim | Não | 1 perfil por rede em cada marca | Sem API pública | Relatório em português para cliente |
-| [Repurpose.io](https://repurpose.io/pricing/) | R$ 174,65 | — | — | — | Não | 3 por rede | — | Não recomendado |
-| Later / SocialBee / Hootsuite / Publer | R$ 93,56 / R$ 144,71 / R$ 494 / ≈ R$ 25 a primeira conta | — | — | — | Não | — | Varia | Descartados |
-| [PostEverywhere](https://posteverywhere.ai/blog/connect-claude-to-social-media) | Lite R$ 44,91 (US$ 9, 2 contas) | Sim | Sim | Sim | Não | — | MCP | ⚠️ É o produto que a fonte do "Posty" descreve. O "Posty" do marketplace não foi identificado |
-| App do Kwai | R$ 0 | — | — | — | **Só manual** ([ajuda](https://www.kwai.com/pt-BR/support/video/como-publicar-um-video)) | — | Nenhuma API pública encontrada | ⚠️ O agendamento nativo não está documentado; teste no app |
-
-**Conta de volume:**
-- 2 posts por dia em 3 redes dá ≈ 180 posts por mês. O Metricool Free cobre 20.
-- No stack de R$ 200, a postagem de campanha é manual pelo app de cada rede: ≈ 1 a 2 min por post, e ainda permite usar som em alta. O Claude monta a fila diária com arquivo, legenda e horário.
-- O Metricool Free fica para as contas de cliente.
-- Automação de verdade em volume só com o upload-post Basic (R$ 79,84 no anual), na fase de upgrade (seção 9.3).
-- O agendador do OpusClip Pro exige aprovar cada post no app, então não resolve volume.
-
-### 5.2 Limites de API que mudam o jogo
-
-- **TikTok:**
-  - App **não auditado** só publica em modo privado ([doc](https://developers.tiktok.com/doc/content-posting-api-get-started)). Por isso não crie integração própria.
-  - Há dois modos de envio: postagem direta ou rascunho na caixa de entrada, para você finalizar no app com som em alta ([doc](https://developers.tiktok.com/doc/content-posting-api-get-started-upload-content)).
-- **Instagram:**
-  - Publicar exige conta profissional e tem limite de 100 posts por API em 24 h (a mesma doc cita 50 na parte de carrossel).
-  - Trial Reels podem ser publicados pela API ([doc](https://developers.facebook.com/docs/instagram-platform/content-publishing)).
-- **YouTube:**
-  - O upload (`videos.insert`) passou a custar ~100 unidades em 04/12/2025 (⚠️ não verificado nesta rodada).
-  - A cota padrão é de 10.000 unidades por dia ([histórico](https://developers.google.com/youtube/v3/revision_history)).
-  - Se você usa Metricool ou upload-post, a cota é problema deles.
-- **Kwai:** sem API de postagem. Exporte o MP4 para uma pasta "Kwai_hoje" no Drive e suba pelo celular, cerca de 2 min por vídeo.
-
-### 5.3 Originalidade e anti-duplicação por rede
-
-| Rede | O que derruba | O que conta como transformação |
-|---|---|---|
-| YouTube | Clipes juntados "com pouca ou nenhuma narrativa"; conteúdo alheio com mudança mínima. **Vale mesmo com permissão do criador e para o canal inteiro** ([política](https://support.google.com/youtube/answer/1311392?hl=en)). Desde 15/07/2025 também conta "conteúdo inautêntico" (produzido em massa) | Crítica, reação com comentário falado, edição com narrativa e comentário |
-| Instagram | Conta em que a maioria dos posts em 30 dias é repost perde a recomendação para quem não segue. Desde 30/04/2026 vale também para fotos e carrosséis ([TechCrunch](https://techcrunch.com/2026/04/30/instagram-restricts-reach-of-content-aggregators-in-new-crackdown/)). Borda, marca d'água, mudança de velocidade, crédito e print com o @ do autor **não** contam ([diretrizes](https://creators.instagram.com/original-content-guidelines/)). Logo de outro app reduz o alcance; a sua própria logo não ([SMT](https://www.socialmediatoday.com/news/instagram-clarifies-including-your-own-logo-on-a-reel-is-ok/730852)) | Texto próprio, narração, voiceover, edição criativa. Teste do Instagram: "se alguém tirasse a sua contribuição e o post ficasse igual, falta você nele". Sugestões oficiais: collab, Remix e repost com crédito ([SMT](https://www.socialmediatoday.com/news/instagram-updates-algorithm-to-benefit-original-creators/819016/)) |
-| TikTok | Conteúdo reaproveitado, Dueto, Stitch e conteúdo patrocinado ficam fora do Creator Rewards ([BrandBastion](https://blog.brandbastion.com/tiktok-creator-fund-vs-creator-rewards), fonte secundária) | Reação, análise ou narração própria |
-| Kwai | Exige "trabalhos originais" para pagar ([oficial](https://www.kwai.com/pt-BR/support/creator-center/por-que-nao-tenho-posso-participar-do-programa-de-receita-de-anuncios)). ⚠️ O detalhe do que conta como não original veio do Reclame Aqui e não foi verificado | Não documentado |
-| Facebook | Quem reutiliza conteúdo repetidamente perde a monetização por um período e tem alcance reduzido. "Juntar clipes ou pôr marca d'água não basta" ([Meta](https://creators.facebook.com/blog/combating-unoriginal-content/)) | Aprimoramento relevante |
-
-**Regra prática:** nada de arquivo idêntico. Gere uma versão por rede e por conta, mudando o gancho, o estilo de legenda, o ponto de início e de fim e, se der, acrescentando o seu comentário. Exporte sempre o arquivo limpo, sem logo de outro app.
-
-### 5.4 Multiconta
-
-- **Limites:**
-  - ⚠️ Instagram: 5 contas por login. TikTok: sem limite oficial. YouTube: ~100 canais por Conta Google. Nenhum desses números foi confirmado em fonte primária.
-- **Separação:**
-  - Separe as identidades: um perfil próprio, contas de campanha e contas de clientes, cada grupo num perfil diferente do upload-post.
-  - Use telefone e e-mail diferentes por conta. Isso evita que um aviso de direitos autorais ou uma queda de alcance contamine as outras contas.
-- **Contas de clientes:**
-  - O cliente conecta a conta dele por OAuth ou white-label. **Não guarde senha de cliente.**
-  - Lembre que golpistas também pedem senha (seção 7.3).
-- **Conta pessoal ou business no TikTok:**
-  - O Creator Rewards exige **conta pessoal**.
-  - O Buffer só publica automaticamente em conta business, e a capa via Metricool também é só business.
-  - Antes de escolher, confira se o seu agendador publica em conta pessoal.
-- **O que não fazer:**
-  - "Aquecer conta" não tem evidência controlada; é recomendação de vendedor de proxy.
-  - Nunca compre conta nem views: Whop e YouTube descartam views falsas.
-  - Mesmo corte em várias contas para a mesma campanha, só se o briefing permitir.
-
-### 5.5 Frequência e horários
-
-- **TikTok** ([Buffer, 11,4 mi de posts](https://buffer.com/resources/how-often-should-you-post-on-tiktok/)):
-  - Comparado a 1 post por semana: 2 a 5 posts dão até +17% de views por post; 6 a 10 dão +29%; 11 ou mais dão +34%.
-  - A mediana quase não muda (~500 views). O que sobe é o 10% melhor dos posts (p90), de 3.722 para 14.401 views: volume compra "bilhetes" de viral.
-  - Para contas de campanha, 1 a 2 posts por dia, se você conseguir variar a edição.
-- **Instagram** ([Buffer, 2,1 mi de posts](https://buffer.com/resources/how-often-to-post-on-instagram/)):
-  - Sair de 1 ou 2 posts por semana para 3 a 5 dá +12% de alcance por post; 10 ou mais dão +24%.
-  - Reels alcançam 1,36x mais que carrossel; carrossel engaja 2,09x mais que Reels ([Buffer 2026](https://buffer.com/resources/state-of-social-media-engagement-2026/)).
-- **Horários:** os estudos se contradizem e nenhum tem dados do Brasil ([resumo](https://www.breakreach.com/guides/best-time-to-post-on-tiktok)).
-  - Sprout: dias úteis, entre 13h e 18h locais.
-  - Buffer: o melhor horário varia por dia da semana.
-  - Metricool: 20h.
-- **Na prática:** depois de ~2 semanas de posts, rode `getBestTimeToPostByNetwork` do Metricool para TikTok, Instagram e YouTube e fixe 2 ou 3 horários por rede. Até ter dados, teste o começo da noite e o almoço (hipótese minha, sem dado do Brasil).
-
-### 5.6 Kwai na prática
-
-O Kwai é a rede com menos dado público das quatro. Trate como teste de 4 semanas:
-1. **No 1º dia:** abra Creator Center > Monetização e Desafios e anote se o Programa de Receita aparece para a sua conta.
-2. **Desafios:** inscreva-se nos desafios com prêmio do Creator Center. Hoje são a forma de ganho mais concreta no Kwai.
-3. **Teste:** 1 post por dia com os mesmos cortes do TikTok, em versão curta e longa, gerados como arquivo novo (nunca o MP4 baixado do TikTok com marca d'água). Registre as views no app por print.
-4. **Decisão:** se a mediana ficar abaixo de 30% da do TikTok depois de 4 semanas, mantenha o Kwai só para reaproveitar, sem tempo de edição exclusivo.
+- 1080x1920, H.264, com faststart. Em 1080p a 60 fps, o YouTube recomenda 12 Mbps ([especificação](https://support.google.com/youtube/answer/1722171?hl=en)).
+- Exporte sempre o arquivo limpo, sem marca d'água de outro app.
+- Área segura: rosto e legenda no centro, nada no canto inferior direito ([guia da Meta para anúncios](https://www.1clickreport.com/blog/meta-ads-creative-safe-zones-2026-guide)).
 
 ---
 
-## 6. Etapa 5 — Medir o que dá certo
+## 8. Postar nas 4 redes
 
-### 6.1 Métricas por rede e o que significam
+| Rede | Tipo de conta | Quantas | Frequência inicial | Pegadinha |
+|---|---|---|---|---|
+| TikTok | Pessoal (o Creator Rewards exclui conta Business) | 1 por marca | Games: 3 a 5/dia; virais: 1 a 2/dia | Cada telefone ou e-mail vale para 1 conta ⚠️. App de postagem não auditado publica em modo privado ([TikTok](https://developers.tiktok.com/doc/content-posting-api-get-started)) |
+| YouTube Shorts | Canal com verificação em 2 etapas | 1 por marca, em Contas Google separadas | Igual ao TikTok | Material de terceiros até 60 s. 3 strikes em 90 dias encerram o canal e afetam os canais vinculados ([YouTube](https://support.google.com/youtube/answer/2814000?hl=en)) |
+| Instagram Reels | Profissional (criador) | 1 por marca; até 5 contas no app ⚠️ | 1 a 3/dia | Conta majoritariamente de repost sai das recomendações |
+| Kwai | Comum | 1 por marca | 1/dia | Só manual: não há API pública ([Kwai](https://www.kwai.com/pt-BR/support/video/como-publicar-um-video)). O Yuri22 não aceita Kwai. Repost derruba a originalidade da conta ⚠️ |
 
-| Rede | Gancho (0 a 3 s) | Meio e fim | Distribuição | Coleta automática | Coleta manual |
-|---|---|---|---|---|---|
-| Instagram Reels | `reels_skip_rate`: % de quem pulou nos 3 primeiros segundos (métrica "estimada, em desenvolvimento", [API](https://developers.facebook.com/docs/instagram-platform/reference/instagram-media/insights)). Menor é melhor | Tempo médio assistido dividido pela duração | Shares, saves, alcance; % de não seguidores | `vidiq_instagram_owner_insights` (**0 crédito**, 12 mídias por vez); Metricool | Espere 48 h: os dados atrasam |
-| TikTok | Queda da curva de retenção nos primeiros segundos | `full_video_watched_rate`, `average_time_watched` | `impression_sources`: em média ~7 em cada 10 views vêm do Para Você ([Metricool](https://metricool.com/tiktok-study/)); seguidores ganhos | upload-post `get_post_analytics` (curva por segundo; ⚠️ provavelmente só para posts publicados por ele); Metricool | TikTok Studio |
-| YouTube Shorts | "Assistiram vs. deslizaram" (**não existe na API**) | `averageViewPercentage`; `audienceWatchRatio` acima de 1 indica que as pessoas reviram; `relativeRetentionPerformance` vai de 0 a 1, com mediana 0,5 ([API](https://developers.google.com/youtube/analytics/metrics)) | `engagedViews`, origens de tráfego | `vidiq_channel_analytics` (5 créditos) | Studio: "assistiram vs. deslizaram" e CTR de impressões; mande o print ao Claude |
-| Kwai | — | — | — | Nenhuma ferramenta | Creator Center no app, por print |
+**Nicho por conta:** 2 marcas. Uma de "games/streams BR" (cortes de campanha + portfólio) e uma de virais, com um nicho só (fails, animais ou satisfying). Bio sugerida: "Cortes autorizados de [jogo/streamers]". Não use o nome do streamer como se fosse a conta oficial: isso vira denúncia.
 
-**Atenção ao YouTube:** desde **24/08/2026** a view é contada assim que o vídeo começa a tocar, e os ganhos do YPP continuam calculados por engaged views ([ajuda](https://support.google.com/youtube/answer/2991785?hl=en)). Para comparar períodos antes e depois dessa data, use `engagedViews`.
+**Regras anti-duplicação e de campanha:**
+- Um arquivo por rede e por conta: mude o gancho, o ponto de início ou o fim. Nunca reposte o MP4 baixado do TikTok com marca d'água.
+- Em campanha, **use 1 conta por rede.** O "uso de múltiplas contas" desclassifica ([Yuri22, cl. 9.1 d](https://cdn.realoficial.com.br/championship-uploads/yuri22-v6-ovdyn7hz.pdf)).
+- Não apague e reposte para "testar o algoritmo": isso também desclassifica (cl. 9.1 e). Post apagado, arquivado ou privado durante a apuração perde as views (cl. 6.2).
+- Nada de VPN, conta comprada ou view comprada: dá ban na auditoria e zera o pagamento.
+- "Aquecer conta" não tem base oficial. Complete o perfil, use a conta normalmente por 1 dia e comece.
 
-**Leitura por estágio:**
+**Frequência:** no TikTok, contas com 11+ posts por semana tiveram 34% mais views por post do que contas com 1 por semana. A mediana quase não muda (~500); o que sobe é o p90, que vai de 3.722 para 14.401 views ([Buffer, 11,4 mi de posts](https://buffer.com/resources/how-often-should-you-post-on-tiktok/)). Volume compra "bilhetes" de viral. No Instagram, 10+ posts por semana deram 24% mais alcance por post ([Buffer](https://buffer.com/resources/how-often-to-post-on-instagram/)).
 
-| Sintoma | Diagnóstico | O que fazer |
+**Horários:** não há estudo com dados do Brasil. Até ter os seus dados, teste o almoço (12h a 14h) e a noite (19h a 22h); é hipótese minha. Pico de live: poste no mesmo dia. Depois de 2 semanas, rode o `getBestTimeToPostByNetwork` do Metricool e fixe 2 ou 3 horários por rede.
+
+**Agendadores:**
+- Metricool Free: 20 posts/mês, MCP em todos os planos, sem Kwai ([Metricool](https://metricool.com/pricing/)).
+- Cut.Pro Plus: posta em TikTok, Reels e Shorts, com 5 contas por rede.
+- upload-post: o Free não tem TikTok; o Basic custa R$ 79,84/mês no anual ([upload-post](https://www.upload-post.com/llms-full.txt)).
+- OpusClip Pro: cada post precisa ser aprovado no app.
+- Postiz: não tem plano grátis ([Postiz](https://postiz.com/pricing)).
+- No volume do mês 1 (~180 posts), poste pelo app de cada rede, seguindo a fila diária montada pelo Claude (arquivo, legenda, hashtag obrigatória e horário). Leva de 1 a 2 min por post.
+
+**Kwai na prática:** exporte o MP4 para uma pasta "Kwai_hoje" no Drive e suba pelo celular (~2 min por vídeo). No 1º dia, abra Creator Center > Monetização e Desafios e entre nos desafios com prêmio. Depois de 4 semanas, se a mediana ficar abaixo de 30% da do TikTok, mantenha o Kwai só para reaproveitar vídeos.
+
+---
+
+## 9. Medir e decidir
+
+### 9.1 Métricas que importam
+
+| Rede | Gancho (0 a 3 s) | Meio e fim | Distribuição |
+|---|---|---|---|
+| TikTok | Queda da curva de retenção nos primeiros segundos | % que viu até o fim, tempo médio | % de views vindas do Para Você (em média ~7 em cada 10, segundo a [Metricool](https://metricool.com/tiktok-study/)) |
+| Reels | Skip rate nos 3 primeiros segundos ([API](https://developers.facebook.com/docs/instagram-platform/reference/instagram-media/insights)); quanto menor, melhor | Tempo médio ÷ duração | Shares, % de não seguidores |
+| Shorts | "Assistiram vs. deslizaram" (só no Studio, por print) | % médio assistido | Engaged views |
+| Kwai | Só por print no app | | |
+
+**Para dinheiro, duas métricas mandam:**
+- **CPM efetivo** = R$ recebido ÷ views pagas × 1.000.
+- **Razão paga/postada** = views pagas ÷ views postadas. Abaixo de 60%, o problema é de processo: mínimo não batido, inscrição atrasada ou regra quebrada ([OpenClip](https://openclip.app/clipping/clipper-pay-rates), fornecedor).
+
+**Leitura rápida:**
+- Gancho ruim e meio bom: troque os 2 primeiros segundos.
+- Gancho bom e meio ruim: encurte o corte.
+- Retenção boa e poucos shares: troque o tema.
+- % de Para Você caindo: suspeite de conteúdo não original.
+
+**Compare cada post com a mediana dos seus últimos 20,** não com as views de outra rede. O TikTok gera até 42% mais views que o Reels e mais de 6x as do Shorts ([Metricool](https://metricool.com/short-video-report/)).
+
+### 9.2 Planilha mínima (12 colunas)
+
+**Aba CORTES**, com uma linha por post:
+
+| # | Coluna | Exemplo |
 |---|---|---|
-| Gancho ruim, meio bom | Os primeiros segundos falham | Troque os 3 primeiros segundos |
-| Gancho bom, meio ruim | Corte longo demais | Encurte |
-| Retenção boa, poucos shares | O tema não faz ninguém querer mandar o vídeo para alguém | Mude o tema |
-| % de Para Você ou de não seguidores caindo | O algoritmo não empurrou | Suspeite de conteúdo duplicado ou não original |
+| 1 | id_corte | 2026-10-14_wildrift_03 |
+| 2 | frente | game / viral |
+| 3 | fonte | streamer, jogo ou link do viral |
+| 4 | campanha | Wild Rift / nenhuma |
+| 5 | plataforma | TikTok |
+| 6 | url_post | |
+| 7 | data_hora | 14/10 19h30 |
+| 8 | tipo_momento | susto, rage, fail, treta, doação, primeira vez, técnico |
+| 9 | duracao_s | 28 |
+| 10 | nota_rubrica | 8 |
+| 11 | views_7d | 4.120 |
+| 12 | views_pagas | 4.120 |
 
-O Instagram diz que, para Reels, a chance de compartilhar e a chance de assistir até o fim estão entre as previsões principais do ranking ([Instagram](https://about.instagram.com/blog/announcements/instagram-ranking-explained)).
+**Aba SEMANA:** horas trabalhadas, R$ recebido por plataforma, CPM efetivo, razão paga/postada e R$ por hora.
 
-### 6.2 Benchmarks de referência
+Preencha com valores de uma lista fechada, sempre com as mesmas palavras. Só acrescente colunas depois de 30 posts: planilha grande demais no começo é a principal causa de abandono. Peça ao Claude para criá-la no Google Sheets (o conector já está ligado).
 
-Não há benchmark oficial de retenção. Compare cada corte com a mediana dos seus últimos 20 posts.
-
-| Fonte | Dado |
-|---|---|
-| [Socialinsider, Instagram](https://www.socialinsider.io/social-media-benchmarks/instagram) (2025) | Engajamento médio dos Reels: 0,52%. Views médias por porte de conta: 580 (1 a 5 mil seguidores), 1.000 (5 a 10 mil), 2.460 (10 a 50 mil), 6.095 (50 a 100 mil), 16.035 (100 mil a 1 mi) |
-| [Socialinsider, TikTok](https://www.socialinsider.io/social-media-benchmarks/tiktok) | Engajamento por view: 4,20% (2025) e 3,85% (2º tri de 2026). Views por post: 350 / 945 / 3.240 / 9.900 / 34.900, nos mesmos portes |
-| [Metricool](https://metricool.com/short-video-report/) | O TikTok gera até 42% mais views que o Reels e mais de 6x as do Shorts. O Reels lidera em compartilhamentos. **Não compare views brutas entre redes** |
-
-### 6.3 Planilha modelo: "Cortes – Loop de Melhoria"
-
-**Comece pela versão mínima (12 colunas):** id_corte, modelo, plataforma, url_post, data_hora, tema, tipo_gancho, duracao_s, nota_rubrica, views_7d, shares, receita_R$/horas. Acrescente as colunas abaixo só depois de 30 cortes. Planilha grande demais no começo é a principal causa de abandono.
-
-**Versão completa. Aba 1, CORTES** (uma linha por post em cada plataforma):
-
-| Grupo | Colunas |
-|---|---|
-| Identificação | id_corte (AAAA-MM-DD_FONTE_nº), modelo (campanha, canal próprio, cliente), campanha_ou_cliente, cpm_pago, plataforma, conta, url_post, data_hora_post (horário de Brasília), dia_semana, faixa_horaria |
-| Fonte | fonte_url, criador_fonte, tipo_fonte, idade_fonte_dias, minuto_inicio, minuto_fim |
-| Etiquetas (lista fechada) | tema, tipo_gancho, gancho_texto (literal), gancho_visual, duracao_s, estilo_legenda, layout, capa, caption, n_hashtags, usa_musica, ferramenta, nota_rubrica, score_IA, teste_id, variante, trial_reel |
-| Métricas em 24 h, 72 h e 7 dias | views, engaged_views, alcance, tempo_medio_s, pct_assistido, pct_completo, viewed_vs_swiped, skip_rate_3s, likes, comentarios, shares, saves, shares_por_mil, seguidores_ganhos, pct_FYP ou pct_nao_seguidores |
-| Resultado | outlier_score (views em 7 dias ÷ mediana dos últimos 20 posts da conta), status_campanha, motivo_recusa, views_aprovadas, receita_R$, horas_gastas, R$_por_hora, prova_link, veredito (escalar, repetir, ajustar, matar), hipotese_proximo |
-
-**Outras abas:**
-
-| Aba | Conteúdo |
-|---|---|
-| 2. FONTES | Criador, número de cortes, mediana do outlier_score, cortes com 2x a mediana, receita, status, data de revisão |
-| 3. TESTES A/B | Hipótese, variável, A, B, métrica principal, número de pares, resultado, decisão |
-| 4. CONCORRENTES | @, plataforma, nicho, URL do outlier, quantas vezes a mediana, gancho literal, formato, duração, onde achou |
-| 5. CAMPANHAS | Plataforma, marca, CPM, mínimo, teto por post, orçamento, países e redes aceitos, prazo, enviado, aprovado, taxa de recusa, R$ por hora |
-| 6. BASELINE | Mediana móvel dos últimos 20 posts por conta e plataforma |
-
-Use etiquetas de uma lista fechada, sempre com os mesmos valores. Isso permite tabela dinâmica e análise pelo Claude.
-
-### 6.4 Rotina semanal de 30 min (segunda-feira; pode virar uma Routine do Claude)
+### 9.3 Rotina semanal de 30 min (domingo)
 
 | Min | O que acontece |
 |---|---|
-| 0 a 6 | **Coleta.** O Claude puxa os dados (Metricool `getAnalyticsDataByMetrics`, vidIQ `channel_analytics`, `instagram_owner_insights`, upload-post `get_post_analytics`) e grava com `append_values`. Você manda os prints de "assistiram vs. deslizaram" e do Kwai, e o Claude transcreve |
-| 6 a 14 | **Análise.** O Claude atualiza o outlier_score e lista os 5 melhores e os 5 piores. Responde: o que os outliers têm em comum (gancho, tema, duração, horário, fonte)? Em que estágio os fracassos falharam? |
-| 14 a 20 | **Espionagem.** 1 `trending_videos` (Shorts, pt) e 1 `instagram_tiktok_outlier_search` (pt, hook). Registre 5 concorrentes |
-| 20 a 25 | **Campanhas.** Status, recusas, prazos, prints arquivados, R$ por hora |
-| 25 a 30 | **Decisão.** Um teste A/B para a semana, regras de matar ou escalar, as 3 próximas fontes e ajuste de horário |
+| 0 a 6 | **Coleta.** O Claude puxa os dados do Metricool e do vidIQ (o `instagram_owner_insights` não gasta crédito) e grava na planilha. Você manda os prints do Studio, do Kwai e dos painéis das campanhas |
+| 6 a 14 | **Análise.** Os 5 melhores e os 5 piores posts. O que os melhores têm em comum: tipo de momento, streamer, duração, horário? Onde os piores falharam: no gancho, no meio ou na distribuição? |
+| 14 a 20 | **Radar.** Campanhas novas no clipmap e na Content Rewards (orçamento restante, prazo, prêmio por participante). Streamers: radar da seção 3.2 |
+| 20 a 25 | **Dinheiro.** Views pagas, recusas, CPM efetivo, R$ por hora e prazos de saque |
+| 25 a 30 | **Decisão.** Aplique as regras da seção 9.4 e defina 1 teste para a semana |
 
-Uma vez por mês, gaste mais 15 min: confira se as notas de IA bateram com os resultados reais e reveja o orçamento.
+### 9.4 Quando dobrar ou trocar
 
-**Orçamento do vidIQ Free (150 créditos/mês):**
-- Rotina semanal: ≈ 15 créditos × 4 = 60.
-- Uma espionagem completa por mês (seção 6.6): ≈ 45.
-- Reserva para `score_title` e transcrições: ≈ 45.
-- Se faltar, corte o `watch_shortform_content` primeiro. Confira o saldo com `vidiq_balance` (0 crédito) toda segunda.
-
-### 6.5 Testes A/B e regras de decisão
-
-- **Uma variável por vez:** gancho, estilo de legenda ou capa.
-- **Instagram:** use Trial Reels. Eles vão primeiro para quem não segue e mostram resultados em 24 h ([TechCrunch](https://techcrunch.com/2024/12/10/instagram-rolls-out-trial-reels-that-arent-shown-to-a-creators-followers)). Compare trial com trial e meça skip rate e % assistido.
-- **TikTok e Shorts:** faça teste pareado. O mesmo momento sai com 2 ganchos, em dias equivalentes, alternando qual vai primeiro.
-- **Tamanho da amostra** (a unidade é o post):
-  - Teste do sinal: se 8 ou mais de 10 posts ficarem abaixo da mediana, a chance de ser acaso é ≈ 5,5% (56/1024). Com 9 de 10, cai para ≈ 1,1%.
-  - Cálculo ilustrativo (meça a dispersão das suas próprias views): para detectar uma diferença de 2x nas views, ~28 posts por grupo; para 1,5x, ~80.
-  - Para taxas (skip rate de 30% contra 35%): ~1.400 views por variante, repetido em pelo menos 5 pares.
-  - Compare sempre na mesma idade do post.
-- **Sua meta de R$ por hora:** (sua renda líquida mensal de advocacia ÷ horas trabalhadas no mês) × 0,5 nos 3 primeiros meses, e × 1,0 a partir do 4º. Qualquer modelo que fique abaixo disso por 4 semanas seguidas sai. Para um advogado, é essa comparação que decide se o clipping vale o seu tempo.
-- **Quando matar ou escalar:**
-
-| O quê | Regra |
-|---|---|
-| Formato | Depois de 10 posts, 8 ou mais abaixo da mediana e nenhum com 2x: pausar |
-| Fonte | Depois de 15 cortes em 3 semanas, mediana abaixo de 0,7x e nenhum outlier: trocar. Um outlier de 5x ou mais pede explorar aquele subtema antes de abandonar |
-| Campanha | R$ por hora abaixo da meta acima por 2 semanas, ou taxa de recusa subindo: sair |
-| Conta | 3 semanas de mediana caindo junto com queda de % no Para Você: revisar originalidade |
-
-### 6.6 Como espionar outros clipadores
-
-1. **Descobrir canais:** `vidiq_similar_channels` (nicho "cortes de podcast", pt, short) ou `vidiq_trending_videos` ordenado por views por hora.
-2. **Outliers de cada canal:** `vidiq_channel_videos` (popular, short) e `vidiq_channel_performance_trends`. Outlier é quem passa de 2x a mediana.
-3. **Reels e TikTok:** `instagram_tiktok_outlier_search` (pt, hook), `ig_accounts_from_outliers` (10 créditos) e `ig_profile_reels` (5 créditos, até 12 Reels).
-4. **Dissecar:** `vidiq_watch_shortform_content` (10 créditos) faz uma análise cena a cena dos 3 melhores. É assim que o Claude "vê" o vídeo.
-5. **Acompanhar:**
-   - Exolyt Basic (1 TikTok), Social Blade grátis.
-   - Concorrentes no Metricool: Instagram e YouTube; o TikTok não aparece na [lista](https://metricool.com/competitors/).
-   - Teste de 14 dias do Supermetrics. ⚠️ A leitura de perfis públicos de concorrentes não foi verificada.
-6. **Copie a estrutura, não o conteúdo.**
-7. **Não raspe dados** de TikTok ou Instagram com Bright Data ou just-scrape: pode violar os termos das redes.
+- Use os critérios do fim da seção 2.
+- **Teste do sinal:** se 8 ou mais de 10 posts de um formato ficarem abaixo da sua mediana, a chance de ser acaso é de ≈ 5,5%. Com 9 de 10, cai para ≈ 1,1%. Pause o formato.
+- **Um outlier de 5x ou mais** pede explorar aquele tipo de momento antes de abandonar o streamer.
+- **Compare sempre posts da mesma idade** (24 h com 24 h, 7 dias com 7 dias).
 
 ---
 
-## 7. Etapa 6 — Monetizar
+## 10. O que faz perder dinheiro ou conta
 
-### 7.1 Campanhas por view: onde e quanto
+**Áudio e claims**
+- **Música da live ou do jogo:** Short com mais de 1 min e claim ativo é bloqueado no mundo todo ([YouTube](https://support.google.com/youtube/answer/15424877?hl=en)). O claim desvia a receita. Na campanha, vídeo silenciado perde views.
+- **Strikes:** no YouTube, 3 strikes em 90 dias encerram o canal, impedem você de criar outro e afetam os canais vinculados ([YouTube](https://support.google.com/youtube/answer/2814000?hl=en)). O TikTok remove em definitivo quem reincide e bane na hora em caso grave ([TikTok](https://www.tiktok.com/legal/page/global/copyright-policy/en)).
+- **Imagem oficial de esports** (CBLOL, VCT, Wild Rift) em trecho longo: corte a reação do streamer, não a partida ([Cut.pro](https://cut.pro/pt-BR/blog/riot-kick-costream-oficial-clipar-2026)). Não consegui confirmar para o Brasil a liberação de co-stream de LoL, Valorant, TFT e Wild Rift na Kick desde o MSI 2026 ⚠️.
+- **Clipe antigo com música pode virar strike anos depois:** em junho de 2020, a Twitch recebeu pedidos de remoção em massa contra clipes de 2017 a 2019 ([Kotaku](https://kotaku.com/after-massive-dmca-takedown-twitch-streamers-are-delet-1843954430)).
+- **Viral de licenciadora:** claim certo (4.3).
 
-| Plataforma | Quanto paga | Taxas e saque | Observações |
+**Originalidade**
+- **Corte de live alheia sem camada sua:** sai do Para Você no TikTok e não monetiza no YouTube.
+- **Página feita de repost:** perde recomendação no Instagram. Em 2019, o Instagram removeu dezenas de páginas de memes que somavam mais de 30 mi de seguidores ([SEJ](https://www.searchenginejournal.com/instagram-purges-meme-accounts-shutting-down-pages-with-millions-of-followers)).
+
+**Processo de campanha (views recusadas)**
+- **Inscrever tarde:** só contam as views ganhas depois da inscrição. Um corte que entra com 40 mil e termina com 100 mil é pago por 60 mil ([Yuri22, cl. 6.7](https://cdn.realoficial.com.br/championship-uploads/yuri22-v6-ovdyn7hz.pdf)). As views do 1º dia são a maior parte.
+- **Retocar corte de outro clipador** (aparar, espelhar, aplicar filtro, trocar só a trilha, reexportar): o corte é recusado, o saque é bloqueado, você é banido de campeonatos futuros e pode ser cobrado pelo que já sacou. Remover a marca d'água alheia agrava a situação (cl. 5.6 e 5.8).
+- **Abaixo do mínimo:** na Whop, um mínimo de US$ 3,50 a US$ 1,75/mil exige 2.000 views. Abaixo disso, o corte vale zero.
+- **Orçamento esgotado:** a Whop paga por ordem de chegada. Entre só com mais de 50% do orçamento restante e nas primeiras 48 h.
+- **País não aceito:** as regras de público das campanhas de jogo da Whop ficam num documento fechado. Leia antes de postar.
+- **Sem a tag, o @ ou a hashtag:** o corte não conta.
+- **Auditoria:** conta recente com números altos é indício de fraude. Você tem pelo menos 72 h para mandar prints de alcance, origem do tráfego, retenção e público, e pode ter de mostrar tudo ao vivo numa chamada de vídeo. Sem resposta, o valor é retido e você é banido (cl. 9.3). Guarde prints de 24 h, 72 h e 7 dias.
+- **Prazo de pagamento:** o blog da Real Oficial fala em 30 a 60 dias depois do fim, e o regulamento do Yuri22 em até 7 dias após a apuração ⚠️. Não conte com o dinheiro antes.
+
+**Conta**
+- **Cassino e bet** (Kick, Shuffle e Roobet na Whop, GG Poker na Viewx): pagam mais (cassino na Kick paga US$ 10+/mil, segundo um [fornecedor](https://openclip.app/guides/clipping-on-kick)), mas têm a maior taxa de ban. Ban durante a verificação = pendente perdido. Recuse.
+- **Várias contas na mesma campanha, VPN, conta comprada ou view comprada:** desclassificação e ban na 1ª auditoria.
+- **Comprar ou vender página:** viola os termos do Instagram.
+
+**Dinheiro e golpes**
+- **Receber em dólar:** o PayPal leva perto de 10% ([PayPal](https://www.paypal.com/br/webapps/mpp/merchant-fees)). A Whop tem o Brasil na lista de saque, mas sem Pix: os métodos aparecem depois do KYC, e cripto custa 5% + US$ 1 ([Whop](https://docs.whop.com/fees)). Compare com a [Wise](https://wise.com/br/blog/receber-dinheiro-do-exterior-paypal). Abaixo de ~US$ 50, a taxa fixa come o ganho, então acumule antes de sacar. Preencha o W-8BEN no KYC.
+- **Golpes:** nenhuma plataforma legítima pede senha, código 2FA, QR code ou "acesso temporário de gerente". Ler um QR code no Discord entrega a sua sessão ao golpista ([FindClout](https://findclout.com/blog/clipping-discord-scams)). Outros sinais: cobrança para entrar, promessa de ganho fixo, regras escondidas e pagamento com base em print ([Viewx](https://viewx.com.br/blog/melhores-plataformas-de-clipagem-brasil)).
+- **Cursos de "método":** há queixas de reembolso negado ⚠️ ([Reclame Aqui](https://www.reclameaqui.com.br/chatpay-tecnologia/reclamacao-sobre-o-curso-mcl-metodo-clipador-lucrativo-de-ruyter-dificuldade-de-contato-e-promessa-de-reembolso-nao-cumprida_ttytTYWFK0iRyrtI/); a página deu erro). Existe comunidade grátis, como o grupo de WhatsApp The Clippers ([Autoclipper](https://autoclipper.live/the-clippers)). Nenhum curso é condição para receber.
+- **Dependência da Kick:** streamers relataram queda nos pagamentos da Kick em set/2026 ⚠️ ([post no X](https://x.com/Portal_Insider/status/2098127339372609689), não acessado). Os pools que os streamers da Kick pagam a clipadores podem encolher sem aviso.
+
+---
+
+## 11. Stack e o que o Claude faz por você
+
+### 11.1 Três níveis
+
+| Etapa | R$ 0 | Até R$ 200 (≈ R$ 166,79) | Upgrade (≈ R$ 440,51; ou ≈ R$ 372,45 com planos anuais) |
 |---|---|---|---|
-| [Real Oficial](https://realoficial.com.br/pt/real-rewards) | R$ 0,50 a 1/mil (Wild Rift R$ 1, Academia Rafael Toro R$ 0,50, Stream Gabriel Morais R$ 1) | Pix depois da validação; regras por campanha | Programa oficial do [Podpah](https://realoficial.com.br/pt/championships): 38.627 cortes e mais de 1,23 bi de views. O Podpah 4.0 é por ranking, com R$ 10 mil para 815 inscritos. Os posts precisam ficar públicos |
-| [Klypex](https://klypex.com.br/) | R$ 1/mil (Júnior e Cézar: teto de R$ 200 por vídeo, R$ 9 mil no total); Silvercop: ranking diário de R$ 15 mil, R$ 6 mil para o 1º | Grátis, sem convite, Pix; saque mínimo não informado | TikTok, Reels, Shorts, Facebook, X |
-| [Viewx](https://viewx.com.br/) | R$ 1/mil (Gustavo Borges); campeonatos de R$ 2,5 mil a R$ 40 mil; R$ 910 mil pagos em 99 edições | Pix; prazos não informados | Sem audiência mínima |
-| [Conty](https://appconty.com/seja-clipador) | Definido em cada campanha | 5% no saque; sem mensalidade | As contas precisam estar autorizadas na campanha |
-| [Autoclipper Clip & Pix](https://autoclipper.live/clip-and-pix) | R$ 1 a 2,50/mil, 7 campanhas, mais de 12 mil clipadores | Grátis, Pix | O passo a passo indica uso da ferramenta Autoclipper |
-| [Cut.pro (campeonatos)](https://cut.pro/pt-BR/blog/campeonato-de-cortes-como-funciona-2026) | Exemplo de R$ 1,50/mil; vídeo com menos de 1.000 views vale zero | Pix, 1 saque a cada 7 dias; taxa de 20% paga pelo organizador | "Os primeiros 20 cortes são aprendizado pago" |
-| [Clipou](https://www.clipou.com.br/) | Por campanha | Saque com 12% de taxa no plano grátis; 8% no Premium de R$ 97, que só compensa acima de ~R$ 2.425 sacados por mês | A página se contradiz sobre os limites do plano |
-| Clipei ⚠️ | O clipmap mostra Diego & Arnaldo com R$ 1.500 por dia (R$ 153.300 no total) | A central de ajuda está fora do ar (404) | Citada pela imprensa em campeonato de candidato |
-| [Whop Content Rewards](https://whop.com/content-rewards-terms-of-service/) | Mediana de US$ 1/mil (≈ R$ 4,99), faixa de US$ 0,05 a 3 | A taxa de 10% é paga pela marca. O Brasil está na [lista de saque](https://docs.whop.com/fees), mas os métodos só aparecem depois do KYC: provavelmente transferência bancária local internacional (taxa variável) ou PayPal; cripto custa 5% + US$ 1. **Os US$ 23 de wire são para conta nos EUA. Não há Pix** | Tudo em inglês. ⚠️ Parte das campanhas restringe o país do público |
-| [Vyro](https://vyro.com/clipper-terms) | ⚠️ valores não confirmados | 18 anos ou mais; Stripe ou PayPal; mínimo de US$ 10 (≈ R$ 49,90); 1 saque a cada 7 dias; processamento de 72 h ou mais | O Brasil não é citado nos termos |
-| Clipping.net ⚠️ | US$ 0,50/mil, mínimo de 100 mil views | PayPal ou cripto | Fonte bloqueada (403) |
-| [ClipFarm](https://findclout.com/blog/clipfarm-pricing) | Do lado da marca: ~US$ 0,16/mil no caso Druski | Roda sobre a Whop; pagamento semanal não confirmado | Fonte concorrente |
-| Radar: [clipmap.gg](https://clipmap.gg/) | 1.770 campanhas indexadas, 194 ativas em 11/10/2026 | — | Consulte todo dia |
-| Não avaliadas | Nido, Clouted (no clipmap), Keoto, Clipay, Clipping.io (citadas pela Viewx) | — | Antes de entrar, aplique o checklist de campanha séria (7.2) |
+| Achar o momento | Twitch API + chat + heatmap pelo Claude; Clipador grátis | + Cut.Pro Plus ao vivo | + OpusClip Pro (ClipAnything) |
+| Cortar e montar o layout | ffmpeg ou CapCut grátis; Cut.Pro Gratuito | Cut.Pro Plus | + OpusClip Pro (Gameplay e MCP) |
+| Acabamento | CapCut grátis | CapCut Pro mensal (R$ 65,90) | CapCut Pro (mensal R$ 65,90 ou anual R$ 39,16/mês) |
+| Voz | Google TTS ou Kokoro | ElevenLabs Starter (≈ R$ 30,99) | ElevenLabs Starter |
+| Postar | Apps + Metricool Free | Cut.Pro + apps + Metricool Free | + upload-post Basic (mensal ≈ R$ 123,95 com IOF; anual ≈ R$ 82,63/mês) |
+| Medir | Metricool Free + Sheets | Igual | Igual |
 
-**Gratuidade:** a entrada sem cobrança está confirmada por escrito só em Klypex ("Grátis. Sem convite"), Conty (sem mensalidade, 5% no saque) e Autoclipper. Real Oficial e Viewx não cobram nada visível no cadastro, mas isso não está escrito; confira no regulamento. Se alguma pedir pagamento para entrar, é sinal de golpe (7.3).
+Upgrade = OpusClip Pro (≈ R$ 149,77) + Cut.Pro Plus (R$ 69,90) + CapCut Pro + ElevenLabs Starter (≈ R$ 30,99) + upload-post Basic. Só assine quando ganhar de 2 a 3 vezes esse valor por mês.
 
-**Teste de realidade:**
-- Dividindo o total pago pelas views na Whop, a [Ascynd](https://ascynd.io/en/blog/whop-clipping) chega a ~US$ 0,39 por mil views (US$ 2,58 mi para 6,6 bi de views), por causa de tetos, mínimos e views filtradas. Baixa confiança.
-- A Cut.pro fala em programas que pagam R$ 8 a 20 por mil e em iniciantes ganhando de R$ 300 a 1.200 por mês ([fonte](https://cut.pro/en/blog/how-much-a-clipper-earns-2026)). O próprio texto se contradiz sobre a faixa de iniciante e não mostra amostra. Não bate com as taxas que as plataformas publicam.
+### 11.2 Conectores que você já tem
 
-### 7.2 Regras que derrubam pagamento e o dossiê de prova
-
-**Termos oficiais da Whop:**
-- 18 anos ou mais.
-- A Whop decide sozinha quais views são legítimas e exclui bots e views incentivadas.
-- O pagamento segue a ordem de chegada até o teto máximo ou a data final.
-- Pode haver retenção ou estorno.
-- Envios duplicados são proibidos.
-- Os impostos são seus.
-
-**Mínimo e teto por vídeo:** cada campanha define um pagamento mínimo e um máximo. Exemplo da [documentação](https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards): taxa de US$ 3 por mil com mínimo de US$ 6 significa que só entram na revisão vídeos com 2.000 views ou mais.
-
-**Segundo a ClipSpeed** ([fonte terceira](https://www.clipspeed.ai/blog/whop-content-rewards-clipping-guide.html)):
-- Há 7 dias de ganho depois da aprovação, mais 3 dias de retenção.
-- A marca só pode recusar por requisito escrito no briefing.
-- Cada envio tem direito a 1 apelação.
-
-**Motivos comuns de recusa depois das views** ([OpenClip](https://openclip.app/guides/whop-clipping-guide), fornecedor): regra quebrada (hashtag, crédito, material, estilo), duplicata de outro clipador, conta não vinculada, orçamento esgotado. As primeiras 48 h de uma campanha grande são a melhor janela.
-
-**Dossiê de prova para cada post** (pasta no Drive):
-- URL e data/hora do post.
-- Print da analytics nativa em 24 h, 72 h, 7 dias e no último corte antes do pagamento.
-- Print dos requisitos da campanha no dia do envio.
-- Não apague o post nem edite a legenda depois de enviar.
-
-**Indicador de processo:** calcule o CPM efetivo (R$ recebido por mil views pagas) e a razão entre views pagas e views postadas. A OpenClip sugere que abaixo de 60% o problema é de processo ([fornecedor](https://openclip.app/clipping/clipper-pay-rates), baixa confiança).
-
-**Checklist de campanha séria.** Só entre se todos forem SIM:
-1. Entrar é grátis.
-2. Taxa, teto, mínimo, redes, público aceito e forma de pagamento estão escritos **antes** de você começar.
-3. Há orçamento restante visível.
-4. A medição é feita pela conta conectada.
-5. A campanha não é político-eleitoral.
-6. O anunciante pode anunciar legalmente no Brasil. Sem bet não autorizada, cassino, prop trading, cripto sem registro ou "renda garantida" (seção 8.6).
-7. O regulamento diz como identificar a publicidade (#publi ou selo de parceria paga).
-
-### 7.3 Golpes
-
-Sinais apontados pela [Viewx](https://viewx.com.br/blog/melhores-plataformas-de-clipagem-brasil) e pela [FindClout](https://findclout.com/blog/clipping-discord-scams):
-- Cobrança para entrar.
-- Promessa de ganho fixo mensal.
-- Regras escondidas até depois do trabalho.
-- Medição de views mal explicada.
-- Falso funcionário no Discord, com nome ou avatar copiado.
-- Venda de "curso" ou de "método".
-- Pedido de senha ou de código de 2 fatores.
-- Pagamento baseado em print de tela.
-- Taxa alta demais com urgência.
-
-### 7.4 Receber em dólar
-
-- **PayPal** ([tabela oficial](https://www.paypal.com/br/webapps/mpp/merchant-fees)): 4,79% + 1,61% de taxa internacional + 3,50% de spread na conversão + taxa fixa. Total perto de **10%**.
-- **Wise:** conta sem mensalidade, com taxa por transferência ([Wise](https://wise.com/br/blog/receber-dinheiro-do-exterior-paypal)). Depois do KYC na Whop, veja no painel Balances quais métodos aparecem para o Brasil. Se aparecer ACH e você tiver conta USD na Wise (com dados bancários dos EUA), compare ACH de US$ 2,50 + conversão da Wise contra os ~10% do PayPal. ⚠️ Não verifiquei se a Whop aceita ACH para titular brasileiro.
-- **Saque pequeno:** abaixo de ~US$ 50, o custo fixo come o ganho. Acumule antes de sacar.
-- **Stripe:** exige conta em reais no mesmo CPF ou CNPJ ([Stripe](https://support.stripe.com/questions/most-common-issues-receiving-payouts-in-brazil)).
-- **W-8BEN:** na Whop e na Vyro, preencha o formulário no cadastro (KYC). Sem ele pode haver retenção de imposto na fonte nos EUA.
-
-### 7.5 Programas nativos das redes no Brasil
-
-| Rede | Programa e requisitos | Quanto paga | Situação |
-|---|---|---|---|
-| YouTube | **YPP:** 1.000 inscritos + 4.000 h em 12 meses, **ou** 1.000 inscritos + 10 mi de views em Shorts em 90 dias. Também exige verificação em 2 etapas, AdSense e nenhum aviso ativo ([ajuda](https://support.google.com/youtube/answer/72851?hl=pt-BR)). A partir de 01/02/2027, receber a receita de Shorts exigirá 10 mi de views qualificadas em 90 dias ([oficial](https://support.google.com/youtube/answer/12504220?hl=pt-BR)). Novos candidatos: 8.000 h ou 20 mi (imprensa ⚠️) | O criador fica com 45% do valor atribuído às suas views. RPM do Shorts no Brasil ≈ R$ 0,22/mil; um canal relatou R$ 0,29 ([caso](https://criadores.vip/quanto-ganhei-com-o-youtube-2025-shorts-videos-longos/)) | Disponível. Conteúdo reutilizado não monetiza |
-| TikTok | **Creator Rewards:** 18 anos ou mais, 10 mil seguidores, 100 mil views em 30 dias, conta pessoal, vídeo original com mais de 1 min. Só contam views únicas no Para Você com 5 s ou mais, com mínimo de 1.000 por vídeo (fonte secundária) | ≈ R$ 1,60/mil ([Elev8or](https://www.elev8or.io/blog/tiktok-creator-rewards-rpm-2026), estimativa de baixa confiança) | O Brasil é mercado elegível segundo [fonte secundária](https://quasa.io/media/tiktok-creator-rewards-program-eligible-countries-in-2026). Confirme em TikTok Studio > Monetização |
-| TikTok Shop afiliados | Não há um número único de seguidores. Exige verificação de identidade; a comissão é definida pelo vendedor ([fonte](https://viniensina.com.br/tiktok-shop-afiliado/)) | Variável | Confira no app |
-| Instagram | Nenhum programa aberto no Brasil. Os bônus da Meta foram só para EUA, Coreia do Sul e Japão, por convite ([Meta, 2023](https://creators.facebook.com/giving-more-creators-around-the-world-ways-to-earn-money)) | — | ⚠️ Convites isolados no Brasil não foram verificados |
-| Facebook | **Creator Fast Track:** US$ 1.000 por mês (100 mil+ seguidores em outra rede) ou US$ 3.000 (1 mi+), durante 3 meses ([Olhar Digital](https://olhardigital.com.br/2026/03/18/internet-e-redes-sociais/meta-vai-pagar-criadores-de-outras-plataformas-para-postarem-no-facebook/)) | — | ⚠️ A restrição a EUA e Canadá não foi confirmada |
-| Kwai | **Receita de Anúncios:** nível 6 ou mais **ou** mais de 500 fãs; trabalhos originais; mais de 12 trabalhos em 30 dias; média de 1.000 views por post **ou** mais de 10 mil views em 30 dias; maior de idade. O programa está "abrindo gradualmente" ([oficial](https://www.kwai.com/pt-BR/support/creator-center/por-que-nao-tenho-posso-participar-do-programa-de-receita-de-anuncios)) | ⚠️ Blogs falam em R$ 0,50 a 3 e em R$ 4 a 8/mil. O Kwai Cut pagava R$ 0,15 a 0,27/mil para editores terceirizados ([Núcleo, jan/2025](https://nucleo.jor.br/reportagem/2025/01/14/kwai-cut-editores-terceirizados-centavos/)) | ⚠️ Não está confirmado se está aberto para contas brasileiras |
-
-### 7.6 Clientes: quanto cobrar, quem prospectar, entregáveis e contrato
-
-**Referências de preço** (todas de blogs sem metodologia; use como faixa). Atenção: a unidade que você vende é o **corte pronto** (gancho, legenda revisada, 9:16) tirado de episódio já gravado. Não é vídeo editado do zero, que custa bem mais:
-
-| Item | Faixa | Fonte |
+| Conector | Uso em games e virais | Atenção |
 |---|---|---|
-| Pacote de 4 vídeos **editados** por mês (não é corte) | R$ 800 a 2.500 | [CrazyStack](https://www.crazystack.com.br/quanto-cobrar-freelancer-video-tabela-precos) |
-| Pacote de 8 a 12 vídeos **editados** por mês (não é corte) | R$ 2.000 a 5.000 | CrazyStack |
-| Vídeo curto avulso (até 60 s) | R$ 50 a 150 | CrazyStack |
-| Corte para criador pequeno ou médio | R$ 15 a 40 / R$ 40 a 100 | [Cut.pro](https://cut.pro/en/blog/how-much-a-clipper-earns-2026) (baixa confiança) |
-| Reel editado a partir do material bruto | R$ 300 a 700 | [FreelaSemCrise](https://www.freelasemcrise.com.br/quanto-cobrar/producao-reels) |
-| Social media de nicho | R$ 4.000 a 10.000+ (a advocacia aparece entre os nichos que pagam mais) | [Jamile Fernandes](https://jamilefernandes.com.br/blog/precificacao-para-social-media-quanto-cobrar-em-2026) |
-| Mercado dos EUA | Clipe com edição mínima: US$ 100 a 300; podcast: US$ 300 a 500 por episódio (~8 clipes) | [Videotto](https://www.videotto.com/blog/how-much-does-video-editing-cost-global-2026) (fornecedor) |
-| Workana / Fiverr | ⚠️ Vaga de até R$ 40 por Reel; preços do Fiverr | Não verificados (403) |
+| OpusClip MCP | `opusclip_submit_project` com `rangeStart`/`rangeEnd` e layout Gameplay; `analyze_video`; thumbnail; `opusclip_get_usage` | O MCP só funciona no plano Pro. Cada publicação precisa ser aprovada no app |
+| vidIQ MCP | `instagram_tiktok_outlier_search` (viral gringo e se ele já chegou em PT), `trending_videos`, `watch_shortform_content` (10 créditos) para dissecar o melhor vídeo de um concorrente, `vidiq_balance` (0 crédito) | O `vidiq_outliers` não acha Shorts em PT, só vídeo longo |
+| Metricool | Agendar (Free: 20 posts/mês), melhor horário, analytics | Sem Kwai |
+| Higgsfield | `virality_predictor` para desempatar ganchos ⚠️; `reframe`; `upscale_video` | O custo em créditos não é publicado: confira o saldo antes |
+| ElevenLabs | Transcrever janelas de 2 min; voz de narração | O Free não tem licença comercial. Repetir uma geração cobra de novo |
+| Descript | Edição pelo texto | Pouco útil em game |
+| upload-post (skills) | `repurpose-video`, `posting-queue`, `analyze-performance` | O MCP precisa ser autenticado; o Free não tem TikTok |
+| Postiz | Agendamento | Sem plano grátis |
+| Google Sheets e Drive | Planilha, dossiê de prints, pasta "Kwai_hoje", prints de permissão | |
+| Tavily | Pesquisa na web (campanhas novas, regras) | |
 
-**Proposta de 3 faixas** (sugestão minha, ancorada nas referências de corte e de vídeo curto: R$ 15 a 150 por unidade):
-- **Essencial:** 12 cortes por mês com legenda e gancho: R$ 600 a 1.500 (R$ 50 a 125 por corte).
-- **Crescimento:** 20 cortes + títulos, copy por rede e agendamento: R$ 1.200 a 2.500.
-- **Premium jurídico:** 12 a 20 cortes com roteiro de gancho e revisão editorial de conformidade com o Provimento 205, mais relatório mensal: R$ 1.500 a 3.000. A âncora é o Reel editado do material bruto, de R$ 300 a 700 cada ([FreelaSemCrise](https://www.freelasemcrise.com.br/quanto-cobrar/producao-reels)).
-- Pagamento adiantado via Pix, com 1 rodada de ajustes incluída.
-- **Confira a capacidade:** cada cliente com podcast semanal de 1 h consome ~4 h dos ~5 h de fonte por mês do OpusClip Pro. Veja as notas da seção 9.2.
+**O Claude faz sozinho:** chama as APIs da Twitch e da Kick (no Claude Code), calcula o pico de chat, transcreve janelas, aplica a rubrica e escreve gancho, título, legenda e roteiro de narração. Também gera a voz, envia o trecho ao OpusClip, monta a fila diária, agenda no Metricool, preenche a planilha, calcula o CPM efetivo e o R$ por hora e roda a rotina semanal.
 
-**Quem prospectar:**
-1. **Advogados e escritórios** que já gravam vídeo. O seu diferencial é conhecer o Provimento 205. Venda com marca própria do serviço, sem "Dr." nem número da OAB, e sem citar o seu escritório (seção 8.4).
-2. **Podcasts médios** (10 mil a 200 mil inscritos) sem canal de cortes. Ofereça operar o canal oficial com licença escrita, por taxa fixa mais bônus ou por divisão de receita (como a parceria Podpah e Real Oficial).
-3. **Médicos.** Exigências da CFM 2.336/2023: nome, CRM e a palavra "MÉDICO"; RQE quando houver especialidade. É proibido identificar paciente e editar ou melhorar imagens de procedimento, então nada de filtro "beauty".
-4. **Igrejas, coaches e empresas B2B.**
-5. **Evite políticos** durante a eleição.
+**O Claude não faz:** ver o vídeo como você vê (ele trabalha com transcrição, números e, no vidIQ, análise cena a cena), postar no Kwai, garantir que um streamer libera cortes, nem assinar ou pagar nada por você.
 
-**Pitch:**
-- Pegue um episódio recente do possível cliente e entregue 2 ou 3 cortes prontos em 9:16, em privado.
-- Acompanhe com uma proposta curta e um teste de 2 semanas pago com desconto.
-- Ferramentas: `small-business:proposal-builder`, `cold-email:*`, `small-business:outreach-composer`.
+### 11.3 Skills
 
-**Entregáveis:**
-- Cortes em 9:16 em HD, com legenda revisada.
-- Gancho de tela e títulos.
-- Copy por rede.
-- Agendamento.
-- Relatório mensal (Metricool ou planilha).
-- Para clientes regulados: revisão **editorial** de conformidade com OAB ou CFM antes de publicar. No contrato, deixe claro que não é parecer jurídico. Se o cliente quiser parecer, faça contrato de honorários separado (seção 8.4).
+- **Você já tem:** `skill-creator` (para criar a suíte), `humanizer` e `killer-scripter` (ganchos e legendas; foram feitas em inglês, então adapte ao PT), `content-ideation` e as skills do upload-post e do Postiz.
+- **Ajuste antes de começar:** a `video-processor-lucas` dispara com qualquer vídeo e aplica o padrão dos seus vídeos pessoais (fundo, rodapé na legenda). Restrinja o gatilho para ela não rodar em cortes de game ou virais.
+- **Para instalar com curadoria:** o pacote comunitário Social Media Skills. Deixe ativas só hook-writer, viral-reverse-engineering, captions-and-clipping, trend-jacking e experimentation-and-ab-testing, e peça ao Claude para adaptar o hook-writer ao PT-BR e a games.
 
-**Cláusulas do contrato:**
-- **Escopo e prazos:** número de cortes, duração e formatos; prazos e número de revisões.
-- **Publicação:** aprovação do cliente antes de publicar; quem publica.
-- **Direitos:** declaração do cliente de que tem os direitos sobre o conteúdo, a imagem e voz dos convidados e as músicas (arts. 29 e 50 da Lei 9.610/98 e art. 20 do Código Civil). Licença de uso com prazo, território e modalidades definidos (TikTok, Shorts, Reels, Kwai), porque o art. 49 é interpretado de forma restritiva.
-- **Responsabilidade:** indenização se houver violação de direito de terceiros; ausência de garantia de views; responsabilidade pelo conteúdo e conformidade OAB ou CFM.
-- **Pagamento e saída:** pagamento antecipado; multa por atraso; rescisão com 30 dias de aviso.
-- **Outros:** sigilo e ferramentas usadas (se o material for confidencial, prever que não passa pela nuvem do CapCut); sua licença para usar os cortes no portfólio.
-- **IA sobre imagem e voz:** autorização específica para legenda automática, dublagem, voz sintética ou alteração de rosto do cliente e dos convidados (seção 8.3).
-- **LGPD:** você trata dados (de convidados e de quem comenta) como operador, segue as instruções do cliente e apaga o material bruto em X dias.
-- **Contas:** a conta e o AdSense são do cliente. Você opera com acesso delegado e devolve os acessos em até 48 h na rescisão.
-- **Strikes:** o cliente responde por material de terceiros que ele forneceu (músicas, trechos de TV, convidados sem termo).
-- **Exclusividade e não concorrência:** defina se você pode atender concorrentes do cliente no mesmo nicho.
-- **Parceria de canal oficial** (modelo 2a): quem é dono do canal; como se calcula a divisão de receita (base: relatório do YouTube Studio); o que acontece com o canal se a parceria acabar.
-- **Para assinar e cobrar:** `legal:review-contract`, DocuSeal ou SignNow (já conectados) e `small-business:invoice-chase`.
-
-### 7.7 Formalização e impostos
-
-- **MEI:** a ocupação "Editor(a) de vídeo independente", CNAE 5912-0/99, é permitida, com teto de R$ 81 mil por ano ([blog de contabilidade](https://contabilidade.com/blog/cnae-5912099-editor-a-de-video-independente-pode-ser-mei-quanto-paga-e-quando-desenquadrar-do-mei/)). ⚠️ O DAS de 2026 (~R$ 86,05 segundo o blog) não foi confirmado no gov.br.
-  - **Antes de abrir MEI,** confirme que você não é titular, sócio ou administrador de outra empresa, inclusive sociedade de advogados ou sociedade unipessoal de advocacia. Se for, em regra o MEI é vedado (LC 123/2006, art. 18-A, §4º, III). Avalie uma ME no Simples com o contador.
-- **Renda do exterior como pessoa física:** vai para o carnê-leão, com DARF até o último dia útil do mês seguinte e multa de 50% por atraso ([Viva](https://viva.com.br/dinheiro/ir-2026-quem-deve-pagar-o-carne-leao-e-como-declarar-o-imposto.html)). Em 2026 há um redutor que zera o imposto até R$ 5 mil por mês, com redução gradual até R$ 7.350 ([Contabilizei](https://www.contabilizei.com.br/contabilidade-online/carne-leao-2026/)).
-- **Pagamento de cliente pessoa física** também vai no carnê-leão.
-- **Pix de plataformas brasileiras** (empresa pagando pessoa física): entra na declaração anual, e pode haver retenção na fonte.
-- **Dólar:** preencha o W-8BEN nas plataformas americanas (seção 7.4). A entrada do dinheiro tem IOF de câmbio (⚠️ confirme a alíquota vigente).
-- **Leve tudo ao contador junto com a renda da advocacia.** A tabela progressiva soma as duas rendas.
-
----
-
-## 8. Jurídico e riscos
-
-### 8.1 Direito autoral (Lei 9.610/98)
-
-Conferido pela transcrição no [parecer do MPBA](https://transparencia-repo.mpba.mp.br/Convenios/H/H%20134%20-%20Processo.pdf), porque o Planalto estava fora do ar.
-
-| Dispositivo | O que diz | Na prática |
-|---|---|---|
-| Art. 7º | A lista de obras protegidas é exemplificativa e cobre obras sonoras e audiovisuais | Podcast é obra protegida |
-| Art. 27 | Os direitos morais são inalienáveis e irrenunciáveis | Crédito ao autor e integridade da obra não se negociam |
-| Art. 29 | Qualquer uso depende de autorização **prévia e expressa** | Sem autorização escrita, não corte |
-| Art. 46, III | Permite citar trechos para estudo, crítica ou polêmica, na medida justificada, com nome do autor e origem | Corte de "melhor momento" sem comentário dificilmente se encaixa. O Brasil não tem fair use |
-| Art. 46, VIII | Pequenos trechos são livres só se a reprodução não for o objetivo principal da obra nova e não prejudicar a exploração normal da obra | O corte **é** o trecho em si: não se encaixa |
-| Art. 49 | A transferência é interpretada de forma restritiva (VI) e vale só no país do contrato (IV). Sem contrato escrito, o prazo máximo é de 5 anos (III) | Escreva no contrato o prazo, o território e cada rede |
-| Art. 50 | A cessão é sempre por escrito e se presume onerosa | Para cortes, prefira licença não exclusiva com prazo, não cessão |
-
-**Instrumentos possíveis** (MPBA):
-1. Termo de autorização de uso de imagem e voz.
-2. Autorização de uso de obra, temporária e com fim específico.
-3. Cessão de obra, definitiva, exceto direitos morais.
-
-O parecer observa que o direito de imagem não se cede: só se autoriza o uso (Código Civil, art. 20). Músicas e trechos de terceiros dentro do episódio precisam de autorização própria.
-
-**Imagem com fim econômico:** pela Súmula 403 do STJ, a indenização pelo uso não autorizado da imagem com fins econômicos ou comerciais não depende de prova de prejuízo. Corte monetizado de convidado sem termo de imagem gera dever de indenizar mesmo sem dano provado.
-
-### 8.2 Plataformas (o risco prático costuma vir daqui)
-
-- **Termos do YouTube** (em vigor desde 05/01/2022): proíbem baixar ou reproduzir conteúdo sem autorização expressa do serviço ou permissão escrita do YouTube e dos titulares.
-- **Content ID:** Short com mais de 1 min e qualquer reivindicação ativa é bloqueado no mundo todo. Não toca, não é recomendado e não monetiza. O canal não é penalizado.
-- **Conteúdo reutilizado no YouTube:** vale para o canal inteiro e mesmo com permissão do criador. A permissão resolve o direito autoral, **não a monetização**.
-- **Instagram, TikTok, Kwai e Facebook:** penalizam conteúdo não original (seção 5.3).
-- **Regras do criador:** muitos podcasts publicam regras próprias para cortes, como o Vaca Cast (48 h de espera, link do episódio, nada de copiar os cortes oficiais). Quem descumpre é avisado e depois denunciado.
-
-### 8.3 Áreas de alto risco
-
-- **Política:**
-  - A Res. TSE 23.755/2026 proíbe contratar publicação político-eleitoral por "competição, ranqueamento ou premiação" ([Fórum, 03/10/2026](https://revistaforum.com.br/politica/campeonatos-cortes-tse-eleicoes/)).
-  - Mesmo assim há campeonatos ativos: Estourou.com paga R$ 1,50/mil com teto de R$ 100 por post; Cliparam paga R$ 2/mil. Pablo Marçal ficou inelegível até 2032 por concursos de cortes.
-  - ⚠️ A multa não está na matéria. Pode ser a do art. 57-C, §2º, da Lei 9.504/97; confira no texto da lei e da resolução.
-  - ⚠️ A resolução só foi confirmada pela Revista Fórum (03/10/2026). Confira o texto no tse.jus.br.
-  - O 2º turno é em 25/10/2026. **Recuse.** Depois do 2º turno, mantenha a regra de não fazer cortes político-partidários pagos, por risco de propaganda antecipada e de remoção.
-- **IA na voz ou na imagem de terceiros:**
-  - Dublar, clonar voz ou alterar o rosto de convidado ou cliente (Higgsfield, ElevenLabs) exige autorização escrita específica (CF, art. 5º, X; CC, art. 20). Inclua isso no termo de imagem e voz.
-  - Ao publicar, marque o rótulo de conteúdo alterado ou sintético de cada rede (YouTube, TikTok, Meta).
-  - Nunca use IA em fala de político: há vedação específica a deepfake na propaganda eleitoral.
-- **Futebol:**
-  - ⚠️ Lei 14.597/2023, art. 163: uso só jornalístico, até 3% do tempo e no máximo 30 s (não verificado no texto da lei).
-  - Seja qual for o número do artigo, clipador que monetiza não é veículo jornalístico, e há vários donos de direitos (Libra/Globo; FFU: Globo, Record, CazéTV, Prime Video).
-- **Difamação:** tirar fala de contexto ou atribuir ao convidado o que ele não disse.
-
-### 8.4 Publicidade profissional regulada
-
-- **OAB, Provimento 205/2021:**
-  - Vídeos são permitidos, mas casos concretos e apresentação de resultados são vedados (art. 5º, §3º).
-  - A publicidade deve ser informativa, discreta e sóbria, sem captação de clientela nem autoengrandecimento (art. 3º).
-  - Não se promete resultado (art. 6º).
-  - ⚠️ A data da cartilha do Comitê Regulador (julho/2024) não foi confirmada.
-- **Atenção para você, como advogado que vai vender cortes:**
-  - O Estatuto da OAB (Lei 8.906/94, art. 1º, §3º) veda divulgar a advocacia junto com outra atividade. O Código de Ética (art. 40, IV) veda indicar vínculo entre elas.
-  - Na prática:
-    - (a) A marca do serviço de cortes não usa "Dr.", número da OAB nem o nome do seu escritório.
-    - (b) Nunca use o rodapé "Dr. Lucas ... OAB/RO" (da sua skill) em corte de terceiro.
-    - (c) A revisão de conformidade OAB ou CFM entra no contrato como revisão editorial, sem parecer jurídico. Se o cliente quiser parecer, faça contrato de honorários separado.
-    - (d) Não use o serviço de cortes para captar clientes de advocacia, nem o contrário.
-  - Confira o texto atual do CED e, na dúvida, consulte o Tribunal de Ética da sua seccional.
-- **CFM, Resolução 2.336/2023:** veja o item "Médicos" na seção 7.6.
-
-### 8.5 Outros riscos
-
-- **CapCut:** ⚠️ críticas de 2025 à licença ampla sobre o conteúdo enviado não foram verificadas na fonte. Leia os termos atuais antes de subir material de cliente.
-- **Venda de conta:** os termos globais do TikTok tratam a licença de uso como intransferível e proíbem vender os Serviços ([termos](https://www.tiktok.com/legal/page/row/terms-of-service/en)). Vender um canal é arriscado e sem garantia jurídica.
-- **Golpes, views compradas e país falso** (VPN ou contas compradas): banimento e perda do saldo.
-- **Imposto:** renda do exterior sem carnê-leão gera pendência na Receita.
-
-### 8.6 Campanhas de marca
-
-- **Corte pago por marca é publicidade.** Identifique com #publi ou #parceriapaga e ative o selo de conteúdo pago da rede (CDC, art. 36; Guia de Publicidade por Influenciadores do CONAR, 2021).
-- **Recuse:**
-  - Apostas de operador sem autorização da SPA/MF. No Brasil só operador autorizado, com domínio .bet.br, pode anunciar (Lei 14.790/2023 e portarias da SPA/MF; ⚠️ confira a portaria vigente). Quem divulga operador ilegal assume risco.
-  - Cassino, prop trading e trading com promessa de ganho, cripto sem registro e "renda garantida". Campanhas assim aparecem no clipmap, como as de Fliff e FundedNext.
-- Esses itens também estão no checklist de campanha séria (7.2).
-
----
-
-## 9. Stack recomendada
-
-### 9.1 Versão R$ 0 (para validar nas primeiras 2 a 3 semanas)
-
-| Etapa | Ferramenta | R$/mês | Já tem? | O Claude faz sozinho | O Claude NÃO faz |
-|---|---|---|---|---|---|
-| Descobrir | vidIQ Free (150 créditos), Google Trends, Creative Center, Studio, Social Blade, Exolyt Basic | 0 | vidIQ sim | Buscas no vidIQ e planilha de fontes | Ler o gráfico "Mais repetidos" sozinho |
-| Transcrever | faster-whisper local (Claude Code ou PC); Supadata Free (100/mês, links públicos); `vidiq_video_transcript` (5 créditos). O ElevenLabs Free (12 a 30 min/mês) só serve para trechos curtos | 0 | ElevenLabs e vidIQ sim | Transcrever e marcar os tempos | Ouvir o áudio (trabalha só com a transcrição) |
-| Escolher | Rubrica no Claude | 0 | Sim | Pontuar e ordenar | Ver rosto e enquadramento |
-| Cortar | OpusClip Free (1 por dia), Cut.Pro Grátis, Reap Free, OpenShorts (precisa de chave Gemini) ou ffmpeg | 0 | OpusClip sim | Rodar o ffmpeg no Claude Code | Rodar Whisper no sandbox do chat |
-| Acabamento | CapCut grátis, DaVinci, Kdenlive, Clipchamp | 0 | — | — | Edição manual |
-| Postar | Metricool Free (20 por mês); upload-post Free (sem TikTok); TikTok e Kwai manuais | 0 | Sim | Agendar no Metricool | Postar no Kwai; postar no TikTok sem ferramenta auditada |
-| Medir | Metricool Free (30 dias), `instagram_owner_insights`, Sheets | 0 | Sim | Coletar, calcular e analisar | Ver "assistiram vs. deslizaram" (precisa de print) |
-
-### 9.2 Versão até R$ 200 (recomendada)
-
-| Etapa | Ferramenta | R$/mês | Já tem? | O Claude faz sozinho | O Claude NÃO faz |
-|---|---|---|---|---|---|
-| Descobrir | vidIQ (o plano que você tiver) + fontes grátis | 0 (ver nota) | Sim | Radar semanal | Confirmar direitos da fonte |
-| Transcrever e escolher | Transcrição fora do OpusClip (`vidiq_video_transcript`, faster-whisper local ou API do ElevenLabs) + rubrica do Claude | 0 a ~10 | Sim | Tudo | Assistir aos finalistas |
-| Cortar, reenquadrar, legendar | **OpusClip Pro**, enviando só os trechos escolhidos | 144,71 (≈ 149,77 com IOF) | Conectado (confirme o plano) | Enviar o projeto, editar legenda e gancho, exportar | Garantir PT-BR sem revisão |
-| Acabamento | Meses 1 e 2: CapCut grátis ou DaVinci. Depois do 1º cliente: **CapCut Pro anual** (R$ 469,90 à vista) | 0 → 39,16 | Não | — | Edição manual fina |
-| Copy | killer-scripter + humanizer + OpusClip social copy | 0 | Sim | Escrever ganchos, títulos e legendas | Validar regra OAB do cliente sozinho (você revisa) |
-| Postar | Campanhas: manual pelo app, com fila diária feita pelo Claude. Clientes: Metricool Free (20 por mês). Kwai: manual | 0 | Sim | Montar a fila e agendar no Metricool | Postar em volume sem pagar agendador; postar no Kwai |
-| Medir | Metricool Free + vidIQ + Sheets | 0 | Sim | Rotina semanal | Prints do Studio e do Kwai |
-| Negócio | Sheets, Gmail, DocuSeal/SignNow, skills de proposta e cobrança | 0 | Sim | Propostas, minutas, cobrança | Negociar e fechar com o cliente |
-| **Total** | | **Meses 1 e 2: ≈ R$ 150 com IOF.** Depois do 1º cliente: ≈ R$ 189/mês em média | | | |
-
-**Notas:**
-- **vidIQ:** se o seu plano for pago (Boost: US$ 39/mês ≈ R$ 194,61, ou US$ 199/ano ≈ R$ 82,75/mês; ⚠️ [fonte concorrente](https://1of10.com/blog/vidiq-pricing/)), ele conta nos R$ 200. Verifique com `vidiq_balance` (0 crédito).
-- **Fluxo de caixa:** o CapCut anual cobra R$ 469,90 de uma vez. No mês da compra, o gasto sobe para ≈ R$ 620. Por isso ele só entra quando o primeiro cliente pagar. Com o CapCut mensal (R$ 65,90), o total fica em ≈ R$ 216 e passa do teto.
-- **Folga de ~R$ 50 nos meses 1 e 2:** reserve para transcrição pela API do ElevenLabs (~R$ 1,14/h com IOF; ⚠️ confirme se a API exige plano pago) ou para créditos avulsos.
-- **Créditos do OpusClip:** o Pro tem até 300 créditos/mês (confirmado só na linha do Zapier da página oficial) = 5 h de vídeo-fonte. Uma live de 3 h consome 180.
-- **Capacidade:** 300 créditos ≈ 1 cliente com podcast semanal de 1 h, **ou** 2 episódios de 2 h de campanha por mês.
-  - Com 2 clientes ou mais, faça a triagem fora do OpusClip (transcrição + rubrica) e envie só os trechos.
-  - ⚠️ Antes de depender disso, confirme num teste que `rangeStart`/`rangeEnd` reduz o débito: rode `opusclip_get_usage` antes e depois.
-  - Se o volume passar de 5 h/mês, a variante Cut.Pro Plus (1.000 créditos, em real) vira o motor de volume.
-- **Variante "volume de campanha":** Cut.Pro Plus R$ 69,90 + upload-post Basic mensal R$ 119,76 (≈ R$ 123,95 com IOF) ≈ R$ 194/mês. Faz sentido se o Cut.Pro passar no teste de PT-BR e você precisar de várias contas de TikTok. Não tem nota de viralidade nem MCP de edição.
-- **Variante "sem plano anual":** é a própria recomendação dos meses 1 e 2: OpusClip Pro + CapCut grátis ou DaVinci ≈ R$ 150/mês.
-
-### 9.3 Versão upgrade (quando 1 ou 2 clientes estiverem pagando)
-
-| Ferramenta | R$/mês | Para quê |
-|---|---|---|
-| OpusClip Pro | 144,71 | Motor de corte |
-| CapCut Pro anual | 39,16 | Acabamento |
-| upload-post Basic anual | 79,84 | Várias contas de TikTok, IG e YT; analytics de retenção do TikTok |
-| Metricool Starter anual | 99,80 | 5 marcas, histórico ilimitado, relatórios para clientes |
-| vidIQ Boost anual ⚠️ | ≈ 82,75 | Mais créditos de pesquisa |
-| Descript Hobbyist anual | 79,84 | Cliente premium |
-| **Total** | **≈ R$ 526 sem IOF (≈ R$ 543 com IOF)** | Repasse no preço do serviço. Planos anuais exigem pagar o ano adiantado |
-
-Com 3 clientes ou mais, acrescente um motor de volume (Cut.Pro Plus, R$ 69,90 em real) ou suba o plano do OpusClip. A capacidade de 5 h/mês do Pro acaba.
-
----
-
-## 10. Skills, plugins e conectores do Claude
-
-### 10.0 Como pedir ao Claude para achar, instalar e criar skills
-
-É a resposta direta à sua pergunta "como eu faço para você olhar as melhores skills":
-1. **Para procurar:** no chat, peça "procure plugins e skills de [tema] no catálogo". O Claude busca no catálogo de plugins da sua conta e mostra um cartão com botão de instalar. Foi assim que apareceram Virlo, Social Media Skills e Posty nesta pesquisa.
-2. **Para ver, ligar ou desligar o que já tem:** nas configurações do claude.ai, na área de skills e plugins (o nome do menu muda; procure "Skills" ou "Plugins"). No Claude Code, use o comando `/plugin`.
-3. **Antes de instalar skill de autor da comunidade:** peça "leia todos os arquivos desta skill e me diga se ela roda scripts ou acessa a rede".
-4. **Para criar a sua:** peça "use o skill-creator para criar a skill X com estas regras...". É o caminho da suíte "clipador" (10.3).
-5. **Desligue as skills que não usa.** Skills demais com gatilhos parecidos fazem o Claude disparar a errada (é o caso da `video-processor-lucas`).
-6. **Para conectores** (OpusClip, vidIQ, Metricool...): ficam em Configurações > Conectores do claude.ai. Ter o conector ligado não quer dizer que o plano é pago.
-
-### 10.1 O que você já tem e para que serve
-
-| Conector ou skill | Uso no clipping | Atenção |
-|---|---|---|
-| OpusClip MCP | Corte, layouts, edição por comando, transcrição palavra a palavra, copy, agendamento | MCP só no Pro. A publicação exige aprovação no app (link de aprovação) |
-| vidIQ MCP | Outliers, tendências, IG e TikTok, transcrição do YouTube, "assistir" Shorts e Reels (10 créditos), analytics, `score_title` | Outliers de Shorts em PT não funcionam. `video_watch` custa 25 créditos |
-| Metricool MCP | Agendamento sem aprovação, Trial Reel, capa, primeiro comentário, melhor horário, analytics | Sem Kwai. O Free tem 20 posts por mês |
-| Descript MCP | Edição pelo texto, SRT, cliente premium | Não importa link do YouTube; não devolve MP4 direto |
-| Higgsfield MCP | Previsão de viralidade (finalistas), upscale, reframe de até 60 s, dublagem em PT, publicação no TikTok | Publicar exige widget de MCP Apps. ⚠️ Não verifiquei se o app de publicação no TikTok é auditado: teste com 1 vídeo e confirme se saiu público. `shorts_studio` gera vídeo de IA, não corte fiel. Dublagem exige autorização do convidado (8.3) |
-| ElevenLabs | Transcrição com tempo por palavra | Tentar de novo cobra de novo. Use `estimate_only` antes |
-| Adobe | `video_resize`, `media_enhance_speech` | Precisa autenticar. O quick cut ignora a fala |
-| Canva | Capas | Precisa autenticar |
-| TikTok for Business | Anúncios | Não publica conteúdo orgânico |
-| Supermetrics / Porter | Dados de marketing | Supermetrics Starter ≈ R$ 274,45. ⚠️ O preço do Porter não foi verificado e o `query_data` consome vagas de licença |
-| Google Sheets, Drive, Gmail, Calendar | Banco de dados, arquivos, prospecção, rotina | O Drive grátis enche rápido com vídeo |
-| DocuSeal / SignNow | Contrato e autorização | — |
-| upload-post (skills) | `repurpose-video` e `video-to-shorts` (bom critério de clipe: 20 a 60 s, gancho em 3 s), `posting-queue`, `analyze-performance` | O MCP não está autenticado. O Free não tem TikTok |
-| postiz | Agendamento | Sem plano grátis |
-| content-ideation, killer-scripter, humanizer | Copy e ganchos | Em inglês e feitas para quem grava a si mesmo. Adapte ao PT |
-| social-content-engine | Calendário com aprovações | Não trabalha com vídeo |
-| deep-research, Tavily | Pesquisa | — |
-| just-scrape, brightdata | Raspagem | Risco de violar os termos das redes |
-| legal:review-contract, proposal-builder, invoice-chase, outreach-composer, cold-email | Negócio do modelo 3 | Textos em inglês |
-| `video-processor-lucas` | Blocos de ffmpeg reaproveitáveis | **Restrinja o gatilho** antes de criar a suíte |
-| skill-creator | Criar a suíte "clipador" | — |
-
-### 10.2 O que instalar
-
-| Plugin | Recomendação | Custo |
-|---|---|---|
-| **Social Media Skills** (106 skills, autor da comunidade Frank Heijdenrijk, v1.0.1, só skills) | **Instale com curadoria:** (1) peça ao Claude para listar quais das 106 rodam scripts ou acessam a rede; (2) mantenha ativas só hook-writer, viral-reverse-engineering, captions-and-clipping, trend-jacking e experimentation-and-ab-testing, e desative o resto; (3) peça "adapte o hook-writer para PT-BR e para o Provimento 205" e salve como skill sua | Grátis |
-| **ViralHunt** | Opcional, como segundo radar. **Não rastreia YouTube nem Kwai** e a interface não tem português ([site](https://viralhunt.io)) | Free com 15 buscas/dia; Creator R$ 144,71 |
-| **Virlo** | Só para uma semana planejada. Há uso pay-as-you-go via API/MCP (US$ 0,25 a 0,50 por execução, [docs](https://dev.virlo.ai/)). ⚠️ Não está claro se o MCP exige assinatura, nem se cobre o Brasil e o PT | Starter R$ 244,51 |
-| Windsor.ai | Reconecte só se o Metricool não bastar | Free com 1 fonte |
-| Supadata | Transcreve link de YouTube, TikTok e IG sem baixar o vídeo ([preço](https://supadata.ai/pricing)); PT não confirmado | Free com 100 por mês |
-| Não instalar agora | BlitzReels (sem plano grátis; teste exige cartão), "Posty" (não identificado), Poppify e Hyper Marketing (não avaliados) | — |
-
-### 10.3 A suíte "clipador": as 2 arquiteturas para você escolher
+### 11.4 A suíte "clipador" de games e virais: escolha A ou B
 
 São 6 skills pequenas, todas gravando numa única planilha:
 
-| Skill | Recebe | Chama (arquitetura A) | Grava na planilha |
-|---|---|---|---|
-| `clipador-radar` | Lista de fontes (aba FONTES) | `vidiq_outliers`, `vidiq_trending_videos`, `instagram_tiktok_outlier_search` (até 15 créditos/semana) | FONTES e CONCORRENTES; sugere as 3 próximas fontes |
-| `clipador-cortes` | Arquivo autorizado (ou link autorizado) + regulamento ou briefing | Transcrição fora do OpusClip → rubrica 0 a 10 → `opusclip_submit_project` com `rangeStart`/`rangeEnd` → `preview_clips` → `edit_clip` | CORTES: identificação, fonte, minutagem, nota_rubrica |
-| `clipador-copy` | Corte aprovado + regras da campanha ou do cliente | hook-writer adaptado ao PT, killer-scripter, humanizer; checagem do Provimento 205 para cliente jurídico | gancho_texto, caption, hashtags |
-| `clipador-publica` | Cortes aprovados | Metricool `createScheduledPost` (clientes); fila diária de postagem manual (arquivo + legenda + horário) para campanhas e Kwai | url_post, data_hora |
-| `clipador-metricas` | Aba CORTES | Metricool `getAnalyticsDataByMetrics`, vidIQ `channel_analytics` e `instagram_owner_insights`, prints do Studio e do Kwai | Métricas 24 h/72 h/7 d, outlier_score, relatório semanal com decisões |
-| `clipador-negocio` | Lead ou cliente | `proposal-builder`, minuta de contrato, DocuSeal/SignNow, `invoice-chase`, Gmail | CLIENTES e CAMPANHAS, com R$ por hora |
-
-Na arquitetura B, as mesmas 6 skills trocam o OpusClip por ffmpeg ou OpenShorts local, e o vidIQ por buscas manuais e ViralHunt Free.
-
-Rotinas sugeridas: radar na segunda às 7h50, fila do dia e lista do Kwai todo dia às 8h40, métricas no domingo às 19h50. **Não escrevo as skills antes da sua escolha.**
+| Skill | O que faz | O que grava |
+|---|---|---|
+| `clipador-radar` | Acha campanhas (clipmap, Content Rewards, painéis BR), streamers (APIs da Twitch e da Kick, seção 3.2) e virais (vidIQ, lista do Reddit) | Aba RADAR com prazos, prêmio por participante e orçamento restante |
+| `clipador-triagem` | Pega da VOD os clipes dos viewers, o pico de chat e a transcrição das janelas e, depois, aplica a rubrica de game | Top 5 com início, fim, gancho e títulos |
+| `clipador-corte` | A: Cut.Pro e OpusClip com o trecho escolhido. B: yt-dlp para a janela + ffmpeg (facecam + jogo + legenda ASS) | Arquivos por rede |
+| `clipador-viral` | Rubrica de viral, checagem da lista negra, roteiro de narração, voz e DM de permissão | Fila de virais |
+| `clipador-publica` | Fila diária por rede e conta, legenda com hashtag obrigatória, lembrete de inscrever na campanha e lista do Kwai | url_post, data_hora |
+| `clipador-metricas` | Coleta, CPM efetivo, razão paga/postada, dossiê de prints e decisões de domingo | Abas CORTES e SEMANA |
 
 | | **A: automação máxima** | **B: barata e robusta** |
 |---|---|---|
-| Custo | ≈ R$ 150/mês com IOF (OpusClip Pro) + vidIQ (se for pago) + créditos avulsos | R$ 0 a 75/mês |
-| Onde roda | claude.ai, Claude Code ou Cowork | **Só no Claude Code ou no seu PC.** O sandbox do chat bloqueia HuggingFace e Whisper e corta comandos em 45 s |
-| Descobrir | vidIQ completo | vidIQ com até 2 chamadas por semana + Social Media Skills + ViralHunt Free |
-| Transcrever | Fora do OpusClip, para poupar créditos: `vidiq_video_transcript` (YouTube autorizado) ou API do ElevenLabs (arquivo de cliente) | faster-whisper local; Supadata Free |
-| Escolher | OpusClip `customPrompt` + rubrica; Higgsfield só nos 2 ou 3 finalistas | Rubrica sobre a transcrição; você marca S ou N na planilha |
-| Cortar | OpusClip + `edit_clip` | ffmpeg local (recorte central ou fundo desfocado, legenda ASS, `drawtext`) ou OpenShorts; OpusClip Starter (R$ 74,85, sem MCP) opcional |
-| Postar | Metricool Free para clientes (sem aprovação, 20 por mês) + fila manual para campanhas; upload-post Basic quando houver volume; Kwai manual | Metricool Free (20 por mês) + fila manual gerada pela rotina; Kwai manual |
-| Medir | Metricool + vidIQ + IG insights | Metricool Free exportado toda semana + IG insights |
-| Limitações | Sempre há um ponto humano na publicação, exceto no Metricool. O custo varia com créditos. ⚠️ Preços de vidIQ e Higgsfield não verificados. Momentos só visuais exigem ferramentas pagas | Mais tempo humano por corte. O recorte central erra o enquadramento. O yt-dlp pode ser bloqueado em IP de nuvem (não testado) e não tem Kwai. **Baixar sem autorização viola os Termos do YouTube** |
-| Melhor para | Modelo 3 e volume de campanha | Validar o nicho do modelo 2 nas primeiras semanas |
+| Custo | ≈ R$ 166,79 a 440,51/mês | R$ 0 a 31/mês (ElevenLabs Starter opcional) |
+| Onde roda | claude.ai, Claude Code ou Cowork | **Só no Claude Code ou no seu PC.** O chat corta comandos longos |
+| Achar o momento | Cut.Pro ao vivo + Twitch API + OpusClip | Twitch API + TwitchDownloader + yt-dlp |
+| Cortar | Cut.Pro e OpusClip MCP | ffmpeg com layout fixo por streamer |
+| Voz | ElevenLabs Starter | Google TTS ou Kokoro |
+| Postar | Cut.Pro + Metricool + upload-post | Apps + Metricool Free, com a fila montada pelo Claude |
+| Limites | Custo de créditos; aprovação manual de cada post no OpusClip | Mais tempo seu por corte; você mede o layout de cada streamer |
+| Melhor para | Volume de campanha a partir do mês 2 | Validar nas semanas 1 e 2, ou para quem tem pouco caixa |
+
+Rotinas sugeridas: radar na segunda às 7h50, fila do dia às 8h40 e métricas no domingo às 19h50. **Não escrevo as skills antes de você escolher.**
+
+### 11.5 Como pedir ao Claude para achar e instalar skills
+
+1. **Procurar:** "procure plugins e skills de clipagem, games e vídeo curto no catálogo". O Claude mostra um cartão com botão de instalar.
+2. **Ver e desligar o que você já tem:** nas configurações do claude.ai, área de Skills ou Plugins. No Claude Code, use o comando `/plugin`.
+3. **Antes de instalar uma skill da comunidade:** "leia todos os arquivos desta skill e me diga se ela roda scripts ou acessa a rede".
+4. **Criar a sua:** "use o skill-creator para criar a skill clipador-triagem com estas regras...".
+5. **Desligue o que você não usa.** Skills com gatilhos parecidos fazem o Claude disparar a errada.
+6. **Conectores** ficam em Configurações > Conectores. Conector ligado não quer dizer plano pago.
 
 ---
 
-## 11. CAMINHO MELHOR
+## 12. CAMINHO MELHOR
 
-### 1º: o melhor caminho possível (≈ R$ 701/mês sem IOF, ≈ R$ 724 com IOF)
+### 1º: o melhor possível (≈ R$ 440,51/mês com IOF, tudo no mensal; ≈ R$ 372,45 com CapCut e upload-post anuais)
 
-**Estratégia:** modelo 3 no nicho jurídico, mais canal oficial em parceria com 1 ou 2 podcasts, mais campanhas como portfólio.
+- **Estratégia:** 30 h por semana e duas marcas (games e virais). A base são as campanhas por view BR. Somam-se a isso todos os lançamentos de jogo da Whop que aceitem o seu público, 1 ranking pequeno por vez e 2 streamers médios como portfólio, para virar clipador oficial no mês 2.
+- **Stack:** OpusClip Pro (≈ R$ 149,77) + Cut.Pro Plus (R$ 69,90) + CapCut Pro (R$ 65,90) + ElevenLabs Starter (≈ R$ 30,99) + upload-post Basic (≈ R$ 123,95) + o núcleo grátis (Twitch API, TwitchDownloader, yt-dlp, ffmpeg).
+- **Arquitetura:** A, com as 6 skills e as rotinas.
+- **Por que é o melhor:** pega o pico ao vivo antes dos outros clipadores, posta em volume em várias contas sem trabalho manual, acha momentos visuais em virais sem fala e mede tudo sozinho.
+- **Condição:** só quando você ganhar ~R$ 1.000/mês ou mais. Antes disso, o custo come o lucro.
+- **Faixa esperada (estimativa minha):** a do cenário B, com mês 6 de R$ 2.000 a 7.500 e a maioria perto do piso.
 
-**Stack:**
+### 2º: um pouco inferior (o recomendado agora: R$ 0 nas semanas 1 e 2, depois ≈ R$ 166,79)
 
-| Ferramenta | R$/mês |
-|---|---|
-| OpusClip Pro | 144,71 |
-| Descript Creator anual | 119,76 |
-| CapCut Pro anual | 39,16 |
-| upload-post Professional anual (25 perfis, white-label para clientes) | 164,67 |
-| Metricool Starter anual | 99,80 |
-| vidIQ Boost anual ⚠️ | ≈ 82,75 |
-| Virlo via API/MCP pay-as-you-go (~US$ 0,50 por pesquisa; teto de US$ 10/mês). Só depois de confirmar que cobre TikTok e Reels em PT-BR | ≈ 49,89 |
+- **Estratégia:** 12 h por semana, com a combinação da seção 1.4 e o plano de 30 dias da seção 2.
+- **Stack:** R$ 0 até a semana 2. Da semana 3 em diante, se a edição for o gargalo: Cut.Pro Plus + CapCut Pro + ElevenLabs Starter. Plano B: OpusClip Pro + ElevenLabs Starter + CapCut grátis (≈ R$ 180,76).
+- **Arquitetura:** B nas semanas 1 e 2, A depois.
+- **O que você perde em relação ao 1º:** postagem automática em volume, o ClipAnything e parte do tempo livre. Você faz mais coisas à mão.
+- **Faixa esperada:** a do cenário A: mês 1 de R$ 0 a 200, mês 3 de R$ 200 a 1.500 e mês 6 de R$ 800 a 4.000.
 
-**Arquitetura:** A, com as 6 skills e as rotinas.
+### 3º: outro método (R$ 0 a 31/mês): conteúdo original próprio
 
-**Por que é o melhor:** cobre tudo com o mínimo de trabalho manual, entrega relatório e white-label aos clientes e tem radar de tendências dedicado sem pagar a assinatura do Virlo (R$ 244,51), cuja cobertura de Brasil não está confirmada.
-
-**Condição:** só faz sentido pago pelo faturamento de 2 ou 3 clientes.
-
-### 2º: um pouco inferior (o recomendado agora, ≈ R$ 150/mês com IOF nos meses 1 e 2)
-
-- **Ferramentas:** OpusClip Pro agora; CapCut Pro anual quando o primeiro cliente pagar (≈ R$ 189/mês em média a partir daí). Todo o resto no plano grátis: Metricool Free, vidIQ Free, ElevenLabs Free, Descript Free.
-- **Limites que você aceita:** ~5 h de fonte por mês no OpusClip (1 cliente semanal ou 2 episódios longos de campanha) e postagem de campanha manual.
-- **Modelos:** 3 como principal e 1 como laboratório.
-- **Arquitetura:** A.
-- **O que você perde em relação ao 1º:** white-label, postagem automática em volume, histórico ilimitado, edição premium no Descript e radar Virlo. Tudo isso volta conforme os clientes pagarem (seção 9.3).
-
-### 3º: outro método (R$ 0 a 75/mês)
-
-- **Arquitetura:** B, local no Claude Code ou no seu PC: transcrição local, rubrica do Claude, ffmpeg ou OpenShorts.
-- **Ferramentas:** Cut.Pro Grátis ou Básico (R$ 19,90, em real, sem IOF), Metricool Free, Kwai e TikTok manuais quando passar do limite.
-- **Foco:** campanhas brasileiras para validar volume e ganchos.
-- **Fonte:** só material autorizado (drive da campanha ou cliente).
-- **Por que vem em 3º:** mais horas suas por corte, enquadramento pior e menos integração. Bom para começar sem gastar e decidir com dados.
+- **Estratégia:** em vez de depender de campanha, construa duas contas suas de conteúdo original. Uma de gameplay sua com comentário (Free Fire, Wild Rift ou Minecraft) e uma de virais narrados de 65 a 90 s (top 5, react).
+- **Onde rende:** eventos da Garena no TikTok, Creator Rewards depois de 10 mil seguidores, publi na página e Facebook Content Monetization, se o convite vier.
+- **Stack:** OBS, NVIDIA ou Steam + CapCut grátis + Google TTS (ou ElevenLabs Starter) + Metricool Free.
+- **Vantagens:** sem claim, sem orçamento que acaba e sem auditoria de campanha. A página vira um ativo que vende publi.
+- **Desvantagens:** o 1º real demora de 3 a 6 meses, e o método exige que você jogue e goste de narrar.
 
 ### O que preciso de você
 
-1. **Qual modelo priorizar.** Minha recomendação é o 3 como principal e o 1 como laboratório. Se discordar, diga qual.
-2. **Autorização para ler os seus planos sem gastar crédito:** `vidiq_balance`, `opusclip_get_usage`, `getBrandSettings` do Metricool e `show_plans_and_credits` do Higgsfield. Isso diz o que você já paga e se o MCP do OpusClip está ativo.
-3. **Arquitetura A ou B** para eu montar a suíte "clipador", e **onde vai rodar** (chat do claude.ai, Claude Code ou Cowork).
-4. **Nicho e alvos:** confirme o jurídico como primeiro nicho e me passe de 5 a 10 nomes de escritórios ou podcasts que você conhece.
-5. **Créditos do vidIQ:** autoriza ~10 a 20 créditos para eu montar a primeira lista de fontes?
-6. **Contas:** quais perfis você já tem em TikTok, Instagram (é profissional?), YouTube e Kwai, e se o TikTok é pessoal ou business.
-7. **Permissão para criar** a planilha no Google Sheets e a minuta do contrato de cortes com licença e autorização de imagem e voz, para você revisar como advogado.
-8. **Antes da skill nova:** posso alterar o gatilho da `video-processor-lucas`?
+1. **Horas por semana** que você tem de verdade: 12 ou 30?
+2. **Você joga?** Qual jogo e em que aparelho (PC, console, celular)? Isso define a conta de gameplay sua e os eventos da Garena.
+3. **Idade:** você tem 18 anos ou mais? Whop, Vyro e Creator Rewards exigem.
+4. **Planos que você já paga.** Autoriza o Claude a consultar sem gastar crédito: `vidiq_balance`, `opusclip_get_usage`, `getBrandSettings` (Metricool) e `show_plans_and_credits` (Higgsfield)? Isso também mostra se o MCP do OpusClip está ativo.
+5. **Onde o Claude vai rodar:** no chat do claude.ai ou no Claude Code? Twitch API, yt-dlp e ffmpeg precisam do Claude Code ou do seu PC.
+6. **App da Twitch:** o client id e o secret (ou quer que eu te guie no registro?).
+7. **Arquitetura A ou B** para a suíte "clipador".
+8. **Nicho da página de virais:** fails, animais, satisfying ou achadinhos?
+9. **2 ou 3 streamers médios** que você assiste, para o portfólio.
+10. **Permissão** para criar a planilha no Google Sheets e para restringir o gatilho da `video-processor-lucas`.
 
 ---
 
-## 12. Fontes
+## 13. Fontes
 
 ### Usadas neste guia
 
-**Câmbio e impostos**
-- [PTAX do Banco Central (API Olinda)](https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial='10-01-2026'&@dataFinalCotacao='10-11-2026'&$format=json)
-- [Cotação de 09/10/2026](https://boca.com.br/economia/dolar/cotacao-dolar-09-10-2026)
-- [IOF (Remessa Online)](https://www.remessaonline.com.br/blog/web-stories/iof-compras-internacionais-como-pagar-menos/)
-- [PayPal: tarifas](https://www.paypal.com/br/webapps/mpp/merchant-fees)
-- [Wise](https://wise.com/br/blog/receber-dinheiro-do-exterior-paypal)
-- [Stripe Brasil](https://support.stripe.com/questions/most-common-issues-receiving-payouts-in-brazil)
-- [Carnê-leão (Viva)](https://viva.com.br/dinheiro/ir-2026-quem-deve-pagar-o-carne-leao-e-como-declarar-o-imposto.html)
-- [Carnê-leão 2026 (Contabilizei)](https://www.contabilizei.com.br/contabilidade-online/carne-leao-2026/)
-- [MEI CNAE 5912-0/99](https://contabilidade.com/blog/cnae-5912099-editor-a-de-video-independente-pode-ser-mei-quanto-paga-e-quando-desenquadrar-do-mei/)
+**Câmbio e recebimento**
+- [Cotação de 09/10/2026](https://boca.com.br/economia/dolar/cotacao-dolar-09-10-2026), [IOF (Remessa Online)](https://www.remessaonline.com.br/blog/web-stories/iof-compras-internacionais-como-pagar-menos/), [PayPal](https://www.paypal.com/br/webapps/mpp/merchant-fees), [Wise](https://wise.com/br/blog/receber-dinheiro-do-exterior-paypal), [Whop: taxas e saque](https://docs.whop.com/fees)
 
-**Campanhas por view**
-- [Whop: termos](https://whop.com/content-rewards-terms-of-service/)
-- [Whop: docs de Content Rewards](https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards)
-- [Whop: taxas](https://docs.whop.com/fees)
-- [Whop: blog](https://whop.com/blog/content-rewards/)
-- [Foundry: 50 campanhas](https://www.builtbyfoundry.io/blog/what-is-clipping-1-dollar-per-1000-views-50-campaigns)
-- [OpenClip: taxas](https://openclip.app/clipping/clipper-pay-rates)
-- [OpenClip: guia da Whop](https://openclip.app/guides/whop-clipping-guide)
-- [Ascynd](https://ascynd.io/en/blog/whop-clipping)
-- [ClipSpeed](https://www.clipspeed.ai/blog/whop-content-rewards-clipping-guide.html)
-- [Vyro](https://vyro.com/clipper-terms)
-- [FindClout: ClipFarm](https://findclout.com/blog/clipfarm-pricing)
-- [FindClout: golpes](https://findclout.com/blog/clipping-discord-scams)
-- Real Oficial: [rewards](https://realoficial.com.br/pt/real-rewards), [campeonatos](https://realoficial.com.br/pt/championships), [caso Podpah](https://realoficial.com.br/pt/cases/podpah)
-- [Klypex](https://klypex.com.br/)
-- Viewx: [site](https://viewx.com.br/), [blog](https://viewx.com.br/blog/melhores-plataformas-de-clipagem-brasil)
-- [Clipou](https://www.clipou.com.br/)
-- [Conty](https://appconty.com/seja-clipador)
-- [Autoclipper](https://autoclipper.live/clip-and-pix)
-- Cut.pro: [campeonatos](https://cut.pro/pt-BR/blog/campeonato-de-cortes-como-funciona-2026), [ganhos](https://cut.pro/en/blog/how-much-a-clipper-earns-2026)
-- [clipmap.gg](https://clipmap.gg/)
-- [Revista Fórum: TSE](https://revistaforum.com.br/politica/campeonatos-cortes-tse-eleicoes/)
+**Campanhas e plataformas de clipagem**
+- Real Oficial: [Real Rewards](https://realoficial.com.br/pt/real-rewards), [regulamento Yuri22 v6](https://cdn.realoficial.com.br/championship-uploads/yuri22-v6-ovdyn7hz.pdf), [checklist](https://realoficial.com.br/pt/blog/campeonato-de-cortes-checklist-antes-de-participar), [TikTok e cortes](https://realoficial.com.br/pt/blog/como-ganhar-dinheiro-no-tiktok-com-cortes-em-2026-modelo-afiliado-e-creator-fund)
+- Viewx: [site](https://viewx.com.br/), [LOUD Coringa](https://viewx.com.br/campanhas/campeonato-de-cortes-loud-coringa), [LOUD Facada](https://viewx.com.br/campanhas/campeonato-de-cortes-loud-facada), [Pichau](https://viewx.com.br/campanhas/campeonato-de-cortes-pichau), [golpes](https://viewx.com.br/blog/melhores-plataformas-de-clipagem-brasil)
+- [Klypex](https://klypex.com.br/), [Estourou](https://www.estourou.com/), Autoclipper ([Clip & Pix](https://autoclipper.live/clip-and-pix), [planos](https://autoclipper.live/planos), [The Clippers](https://autoclipper.live/the-clippers)), [clipmap.gg](https://clipmap.gg/)
+- Whop: [Content Rewards Discover](https://contentrewards.com/discover), [CoD MW4 Beta](https://contentrewards.com/discover/24ad920b-d24f-479e-9cef-f22182e4a0c0), [CoD MW4 Trailer](https://contentrewards.com/discover/6b7db90d-412f-4bcc-ab1e-619ab73bfa09), [blog Whop Clips](https://whop.com/blog/whop-clips/), [termos](https://whop.com/content-rewards-terms-of-service/), [docs](https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards)
+- Vyro: [FindClout](https://findclout.com/blog/how-much-does-vyro-pay), [termos](https://vyro.com/clipper-terms)
+- Kick: [FindClout](https://findclout.com/blog/kick-clipping-program), [Lumina](https://luminaclippers.com/blog/how-to-clip-on-kick), [Win.gg](https://win.gg/kick-clipping-program/), [OpenClip](https://openclip.app/guides/clipping-on-kick)
+- Cut.pro (blog): [exército de clipadores](https://cut.pro/pt-BR/blog/entrar-exercito-clipadores-streamer-2026), [co-stream Riot](https://cut.pro/pt-BR/blog/riot-kick-costream-oficial-clipar-2026), [live em tempo real](https://cut.pro/pt-BR/blog/clipar-live-em-tempo-real-2026), [ganhos](https://cut.pro/en/blog/how-much-a-clipper-earns-2026)
+- Ganhos e casos: [Ascynd: streamers](https://ascynd.io/en/blog/get-paid-to-clip-streamers), [Ascynd: como começar](https://ascynd.io/en/blog/how-to-become-a-clipper), [FORKOFF](https://forkoff.xyz/blog/clipping/how-much-do-clippers-earn-2026), [Dexerto: N3on](https://www.dexerto.com/kick/n3on-reveals-he-paid-army-of-clippers-1-4m-over-five-weeks-to-make-him-go-viral-3355473/), [CreatorDB](https://creatordb.app/creator-news/the-rise-of-the-clip-economy/), [MediaCat](https://mediacat.uk/?p=44751), [NPR (KUNC)](https://www.kunc.org/npr-news/2026-05-12/the-clipping-economy-how-short-form-video-clippers-are-overrunning-the-internet), [Moneywise (Yahoo)](https://finance.yahoo.com/markets/articles/clipping-side-hustle-youve-never-110000379.html), [Lumina](https://luminaclippers.com/blog/how-to-become-a-clipper), [Salario.com.br](https://www.salario.com.br/profissao/editor-de-tv-e-video-cbo-374405/), [Indeed ⚠️](https://br.indeed.com/q-editor-de-video-freelancer-vagas.html), [OpenClip: taxas](https://openclip.app/clipping/clipper-pay-rates), [OpenClip: Whop](https://openclip.app/guides/whop-clipping-guide), [OCRO](https://ocromedia.com/blog/creators/how-much-does-a-clipping-campaign-cost)
+- Golpes: [FindClout](https://findclout.com/blog/clipping-discord-scams), [Reclame Aqui ⚠️](https://www.reclameaqui.com.br/chatpay-tecnologia/reclamacao-sobre-o-curso-mcl-metodo-clipador-lucrativo-de-ruyter-dificuldade-de-contato-e-promessa-de-reembolso-nao-cumprida_ttytTYWFK0iRyrtI/)
 
-**Programas e políticas das redes**
-- YouTube (central de ajuda): [YPP](https://support.google.com/youtube/answer/72851?hl=pt-BR), [receita do Shorts](https://support.google.com/youtube/answer/12504220?hl=pt-BR), [conteúdo reutilizado](https://support.google.com/youtube/answer/1311392?hl=en), [Shorts e Content ID](https://support.google.com/youtube/answer/15424877?hl=en), [contagem de views](https://support.google.com/youtube/answer/2991785?hl=en), [teste A/B](https://support.google.com/youtube/answer/13861714?hl=en), [Tendências](https://support.google.com/youtube/answer/11962757), [especificação de upload](https://support.google.com/youtube/answer/1722171?hl=en)
-- YouTube (APIs e termos): [métricas da API](https://developers.google.com/youtube/analytics/metrics), [cota da API](https://developers.google.com/youtube/v3/revision_history), [Termos do YouTube](https://www.youtube.com/static?template=terms&gl=BR&hl=pt)
-- YouTube (terceiros): [YPP 2027 (Insider Gaming)](https://insider-gaming.com/br/youtube-dobra-requisitos-programa-parcerias-monetizacao-2027/), [RPM do Shorts (AIR)](https://air.io/en/monetization/what-rpm-can-you-expect-from-shorts-in-2026), [caso RPM R$ 0,29](https://criadores.vip/quanto-ganhei-com-o-youtube-2025-shorts-videos-longos/)
-- TikTok (oficial): [newsroom do Creator Rewards](https://newsroom.tiktok.com/pt-br/apresentando-o-programa-de-recompensas-do-criador), [Content Posting API](https://developers.tiktok.com/doc/content-posting-api-get-started), [envio de rascunho](https://developers.tiktok.com/doc/content-posting-api-get-started-upload-content), [Display API](https://developers.tiktok.com/doc/tiktok-api-v2-video-object), [termos](https://www.tiktok.com/legal/page/row/terms-of-service/en)
-- TikTok (terceiros): [países do CRP (Quasa)](https://quasa.io/media/tiktok-creator-rewards-program-eligible-countries-in-2026), [RPM (Elev8or)](https://www.elev8or.io/blog/tiktok-creator-rewards-rpm-2026), [views qualificadas (BrandBastion)](https://blog.brandbastion.com/tiktok-creator-fund-vs-creator-rewards), [TikTok Shop](https://viniensina.com.br/tiktok-shop-afiliado/), [música comercial (Soundstripe)](https://www.soundstripe.com/blogs/tiktok-music-licensing-rules)
-- Instagram e Meta (oficial): [diretrizes de conteúdo original](https://creators.instagram.com/original-content-guidelines/), [ranking](https://about.instagram.com/blog/announcements/instagram-ranking-explained), [API de publicação](https://developers.facebook.com/docs/instagram-platform/content-publishing), [API de insights](https://developers.facebook.com/docs/instagram-platform/reference/instagram-media/insights), [Meta: bônus](https://creators.facebook.com/giving-more-creators-around-the-world-ways-to-earn-money), [Meta: conteúdo não original](https://creators.facebook.com/blog/combating-unoriginal-content/)
-- Instagram e Meta (imprensa): [TechCrunch, agregadores](https://techcrunch.com/2026/04/30/instagram-restricts-reach-of-content-aggregators-in-new-crackdown/), [SMT, originalidade](https://www.socialmediatoday.com/news/instagram-updates-algorithm-to-benefit-original-creators/819016/), [Tubefilter](https://www.tubefilter.com/2026/04/30/instagram-removes-algorithm-recommendations-repost-content-aggregator/), [hashtags](https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/), [logo](https://www.socialmediatoday.com/news/instagram-clarifies-including-your-own-logo-on-a-reel-is-ok/730852), [Trial Reels](https://techcrunch.com/2024/12/10/instagram-rolls-out-trial-reels-that-arent-shown-to-a-creators-followers), [Reels de 3 min](https://macmagazine.com.br/post/2025/01/20/instagram-ganha-reels-de-ate-3-minutos-e-grade-de-posts-retangulares/), [Fast Track (Olhar Digital)](https://olhardigital.com.br/2026/03/18/internet-e-redes-sociais/meta-vai-pagar-criadores-de-outras-plataformas-para-postarem-no-facebook/)
-- Kwai: [Programa de Receita](https://www.kwai.com/pt-BR/support/creator-center/por-que-nao-tenho-posso-participar-do-programa-de-receita-de-anuncios), [como publicar](https://www.kwai.com/pt-BR/support/video/como-publicar-um-video), [Creator Center](https://www.kwai.com/support/creator-center), [Núcleo: Kwai Cut](https://nucleo.jor.br/reportagem/2025/01/14/kwai-cut-editores-terceirizados-centavos/), [blog de monetização ⚠️](https://feirasocial.com/blog/kwai-monetizacao-quanto-paga/)
+**Games: audiência, programas e publishers**
+- Streams Charts: [top 2025](https://streamscharts.com/news/top-brazilian-streamers-2025), [multistream no 1º semestre de 2026](https://streamscharts.com/news/multistreaming-audience-split-twitch-youtube-kick-h1-2026), [post de maio/2026 ⚠️](https://x.com/StreamsCharts/status/2065562287075942508)
+- [Negócios & Games](https://negociosegames.com/maiores-streamers-do-brasil-2026-ranking-audiencia/), [Gamerscore](https://www.gamerscore.com.br/twitch-detalha-o-consumo-monstruoso-de-games-em-2026-brasil-se-destaca-com-lol-valorant-e-o-inesperado-tibia/), [SenseiNews](https://senseinews.com.br/2026/09/state-of-gaming-twitch/), [Jovem Nerd](https://jovemnerd.com.br/noticias/games/minecraft-e-o-jogo-com-maior-consumo-de-conteudo-no-youtube-pelos-brasileiros), [TechTudo: Casimiro](https://www.techtudo.com.br/noticias/2022/01/quem-e-casimiro-streamer-carioca-faz-sucesso-e-quebra-recordes-na-twitch-esports.ghtml), [Kotaku: clipes mais vistos](https://kotaku.com/twitchs-most-watched-clips-have-almost-nothing-to-do-wi-1842038158), [Kotaku: DMCA de 2020](https://kotaku.com/after-massive-dmca-takedown-twitch-streamers-are-delet-1843954430)
+- [SullyGnome](https://sullygnome.com/games/30/watched?language=pt), [TwitchTracker ⚠️](https://twitchtracker.com/channels/ranking/portuguese)
+- Free Fire Mania: [Tesouro Perdido](https://www.freefiremania.com.br/noticia/garena-libera-50-mil-tesouro-perdido-tiktok.html), [Baile do Jaguar](https://www.freefiremania.com.br/noticia/garena-anuncia-150-mil-premiacao-videos-baile-do-jaguar-free-fire.html), [FFCP](https://www.freefiremania.com.br/ffcp-garena-free-fire.html)
+- [Roblox Video Stars](https://influencers.roblox.com/requirements), [Epic SAC (guia)](https://earlygame.com/guides/fortnite/creator-code-support-a-creator-programm-explained-how-to-get), [Minecraft: diretrizes](https://www.minecraft.net/en-us/usage-guidelines), [Riot: regras para criadores](https://www.riotgames.com/en/legal), [TikTok GIP ⚠️](https://www.tiktok.com/discover/gaming-incentive-program-tiktok?lang=en)
 
-**O que clipar, ganchos e métricas**
-- Fontes de demanda: [Rephonic](https://rephonic.com/charts/youtube/brazil/popular-podcasts), [Vaca Cast](https://www.vacacast.com.br/tenha-um-canal-de-cortes), [Creative Center](https://ads.tiktok.com/business/pt-BR/blog/creative-center-fala-portugues), ["Mais repetidos"](https://9to5google.com/2022/05/18/youtube-most-replayed/)
-- Ciência do gancho: [Berger & Milkman](https://cssh.northeastern.edu/pandemic-teaching-initiative/wp-content/uploads/sites/43/2020/09/What-Makes-Online-Content-Viral.pdf), [Loewenstein (Nautilus)](https://nautil.us/curiosity-depends-on-what-you-already-know-235803), [Captions: gancho](https://captions.ai/help/docs/pt/guides/creators/hook-repurposed-clip.md)
-- Duração e retenção: [estudo de Shorts (resumo)](https://videogen.io/blog/decoding-the-youtube-shorts-algorithm-a-deep-dive-into-3-3-billion-views), [OpusClip: retenção](https://www.opus.pro/blog/tiktok-length-format-retention-data)
-- Notas de viralidade: [OpusClip](https://help.opus.pro/docs/article/virality-score), [ScaleReach](https://www.scalereach.ai/blog/opus-clip-review), [Higgsfield (Quasa)](https://quasa.io/media/higgsfield-launches-virality-predictor-an-ai-tool-that-predicts-if-your-video-will-go-viral-before-you-post-it)
-- Futebol: [Lance: direitos do Brasileirão](https://www.lance.com.br/lance-negocios/onde-assistir-ao-brasileirao-2026-entenda-divisao-dos-direitos-de-transmissao.html), [Lei 14.597 ⚠️](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14597.htm)
-- Frequência e horários (Buffer): [TikTok](https://buffer.com/resources/how-often-should-you-post-on-tiktok/), [Instagram](https://buffer.com/resources/how-often-to-post-on-instagram/), [engajamento 2026](https://buffer.com/resources/state-of-social-media-engagement-2026/), [horários (Breakreach)](https://www.breakreach.com/guides/best-time-to-post-on-tiktok)
-- Benchmarks: Metricool ([vídeo curto](https://metricool.com/short-video-report/), [TikTok](https://metricool.com/tiktok-study/), [YouTube](https://metricool.com/youtube-study/), [concorrentes](https://metricool.com/competitors/)); Socialinsider ([Instagram](https://www.socialinsider.io/social-media-benchmarks/instagram), [TikTok](https://www.socialinsider.io/social-media-benchmarks/tiktok))
-- Técnica de vídeo: [área segura](https://www.1clickreport.com/blog/meta-ads-creative-safe-zones-2026-guide), [LUFS](https://www.forasoft.com/learn/audio-for-video/articles-audio/lufs-targets-per-platform-2026), [legendas](https://www.opus.pro/blog/best-caption-presets-styles-boost-retention)
+**APIs e técnica de triagem**
+- Twitch: [Get Clips](https://dev.twitch.tv/docs/api/reference/#get-clips), [Get Clips Download](https://dev.twitch.tv/docs/api/reference/#get-clips-download), [guia e limites](https://dev.twitch.tv/docs/api/guide/), [registrar app](https://dev.twitch.tv/docs/authentication/register-app/), [clipes verticais](https://blog.twitch.tv/en/2024/08/28/creating-and-sharing-clips-for-mobile-just-got-easier/)
+- Kick: [API de Livestreams](https://docs.kick.com/apis/livestreams), [issue #424](https://github.com/KickEngineering/KickDevDocs/issues/424)
+- YouTube: [custo de cota](https://developers.google.com/youtube/v3/determine_quota_cost)
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp/blob/master/README.md), [sites suportados](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md), [TwitchDownloader](https://github.com/lay295/TwitchDownloader), [OpusClip: pico de chat](https://www.opus.pro/mcp/inspiration/clip-the-moments-your-live-chat-exploded), [Klypra](https://similarlabs.com/p/klypra-twitch-vod-highlights-clipper)
+- Duração e layout: [clypse: duração](https://clypse.ai/blog/best-tiktok-gaming-clip-length-2026), [clypse: facecam](https://clypse.ai/blog/how-to-make-vertical-gaming-clips-facecam-2026), [Vericast](https://vericast.com/wp-content/uploads/2022/09/Vericast-TikTok-Best-Practices-Vertical-CS0761-2022-09-8.5x11.pdf)
 
-**Ferramentas (preços)**
-- Corte por IA: [OpusClip](https://www.opus.pro/pricing), [OpusClip MCP](https://www.opus.pro/mcp), [OpusClip API](https://help.opus.pro/api-reference/overview), [Reap](https://www.reap.video/pricing), [Vizard](https://vizard.ai/pricing), [Fastlane/Vizard](https://www.usefastlane.ai/pricing/vizard), [Klap](https://klap.app/pricing), [Submagic](https://www.submagic.co/pricing), [Choppity](https://www.choppity.com/pricing), [Eklipse](https://eklipse.gg/help/how-much-does-eklipse-premium-cost/), [StreamLadder (review)](https://vidpros.com/streamladder-review-2026/), [Spikes](https://spikes.studio/pricing), [quso](https://aivideopicks.com/ai-video-tools/quso), [Munch Studio](https://www.munchstudio.com/pricing), [2short](https://2short.ai/pricing), [Cut.Pro](https://cut.pro/pt-BR/pricing)
-- Edição: [CapCut (TechTudo)](https://www.techtudo.com.br/listas/2026/10/capcut-pro-mais-barato-veja-como-economizar-na-assinatura-edapps.ghtml), [CapCut Auto Reframe](https://www.capcut.com/help/why-do-i-have-to-pay-for-auto-reframe), [Descript](https://www.descript.com/pricing), [Descript MCP](https://www.descript.com/mcp), [Captions](https://captions.ai/help/docs/subscriptions), [Riverside](https://riverside.com/pricing), [VEED (terceiro)](https://fluxnote.io/guides/veed-io-pricing-2026), [Clipchamp](https://clipchamp.com/pt-br/pricing/), [DaVinci](https://www.blackmagicdesign.com/products/davinciresolve/compare), [Kdenlive](https://docs.kdenlive.org/en/effects_and_filters/speech_to_text.html), [OpenShorts](https://github.com/mutonby/openshorts)
-- Transcrição e IA: ElevenLabs ([API](https://elevenlabs.io/pricing/api), [STT](https://elevenlabs.io/speech-to-text), [planos](https://elevenlabs.io/pricing)), [Higgsfield (terceiro)](https://www.layer3labs.io/guides/higgsfield-ai-pricing), [Supadata](https://supadata.ai/pricing)
-- Pesquisa e tendências: [1of10](https://1of10.com/pricing), [vidIQ (1of10)](https://1of10.com/blog/vidiq-pricing/), [Sandcastles](https://sandcastles.ai/), [ViewStats](https://www.viewstats.com/pricing), [Social Blade (OutlierKit)](https://outlierkit.com/resources/social-blade-pricing/), [Exolyt](https://exolyt.com/pricing), [Virlo](https://virlo.ai/pricing), [Virlo dev](https://dev.virlo.ai/), [ViralHunt](https://viralhunt.io), [BlitzReels](https://www.blitzreels.com/pricing)
-- Dados de marketing: [Windsor](https://windsor.ai/pricing/), [Supermetrics](https://supermetrics.com/pricing)
-- Agendamento: [Metricool](https://metricool.com/pricing/), [upload-post](https://www.upload-post.com/llms-full.txt), [Postiz](https://postiz.com/pricing), [Buffer](https://buffer.com/pricing), [mLabs](https://www.mlabs.com.br/planos/), [Repurpose](https://repurpose.io/pricing/), [Later (SocialPilot)](https://www.socialpilot.co/insights/later-pricing), [Publer (Socialk)](https://socialk.it/en/pricing/publer), [Hootsuite](https://www.hootsuite.com/plans), [SocialBee](https://frontdeskreview.com/software/social-media-management/socialbee/), [PostEverywhere](https://posteverywhere.ai/blog/connect-claude-to-social-media)
+**Virais**
+- Reddit e tendências: [prowlo](https://prowlo.com/blog/reddit-data-api), [Apify: Creative Center](https://apify.com/automation-lab/tiktok-trends-scraper), [TikTok Creative Center](https://ads.tiktok.com/business/creativecenter), [Measure Studio](https://www.measure.studio/blog/tiktok-vs-instagram), [Publicis/TikTok ⚠️](https://www.mi-3.com.au/14-04-2026/72-hour-social-horizon-publicis-tiktok-research-shows-brands-are-losing-game-chasing)
+- Licenciadoras: [ViralHog: direitos](https://blog.viralhog.com/post/rights-management-how-we-protect-our-licensors-content-and-revenue-earning-potential), [ViralHog: FAQ](https://viralhog.com/faq/question/66), [ViralHog: imprensa](https://viralhog.com/in-the-media), [petição](https://www.change.org/p/ban-viralhog-for-their-unethical-and-predatory-false-copyright-strikes), [Jukin (BBTV)](https://bbtv.com/news/2020-08-10-jukin-media-announces-first-ever-self-service-offering-for-content-creators-publishers-to-license-user-generated-content), [Newsflare ⚠️](https://www.newsflare.com/pricing), [Collab (Tubefilter)](https://www.tubefilter.com/2025/10/31/collab-clips-clip-licensing-reaction-content/), [Storyful (Xataka)](https://www.xataka.com/especiales/vendi-video-viral-internet-esto-fue-que-me-pagaron)
+- Publi e páginas: [usepora](https://www.usepora.com.br/calculadora-de-publicidade), [wifimoolah](https://wifimoolah.com/p/idea-53), [Exame: Memes Brasil](https://exame.com/negocios/ele-fazia-r-700-mil-com-memes-do-twitter-e-agora/), [Portal Leo Dias: Choquei](https://portalleodias.com/noticias/quanto-ganha-o-dono-da-choquei-influenciador-revela-faturamento-em-depoimento), [Instagram: termos](https://help.instagram.com/581066165581870), [Fameswap](https://fameswap.com/), [Metricool: estudo 2026](https://metricool.com/press-release-2026-social-media-study/), [SEJ: páginas removidas](https://www.searchenginejournal.com/instagram-purges-meme-accounts-shutting-down-pages-with-millions-of-followers), [Shopee (Tecnoblog) ⚠️](https://tecnoblog.net/477797/exclusivo-shopee-lanca-programa-de-afiliados-no-brasil-com-comissoes-de-ate-14/), [Berger & Milkman](https://cssh.northeastern.edu/pandemic-teaching-initiative/wp-content/uploads/sites/43/2020/09/What-Makes-Online-Content-Viral.pdf)
 
-**Jurídico e preço de serviço**
-- [Lei 9.610/98](https://www.planalto.gov.br/ccivil_03/leis/l9610.htm)
-- [Lei 8.906/94 (Estatuto da OAB)](https://www.planalto.gov.br/ccivil_03/leis/l8906.htm) e Código de Ética e Disciplina da OAB (art. 40)
-- [LC 123/2006 (MEI, art. 18-A)](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm)
-- [CDC, Lei 8.078/90 (art. 36)](https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm) e Guia de Publicidade por Influenciadores Digitais do CONAR (2021)
-- [Lei 14.790/2023 (apostas)](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14790.htm)
-- Súmula 403 do STJ
-- [Parecer do MPBA](https://transparencia-repo.mpba.mp.br/Convenios/H/H%20134%20-%20Processo.pdf)
-- [Provimento OAB 205/2021](https://www.oab.org.br/leisnormas/legislacao/provimentos/205-2021)
-- [Resolução CFM 2.336/2023](https://crmes.org.br/wp-content/uploads/2023/09/Resolucao-2336-2023-publicidade-e-propaganda-medica.pdf)
-- [CrazyStack](https://www.crazystack.com.br/quanto-cobrar-freelancer-video-tabela-precos)
-- [Jamile Fernandes](https://jamilefernandes.com.br/blog/precificacao-para-social-media-quanto-cobrar-em-2026)
-- [FreelaSemCrise](https://www.freelasemcrise.com.br/quanto-cobrar/producao-reels)
-- [Videotto](https://www.videotto.com/blog/how-much-does-video-editing-cost-global-2026)
+**Regras e monetização das redes**
+- YouTube: [conteúdo reutilizado](https://support.google.com/youtube/answer/1311392?hl=en), [Shorts e Content ID](https://support.google.com/youtube/answer/15424877?hl=en), [biblioteca de áudio](https://support.google.com/youtube/answer/13486873?hl=en), [strikes](https://support.google.com/youtube/answer/2814000?hl=en), [Content ID e games](https://support.google.com/youtube/answer/2605065), [YPP](https://support.google.com/youtube/answer/72851?hl=pt-BR), [receita de Shorts em 2027](https://support.google.com/youtube/answer/12504220?hl=pt-BR), [especificação de upload](https://support.google.com/youtube/answer/1722171?hl=en), [RPM do Shorts (AIR)](https://air.io/en/monetization/what-rpm-can-you-expect-from-shorts-in-2026), [RPM de gaming (fluxnote)](https://fluxnote.io/guides/youtube-shorts-rpm-gaming-niche)
+- TikTok: [originalidade](https://www.tiktok.com/creator-academy/article/tiktok-originality-policy), [Creator Rewards BR](https://www.tiktok.com/legal/page/global/tiktok-creator-rewards-program-br/en), [direitos autorais](https://www.tiktok.com/legal/page/global/copyright-policy/en), [Content Posting API](https://developers.tiktok.com/doc/content-posting-api-get-started), [RPM (Elev8or)](https://www.elev8or.io/blog/tiktok-creator-rewards-rpm-2026), [slideshow e selo de não original (OpenClip)](https://openclip.app/guides/tiktok-slideshow-unoriginal-content-flag)
+- Meta: [conteúdo não original](https://creators.facebook.com/blog/combating-unoriginal-content/), [Content Monetization (clip-short)](https://www.clip-short.com/guides/facebook-content-monetization), [Creator Fast Track (Sirency)](https://www.sirency.com/blog/facebook-bonus-program-creator-fast-track), [Instagram: conteúdo original](https://creators.instagram.com/original-content-guidelines/), [TechCrunch: agregadores](https://techcrunch.com/2026/04/30/instagram-restricts-reach-of-content-aggregators-in-new-crackdown/), [API de insights](https://developers.facebook.com/docs/instagram-platform/reference/instagram-media/insights)
+- Snapchat: [países](https://help.snapchat.com/hc/en-us/articles/7012298096788-In-what-countries-and-regions-are-Snapchatters-eligible-for-a-payout), [programa unificado](https://newsroom.snap.com/snapchat-new-creator-monetization)
+- Kwai: [Programa de Receita](https://www.kwai.com/pt-BR/support/creator-center/por-que-nao-tenho-posso-participar-do-programa-de-receita-de-anuncios), [como publicar](https://www.kwai.com/pt-BR/support/video/como-publicar-um-video), [Reclame Aqui ⚠️](https://www.reclameaqui.com.br/app-kwai/duvidas-sobre-monetizacao-e-conteudo-original_GR6tZniZEtuoF-WW/)
+- Benchmarks e frequência: [Socialinsider TikTok](https://www.socialinsider.io/social-media-benchmarks/tiktok), [Buffer TikTok](https://buffer.com/resources/how-often-should-you-post-on-tiktok/), [Buffer Instagram](https://buffer.com/resources/how-often-to-post-on-instagram/), [Metricool: vídeo curto](https://metricool.com/short-video-report/), [Metricool: TikTok](https://metricool.com/tiktok-study/)
+
+**Ferramentas**
+- Corte: [Cut.Pro preços](https://cut.pro/pt-BR/pricing), [Cut.Pro automação](https://cut.pro/pt-BR/automations/live-clips), [OpusClip preços](https://www.opus.pro/pricing), [OpusClip para gamers](https://www.opus.pro/for-gamers), [OpusClip layout](https://help.opus.pro/docs/article/layout-and-reframing), [ClipAnything](https://help.opus.pro/docs/article/how-to-use-clipanything), [nota de viralidade](https://help.opus.pro/docs/article/virality-score), [Eklipse preço](https://eklipse.gg/help/how-much-does-eklipse-premium-cost/), [Eklipse grátis](https://eklipse.gg/help/what-are-the-main-differences-between-the-free-and-premium-plans/), [Eklipse recursos](https://eklipse.gg/features/), [StreamLadder](https://www.streamladder.com/), [ClipGPT](https://www.streamladder.com/clipgpt/virality-score), [StreamLadder PR ⚠️](https://github.com/GrimmortalDread/peaksense-site/pull/24), [StreamLadder review](https://vidpros.com/streamladder-review-2026/), [Streamlabs Ultra](https://streamlabs.com/ultra), [Cross Clip ⚠️](https://checkthat.ai/brands/streamlabs/pricing), [Clipador](https://clipador.com/), [Sizzle](https://www.sizzle.gg/universal), [Ssemble](https://www.ssemble.com/pricing), [stream-clipper](https://github.com/nirvagold/stream-clipper)
+- Edição e voz: [CapCut preço (TechTudo)](https://www.techtudo.com.br/listas/2026/10/capcut-pro-mais-barato-veja-como-economizar-na-assinatura-edapps.ghtml), [CapCut grátis vs. Pro](https://vidpros.com/capcut-pro-vs-free/), [Kapwing](https://www.kapwing.com/pricing), [VEED ⚠️](https://fluxnote.io/guides/veed-io-pricing-2026), [Submagic](https://www.submagic.co/pricing), [ElevenLabs](https://elevenlabs.io/pricing), [Google TTS](https://cloud.google.com/text-to-speech/pricing), [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M), [Fish Audio](https://fish.audio/plan/), [legendas (OpusClip)](https://www.opus.pro/blog/best-caption-presets-styles-boost-retention), [LUFS](https://www.forasoft.com/learn/audio-for-video/articles-audio/lufs-targets-per-platform-2026), [área segura](https://www.1clickreport.com/blog/meta-ads-creative-safe-zones-2026-guide)
+- Upscale e gravação: [Video2X](https://github.com/k4yt3x/video2x), [Topaz](https://www.topazlabs.com/pricing), [Higgsfield ⚠️](https://www.layer3labs.io/guides/higgsfield-ai-pricing), [Medal](https://medal.tv/blog/posts/same-price-more-stuff-check-out-the-updates-to-medal-premium), [Medal Premium](https://medal.tv/premium), [Powder](https://www.powder.gg/), [Outplayed e Insights](https://insights.gg/blog/insights-vs-outplayed), [OBS vs. NVIDIA](https://clip.dor.gg/en/blog/obs-vs-nvidia-shadowplay), [Steam](https://help.steampowered.com/faqs/view/23B7-49AD-4A28-9590)
+- Postagem: [Metricool](https://metricool.com/pricing/), [upload-post](https://www.upload-post.com/llms-full.txt), [Postiz](https://postiz.com/pricing), [pilha típica (Virlo)](https://virlo.ai/blog/ultimate-clipping-tools)
 
 ### Fontes que levariam mais longe
 
-Não verifiquei cursos pagos de clipagem. Desconfie de quem vende "método": é um dos sinais de golpe apontados pela FindClout.
+**Dentro das suas contas (o dado mais confiável que existe)**
+- Regulamentos internos, que só aparecem depois do login: Real Oficial (Wild Rift, Gabriel Morais, Kosky V2 e a aba "Sobre o Campeonato" do Yuri22), Termos de Participação da Viewx (distribuição dos prêmios do 2º lugar em diante), painel da Klypex (valores da 4Gamers) e taxas das campanhas de música da Estourou.
+- O Google Doc de requisitos das campanhas de jogo da Whop (país e público aceitos) e o painel Balances depois do KYC.
+- TikTok Studio > Monetização (Creator Rewards e Game Incentive Program no Brasil), Creator Center do Kwai e Painel Profissional do Facebook (Content Monetization).
 
-**Dentro das suas contas** (o dado mais confiável que existe)
-- TikTok Studio > Monetização: mostra se você é elegível ao Creator Rewards.
-- Aba Monetização do Kwai e Creator Center no app.
-- Painel Profissional do Instagram (aba Bônus e Status da Conta).
-- YouTube Studio: Tendências e "Lacunas de conteúdo nos Shorts".
-- Painel Balances da Whop depois do KYC, com os métodos de saque reais para o Brasil.
-- Regulamentos dentro do app de Clipei, Real Oficial, Viewx, Klypex, Conty e Autoclipper: saque mínimo, prazos, regras de views.
+**Comunidades e reportagens originais**
+- Discords oficiais da LOUD, do Gabepeixe, do João Pichau e de streamers médios da Twitch e da Kick BR (canais #clips e #clip-program).
+- Perfil @freefirebr_oficial no TikTok e no Instagram, para pegar o próximo evento com prêmio.
+- r/LivestreamFail, r/clipping e r/whop lidos no navegador com login: prints reais de 1º pagamento, views recusadas e bans.
+- Vídeos de clipadores BR mostrando o painel de saque com data (busque "quanto ganhei clipador").
+- As reportagens originais do Business Insider (N3on, clipadores de elite) e do Digiday.
+- A tela de planos do StreamLadder vista com login a partir do Brasil, e a ajuda da Cut.Pro sobre layout de webcam e fps.
 
-**Oficiais**
-- TikTok Creator Academy e Community Guidelines ("For You feed eligibility"), lidas no navegador com login.
-- Canal Creator Insider do YouTube e posts de Rene Ritchie.
-- Contas @creators e @mosseri no Instagram e no Threads.
-- Texto integral da Res. TSE 23.755/2026 (tse.jus.br) e da Lei 9.504/97.
-- Lei 14.597/2023, arts. 160 a 165, no Planalto.
-- Cartilha do Comitê Regulador do Marketing Jurídico do CFOAB.
-- Relatórios completos da Metricool (liberados por formulário).
+**A sua planilha**
+- Um teste A/B seu de 2 semanas: layout 30/70 contra tela cheia, e corte de 25 s contra corte de 65 s.
+- Nota da rubrica contra views em 7 dias, depois de 30 posts. É a única validação que vale para o seu caso.
 
-**Comunidades**
-- Reddit: r/NewTubers, r/PartneredYoutube, r/TikTokhelp, r/InstagramMarketing, r/whop.
-- Discords das plataformas brasileiras de clipagem, para ver prints reais de pagamento.
-- Canais brasileiros de clipadores no YouTube e no TikTok que mostram o painel de ganhos (busque "como ser clipador" ou "clipagem Whop").
-
-**Jornalismo**
-- Núcleo Jornalismo, Folha e Estadão sobre o modelo Kwai Cut e campeonatos de cortes.
-
-**A sua própria planilha**
-- Nota da rubrica contra views em 24 h, 72 h e 7 dias depois de 30 cortes. É a única validação que realmente vale para o seu caso.
 ---
 
-**Teto desta entrega:** dá para ficar impecável com os seus dados reais: os planos que você já paga, as suas contas e os 30 primeiros cortes publicados, que calibram a rubrica e as projeções. Dá também com uma conferência das partes tributária e de ética OAB por um contador e pela sua seccional. Custo: R$ 0 em ferramentas, mais uma consulta contábil (≈ R$ 200 a 500, estimativa minha).
+**Teto desta entrega:** o guia fica impecável com 4 coisas que só existem dentro das suas contas ou depois de você postar. (1) Os regulamentos internos das campanhas, lidos com login (Real Oficial, Viewx, Klypex, Estourou e o documento de público da Whop): eles fecham mínimo, teto, prazo de pagamento e país aceito. (2) Um teste real de 2 lives no Cut.Pro Gratuito contra o OpusClip, que decide a ferramenta. (3) Os seus 30 primeiros posts, que calibram a rubrica e as faixas de ganho. (4) Prints reais de pagamento de clipadores BR em Discord e Reddit. Custo: R$ 0 em ferramentas (planos grátis) e ~10 h suas nas 2 primeiras semanas, ou R$ 166,79 se você quiser testar os planos pagos por 1 mês.

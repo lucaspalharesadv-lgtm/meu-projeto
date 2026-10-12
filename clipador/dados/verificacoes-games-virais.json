@@ -1,0 +1,1204 @@
+[
+ {
+  "verificacoes": [
+   {
+    "item": "Real Oficial: Campeonato Wild Rift (Wild Rounds 2026), R$ 1/mil, R$ 15 mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://realoficial.com.br/pt/real-rewards",
+    "nota": "A Real Oficial confirma: modelo por views, R$ 15 mil e R$ 1 por mil. A clipmap.gg confirma o fim em 30/nov e os 4.233 envios. A página oficial não mostra data de término nem regras por rede; diz só que os posts precisam ser públicos. A conta de R$ 3,54 por envio bate."
+   },
+   {
+    "item": "Real Oficial: Stream Gabriel Morais, R$ 1/mil, R$ 8 mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://realoficial.com.br/pt/real-rewards",
+    "nota": "A Real Oficial mostra modelo por views, R$ 8 mil e R$ 1/mil. A clipmap.gg dá fim em 31/dez e 2.819 envios. Não é a única campanha de streamer: a Yuri22 (streamer, R$ 222 mil, Real Oficial) também está aberta, mas paga por ranking."
+   },
+   {
+    "item": "Viewx: LOUD Coringa, R$ 10 mil, 1º R$ 3 mil, ranking",
+    "veredito": "confirmado",
+    "fonte_url": "https://viewx.com.br/campanhas/campeonato-de-cortes-loud-coringa",
+    "nota": "A página confirma: fim em 25/out (a clipmap diz 24/out), 3.575 inscritos, #loudcoringa, IG/YT/TikTok/FB/X, Pix, views contadas no post original. Não publica valor por mil nem mínimo de seguidores."
+   },
+   {
+    "item": "Viewx: LOUD Facada (GTA RP), R$ 9 mil, 1º R$ 3 mil",
+    "veredito": "corrigido",
+    "valor_correto": "Valores, prazo (09/nov), 347 inscritos, #facadarp e redes estão confirmados. Mas não é a única campanha de GTA RP: o Coringa também é GTA RP (a Negócios & Games põe Coringa e PaulinhoLOKObr em GTA RP), então a LOUD Coringa (R$ 10 mil) também conta.",
+    "fonte_url": "https://viewx.com.br/campanhas/campeonato-de-cortes-loud-facada",
+    "nota": "A clipmap.gg mostra 336 envios e fim em 08/nov (diferença de fuso)."
+   },
+   {
+    "item": "Viewx: LOUD VTzim R$ 7 mil (1º R$ 3 mil) e LOUD Miller R$ 2,5 mil (1º R$ 1.250)",
+    "veredito": "confirmado",
+    "fonte_url": "https://viewx.com.br/",
+    "nota": "Os valores saem da Viewx. A clipmap.gg confirma VTzim até 31/out com 850 envios e Miller até 10/nov com 80 envios. A conta de R$ 31 por envio na Miller bate (2.500/80)."
+   },
+   {
+    "item": "Viewx: Pichau R$ 30 mil (1º R$ 10 mil), Gabepeixe R$ 10 mil, Street Fighter R$ 10 mil; 17 de 18 campanhas por ranking",
+    "veredito": "confirmado",
+    "fonte_url": "https://viewx.com.br/campanhas/campeonato-de-cortes-pichau",
+    "nota": "A Pichau fecha em 01/nov (a clipmap diz 31/out), com 434 inscritos, #joaopichau e só IG/YT/TikTok. A lista da Viewx tem 18 campanhas: só a de Gustavo Borges paga por view (R$ 1/mil), e a GG Poker paga R$ 36 mil (1º R$ 10 mil)."
+   },
+   {
+    "item": "Klypex: 4Gamers com ranking diário de 3 posições, 01 a 30/out, valores ocultos",
+    "veredito": "confirmado",
+    "fonte_url": "https://klypex.com.br/",
+    "nota": "Também confirmados: Silvercop (R$ 15 mil, 1º R$ 6 mil, até 21/out), Mari Fernandez (R$ 9 mil, 1º R$ 3 mil, até 31/out), Júnior e Cézar (R$ 1/mil, teto de R$ 200 por vídeo, R$ 9 mil no total, até 04/nov). Grátis, saque por Pix, regras só no painel."
+   },
+   {
+    "item": "Não há campanha ativa de grandes streamers ou jogos BR; o nicho de games seria quase só LOUD e Wild Rift",
+    "veredito": "corrigido",
+    "valor_correto": "As contagens da clipmap.gg conferem (1.770 campanhas: Whop 1.369, Clipei 257, Clipping 66, ViewX 31, Real Oficial 21, Clouted 20). Mas a conclusão deixa de fora campanhas de streamer abertas: Yuri22 (Real Oficial, R$ 222 mil, até 10/11, 25.716 envios), Gabepeixe (Viewx, R$ 10 mil), Gabriel Morais (R$ 8 mil, por view) e Kosky V2 (R$ 15 mil).",
+    "fonte_url": "https://clipmap.gg/",
+    "nota": "Não dá para provar que uma campanha não existe. É um retrato do dia 11-12/10."
+   },
+   {
+    "item": "Garena/Free Fire GIP no TikTok: até R$ 50 mil (Tesouro Perdido) e até R$ 150 mil (Baile do Jaguar)",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.freefiremania.com.br/noticia/garena-libera-50-mil-tesouro-perdido-tiktok.html",
+    "nota": "Tesouro Perdido: matéria de 03/03/2026, prazo 22/03, só TikTok, 20 s a 1 min, até 3 vídeos, @freefirebr_oficial, #TesouroPerdidoGIP. Baile do Jaguar: matéria de 14/02/2026, prazo 01/03, #BaileDoJaguarGIP. Os dois 'proporcionais ao desempenho' e já encerrados. O nome oficial usado é 'Programa de Incentivo a Jogos no TikTok'."
+   },
+   {
+    "item": "FFCP: 200 mil TikTok / 150 mil YT / 40 mil IG, 75% FF, 4% de engajamento, paga em diamantes",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.freefiremania.com.br/ffcp-garena-free-fire.html",
+    "nota": "Também confirmados: 1 ano criando conteúdo, formulário fechado, Prata 2.200 e Mestre 11.000 diamantes/mês, sem pagamento em dinheiro. A exclusão do Brasil no programa LATAM não foi verificada (a página creadoresff.garena.mx/term veio vazia)."
+   },
+   {
+    "item": "Whop CoD MW4 Beta Gameplay: US$ 1,75 TT / 1,50 IG / 1,75 YT; mínimo de US$ 3,50 a 5,25; teto US$ 2.500",
+    "veredito": "confirmado",
+    "fonte_url": "https://contentrewards.com/discover/24ad920b-d24f-479e-9cef-f22182e4a0c0",
+    "nota": "Mínimos exatos: TT US$ 3,50, IG US$ 4,50 e YT US$ 5,25 (2.000 a 3.000 views). Orçamento de US$ 78.928, só US$ 18 restantes, 986 clipadores, 58,7 mi de views, exige edição. Requisitos de país e público ficam num Google Doc trancado."
+   },
+   {
+    "item": "Whop CoD MW4 Reveal Trailer: CPM efetivo de US$ 1,36/mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://contentrewards.com/discover/6b7db90d-412f-4bcc-ab1e-619ab73bfa09",
+    "nota": "Confirmados: 1.053 clipadores, 88,5 mi de views, US$ 1 restante, top 3 com US$ 8,2 mil / 4,7 mil / 3,8 mil, taxas de US$ 1,50 (TT/YT) e 1,00 (IG), mínimo de US$ 7 no YT (4.667 views). O teto por post era de US$ 1.500 (R$ 7.485)."
+   },
+   {
+    "item": "Blogs: streamer na Whop paga US$ 1 a 3/mil; gaming US$ 0,30 a 1,50; mediana de US$ 1 em 50 campanhas",
+    "veredito": "corrigido",
+    "valor_correto": "A ascynd (28/08/2026) dá US$ 1 a 3/mil para campanhas de marketplace em geral (R$ 4,99 a 14,97), não para streamer na Whop. Também traz: gaming/streamer US$ 0,30 a 1,50 (R$ 1,50 a 7,49), pools de lançamento US$ 8 a 10, teto de US$ 100 a 500 por corte. A mediana de US$ 1 em 50 campanhas não está nessa fonte.",
+    "fonte_url": "https://ascynd.io/en/blog/get-paid-to-clip-streamers"
+   },
+   {
+    "item": "N3on paga US$ 40 por 100 mil views (subindo a US$ 50); US$ 1,4 mi para 303 clipadores em 5 semanas",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.dexerto.com/kick/n3on-reveals-he-paid-army-of-clippers-1-4m-over-five-weeks-to-make-him-go-viral-3355473/",
+    "nota": "Dexerto de 22/04/2026, com base em documentos mostrados ao Business Insider. Rede de cerca de 1.000 pessoas, metade ligada a Índia e Nigéria, o resto 'reportedly paid by Kick'. A Kick não confirmou."
+   },
+   {
+    "item": "A Kick não tem programa público de clipagem com taxa publicada",
+    "veredito": "confirmado",
+    "fonte_url": "https://findclout.com/blog/kick-clipping-program",
+    "nota": "FindClout (27/09/2026) e Lumina (atualizado em 07/10/2026) não acharam taxa oficial. Ressalva: existe um 'Kick Clipping Program' oficial desde 12/11/2025, mas a inscrição é para STREAMERS, pelo Discord da Kick, e não publica taxa para clipador (https://win.gg/kick-clipping-program/). A openclip cita cassino a US$ 10+/mil."
+   },
+   {
+    "item": "CreatorDB: 1.087 contas / 4.835 cortes de IShowSpeed e 759 / 3.266 de Kai Cenat em 30 dias",
+    "veredito": "confirmado",
+    "fonte_url": "https://creatordb.app/creator-news/the-rise-of-the-clip-economy/",
+    "nota": "Janela de 30 dias até 26/08/2026. Confirmados 1,08 bi e 558 mi de views no YT, a Whop pagando mais de US$ 40 mil/dia (Forbes, abr/2026) e a Vyro a US$ 3/mil na tabela."
+   },
+   {
+    "item": "Vyro anuncia US$ 3/mil, mas as campanhas ao vivo pagavam US$ 1 a 1,50/mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://findclout.com/blog/how-much-does-vyro-pay",
+    "nota": "Em 27/09/2026: MrBeast a US$ 1/mil, Ketone-IQ e HeyLemon a US$ 1,50/mil. Teto de cerca de US$ 1.000 e mínimo de 1.000 views (dado de terceiros). Saque mínimo de US$ 10 (R$ 49,90), 1 vez por semana, por Stripe ou PayPal. Países não informados. A FindClout é concorrente."
+   },
+   {
+    "item": "Riot e Kick: co-stream oficial de LoL, VALORANT, TFT e Wild Rift desde o MSI 2026, sem excluir o Brasil",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://cut.pro/pt-BR/blog/riot-kick-costream-oficial-clipar-2026",
+    "nota": "A u.gg deu 403. A Cut.pro (30/08/2026) confirma os 4 jogos e a dica 'corte a reação, não a partida', mas não fala do MSI 2026, de regiões excluídas nem do Brasil."
+   },
+   {
+    "item": "Clipador oficial de streamer: retainer de US$ 200 a 2.000/mês ou US$ 50 a 300 por corte",
+    "veredito": "confirmado",
+    "fonte_url": "https://ascynd.io/en/blog/get-paid-to-clip-streamers",
+    "nota": "Os valores estão no blog (28/08/2026), assim como 'DM fria converte perto de zero'. É blog de fornecedor, sem amostra."
+   },
+   {
+    "item": "Clipadores de elite com retainer de US$ 500 a 1.500/mês; NPR US$ 0,50 a 25/mil; BI US$ 1 a 4/mil; Emrah Bayraktar",
+    "veredito": "confirmado",
+    "fonte_url": "https://finance.yahoo.com/markets/articles/clipping-side-hustle-youve-never-110000379.html",
+    "nota": "Matéria de 12/06/2026. Todos os números conferem, inclusive US$ 12 no primeiro corte e US$ 2.500 duas semanas depois."
+   },
+   {
+    "item": "Digiday: James (Internet Hall of Fame) com cerca de US$ 60 mil em 7 meses",
+    "veredito": "confirmado",
+    "fonte_url": "https://luminaclippers.com/blog/how-to-become-a-clipper",
+    "nota": "Confirmado só pelo que a Lumina relata; a matéria original da Digiday não foi aberta e o relato não tem data. US$ 60 mil dão R$ 299.400, cerca de R$ 42,8 mil/mês."
+   },
+   {
+    "item": "Proxy BR: vaga de editor a R$ 20 a 35 por vídeo; editor CLT de R$ 2.276 a 4.872/mês",
+    "veredito": "corrigido",
+    "valor_correto": "Salario.com.br (atualizado em 08/10/2026, CAGED): piso de R$ 2.186, média de R$ 3.159 e teto de R$ 5.299/mês para Editor de TV e Vídeo (CBO 374405). A vaga do Indeed (R$ 20 a 35 por vídeo) não foi verificada.",
+    "fonte_url": "https://www.salario.com.br/profissao/editor-de-tv-e-video-cbo-374405/"
+   },
+   {
+    "item": "RPM de Shorts de gaming: US$ 0,02 a 0,08; EUA/UK/CA/AU de US$ 0,03 a 0,21 (mediana US$ 0,09); AIR com ~US$ 0,17",
+    "veredito": "corrigido",
+    "valor_correto": "A fluxnote (26/06/2026) confirma só US$ 0,02 a 0,08/mil (R$ 0,10 a 0,40). A faixa de US$ 0,03 a 0,21 com mediana de US$ 0,09 não está nela. A AIR confirma 274 canais, mas o valor de US$ 0,17 para gaming não ficou visível. O RPM de Shorts no Brasil é US$ 0,045/mil (AIR). A conta de 10 mi de views → ~R$ 2.245 se sustenta.",
+    "fonte_url": "https://fluxnote.io/guides/youtube-shorts-rpm-gaming-niche"
+   },
+   {
+    "item": "YouTube: em 15/07/2025 'conteúdo repetitivo' virou 'conteúdo não autêntico'; reutilizado segue igual",
+    "veredito": "confirmado",
+    "fonte_url": "https://support.google.com/youtube/answer/1311392",
+    "nota": "A página oficial diz que a política de conteúdo reutilizado não mudou e que vale 'even if you have permission from the original creator'."
+   },
+   {
+    "item": "TikTok: conteúdo copiado, reaproveitado sem edição, combinado com pouco valor ou com marca d'água alheia fica fora do Creator Rewards",
+    "veredito": "corrigido",
+    "valor_correto": "As 4 categorias estão literais na política de originalidade. Mas a página diz que esse conteúdo é removido do feed Para Você, e não fala explicitamente em exclusão do Creator Rewards. Os termos do CRP-BR exigem vídeo de 1 min ou mais (não 'mais de 1 min') e jogam a originalidade como responsabilidade do criador.",
+    "fonte_url": "https://www.tiktok.com/creator-academy/article/tiktok-originality-policy"
+   },
+   {
+    "item": "TikTok Game Incentive Program (GIP): 10 mil seguidores, 100 mil views, US$ 0,80 a 7/mil",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.tiktok.com/discover/gaming-incentive-program-tiktok?lang=en",
+    "nota": "A página não renderizou. A existência do programa no Brasil aparece nas matérias de Free Fire ('Programa de Incentivo a Jogos no TikTok'), mas requisitos e taxas não foram confirmados."
+   },
+   {
+    "item": "Roblox Video Stars: short-form com 100 mil seguidores e média de 50 mil views em 6 meses; aceita português",
+    "veredito": "confirmado",
+    "fonte_url": "https://influencers.roblox.com/requirements",
+    "nota": "Livestream: 10 mil seguidores e 300 de CCV médio. Português está na lista de idiomas. Não há benefício em dinheiro informado, e bater os números só libera a candidatura."
+   },
+   {
+    "item": "Epic Support-A-Creator: maioridade, 2FA, 1.000 seguidores em YT/Twitch/X, sem TikTok e IG",
+    "veredito": "confirmado",
+    "fonte_url": "https://earlygame.com/guides/fortnite/creator-code-support-a-creator-programm-explained-how-to-get",
+    "nota": "Confirmado pelo guia de terceiro (aceita também VK; pagamento via Hyperwallet). A página oficial redireciona para login e não foi lida. O percentual de comissão não aparece."
+   },
+   {
+    "item": "Minecraft permite monetizar gameplay; Riot (2018) não cobriria claramente a monetização",
+    "veredito": "corrigido",
+    "valor_correto": "Minecraft (oficial): pode monetizar com anúncio no YouTube, na Twitch etc., desde que o vídeo seja grátis e tenha conteúdo próprio suficiente (comentário em áudio, por exemplo). Riot 'Legal Jibber Jabber' (ago/2018): PERMITE explicitamente receita passiva de anúncio (pre-roll, ad breaks, overlays de patrocinador) e doação ou assinatura em live. PROÍBE copiar conteúdo existente ou só pôr 'light commentary'. A Riot pode derrubar qualquer projeto a qualquer momento.",
+    "fonte_url": "https://www.riotgames.com/en/legal",
+    "nota": "A conductatlas citada marca a cláusula do Minecraft como retirada; a confirmação veio direto de minecraft.net/en-us/usage-guidelines."
+   },
+   {
+    "item": "Facebook monetização: Brasil elegível, 5 a 10 mil seguidores, 600 mil minutos, reciclado bloqueado (multilogin)",
+    "veredito": "corrigido",
+    "valor_correto": "A multilogin (13/07/2026) não cita o Brasil ('partes do Sudeste Asiático e da América Latina'). Fala em 10 mil seguidores para a maioria dos recursos (5 mil só em convites do beta de bônus). Os 600 mil minutos em 60 dias são do In-Stream antigo, encerrado em 31/08/2025. Reciclado recebe a flag 'limited originality', não um bloqueio formal. O Brasil elegível vem da clip-short (lista da Meta lida em 08/10/2026).",
+    "fonte_url": "https://multilogin.com/blog/facebook-content-monetization/"
+   },
+   {
+    "item": "Kwai pagaria de R$ 0,02 a 0,30 por mil views (digitei)",
+    "veredito": "refutado",
+    "fonte_url": "https://digitei.com/?p=36918",
+    "nota": "O artigo (22/01/2025) não dá valor por mil views; diz só que o valor 'varia de acordo com a região e a política de troca'. A faixa de R$ 0,02 a 0,30 não tem fonte."
+   },
+   {
+    "item": "Queda dos pagamentos da Kick a streamers em set/2026, reconhecida por diretor",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://x.com/Portal_Insider/status/2098127339372609689",
+    "nota": "Post do X não acessado."
+   },
+   {
+    "item": "Ferramenta: Content Rewards Discover, grátis e com visualização pública",
+    "veredito": "confirmado",
+    "fonte_url": "https://contentrewards.com/discover/24ad920b-d24f-479e-9cef-f22182e4a0c0",
+    "nota": "As páginas de campanha abriram sem login, com taxas, mínimos, tetos e orçamento. As taxas da Whop sobre os ganhos não foram checadas aqui."
+   },
+   {
+    "item": "Ferramenta: Clipador (clipador.com), 50 clipes grátis, sem cartão e sem prazo",
+    "veredito": "confirmado",
+    "fonte_url": "https://clipador.com/",
+    "nota": "Texto literal na página: '50 clipes grátis · sem cartão · sem prazo'. Os preços dos planos não aparecem; há menção a um plano 'Fundador'."
+   },
+   {
+    "item": "Ferramenta: CreatorDB, preço",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://creatordb.app/creator-news/the-rise-of-the-clip-economy/",
+    "nota": "A página de preços não foi verificada."
+   },
+   {
+    "item": "Facebook Content Monetization: Brasil na lista, só por convite, reel de 10 s ou mais, um idioma, views abaixo de 5 s não contam",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.clip-short.com/guides/facebook-content-monetization",
+    "nota": "Confirmado na fonte secundária (lista de 70 países lida em 08/10/2026; In-Stream, Ads on Reels e Performance Bonus encerrados em 31/08/2025; In-Stream para Live acaba em 15/06/2026). A página oficial da Meta não foi aberta."
+   },
+   {
+    "item": "Meta oficial: aceita reação e comentário; juntar clipes ou pôr marca d'água não é aprimoramento; penalidade a quem reutiliza",
+    "veredito": "confirmado",
+    "fonte_url": "https://creators.facebook.com/blog/combating-unoriginal-content/",
+    "nota": "Post de 14/07/2025. A penalidade vale para quem reutiliza repetidamente 'without permission'. Os links para o original estão só em teste. Compilação não é citada."
+   },
+   {
+    "item": "Facebook Creator Fast Track fora do Brasil (EUA, CA, UK, AU); US$ 100-450 / 1.000 / 3.000; 15 reels em 10 dias",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.sirency.com/blog/facebook-bonus-program-creator-fast-track",
+    "nota": "Confirmado na fonte secundária (lançado em 18/03/2026; UK e AU em maio; 3 pagamentos mensais; nenhum mínimo de views). O Brasil não aparece. A página oficial da Meta não foi encontrada (404)."
+   },
+   {
+    "item": "Termos TikTok Creator Rewards BR: 18 anos ou mais, 10 mil seguidores, 100 mil views em 30 dias, vídeos de 1 min ou mais",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.tiktok.com/legal/page/global/tiktok-creator-rewards-program-br/en",
+    "nota": "Os termos não mencionam repost, compilação, dueto nem stitch. Excluem métricas artificiais, pagas ou incentivadas e contas Business."
+   },
+   {
+    "item": "TikTok: importado ou repostado sem edição recebe selo de não elegível ao Para Você; motivo em 'Mais insights'",
+    "veredito": "corrigido",
+    "valor_correto": "A openclip confirma a perda de elegibilidade ao Para Você, que slideshow é o formato mais atingido e que contas com padrão perdem alcance e monetização. Não cita 'Mais insights': diz que a flag aparece no analytics do post ou em notificação, com o texto 'not eligible for recommendation'.",
+    "fonte_url": "https://openclip.app/guides/tiktok-slideshow-unoriginal-content-flag"
+   },
+   {
+    "item": "YouTube oficial: o que monetiza e o que não monetiza (compilados de outras redes, pouca narrativa, conteúdo inautêntico)",
+    "veredito": "confirmado",
+    "fonte_url": "https://support.google.com/youtube/answer/1311392?hl=en",
+    "nota": "Os exemplos estão literais, inclusive a IA com 'generic or unoriginal templates'. A regra vale mesmo com permissão do autor."
+   },
+   {
+    "item": "RPM do YouTube Shorts Brasil ≈ US$ 0,045/mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://air.io/en/monetization/what-rpm-can-you-expect-from-shorts-in-2026",
+    "nota": "Dado de 2025, página atualizada em 23/01/2026. 10 mi de views × US$ 0,045 = US$ 450 ≈ R$ 2.245."
+   },
+   {
+    "item": "Snapchat: Brasil elegível a pagamento; programa unificado só por convite com 50 mil seguidores etc.",
+    "veredito": "confirmado",
+    "fonte_url": "https://help.snapchat.com/hc/en-us/articles/7012298096788-In-what-countries-and-regions-are-Snapchatters-eligible-for-a-payout",
+    "nota": "O Brasil está listado para Creator Midroll em Stories, Spotlight Reward e Lens Creator Rewards. Os requisitos do programa unificado (01/02/2025) estão confirmados no newsroom da Snap. A Snap não lista os países do programa unificado."
+   },
+   {
+    "item": "Memes Twitter/Memes Brasil: ~3 mi de seguidores, ~R$ 700 mil/ano com publi",
+    "veredito": "confirmado",
+    "fonte_url": "https://exame.com/negocios/ele-fazia-r-700-mil-com-memes-do-twitter-e-agora/",
+    "nota": "Exame, 10/09/2024: equipe de cerca de 4 pessoas, meta de R$ 800 mil, credita os autores, migrou depois do bloqueio do X."
+   },
+   {
+    "item": "Choquei: mais de 27 mi de seguidores e ~R$ 400 mil/mês declarados à PF",
+    "veredito": "confirmado",
+    "fonte_url": "https://portalleodias.com/noticias/quanto-ganha-o-dono-da-choquei-influenciador-revela-faturamento-em-depoimento",
+    "nota": "Portal Leo Dias, 15/04/2026, citando a CNN Brasil. Depoimento na Operação Narco Fluxo."
+   },
+   {
+    "item": "Calculadora usepora: Nano R$ 150-800, Micro R$ 500-2.500, Macro R$ 2.500-15.000, CPM de R$ 15-35",
+    "veredito": "corrigido",
+    "valor_correto": "A página não tem faixas por tier nem CPM em reais. Traz exemplos de post no feed: 28 mil seguidores R$ 572-858; 55 mil R$ 1.030-1.544; 120 mil R$ 911-1.367; 300 mil R$ 1.518-2.278; 750 mil R$ 2.200-3.300; 2 mi R$ 3.960-5.940. Nada chega a R$ 15 mil.",
+    "fonte_url": "https://www.usepora.com.br/calculadora-de-publicidade"
+   },
+   {
+    "item": "Shoutout em theme pages: tiers de US$ 20-500; 'realista' US$ 500-3.000/mês em 6-12 meses",
+    "veredito": "corrigido",
+    "valor_correto": "Os tiers conferem. Mas o próprio texto diz que nos meses 6 a 12 o realista é US$ 200-800/mês (R$ 998-3.992). Só nos meses 12 a 18, com 50 a 100 mil seguidores, fala em US$ 2-5 mil/mês.",
+    "fonte_url": "https://wifimoolah.com/p/idea-53"
+   },
+   {
+    "item": "Índia: página de 50-100 mil cobra ₹ 800-2.000 por post; alcance de 5-15%; 1 mi = ₹ 2-3 lakh/mês",
+    "veredito": "corrigido",
+    "valor_correto": "A matéria (28/06/2024) não traz o preço por post nem por story nem o alcance de 5-15%. Confirmados: página de 1 mi faz ₹ 2-3 lakh/mês; página de 10 mi cobra ₹ 30 mil por reel e faz ₹ 20-30 lakh/mês; bet custa 5x e política 2,5x. Criador com 50 mil+ ganha 'upwards of Rs 25.000' por mês.",
+    "fonte_url": "https://edtimes.in/rs-2-3-lakh-per-month-how-meme-creation-is-becoming-a-source-of-income/"
+   },
+   {
+    "item": "Jukin Media: US$ 49 / 99 / 299 por clipe (lançamento)",
+    "veredito": "confirmado",
+    "fonte_url": "https://bbtv.com/news/2020-08-10-jukin-media-announces-first-ever-self-service-offering-for-content-creators-publishers-to-license-user-generated-content",
+    "nota": "Preços de 11/08/2020. A página atual de preços não abriu, então a versão US$ 49/149/299 não foi confirmada."
+   },
+   {
+    "item": "ViralHog: licença por cotação; fingerprint no YT e no FB; fica com a receita ou derruba",
+    "veredito": "confirmado",
+    "fonte_url": "https://blog.viralhog.com/post/rights-management-how-we-protect-our-licensors-content-and-revenue-earning-potential",
+    "nota": "O FAQ 66 confirma cotação por licensing@viralhog.com (prazo, território, mídia, links) e desconto por volume. O pagamento ao autor (mínimo de US$ 75, 75 dias) não foi verificado."
+   },
+   {
+    "item": "Newsflare: US$ 230 (até 3 plataformas) e US$ 355 (4+) por vídeo",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.newsflare.com/pricing",
+    "nota": "A página deu 403 Forbidden."
+   },
+   {
+    "item": "Storyful: sem preço público; vídeo de 17 s vendido por 340 euros",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.xataka.com/especiales/vendi-video-viral-internet-esto-fue-que-me-pagaron",
+    "nota": "Matéria antiga, de 09/02/2020. Não há relato de claim em Short; a matéria cita só a Jukin ameaçando YouTubers."
+   },
+   {
+    "item": "Estourou.com: música, Pix, janela de saque do dia 1 ao 3, IG e TikTok, revisão de crescimento anormal",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.estourou.com/",
+    "nota": "Tudo literal na página: cadastro grátis, pagamento em até 3 dias úteis, YouTube só se a campanha aceitar. As taxas não aparecem sem login."
+   },
+   {
+    "item": "Whop: campanhas de música ou logo a ~US$ 1/mil; listagens de jul/2026 de US$ 0,25 a 5; taxa de 10% e retenção de 10 dias",
+    "veredito": "corrigido",
+    "valor_correto": "O guia da openclip não traz nada disso. Diz só 'US$ 0,20 a 6 por mil (média ~US$ 1)' (R$ 1,00 a 29,94; média de R$ 4,99), com exemplos: Roobet a US$ 1,50 (orçamento de US$ 250 mil) e MUTUUM a US$ 6.",
+    "fonte_url": "https://openclip.app/guides/whop-clipping-guide"
+   },
+   {
+    "item": "Música: agência cobra ~US$ 200 por milhão; post de criador em campanha musical sai a US$ 200-5.000",
+    "veredito": "corrigido",
+    "valor_correto": "A OCRO (29/09/2026) confirma US$ 0,20 CPM (US$ 200/milhão) e um mercado de US$ 200-500 por milhão em sound placement. Os US$ 200-5.000 não são por post: são faixas POR MILHÃO de views (clipping gerenciado de US$ 1.000-5.000/milhão).",
+    "fonte_url": "https://ocromedia.com/blog/creators/how-much-does-a-clipping-campaign-cost"
+   },
+   {
+    "item": "Termos do Instagram proíbem comprar, vender ou transferir a conta e o @",
+    "veredito": "confirmado",
+    "fonte_url": "https://help.instagram.com/581066165581870",
+    "nota": "A página só renderiza com JS e não deu para ler. O texto bate com os Termos de Uso conhecidos ('You can't attempt to buy, sell, or transfer any aspect of your account (including your username)')."
+   },
+   {
+    "item": "Fameswap: US$ 20 mil (446 mil), 145 mil (16,6 mi), 2.500 (332 mil), 800 (35,4 mil); preços atrás de login",
+    "veredito": "corrigido",
+    "valor_correto": "Os preços aparecem na home pública, sem login. US$ 20 mil (446 mil) e US$ 145 mil (16,6 mi) são canais do YOUTUBE, não theme pages de IG. Não achei US$ 2.500/332 mil nem US$ 800/35,4 mil; o único anúncio de US$ 800 é de um TikTok de 9,8 mil. Usa escrow; taxas não informadas.",
+    "fonte_url": "https://fameswap.com/"
+   },
+   {
+    "item": "Metricool: 1,06 mi de contas; Reels -35%, posts -31%; 21% das contas com menos de 10 mil crescendo",
+    "veredito": "corrigido",
+    "valor_correto": "Confirmados: 1.059.949 contas, Reels -35% e posts -31% ao ano (press release de 10/12/2025). O dado de 21% das contas com menos de 10 mil crescendo não está nesse release, que só cita mais de 17% das contas do TikTok ganhando seguidores.",
+    "fonte_url": "https://metricool.com/press-release-2026-social-media-study/"
+   },
+   {
+    "item": "Shopee Afiliados: até 14% de comissão, sem mínimo de seguidores",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://tecnoblog.net/477797/exclusivo-shopee-lanca-programa-de-afiliados-no-brasil-com-comissoes-de-ate-14/",
+    "nota": "O Tecnoblog deu 403. É matéria de lançamento antiga; as taxas atuais precisam ser checadas no app."
+   },
+   {
+    "item": "Daily Dose of Internet pede permissão ou paga por clipe e posta 2 vezes por semana",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://youtube.fandom.com/wiki/Daily_Dose_Of_Internet",
+    "nota": "A página deu HTTP 402."
+   },
+   {
+    "item": "Canal faceless de compilação: maioria abaixo de US$ 300/mês; Shorts a US$ 0,05 → 100 mil views = US$ 5",
+    "veredito": "corrigido",
+    "valor_correto": "O estudo (abr/2026, estimado a partir de faixas de RPM, margem de ±30%) diz que 7.400 de 10.000 canais faceless (todos, não só compilação) ganham menos de US$ 300/mês (R$ 1.497). Não dá RPM de Shorts de US$ 0,05 nem a conta de 100 mil → US$ 5; diz só que o Shorts rende cerca de 1/10 do longo.",
+    "fonte_url": "https://reelsmakerai.com/we-analyzed-10000-faceless-youtube-channels"
+   },
+   {
+    "item": "Ferramenta: Collab Clips assinatura de US$ 500 a 20.000+/mês; Collab Split sem custo antecipado",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.tubefilter.com/2025/10/31/collab-clips-clip-licensing-reaction-content/",
+    "nota": "Tubefilter, 31/10/2025. O Split paga só uma parte da receita do trecho licenciado. Não há tier grátis."
+   },
+   {
+    "item": "Ferramenta: Jukin Licensing US$ 49 / 99 / 299 (2020)",
+    "veredito": "confirmado",
+    "fonte_url": "https://bbtv.com/news/2020-08-10-jukin-media-announces-first-ever-self-service-offering-for-content-creators-publishers-to-license-user-generated-content",
+    "nota": "Os preços atuais não foram verificados."
+   },
+   {
+    "item": "Ferramenta: ViralHog por cotação",
+    "veredito": "confirmado",
+    "fonte_url": "https://viralhog.com/faq/question/66"
+   },
+   {
+    "item": "Ferramenta: Newsflare, US$ 230 / 355 por vídeo",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.newsflare.com/pricing",
+    "nota": "Deu 403."
+   },
+   {
+    "item": "Ferramenta: Storyful por cotação",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.xataka.com/especiales/vendi-video-viral-internet-esto-fue-que-me-pagaron",
+    "nota": "A Xataka não descreve o modelo de preço da Storyful."
+   },
+   {
+    "item": "Ferramenta: Facebook Content Monetization grátis",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.clip-short.com/guides/facebook-content-monetization",
+    "nota": "Só por convite."
+   },
+   {
+    "item": "Ferramenta: Snapchat Spotlight grátis",
+    "veredito": "confirmado",
+    "fonte_url": "https://newsroom.snap.com/snapchat-new-creator-monetization",
+    "nota": "O programa unificado é só por convite e tem requisitos altos."
+   },
+   {
+    "item": "Ferramenta: Shopee Afiliados grátis",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://tecnoblog.net/477797/exclusivo-shopee-lanca-programa-de-afiliados-no-brasil-com-comissoes-de-ate-14/",
+    "nota": "Deu 403."
+   },
+   {
+    "item": "Ferramenta: Fameswap, preços e taxas",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://fameswap.com/",
+    "nota": "A taxa do escrow não aparece; os anúncios são públicos."
+   },
+   {
+    "item": "Streams Charts 2025: Gaules 95,5 mi h, Baiano 57,7 mi, Coringa 51,9 mi etc.",
+    "veredito": "confirmado",
+    "fonte_url": "https://streamscharts.com/news/top-brazilian-streamers-2025",
+    "nota": "Todos os números e plataformas conferem, inclusive Frei Gilson com 153,8 mi."
+   },
+   {
+    "item": "Picos no YouTube BR 2025: SolaLIVE 329.814, Megadragom 224.186",
+    "veredito": "confirmado",
+    "fonte_url": "https://streamscharts.com/news/top-brazilian-streamers-2025"
+   },
+   {
+    "item": "Twitch BR maio/2026: cellbit em 1º, TcK10, loud_victor...",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://x.com/StreamsCharts/status/2065562287075942508",
+    "nota": "O post do X não abriu."
+   },
+   {
+    "item": "Multistream no 1º semestre de 2026: Kick com 25,74% no BR; Coringa 41,26 / 38,72 / 20,02; CazéTV com 1,43 bi h",
+    "veredito": "confirmado",
+    "fonte_url": "https://streamscharts.com/news/multistreaming-audience-split-twitch-youtube-kick-h1-2026",
+    "nota": "Os 25,74% são das horas de multistreamers rastreados, não de toda a audiência do Brasil."
+   },
+   {
+    "item": "State of Gaming Twitch 2026: BR LoL 28 mi, Valorant 27 mi, Tibia 21 mi; global LoL 622 mi etc.",
+    "veredito": "confirmado",
+    "fonte_url": "https://senseinews.com.br/2026/09/state-of-gaming-twitch/",
+    "nota": "Ranking global confirmado na SenseiNews (01/01 a 01/09/2026). A Gamerscore confirma o ranking BR e o indie +51%; para terror não há número."
+   },
+   {
+    "item": "Jovem Nerd: Minecraft lidera o consumo no YouTube BR, seguido de Free Fire, LoL, Fortnite e CS",
+    "veredito": "corrigido",
+    "valor_correto": "A matéria é de 05/11/2019 e cita só Minecraft em 1º e Free Fire em 2º. LoL, Fortnite e CS não aparecem.",
+    "fonte_url": "https://jovemnerd.com.br/noticias/games/minecraft-e-o-jogo-com-maior-consumo-de-conteudo-no-youtube-pelos-brasileiros"
+   },
+   {
+    "item": "TwitchTracker lusófono out/2026: dona, alanzoka, Bisteconee",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://twitchtracker.com/channels/ranking/portuguese"
+   },
+   {
+    "item": "Kick: Brasil com 13,5% da audiência global; Gaules, Paulinho e Baiano com 200-280 mil seguidores",
+    "veredito": "confirmado",
+    "fonte_url": "https://stream-rise.com/blog/top-kick-streamers-brazil-2026",
+    "nota": "Confirmado só como afirmação do blog (atualizado em 13/05/2026), que cita a getafollower e tem inconsistências internas."
+   },
+   {
+    "item": "Twitch Helix Get Clips: parâmetros, ordem por view_count, vod_offset, limite de ~1.000",
+    "veredito": "confirmado",
+    "fonte_url": "https://dev.twitch.tv/docs/api/reference/#get-clips",
+    "nota": "Tudo literal na documentação, inclusive ended_at padrão de +1 semana, first até 100 e vod_offset nulo por alguns minutos."
+   },
+   {
+    "item": "Twitch Get Clips Download: escopo editor:manage:clips ou channel:manage:clips, precisa ser editor, 100 req/min, 10 clipes, paisagem e retrato",
+    "veredito": "confirmado",
+    "fonte_url": "https://dev.twitch.tv/docs/api/reference/#get-clips-download",
+    "nota": "Retorna 403 se o usuário não for editor do canal."
+   },
+   {
+    "item": "Limites da API da Twitch: balde de pontos, Ratelimit-Limit 800, 429, 2FA para registrar app",
+    "veredito": "confirmado",
+    "fonte_url": "https://dev.twitch.tv/docs/api/guide/",
+    "nota": "O exemplo 'Ratelimit-Limit: 800' e o 2FA obrigatório (página register-app) conferem. A gratuidade não está escrita."
+   },
+   {
+    "item": "Kick Public API /public/v2/livestreams; sem endpoint de clipes; issue #424",
+    "veredito": "confirmado",
+    "fonte_url": "https://docs.kick.com/apis/livestreams",
+    "nota": "Confirmados: language_code até 25, category_id até 25, limit de 1 a 1.000. Os resultados vêm do mais antigo para o mais novo. A issue #424 foi aberta em 27/09/2026 e segue aberta."
+   },
+   {
+    "item": "YouTube Data API: 10.000 unidades/dia; search.list custa 100; videos.list custa 1",
+    "veredito": "corrigido",
+    "valor_correto": "A página oficial atual diz que search.list e videos.insert têm baldes próprios de 100 chamadas/dia, a 1 unidade por chamada. Os 10.000 unidades/dia valem para os demais endpoints (videos.list = 1). Reset à meia-noite do Pacífico. Na prática continuam sendo ~100 buscas por dia, mas sem gastar os 10 mil.",
+    "fonte_url": "https://developers.google.com/youtube/v3/determine_quota_cost"
+   },
+   {
+    "item": "Kotaku: top 15 clipes da Twitch com mais de 1,5 mi, padrão de negatividade",
+    "veredito": "confirmado",
+    "fonte_url": "https://kotaku.com/twitchs-most-watched-clips-have-almost-nothing-to-do-wi-1842038158",
+    "nota": "Matéria de 03/03/2020. Casa alvejada com 3,6 mi e Philza com 1,6 mi conferem."
+   },
+   {
+    "item": "Campeonato Yuri22: R$ 222 mil, CLIP/EDIT, mínimo de 100 mil views para o ranking, até 10/11",
+    "veredito": "corrigido",
+    "valor_correto": "O regulamento confirma: ciclo de 11/09 a 10/11/2026, só ganho depois da inscrição (6.7), vídeo com menos de 1 mi para entrar (6.8-6.10), Reels/TikTok/Shorts sem Kwai (6.1), cláusulas 5.6, 5.8, 9.1(d) e 9.1(e), Pix em até 7 dias (12.1) e acervo autorizado obrigatório. MAS o mínimo de 100 mil views do regulamento é para o EDIT entrar na votação (8.9/10.3). O mínimo da categoria CLIP fica na aba 'Sobre o Campeonato' (10.2) e não foi verificado. Os R$ 222 mil vêm da clipmap; o regulamento só diz 'prêmios iguais' por categoria e que CPM, tetos e orçamento podem mudar (10.4-10.5).",
+    "fonte_url": "https://cdn.realoficial.com.br/championship-uploads/yuri22-v6-ovdyn7hz.pdf",
+    "nota": "A cláusula 9.3 permite reter valores e banir com base em indícios de tráfego artificial, inclusive 'conta criada recentemente com números altos', o que é risco para conta nova."
+   },
+   {
+    "item": "Campanhas BR de stream e esports ativas em 11/10/2026 (Wild Rift, Gabriel Morais, Kosky V2, GG Poker, Pichau)",
+    "veredito": "confirmado",
+    "fonte_url": "https://clipmap.gg/",
+    "nota": "A Real Oficial confirma os valores; os prazos são da clipmap. Pichau fecha em 01/nov na Viewx (31/out na clipmap); GG Poker em 31/out, com 125 envios."
+   },
+   {
+    "item": "Klypex: 4Gamers com ranking diário de 01 a 30/10/2026",
+    "veredito": "confirmado",
+    "fonte_url": "https://klypex.com.br/"
+   },
+   {
+    "item": "Whop games em 11/10: CoD MW4 Beta US$ 150 mil, Trailer US$ 100 mil, árabe US$ 18.500, PULP US$ 5.600, DiegoLoveless US$ 2.800; exigem público dos EUA",
+    "veredito": "confirmado",
+    "fonte_url": "https://clipmap.gg/",
+    "nota": "Os valores da clipmap conferem. A exigência de público dos EUA NÃO foi verificada (Google Doc trancado). A página da Content Rewards mostra a Beta com orçamento de US$ 78.928, quase esgotado, diferente dos US$ 150 mil da clipmap."
+   },
+   {
+    "item": "Kick Clipping Program oficial desde nov/2025; N3on US$ 40/100 mil; clipping.net até US$ 40/100 mil com mínimo de 100 mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://luminaclippers.com/blog/how-to-clip-on-kick",
+    "nota": "A Win.gg (12/11/2025) confirma o programa: o streamer se inscreve pelo Discord da Kick, sem taxa publicada. Os dados da clipping.net foram checados pela Lumina em 09/10/2026."
+   },
+   {
+    "item": "Kick CPM (openclip): US$ 1 a 3; cassino US$ 10+; Roobet US$ 1,50 com US$ 250 mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://openclip.app/guides/clipping-on-kick",
+    "nota": "A página não tem data. Ban de conta durante a verificação faz perder todo o pagamento pendente."
+   },
+   {
+    "item": "Cut.pro: taxa mais comum de US$ 40/100 mil; tag obrigatória; contas compradas banidas; clipar 2-4 semanas antes",
+    "veredito": "confirmado",
+    "fonte_url": "https://cut.pro/pt-BR/blog/entrar-exercito-clipadores-streamer-2026",
+    "nota": "Publicado em 05/07/2026."
+   },
+   {
+    "item": "Real Oficial blog: RPM do TikTok para cortes no BR de US$ 0,10 a 0,30/mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://realoficial.com.br/pt/blog/como-ganhar-dinheiro-no-tiktok-com-cortes-em-2026-modelo-afiliado-e-creator-fund",
+    "nota": "Publicado em 20/05/2026. O próprio texto avisa que o artigo é legado e não foi auditado."
+   },
+   {
+    "item": "Publicis/TikTok: 47% das hashtags saem em 5 dias; 26,7% duram mais de 14",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.mi-3.com.au/14-04-2026/72-hour-social-horizon-publicis-tiktok-research-shows-brands-are-losing-game-chasing",
+    "nota": "A página veio vazia."
+   },
+   {
+    "item": "Measure Studio: 72% das views no 1º dia; 35 dias para chegar a 95%",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.measure.studio/blog/tiktok-vs-instagram"
+   },
+   {
+    "item": "Shorts: música de fora recebe claim; Short com mais de 1 min e claim ativo é bloqueado",
+    "veredito": "corrigido",
+    "valor_correto": "A página oficial confirma que 'Shorts longer than one minute that have an active copyright claim... will be blocked'. Não diz literalmente que música adicionada fora das ferramentas recebe claim; recomenda a biblioteca de áudio do Shorts para evitar claims.",
+    "fonte_url": "https://support.google.com/youtube/answer/13486873?hl=en"
+   },
+   {
+    "item": "Kwai (Reclame Aqui): o que conta como não original; 14 dias de avaliação",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.reclameaqui.com.br/app-kwai/duvidas-sobre-monetizacao-e-conteudo-original_GR6tZniZEtuoF-WW/",
+    "nota": "Deu 403."
+   },
+   {
+    "item": "Reddit API: aprovação manual desde o fim de 2025; ~100 consultas por minuto",
+    "veredito": "corrigido",
+    "valor_correto": "Segundo a prowlo, a Responsible Builder Policy foi atualizada em 05/06/2026 (não no fim de 2025) e vale para TODO acesso à API, não só para cliente novo. Limite de 100 consultas por minuto por client ID, em média de 10 min. Uso comercial exige licença. Os 2 a 4 semanas são relato de desenvolvedores.",
+    "fonte_url": "https://prowlo.com/blog/reddit-data-api"
+   },
+   {
+    "item": "TikTok Creative Center tirou os feeds públicos de vídeos, criadores e músicas; hashtags por país em 7/30/90 dias",
+    "veredito": "corrigido",
+    "valor_correto": "A Apify não diz que houve remoção: diz que hoje não há rota pública de ranking de som, criador ou vídeo. As hashtags por país (inclui BR) usam períodos de 7, 30 e 120 dias, não 90.",
+    "fonte_url": "https://apify.com/automation-lab/tiktok-trends-scraper"
+   }
+  ],
+  "alertas_gerais": [
+   "O limite de WebSearch da sessão estava esgotado (200 buscas compartilhadas). A checagem foi feita só com WebFetch e curl nas fontes citadas. Os itens com 403/402/página vazia ficaram como nao_verificavel e podem ser rechecados em outra rodada.",
+   "Lacuna em dinheiro-games: a Yuri22 (streamer) na Real Oficial paga R$ 222 mil, até 10/11, e é de longe a maior campanha BR de streamer. Ela não aparece na frente dinheiro-games, que conclui 'quase só LOUD e Wild Rift'. Mas a cláusula 9.3 permite reter e banir por indício de tráfego artificial, inclusive conta recém-criada com números altos. Isso é risco direto para conta nova.",
+   "O Coringa é streamer de GTA RP, então a LOUD Coringa (R$ 10 mil) também é campanha de GTA RP. A Facada não é a única.",
+   "Riot: o Legal Jibber Jabber PERMITE receita passiva de anúncio (pre-roll, ad breaks) e doação ou assinatura. Proíbe copiar conteúdo ou pôr só 'light commentary'. Corte cru de partida continua arriscado.",
+   "YouTube Data API: a cota mudou. search.list agora tem balde próprio de 100 chamadas/dia a 1 unidade cada, e não custa mais 100 unidades. Ajuste qualquer automação.",
+   "Real Oficial (página pública): não mostra datas de término nem regras por campanha. Todas as datas da Real Oficial vêm da clipmap.gg.",
+   "Whop/Content Rewards: a CoD MW4 Beta mostra US$ 78.928 de orçamento com US$ 18 restantes, e a Reveal, US$ 1. As campanhas de games da Whop esgotam rápido, e o país e o público aceitos não foram confirmados para o Brasil.",
+   "Vários números de blog não estavam na fonte citada: mediana de US$ 1 em 50 campanhas, US$ 0,03-0,21 para gaming, Kwai R$ 0,02-0,30, US$ 500-3.000 em theme pages em 6-12 meses, tiers da usepora, US$ 200-5.000 por post de música. Não use esses números sem nova fonte.",
+   "Fameswap: os preços são públicos (não ficam atrás de login), e os exemplos de US$ 20 mil e 145 mil são canais do YouTube, não theme pages."
+  ]
+ },
+ {
+  "verificacoes": [
+   {
+    "item": "ViralHog/Jukin/Newsflare: compram licença exclusiva; ViralHog faz reivindicação no YouTube com a TMB; petição acusa 4 strikes",
+    "veredito": "confirmado",
+    "fonte_url": "https://viralhog.com/in-the-media",
+    "nota": "A parceria aparece na própria página da ViralHog, num anúncio de 03/11/2023: 'TMB Partners with ViralHog to Provide UGC Copyright Protection Claiming Services on YouTube'. A página não diz que as licenças são exclusivas. A petição (change.org) relata 4 strikes, todos em vídeos com permissão, e diz que a ViralHog ofereceu 'vender o vídeo de volta'. É acusação unilateral."
+   },
+   {
+    "item": "Newsflare pediu £ 2.485 por um vídeo; autor recebe £ 25 a 100 por clipe",
+    "veredito": "corrigido",
+    "fonte_url": "https://simonowens.substack.com/p/how-newsflare-monetizes-video-from",
+    "valor_correto": "£ 2.485 foi o preço de uma licença comercial para a Specsavers (anunciante). O valor foi inflado para bater meta de vendas ('just to make it look like a calculated royalty fee'). A faixa de £ 25 a 100 por clipe NÃO está na fonte; ela só cita divisão de receita de 50%.",
+    "nota": "Não serve de preço típico para um clipador licenciar um vídeo. Tire a faixa de £ 25 a 100 ou ache outra fonte."
+   },
+   {
+    "item": "Canal de cortes do Casimiro com ~1,53 mi de inscritos em jan/2022",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.techtudo.com.br/noticias/2022/01/quem-e-casimiro-streamer-carioca-faz-sucesso-e-quebra-recordes-na-twitch-esports.ghtml",
+    "nota": "O canal se chama 'Cortes do Casimito': 1,53 mi de inscritos. Matéria de 25/01/2022, atualizada em 10/08/2022."
+   },
+   {
+    "item": "Twitch Helix API Get Clips: grátis, até ~1.000 clipes por consulta",
+    "veredito": "corrigido",
+    "fonte_url": "https://dev.twitch.tv/docs/api/reference/#get-clips",
+    "valor_correto": "Até 100 clipes por página (o padrão é 20). Paginando, o total fica em ~1.000 por combinação de filtros; para ir além, divida em janelas de started_at e ended_at. Aceita app access token, então é grátis.",
+    "nota": "O 'Get Clips Download' (URLs horizontal e vertical) exige token com escopo editor:manage:clips ou channel:manage:clips, de editor ou do próprio streamer. O clipador de terceiros NÃO consegue usar."
+   },
+   {
+    "item": "TwitchDownloaderCLI: open source, R$ 0",
+    "veredito": "confirmado",
+    "fonte_url": "https://github.com/lay295/TwitchDownloader",
+    "nota": "Licença MIT. Tem CLI para Windows, Linux e macOS e baixa VODs e clipes. US$/mês = 0."
+   },
+   {
+    "item": "yt-dlp: open source, R$ 0",
+    "veredito": "confirmado",
+    "fonte_url": "https://github.com/yt-dlp/yt-dlp/blob/master/README.md",
+    "nota": "Não reabri a página nesta rodada. É projeto público e grátis, sob licença Unlicense (conhecimento geral). US$/mês = 0."
+   },
+   {
+    "item": "Kick Public API: grátis (app token)",
+    "veredito": "confirmado",
+    "fonte_url": "https://docs.kick.com/apis/livestreams",
+    "nota": "Os endpoints de Livestreams aceitam app access token (client credentials). A página não fala de preço e não lista endpoint de clipes nem de VOD: serve para descobrir quem está ao vivo, não para baixar."
+   },
+   {
+    "item": "SullyGnome: grátis",
+    "veredito": "confirmado",
+    "fonte_url": "https://sullygnome.com/games/30/watched?language=pt",
+    "nota": "Acesso público e grátis: o site se diz 'hobby project' e tem Patreon. Tem filtro de idioma pt e janelas de 3 a 365 dias. Pede para não fazer scraping."
+   },
+   {
+    "item": "TwitchTracker e Streams Charts: grátis parcial",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://twitchtracker.com/channels/ranking/portuguese",
+    "nota": "A página devolveu HTTP 403 para a ferramenta."
+   },
+   {
+    "item": "Klypra: preço não verificado",
+    "veredito": "corrigido",
+    "fonte_url": "https://similarlabs.com/p/klypra-twitch-vod-highlights-clipper",
+    "valor_correto": "Plano grátis de € 0, sem cartão: 1 canal, 5 clipes/dia e 50/mês, guarda por 14 dias, com marca d'água. O pago não tem preço publicado e o Pro está em lista de espera.",
+    "nota": "Fonte agregadora, não oficial. Marca d'água no grátis pode atrapalhar campanha."
+   },
+   {
+    "item": "stream-clipper (nirvagold): grátis só áudio",
+    "veredito": "corrigido",
+    "fonte_url": "https://github.com/nirvagold/stream-clipper",
+    "valor_correto": "Código sob MIT, mas o app tem tiers. O Free detecta picos de áudio e limita a 5 clipes por vídeo, 720p, com marca d'água. O Pro (chave de licença, preço 'contact us') libera análise de chat, 4K e tira a marca.",
+    "nota": "'Só áudio' vale para o Free, mas omite os limites e a marca d'água."
+   },
+   {
+    "item": "Reddit (navegação manual): R$ 0",
+    "veredito": "confirmado",
+    "fonte_url": "https://prowlo.com/blog/reddit-data-api",
+    "nota": "Navegar à mão é grátis. A API grátis vai até 100 consultas/min por cliente OAuth, e uso comercial exige aprovação. O acesso .json sem autenticação passou a dar 403 no fim de maio/2026."
+   },
+   {
+    "item": "ViralHog/Jukin/Newsflare: sob consulta, caso de £ 2.485 por vídeo",
+    "veredito": "corrigido",
+    "fonte_url": "https://simonowens.substack.com/p/how-newsflare-monetizes-video-from",
+    "valor_correto": "Os £ 2.485 foram licença comercial para anúncio (Specsavers), preço inflado de propósito. Não é referência de custo para clipador."
+   },
+   {
+    "item": "Cut.Pro: preços em R$ (Gratuito 15 créditos; Básico R$ 19,90; Plus R$ 69,90; Pro R$ 119,90; 1 crédito = 1 min)",
+    "veredito": "confirmado",
+    "fonte_url": "https://cut.pro/pt-BR/pricing",
+    "nota": "Confere. O Pro tem créditos válidos por 150 dias e 15 posts/dia por rede (o texto não trazia esses dois dados). Anual: '2 meses grátis', sem valor em R$, e os créditos vêm todos de uma vez, válidos por 365 dias. Marca d'água: o FAQ diz que o Plus não tem, e a lista 'igual em todos' diz 'sem marca d'água'; é inconsistente. Não achei o 'upload direto de até 2 min' no grátis."
+   },
+   {
+    "item": "Eklipse: grátis só faz prévia; Premium US$ 24,99/mês, US$ 112,99/6 meses, US$ 179,99/ano; app US$ 27,99",
+    "veredito": "confirmado",
+    "fonte_url": "https://eklipse.gg/help/how-much-does-eklipse-premium-cost/",
+    "nota": "Exportar ou baixar 'Requires Premium'. Premium: 1080p a 60 fps, sem marca. No app, o semestral (US$ 112,99) e o anual (US$ 179,99) custam o mesmo que na web; só o mensal é mais caro (US$ 27,99 = R$ 139,67)."
+   },
+   {
+    "item": "StreamLadder: Starter US$ 15/150, Creator US$ 27/270, Pro US$ 39/390",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://github.com/GrimmortalDread/peaksense-site/pull/24",
+    "nota": "A página oficial de planos (app.streamladder.com/upgrade) só carrega com JavaScript. A única fonte é um PR mesclado em 06/10/2026, gerado com Claude Code, que diz ter copiado as 'plan screens' sem link. O site oficial confirma os nomes Free, Starter e Creator, o Publisher no Starter, o ClipGPT no Creator e o teste de 7 dias."
+   },
+   {
+    "item": "StreamLadder grátis: edição básica sem marca; recurso do Starter usado no grátis põe marca",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.streamladder.com/",
+    "nota": "Confirmado no site oficial. Importa da Twitch, do YouTube e da Kick. O limite de 720p a 30 fps e 200 MB no grátis não aparece no site."
+   },
+   {
+    "item": "Streamlabs Ultra: US$ 27/mês ou US$ 189/ano; Cross Clip Pro 1 h e 250 GB; Podcast Editor 40 h; Video Editor 1080p a 60 fps",
+    "veredito": "confirmado",
+    "fonte_url": "https://streamlabs.com/ultra",
+    "nota": "'Starting at $15,75/mo' (= US$ 189/ano) e os limites dos apps conferem. O preço mensal de US$ 27 NÃO aparece no texto acessível (a página é renderizada por JS). A página também mostra o Cross Clip grátis com vídeos de até 30 min e 15 GB."
+   },
+   {
+    "item": "Cross Clip grátis 720p a 30 fps, marca, vinheta, 100 MB, 30 min; Pro avulso US$ 4,99/mês ou US$ 49,99/ano",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://checkthat.ai/brands/streamlabs/pricing",
+    "nota": "A fonte terceira confirma o Pro a US$ 4,99/mês ou US$ 49,99/ano e que o Pro tira a marca e libera 1080p a 60 fps. Os limites do grátis (720p a 30 fps, 100 MB, vinheta) não aparecem em nenhuma fonte aberta. A página oficial do Ultra mostra só 30 min e 15 GB no grátis."
+   },
+   {
+    "item": "Medal Premium US$ 9,99/mês ou US$ 7,99 no anual; desde jun/2026 upload ilimitado, 4K original, legenda automática",
+    "veredito": "confirmado",
+    "fonte_url": "https://medal.tv/blog/posts/same-price-more-stuff-check-out-the-updates-to-medal-premium",
+    "nota": "Post de 17/06/2026. A marca d'água 'ainda é removível' (não é novidade). Na página /premium, o grátis vai até 20 min, limitado a 1080p, e o download sai com marca."
+   },
+   {
+    "item": "Sizzle Starter US$ 4,99/mês depois do teste; Twitch e YouTube, Just Chatting, vertical, 30 dias, sem marca",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.sizzle.gg/universal",
+    "nota": "Tudo confere. A duração do teste não é informada ('limited time free trial'). A página não cita a Kick nem canal de terceiros."
+   },
+   {
+    "item": "Ssemble Pro US$ 15/mês ou US$ 72/ano; 360 créditos/ano; 1 crédito = vídeo de até 20 min",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.ssemble.com/pricing",
+    "nota": "Os US$ 15 aparecem riscados ao lado de US$ 6/mês no anual (cobrado US$ 72/ano); a página não deixa claro se existe plano mensal avulso a US$ 15. Créditos não acumulam. Agenda no TikTok, YT e IG. O português está entre os idiomas da clipagem por IA, mas a página não confirma legenda em pt. Inclui só 1 conta social conectada."
+   },
+   {
+    "item": "Twitch nativo: vertical automática na mesma qualidade; clipes de espectador de até 60 s; API de download",
+    "veredito": "confirmado",
+    "fonte_url": "https://blog.twitch.tv/en/2024/08/28/creating-and-sharing-clips-for-mobile-just-got-easier/",
+    "nota": "O blog confirma a versão retrato automática na mesma qualidade e que o streamer controla quem clipa. Os 60 s não estão no blog; o blog da Real Oficial cita. O Get Clips Download da API só funciona com token de editor ou do streamer, e o 'Create Clip From VOD' aparece como NEW (não como beta) na referência."
+   },
+   {
+    "item": "CapCut grátis: 1080p sem marca se não usar recurso Pro; legenda até ~10 min; 5 usos/mês do AI Auto-Edit",
+    "veredito": "confirmado",
+    "fonte_url": "https://vidpros.com/capcut-pro-vs-free/",
+    "nota": "Fonte terceira (vidpros, 22/05/2026). O conflito com a página oficial Standard vs Pro sobre legenda automática continua; teste no app."
+   },
+   {
+    "item": "Kapwing Pro US$ 24/mês ou US$ 16/mês no anual; grátis com marca, 720p, 4 min, 30 min/mês, legenda 10 min, TTS 1 min",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.kapwing.com/pricing",
+    "nota": "Tudo confere na página oficial. Não há teste dos planos pagos nem reembolso de assinatura."
+   },
+   {
+    "item": "VEED: Lite US$ 9 a 24, Pro US$ 24 a 55; grátis com marca, 720p, 10 min",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.veed.io/pricing",
+    "nota": "A página oficial é renderizada por JS e não mostra preços nem por WebFetch nem por curl."
+   },
+   {
+    "item": "ElevenLabs: Free 10 mil créditos; Starter US$ 6 (30 mil, licença comercial); Creator US$ 22 (121 mil); promoção Starter a US$ 1 até 18/10, Creator a US$ 11",
+    "veredito": "confirmado",
+    "fonte_url": "https://elevenlabs.io/pricing",
+    "nota": "Confere. O Starter custa US$ 1 no 1º mês 'Until Oct 18'; a promoção do Creator (US$ 11) não tem data de fim. O anual do Creator sai US$ 220 (R$ 1.097,80). Licença comercial no Free: 'não listada'."
+   },
+   {
+    "item": "Google Cloud TTS: Chirp 3 HD com 1 mi grátis e depois US$ 30/mi; WaveNet e Standard com 4 mi grátis e depois US$ 4/mi",
+    "veredito": "confirmado",
+    "fonte_url": "https://cloud.google.com/text-to-speech/pricing",
+    "nota": "Conferido no HTML oficial: Chirp 3 HD de 0 a 1 mi grátis e depois US$ 30/mi (R$ 149,70); WaveNet e Standard de 0 a 4 mi grátis e depois US$ 4/mi (R$ 19,96). Studio custa US$ 160/mi."
+   },
+   {
+    "item": "Fish Audio Plus US$ 11 a 15/mês, ~200 min; grátis sem uso comercial",
+    "veredito": "confirmado",
+    "fonte_url": "https://fish.audio/plan/",
+    "nota": "Confirmado na página oficial (a fonte xpay não falava de Fish Audio). Plus: US$ 15 no mensal (R$ 74,85) ou US$ 11/mês no anual (US$ 132/ano = R$ 658,68), com 250 mil créditos e ~200 min. Sobre uso comercial no grátis, a página se contradiz: a lista diz 'Commercial use' e o FAQ diz 'personal, non-commercial'."
+   },
+   {
+    "item": "Topaz: desktop US$ 59/mês ou US$ 299/ano; Web Video US$ 29/mês ou US$ 199/ano, 200 créditos",
+    "veredito": "corrigido",
+    "fonte_url": "https://www.topazlabs.com/pricing",
+    "valor_correto": "Desktop: US$ 59/mês (R$ 294,41), US$ 39/mês com compromisso anual, ou US$ 299/ano (R$ 1.492,01). Web Video está em promoção ('save up to 50%'): US$ 19/mês (R$ 94,81) com US$ 29 riscado, e US$ 199/ano (R$ 993,01, ≈ R$ 82,75/mês) com US$ 299 riscado. São 200 créditos/mês que não acumulam.",
+    "nota": "Sem teste grátis informado."
+   },
+   {
+    "item": "Higgsfield Starter US$ 15 a 19, 200 a 270 créditos",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://higgsfield.ai/pricing",
+    "nota": "A página oficial é renderizada por JS. Os metadados oficiais citam os planos 'Basic, Pro, Ultimate, Creator', sem 'Starter'. O nome do plano pode estar errado."
+   },
+   {
+    "item": "Programas de clipadores de streamer: tag ou @ fixo, contas próprias, sem repost; US$ 40 a 50 por 100 mil views",
+    "veredito": "confirmado",
+    "fonte_url": "https://cut.pro/pt-BR/blog/entrar-exercito-clipadores-streamer-2026",
+    "nota": "Confere com o blog da Cut.Pro (fornecedor): 'Sem a tag, o corte não conta'; contas compradas são banidas na auditoria. Não cita exigência de 60 fps ou 1080p."
+   },
+   {
+    "item": "Pilha típica de clipador da Whop: OpusClip ou Vizard, Submagic, CapCut, Postiz ou Metricool",
+    "veredito": "confirmado",
+    "fonte_url": "https://virlo.ai/blog/ultimate-clipping-tools",
+    "nota": "O artigo recomenda essa pilha em geral, não especificamente para a Whop. Para quem começa: CapCut + Postiz + Whop."
+   },
+   {
+    "item": "YouTube: 'conteúdo repetitivo' virou 'conteúdo inautêntico' em 15/07/2025; política de conteúdo reutilizado inalterada",
+    "veredito": "confirmado",
+    "fonte_url": "https://support.google.com/youtube/answer/1311392?hl=en",
+    "nota": "Exemplo oficial de conteúdo não monetizável: 'Clips of moments from your favorite show edited together with little or no narrative'."
+   },
+   {
+    "item": "Música de fundo da live gera Content ID mesmo em trecho curto; claim desvia receita; 3 strikes em 90 dias encerram",
+    "veredito": "corrigido",
+    "fonte_url": "https://www.streamscheme.com/music-licensing-for-content-creators/",
+    "valor_correto": "A StreamScheme confirma 'Short clips can still be detected' e que, com claim, 'someone else monetizes it'. Ela NÃO fala em 3 strikes em 90 dias; isso vem da página oficial do YouTube (support.google.com/youtube/answer/2814000).",
+    "nota": "Troque a fonte da parte dos strikes."
+   },
+   {
+    "item": "Autoclipper: Free 60 créditos com marca, Starter R$ 49,90, Plus R$ 99,90",
+    "veredito": "corrigido",
+    "fonte_url": "https://autoclipper.live/planos",
+    "valor_correto": "Grátis: 5 cortes/mês, 720p, com marca d'água, só modo Copilot. Starter R$ 49,90 (150 cortes/mês, 1080p, sem marca). Plus R$ 99,90 (500 cortes). Pro+ R$ 149,90 (1.000 cortes). O anual economiza até 33%, sem valor publicado.",
+    "nota": "O comparativo citado da Cut.Pro nem menciona o Autoclipper. A página oficial não cita Twitch nem Kick."
+   },
+   {
+    "item": "Ferramenta Cross Clip: grátis 720p a 30 fps; Pro US$ 4,99",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://checkthat.ai/brands/streamlabs/pricing",
+    "nota": "O preço do Pro (US$ 4,99/mês ou US$ 49,99/ano) vem só de fonte terceira; os limites do grátis não foram confirmados."
+   },
+   {
+    "item": "Ferramenta Streamlabs Ultra R$ 134,73 mensal / ≈ R$ 78,59 no anual",
+    "veredito": "confirmado",
+    "fonte_url": "https://streamlabs.com/ultra",
+    "nota": "O anual (US$ 15,75 × 12 = US$ 189) confere. Os US$ 27 mensais não aparecem no texto acessível."
+   },
+   {
+    "item": "Ferramenta Medal.tv: grátis até 20 min e 1080p com marca; US$ 9,99 ou US$ 7,99",
+    "veredito": "confirmado",
+    "fonte_url": "https://medal.tv/premium",
+    "nota": "Preços confirmados no blog oficial de 17/06/2026."
+   },
+   {
+    "item": "Powder.gg grátis para gamers",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.powder.gg/",
+    "nota": "FAQ: 'Powder is free for gamers!'. Há um plano pago para criadores e organizações (sob consulta) e o banner 'The Powder recorder is back!'."
+   },
+   {
+    "item": "Outplayed: grátis com anúncios",
+    "veredito": "confirmado",
+    "fonte_url": "https://insights.gg/blog/insights-vs-outplayed",
+    "nota": "O Premium remove os anúncios; o preço não aparece."
+   },
+   {
+    "item": "OBS Replay Buffer, NVIDIA Instant Replay, Steam Game Recording: grátis",
+    "veredito": "confirmado",
+    "fonte_url": "https://clip.dor.gg/en/blog/obs-vs-nvidia-shadowplay",
+    "nota": "Não reaberto nesta rodada. São ferramentas grátis conhecidas (o OBS é GPL)."
+   },
+   {
+    "item": "TwitchDownloader (lay295): MIT, grátis",
+    "veredito": "confirmado",
+    "fonte_url": "https://github.com/lay295/TwitchDownloader"
+   },
+   {
+    "item": "Extensões e sites de download (Previews, KickBot, SnapTik): grátis",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://previews-app.com/features/twitch-clip-downloader",
+    "nota": "Não verificado. Baixar de terceiros fora da API oficial pode violar os termos das plataformas."
+   },
+   {
+    "item": "Sizzle.gg: teste grátis; US$ 4,99",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.sizzle.gg/universal"
+   },
+   {
+    "item": "Ssemble: grátis existe; US$ 6 no anual / US$ 15",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.ssemble.com/pricing",
+    "nota": "Os limites do grátis não estão publicados. Os US$ 15 aparecem riscados."
+   },
+   {
+    "item": "Kapwing: R$ 119,76 mensal; R$ 79,84/mês no anual",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.kapwing.com/pricing"
+   },
+   {
+    "item": "Google Cloud TTS: cota grátis",
+    "veredito": "confirmado",
+    "fonte_url": "https://cloud.google.com/text-to-speech/pricing"
+   },
+   {
+    "item": "Kokoro-82M: grátis (Apache)",
+    "veredito": "confirmado",
+    "fonte_url": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "nota": "Licença Apache-2.0 confirmada. A v1.0 tem 8 idiomas e 54 vozes; o suporte a pt-BR não foi confirmado nesta página (veja o VOICES.md)."
+   },
+   {
+    "item": "Fish Audio: US$ 11 a 15",
+    "veredito": "confirmado",
+    "fonte_url": "https://fish.audio/plan/"
+   },
+   {
+    "item": "Voz do CapCut / TikTok: grátis",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.capcut.com/pt-br/tools/text-to-speech",
+    "nota": "Não aberto nesta rodada."
+   },
+   {
+    "item": "Topaz Video: R$ 294,41 mensal; web US$ 19 no anual",
+    "veredito": "corrigido",
+    "fonte_url": "https://www.topazlabs.com/pricing",
+    "valor_correto": "Web Video: US$ 19/mês é preço promocional (cheio US$ 29); anual US$ 199 promocional (cheio US$ 299)."
+   },
+   {
+    "item": "Video2X: grátis",
+    "veredito": "confirmado",
+    "fonte_url": "https://github.com/k4yt3x/video2x",
+    "nota": "Licença AGPL-3.0. Exige GPU com Vulkan e CPU com AVX2."
+   },
+   {
+    "item": "Autoclipper (ferramenta): 60 créditos; R$ 49,90 a 99,90",
+    "veredito": "corrigido",
+    "fonte_url": "https://autoclipper.live/planos",
+    "valor_correto": "Grátis com 5 cortes/mês, 720p e marca. Pagos: R$ 49,90, R$ 99,90 e R$ 149,90 por mês."
+   },
+   {
+    "item": "Insights Capture: grátis, sem marca, 5 GB",
+    "veredito": "confirmado",
+    "fonte_url": "https://insights.gg/blog/insights-vs-outplayed",
+    "nota": "'Free with no ads and no watermark' confere; os 5 GB não foram confirmados."
+   },
+   {
+    "item": "Whop CoD MW4 Beta: US$ 1,75/1,50/1,75 por mil; mínimos US$ 3,50/4,50/5,25; teto US$ 2.500; US$ 78.928 com US$ 18 restantes; Paused; 986 participantes, média US$ 9,47, 58,7 mi de views",
+    "veredito": "confirmado",
+    "fonte_url": "https://contentrewards.com/discover/24ad920b-d24f-479e-9cef-f22182e4a0c0",
+    "nota": "Tudo confere; os requisitos estão num Google Doc fechado. O clipmap.gg lista a mesma campanha com 'US$ 150.000' e 833 envios, o que diverge do orçamento de US$ 78.928 na Whop; vale a da Whop. Campanha pausada: não conte com ela."
+   },
+   {
+    "item": "Whop: Roblox ForgeGUI US$ 1/mil, 3,5 mil participantes, US$ 171,8 mil de US$ 189,7 mil; CoD francês US$ 1,50; alemão US$ 1; nenhuma em português; Shuffle US$ 1,50",
+    "veredito": "confirmado",
+    "fonte_url": "https://contentrewards.com/discover",
+    "nota": "Confere. A listagem não mostra restrição de país para essas campanhas. Há também COINBASE x VALORANT a US$ 1/mil (US$ 8 mil de US$ 10 mil)."
+   },
+   {
+    "item": "Yuri22: R$ 222 mil, CLIP e EDIT de R$ 111 mil; 100 mil views para entrar no ranking CLIP; prêmios de R$ 30 mil a R$ 2.400; Pix em até 7 dias",
+    "veredito": "corrigido",
+    "fonte_url": "https://cdn.realoficial.com.br/championship-uploads/yuri22-v6-ovdyn7hz.pdf",
+    "valor_correto": "O regulamento NÃO fixa valores. Pela cl. 10.4, o total, o mínimo e a tabela ficam na aba 'Sobre o Campeonato', e o clipmap mostra R$ 222.000 e 25.716 envios. O mínimo de 100.000 views que o PDF cita é para o EDIT entrar na votação (cl. 8.9); o mínimo do CLIP fica na aba (cl. 10.2). Edição única de 11/09/2026 a 10/11/2026. Pix em até 7 dias (cl. 12.1) confirmado.",
+    "nota": "Os R$ 111 mil por categoria e a tabela de R$ 30 mil a R$ 2.400 não foram verificados em fonte primária acessível."
+   },
+   {
+    "item": "Yuri22: cl. 6.7, 6.8, 6.2 e 9.1 e",
+    "veredito": "confirmado",
+    "fonte_url": "https://cdn.realoficial.com.br/championship-uploads/yuri22-v6-ovdyn7hz.pdf",
+    "nota": "Confere, inclusive o exemplo de 40 mil que vira 60 mil. A cl. 6.9 diz que, depois de inscrito, o vídeo não tem teto de contagem."
+   },
+   {
+    "item": "Real Oficial: retém e bane por indícios; 'criação recente associada a números elevados', 'coincidência de padrões'; 9.1 d 'uso de múltiplas contas'; 72 h; chamada de vídeo",
+    "veredito": "confirmado",
+    "fonte_url": "https://cdn.realoficial.com.br/championship-uploads/yuri22-v6-ovdyn7hz.pdf",
+    "nota": "As cl. 9.3.1 a 9.3.4 conferem: prazo de pelo menos 72 h, prints de alcance, origem, retenção e demografia, e chamada com tela compartilhada. Silêncio ou material incompleto autoriza retenção e banimento. A 9.1 d cita 'tráfego pago e uso de múltiplas contas'."
+   },
+   {
+    "item": "Real Oficial: o que conta e o que não conta como alteração significativa (cl. 5.4 a 5.8)",
+    "veredito": "confirmado",
+    "fonte_url": "https://cdn.realoficial.com.br/championship-uploads/yuri22-v6-ovdyn7hz.pdf",
+    "nota": "Detalhe: a lista da cl. 5.6 trata de mexidas 'sobre um vídeo já editado por outro', não de cortar a fonte original. Bloqueio, ban em campeonatos futuros, compensação ou cobrança do que já foi sacado e remover marca alheia como agravante (5.8 f): confirmados."
+   },
+   {
+    "item": "Real Rewards: 6 campeonatos, R$ 68 mil; Wild Rift R$ 1/mil com R$ 15 mil; Gabriel Morais R$ 1/mil com R$ 8 mil; Rafael Toro R$ 0,50 com R$ 10 mil; Kosky R$ 15 mil (258); Podpah R$ 10 mil (816); IA R$ 10 mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://realoficial.com.br/pt/real-rewards",
+    "nota": "Confere; Vídeos com IA tem 145 participantes. O clipmap lista Wild Rift até 30/11 (4.233 envios), Kosky até 31/10 e Gabriel Morais até 31/12."
+   },
+   {
+    "item": "Klypex: 4Gamers de 01/10 a 30/10 com 3 posições pagas; Júnior e Cézar R$ 1/mil, teto R$ 200 por vídeo, R$ 9 mil; 'Grátis. Sem convite'",
+    "veredito": "confirmado",
+    "fonte_url": "https://klypex.com.br/",
+    "nota": "Júnior e Cézar vai de 04/08 a 04/11. Há também Silvercop (R$ 15 mil em ranking, até 21/10) e Mari Fernandez (R$ 9 mil, até 31/10), que não são de games."
+   },
+   {
+    "item": "Viewx LOUD Facada: R$ 9 mil, R$ 3 mil para o 1º, inscrições até 09/11, 347 inscritos, 5 redes, #facadarp",
+    "veredito": "confirmado",
+    "fonte_url": "https://viewx.com.br/campanhas/campeonato-de-cortes-loud-facada",
+    "nota": "O clipmap mostra o encerramento em 8/nov. Confira a data nos Termos."
+   },
+   {
+    "item": "clipmap: 9 de 194 campanhas são de games ou stream (13 com as ambíguas)",
+    "veredito": "confirmado",
+    "fonte_url": "https://clipmap.gg/",
+    "nota": "Os 194 são os encontrados no filtro 'Todos' (o índice total tem 1.770). As campanhas listadas conferem. Contagem limitada aos cards visíveis."
+   },
+   {
+    "item": "N3on pagou US$ 1,4 mi a 303 clipadores em 5 semanas; US$ 40 a 50 por 100 mil; top acima de US$ 100 mil/mês; ~1.000 na rede, metade Índia e Nigéria, metade paga pela Kick",
+    "veredito": "confirmado",
+    "fonte_url": "https://creatordb.app/creator-news/the-rise-of-the-clip-economy/",
+    "nota": "Confere na CreatorDB (26/08/2026), que cita o Business Insider via Tubefilter e Complex. O original não foi aberto. O grupo da Índia e da Nigéria foi montado com Adin Ross."
+   },
+   {
+    "item": "Agência Clip (Max Peterson, 22): US$ 500 mil a 1.300 clipadores de janeiro a setembro; ~16 mil na rede",
+    "veredito": "confirmado",
+    "fonte_url": "https://mediacat.uk/?p=44751",
+    "nota": "A MediaCat é de 22/04/2026 e cita entrevista ao The Ankler de setembro, provavelmente de 2025: o período é jan a set/2025."
+   },
+   {
+    "item": "NPR: Emrah Bayraktar US$ 12 e depois US$ 2.500; Bo Lucenko ~US$ 4.000/mês; taxas de US$ 0,50 a 25/mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.kunc.org/npr-news/2026-05-12/the-clipping-economy-how-short-form-video-clippers-are-overrunning-the-internet",
+    "nota": "Os US$ 25/mil são de uma 'artificial intelligence startup' sem nome; nada de cassino. O Polymarket pagou US$ 0,50/mil com orçamento de US$ 70 mil. Bayraktar hoje toca uma rede de 40 mil clipadores."
+   },
+   {
+    "item": "Benchmark FORKOFF: 3.085 cortes, 1,19 mi de views em 13 dias, US$ 1,00 a 1,25/mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://forkoff.xyz/blog/clipping/how-much-do-clippers-earn-2026",
+    "nota": "Confere (artigo de 25/05/2026). A agência vende clipagem gerenciada."
+   },
+   {
+    "item": "Reddit via FORKOFF: menos de 5% ganham mais de US$ 100/mês, ~1% mais de US$ 1.000",
+    "veredito": "confirmado",
+    "fonte_url": "https://forkoff.xyz/blog/clipping/how-much-do-clippers-earn-2026",
+    "nota": "A FORKOFF atribui a 'anonymous Reddit operator interview'. A data de jan/2026 e as 'comunidades de mais de 6 mil' não aparecem no resumo. É anedótico."
+   },
+   {
+    "item": "Clavicular: 1.500+ clipadores, ~70 mil cortes, mais de US$ 650 mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://forkoff.xyz/blog/clipping/how-much-do-clippers-earn-2026",
+    "nota": "Post de Jake Lucky citando Devin Nash, que usa 'likely'. O original não foi verificado."
+   },
+   {
+    "item": "Ascynd: games pagam US$ 0,30 a 1,50/mil; cripto US$ 4 a 9; mês 1 de US$ 0 a 80; US$ 400 a 1.500 com 10 a 20 cortes/dia",
+    "veredito": "confirmado",
+    "fonte_url": "https://ascynd.io/en/blog/get-paid-to-clip-streamers",
+    "nota": "Confere. A mesma página diz que campanhas de streamer costumam pagar US$ 1 a 3/mil e que a Vyro paga US$ 3/mil com teto de US$ 1.000 por clipe. Tetos de US$ 100 a 500 e acordos diretos conferem."
+   },
+   {
+    "item": "Kick não publica taxa oficial para clipadores",
+    "veredito": "confirmado",
+    "fonte_url": "https://findclout.com/blog/kick-clipping-program",
+    "nota": "A FindClout, em set/2026, confirma e lista sinais de golpe. A Win.gg (3 bi de views em set/2025) e o financiamento por intermediários em abril/2026 não estão nesta fonte e não foram verificados."
+   },
+   {
+    "item": "Cassino na Kick paga US$ 10+/mil; maior taxa de ban; perde o pendente; Roobet US$ 1,50 com US$ 250 mil",
+    "veredito": "confirmado",
+    "fonte_url": "https://openclip.app/guides/clipping-on-kick",
+    "nota": "Confere, inclusive a recomendação de contas isoladas, que não deve ser seguida."
+   },
+   {
+    "item": "YouTube: Short de mais de 1 min com claim ativo de qualquer tipo é bloqueado no mundo todo; sem penalidade",
+    "veredito": "confirmado",
+    "fonte_url": "https://support.google.com/youtube/answer/15424877?hl=en",
+    "nota": "Vale para claim de qualquer tipo, inclusive manual, e para uploads depois de 15/10/2024. Resolvido o claim, o Short volta a tocar e a monetizar."
+   },
+   {
+    "item": "YouTube: 3 strikes em 90 dias; não pode criar canal; canais vinculados; expira em 90 dias com a Escola",
+    "veredito": "confirmado",
+    "fonte_url": "https://support.google.com/youtube/answer/2814000?hl=en"
+   },
+   {
+    "item": "Content ID e games: trilha só é referência se for da publisher; não vale para música licenciada; gameplay de não publisher",
+    "veredito": "confirmado",
+    "fonte_url": "https://support.google.com/youtube/answer/2605065",
+    "nota": "Correção técnica: o gameplay enviado por quem não é a publisher é INELEGÍVEL como referência ('Video gameplay footage (by other than the game's publisher)'), não elegível. A música licenciada fica fora da regra da publisher e pode ser reivindicada pela gravadora."
+   },
+   {
+    "item": "TikTok: limite de strikes por tipo, expiram em 90 dias, várias denúncias contam como 1, ban imediato em caso grave",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.tiktok.com/legal/page/global/copyright-policy/en",
+    "nota": "A página citada só confirma a política de infrator reincidente e o ban imediato em violação grave. Os 90 dias e o agrupamento das denúncias estão na seção de enforcement das Community Guidelines, que não carregou. As datas de 25/08 e 24/09/2026 também não foram confirmadas."
+   },
+   {
+    "item": "TikTok Creator Academy: conteúdo não original sai do Para Você; marca d'água de outro",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.tiktok.com/community-guidelines",
+    "nota": "A página não carregou o texto."
+   },
+   {
+    "item": "Creator Rewards BR: 18+, 10 mil seguidores, 100 mil views em 30 dias, sem Business, vídeo de 1 min ou mais, US$ 50, dia 15, PayPal/Hyperwallet, IOF",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.tiktok.com/legal/page/global/tiktok-creator-rewards-program-br/en"
+   },
+   {
+    "item": "Instagram: até 5 contas no app",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://help.instagram.com/1682672155283228",
+    "nota": "A Central de Ajuda é renderizada por JS e não carregou."
+   },
+   {
+    "item": "TikTok: telefone ou e-mail vinculado a uma conta só",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://support.tiktok.com/en/getting-started/creating-an-account",
+    "nota": "Redireciona para tiktok.com/support/faq_detail?id=7581821549574052364, que não carregou o texto."
+   },
+   {
+    "item": "Blog da Real Oficial: prêmio em 30 a 60 dias; views antes da inscrição; clip nativo de até 60 s; Shorts cai depois da auditoria; podcast sem edição e o YPP",
+    "veredito": "confirmado",
+    "fonte_url": "https://realoficial.com.br/pt/blog/campeonato-de-cortes-checklist-antes-de-participar",
+    "nota": "Todos os pontos confirmados. CONFLITO: o regulamento do Yuri22 (cl. 12.1) paga em até 7 dias depois do fim e da apuração. Os '30 a 60 dias' são genéricos do blog."
+   },
+   {
+    "item": "Whop: pagamento aprovado cai na hora, saque no mesmo dia",
+    "veredito": "confirmado",
+    "fonte_url": "https://whop.com/blog/whop-clips/",
+    "nota": "'Approved payouts are instant' e 'Many users make and withdraw money on their first day'. O prazo de aprovação não é informado. A FORKOFF estima o 1º pagamento em 7 a 14 dias."
+   },
+   {
+    "item": "Business Insider: campanhas de US$ 1 a 4/mil; elite com fixo de US$ 500 a 1.500/mês",
+    "veredito": "confirmado",
+    "fonte_url": "https://finance.yahoo.com/markets/articles/clipping-side-hustle-youve-never-110000379.html",
+    "nota": "Moneywise via Yahoo, de 12/06/2026, citando o Business Insider. A data de 'mar/2026' do BI não foi confirmada."
+   },
+   {
+    "item": "Reclame Aqui: curso MCL (Hubla), reembolso negado; mentoria de R$ 297; curso de R$ 99,90",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://www.reclameaqui.com.br/chatpay-tecnologia/reclamacao-sobre-o-curso-mcl-metodo-clipador-lucrativo-de-ruyter-dificuldade-de-contato-e-promessa-de-reembolso-nao-cumprida_ttytTYWFK0iRyrtI/",
+    "nota": "HTTP 403. A URL indica a empresa 'chatpay-tecnologia', não Hubla; confira."
+   },
+   {
+    "item": "The Clippers (Autoclipper): WhatsApp grátis, mais de 30 mil, 'Ganhe até R$ 15.000/mês', curso 'Viralize em 4 Semanas'",
+    "veredito": "confirmado",
+    "fonte_url": "https://autoclipper.live/the-clippers",
+    "nota": "O preço do curso não é informado. Networking Cortes (5.000+) e Clipou Premium (R$ 97) não foram verificados."
+   },
+   {
+    "item": "Golpes: DM imitando equipe; bot de verificação falso; alerta de 10/02/2026",
+    "veredito": "corrigido",
+    "fonte_url": "https://findclout.com/blog/clipping-discord-scams",
+    "valor_correto": "A página é de 27/09/2026 (não 10/02/2026). A regra dela é que nenhuma plataforma legítima de campanha ou de contagem de views pede senha, código 2FA, QR code ou 'acesso temporário de gerente'. A frase sobre 'bots e equipe do Discord' não está na fonte.",
+    "nota": "A variante do QR code no app do Discord entrega a sessão ao golpista."
+   },
+   {
+    "item": "DMCA em massa contra clips da Twitch em 2021",
+    "veredito": "corrigido",
+    "fonte_url": "https://kotaku.com/after-massive-dmca-takedown-twitch-streamers-are-delet-1843954430",
+    "valor_correto": "Foi em junho de 2020 (matéria de 08/06/2020): a primeira onda de DMCA em massa contra clips com música de 2017 a 2019, atribuída a uma entidade ligada à RIAA."
+   },
+   {
+    "item": "Páginas de virais: Jukin, ViralHog, Newsflare reivindicam; petição; FindClout 40% de público EUA",
+    "veredito": "confirmado",
+    "fonte_url": "https://www.change.org/p/ban-viralhog-for-their-unethical-and-predatory-false-copyright-strikes",
+    "nota": "A petição confere. A regra da FindClout (40% de público nos EUA, recusa 19 de 20) não foi verificada."
+   },
+   {
+    "item": "Instagram removeu pelo menos 30 páginas de memes, mais de 30 mi de seguidores; dono faturou mais de US$ 600 mil",
+    "veredito": "corrigido",
+    "fonte_url": "https://www.searchenginejournal.com/instagram-purges-meme-accounts-shutting-down-pages-with-millions-of-followers",
+    "valor_correto": "A SEJ (30/07/2019) fala em 'dozens' de contas e mais de 30 mi de seguidores, citando 'multiple violations of platform policies'. Ela não menciona US$ 600 mil; cita um dono que ganhava até US$ 30 mil/ano.",
+    "nota": "Para manter os US$ 600 mil, ache outra fonte."
+   },
+   {
+    "item": "Ganhos BR: Cut.Pro R$ 400 a 1.200 e R$ 300 a 800; depoimentos Clipou R$ 3.200 e KlipCorte R$ 180",
+    "veredito": "corrigido",
+    "fonte_url": "https://cut.pro/en/blog/how-much-a-clipper-earns-2026",
+    "valor_correto": "As faixas de R$ 400 a 1.200/mês e R$ 300 a 800 conferem, assim como R$ 2.500 a 4.500 entre 6 e 12 meses. Os depoimentos da Clipou e da KlipCorte NÃO estão nesta página.",
+    "nota": "A Cut.Pro também diz que programas pagam R$ 8 a 20/mil, sem fonte. Trate como estimativa de fornecedor."
+   },
+   {
+    "item": "Clip nativo da Twitch + Video Producer: grátis",
+    "veredito": "confirmado",
+    "fonte_url": "https://realoficial.com.br/pt/blog/campeonato-de-cortes-checklist-antes-de-participar",
+    "nota": "O clip nativo é grátis. 'Video Producer' não aparece na fonte citada."
+   },
+   {
+    "item": "Clip nativo da Kick (atalho C): grátis",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://ascynd.io/en/blog/get-paid-to-clip-streamers",
+    "nota": "A fonte não cita o atalho C."
+   },
+   {
+    "item": "contentrewards.com/discover: grátis, taxa de 10%",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://contentrewards.com/discover/24ad920b-d24f-479e-9cef-f22182e4a0c0",
+    "nota": "A listagem e os blogs da Whop não mostram a taxa de 10%."
+   },
+   {
+    "item": "Biblioteca de áudio do YouTube: grátis",
+    "veredito": "confirmado",
+    "fonte_url": "https://support.google.com/youtube/answer/13486873?hl=en",
+    "nota": "'The royalty-free music won't receive a Content ID claim.' Na biblioteca de áudio dos Shorts, dá para usar até 90 s de música em Short de 3 min, dependendo da faixa."
+   },
+   {
+    "item": "TikTok Studio Analytics e Insights de Reels: grátis",
+    "veredito": "nao_verificavel",
+    "fonte_url": "https://help.instagram.com/202865988324236",
+    "nota": "A Central de Ajuda do Instagram não carregou o texto."
+   }
+  ],
+  "alertas_gerais": [
+   "O orçamento de WebSearch do turno se esgotou logo no início. Toda a verificação foi feita com WebFetch e curl direto nas páginas primárias. Não foi possível buscar fontes alternativas para os itens 'nao_verificavel'.",
+   "Yuri22: o regulamento em PDF não fixa valores (cl. 10.4). Os R$ 222 mil vêm só do clipmap, e o mínimo de 100 mil views citado no PDF é do EDIT, não do CLIP. O campeonato termina em 10/11/2026.",
+   "A Real Oficial se contradiz no prazo de pagamento: o blog fala em 30 a 60 dias; o regulamento do Yuri22 manda pagar por Pix em até 7 dias depois da apuração.",
+   "A API de download de clipes da Twitch (Get Clips Download) só funciona para o streamer ou um editor do canal. Clipador de terceiros não usa. O Get Clips devolve no máximo 100 por página e ~1.000 por filtro.",
+   "A campanha CoD MW4 Beta da Whop está PAUSADA, com US$ 18 restantes. O clipmap mostra orçamento de US$ 150 mil, que diverge da Whop (US$ 78.928).",
+   "Prazos de promoção: ElevenLabs Starter a US$ 1 só até 18/10; Topaz Web Video com preço promocional (cheio: US$ 29/mês, US$ 299/ano).",
+   "Erros de fato a corrigir no guia: a onda de DMCA da Twitch foi em 2020, não 2021; o Autoclipper grátis dá 5 cortes/mês, não 60 créditos; a SEJ não cita US$ 600 mil; os depoimentos da Clipou e da KlipCorte não estão na fonte da Cut.Pro; a faixa de £ 25 a 100 da Newsflare não está na fonte.",
+   "Páginas de preço renderizadas por JS e não verificadas: VEED, Higgsfield (os metadados oficiais citam os planos Basic, Pro, Ultimate e Creator, sem 'Starter'), StreamLadder (a única fonte é um PR gerado por IA) e Streamlabs Ultra mensal (US$ 27)."
+  ]
+ }
+]
