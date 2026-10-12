@@ -42,13 +42,17 @@ Este arquivo não muda sozinho. O estado vivo (cortes, campanhas, semanas, fonte
 12. Virais: fails, sustos e engraçados. Gameplay própria só depois do PC novo.
 13. Tudo roda no Projeto do Claude Chat.
 
-## Pendências de dinheiro (ordem)
-1. Whop logado: a campanha Dark Heresy ainda aparece em "suas campanhas"? Se sim, ler prazo e regras de envio e inscrever os 2 Shorts (youtube.com/shorts: "Dark Heresy looks INSANE", 1.350 views, 10/10; "Dark Heresy has co-op for 1-4 players", 1.123 views, 11/10). Se o regulamento exigir #ad ou #publi, editar a descrição antes. Se a campanha fechou, perdeu, segue.
-2. Cadastro e vínculo das contas em Real Oficial, Viewx, Klypex, Conty e Estourou.
-3. Entrar em Wild Rift e Stream Gabriel Morais (por view) e no ranking Pichau. Colar os regulamentos no chat.
-4. Conectar as contas no OpusClip e criar o template.
-5. Deixar privado o DEMO publicado com restrição de 18 anos.
-6. Apagar ou manter pausada a rotina antiga VARREDURA CLIPADOR (trig_01LTdtdEQAcGoHgDYu3EmtM7).
+## Configuração guiada (o Claude conduz, um passo por vez, na ordem)
+1. Whop (whop.com, conta zackfairplay): abrir "suas campanhas" e ver se a Warhammer Dark Heresy ainda aparece. Se sim, abrir as regras, colar o texto no chat e inscrever os 2 Shorts ("Dark Heresy looks INSANE", 1.350 views, 10/10; "Dark Heresy has co-op for 1-4 players", 1.123 views, 11/10). Se exigir #ad ou #publi, editar a descrição antes. Se a campanha fechou, segue.
+2. Real Oficial (realoficial.com.br/pt/real-rewards): criar conta, vincular TikTok @zackairgames e YouTube @zackfair1564, entrar em Wild Rift e Stream Gabriel Morais, colar os dois regulamentos no chat.
+3. Viewx (viewx.com.br): criar conta, vincular as mesmas contas, entrar no ranking João Pichau, colar o regulamento.
+4. Klypex (klypex.com.br), Conty (appconty.com/seja-clipador) e Estourou (estourou.com): criar conta e vincular. Só olhar as campanhas; não entrar ainda.
+5. OpusClip (opus.pro), no computador: Configurações > Contas sociais > conectar TikTok @zackairgames e YouTube @zackfair1564.
+6. OpusClip: Brand templates > novo template "GAMES": 9:16, layout Gameplay, legenda em caixa alta, 2 a 4 palavras por linha, destaque amarelo, sem gancho automático, sem emoji. Depois o Claude confere com opusclip_list_brand_templates.
+7. YouTube Studio da @zackfair1564: deixar privado o Short "A tense exchange..." (DEMO publicado por engano, restrito a 18 anos).
+8. Marca VIRAIS, no celular: criar TikTok pessoal novo e canal do YouTube novo (Conta Google separada, verificação em 2 etapas). Bio: "fails e sustos que o Brasil ainda não viu". Mandar os @ no chat; o Claude grava na aba LEIA-ME.
+9. Rotinas do Claude: apagar a rotina antiga VARREDURA CLIPADOR (17h57). A nova, RADAR CLIPADOR (13h46), fica.
+10. Primeiro CLIPAR: com o regulamento do Wild Rift, o Claude pede o link do acervo ou da VOD e os minutos dos momentos, e entrega os 3 primeiros clipes e a FILA.
 
 ## Rotina automática
 - RADAR CLIPADOR: id trig_01NZimqeU41Vg4NdWsX4dLX6, diária, 13h46 de Manaus, sessão nova, só busca web, notificação no celular. Criada em 12/10. Prompt em 07-RADAR-ROTINA.

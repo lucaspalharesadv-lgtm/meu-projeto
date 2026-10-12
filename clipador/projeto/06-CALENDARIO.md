@@ -20,10 +20,7 @@ Total: ~5 h, sendo ~1 h de postagem e registro. Se o dia tiver só 2 h, a ordem 
 ## Semana 1 (12 a 18/10): base e primeiros 60 clipes
 
 Dia 1 (segunda, 12/10):
-- Lucas: criar o Projeto no Claude Chat com o 00-COMO-INSTALAR. Conectar TikTok e YouTube da marca GAMES no OpusClip (interface do OpusClip, Configurações > Contas sociais). Criar o template "GAMES" no OpusClip.
-- Lucas: cadastrar na Real Oficial, Viewx, Klypex, Conty, Estourou (todos grátis, Pix). Vincular @zackairgames e @zackfair1564. Conferir no Whop (logado) se a campanha Dark Heresy ainda aparece em "suas campanhas" e, se aparecer, enviar os 2 Shorts de 1.350 e 1.123 views.
-- Lucas: criar as contas da marca VIRAIS (TikTok pessoal + YouTube com 2 etapas), bio "fails e sustos que o Brasil ainda não viu".
-- Lucas: entrar nas campanhas Wild Rift e Stream Gabriel Morais (Real Oficial, R$ 1 por mil) e no ranking Pichau (Viewx, R$ 69 por participante, até 01/11). Colar os 3 regulamentos no chat.
+- Lucas: instalar o projeto (3 passos) e fazer com o Claude a configuração guiada da seção 02 PAINEL: 10 passos, um de cada vez, cerca de 1 h.
 - Claude: ficha das 3 campanhas na aba CAMPANHAS. Primeira rodada de CLIPAR com o acervo.
 - Meta do dia: 3 clipes publicados em 2 redes (6 posts), todos inscritos.
 
