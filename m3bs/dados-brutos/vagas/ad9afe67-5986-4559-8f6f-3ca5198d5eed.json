@@ -1,0 +1,52 @@
+{
+ "tenantName": "M3Bs",
+ "about": "<p>O <strong>M3BS Advogados </strong>é um escritório full service com especialização no setor da saúde. Atuamos com excelência técnica em diversas frentes jurídicas — consultiva, contenciosa e regulatória — atendendo operadoras de planos de saúde, hospitais, clínicas, startups, empresas contratadas pelo poder público e demais agentes do ecossistema da saúde suplementar.</p><p>Com sede em São Paulo e abrangência nacional, o <strong>M3BS</strong> alia visão estratégica, domínio técnico e profundo conhecimento do setor para oferecer soluções jurídicas completas e alinhadas às necessidades de seus clientes.</p><p>Nossa atuação é marcada pela integração entre áreas como contencioso cível, regulatório (ANS), contratos, societário, tributário, negócios públicos e compliance — tudo sob uma estrutura colaborativa, moderna e voltada para resultado.</p>",
+ "background": [
+  "https://files.inhire.app/pages/career/banner_m3bs.png"
+ ],
+ "logo": "https://files.inhire.app/pages/career/logo_m3bs.png",
+ "activeJobBoards": [
+  "indeedATSIntegration",
+  "linkedin",
+  "talent",
+  "jobBoardPool",
+  "netVagas"
+ ],
+ "careerPageId": "default",
+ "careerPageIds": [
+  "default"
+ ],
+ "contractType": [
+  "Estágio"
+ ],
+ "createdAt": "2026-09-15T19:32:32.049Z",
+ "description": "<p>Est&aacute;gio &ndash; Contencioso C&iacute;vel Geral</p>\n<p>&nbsp;</p>\n<p>Local: S&atilde;o Paulo/SP</p>\n<p>&nbsp;</p>\n<p>Modelo: Est&aacute;gio | 100% Presencial</p>\n<p>&nbsp;</p>\n<p>Estamos em busca de um(a) estudante de Direito, do 6&ordm; ao 7&ordm; semestre para integrar nossa equipe de Contencioso C&iacute;vel Geral.</p>\n<p>&nbsp;</p>\n<p>Se voc&ecirc; possui boa comunica&ccedil;&atilde;o, vontade de aprender e interesse em atuar no contencioso estrat&eacute;gico, essa oportunidade &eacute; para voc&ecirc;!</p>\n<p>&nbsp;</p>\n<p><strong>Principais atividades:</strong></p>\n<p>&bull; Aux&iacute;lio na elabora&ccedil;&atilde;o de minutas de pe&ccedil;as processuais e relat&oacute;rios;</p>\n<p>&bull; Pesquisas doutrin&aacute;rias e jurisprudenciais;</p>\n<p>&bull; Acompanhamento processual em plataformas eletr&ocirc;nicas e controle de prazos;</p>\n<p>&bull; Organiza&ccedil;&atilde;o de documentos e atualiza&ccedil;&atilde;o de sistemas internos;</p>\n<p>&bull; Suporte em audi&ecirc;ncias, dilig&ecirc;ncias e rotinas administrativas jur&iacute;dicas.</p>\n<p>&nbsp;</p>\n<p><strong>Requisitos:</strong></p>\n<p>&bull; Estar cursando Direito entre o 6&ordm; e 7&ordm; semestre;</p>\n<p>&bull; Disponibilidade para atua&ccedil;&atilde;o presencial.</p>\n<p>&nbsp;</p>\n<p><strong>Benef&iacute;cios:</strong></p>\n<p>Vale transporte;</p>\n<p>Vale alimenta&ccedil;&atilde;o/refei&ccedil;&atilde;o;</p>\n<p>Seguro de vida.</p>\n<p>Total Pass;</p>\n<p>Parcerias acad&ecirc;micas.</p>",
+ "displayName": "Estágio – Contencioso Cível Geral",
+ "jobBoardsData": {
+  "indeedATSIntegration": {
+   "jobUrl": "https://m3bs.inhire.app/vagas/ad9afe67-5986-4559-8f6f-3ca5198d5eed/estagio-contencioso-civel-geral?source=indeed",
+   "jobKey": "94db6899a39d6ec1"
+  }
+ },
+ "lastPublishedAt": "2026-09-15T19:32:32.049Z",
+ "publishedAt": "2026-09-15T19:32:32.049Z",
+ "settings": {
+  "requiredFields": [
+   "linkedin",
+   "curriculum",
+   "workModel"
+  ],
+  "fields": [
+   "linkedin",
+   "curriculum",
+   "workModel"
+  ]
+ },
+ "status": "published",
+ "updatedAt": "2026-10-09T16:29:26.389Z",
+ "jobId": "ad9afe67-5986-4559-8f6f-3ca5198d5eed",
+ "workplaceType": "On-site",
+ "location": "São Paulo, SP, BR",
+ "locationComplement": "",
+ "salaryCurrency": "BRL"
+}
