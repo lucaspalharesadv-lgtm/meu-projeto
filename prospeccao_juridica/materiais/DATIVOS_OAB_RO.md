@@ -40,7 +40,12 @@ Contas rápidas: 4 nomeações integrais por mês = R$ 8.700. Nenhum cliente a c
 ## Situação atual (verificada em 08/10/2026)
 
 - Último chamamento geral da OAB-RO que localizei: **Edital 01/2021** (01/11/2021), inscrição por e-mail à Secretaria-Geral com o assunto "Inscrição para Edital de Chamamento para Advocacia Dativa Nº 01/2021", prazo de 15 dias, lista com validade de 12 meses prorrogável por 6. Sorteio em 10/12/2021 com quase 900 inscritos.
-- Não encontrei chamamento geral novo de 2024, 2025 ou 2026 no site da OAB-RO. O que existe de recente é o **Edital 001/2025 do TED** (dativos do Tribunal de Ética, atuação em processos disciplinares, não é o mesmo cadastro).
+- Não encontrei chamamento geral novo de 2024, 2025 ou 2026 no site da OAB-RO.
+
+### Atenção: o dativo do TED não paga (verificado em 26/10/2026)
+O que existe de recente é o **Edital 001/2025 do TED/OAB/RO**, e ele é outra coisa: cadastro para defender advogados em processos éticos e disciplinares da própria OAB. Li o edital inteiro e o item 6.2 diz, literalmente: "O múnus de defensor (a) dativo (a), assim como demais atribuições no âmbito da OAB/RO, possui o cunho voluntário, portanto, sem remuneração."
+- Ou seja: **não serve para ganhar dinheiro**. O dativo que paga é o judicial, da Instrução Conjunta 009/2021, com honorários da Tabela II pagos pelo Estado (seção acima).
+- Dados do edital do TED, se algum dia interessar como experiência ou relacionamento na Ordem: inscrição por e-mail a **tribunaldeetica@oab-ro.org.br** (endereço escrito no próprio edital), com requerimento no modelo do Anexo I e currículo atualizado; exige inscrição regular, anuidades em dia, nenhuma condenação disciplinar vigente e endereço profissional e residencial em Rondônia; até 50 vagas, por ordem cronológica de pedido; janela de 12 a 24/03/2025, já encerrada.
 - A norma foi alterada em 2025 e duas vezes em 2026, o que indica que o sistema está ativo. Se a lista de 2021 venceu e não foi renovada, vale o **art. 8º, § 3º**: o Diretor do Fórum de cada comarca pode abrir edital local.
 
 ## O que fazer (nesta ordem)
