@@ -6,9 +6,31 @@
 - **Lote 8 (10/10/2026):** `.com` com palavra jurídica em português nas outras 17 edições do grafo (10.213 domínios) e **grafo de hosts** `.br` (subdomínio com palavra jurídica, 1.770 hosts: Jusfy, site.adv.br, jur.adv.br, jud.adv.br, blogspot.com.br, webnode etc.). Resultado: `estado/cc7_done_lote8.json`. Lista montada por `wg8_universo.py`. Rendeu 362 e-mails: os sites do Jusfy não publicam e-mail no HTML, e o site.adv.br estava fora do ar.
 - Bloqueadas ou inúteis: LinkedIn, BNE, Catho, Jooble, InfoJobs, Vagas.com, Juris Vagas e o portal do DJEN (bloqueia acesso de fora do Brasil).
 
+## Fonte do Lote 10 (parte 2): as ARESTAS do grafo, não o nome do domínio
+
+O filtro por nome só acha quem põe "adv", "advocacia" ou "juridico" no domínio, e ainda traz lixo
+("flex", "complex", "alex", "oab" dentro de outra palavra: colégio, engenharia, motoboy). A parte 2
+do Lote 10 troca o sinal: vale quem **linka** para um hub jurídico brasileiro.
+
+1. `bash wg11_arestas.sh` — lê em stream o arquivo de arestas da edição (7,6 GB .gz, nada gravado em
+   disco) e guarda só as arestas que apontam para conjur, escavador, jusbrasil, jusdecisum, migalhas,
+   cnj ou oab (ids tirados do arquivo de vértices). As arestas vêm ordenadas pelo domínio de origem e
+   a faixa `.br` termina no id 6.244.778: quando a origem passa disso, o Brasil inteiro já foi lido e
+   dá para interromper o download (foram ~12 minutos, não as horas que o arquivo inteiro levaria).
+2. `python3 wg11_universo.py` — mapeia id para domínio, tira órgão público, universidade, imprensa,
+   portal de vagas, hospedagem gratuita, os próprios hubs e tudo que já está em `hosts_ja_vistos.json`.
+   Resultado: 13.094 domínios `.br` ligados a hub jurídico, 9.390 nunca visitados.
+3. `WG=wg11_novos.json TAG=gK SHARD=k/6 python3 cc7_process.py HUB 0` — visita.
+4. `CANDS=... DRY=1 ORIGEM="site linkado ao portal da OAB ou a portais juridicos no grafo de links" python3 final_add10.py`
+
+Rendimento: **32% dos sites com e-mail, contra 13% do filtro por nome**, e os escritórios são de outro
+tipo — os que têm só o nome dos sócios no domínio (Arruda Alvim Aragão & Lins, Souto Correa, Finocchio
+& Ustra, Araújo Policastro), que o filtro por nome nunca via.
+
 ## Ideias que ainda não foram tentadas
 - Hosts `.com` em plataformas (`*.wixsite.com`, `*.blogspot.com`, `*.wordpress.com`) com nome jurídico em português: ficam nas partes `com.*` dos vértices de host (arquivos grandes). Rendimento provável baixo, porque blogs raramente são escritórios.
 - Domínios que deram "sem acesso" (63 mil nos Lotes 7 e 8) podem voltar a responder em alguns meses. Rendimento baixo.
+- Mesma varredura por arestas com outros alvos: quem linka para tribunais (tjsp, trf1, trt), para o PJe ou para a Receita.
 - Daqui para a frente, o Common Crawl só traz novidade a cada nova edição do grafo (a cada ~3 meses): basta repetir o passo a passo só com a edição nova.
 
 ## Como rodar uma rodada nova (exemplo do Lote 7)

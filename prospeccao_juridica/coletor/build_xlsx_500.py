@@ -11,7 +11,7 @@ from fixenc import fix
 SP = os.path.dirname(os.path.abspath(__file__))
 EST = os.path.join(SP, 'estado')
 ENR = json.load(open(os.path.join(SP, 'enrich_cache.json'))) if os.path.exists(os.path.join(SP, 'enrich_cache.json')) else {}
-LOTE = 9      # lote desta rodada: na proxima rodada, troque so este numero (e o texto do LEIA-ME abaixo)
+LOTE = 10     # lote desta rodada: na proxima rodada, troque so este numero (e o texto do LEIA-ME abaixo)
 LOTES = {}   # e-mail -> numero do lote anterior; quem nao esta em nenhum e do lote novo
 for _n in range(1, LOTE):
     _f = os.path.join(EST, f'lote{_n}_emails.json')
@@ -53,7 +53,11 @@ def extra(r):
     vaga = r[12] if re.search(r'CONTRATANDO|vaga', r[16], re.I) and r[12] else ''
     lote = LOTES.get(r[3].strip().lower(), LOTE_NOVO)
     if not p and r[3].strip().lower() in PREV and lote != LOTE_NOVO:
-        return [lote] + PREV[r[3].strip().lower()][1:]
+        # reaproveita as colunas da planilha anterior, MENOS a abordagem: ela e recalculada do
+        # 'Modelo de ganho' e do 'Tipo de oportunidade' de agora, senao o texto de parceria sobrevive.
+        prev = list(PREV[r[3].strip().lower()][1:])
+        if len(prev) > 5: prev[5] = PFL.abordagem(None, r[6], r[12])
+        return [lote] + prev
     if not p:
         return [lote, '', '', '', '', ('Vaga anunciada: ' + vaga + '.') if vaga else '', PFL.abordagem(None, r[6], r[12]), e.get('alerta', '')]
     sinais = '; '.join(x for x in [
@@ -171,7 +175,7 @@ txt = [
  ("", ""),
  ("Coluna 'Domínio válido (MX)'", "Validação técnica feita SEM enviar nada: consulta ao DNS confirmando que o domínio do e-mail tem servidor de e-mail. Todos passaram. E-mails cujo domínio não existe mais foram RETIRADOS (estão na aba 'Fora da lista')."),
  ("Coluna 'Confirmação'", "Todos 'Confirmado': o e-mail foi lido literalmente na página indicada em 'Fonte'. Nesta planilha NÃO há e-mail inferido/deduzido."),
- ("Coluna 'Lote'", f"1 = primeira entrega (359); 2 = segunda rodada (681); 3 = terceira rodada (680); 4 = quarta rodada (1.077, sites .adv.br); 5 = quinta rodada (1.552, sites .com.br); 6 = sexta rodada (700: nova tentativa, .com.br ampliado, sites .com brasileiros e e-mails em domínio diferente conferidos); 7 = sétima rodada (6.449: escritórios achados pelo grafo de links do Common Crawl, que lista também sites nunca rastreados pelo índice; .adv.br, .com.br, .com e outros .br); 8 = oitava rodada (362: sites .com de escritórios brasileiros em mais 17 edições do grafo e sites de advogados em subdomínio de plataformas como Jusfy, site.adv.br e jur.adv.br); 9 = os novos desta rodada ({N_NOVO}: e-mail achado na página de política de privacidade, LGPD, termos de uso ou equipe de escritórios que não mostram e-mail na página inicial). A aba 'Lote 9 (novos)' mostra só eles. Filtre por aqui para não repetir quem você já contatou."),
+ ("Coluna 'Lote'", f"1 = primeira entrega (359); 2 = segunda rodada (681); 3 = terceira rodada (680); 4 = quarta rodada (1.077, sites .adv.br); 5 = quinta rodada (1.552, sites .com.br); 6 = sexta rodada (700: nova tentativa, .com.br ampliado, sites .com brasileiros e e-mails em domínio diferente conferidos); 7 = sétima rodada (6.449: escritórios achados pelo grafo de links do Common Crawl, que lista também sites nunca rastreados pelo índice; .adv.br, .com.br, .com e outros .br); 8 = oitava rodada (362: sites .com de escritórios brasileiros em mais 17 edições do grafo e sites de advogados em subdomínio de plataformas como Jusfy, site.adv.br e jur.adv.br); 9 = nona rodada (305: e-mail achado na página de política de privacidade, LGPD, termos de uso ou equipe de escritórios que não mostram e-mail na página inicial); 10 = os novos desta rodada ({N_NOVO}: edição ago-set-out/2026 do grafo de links. Parte 1 pelo nome do domínio; parte 2, maior, pelas ligações do grafo — sites .br que linkam para a OAB, o Jusbrasil, o Conjur, as Migalhas ou o CNJ, o que acha o escritório cujo site é só o nome dos sócios). A aba 'Lote 10 (novos)' mostra só eles. Filtre por aqui para não repetir quem você já contatou."),
  ("Colunas de PERSONALIZAÇÃO", "Frase do site (copiada literalmente do site oficial), Áreas e Cidades citadas no site, Sinais (trabalhe conosco, correspondentes, contencioso de massa, atuação nacional, ano de fundação). Tudo foi lido no site do escritório - nada inventado."),
  ("Coluna 'Gancho para personalizar'", "Resumo pronto dos fatos acima para o Claude/Cowork usar na primeira frase do e-mail (ex.: citar a área forte do escritório ou a vaga anunciada)."),
  ("Coluna 'Abordagem sugerida'", "A = candidato (vaga/associado/banco de talentos); B = fornecedor (correspondência para escritório de volume); C = proposta de parceria com divisão de honorários."),
