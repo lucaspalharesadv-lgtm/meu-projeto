@@ -11,6 +11,7 @@ BASE = f'https://data.commoncrawl.org/cc-index/collections/{ED}/indexes/'
 RX = {
  'OLD': r'advoc|advog|juridic|jurídic|(^|[.-])adv($|[.-])|escritorio|lawyer|law($|[.-])',
  'NEW': r'direito|previdenci|trabalhist|tributari|associados|consultoriajur|defesad|(^|[.-])causas?($|[.-])',
+ 'ALL': r'.',
  'COM': r'advocacia|advogad|juridic|previdenciari|trabalhista|escritoriodeadv',
 }
 if RXN == 'OLDNEW': HOSTRE = re.compile(RX['OLD'] + '|' + RX['NEW'], re.I)
