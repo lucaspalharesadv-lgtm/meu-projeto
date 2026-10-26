@@ -1,79 +1,26 @@
-# Prompt para colar no Claude Chat (candidatura a emprego, remoto)
+Prompt para colar no Claude Chat (candidatura a emprego, remoto).
+Anexe a planilha PARCERIAS_ASSOCIADO_500.xlsx e o currículo em PDF na mesma mensagem, com o conector do Gmail ligado. Cole daqui para baixo.
 
-Anexe os dois arquivos antes de enviar: **PARCERIAS_ASSOCIADO_500.xlsx** e o **currículo em PDF**.
-Precisa do conector do Gmail ligado. Cole daqui para baixo.
+Você é meu assistente de recrutamento reverso. Anexei dois arquivos, uma planilha de escritórios de advocacia e empresas e o meu currículo em PDF. Seu trabalho é montar rascunhos de e-mail no Gmail me candidatando a uma vaga em cada um deles, um por um, com calma.
 
----
+Sou Lucas Alexandre Horas Palhares, advogado, OAB/RO 11.037, de Ji-Paraná, Rondônia. Meu telefone é (69) 99335-9788 e meu e-mail é lucaspalharesadv@gmail.com. Leia o currículo anexo e use toda a trajetória que estiver lá, da Procuradoria Federal e do estágio na Justiça Federal de Ji-Paraná, onde redigi minutas de despachos, decisões e sentenças, passando pela JML Advogados como associado, com sustentações orais, audiências e ações de recuperação de crédito, pela DPLAW, no contencioso cível e consumerista de alto volume em defesa de Energisa e Bradesco, até a atuação autônoma remota desde 2022. Inclua também a pós-graduação em Direito e Processo Civil pelo Instituto Elpídio Donizetti e o domínio de PJe estadual e federal, e-SAJ, eproc, Projudi, CPJ e Promad. São mais de cinco anos de contencioso judicial e administrativo em civil, consumidor, bancário, previdenciário, saúde, tributário e imobiliário.
 
-Você é meu assistente de recrutamento reverso. Anexei dois arquivos: uma planilha de escritórios de advocacia e empresas, e o meu currículo em PDF. Seu trabalho é montar **rascunhos de e-mail no Gmail** candidatando-me a uma vaga em cada um deles. Trabalhe com calma, um por um.
+O que eu quero é emprego. Cada e-mail precisa dizer, sem rodeio, que estou me candidatando a uma vaga de advogado no time, em CLT, PJ ou contrato de associação, conforme o modelo que o escritório adotar, para trabalho remoto. Não é parceria, não é correspondência, não é divisão de honorários. Se alguma coluna da planilha sugerir parceria ou correspondência, ignore, porque o pedido é sempre vaga.
 
-## Quem sou eu
+Sobre o remoto, diga com naturalidade e sem pedir desculpas que moro em Ji-Paraná, no interior de Rondônia, e que é de lá que trabalho. Emende que trabalho cem por cento remoto desde 2022, com rotina já estabelecida em PJe, e-SAJ e eproc, e que a distância nunca atrapalhou prazo, audiência virtual ou integração a equipe. Acrescente que fico à disposição para atos presenciais em Ji-Paraná e região, o que é uma vantagem para quem precisa de alguém em Rondônia.
 
-Lucas Alexandre Horas Palhares, advogado, OAB/RO 11.037, Ji-Paraná/RO. (69) 99335-9788, lucaspalharesadv@gmail.com.
+Agora o mais importante, porque é onde esses e-mails costumam morrer. Escreva como um advogado escreve para outro, não como uma inteligência artificial escreve para um recrutador. Nada de travessão, nem meia-risca, nem bullet, nem lista numerada, nem subtítulo, nem negrito, nem emoji. Só parágrafos curtos de texto corrido. Não comece com "venho por meio deste", "espero que esteja bem" nem "escrevo para manifestar interesse". Não use palavra de folheto como robusto, sólido, consolidado, alinhado, estratégico, dinâmico, excelência, expertise, proatividade, perfil arrojado, agregar valor, mindset, somar ao time. Não escreva frase de efeito com três elogios em sequência, não escreva "não apenas isso, mas também", não repita a palavra jurídico em todo parágrafo. Prefira o verbo direto ao substantivo pesado, ou seja, escreva "fiz audiências" em vez de "realizei a condução de audiências", e "atendo clientes" em vez de "procedo ao atendimento". Se a frase soar como texto de site de escritório, reescreva até soar como alguém falando.
 
-**Leia o currículo anexo e use TODA a trajetória que estiver lá**: AGU/Procuradoria Federal, estágio na Justiça Federal de Ji-Paraná (minutas de despachos, decisões e sentenças), JML Advogados (associado, sustentações orais, audiências, recuperação de crédito), DPLAW (contencioso cível e consumerista de alto volume, defesa de Energisa e Bradesco), atuação autônoma remota desde 2022, pós-graduação em Direito e Processo Civil pelo Instituto Elpídio Donizetti, domínio de PJe estadual e federal, e-SAJ, eproc, Projudi, CPJ, Promad, Slack, Teams, Notion. Mais de 5 anos de contencioso judicial e administrativo em Civil, Consumidor, Bancário, Previdenciário, Saúde, Tributário e Imobiliário.
+Nunca diga quantos processos eu tenho ativos. Não escreva cento e cinquenta processos, nem carteira própria, nem número nenhum de processos ou de clientes. Se encontrar isso no currículo, passe por cima. Não invente nada, nem sobre mim, que só pode vir do currículo, nem sobre o escritório, que só pode vir das colunas da planilha. Nada de elogio inventado como acompanho o trabalho de vocês há anos, e nada de caso, prêmio, cliente ou ranking que você não leu na planilha. Nunca envie e-mail, apenas crie rascunho, porque nada sai sem eu ler. Não prometa exclusividade, não fale de valores, não diga que estou desempregado nem que estou saindo de lugar nenhum.
 
-## O que estou pedindo, com clareza
+Comece abrindo a aba Lote 10 (novos) da planilha. Se eu não disser outra coisa, trabalhe com os vinte primeiros em ordem de prioridade, lendo a coluna Prioridade, do Alta para o Média e depois o Baixa. De cada linha aproveite o nome do escritório, o e-mail, a cidade, o estado, as áreas de atuação, a frase do site, as áreas citadas no site, os sinais do site e o gancho para personalizar. Quando esses vinte acabarem eu peço os próximos, e você continua de onde parou sem repetir ninguém.
 
-**Emprego.** Nas palavras do e-mail: vaga de **advogado em regime CLT, PJ ou contrato de associação**, o que o escritório preferir, **em trabalho remoto**. Não é parceria, não é correspondência, não é divisão de honorários, não é permuta. Se a planilha tiver qualquer coluna sugerindo parceria ou correspondência, **ignore**: o pedido é sempre vaga.
+Antes de escrever qualquer coisa, pesquise cada endereço na minha conta do Gmail, nos enviados, nos recebidos, nos rascunhos e no spam. Se já existir mensagem minha para aquele endereço ou para outro endereço do mesmo domínio, não crie rascunho novo, me avise no fim dizendo a data do último contato e o que aconteceu, se ficou sem resposta, se foi negativa, se voltou como erro de entrega ou se pediram cadastro. Quando o contato tiver mais de quarenta e cinco dias e não houver resposta nem negativa, me ofereça à parte um texto curto de retomada, de três linhas, para eu decidir se mando.
 
-**Por que remoto:** resido em Ji-Paraná, no interior de Rondônia, e é de lá que trabalho. Diga isso com naturalidade e sem pedir desculpas, logo emendando que trabalho 100% remoto desde 2022, com rotina já estabelecida em PJe, e-SAJ e eproc, e que a distância nunca foi obstáculo para prazo, audiência virtual ou integração a equipe. Acrescente que fico à disposição para atos presenciais em Ji-Paraná e região, o que é uma vantagem para quem precisa de alguém em Rondônia.
+Cada e-mail precisa ter pelo menos duas frases que só servem para aquele destinatário, construídas do que está na planilha, parafraseado e verdadeiro, nunca copiado inteiro do site. No assunto, escolha o que combina com a linha, sem travessão. Pode ser "Candidatura a vaga de advogado, atuação remota", ou "Advogado com mais de cinco anos de contencioso, disponibilidade imediata", ou, quando a coluna de sinais do site indicar trabalhe conosco, "Candidatura espontânea para a equipe", ou, quando a área for forte na planilha, "Advogado com atuação em previdenciário procurando vaga remota", trocando a área conforme o caso.
 
-## Proibições absolutas
+O corpo tem de duzentas a duzentas e sessenta palavras e segue esta ordem, sempre em texto corrido. Abra cumprimentando pelo nome do escritório, ou pelo nome da pessoa quando a planilha trouxer. Diga numa frase o que você notou do escritório, a partir da frase do site, das áreas citadas ou do gancho. Peça a vaga de forma explícita, dizendo os três regimes possíveis e o remoto. Conte a experiência costurada com a área daquele escritório, puxando do currículo o que mais conversa com ela. Em previdenciário, o estágio na Justiça Federal redigindo minutas de decisões e sentenças previdenciárias, a JML e o contencioso atual no JEF e no TRF1. Em consumidor, bancário ou contencioso de volume, a DPLAW, a defesa de Energisa e Bradesco e o modelo de teses repetitivas que cortou cerca de trinta por cento do tempo das contestações seriadas. Em saúde, os medicamentos de alto custo e os tratamentos oncológicos com tutela de urgência, com jurisprudência do STJ e do STF. Em cível, família ou imobiliário, as peças em todas as fases, as audiências e as sustentações orais na JML. Em tributário, o contencioso tributário na JML e como autônomo, mais a Procuradoria Federal. Quando a área não casar com nada disso, ou quando for empresarial, compliance ou proteção de dados, use a trajetória completa, os cinco anos de contencioso, a pós-graduação e a vantagem de quem já minutou decisão do lado do Judiciário. Depois explique o remoto e o interior como pedi acima. Feche dizendo que o currículo está anexo, que fico à disposição para uma conversa no melhor horário para eles, e agradecendo a leitura. Uma linha de simpatia verdadeira cabe bem, desde que saia de algo que está na planilha. Assine assim, em linhas separadas e sem travessão: Lucas Alexandre Horas Palhares, advogado, OAB/RO 11.037, Ji-Paraná, Rondônia, telefone (69) 99335-9788, lucaspalharesadv@gmail.com.
 
-1. **Nunca diga quantos processos eu tenho ativos.** Não escreva "150 processos", "carteira de mais de 150 processos", nem número nenhum de processos, de clientes ou de carteira própria. Se achar isso no currículo, pule.
-2. **Não invente nada.** Nada sobre mim que não esteja no currículo, e nada sobre o escritório que não esteja nas colunas da planilha. Sem elogio genérico inventado ("acompanho o trabalho de vocês há anos"), sem citar caso, prêmio, cliente ou ranking que você não leu na planilha.
-3. **Não envie e-mail.** Só **crie rascunho**. Nenhuma mensagem sai sem eu ler.
-4. Não prometa exclusividade, não fale de valores, não mencione que estou saindo de lugar nenhum, não diga que estou desempregado.
+Anexe o PDF do currículo em todos os rascunhos e diga no corpo que ele está anexo. Crie um rascunho por destinatário, com assunto, corpo e anexo, e nunca envie. Se o conector não conseguir anexar o arquivo, crie o rascunho mesmo assim e me diga quais ficaram sem anexo para eu resolver à mão.
 
-## Passo 1: montar a lista
-
-Abra a aba **"Lote 10 (novos)"** da planilha. Se eu não disser outra coisa, trabalhe com os **20 primeiros em ordem de prioridade** (coluna Prioridade: Alta antes de Média antes de Baixa). Para cada linha, guarde: Escritório/Empresa, E-mail, Cidade, Estado, Área(s) de atuação, Frase do site (literal), Áreas citadas no site, Sinais do site, Gancho para personalizar.
-
-Quando essas 20 acabarem, eu peço as próximas e você continua de onde parou, sem repetir.
-
-## Passo 2: conferir se eu já falei com a pessoa
-
-Antes de escrever, pesquise **cada endereço** na minha conta do Gmail (enviados, recebidos, rascunhos e spam). Se já houver qualquer mensagem minha para aquele endereço ou para outro endereço do mesmo domínio:
-
-- **não crie rascunho novo**;
-- me avise na lista final, dizendo a data do último contato e o que aconteceu (sem resposta, resposta negativa, bounce, cadastro);
-- se foi há mais de 45 dias e não houve resposta nem negativa, me ofereça um **follow-up curto** de três linhas, separado, para eu decidir.
-
-## Passo 3: escrever cada e-mail, um por um
-
-Não use um modelo igual para todos. Cada e-mail precisa ter pelo menos duas frases que só servem para aquele destinatário, construídas a partir das colunas da planilha.
-
-**Assunto** (escolha o que combina com a linha, sem "currículo em anexo" seco):
-- `Advogado com mais de 5 anos de contencioso — disponibilidade imediata para atuação remota`
-- `Candidatura a vaga de advogado (CLT, PJ ou associado) — atuação remota`
-- Se a coluna Sinais do site disser "Trabalhe conosco": `Candidatura espontânea — advogado, atuação remota`
-- Se a coluna Área(s) tiver uma área forte: `Advogado com atuação em [área] — candidatura para equipe remota`
-
-**Corpo**, nesta ordem, entre 180 e 260 palavras, em português claro, parágrafos curtos, sem bullet, sem jargão de marketing, sem "venho por meio deste":
-
-1. **Saudação pelo nome do escritório** ("Prezados do [nome]" ou "Prezada equipe do [nome]"). Se a planilha trouxer nome de pessoa, use o nome.
-2. **Uma frase dizendo o que você observou do escritório**, tirada da coluna Frase do site, Áreas citadas no site ou Gancho para personalizar — parafraseada, não copiada inteira, e verdadeira. Exemplo de construção: "Vi que o escritório atua forte em direito previdenciário e saúde em Goiânia".
-3. **O pedido, explícito e sem rodeio**: que estou me candidatando a uma vaga de advogado na equipe, em **CLT, PJ ou contrato de associação**, conforme o modelo que o escritório adotar, **em trabalho remoto**.
-4. **A experiência**, costurada com a área daquele escritório. Puxe do currículo o que mais conversa com a coluna Área(s) de atuação:
-   - previdenciário → estágio na Justiça Federal redigindo minutas de decisões e sentenças previdenciárias, JML, contencioso atual no JEF e no TRF1;
-   - consumidor, bancário ou volume → DPLAW, defesa de Energisa e Bradesco, modelo de teses repetitivas que reduziu cerca de 30% o tempo das contestações seriadas;
-   - saúde → medicamentos de alto custo e tratamentos oncológicos com tutela de urgência, com jurisprudência do STJ e do STF;
-   - cível, família, imobiliário → peças em todas as fases, audiências, sustentações orais na JML;
-   - tributário → contencioso tributário na JML e como autônomo, AGU/Procuradoria Federal;
-   - empresarial, compliance, LGPD ou quando a área não casar com nada → trajetória completa, mais de 5 anos de contencioso, pós-graduação em Direito e Processo Civil, e a experiência de quem já minutou decisão do lado do Judiciário.
-5. **O remoto e o interior**, como está na seção acima: moro em Ji-Paraná/RO, trabalho 100% remoto desde 2022, PJe, e-SAJ e eproc no dia a dia, e disponibilidade para atos presenciais em Ji-Paraná e região.
-6. **Fechamento agradável e sem subserviência**: currículo em anexo, fico à disposição para uma conversa ou entrevista no melhor horário para eles, agradeço a atenção e a leitura. Uma linha curta de simpatia verdadeira é bem-vinda ("gostei de ver a clareza com que vocês apresentam as áreas no site"), desde que saia de algo que está na planilha.
-7. **Assinatura**: Lucas Alexandre Horas Palhares — Advogado — OAB/RO 11.037 — Ji-Paraná/RO — (69) 99335-9788 — lucaspalharesadv@gmail.com
-
-**Diga no corpo que o currículo está anexo** e **anexe o PDF do currículo em todos os rascunhos**.
-
-## Passo 4: criar os rascunhos
-
-Crie um rascunho por destinatário, com assunto, corpo e o currículo anexado. Nunca envie. Se o conector não conseguir anexar o PDF, crie o rascunho mesmo assim e me avise quais ficaram sem anexo, para eu anexar à mão.
-
-## Passo 5: relatório final
-
-Ao terminar, me entregue uma tabela com: escritório, e-mail, cidade/UF, assunto escolhido, qual experiência do currículo você usou como gancho, e situação (rascunho criado / já contatado antes, com a data / não criado, e o motivo). Separe no fim os que eu já tinha contatado e os follow-ups sugeridos.
-
-Depois do relatório, pergunte se quero as próximas 20.
+Quando terminar, me mostre uma tabela com o escritório, o e-mail, a cidade e o estado, o assunto escolhido, qual experiência do currículo você usou como gancho e a situação de cada um, se o rascunho foi criado, se eu já tinha contatado antes e quando, ou se não deu para criar e por quê. Deixe no fim, separados, os que eu já tinha contatado e os textos de retomada que você sugerir. Depois me pergunte se quero os próximos vinte.
