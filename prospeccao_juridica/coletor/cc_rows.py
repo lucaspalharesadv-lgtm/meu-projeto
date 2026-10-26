@@ -8,6 +8,8 @@ from pros2 import seen_all, BLOQUEADOS
 WEBMAIL = {'gmail.com', 'hotmail.com', 'outlook.com', 'yahoo.com.br', 'yahoo.com', 'live.com', 'uol.com.br', 'bol.com.br', 'terra.com.br', 'icloud.com', 'hotmail.com.br', 'outlook.com.br', 'ig.com.br'}
 JUNK = re.compile(r'^(seu|your|exemplo|example|email|nome|teste|test|usuario|user|fulano|contato@seudominio)|@(seudominio|dominio|exemplo|example|email|meusite|seusite|site|hub|domain|empresa|suaempresa|mysite|company|yourdomain|mail)\.|sentry|wixpress|wordpress|\.(png|jpg|jpeg|gif|webp)$', re.I)
 CORE = {'Previdenciario', 'Saude / planos de saude', 'Bancario', 'Consumidor', 'Trabalhista'}
+# texto de origem da linha: por que este dominio foi visitado (ORIGEM=... no ambiente)
+ORIGEM = os.environ.get('ORIGEM', 'nome do dominio indica advocacia')
 NEAR = {'RO', 'AC', 'AM', 'MT', 'RR', 'PA', 'AP', 'TO', 'MS'}
 TITLE_CUT = re.compile(r'\s*[|–—-]\s*(home|in[ií]cio|p[aá]gina inicial|bem[- ]vindo.*)\s*$', re.I)
 
@@ -118,7 +120,7 @@ def rows(cands, limit_per_firm=2):
             d = dict(org=org, email=e, tipo=(tipo + (' (webmail publicado no site)' if ed in WEBMAIL else '')), modelo=modelo,
                      remoto='Nao informado', areas=', '.join(areas[:5]) or 'Juridico', cidade=cidade, uf=uf, oport=oport,
                      fonte=page, prior=prior,
-                     obs=(f"Escritorio com site oficial {sd} ({'dominio de advocacia .adv.br' if sd.endswith('.adv.br') else 'nome do dominio indica advocacia'}; localizado pelo indice publico Common Crawl). "
+                     obs=(f"Escritorio com site oficial {sd} ({'dominio de advocacia .adv.br' if sd.endswith('.adv.br') else ORIGEM}; localizado pelo indice publico Common Crawl). "
                           f"{g} E-mail lido no site. Trecho: \"{trecho}\""))
             if not ok:
                 review.append(d); continue
