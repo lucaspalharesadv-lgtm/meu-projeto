@@ -27,10 +27,32 @@ Rendimento: **32% dos sites com e-mail, contra 13% do filtro por nome**, e os es
 tipo — os que têm só o nome dos sócios no domínio (Arruda Alvim Aragão & Lins, Souto Correa, Finocchio
 & Ustra, Araújo Policastro), que o filtro por nome nunca via.
 
+## Fontes do Lote 11 (quatro alvos novos nas arestas) e o rendimento de cada alvo
+
+Mesmo método do Lote 10 parte 2 (`wg11_arestas.sh` + `wg11_universo.py`), trocando só o alvo.
+Duas melhorias no caminho. Primeira: o `awk` agora sai com `exit` quando o domínio de origem
+passa do último id `.br`, então cada varredura leva 2 a 3 minutos em vez de baixar os 7,6 GB.
+Segunda: dá para repetir a varredura em edições anteriores do grafo, que contêm domínios que
+saíram da edição atual.
+
+Alvos usados, com o rendimento medido (linha final aprovada por domínio visitado):
+
+| Alvo | Domínios novos | Com e-mail | Linhas finais | Rendimento |
+|---|---|---|---|---|
+| Hub jurídico (OAB, Jusbrasil, Conjur, Migalhas, CNJ, Escavador, JusDecisum), edição atual | 9.390 | 2.419 | 507 | 5,4% |
+| Todo `.jus.br` (410 vértices), INSS, Previdência e seccionais da OAB | 7.661 | 1.678 | 190 | 2,5% |
+| Hub e tribunal na edição jul-ago-set/2026 | 2.877 | 494 | 57 | 2,0% |
+| Hub e tribunal nas edições abr-mai-jun/2026 e ago-set-out/2025 | 11.300 | 1.320 | 128 | 1,1% |
+| Planalto (legislação) e Receita Federal | 12.993 | 2.258 | 83 | 0,6% |
+
+Conclusão para as próximas rodadas: hub jurídico primeiro, tribunal depois, edições antigas em
+seguida (com mais site fora do ar, cerca de 35%), e Planalto só se faltar material, porque
+qualquer empresa cita lei no site e o filtro descarta quase tudo.
+
 ## Ideias que ainda não foram tentadas
+- Arestas do grafo de HOSTS (não de domínios): pegaria o advogado em subdomínio de plataforma que linka para a OAB. Os arquivos de arestas de host são bem maiores, mas o mesmo `exit` na faixa `.br` deve servir.
 - Hosts `.com` em plataformas (`*.wixsite.com`, `*.blogspot.com`, `*.wordpress.com`) com nome jurídico em português: ficam nas partes `com.*` dos vértices de host (arquivos grandes). Rendimento provável baixo, porque blogs raramente são escritórios.
 - Domínios que deram "sem acesso" (63 mil nos Lotes 7 e 8) podem voltar a responder em alguns meses. Rendimento baixo.
-- Mesma varredura por arestas com outros alvos: quem linka para tribunais (tjsp, trf1, trt), para o PJe ou para a Receita.
 - Daqui para a frente, o Common Crawl só traz novidade a cada nova edição do grafo (a cada ~3 meses): basta repetir o passo a passo só com a edição nova.
 
 ## Como rodar uma rodada nova (exemplo do Lote 7)
