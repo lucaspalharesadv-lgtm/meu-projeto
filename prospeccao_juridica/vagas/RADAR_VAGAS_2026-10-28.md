@@ -65,6 +65,30 @@ Link: https://to.indeed.com/aa8s9yhh72mh (publicada em 22/10)
 
 Trabalhista não é sua área principal. Candidate-se só se tiver processos trabalhistas ativos para citar; não invente. A vaga de Advogado Previdenciário Pleno do mesmo grupo continua aberta e já está no arquivo de candidaturas prontas de 09/10, item 4, com texto pronto.
 
+## 7. M3BS Advogados: duas vagas de Advogado(a) Júnior em saúde suplementar, remoto
+
+Links:
+Processos administrativos na ANS: https://to.indeed.com/aa8jt4w8t8br (publicada em 05/10)
+Regulatório, respostas de NIP: https://to.indeed.com/aas8jkw2pqwb (publicada em 29/09)
+
+O que pedem: OAB ativa, redação jurídica, organização, trabalho remoto. Na primeira, experiência com processos administrativos na ANS e atendimento a operadoras; pós em Direito da Saúde é diferencial. Na segunda, elaborar respostas de NIP, com interesse na área como diferencial. Benefícios na primeira: Flash, Amil coparticipativa, seguro de vida, plano de carreira, bônus, TotalPass.
+
+Atenção: sua experiência em saúde é do lado do beneficiário (medicamentos de alto custo, tratamentos oncológicos, tutela de urgência contra planos). Diga isso com franqueza: quem litiga contra operadora conhece a NIP, a RN 465 e o rol da ANS por dentro, e isso vale para quem responde. Não invente experiência em operadora.
+
+Texto para o campo de apresentação (serve para as duas):
+
+Sou advogado em Ji-Paraná, Rondônia, OAB/RO 11.037, com mais de cinco anos de contencioso e atuação em direito à saúde. Conduzo ações de medicamentos de alto custo e tratamentos oncológicos com tutela de urgência contra operadoras de planos de saúde, o que me obrigou a dominar a regulação da ANS, o rol de procedimentos, as resoluções normativas e o fluxo da NIP, só que pelo lado de quem cobra o cumprimento. Essa experiência me dá uma leitura precisa do que a agência e o Judiciário exigem de uma operadora, e é isso que uma defesa administrativa ou uma resposta de NIP precisa antecipar. Tenho pós-graduação em Direito e Processo Civil pelo Instituto Elpídio Donizetti, estagiei na Justiça Federal redigindo minutas de decisões e sentenças, e trabalho cem por cento remoto desde 2022. Moro no interior de Rondônia e tenho disponibilidade imediata para a equipe remota da M3BS.
+
+## 8. Urbano Vitalino Advogados: Advogado(a) Cível, Execução, remoto
+
+Link: https://to.indeed.com/aapzyq27yfmb (publicada em 10/08)
+
+O anúncio diz atuação remota na Bahia, Ceará, Paraíba, Pernambuco e Rio Grande do Norte, isto é, parece querer gente nesses estados. Vale candidatar mesmo assim, porque o trabalho é análise de cumprimento de sentença, pareceres e revisão de cálculos, tudo remoto. Use o texto da Siqueira Castro (item 3) trocando o nome do escritório.
+
+## Vistas e descartadas hoje
+
+LBCA, Contencioso Cível e Direito Digital, remoto: exige inglês fluente. Décio Freire, Cível Júnior híbrido: é vaga de contratos e editais com três anos na área, e a candidatura vai por e-mail para christianedepaula@deciofreire.com.br; fora do seu perfil. Garrastazu, consultivo híbrido em São Paulo. Grupo Trigo, Sicoob, LuD: presenciais.
+
 ## Outras remotas vistas hoje, fora do seu perfil
 
 Clicksign, Advogado Pleno em resolução de disputas e propriedade intelectual (https://to.indeed.com/aahd2sg8rtnf). Cartpanda, Advogado Sênior consultivo e regulatório (Gupy). LBCA, Advogado Pleno de Contratos e Analista Jurídico sem OAB (Gupy). Starian, Group Product Manager jurídico. Nenhuma pede contencioso.
