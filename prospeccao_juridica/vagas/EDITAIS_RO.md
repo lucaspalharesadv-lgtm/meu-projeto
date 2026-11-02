@@ -1,5 +1,14 @@
 # Radar de editais RO
 
+
+## 02/11/2026
+
+Diário Oficial dos Municípios de RO (25/10 a 02/11): 35 matérias lidas pelo radar_arom.py, nenhuma com indício de credenciamento, chamamento ou contratação de advogado ou assessoria jurídica. Nenhum falso positivo a descartar porque nenhuma matéria passou do filtro.
+
+Dativos: nenhum chamamento novo da OAB-RO ou do TJRO nos últimos 30 dias. A busca só trouxe editais de outros estados (OAB/RS com inscrições até 30/11, OAB/SC, OAB/SP, OAB/PE, e comarcas do TJMT como Alto Araguaia, com inscrição de 15 a 30/10 para 2027). Nada a acrescentar ao DATIVOS_OAB_RO.md: segue valendo o caminho do art. 8º, § 3º, da Instrução Conjunta 009/2021 (pedido ao Diretor do Fórum de Ji-Paraná).
+
+Outros editais da OAB-RO em 2026 vistos de passagem, todos fora do objetivo de renda: Escritório Corporativo (005/2026) e Corporativo Virtual, mentorado (006/2026) e mentores (007/2026), prêmio de jornalismo (008/2026). O único concurso jurídico aberto em RO é o de Procurador do Município de Porto Velho (edital 01/2026, 23 vagas), que é concurso público, não credenciamento.
+
 ## 26/10/2026
 - Diário dos Municípios de RO (18 a 26/10): 48 matérias lidas, nenhum credenciamento, contratação de advogado ou nomeação de dativo.
 - Dativos: nenhum chamamento novo. Mas li o Edital 001/2025 do TED inteiro e descobri que esse dativo é VOLUNTÁRIO E SEM REMUNERAÇÃO (item 6.2). Corrigi materiais/DATIVOS_OAB_RO.md. O dativo que paga é o judicial, da Instrução Conjunta 009/2021.
