@@ -1,0 +1,21 @@
+{
+ "total": 11074,
+ "por_aba": {
+  "BR_PT": 5607,
+  "INT_EN": 4747,
+  "INT_PT": 720
+ },
+ "por_modelo": {
+  "BR_PT": 5607,
+  "EN": 3362,
+  "OPS_EN": 1385,
+  "PT": 339,
+  "OPS_PT": 381
+ },
+ "por_tipo": {
+  "pessoal": 1994,
+  "geral": 9026,
+  "rh": 54
+ },
+ "invalidos": 94
+}

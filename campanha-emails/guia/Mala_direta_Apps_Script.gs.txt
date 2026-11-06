@@ -1,0 +1,90 @@
+/**
+ * MALA DIRETA GRÁTIS NO GMAIL (Google Apps Script), sem extensão paga.
+ *
+ * COMO USAR (uma vez):
+ * 1. Abra a planilha "Campanha internacional" > menu Extensões > Apps Script. Apague o que estiver lá e cole este código.
+ * 2. Confira as constantes abaixo (ID do PDF no Drive e limite diário). Salve (ícone de disquete).
+ * 3. No menu suspenso de funções escolha "testarUm" e clique em Executar: o Google pede autorização (conta lucaspalharesadv@gmail.com,
+ *    "Avançado" > "Acessar ..."). Essa função envia UM e-mail de teste para você mesmo, com o primeiro contato da aba EN, para conferir o resultado.
+ * 4. Depois escolha "enviarLote" e Executar: envia até LIMITE_POR_DIA e-mails, percorrendo as abas na ordem EN, PT, OPS_EN, OPS_PT,
+ *    só para linhas com status vazio, e grava "enviado dd/MM/aaaa HH:mm" na coluna status.
+ * 5. Para automatizar: ícone de relógio (Acionadores) > Adicionar acionador > função enviarLote > Baseado em tempo > Timer diário > 8h às 9h.
+ *
+ * Os textos vêm dos 4 rascunhos do Gmail cujos assuntos começam com as frases em ASSUNTOS. O script troca {{saudacao}}, {{escritorio}},
+ * {{personalizacao}} e qualquer outro {{nome_de_coluna}} pelos valores da linha e anexa o currículo (PDF do Drive).
+ */
+const ABAS = ['EN', 'PT', 'OPS_EN', 'OPS_PT', 'BR_PT', 'INT_EN', 'INT_PT']; // abas da planilha, na ordem de prioridade de envio (as três últimas são as listas em massa)
+const LIMITE_POR_DIA = 40;                               // comece com 30 a 40; Gmail gratuito aceita cerca de 100/dia com anexo via script
+const ID_PDF_DRIVE = '1OLN8Q3JKkYLXtEelfk2NwXSIpcssoSyp'; // Lucas_Palhares_Resume_Brazilian_Attorney_Remote.pdf no Drive (currículo em inglês)
+const ID_PDF_BR = '1vA7ycra1IE_hWvwOg-Fqk8NZ0LxrtsTI';         // Lucas_Palhares_Curriculo_Advogado_Remoto.pdf (currículo em português, usado nos modelos BR_PT)
+const ASSUNTOS = {
+  EN: 'Brazilian attorney, fluent English: remote bilingual',
+  PT: 'Advogado brasileiro com inglês fluente: paralegal',
+  OPS_EN: 'Brazilian attorney (OAB), fluent English: remote support',
+  OPS_PT: 'Advogado brasileiro (OAB) com inglês fluente: apoio remoto',
+  BR_PT: 'Advogado OAB/RO com 5+ anos em contencioso cível'
+};
+// Nas abas em massa, a coluna "modelo" de cada linha diz qual rascunho usar (EN, PT, OPS_EN, OPS_PT ou BR_PT).
+const NOME_REMETENTE = 'Lucas Alexandre Horas Palhares';
+
+function enviarLote() {
+  const ss = SpreadsheetApp.getActive();
+  const pdf = DriveApp.getFileById(ID_PDF_DRIVE).getBlob();
+  let enviados = 0;
+  for (const nomeAba of ABAS) {
+    if (enviados >= LIMITE_POR_DIA) break;
+    const sh = ss.getSheetByName(nomeAba);
+    if (!sh) continue;
+    const dados = sh.getDataRange().getValues();
+    const cab = dados[0].map(String);
+    const col = n => cab.indexOf(n);
+    const cEmail = col('email'), cStatus = col('status'), cEnv = col('enviado_em'), cModelo = col('modelo');
+    const modelos = {}; // cache dos rascunhos por modelo
+    const pegaModelo = k => { if (!modelos[k]) modelos[k] = acharRascunho(ASSUNTOS[k] || ASSUNTOS[nomeAba]); return modelos[k]; };
+    if (cEmail < 0 || cStatus < 0) throw new Error('A aba ' + nomeAba + ' precisa das colunas email e status.');
+    for (let i = 1; i < dados.length && enviados < LIMITE_POR_DIA; i++) {
+      const r = dados[i];
+      const email = String(r[cEmail] || '').trim();
+      if (!email || String(r[cStatus] || '').trim()) continue;
+      const vals = {}; cab.forEach((k, j) => vals[k] = String(r[j] == null ? '' : r[j]));
+      const chave = (cModelo >= 0 && ASSUNTOS[String(r[cModelo]).trim()]) ? String(r[cModelo]).trim() : nomeAba;
+      const modelo = pegaModelo(chave);
+      const anexo = chave === 'BR_PT' ? DriveApp.getFileById(ID_PDF_BR).getBlob() : pdf;
+      try {
+        GmailApp.sendEmail(email, preencher(modelo.subject, vals), preencher(modelo.text, vals),
+          { htmlBody: preencher(modelo.html, vals), attachments: [anexo], name: NOME_REMETENTE });
+        const agora = Utilities.formatDate(new Date(), 'America/Porto_Velho', 'dd/MM/yyyy HH:mm');
+        sh.getRange(i + 1, cStatus + 1).setValue('enviado');
+        if (cEnv >= 0) sh.getRange(i + 1, cEnv + 1).setValue(agora);
+        enviados++;
+        Utilities.sleep(20000 + Math.floor(Math.random() * 25000)); // 20 a 45 s entre envios: ritmo humano, protege a reputação da conta
+      } catch (e) {
+        sh.getRange(i + 1, cStatus + 1).setValue('erro: ' + e.message);
+      }
+    }
+  }
+  Logger.log('Enviados nesta rodada: ' + enviados);
+}
+
+function testarUm() {
+  const sh = SpreadsheetApp.getActive().getSheetByName('EN');
+  const dados = sh.getDataRange().getValues();
+  const cab = dados[0].map(String);
+  const vals = {}; cab.forEach((k, j) => vals[k] = String(dados[1][j] == null ? '' : dados[1][j]));
+  const modelo = acharRascunho(ASSUNTOS.EN);
+  const pdf = DriveApp.getFileById(ID_PDF_DRIVE).getBlob();
+  GmailApp.sendEmail(Session.getActiveUser().getEmail(), '[TESTE] ' + preencher(modelo.subject, vals), preencher(modelo.text, vals),
+    { htmlBody: preencher(modelo.html, vals), attachments: [pdf], name: NOME_REMETENTE });
+  Logger.log('Teste enviado para você mesmo usando a linha 2 da aba EN.');
+}
+
+function acharRascunho(inicioAssunto) {
+  const d = GmailApp.getDrafts().find(x => x.getMessage().getSubject().indexOf(inicioAssunto) === 0);
+  if (!d) throw new Error('Rascunho não encontrado no Gmail: ' + inicioAssunto);
+  const msg = d.getMessage();
+  return { subject: msg.getSubject(), html: msg.getBody(), text: msg.getPlainBody() };
+}
+
+function preencher(texto, vals) {
+  return texto.replace(/\{\{\s*([\w]+)\s*\}\}/g, (m, k) => (k in vals ? vals[k] : m));
+}
