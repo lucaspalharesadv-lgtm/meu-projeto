@@ -1,6 +1,13 @@
 # Radar de editais RO
 
 
+
+## 16/11/2026 (cobre também a semana de 09/11, cuja rodada não executou)
+
+Diário Oficial dos Municípios de RO (01/11 a 16/11, 15 dias para fechar a lacuna da semana anterior): 57 matérias lidas pelo radar_arom.py, nenhuma com indício de credenciamento, chamamento ou contratação de advogado ou assessoria jurídica. Nenhum falso positivo a descartar.
+
+Dativos: nenhum chamamento novo da OAB-RO nem do TJRO nos últimos 30 dias. O que a busca devolveu de Rondônia foi o já conhecido (Edital 001/2025 do TED, voluntário e sem remuneração; a Instrução Conjunta compilada, que manda a OAB-RO fornecer a lista à Corregedoria) e, nas comarcas, só editais de cadastro de entidades sociais para projetos (Cerejeiras, Colorado, Rolim de Moura, Espigão, de fevereiro), não de advogados. Fora do estado, OAB/RS com inscrições até 30/11, OAB/PE, OAB/PI e comarcas do TJMT. Nada a acrescentar ao DATIVOS_OAB_RO.md.
+
 ## 02/11/2026
 
 Diário Oficial dos Municípios de RO (25/10 a 02/11): 35 matérias lidas pelo radar_arom.py, nenhuma com indício de credenciamento, chamamento ou contratação de advogado ou assessoria jurídica. Nenhum falso positivo a descartar porque nenhuma matéria passou do filtro.
