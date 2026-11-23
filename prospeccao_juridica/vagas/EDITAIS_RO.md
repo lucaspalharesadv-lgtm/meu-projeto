@@ -2,6 +2,13 @@
 
 
 
+
+## 23/11/2026
+
+Diário Oficial dos Municípios de RO (15/11 a 23/11): 18 matérias lidas, nenhuma com indício de credenciamento, chamamento ou contratação de advogado ou assessoria jurídica. Sem falso positivo a descartar.
+
+Dativos: nenhum chamamento novo da OAB-RO nem do TJRO em 30 dias. Só reapareceram os editais já conhecidos (TED 001/2025, voluntário) e os 002/2026 e 005/2026 do Escritório Corporativo da OAB-RO, que não são dativos. Nada a acrescentar ao DATIVOS_OAB_RO.md.
+
 ## 16/11/2026 (cobre também a semana de 09/11, cuja rodada não executou)
 
 Diário Oficial dos Municípios de RO (01/11 a 16/11, 15 dias para fechar a lacuna da semana anterior): 57 matérias lidas pelo radar_arom.py, nenhuma com indício de credenciamento, chamamento ou contratação de advogado ou assessoria jurídica. Nenhum falso positivo a descartar.
